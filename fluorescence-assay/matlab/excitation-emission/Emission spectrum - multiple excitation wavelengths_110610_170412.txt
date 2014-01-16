@@ -1,0 +1,3013 @@
+Procedure Summary
+
+Plate Type	Costar 96 black opaque
+Read	Read:  excite 270 (F) Emission Spectrum [350nm to 600nm by 5]
+Read	Read:  excite 280 (F) Emission Spectrum [350nm to 600nm by 5]
+Read	Read:  excite 290 (F) Emission Spectrum [350nm to 600nm by 5]
+Read	Read:  excite 300 (F) Emission Spectrum [350nm to 600nm by 5]
+Read	Read:  excite 350 (F) Emission Spectrum [380nm to 600nm by 5]
+
+Data Reduction Summary
+
+	
+
+excite 270:EM Spectrum
+Wavelength 1 (350 nm)
+	1
+A	OVRFLW	excite 270:EM Spectrum Read#1
+B	OVRFLW	excite 270:EM Spectrum Read#1
+C	77762	excite 270:EM Spectrum Read#1
+D	65483	excite 270:EM Spectrum Read#1
+E	OVRFLW	excite 270:EM Spectrum Read#1
+F	OVRFLW	excite 270:EM Spectrum Read#1
+G	OVRFLW	excite 270:EM Spectrum Read#1
+H	OVRFLW	excite 270:EM Spectrum Read#1
+
+excite 270:EM Spectrum
+Wavelength 2 (355 nm)
+	1
+A	OVRFLW	excite 270:EM Spectrum Read#2
+B	99313	excite 270:EM Spectrum Read#2
+C	57798	excite 270:EM Spectrum Read#2
+D	49537	excite 270:EM Spectrum Read#2
+E	95831	excite 270:EM Spectrum Read#2
+F	86538	excite 270:EM Spectrum Read#2
+G	OVRFLW	excite 270:EM Spectrum Read#2
+H	OVRFLW	excite 270:EM Spectrum Read#2
+
+excite 270:EM Spectrum
+Wavelength 3 (360 nm)
+	1
+A	OVRFLW	excite 270:EM Spectrum Read#3
+B	78827	excite 270:EM Spectrum Read#3
+C	43507	excite 270:EM Spectrum Read#3
+D	37479	excite 270:EM Spectrum Read#3
+E	78153	excite 270:EM Spectrum Read#3
+F	66248	excite 270:EM Spectrum Read#3
+G	OVRFLW	excite 270:EM Spectrum Read#3
+H	OVRFLW	excite 270:EM Spectrum Read#3
+
+excite 270:EM Spectrum
+Wavelength 4 (365 nm)
+	1
+A	97749	excite 270:EM Spectrum Read#4
+B	70111	excite 270:EM Spectrum Read#4
+C	32548	excite 270:EM Spectrum Read#4
+D	28339	excite 270:EM Spectrum Read#4
+E	64779	excite 270:EM Spectrum Read#4
+F	48958	excite 270:EM Spectrum Read#4
+G	OVRFLW	excite 270:EM Spectrum Read#4
+H	OVRFLW	excite 270:EM Spectrum Read#4
+
+excite 270:EM Spectrum
+Wavelength 5 (370 nm)
+	1
+A	93470	excite 270:EM Spectrum Read#5
+B	65823	excite 270:EM Spectrum Read#5
+C	25022	excite 270:EM Spectrum Read#5
+D	21316	excite 270:EM Spectrum Read#5
+E	53259	excite 270:EM Spectrum Read#5
+F	38327	excite 270:EM Spectrum Read#5
+G	OVRFLW	excite 270:EM Spectrum Read#5
+H	OVRFLW	excite 270:EM Spectrum Read#5
+
+excite 270:EM Spectrum
+Wavelength 6 (375 nm)
+	1
+A	OVRFLW	excite 270:EM Spectrum Read#6
+B	63742	excite 270:EM Spectrum Read#6
+C	19106	excite 270:EM Spectrum Read#6
+D	15300	excite 270:EM Spectrum Read#6
+E	45695	excite 270:EM Spectrum Read#6
+F	27710	excite 270:EM Spectrum Read#6
+G	OVRFLW	excite 270:EM Spectrum Read#6
+H	OVRFLW	excite 270:EM Spectrum Read#6
+
+excite 270:EM Spectrum
+Wavelength 7 (380 nm)
+	1
+A	OVRFLW	excite 270:EM Spectrum Read#7
+B	60530	excite 270:EM Spectrum Read#7
+C	14800	excite 270:EM Spectrum Read#7
+D	10894	excite 270:EM Spectrum Read#7
+E	40993	excite 270:EM Spectrum Read#7
+F	21552	excite 270:EM Spectrum Read#7
+G	OVRFLW	excite 270:EM Spectrum Read#7
+H	OVRFLW	excite 270:EM Spectrum Read#7
+
+excite 270:EM Spectrum
+Wavelength 8 (385 nm)
+	1
+A	OVRFLW	excite 270:EM Spectrum Read#8
+B	62848	excite 270:EM Spectrum Read#8
+C	11825	excite 270:EM Spectrum Read#8
+D	8272	excite 270:EM Spectrum Read#8
+E	40760	excite 270:EM Spectrum Read#8
+F	16395	excite 270:EM Spectrum Read#8
+G	OVRFLW	excite 270:EM Spectrum Read#8
+H	OVRFLW	excite 270:EM Spectrum Read#8
+
+excite 270:EM Spectrum
+Wavelength 9 (390 nm)
+	1
+A	OVRFLW	excite 270:EM Spectrum Read#9
+B	OVRFLW	excite 270:EM Spectrum Read#9
+C	8674	excite 270:EM Spectrum Read#9
+D	6238	excite 270:EM Spectrum Read#9
+E	38333	excite 270:EM Spectrum Read#9
+F	12438	excite 270:EM Spectrum Read#9
+G	OVRFLW	excite 270:EM Spectrum Read#9
+H	OVRFLW	excite 270:EM Spectrum Read#9
+
+excite 270:EM Spectrum
+Wavelength 10 (395 nm)
+	1
+A	OVRFLW	excite 270:EM Spectrum Read#10
+B	60817	excite 270:EM Spectrum Read#10
+C	7102	excite 270:EM Spectrum Read#10
+D	5059	excite 270:EM Spectrum Read#10
+E	38187	excite 270:EM Spectrum Read#10
+F	9869	excite 270:EM Spectrum Read#10
+G	OVRFLW	excite 270:EM Spectrum Read#10
+H	OVRFLW	excite 270:EM Spectrum Read#10
+
+excite 270:EM Spectrum
+Wavelength 11 (400 nm)
+	1
+A	OVRFLW	excite 270:EM Spectrum Read#11
+B	50025	excite 270:EM Spectrum Read#11
+C	5821	excite 270:EM Spectrum Read#11
+D	4525	excite 270:EM Spectrum Read#11
+E	37887	excite 270:EM Spectrum Read#11
+F	7766	excite 270:EM Spectrum Read#11
+G	OVRFLW	excite 270:EM Spectrum Read#11
+H	OVRFLW	excite 270:EM Spectrum Read#11
+
+excite 270:EM Spectrum
+Wavelength 12 (405 nm)
+	1
+A	70576	excite 270:EM Spectrum Read#12
+B	44428	excite 270:EM Spectrum Read#12
+C	5482	excite 270:EM Spectrum Read#12
+D	3883	excite 270:EM Spectrum Read#12
+E	38259	excite 270:EM Spectrum Read#12
+F	7042	excite 270:EM Spectrum Read#12
+G	OVRFLW	excite 270:EM Spectrum Read#12
+H	OVRFLW	excite 270:EM Spectrum Read#12
+
+excite 270:EM Spectrum
+Wavelength 13 (410 nm)
+	1
+A	62151	excite 270:EM Spectrum Read#13
+B	37347	excite 270:EM Spectrum Read#13
+C	5266	excite 270:EM Spectrum Read#13
+D	3713	excite 270:EM Spectrum Read#13
+E	37401	excite 270:EM Spectrum Read#13
+F	6231	excite 270:EM Spectrum Read#13
+G	OVRFLW	excite 270:EM Spectrum Read#13
+H	OVRFLW	excite 270:EM Spectrum Read#13
+
+excite 270:EM Spectrum
+Wavelength 14 (415 nm)
+	1
+A	57215	excite 270:EM Spectrum Read#14
+B	34168	excite 270:EM Spectrum Read#14
+C	5800	excite 270:EM Spectrum Read#14
+D	3286	excite 270:EM Spectrum Read#14
+E	36826	excite 270:EM Spectrum Read#14
+F	5984	excite 270:EM Spectrum Read#14
+G	OVRFLW	excite 270:EM Spectrum Read#14
+H	OVRFLW	excite 270:EM Spectrum Read#14
+
+excite 270:EM Spectrum
+Wavelength 15 (420 nm)
+	1
+A	50768	excite 270:EM Spectrum Read#15
+B	28802	excite 270:EM Spectrum Read#15
+C	6422	excite 270:EM Spectrum Read#15
+D	3021	excite 270:EM Spectrum Read#15
+E	36249	excite 270:EM Spectrum Read#15
+F	5384	excite 270:EM Spectrum Read#15
+G	OVRFLW	excite 270:EM Spectrum Read#15
+H	OVRFLW	excite 270:EM Spectrum Read#15
+
+excite 270:EM Spectrum
+Wavelength 16 (425 nm)
+	1
+A	41531	excite 270:EM Spectrum Read#16
+B	24786	excite 270:EM Spectrum Read#16
+C	7580	excite 270:EM Spectrum Read#16
+D	3012	excite 270:EM Spectrum Read#16
+E	35174	excite 270:EM Spectrum Read#16
+F	5298	excite 270:EM Spectrum Read#16
+G	OVRFLW	excite 270:EM Spectrum Read#16
+H	OVRFLW	excite 270:EM Spectrum Read#16
+
+excite 270:EM Spectrum
+Wavelength 17 (430 nm)
+	1
+A	36435	excite 270:EM Spectrum Read#17
+B	19217	excite 270:EM Spectrum Read#17
+C	7341	excite 270:EM Spectrum Read#17
+D	3354	excite 270:EM Spectrum Read#17
+E	35266	excite 270:EM Spectrum Read#17
+F	4551	excite 270:EM Spectrum Read#17
+G	OVRFLW	excite 270:EM Spectrum Read#17
+H	OVRFLW	excite 270:EM Spectrum Read#17
+
+excite 270:EM Spectrum
+Wavelength 18 (435 nm)
+	1
+A	33078	excite 270:EM Spectrum Read#18
+B	16768	excite 270:EM Spectrum Read#18
+C	8151	excite 270:EM Spectrum Read#18
+D	3849	excite 270:EM Spectrum Read#18
+E	32963	excite 270:EM Spectrum Read#18
+F	4597	excite 270:EM Spectrum Read#18
+G	OVRFLW	excite 270:EM Spectrum Read#18
+H	OVRFLW	excite 270:EM Spectrum Read#18
+
+excite 270:EM Spectrum
+Wavelength 19 (440 nm)
+	1
+A	28765	excite 270:EM Spectrum Read#19
+B	14593	excite 270:EM Spectrum Read#19
+C	9060	excite 270:EM Spectrum Read#19
+D	4109	excite 270:EM Spectrum Read#19
+E	31001	excite 270:EM Spectrum Read#19
+F	4248	excite 270:EM Spectrum Read#19
+G	OVRFLW	excite 270:EM Spectrum Read#19
+H	OVRFLW	excite 270:EM Spectrum Read#19
+
+excite 270:EM Spectrum
+Wavelength 20 (445 nm)
+	1
+A	25627	excite 270:EM Spectrum Read#20
+B	12421	excite 270:EM Spectrum Read#20
+C	10185	excite 270:EM Spectrum Read#20
+D	4444	excite 270:EM Spectrum Read#20
+E	29570	excite 270:EM Spectrum Read#20
+F	4249	excite 270:EM Spectrum Read#20
+G	OVRFLW	excite 270:EM Spectrum Read#20
+H	OVRFLW	excite 270:EM Spectrum Read#20
+
+excite 270:EM Spectrum
+Wavelength 21 (450 nm)
+	1
+A	22308	excite 270:EM Spectrum Read#21
+B	10756	excite 270:EM Spectrum Read#21
+C	10929	excite 270:EM Spectrum Read#21
+D	3989	excite 270:EM Spectrum Read#21
+E	28663	excite 270:EM Spectrum Read#21
+F	4288	excite 270:EM Spectrum Read#21
+G	OVRFLW	excite 270:EM Spectrum Read#21
+H	OVRFLW	excite 270:EM Spectrum Read#21
+
+excite 270:EM Spectrum
+Wavelength 22 (455 nm)
+	1
+A	20089	excite 270:EM Spectrum Read#22
+B	9718	excite 270:EM Spectrum Read#22
+C	11749	excite 270:EM Spectrum Read#22
+D	4605	excite 270:EM Spectrum Read#22
+E	27069	excite 270:EM Spectrum Read#22
+F	3695	excite 270:EM Spectrum Read#22
+G	OVRFLW	excite 270:EM Spectrum Read#22
+H	OVRFLW	excite 270:EM Spectrum Read#22
+
+excite 270:EM Spectrum
+Wavelength 23 (460 nm)
+	1
+A	17783	excite 270:EM Spectrum Read#23
+B	8165	excite 270:EM Spectrum Read#23
+C	11119	excite 270:EM Spectrum Read#23
+D	4376	excite 270:EM Spectrum Read#23
+E	24535	excite 270:EM Spectrum Read#23
+F	3291	excite 270:EM Spectrum Read#23
+G	OVRFLW	excite 270:EM Spectrum Read#23
+H	OVRFLW	excite 270:EM Spectrum Read#23
+
+excite 270:EM Spectrum
+Wavelength 24 (465 nm)
+	1
+A	15570	excite 270:EM Spectrum Read#24
+B	6773	excite 270:EM Spectrum Read#24
+C	11635	excite 270:EM Spectrum Read#24
+D	4666	excite 270:EM Spectrum Read#24
+E	22949	excite 270:EM Spectrum Read#24
+F	3231	excite 270:EM Spectrum Read#24
+G	91821	excite 270:EM Spectrum Read#24
+H	OVRFLW	excite 270:EM Spectrum Read#24
+
+excite 270:EM Spectrum
+Wavelength 25 (470 nm)
+	1
+A	13551	excite 270:EM Spectrum Read#25
+B	6250	excite 270:EM Spectrum Read#25
+C	11737	excite 270:EM Spectrum Read#25
+D	4399	excite 270:EM Spectrum Read#25
+E	20935	excite 270:EM Spectrum Read#25
+F	3263	excite 270:EM Spectrum Read#25
+G	75110	excite 270:EM Spectrum Read#25
+H	OVRFLW	excite 270:EM Spectrum Read#25
+
+excite 270:EM Spectrum
+Wavelength 26 (475 nm)
+	1
+A	12254	excite 270:EM Spectrum Read#26
+B	5770	excite 270:EM Spectrum Read#26
+C	11145	excite 270:EM Spectrum Read#26
+D	4849	excite 270:EM Spectrum Read#26
+E	20149	excite 270:EM Spectrum Read#26
+F	2744	excite 270:EM Spectrum Read#26
+G	61635	excite 270:EM Spectrum Read#26
+H	96930	excite 270:EM Spectrum Read#26
+
+excite 270:EM Spectrum
+Wavelength 27 (480 nm)
+	1
+A	11708	excite 270:EM Spectrum Read#27
+B	4952	excite 270:EM Spectrum Read#27
+C	11539	excite 270:EM Spectrum Read#27
+D	4402	excite 270:EM Spectrum Read#27
+E	17553	excite 270:EM Spectrum Read#27
+F	2715	excite 270:EM Spectrum Read#27
+G	48867	excite 270:EM Spectrum Read#27
+H	80261	excite 270:EM Spectrum Read#27
+
+excite 270:EM Spectrum
+Wavelength 28 (485 nm)
+	1
+A	9640	excite 270:EM Spectrum Read#28
+B	4491	excite 270:EM Spectrum Read#28
+C	11520	excite 270:EM Spectrum Read#28
+D	4483	excite 270:EM Spectrum Read#28
+E	16172	excite 270:EM Spectrum Read#28
+F	2598	excite 270:EM Spectrum Read#28
+G	39848	excite 270:EM Spectrum Read#28
+H	62028	excite 270:EM Spectrum Read#28
+
+excite 270:EM Spectrum
+Wavelength 29 (490 nm)
+	1
+A	9143	excite 270:EM Spectrum Read#29
+B	4268	excite 270:EM Spectrum Read#29
+C	11208	excite 270:EM Spectrum Read#29
+D	4590	excite 270:EM Spectrum Read#29
+E	14723	excite 270:EM Spectrum Read#29
+F	2317	excite 270:EM Spectrum Read#29
+G	33207	excite 270:EM Spectrum Read#29
+H	52607	excite 270:EM Spectrum Read#29
+
+excite 270:EM Spectrum
+Wavelength 30 (495 nm)
+	1
+A	7948	excite 270:EM Spectrum Read#30
+B	3845	excite 270:EM Spectrum Read#30
+C	10852	excite 270:EM Spectrum Read#30
+D	5085	excite 270:EM Spectrum Read#30
+E	13105	excite 270:EM Spectrum Read#30
+F	2231	excite 270:EM Spectrum Read#30
+G	25862	excite 270:EM Spectrum Read#30
+H	41316	excite 270:EM Spectrum Read#30
+
+excite 270:EM Spectrum
+Wavelength 31 (500 nm)
+	1
+A	7189	excite 270:EM Spectrum Read#31
+B	3961	excite 270:EM Spectrum Read#31
+C	10354	excite 270:EM Spectrum Read#31
+D	4353	excite 270:EM Spectrum Read#31
+E	12267	excite 270:EM Spectrum Read#31
+F	2187	excite 270:EM Spectrum Read#31
+G	21160	excite 270:EM Spectrum Read#31
+H	33414	excite 270:EM Spectrum Read#31
+
+excite 270:EM Spectrum
+Wavelength 32 (505 nm)
+	1
+A	6848	excite 270:EM Spectrum Read#32
+B	3236	excite 270:EM Spectrum Read#32
+C	9566	excite 270:EM Spectrum Read#32
+D	4361	excite 270:EM Spectrum Read#32
+E	11397	excite 270:EM Spectrum Read#32
+F	2137	excite 270:EM Spectrum Read#32
+G	17997	excite 270:EM Spectrum Read#32
+H	27639	excite 270:EM Spectrum Read#32
+
+excite 270:EM Spectrum
+Wavelength 33 (510 nm)
+	1
+A	5916	excite 270:EM Spectrum Read#33
+B	2838	excite 270:EM Spectrum Read#33
+C	10149	excite 270:EM Spectrum Read#33
+D	3768	excite 270:EM Spectrum Read#33
+E	10147	excite 270:EM Spectrum Read#33
+F	1719	excite 270:EM Spectrum Read#33
+G	12951	excite 270:EM Spectrum Read#33
+H	23186	excite 270:EM Spectrum Read#33
+
+excite 270:EM Spectrum
+Wavelength 34 (515 nm)
+	1
+A	5262	excite 270:EM Spectrum Read#34
+B	2482	excite 270:EM Spectrum Read#34
+C	9442	excite 270:EM Spectrum Read#34
+D	4027	excite 270:EM Spectrum Read#34
+E	8887	excite 270:EM Spectrum Read#34
+F	1940	excite 270:EM Spectrum Read#34
+G	10838	excite 270:EM Spectrum Read#34
+H	16586	excite 270:EM Spectrum Read#34
+
+excite 270:EM Spectrum
+Wavelength 35 (520 nm)
+	1
+A	5139	excite 270:EM Spectrum Read#35
+B	2804	excite 270:EM Spectrum Read#35
+C	8941	excite 270:EM Spectrum Read#35
+D	3748	excite 270:EM Spectrum Read#35
+E	7628	excite 270:EM Spectrum Read#35
+F	1610	excite 270:EM Spectrum Read#35
+G	9118	excite 270:EM Spectrum Read#35
+H	13510	excite 270:EM Spectrum Read#35
+
+excite 270:EM Spectrum
+Wavelength 36 (525 nm)
+	1
+A	4525	excite 270:EM Spectrum Read#36
+B	2384	excite 270:EM Spectrum Read#36
+C	7640	excite 270:EM Spectrum Read#36
+D	3238	excite 270:EM Spectrum Read#36
+E	7597	excite 270:EM Spectrum Read#36
+F	1420	excite 270:EM Spectrum Read#36
+G	7515	excite 270:EM Spectrum Read#36
+H	12288	excite 270:EM Spectrum Read#36
+
+excite 270:EM Spectrum
+Wavelength 37 (530 nm)
+	1
+A	4343	excite 270:EM Spectrum Read#37
+B	2245	excite 270:EM Spectrum Read#37
+C	7335	excite 270:EM Spectrum Read#37
+D	3368	excite 270:EM Spectrum Read#37
+E	6533	excite 270:EM Spectrum Read#37
+F	1541	excite 270:EM Spectrum Read#37
+G	6455	excite 270:EM Spectrum Read#37
+H	9464	excite 270:EM Spectrum Read#37
+
+excite 270:EM Spectrum
+Wavelength 38 (535 nm)
+	1
+A	3801	excite 270:EM Spectrum Read#38
+B	2165	excite 270:EM Spectrum Read#38
+C	6716	excite 270:EM Spectrum Read#38
+D	3300	excite 270:EM Spectrum Read#38
+E	5857	excite 270:EM Spectrum Read#38
+F	1786	excite 270:EM Spectrum Read#38
+G	5269	excite 270:EM Spectrum Read#38
+H	7461	excite 270:EM Spectrum Read#38
+
+excite 270:EM Spectrum
+Wavelength 39 (540 nm)
+	1
+A	3452	excite 270:EM Spectrum Read#39
+B	1911	excite 270:EM Spectrum Read#39
+C	6019	excite 270:EM Spectrum Read#39
+D	2943	excite 270:EM Spectrum Read#39
+E	5207	excite 270:EM Spectrum Read#39
+F	1644	excite 270:EM Spectrum Read#39
+G	4489	excite 270:EM Spectrum Read#39
+H	6237	excite 270:EM Spectrum Read#39
+
+excite 270:EM Spectrum
+Wavelength 40 (545 nm)
+	1
+A	3036	excite 270:EM Spectrum Read#40
+B	1729	excite 270:EM Spectrum Read#40
+C	6100	excite 270:EM Spectrum Read#40
+D	2946	excite 270:EM Spectrum Read#40
+E	5172	excite 270:EM Spectrum Read#40
+F	1105	excite 270:EM Spectrum Read#40
+G	3521	excite 270:EM Spectrum Read#40
+H	5434	excite 270:EM Spectrum Read#40
+
+excite 270:EM Spectrum
+Wavelength 41 (550 nm)
+	1
+A	3042	excite 270:EM Spectrum Read#41
+B	1686	excite 270:EM Spectrum Read#41
+C	5517	excite 270:EM Spectrum Read#41
+D	2491	excite 270:EM Spectrum Read#41
+E	4204	excite 270:EM Spectrum Read#41
+F	1172	excite 270:EM Spectrum Read#41
+G	2884	excite 270:EM Spectrum Read#41
+H	4373	excite 270:EM Spectrum Read#41
+
+excite 270:EM Spectrum
+Wavelength 42 (555 nm)
+	1
+A	2645	excite 270:EM Spectrum Read#42
+B	1322	excite 270:EM Spectrum Read#42
+C	5276	excite 270:EM Spectrum Read#42
+D	2254	excite 270:EM Spectrum Read#42
+E	3633	excite 270:EM Spectrum Read#42
+F	1038	excite 270:EM Spectrum Read#42
+G	2192	excite 270:EM Spectrum Read#42
+H	3230	excite 270:EM Spectrum Read#42
+
+excite 270:EM Spectrum
+Wavelength 43 (560 nm)
+	1
+A	2134	excite 270:EM Spectrum Read#43
+B	1247	excite 270:EM Spectrum Read#43
+C	4907	excite 270:EM Spectrum Read#43
+D	2191	excite 270:EM Spectrum Read#43
+E	3495	excite 270:EM Spectrum Read#43
+F	1089	excite 270:EM Spectrum Read#43
+G	1713	excite 270:EM Spectrum Read#43
+H	2938	excite 270:EM Spectrum Read#43
+
+excite 270:EM Spectrum
+Wavelength 44 (565 nm)
+	1
+A	1919	excite 270:EM Spectrum Read#44
+B	1110	excite 270:EM Spectrum Read#44
+C	4832	excite 270:EM Spectrum Read#44
+D	2263	excite 270:EM Spectrum Read#44
+E	3122	excite 270:EM Spectrum Read#44
+F	871	excite 270:EM Spectrum Read#44
+G	1767	excite 270:EM Spectrum Read#44
+H	2331	excite 270:EM Spectrum Read#44
+
+excite 270:EM Spectrum
+Wavelength 45 (570 nm)
+	1
+A	1860	excite 270:EM Spectrum Read#45
+B	1292	excite 270:EM Spectrum Read#45
+C	4176	excite 270:EM Spectrum Read#45
+D	2057	excite 270:EM Spectrum Read#45
+E	2791	excite 270:EM Spectrum Read#45
+F	704	excite 270:EM Spectrum Read#45
+G	1110	excite 270:EM Spectrum Read#45
+H	2272	excite 270:EM Spectrum Read#45
+
+excite 270:EM Spectrum
+Wavelength 46 (575 nm)
+	1
+A	1502	excite 270:EM Spectrum Read#46
+B	954	excite 270:EM Spectrum Read#46
+C	3691	excite 270:EM Spectrum Read#46
+D	2123	excite 270:EM Spectrum Read#46
+E	2294	excite 270:EM Spectrum Read#46
+F	779	excite 270:EM Spectrum Read#46
+G	1264	excite 270:EM Spectrum Read#46
+H	1687	excite 270:EM Spectrum Read#46
+
+excite 270:EM Spectrum
+Wavelength 47 (580 nm)
+	1
+A	1548	excite 270:EM Spectrum Read#47
+B	1101	excite 270:EM Spectrum Read#47
+C	3902	excite 270:EM Spectrum Read#47
+D	1826	excite 270:EM Spectrum Read#47
+E	2416	excite 270:EM Spectrum Read#47
+F	677	excite 270:EM Spectrum Read#47
+G	712	excite 270:EM Spectrum Read#47
+H	1323	excite 270:EM Spectrum Read#47
+
+excite 270:EM Spectrum
+Wavelength 48 (585 nm)
+	1
+A	1277	excite 270:EM Spectrum Read#48
+B	1021	excite 270:EM Spectrum Read#48
+C	3385	excite 270:EM Spectrum Read#48
+D	1518	excite 270:EM Spectrum Read#48
+E	2126	excite 270:EM Spectrum Read#48
+F	470	excite 270:EM Spectrum Read#48
+G	866	excite 270:EM Spectrum Read#48
+H	1020	excite 270:EM Spectrum Read#48
+
+excite 270:EM Spectrum
+Wavelength 49 (590 nm)
+	1
+A	1298	excite 270:EM Spectrum Read#49
+B	992	excite 270:EM Spectrum Read#49
+C	3469	excite 270:EM Spectrum Read#49
+D	1417	excite 270:EM Spectrum Read#49
+E	1721	excite 270:EM Spectrum Read#49
+F	485	excite 270:EM Spectrum Read#49
+G	322	excite 270:EM Spectrum Read#49
+H	900	excite 270:EM Spectrum Read#49
+
+excite 270:EM Spectrum
+Wavelength 50 (595 nm)
+	1
+A	1112	excite 270:EM Spectrum Read#50
+B	776	excite 270:EM Spectrum Read#50
+C	2854	excite 270:EM Spectrum Read#50
+D	1344	excite 270:EM Spectrum Read#50
+E	1384	excite 270:EM Spectrum Read#50
+F	431	excite 270:EM Spectrum Read#50
+G	448	excite 270:EM Spectrum Read#50
+H	870	excite 270:EM Spectrum Read#50
+
+excite 270:EM Spectrum
+Wavelength 51 (600 nm)
+	1
+A	731	excite 270:EM Spectrum Read#51
+B	676	excite 270:EM Spectrum Read#51
+C	2516	excite 270:EM Spectrum Read#51
+D	1202	excite 270:EM Spectrum Read#51
+E	1410	excite 270:EM Spectrum Read#51
+F	640	excite 270:EM Spectrum Read#51
+G	746	excite 270:EM Spectrum Read#51
+H	1007	excite 270:EM Spectrum Read#51
+
+excite 280:EM Spectrum
+Wavelength 1 (350 nm)
+	1
+A	500	excite 280:EM Spectrum Read#1
+B	220	excite 280:EM Spectrum Read#1
+C	163	excite 280:EM Spectrum Read#1
+D	101	excite 280:EM Spectrum Read#1
+E	365	excite 280:EM Spectrum Read#1
+F	121	excite 280:EM Spectrum Read#1
+G	901	excite 280:EM Spectrum Read#1
+H	802	excite 280:EM Spectrum Read#1
+
+excite 280:EM Spectrum
+Wavelength 2 (355 nm)
+	1
+A	423	excite 280:EM Spectrum Read#2
+B	173	excite 280:EM Spectrum Read#2
+C	127	excite 280:EM Spectrum Read#2
+D	79	excite 280:EM Spectrum Read#2
+E	335	excite 280:EM Spectrum Read#2
+F	111	excite 280:EM Spectrum Read#2
+G	947	excite 280:EM Spectrum Read#2
+H	943	excite 280:EM Spectrum Read#2
+
+excite 280:EM Spectrum
+Wavelength 3 (360 nm)
+	1
+A	388	excite 280:EM Spectrum Read#3
+B	175	excite 280:EM Spectrum Read#3
+C	99	excite 280:EM Spectrum Read#3
+D	55	excite 280:EM Spectrum Read#3
+E	275	excite 280:EM Spectrum Read#3
+F	89	excite 280:EM Spectrum Read#3
+G	1106	excite 280:EM Spectrum Read#3
+H	1162	excite 280:EM Spectrum Read#3
+
+excite 280:EM Spectrum
+Wavelength 4 (365 nm)
+	1
+A	403	excite 280:EM Spectrum Read#4
+B	228	excite 280:EM Spectrum Read#4
+C	98	excite 280:EM Spectrum Read#4
+D	50	excite 280:EM Spectrum Read#4
+E	275	excite 280:EM Spectrum Read#4
+F	60	excite 280:EM Spectrum Read#4
+G	1344	excite 280:EM Spectrum Read#4
+H	1524	excite 280:EM Spectrum Read#4
+
+excite 280:EM Spectrum
+Wavelength 5 (370 nm)
+	1
+A	465	excite 280:EM Spectrum Read#5
+B	286	excite 280:EM Spectrum Read#5
+C	71	excite 280:EM Spectrum Read#5
+D	26	excite 280:EM Spectrum Read#5
+E	274	excite 280:EM Spectrum Read#5
+F	57	excite 280:EM Spectrum Read#5
+G	1600	excite 280:EM Spectrum Read#5
+H	1982	excite 280:EM Spectrum Read#5
+
+excite 280:EM Spectrum
+Wavelength 6 (375 nm)
+	1
+A	495	excite 280:EM Spectrum Read#6
+B	322	excite 280:EM Spectrum Read#6
+C	57	excite 280:EM Spectrum Read#6
+D	19	excite 280:EM Spectrum Read#6
+E	246	excite 280:EM Spectrum Read#6
+F	45	excite 280:EM Spectrum Read#6
+G	1897	excite 280:EM Spectrum Read#6
+H	2447	excite 280:EM Spectrum Read#6
+
+excite 280:EM Spectrum
+Wavelength 7 (380 nm)
+	1
+A	517	excite 280:EM Spectrum Read#7
+B	364	excite 280:EM Spectrum Read#7
+C	46	excite 280:EM Spectrum Read#7
+D	24	excite 280:EM Spectrum Read#7
+E	264	excite 280:EM Spectrum Read#7
+F	31	excite 280:EM Spectrum Read#7
+G	2119	excite 280:EM Spectrum Read#7
+H	2760	excite 280:EM Spectrum Read#7
+
+excite 280:EM Spectrum
+Wavelength 8 (385 nm)
+	1
+A	574	excite 280:EM Spectrum Read#8
+B	439	excite 280:EM Spectrum Read#8
+C	40	excite 280:EM Spectrum Read#8
+D	17	excite 280:EM Spectrum Read#8
+E	263	excite 280:EM Spectrum Read#8
+F	31	excite 280:EM Spectrum Read#8
+G	2268	excite 280:EM Spectrum Read#8
+H	3032	excite 280:EM Spectrum Read#8
+
+excite 280:EM Spectrum
+Wavelength 9 (390 nm)
+	1
+A	602	excite 280:EM Spectrum Read#9
+B	466	excite 280:EM Spectrum Read#9
+C	41	excite 280:EM Spectrum Read#9
+D	7	excite 280:EM Spectrum Read#9
+E	279	excite 280:EM Spectrum Read#9
+F	16	excite 280:EM Spectrum Read#9
+G	2350	excite 280:EM Spectrum Read#9
+H	3131	excite 280:EM Spectrum Read#9
+
+excite 280:EM Spectrum
+Wavelength 10 (395 nm)
+	1
+A	579	excite 280:EM Spectrum Read#10
+B	418	excite 280:EM Spectrum Read#10
+C	34	excite 280:EM Spectrum Read#10
+D	18	excite 280:EM Spectrum Read#10
+E	286	excite 280:EM Spectrum Read#10
+F	31	excite 280:EM Spectrum Read#10
+G	2295	excite 280:EM Spectrum Read#10
+H	3090	excite 280:EM Spectrum Read#10
+
+excite 280:EM Spectrum
+Wavelength 11 (400 nm)
+	1
+A	504	excite 280:EM Spectrum Read#11
+B	376	excite 280:EM Spectrum Read#11
+C	17	excite 280:EM Spectrum Read#11
+D	13	excite 280:EM Spectrum Read#11
+E	274	excite 280:EM Spectrum Read#11
+F	23	excite 280:EM Spectrum Read#11
+G	2208	excite 280:EM Spectrum Read#11
+H	2974	excite 280:EM Spectrum Read#11
+
+excite 280:EM Spectrum
+Wavelength 12 (405 nm)
+	1
+A	434	excite 280:EM Spectrum Read#12
+B	329	excite 280:EM Spectrum Read#12
+C	26	excite 280:EM Spectrum Read#12
+D	9	excite 280:EM Spectrum Read#12
+E	283	excite 280:EM Spectrum Read#12
+F	17	excite 280:EM Spectrum Read#12
+G	2052	excite 280:EM Spectrum Read#12
+H	2774	excite 280:EM Spectrum Read#12
+
+excite 280:EM Spectrum
+Wavelength 13 (410 nm)
+	1
+A	397	excite 280:EM Spectrum Read#13
+B	302	excite 280:EM Spectrum Read#13
+C	33	excite 280:EM Spectrum Read#13
+D	11	excite 280:EM Spectrum Read#13
+E	280	excite 280:EM Spectrum Read#13
+F	25	excite 280:EM Spectrum Read#13
+G	1820	excite 280:EM Spectrum Read#13
+H	2509	excite 280:EM Spectrum Read#13
+
+excite 280:EM Spectrum
+Wavelength 14 (415 nm)
+	1
+A	373	excite 280:EM Spectrum Read#14
+B	253	excite 280:EM Spectrum Read#14
+C	31	excite 280:EM Spectrum Read#14
+D	17	excite 280:EM Spectrum Read#14
+E	308	excite 280:EM Spectrum Read#14
+F	17	excite 280:EM Spectrum Read#14
+G	1655	excite 280:EM Spectrum Read#14
+H	2212	excite 280:EM Spectrum Read#14
+
+excite 280:EM Spectrum
+Wavelength 15 (420 nm)
+	1
+A	319	excite 280:EM Spectrum Read#15
+B	234	excite 280:EM Spectrum Read#15
+C	26	excite 280:EM Spectrum Read#15
+D	9	excite 280:EM Spectrum Read#15
+E	281	excite 280:EM Spectrum Read#15
+F	19	excite 280:EM Spectrum Read#15
+G	1435	excite 280:EM Spectrum Read#15
+H	1947	excite 280:EM Spectrum Read#15
+
+excite 280:EM Spectrum
+Wavelength 16 (425 nm)
+	1
+A	267	excite 280:EM Spectrum Read#16
+B	186	excite 280:EM Spectrum Read#16
+C	35	excite 280:EM Spectrum Read#16
+D	15	excite 280:EM Spectrum Read#16
+E	278	excite 280:EM Spectrum Read#16
+F	17	excite 280:EM Spectrum Read#16
+G	1226	excite 280:EM Spectrum Read#16
+H	1670	excite 280:EM Spectrum Read#16
+
+excite 280:EM Spectrum
+Wavelength 17 (430 nm)
+	1
+A	239	excite 280:EM Spectrum Read#17
+B	151	excite 280:EM Spectrum Read#17
+C	46	excite 280:EM Spectrum Read#17
+D	12	excite 280:EM Spectrum Read#17
+E	290	excite 280:EM Spectrum Read#17
+F	15	excite 280:EM Spectrum Read#17
+G	1041	excite 280:EM Spectrum Read#17
+H	1413	excite 280:EM Spectrum Read#17
+
+excite 280:EM Spectrum
+Wavelength 18 (435 nm)
+	1
+A	211	excite 280:EM Spectrum Read#18
+B	120	excite 280:EM Spectrum Read#18
+C	49	excite 280:EM Spectrum Read#18
+D	10	excite 280:EM Spectrum Read#18
+E	262	excite 280:EM Spectrum Read#18
+F	17	excite 280:EM Spectrum Read#18
+G	877	excite 280:EM Spectrum Read#18
+H	1188	excite 280:EM Spectrum Read#18
+
+excite 280:EM Spectrum
+Wavelength 19 (440 nm)
+	1
+A	190	excite 280:EM Spectrum Read#19
+B	83	excite 280:EM Spectrum Read#19
+C	49	excite 280:EM Spectrum Read#19
+D	16	excite 280:EM Spectrum Read#19
+E	253	excite 280:EM Spectrum Read#19
+F	10	excite 280:EM Spectrum Read#19
+G	722	excite 280:EM Spectrum Read#19
+H	1009	excite 280:EM Spectrum Read#19
+
+excite 280:EM Spectrum
+Wavelength 20 (445 nm)
+	1
+A	172	excite 280:EM Spectrum Read#20
+B	90	excite 280:EM Spectrum Read#20
+C	40	excite 280:EM Spectrum Read#20
+D	23	excite 280:EM Spectrum Read#20
+E	252	excite 280:EM Spectrum Read#20
+F	23	excite 280:EM Spectrum Read#20
+G	606	excite 280:EM Spectrum Read#20
+H	830	excite 280:EM Spectrum Read#20
+
+excite 280:EM Spectrum
+Wavelength 21 (450 nm)
+	1
+A	134	excite 280:EM Spectrum Read#21
+B	46	excite 280:EM Spectrum Read#21
+C	54	excite 280:EM Spectrum Read#21
+D	18	excite 280:EM Spectrum Read#21
+E	243	excite 280:EM Spectrum Read#21
+F	12	excite 280:EM Spectrum Read#21
+G	514	excite 280:EM Spectrum Read#21
+H	686	excite 280:EM Spectrum Read#21
+
+excite 280:EM Spectrum
+Wavelength 22 (455 nm)
+	1
+A	121	excite 280:EM Spectrum Read#22
+B	64	excite 280:EM Spectrum Read#22
+C	54	excite 280:EM Spectrum Read#22
+D	22	excite 280:EM Spectrum Read#22
+E	231	excite 280:EM Spectrum Read#22
+F	12	excite 280:EM Spectrum Read#22
+G	407	excite 280:EM Spectrum Read#22
+H	567	excite 280:EM Spectrum Read#22
+
+excite 280:EM Spectrum
+Wavelength 23 (460 nm)
+	1
+A	102	excite 280:EM Spectrum Read#23
+B	80	excite 280:EM Spectrum Read#23
+C	61	excite 280:EM Spectrum Read#23
+D	22	excite 280:EM Spectrum Read#23
+E	211	excite 280:EM Spectrum Read#23
+F	11	excite 280:EM Spectrum Read#23
+G	311	excite 280:EM Spectrum Read#23
+H	441	excite 280:EM Spectrum Read#23
+
+excite 280:EM Spectrum
+Wavelength 24 (465 nm)
+	1
+A	79	excite 280:EM Spectrum Read#24
+B	44	excite 280:EM Spectrum Read#24
+C	63	excite 280:EM Spectrum Read#24
+D	23	excite 280:EM Spectrum Read#24
+E	203	excite 280:EM Spectrum Read#24
+F	19	excite 280:EM Spectrum Read#24
+G	253	excite 280:EM Spectrum Read#24
+H	340	excite 280:EM Spectrum Read#24
+
+excite 280:EM Spectrum
+Wavelength 25 (470 nm)
+	1
+A	91	excite 280:EM Spectrum Read#25
+B	36	excite 280:EM Spectrum Read#25
+C	63	excite 280:EM Spectrum Read#25
+D	23	excite 280:EM Spectrum Read#25
+E	167	excite 280:EM Spectrum Read#25
+F	5	excite 280:EM Spectrum Read#25
+G	216	excite 280:EM Spectrum Read#25
+H	289	excite 280:EM Spectrum Read#25
+
+excite 280:EM Spectrum
+Wavelength 26 (475 nm)
+	1
+A	87	excite 280:EM Spectrum Read#26
+B	28	excite 280:EM Spectrum Read#26
+C	63	excite 280:EM Spectrum Read#26
+D	28	excite 280:EM Spectrum Read#26
+E	174	excite 280:EM Spectrum Read#26
+F	7	excite 280:EM Spectrum Read#26
+G	172	excite 280:EM Spectrum Read#26
+H	244	excite 280:EM Spectrum Read#26
+
+excite 280:EM Spectrum
+Wavelength 27 (480 nm)
+	1
+A	57	excite 280:EM Spectrum Read#27
+B	39	excite 280:EM Spectrum Read#27
+C	68	excite 280:EM Spectrum Read#27
+D	31	excite 280:EM Spectrum Read#27
+E	150	excite 280:EM Spectrum Read#27
+F	6	excite 280:EM Spectrum Read#27
+G	130	excite 280:EM Spectrum Read#27
+H	172	excite 280:EM Spectrum Read#27
+
+excite 280:EM Spectrum
+Wavelength 28 (485 nm)
+	1
+A	74	excite 280:EM Spectrum Read#28
+B	27	excite 280:EM Spectrum Read#28
+C	62	excite 280:EM Spectrum Read#28
+D	19	excite 280:EM Spectrum Read#28
+E	112	excite 280:EM Spectrum Read#28
+F	15	excite 280:EM Spectrum Read#28
+G	111	excite 280:EM Spectrum Read#28
+H	168	excite 280:EM Spectrum Read#28
+
+excite 280:EM Spectrum
+Wavelength 29 (490 nm)
+	1
+A	67	excite 280:EM Spectrum Read#29
+B	33	excite 280:EM Spectrum Read#29
+C	54	excite 280:EM Spectrum Read#29
+D	22	excite 280:EM Spectrum Read#29
+E	137	excite 280:EM Spectrum Read#29
+F	9	excite 280:EM Spectrum Read#29
+G	92	excite 280:EM Spectrum Read#29
+H	128	excite 280:EM Spectrum Read#29
+
+excite 280:EM Spectrum
+Wavelength 30 (495 nm)
+	1
+A	52	excite 280:EM Spectrum Read#30
+B	18	excite 280:EM Spectrum Read#30
+C	58	excite 280:EM Spectrum Read#30
+D	26	excite 280:EM Spectrum Read#30
+E	106	excite 280:EM Spectrum Read#30
+F	5	excite 280:EM Spectrum Read#30
+G	76	excite 280:EM Spectrum Read#30
+H	108	excite 280:EM Spectrum Read#30
+
+excite 280:EM Spectrum
+Wavelength 31 (500 nm)
+	1
+A	45	excite 280:EM Spectrum Read#31
+B	20	excite 280:EM Spectrum Read#31
+C	47	excite 280:EM Spectrum Read#31
+D	23	excite 280:EM Spectrum Read#31
+E	108	excite 280:EM Spectrum Read#31
+F	0	excite 280:EM Spectrum Read#31
+G	68	excite 280:EM Spectrum Read#31
+H	85	excite 280:EM Spectrum Read#31
+
+excite 280:EM Spectrum
+Wavelength 32 (505 nm)
+	1
+A	43	excite 280:EM Spectrum Read#32
+B	26	excite 280:EM Spectrum Read#32
+C	50	excite 280:EM Spectrum Read#32
+D	15	excite 280:EM Spectrum Read#32
+E	107	excite 280:EM Spectrum Read#32
+F	6	excite 280:EM Spectrum Read#32
+G	55	excite 280:EM Spectrum Read#32
+H	54	excite 280:EM Spectrum Read#32
+
+excite 280:EM Spectrum
+Wavelength 33 (510 nm)
+	1
+A	41	excite 280:EM Spectrum Read#33
+B	15	excite 280:EM Spectrum Read#33
+C	46	excite 280:EM Spectrum Read#33
+D	24	excite 280:EM Spectrum Read#33
+E	81	excite 280:EM Spectrum Read#33
+F	6	excite 280:EM Spectrum Read#33
+G	32	excite 280:EM Spectrum Read#33
+H	31	excite 280:EM Spectrum Read#33
+
+excite 280:EM Spectrum
+Wavelength 34 (515 nm)
+	1
+A	45	excite 280:EM Spectrum Read#34
+B	22	excite 280:EM Spectrum Read#34
+C	54	excite 280:EM Spectrum Read#34
+D	26	excite 280:EM Spectrum Read#34
+E	87	excite 280:EM Spectrum Read#34
+F	17	excite 280:EM Spectrum Read#34
+G	18	excite 280:EM Spectrum Read#34
+H	49	excite 280:EM Spectrum Read#34
+
+excite 280:EM Spectrum
+Wavelength 35 (520 nm)
+	1
+A	40	excite 280:EM Spectrum Read#35
+B	12	excite 280:EM Spectrum Read#35
+C	45	excite 280:EM Spectrum Read#35
+D	18	excite 280:EM Spectrum Read#35
+E	75	excite 280:EM Spectrum Read#35
+F	2	excite 280:EM Spectrum Read#35
+G	18	excite 280:EM Spectrum Read#35
+H	35	excite 280:EM Spectrum Read#35
+
+excite 280:EM Spectrum
+Wavelength 36 (525 nm)
+	1
+A	22	excite 280:EM Spectrum Read#36
+B	30	excite 280:EM Spectrum Read#36
+C	42	excite 280:EM Spectrum Read#36
+D	12	excite 280:EM Spectrum Read#36
+E	69	excite 280:EM Spectrum Read#36
+F	1	excite 280:EM Spectrum Read#36
+G	0	excite 280:EM Spectrum Read#36
+H	22	excite 280:EM Spectrum Read#36
+
+excite 280:EM Spectrum
+Wavelength 37 (530 nm)
+	1
+A	0	excite 280:EM Spectrum Read#37
+B	26	excite 280:EM Spectrum Read#37
+C	45	excite 280:EM Spectrum Read#37
+D	8	excite 280:EM Spectrum Read#37
+E	40	excite 280:EM Spectrum Read#37
+F	6	excite 280:EM Spectrum Read#37
+G	14	excite 280:EM Spectrum Read#37
+H	28	excite 280:EM Spectrum Read#37
+
+excite 280:EM Spectrum
+Wavelength 38 (535 nm)
+	1
+A	15	excite 280:EM Spectrum Read#38
+B	4	excite 280:EM Spectrum Read#38
+C	38	excite 280:EM Spectrum Read#38
+D	17	excite 280:EM Spectrum Read#38
+E	40	excite 280:EM Spectrum Read#38
+F	14	excite 280:EM Spectrum Read#38
+G	31	excite 280:EM Spectrum Read#38
+H	23	excite 280:EM Spectrum Read#38
+
+excite 280:EM Spectrum
+Wavelength 39 (540 nm)
+	1
+A	17	excite 280:EM Spectrum Read#39
+B	13	excite 280:EM Spectrum Read#39
+C	34	excite 280:EM Spectrum Read#39
+D	14	excite 280:EM Spectrum Read#39
+E	36	excite 280:EM Spectrum Read#39
+F	6	excite 280:EM Spectrum Read#39
+G	7	excite 280:EM Spectrum Read#39
+H	17	excite 280:EM Spectrum Read#39
+
+excite 280:EM Spectrum
+Wavelength 40 (545 nm)
+	1
+A	33	excite 280:EM Spectrum Read#40
+B	0	excite 280:EM Spectrum Read#40
+C	39	excite 280:EM Spectrum Read#40
+D	2	excite 280:EM Spectrum Read#40
+E	52	excite 280:EM Spectrum Read#40
+F	0	excite 280:EM Spectrum Read#40
+G	0	excite 280:EM Spectrum Read#40
+H	23	excite 280:EM Spectrum Read#40
+
+excite 280:EM Spectrum
+Wavelength 41 (550 nm)
+	1
+A	17	excite 280:EM Spectrum Read#41
+B	0	excite 280:EM Spectrum Read#41
+C	28	excite 280:EM Spectrum Read#41
+D	13	excite 280:EM Spectrum Read#41
+E	40	excite 280:EM Spectrum Read#41
+F	4	excite 280:EM Spectrum Read#41
+G	0	excite 280:EM Spectrum Read#41
+H	18	excite 280:EM Spectrum Read#41
+
+excite 280:EM Spectrum
+Wavelength 42 (555 nm)
+	1
+A	20	excite 280:EM Spectrum Read#42
+B	7	excite 280:EM Spectrum Read#42
+C	23	excite 280:EM Spectrum Read#42
+D	11	excite 280:EM Spectrum Read#42
+E	21	excite 280:EM Spectrum Read#42
+F	2	excite 280:EM Spectrum Read#42
+G	2	excite 280:EM Spectrum Read#42
+H	24	excite 280:EM Spectrum Read#42
+
+excite 280:EM Spectrum
+Wavelength 43 (560 nm)
+	1
+A	28	excite 280:EM Spectrum Read#43
+B	30	excite 280:EM Spectrum Read#43
+C	25	excite 280:EM Spectrum Read#43
+D	6	excite 280:EM Spectrum Read#43
+E	22	excite 280:EM Spectrum Read#43
+F	0	excite 280:EM Spectrum Read#43
+G	19	excite 280:EM Spectrum Read#43
+H	0	excite 280:EM Spectrum Read#43
+
+excite 280:EM Spectrum
+Wavelength 44 (565 nm)
+	1
+A	3	excite 280:EM Spectrum Read#44
+B	7	excite 280:EM Spectrum Read#44
+C	14	excite 280:EM Spectrum Read#44
+D	16	excite 280:EM Spectrum Read#44
+E	19	excite 280:EM Spectrum Read#44
+F	7	excite 280:EM Spectrum Read#44
+G	6	excite 280:EM Spectrum Read#44
+H	0	excite 280:EM Spectrum Read#44
+
+excite 280:EM Spectrum
+Wavelength 45 (570 nm)
+	1
+A	5	excite 280:EM Spectrum Read#45
+B	0	excite 280:EM Spectrum Read#45
+C	33	excite 280:EM Spectrum Read#45
+D	9	excite 280:EM Spectrum Read#45
+E	26	excite 280:EM Spectrum Read#45
+F	1	excite 280:EM Spectrum Read#45
+G	0	excite 280:EM Spectrum Read#45
+H	12	excite 280:EM Spectrum Read#45
+
+excite 280:EM Spectrum
+Wavelength 46 (575 nm)
+	1
+A	25	excite 280:EM Spectrum Read#46
+B	2	excite 280:EM Spectrum Read#46
+C	34	excite 280:EM Spectrum Read#46
+D	12	excite 280:EM Spectrum Read#46
+E	24	excite 280:EM Spectrum Read#46
+F	11	excite 280:EM Spectrum Read#46
+G	23	excite 280:EM Spectrum Read#46
+H	0	excite 280:EM Spectrum Read#46
+
+excite 280:EM Spectrum
+Wavelength 47 (580 nm)
+	1
+A	0	excite 280:EM Spectrum Read#47
+B	25	excite 280:EM Spectrum Read#47
+C	20	excite 280:EM Spectrum Read#47
+D	23	excite 280:EM Spectrum Read#47
+E	22	excite 280:EM Spectrum Read#47
+F	0	excite 280:EM Spectrum Read#47
+G	5	excite 280:EM Spectrum Read#47
+H	12	excite 280:EM Spectrum Read#47
+
+excite 280:EM Spectrum
+Wavelength 48 (585 nm)
+	1
+A	31	excite 280:EM Spectrum Read#48
+B	0	excite 280:EM Spectrum Read#48
+C	18	excite 280:EM Spectrum Read#48
+D	3	excite 280:EM Spectrum Read#48
+E	19	excite 280:EM Spectrum Read#48
+F	0	excite 280:EM Spectrum Read#48
+G	26	excite 280:EM Spectrum Read#48
+H	3	excite 280:EM Spectrum Read#48
+
+excite 280:EM Spectrum
+Wavelength 49 (590 nm)
+	1
+A	11	excite 280:EM Spectrum Read#49
+B	7	excite 280:EM Spectrum Read#49
+C	11	excite 280:EM Spectrum Read#49
+D	0	excite 280:EM Spectrum Read#49
+E	0	excite 280:EM Spectrum Read#49
+F	0	excite 280:EM Spectrum Read#49
+G	4	excite 280:EM Spectrum Read#49
+H	7	excite 280:EM Spectrum Read#49
+
+excite 280:EM Spectrum
+Wavelength 50 (595 nm)
+	1
+A	3	excite 280:EM Spectrum Read#50
+B	0	excite 280:EM Spectrum Read#50
+C	21	excite 280:EM Spectrum Read#50
+D	8	excite 280:EM Spectrum Read#50
+E	31	excite 280:EM Spectrum Read#50
+F	0	excite 280:EM Spectrum Read#50
+G	0	excite 280:EM Spectrum Read#50
+H	3	excite 280:EM Spectrum Read#50
+
+excite 280:EM Spectrum
+Wavelength 51 (600 nm)
+	1
+A	11	excite 280:EM Spectrum Read#51
+B	13	excite 280:EM Spectrum Read#51
+C	17	excite 280:EM Spectrum Read#51
+D	5	excite 280:EM Spectrum Read#51
+E	16	excite 280:EM Spectrum Read#51
+F	6	excite 280:EM Spectrum Read#51
+G	17	excite 280:EM Spectrum Read#51
+H	11	excite 280:EM Spectrum Read#51
+
+excite 290:EM Spectrum
+Wavelength 1 (350 nm)
+	1
+A	98669	excite 290:EM Spectrum Read#1
+B	51225	excite 290:EM Spectrum Read#1
+C	59630	excite 290:EM Spectrum Read#1
+D	24490	excite 290:EM Spectrum Read#1
+E	98488	excite 290:EM Spectrum Read#1
+F	28104	excite 290:EM Spectrum Read#1
+G	OVRFLW	excite 290:EM Spectrum Read#1
+H	OVRFLW	excite 290:EM Spectrum Read#1
+
+excite 290:EM Spectrum
+Wavelength 2 (355 nm)
+	1
+A	87599	excite 290:EM Spectrum Read#2
+B	50049	excite 290:EM Spectrum Read#2
+C	51588	excite 290:EM Spectrum Read#2
+D	20854	excite 290:EM Spectrum Read#2
+E	97415	excite 290:EM Spectrum Read#2
+F	22638	excite 290:EM Spectrum Read#2
+G	OVRFLW	excite 290:EM Spectrum Read#2
+H	OVRFLW	excite 290:EM Spectrum Read#2
+
+excite 290:EM Spectrum
+Wavelength 3 (360 nm)
+	1
+A	OVRFLW	excite 290:EM Spectrum Read#3
+B	56670	excite 290:EM Spectrum Read#3
+C	42671	excite 290:EM Spectrum Read#3
+D	16904	excite 290:EM Spectrum Read#3
+E	91348	excite 290:EM Spectrum Read#3
+F	20769	excite 290:EM Spectrum Read#3
+G	OVRFLW	excite 290:EM Spectrum Read#3
+H	OVRFLW	excite 290:EM Spectrum Read#3
+
+excite 290:EM Spectrum
+Wavelength 4 (365 nm)
+	1
+A	OVRFLW	excite 290:EM Spectrum Read#4
+B	89797	excite 290:EM Spectrum Read#4
+C	35230	excite 290:EM Spectrum Read#4
+D	13355	excite 290:EM Spectrum Read#4
+E	90162	excite 290:EM Spectrum Read#4
+F	17420	excite 290:EM Spectrum Read#4
+G	OVRFLW	excite 290:EM Spectrum Read#4
+H	OVRFLW	excite 290:EM Spectrum Read#4
+
+excite 290:EM Spectrum
+Wavelength 5 (370 nm)
+	1
+A	OVRFLW	excite 290:EM Spectrum Read#5
+B	OVRFLW	excite 290:EM Spectrum Read#5
+C	28749	excite 290:EM Spectrum Read#5
+D	13536	excite 290:EM Spectrum Read#5
+E	91031	excite 290:EM Spectrum Read#5
+F	16815	excite 290:EM Spectrum Read#5
+G	OVRFLW	excite 290:EM Spectrum Read#5
+H	OVRFLW	excite 290:EM Spectrum Read#5
+
+excite 290:EM Spectrum
+Wavelength 6 (375 nm)
+	1
+A	OVRFLW	excite 290:EM Spectrum Read#6
+B	OVRFLW	excite 290:EM Spectrum Read#6
+C	24969	excite 290:EM Spectrum Read#6
+D	11434	excite 290:EM Spectrum Read#6
+E	90464	excite 290:EM Spectrum Read#6
+F	14443	excite 290:EM Spectrum Read#6
+G	OVRFLW	excite 290:EM Spectrum Read#6
+H	OVRFLW	excite 290:EM Spectrum Read#6
+
+excite 290:EM Spectrum
+Wavelength 7 (380 nm)
+	1
+A	OVRFLW	excite 290:EM Spectrum Read#7
+B	OVRFLW	excite 290:EM Spectrum Read#7
+C	20597	excite 290:EM Spectrum Read#7
+D	9300	excite 290:EM Spectrum Read#7
+E	OVRFLW	excite 290:EM Spectrum Read#7
+F	12299	excite 290:EM Spectrum Read#7
+G	OVRFLW	excite 290:EM Spectrum Read#7
+H	OVRFLW	excite 290:EM Spectrum Read#7
+
+excite 290:EM Spectrum
+Wavelength 8 (385 nm)
+	1
+A	OVRFLW	excite 290:EM Spectrum Read#8
+B	OVRFLW	excite 290:EM Spectrum Read#8
+C	17115	excite 290:EM Spectrum Read#8
+D	8325	excite 290:EM Spectrum Read#8
+E	OVRFLW	excite 290:EM Spectrum Read#8
+F	12101	excite 290:EM Spectrum Read#8
+G	OVRFLW	excite 290:EM Spectrum Read#8
+H	OVRFLW	excite 290:EM Spectrum Read#8
+
+excite 290:EM Spectrum
+Wavelength 9 (390 nm)
+	1
+A	OVRFLW	excite 290:EM Spectrum Read#9
+B	OVRFLW	excite 290:EM Spectrum Read#9
+C	15566	excite 290:EM Spectrum Read#9
+D	7082	excite 290:EM Spectrum Read#9
+E	OVRFLW	excite 290:EM Spectrum Read#9
+F	10838	excite 290:EM Spectrum Read#9
+G	OVRFLW	excite 290:EM Spectrum Read#9
+H	OVRFLW	excite 290:EM Spectrum Read#9
+
+excite 290:EM Spectrum
+Wavelength 10 (395 nm)
+	1
+A	OVRFLW	excite 290:EM Spectrum Read#10
+B	OVRFLW	excite 290:EM Spectrum Read#10
+C	12686	excite 290:EM Spectrum Read#10
+D	6388	excite 290:EM Spectrum Read#10
+E	OVRFLW	excite 290:EM Spectrum Read#10
+F	9027	excite 290:EM Spectrum Read#10
+G	OVRFLW	excite 290:EM Spectrum Read#10
+H	OVRFLW	excite 290:EM Spectrum Read#10
+
+excite 290:EM Spectrum
+Wavelength 11 (400 nm)
+	1
+A	OVRFLW	excite 290:EM Spectrum Read#11
+B	OVRFLW	excite 290:EM Spectrum Read#11
+C	12979	excite 290:EM Spectrum Read#11
+D	6482	excite 290:EM Spectrum Read#11
+E	OVRFLW	excite 290:EM Spectrum Read#11
+F	10117	excite 290:EM Spectrum Read#11
+G	OVRFLW	excite 290:EM Spectrum Read#11
+H	OVRFLW	excite 290:EM Spectrum Read#11
+
+excite 290:EM Spectrum
+Wavelength 12 (405 nm)
+	1
+A	OVRFLW	excite 290:EM Spectrum Read#12
+B	OVRFLW	excite 290:EM Spectrum Read#12
+C	12342	excite 290:EM Spectrum Read#12
+D	6418	excite 290:EM Spectrum Read#12
+E	OVRFLW	excite 290:EM Spectrum Read#12
+F	8996	excite 290:EM Spectrum Read#12
+G	OVRFLW	excite 290:EM Spectrum Read#12
+H	OVRFLW	excite 290:EM Spectrum Read#12
+
+excite 290:EM Spectrum
+Wavelength 13 (410 nm)
+	1
+A	OVRFLW	excite 290:EM Spectrum Read#13
+B	OVRFLW	excite 290:EM Spectrum Read#13
+C	13331	excite 290:EM Spectrum Read#13
+D	6912	excite 290:EM Spectrum Read#13
+E	OVRFLW	excite 290:EM Spectrum Read#13
+F	9265	excite 290:EM Spectrum Read#13
+G	OVRFLW	excite 290:EM Spectrum Read#13
+H	OVRFLW	excite 290:EM Spectrum Read#13
+
+excite 290:EM Spectrum
+Wavelength 14 (415 nm)
+	1
+A	OVRFLW	excite 290:EM Spectrum Read#14
+B	OVRFLW	excite 290:EM Spectrum Read#14
+C	14863	excite 290:EM Spectrum Read#14
+D	7247	excite 290:EM Spectrum Read#14
+E	OVRFLW	excite 290:EM Spectrum Read#14
+F	10419	excite 290:EM Spectrum Read#14
+G	OVRFLW	excite 290:EM Spectrum Read#14
+H	OVRFLW	excite 290:EM Spectrum Read#14
+
+excite 290:EM Spectrum
+Wavelength 15 (420 nm)
+	1
+A	OVRFLW	excite 290:EM Spectrum Read#15
+B	OVRFLW	excite 290:EM Spectrum Read#15
+C	13973	excite 290:EM Spectrum Read#15
+D	7203	excite 290:EM Spectrum Read#15
+E	OVRFLW	excite 290:EM Spectrum Read#15
+F	9466	excite 290:EM Spectrum Read#15
+G	OVRFLW	excite 290:EM Spectrum Read#15
+H	OVRFLW	excite 290:EM Spectrum Read#15
+
+excite 290:EM Spectrum
+Wavelength 16 (425 nm)
+	1
+A	OVRFLW	excite 290:EM Spectrum Read#16
+B	OVRFLW	excite 290:EM Spectrum Read#16
+C	16843	excite 290:EM Spectrum Read#16
+D	7285	excite 290:EM Spectrum Read#16
+E	OVRFLW	excite 290:EM Spectrum Read#16
+F	9309	excite 290:EM Spectrum Read#16
+G	OVRFLW	excite 290:EM Spectrum Read#16
+H	OVRFLW	excite 290:EM Spectrum Read#16
+
+excite 290:EM Spectrum
+Wavelength 17 (430 nm)
+	1
+A	OVRFLW	excite 290:EM Spectrum Read#17
+B	OVRFLW	excite 290:EM Spectrum Read#17
+C	18016	excite 290:EM Spectrum Read#17
+D	8661	excite 290:EM Spectrum Read#17
+E	OVRFLW	excite 290:EM Spectrum Read#17
+F	8600	excite 290:EM Spectrum Read#17
+G	OVRFLW	excite 290:EM Spectrum Read#17
+H	OVRFLW	excite 290:EM Spectrum Read#17
+
+excite 290:EM Spectrum
+Wavelength 18 (435 nm)
+	1
+A	OVRFLW	excite 290:EM Spectrum Read#18
+B	68232	excite 290:EM Spectrum Read#18
+C	18584	excite 290:EM Spectrum Read#18
+D	8232	excite 290:EM Spectrum Read#18
+E	OVRFLW	excite 290:EM Spectrum Read#18
+F	8206	excite 290:EM Spectrum Read#18
+G	OVRFLW	excite 290:EM Spectrum Read#18
+H	OVRFLW	excite 290:EM Spectrum Read#18
+
+excite 290:EM Spectrum
+Wavelength 19 (440 nm)
+	1
+A	OVRFLW	excite 290:EM Spectrum Read#19
+B	61704	excite 290:EM Spectrum Read#19
+C	21459	excite 290:EM Spectrum Read#19
+D	9413	excite 290:EM Spectrum Read#19
+E	OVRFLW	excite 290:EM Spectrum Read#19
+F	8961	excite 290:EM Spectrum Read#19
+G	OVRFLW	excite 290:EM Spectrum Read#19
+H	OVRFLW	excite 290:EM Spectrum Read#19
+
+excite 290:EM Spectrum
+Wavelength 20 (445 nm)
+	1
+A	50334	excite 290:EM Spectrum Read#20
+B	52403	excite 290:EM Spectrum Read#20
+C	22936	excite 290:EM Spectrum Read#20
+D	9702	excite 290:EM Spectrum Read#20
+E	OVRFLW	excite 290:EM Spectrum Read#20
+F	7986	excite 290:EM Spectrum Read#20
+G	94469	excite 290:EM Spectrum Read#20
+H	OVRFLW	excite 290:EM Spectrum Read#20
+
+excite 290:EM Spectrum
+Wavelength 21 (450 nm)
+	1
+A	46171	excite 290:EM Spectrum Read#21
+B	45324	excite 290:EM Spectrum Read#21
+C	23804	excite 290:EM Spectrum Read#21
+D	8925	excite 290:EM Spectrum Read#21
+E	97375	excite 290:EM Spectrum Read#21
+F	7812	excite 290:EM Spectrum Read#21
+G	78353	excite 290:EM Spectrum Read#21
+H	84210	excite 290:EM Spectrum Read#21
+
+excite 290:EM Spectrum
+Wavelength 22 (455 nm)
+	1
+A	39953	excite 290:EM Spectrum Read#22
+B	35726	excite 290:EM Spectrum Read#22
+C	24535	excite 290:EM Spectrum Read#22
+D	9159	excite 290:EM Spectrum Read#22
+E	88470	excite 290:EM Spectrum Read#22
+F	6707	excite 290:EM Spectrum Read#22
+G	66327	excite 290:EM Spectrum Read#22
+H	67524	excite 290:EM Spectrum Read#22
+
+excite 290:EM Spectrum
+Wavelength 23 (460 nm)
+	1
+A	34398	excite 290:EM Spectrum Read#23
+B	30854	excite 290:EM Spectrum Read#23
+C	24230	excite 290:EM Spectrum Read#23
+D	9185	excite 290:EM Spectrum Read#23
+E	82123	excite 290:EM Spectrum Read#23
+F	6164	excite 290:EM Spectrum Read#23
+G	49747	excite 290:EM Spectrum Read#23
+H	54308	excite 290:EM Spectrum Read#23
+
+excite 290:EM Spectrum
+Wavelength 24 (465 nm)
+	1
+A	28244	excite 290:EM Spectrum Read#24
+B	26275	excite 290:EM Spectrum Read#24
+C	23887	excite 290:EM Spectrum Read#24
+D	9714	excite 290:EM Spectrum Read#24
+E	76376	excite 290:EM Spectrum Read#24
+F	6275	excite 290:EM Spectrum Read#24
+G	39613	excite 290:EM Spectrum Read#24
+H	42474	excite 290:EM Spectrum Read#24
+
+excite 290:EM Spectrum
+Wavelength 25 (470 nm)
+	1
+A	26741	excite 290:EM Spectrum Read#25
+B	23613	excite 290:EM Spectrum Read#25
+C	25751	excite 290:EM Spectrum Read#25
+D	8888	excite 290:EM Spectrum Read#25
+E	68911	excite 290:EM Spectrum Read#25
+F	6138	excite 290:EM Spectrum Read#25
+G	31573	excite 290:EM Spectrum Read#25
+H	36448	excite 290:EM Spectrum Read#25
+
+excite 290:EM Spectrum
+Wavelength 26 (475 nm)
+	1
+A	24374	excite 290:EM Spectrum Read#26
+B	22013	excite 290:EM Spectrum Read#26
+C	26349	excite 290:EM Spectrum Read#26
+D	9423	excite 290:EM Spectrum Read#26
+E	64883	excite 290:EM Spectrum Read#26
+F	5605	excite 290:EM Spectrum Read#26
+G	25413	excite 290:EM Spectrum Read#26
+H	30009	excite 290:EM Spectrum Read#26
+
+excite 290:EM Spectrum
+Wavelength 27 (480 nm)
+	1
+A	20611	excite 290:EM Spectrum Read#27
+B	17715	excite 290:EM Spectrum Read#27
+C	26640	excite 290:EM Spectrum Read#27
+D	9755	excite 290:EM Spectrum Read#27
+E	57017	excite 290:EM Spectrum Read#27
+F	4625	excite 290:EM Spectrum Read#27
+G	21540	excite 290:EM Spectrum Read#27
+H	23047	excite 290:EM Spectrum Read#27
+
+excite 290:EM Spectrum
+Wavelength 28 (485 nm)
+	1
+A	18922	excite 290:EM Spectrum Read#28
+B	15915	excite 290:EM Spectrum Read#28
+C	23553	excite 290:EM Spectrum Read#28
+D	9296	excite 290:EM Spectrum Read#28
+E	53022	excite 290:EM Spectrum Read#28
+F	4197	excite 290:EM Spectrum Read#28
+G	17789	excite 290:EM Spectrum Read#28
+H	20031	excite 290:EM Spectrum Read#28
+
+excite 290:EM Spectrum
+Wavelength 29 (490 nm)
+	1
+A	16514	excite 290:EM Spectrum Read#29
+B	15435	excite 290:EM Spectrum Read#29
+C	23761	excite 290:EM Spectrum Read#29
+D	9032	excite 290:EM Spectrum Read#29
+E	49559	excite 290:EM Spectrum Read#29
+F	4541	excite 290:EM Spectrum Read#29
+G	14528	excite 290:EM Spectrum Read#29
+H	17446	excite 290:EM Spectrum Read#29
+
+excite 290:EM Spectrum
+Wavelength 30 (495 nm)
+	1
+A	16089	excite 290:EM Spectrum Read#30
+B	14744	excite 290:EM Spectrum Read#30
+C	22883	excite 290:EM Spectrum Read#30
+D	9181	excite 290:EM Spectrum Read#30
+E	43452	excite 290:EM Spectrum Read#30
+F	3862	excite 290:EM Spectrum Read#30
+G	12173	excite 290:EM Spectrum Read#30
+H	12557	excite 290:EM Spectrum Read#30
+
+excite 290:EM Spectrum
+Wavelength 31 (500 nm)
+	1
+A	13868	excite 290:EM Spectrum Read#31
+B	12189	excite 290:EM Spectrum Read#31
+C	21973	excite 290:EM Spectrum Read#31
+D	9413	excite 290:EM Spectrum Read#31
+E	41283	excite 290:EM Spectrum Read#31
+F	4102	excite 290:EM Spectrum Read#31
+G	9356	excite 290:EM Spectrum Read#31
+H	10942	excite 290:EM Spectrum Read#31
+
+excite 290:EM Spectrum
+Wavelength 32 (505 nm)
+	1
+A	12963	excite 290:EM Spectrum Read#32
+B	10788	excite 290:EM Spectrum Read#32
+C	21340	excite 290:EM Spectrum Read#32
+D	8707	excite 290:EM Spectrum Read#32
+E	35447	excite 290:EM Spectrum Read#32
+F	3539	excite 290:EM Spectrum Read#32
+G	9095	excite 290:EM Spectrum Read#32
+H	8129	excite 290:EM Spectrum Read#32
+
+excite 290:EM Spectrum
+Wavelength 33 (510 nm)
+	1
+A	11423	excite 290:EM Spectrum Read#33
+B	10655	excite 290:EM Spectrum Read#33
+C	19938	excite 290:EM Spectrum Read#33
+D	8449	excite 290:EM Spectrum Read#33
+E	33241	excite 290:EM Spectrum Read#33
+F	3686	excite 290:EM Spectrum Read#33
+G	7144	excite 290:EM Spectrum Read#33
+H	7807	excite 290:EM Spectrum Read#33
+
+excite 290:EM Spectrum
+Wavelength 34 (515 nm)
+	1
+A	11144	excite 290:EM Spectrum Read#34
+B	9335	excite 290:EM Spectrum Read#34
+C	19646	excite 290:EM Spectrum Read#34
+D	7047	excite 290:EM Spectrum Read#34
+E	29191	excite 290:EM Spectrum Read#34
+F	3240	excite 290:EM Spectrum Read#34
+G	5802	excite 290:EM Spectrum Read#34
+H	5863	excite 290:EM Spectrum Read#34
+
+excite 290:EM Spectrum
+Wavelength 35 (520 nm)
+	1
+A	9128	excite 290:EM Spectrum Read#35
+B	9727	excite 290:EM Spectrum Read#35
+C	18492	excite 290:EM Spectrum Read#35
+D	7157	excite 290:EM Spectrum Read#35
+E	26034	excite 290:EM Spectrum Read#35
+F	2324	excite 290:EM Spectrum Read#35
+G	4744	excite 290:EM Spectrum Read#35
+H	4756	excite 290:EM Spectrum Read#35
+
+excite 290:EM Spectrum
+Wavelength 36 (525 nm)
+	1
+A	8662	excite 290:EM Spectrum Read#36
+B	7638	excite 290:EM Spectrum Read#36
+C	17659	excite 290:EM Spectrum Read#36
+D	6928	excite 290:EM Spectrum Read#36
+E	23983	excite 290:EM Spectrum Read#36
+F	2333	excite 290:EM Spectrum Read#36
+G	3843	excite 290:EM Spectrum Read#36
+H	3928	excite 290:EM Spectrum Read#36
+
+excite 290:EM Spectrum
+Wavelength 37 (530 nm)
+	1
+A	8526	excite 290:EM Spectrum Read#37
+B	6687	excite 290:EM Spectrum Read#37
+C	16468	excite 290:EM Spectrum Read#37
+D	6597	excite 290:EM Spectrum Read#37
+E	21919	excite 290:EM Spectrum Read#37
+F	2600	excite 290:EM Spectrum Read#37
+G	3476	excite 290:EM Spectrum Read#37
+H	4355	excite 290:EM Spectrum Read#37
+
+excite 290:EM Spectrum
+Wavelength 38 (535 nm)
+	1
+A	6480	excite 290:EM Spectrum Read#38
+B	6663	excite 290:EM Spectrum Read#38
+C	15047	excite 290:EM Spectrum Read#38
+D	6425	excite 290:EM Spectrum Read#38
+E	17767	excite 290:EM Spectrum Read#38
+F	2175	excite 290:EM Spectrum Read#38
+G	3230	excite 290:EM Spectrum Read#38
+H	3258	excite 290:EM Spectrum Read#38
+
+excite 290:EM Spectrum
+Wavelength 39 (540 nm)
+	1
+A	6153	excite 290:EM Spectrum Read#39
+B	6601	excite 290:EM Spectrum Read#39
+C	14274	excite 290:EM Spectrum Read#39
+D	5412	excite 290:EM Spectrum Read#39
+E	16453	excite 290:EM Spectrum Read#39
+F	2593	excite 290:EM Spectrum Read#39
+G	2865	excite 290:EM Spectrum Read#39
+H	2010	excite 290:EM Spectrum Read#39
+
+excite 290:EM Spectrum
+Wavelength 40 (545 nm)
+	1
+A	5687	excite 290:EM Spectrum Read#40
+B	5466	excite 290:EM Spectrum Read#40
+C	13312	excite 290:EM Spectrum Read#40
+D	5704	excite 290:EM Spectrum Read#40
+E	16046	excite 290:EM Spectrum Read#40
+F	2511	excite 290:EM Spectrum Read#40
+G	2629	excite 290:EM Spectrum Read#40
+H	1837	excite 290:EM Spectrum Read#40
+
+excite 290:EM Spectrum
+Wavelength 41 (550 nm)
+	1
+A	4884	excite 290:EM Spectrum Read#41
+B	4996	excite 290:EM Spectrum Read#41
+C	12590	excite 290:EM Spectrum Read#41
+D	5482	excite 290:EM Spectrum Read#41
+E	14002	excite 290:EM Spectrum Read#41
+F	2071	excite 290:EM Spectrum Read#41
+G	1887	excite 290:EM Spectrum Read#41
+H	1637	excite 290:EM Spectrum Read#41
+
+excite 290:EM Spectrum
+Wavelength 42 (555 nm)
+	1
+A	4708	excite 290:EM Spectrum Read#42
+B	4371	excite 290:EM Spectrum Read#42
+C	10529	excite 290:EM Spectrum Read#42
+D	5350	excite 290:EM Spectrum Read#42
+E	12610	excite 290:EM Spectrum Read#42
+F	1705	excite 290:EM Spectrum Read#42
+G	1340	excite 290:EM Spectrum Read#42
+H	1841	excite 290:EM Spectrum Read#42
+
+excite 290:EM Spectrum
+Wavelength 43 (560 nm)
+	1
+A	4089	excite 290:EM Spectrum Read#43
+B	4588	excite 290:EM Spectrum Read#43
+C	9823	excite 290:EM Spectrum Read#43
+D	4603	excite 290:EM Spectrum Read#43
+E	11836	excite 290:EM Spectrum Read#43
+F	1610	excite 290:EM Spectrum Read#43
+G	1453	excite 290:EM Spectrum Read#43
+H	1260	excite 290:EM Spectrum Read#43
+
+excite 290:EM Spectrum
+Wavelength 44 (565 nm)
+	1
+A	4169	excite 290:EM Spectrum Read#44
+B	4552	excite 290:EM Spectrum Read#44
+C	9942	excite 290:EM Spectrum Read#44
+D	4237	excite 290:EM Spectrum Read#44
+E	9231	excite 290:EM Spectrum Read#44
+F	1187	excite 290:EM Spectrum Read#44
+G	1833	excite 290:EM Spectrum Read#44
+H	1006	excite 290:EM Spectrum Read#44
+
+excite 290:EM Spectrum
+Wavelength 45 (570 nm)
+	1
+A	3269	excite 290:EM Spectrum Read#45
+B	3912	excite 290:EM Spectrum Read#45
+C	8190	excite 290:EM Spectrum Read#45
+D	3927	excite 290:EM Spectrum Read#45
+E	8996	excite 290:EM Spectrum Read#45
+F	1619	excite 290:EM Spectrum Read#45
+G	1064	excite 290:EM Spectrum Read#45
+H	694	excite 290:EM Spectrum Read#45
+
+excite 290:EM Spectrum
+Wavelength 46 (575 nm)
+	1
+A	2850	excite 290:EM Spectrum Read#46
+B	3492	excite 290:EM Spectrum Read#46
+C	8890	excite 290:EM Spectrum Read#46
+D	4058	excite 290:EM Spectrum Read#46
+E	8772	excite 290:EM Spectrum Read#46
+F	1611	excite 290:EM Spectrum Read#46
+G	1571	excite 290:EM Spectrum Read#46
+H	1391	excite 290:EM Spectrum Read#46
+
+excite 290:EM Spectrum
+Wavelength 47 (580 nm)
+	1
+A	2962	excite 290:EM Spectrum Read#47
+B	4083	excite 290:EM Spectrum Read#47
+C	8002	excite 290:EM Spectrum Read#47
+D	2925	excite 290:EM Spectrum Read#47
+E	6448	excite 290:EM Spectrum Read#47
+F	1184	excite 290:EM Spectrum Read#47
+G	1192	excite 290:EM Spectrum Read#47
+H	466	excite 290:EM Spectrum Read#47
+
+excite 290:EM Spectrum
+Wavelength 48 (585 nm)
+	1
+A	2316	excite 290:EM Spectrum Read#48
+B	3323	excite 290:EM Spectrum Read#48
+C	6409	excite 290:EM Spectrum Read#48
+D	3172	excite 290:EM Spectrum Read#48
+E	6125	excite 290:EM Spectrum Read#48
+F	1501	excite 290:EM Spectrum Read#48
+G	992	excite 290:EM Spectrum Read#48
+H	712	excite 290:EM Spectrum Read#48
+
+excite 290:EM Spectrum
+Wavelength 49 (590 nm)
+	1
+A	2447	excite 290:EM Spectrum Read#49
+B	3494	excite 290:EM Spectrum Read#49
+C	6433	excite 290:EM Spectrum Read#49
+D	3319	excite 290:EM Spectrum Read#49
+E	5264	excite 290:EM Spectrum Read#49
+F	676	excite 290:EM Spectrum Read#49
+G	851	excite 290:EM Spectrum Read#49
+H	965	excite 290:EM Spectrum Read#49
+
+excite 290:EM Spectrum
+Wavelength 50 (595 nm)
+	1
+A	2080	excite 290:EM Spectrum Read#50
+B	2174	excite 290:EM Spectrum Read#50
+C	5612	excite 290:EM Spectrum Read#50
+D	2180	excite 290:EM Spectrum Read#50
+E	4090	excite 290:EM Spectrum Read#50
+F	1284	excite 290:EM Spectrum Read#50
+G	543	excite 290:EM Spectrum Read#50
+H	410	excite 290:EM Spectrum Read#50
+
+excite 290:EM Spectrum
+Wavelength 51 (600 nm)
+	1
+A	1941	excite 290:EM Spectrum Read#51
+B	2432	excite 290:EM Spectrum Read#51
+C	4714	excite 290:EM Spectrum Read#51
+D	2796	excite 290:EM Spectrum Read#51
+E	5109	excite 290:EM Spectrum Read#51
+F	1134	excite 290:EM Spectrum Read#51
+G	539	excite 290:EM Spectrum Read#51
+H	529	excite 290:EM Spectrum Read#51
+
+excite 300:EM Spectrum
+Wavelength 1 (350 nm)
+	1
+A	68207	excite 300:EM Spectrum Read#1
+B	49457	excite 300:EM Spectrum Read#1
+C	45213	excite 300:EM Spectrum Read#1
+D	27402	excite 300:EM Spectrum Read#1
+E	83877	excite 300:EM Spectrum Read#1
+F	31751	excite 300:EM Spectrum Read#1
+G	OVRFLW	excite 300:EM Spectrum Read#1
+H	OVRFLW	excite 300:EM Spectrum Read#1
+
+excite 300:EM Spectrum
+Wavelength 2 (355 nm)
+	1
+A	66884	excite 300:EM Spectrum Read#2
+B	49174	excite 300:EM Spectrum Read#2
+C	41487	excite 300:EM Spectrum Read#2
+D	24812	excite 300:EM Spectrum Read#2
+E	81489	excite 300:EM Spectrum Read#2
+F	27628	excite 300:EM Spectrum Read#2
+G	OVRFLW	excite 300:EM Spectrum Read#2
+H	OVRFLW	excite 300:EM Spectrum Read#2
+
+excite 300:EM Spectrum
+Wavelength 3 (360 nm)
+	1
+A	76724	excite 300:EM Spectrum Read#3
+B	55644	excite 300:EM Spectrum Read#3
+C	32668	excite 300:EM Spectrum Read#3
+D	21449	excite 300:EM Spectrum Read#3
+E	76123	excite 300:EM Spectrum Read#3
+F	24821	excite 300:EM Spectrum Read#3
+G	OVRFLW	excite 300:EM Spectrum Read#3
+H	OVRFLW	excite 300:EM Spectrum Read#3
+
+excite 300:EM Spectrum
+Wavelength 4 (365 nm)
+	1
+A	OVRFLW	excite 300:EM Spectrum Read#4
+B	97690	excite 300:EM Spectrum Read#4
+C	30470	excite 300:EM Spectrum Read#4
+D	20135	excite 300:EM Spectrum Read#4
+E	81357	excite 300:EM Spectrum Read#4
+F	22933	excite 300:EM Spectrum Read#4
+G	OVRFLW	excite 300:EM Spectrum Read#4
+H	OVRFLW	excite 300:EM Spectrum Read#4
+
+excite 300:EM Spectrum
+Wavelength 5 (370 nm)
+	1
+A	OVRFLW	excite 300:EM Spectrum Read#5
+B	OVRFLW	excite 300:EM Spectrum Read#5
+C	25148	excite 300:EM Spectrum Read#5
+D	18868	excite 300:EM Spectrum Read#5
+E	82085	excite 300:EM Spectrum Read#5
+F	20612	excite 300:EM Spectrum Read#5
+G	OVRFLW	excite 300:EM Spectrum Read#5
+H	OVRFLW	excite 300:EM Spectrum Read#5
+
+excite 300:EM Spectrum
+Wavelength 6 (375 nm)
+	1
+A	OVRFLW	excite 300:EM Spectrum Read#6
+B	OVRFLW	excite 300:EM Spectrum Read#6
+C	22917	excite 300:EM Spectrum Read#6
+D	16337	excite 300:EM Spectrum Read#6
+E	87431	excite 300:EM Spectrum Read#6
+F	19386	excite 300:EM Spectrum Read#6
+G	OVRFLW	excite 300:EM Spectrum Read#6
+H	OVRFLW	excite 300:EM Spectrum Read#6
+
+excite 300:EM Spectrum
+Wavelength 7 (380 nm)
+	1
+A	OVRFLW	excite 300:EM Spectrum Read#7
+B	OVRFLW	excite 300:EM Spectrum Read#7
+C	20629	excite 300:EM Spectrum Read#7
+D	13298	excite 300:EM Spectrum Read#7
+E	85259	excite 300:EM Spectrum Read#7
+F	15774	excite 300:EM Spectrum Read#7
+G	OVRFLW	excite 300:EM Spectrum Read#7
+H	OVRFLW	excite 300:EM Spectrum Read#7
+
+excite 300:EM Spectrum
+Wavelength 8 (385 nm)
+	1
+A	OVRFLW	excite 300:EM Spectrum Read#8
+B	OVRFLW	excite 300:EM Spectrum Read#8
+C	17759	excite 300:EM Spectrum Read#8
+D	12865	excite 300:EM Spectrum Read#8
+E	90698	excite 300:EM Spectrum Read#8
+F	14763	excite 300:EM Spectrum Read#8
+G	OVRFLW	excite 300:EM Spectrum Read#8
+H	OVRFLW	excite 300:EM Spectrum Read#8
+
+excite 300:EM Spectrum
+Wavelength 9 (390 nm)
+	1
+A	OVRFLW	excite 300:EM Spectrum Read#9
+B	OVRFLW	excite 300:EM Spectrum Read#9
+C	16143	excite 300:EM Spectrum Read#9
+D	11413	excite 300:EM Spectrum Read#9
+E	OVRFLW	excite 300:EM Spectrum Read#9
+F	15066	excite 300:EM Spectrum Read#9
+G	OVRFLW	excite 300:EM Spectrum Read#9
+H	OVRFLW	excite 300:EM Spectrum Read#9
+
+excite 300:EM Spectrum
+Wavelength 10 (395 nm)
+	1
+A	OVRFLW	excite 300:EM Spectrum Read#10
+B	OVRFLW	excite 300:EM Spectrum Read#10
+C	13260	excite 300:EM Spectrum Read#10
+D	10228	excite 300:EM Spectrum Read#10
+E	OVRFLW	excite 300:EM Spectrum Read#10
+F	12917	excite 300:EM Spectrum Read#10
+G	OVRFLW	excite 300:EM Spectrum Read#10
+H	OVRFLW	excite 300:EM Spectrum Read#10
+
+excite 300:EM Spectrum
+Wavelength 11 (400 nm)
+	1
+A	OVRFLW	excite 300:EM Spectrum Read#11
+B	OVRFLW	excite 300:EM Spectrum Read#11
+C	12695	excite 300:EM Spectrum Read#11
+D	9436	excite 300:EM Spectrum Read#11
+E	OVRFLW	excite 300:EM Spectrum Read#11
+F	13526	excite 300:EM Spectrum Read#11
+G	OVRFLW	excite 300:EM Spectrum Read#11
+H	OVRFLW	excite 300:EM Spectrum Read#11
+
+excite 300:EM Spectrum
+Wavelength 12 (405 nm)
+	1
+A	OVRFLW	excite 300:EM Spectrum Read#12
+B	OVRFLW	excite 300:EM Spectrum Read#12
+C	13042	excite 300:EM Spectrum Read#12
+D	8900	excite 300:EM Spectrum Read#12
+E	OVRFLW	excite 300:EM Spectrum Read#12
+F	11904	excite 300:EM Spectrum Read#12
+G	OVRFLW	excite 300:EM Spectrum Read#12
+H	OVRFLW	excite 300:EM Spectrum Read#12
+
+excite 300:EM Spectrum
+Wavelength 13 (410 nm)
+	1
+A	OVRFLW	excite 300:EM Spectrum Read#13
+B	OVRFLW	excite 300:EM Spectrum Read#13
+C	12982	excite 300:EM Spectrum Read#13
+D	8079	excite 300:EM Spectrum Read#13
+E	OVRFLW	excite 300:EM Spectrum Read#13
+F	12622	excite 300:EM Spectrum Read#13
+G	OVRFLW	excite 300:EM Spectrum Read#13
+H	OVRFLW	excite 300:EM Spectrum Read#13
+
+excite 300:EM Spectrum
+Wavelength 14 (415 nm)
+	1
+A	OVRFLW	excite 300:EM Spectrum Read#14
+B	OVRFLW	excite 300:EM Spectrum Read#14
+C	14224	excite 300:EM Spectrum Read#14
+D	9267	excite 300:EM Spectrum Read#14
+E	OVRFLW	excite 300:EM Spectrum Read#14
+F	13612	excite 300:EM Spectrum Read#14
+G	OVRFLW	excite 300:EM Spectrum Read#14
+H	OVRFLW	excite 300:EM Spectrum Read#14
+
+excite 300:EM Spectrum
+Wavelength 15 (420 nm)
+	1
+A	OVRFLW	excite 300:EM Spectrum Read#15
+B	OVRFLW	excite 300:EM Spectrum Read#15
+C	13631	excite 300:EM Spectrum Read#15
+D	9444	excite 300:EM Spectrum Read#15
+E	OVRFLW	excite 300:EM Spectrum Read#15
+F	12140	excite 300:EM Spectrum Read#15
+G	OVRFLW	excite 300:EM Spectrum Read#15
+H	OVRFLW	excite 300:EM Spectrum Read#15
+
+excite 300:EM Spectrum
+Wavelength 16 (425 nm)
+	1
+A	OVRFLW	excite 300:EM Spectrum Read#16
+B	OVRFLW	excite 300:EM Spectrum Read#16
+C	15418	excite 300:EM Spectrum Read#16
+D	8658	excite 300:EM Spectrum Read#16
+E	OVRFLW	excite 300:EM Spectrum Read#16
+F	12940	excite 300:EM Spectrum Read#16
+G	OVRFLW	excite 300:EM Spectrum Read#16
+H	OVRFLW	excite 300:EM Spectrum Read#16
+
+excite 300:EM Spectrum
+Wavelength 17 (430 nm)
+	1
+A	OVRFLW	excite 300:EM Spectrum Read#17
+B	OVRFLW	excite 300:EM Spectrum Read#17
+C	17750	excite 300:EM Spectrum Read#17
+D	9049	excite 300:EM Spectrum Read#17
+E	OVRFLW	excite 300:EM Spectrum Read#17
+F	12343	excite 300:EM Spectrum Read#17
+G	OVRFLW	excite 300:EM Spectrum Read#17
+H	OVRFLW	excite 300:EM Spectrum Read#17
+
+excite 300:EM Spectrum
+Wavelength 18 (435 nm)
+	1
+A	OVRFLW	excite 300:EM Spectrum Read#18
+B	OVRFLW	excite 300:EM Spectrum Read#18
+C	17611	excite 300:EM Spectrum Read#18
+D	10410	excite 300:EM Spectrum Read#18
+E	OVRFLW	excite 300:EM Spectrum Read#18
+F	11975	excite 300:EM Spectrum Read#18
+G	OVRFLW	excite 300:EM Spectrum Read#18
+H	OVRFLW	excite 300:EM Spectrum Read#18
+
+excite 300:EM Spectrum
+Wavelength 19 (440 nm)
+	1
+A	OVRFLW	excite 300:EM Spectrum Read#19
+B	66110	excite 300:EM Spectrum Read#19
+C	18839	excite 300:EM Spectrum Read#19
+D	11194	excite 300:EM Spectrum Read#19
+E	OVRFLW	excite 300:EM Spectrum Read#19
+F	11474	excite 300:EM Spectrum Read#19
+G	OVRFLW	excite 300:EM Spectrum Read#19
+H	OVRFLW	excite 300:EM Spectrum Read#19
+
+excite 300:EM Spectrum
+Wavelength 20 (445 nm)
+	1
+A	OVRFLW	excite 300:EM Spectrum Read#20
+B	57300	excite 300:EM Spectrum Read#20
+C	20200	excite 300:EM Spectrum Read#20
+D	10369	excite 300:EM Spectrum Read#20
+E	93138	excite 300:EM Spectrum Read#20
+F	11390	excite 300:EM Spectrum Read#20
+G	OVRFLW	excite 300:EM Spectrum Read#20
+H	OVRFLW	excite 300:EM Spectrum Read#20
+
+excite 300:EM Spectrum
+Wavelength 21 (450 nm)
+	1
+A	62917	excite 300:EM Spectrum Read#21
+B	46578	excite 300:EM Spectrum Read#21
+C	22793	excite 300:EM Spectrum Read#21
+D	11988	excite 300:EM Spectrum Read#21
+E	87830	excite 300:EM Spectrum Read#21
+F	10637	excite 300:EM Spectrum Read#21
+G	OVRFLW	excite 300:EM Spectrum Read#21
+H	OVRFLW	excite 300:EM Spectrum Read#21
+
+excite 300:EM Spectrum
+Wavelength 22 (455 nm)
+	1
+A	51040	excite 300:EM Spectrum Read#22
+B	39305	excite 300:EM Spectrum Read#22
+C	22634	excite 300:EM Spectrum Read#22
+D	10719	excite 300:EM Spectrum Read#22
+E	82966	excite 300:EM Spectrum Read#22
+F	9269	excite 300:EM Spectrum Read#22
+G	OVRFLW	excite 300:EM Spectrum Read#22
+H	OVRFLW	excite 300:EM Spectrum Read#22
+
+excite 300:EM Spectrum
+Wavelength 23 (460 nm)
+	1
+A	44696	excite 300:EM Spectrum Read#23
+B	33191	excite 300:EM Spectrum Read#23
+C	20659	excite 300:EM Spectrum Read#23
+D	11143	excite 300:EM Spectrum Read#23
+E	71393	excite 300:EM Spectrum Read#23
+F	7784	excite 300:EM Spectrum Read#23
+G	97091	excite 300:EM Spectrum Read#23
+H	OVRFLW	excite 300:EM Spectrum Read#23
+
+excite 300:EM Spectrum
+Wavelength 24 (465 nm)
+	1
+A	41229	excite 300:EM Spectrum Read#24
+B	28532	excite 300:EM Spectrum Read#24
+C	21301	excite 300:EM Spectrum Read#24
+D	10162	excite 300:EM Spectrum Read#24
+E	65189	excite 300:EM Spectrum Read#24
+F	8518	excite 300:EM Spectrum Read#24
+G	78770	excite 300:EM Spectrum Read#24
+H	OVRFLW	excite 300:EM Spectrum Read#24
+
+excite 300:EM Spectrum
+Wavelength 25 (470 nm)
+	1
+A	35078	excite 300:EM Spectrum Read#25
+B	25518	excite 300:EM Spectrum Read#25
+C	22942	excite 300:EM Spectrum Read#25
+D	10871	excite 300:EM Spectrum Read#25
+E	60397	excite 300:EM Spectrum Read#25
+F	7547	excite 300:EM Spectrum Read#25
+G	61909	excite 300:EM Spectrum Read#25
+H	OVRFLW	excite 300:EM Spectrum Read#25
+
+excite 300:EM Spectrum
+Wavelength 26 (475 nm)
+	1
+A	31801	excite 300:EM Spectrum Read#26
+B	23333	excite 300:EM Spectrum Read#26
+C	21349	excite 300:EM Spectrum Read#26
+D	10183	excite 300:EM Spectrum Read#26
+E	60348	excite 300:EM Spectrum Read#26
+F	6904	excite 300:EM Spectrum Read#26
+G	53169	excite 300:EM Spectrum Read#26
+H	88890	excite 300:EM Spectrum Read#26
+
+excite 300:EM Spectrum
+Wavelength 27 (480 nm)
+	1
+A	27976	excite 300:EM Spectrum Read#27
+B	20598	excite 300:EM Spectrum Read#27
+C	24001	excite 300:EM Spectrum Read#27
+D	9511	excite 300:EM Spectrum Read#27
+E	53688	excite 300:EM Spectrum Read#27
+F	6116	excite 300:EM Spectrum Read#27
+G	45072	excite 300:EM Spectrum Read#27
+H	73706	excite 300:EM Spectrum Read#27
+
+excite 300:EM Spectrum
+Wavelength 28 (485 nm)
+	1
+A	25917	excite 300:EM Spectrum Read#28
+B	18030	excite 300:EM Spectrum Read#28
+C	20976	excite 300:EM Spectrum Read#28
+D	11192	excite 300:EM Spectrum Read#28
+E	49527	excite 300:EM Spectrum Read#28
+F	6406	excite 300:EM Spectrum Read#28
+G	33002	excite 300:EM Spectrum Read#28
+H	55769	excite 300:EM Spectrum Read#28
+
+excite 300:EM Spectrum
+Wavelength 29 (490 nm)
+	1
+A	21952	excite 300:EM Spectrum Read#29
+B	17417	excite 300:EM Spectrum Read#29
+C	20224	excite 300:EM Spectrum Read#29
+D	9256	excite 300:EM Spectrum Read#29
+E	45956	excite 300:EM Spectrum Read#29
+F	5856	excite 300:EM Spectrum Read#29
+G	28675	excite 300:EM Spectrum Read#29
+H	48048	excite 300:EM Spectrum Read#29
+
+excite 300:EM Spectrum
+Wavelength 30 (495 nm)
+	1
+A	20853	excite 300:EM Spectrum Read#30
+B	15254	excite 300:EM Spectrum Read#30
+C	18300	excite 300:EM Spectrum Read#30
+D	9595	excite 300:EM Spectrum Read#30
+E	41335	excite 300:EM Spectrum Read#30
+F	6103	excite 300:EM Spectrum Read#30
+G	21371	excite 300:EM Spectrum Read#30
+H	39768	excite 300:EM Spectrum Read#30
+
+excite 300:EM Spectrum
+Wavelength 31 (500 nm)
+	1
+A	17336	excite 300:EM Spectrum Read#31
+B	13242	excite 300:EM Spectrum Read#31
+C	20141	excite 300:EM Spectrum Read#31
+D	9838	excite 300:EM Spectrum Read#31
+E	36555	excite 300:EM Spectrum Read#31
+F	4530	excite 300:EM Spectrum Read#31
+G	19420	excite 300:EM Spectrum Read#31
+H	31328	excite 300:EM Spectrum Read#31
+
+excite 300:EM Spectrum
+Wavelength 32 (505 nm)
+	1
+A	15181	excite 300:EM Spectrum Read#32
+B	11050	excite 300:EM Spectrum Read#32
+C	18605	excite 300:EM Spectrum Read#32
+D	9093	excite 300:EM Spectrum Read#32
+E	30001	excite 300:EM Spectrum Read#32
+F	4658	excite 300:EM Spectrum Read#32
+G	14284	excite 300:EM Spectrum Read#32
+H	21909	excite 300:EM Spectrum Read#32
+
+excite 300:EM Spectrum
+Wavelength 33 (510 nm)
+	1
+A	14219	excite 300:EM Spectrum Read#33
+B	10917	excite 300:EM Spectrum Read#33
+C	17682	excite 300:EM Spectrum Read#33
+D	7914	excite 300:EM Spectrum Read#33
+E	29770	excite 300:EM Spectrum Read#33
+F	3983	excite 300:EM Spectrum Read#33
+G	12196	excite 300:EM Spectrum Read#33
+H	20767	excite 300:EM Spectrum Read#33
+
+excite 300:EM Spectrum
+Wavelength 34 (515 nm)
+	1
+A	12801	excite 300:EM Spectrum Read#34
+B	10061	excite 300:EM Spectrum Read#34
+C	15663	excite 300:EM Spectrum Read#34
+D	7773	excite 300:EM Spectrum Read#34
+E	23725	excite 300:EM Spectrum Read#34
+F	4198	excite 300:EM Spectrum Read#34
+G	10887	excite 300:EM Spectrum Read#34
+H	15599	excite 300:EM Spectrum Read#34
+
+excite 300:EM Spectrum
+Wavelength 35 (520 nm)
+	1
+A	11145	excite 300:EM Spectrum Read#35
+B	9133	excite 300:EM Spectrum Read#35
+C	15287	excite 300:EM Spectrum Read#35
+D	7677	excite 300:EM Spectrum Read#35
+E	23447	excite 300:EM Spectrum Read#35
+F	3294	excite 300:EM Spectrum Read#35
+G	8922	excite 300:EM Spectrum Read#35
+H	14321	excite 300:EM Spectrum Read#35
+
+excite 300:EM Spectrum
+Wavelength 36 (525 nm)
+	1
+A	10163	excite 300:EM Spectrum Read#36
+B	6766	excite 300:EM Spectrum Read#36
+C	13439	excite 300:EM Spectrum Read#36
+D	7064	excite 300:EM Spectrum Read#36
+E	21137	excite 300:EM Spectrum Read#36
+F	3203	excite 300:EM Spectrum Read#36
+G	6917	excite 300:EM Spectrum Read#36
+H	11325	excite 300:EM Spectrum Read#36
+
+excite 300:EM Spectrum
+Wavelength 37 (530 nm)
+	1
+A	9684	excite 300:EM Spectrum Read#37
+B	7524	excite 300:EM Spectrum Read#37
+C	12945	excite 300:EM Spectrum Read#37
+D	6352	excite 300:EM Spectrum Read#37
+E	17005	excite 300:EM Spectrum Read#37
+F	3164	excite 300:EM Spectrum Read#37
+G	5187	excite 300:EM Spectrum Read#37
+H	8745	excite 300:EM Spectrum Read#37
+
+excite 300:EM Spectrum
+Wavelength 38 (535 nm)
+	1
+A	8600	excite 300:EM Spectrum Read#38
+B	7471	excite 300:EM Spectrum Read#38
+C	11629	excite 300:EM Spectrum Read#38
+D	5911	excite 300:EM Spectrum Read#38
+E	15771	excite 300:EM Spectrum Read#38
+F	2389	excite 300:EM Spectrum Read#38
+G	4390	excite 300:EM Spectrum Read#38
+H	8276	excite 300:EM Spectrum Read#38
+
+excite 300:EM Spectrum
+Wavelength 39 (540 nm)
+	1
+A	7141	excite 300:EM Spectrum Read#39
+B	5833	excite 300:EM Spectrum Read#39
+C	13669	excite 300:EM Spectrum Read#39
+D	7149	excite 300:EM Spectrum Read#39
+E	14807	excite 300:EM Spectrum Read#39
+F	2049	excite 300:EM Spectrum Read#39
+G	4709	excite 300:EM Spectrum Read#39
+H	6062	excite 300:EM Spectrum Read#39
+
+excite 300:EM Spectrum
+Wavelength 40 (545 nm)
+	1
+A	6811	excite 300:EM Spectrum Read#40
+B	5728	excite 300:EM Spectrum Read#40
+C	10375	excite 300:EM Spectrum Read#40
+D	5414	excite 300:EM Spectrum Read#40
+E	14161	excite 300:EM Spectrum Read#40
+F	2327	excite 300:EM Spectrum Read#40
+G	3493	excite 300:EM Spectrum Read#40
+H	4311	excite 300:EM Spectrum Read#40
+
+excite 300:EM Spectrum
+Wavelength 41 (550 nm)
+	1
+A	6919	excite 300:EM Spectrum Read#41
+B	5278	excite 300:EM Spectrum Read#41
+C	10839	excite 300:EM Spectrum Read#41
+D	5447	excite 300:EM Spectrum Read#41
+E	12531	excite 300:EM Spectrum Read#41
+F	2707	excite 300:EM Spectrum Read#41
+G	2648	excite 300:EM Spectrum Read#41
+H	5125	excite 300:EM Spectrum Read#41
+
+excite 300:EM Spectrum
+Wavelength 42 (555 nm)
+	1
+A	5703	excite 300:EM Spectrum Read#42
+B	5310	excite 300:EM Spectrum Read#42
+C	9967	excite 300:EM Spectrum Read#42
+D	5085	excite 300:EM Spectrum Read#42
+E	12016	excite 300:EM Spectrum Read#42
+F	2685	excite 300:EM Spectrum Read#42
+G	2702	excite 300:EM Spectrum Read#42
+H	2697	excite 300:EM Spectrum Read#42
+
+excite 300:EM Spectrum
+Wavelength 43 (560 nm)
+	1
+A	4790	excite 300:EM Spectrum Read#43
+B	4339	excite 300:EM Spectrum Read#43
+C	9153	excite 300:EM Spectrum Read#43
+D	4921	excite 300:EM Spectrum Read#43
+E	9650	excite 300:EM Spectrum Read#43
+F	1849	excite 300:EM Spectrum Read#43
+G	2010	excite 300:EM Spectrum Read#43
+H	2913	excite 300:EM Spectrum Read#43
+
+excite 300:EM Spectrum
+Wavelength 44 (565 nm)
+	1
+A	4760	excite 300:EM Spectrum Read#44
+B	3701	excite 300:EM Spectrum Read#44
+C	8121	excite 300:EM Spectrum Read#44
+D	4596	excite 300:EM Spectrum Read#44
+E	9405	excite 300:EM Spectrum Read#44
+F	2160	excite 300:EM Spectrum Read#44
+G	1908	excite 300:EM Spectrum Read#44
+H	2879	excite 300:EM Spectrum Read#44
+
+excite 300:EM Spectrum
+Wavelength 45 (570 nm)
+	1
+A	4787	excite 300:EM Spectrum Read#45
+B	4320	excite 300:EM Spectrum Read#45
+C	7620	excite 300:EM Spectrum Read#45
+D	4997	excite 300:EM Spectrum Read#45
+E	6831	excite 300:EM Spectrum Read#45
+F	1736	excite 300:EM Spectrum Read#45
+G	1637	excite 300:EM Spectrum Read#45
+H	2215	excite 300:EM Spectrum Read#45
+
+excite 300:EM Spectrum
+Wavelength 46 (575 nm)
+	1
+A	4566	excite 300:EM Spectrum Read#46
+B	3984	excite 300:EM Spectrum Read#46
+C	6157	excite 300:EM Spectrum Read#46
+D	3606	excite 300:EM Spectrum Read#46
+E	6363	excite 300:EM Spectrum Read#46
+F	1528	excite 300:EM Spectrum Read#46
+G	1519	excite 300:EM Spectrum Read#46
+H	1862	excite 300:EM Spectrum Read#46
+
+excite 300:EM Spectrum
+Wavelength 47 (580 nm)
+	1
+A	4166	excite 300:EM Spectrum Read#47
+B	3349	excite 300:EM Spectrum Read#47
+C	5896	excite 300:EM Spectrum Read#47
+D	3297	excite 300:EM Spectrum Read#47
+E	7098	excite 300:EM Spectrum Read#47
+F	2009	excite 300:EM Spectrum Read#47
+G	852	excite 300:EM Spectrum Read#47
+H	2497	excite 300:EM Spectrum Read#47
+
+excite 300:EM Spectrum
+Wavelength 48 (585 nm)
+	1
+A	3987	excite 300:EM Spectrum Read#48
+B	2678	excite 300:EM Spectrum Read#48
+C	5849	excite 300:EM Spectrum Read#48
+D	3804	excite 300:EM Spectrum Read#48
+E	5335	excite 300:EM Spectrum Read#48
+F	1846	excite 300:EM Spectrum Read#48
+G	1151	excite 300:EM Spectrum Read#48
+H	1173	excite 300:EM Spectrum Read#48
+
+excite 300:EM Spectrum
+Wavelength 49 (590 nm)
+	1
+A	2575	excite 300:EM Spectrum Read#49
+B	2941	excite 300:EM Spectrum Read#49
+C	5855	excite 300:EM Spectrum Read#49
+D	3767	excite 300:EM Spectrum Read#49
+E	7120	excite 300:EM Spectrum Read#49
+F	2150	excite 300:EM Spectrum Read#49
+G	1583	excite 300:EM Spectrum Read#49
+H	1509	excite 300:EM Spectrum Read#49
+
+excite 300:EM Spectrum
+Wavelength 50 (595 nm)
+	1
+A	2735	excite 300:EM Spectrum Read#50
+B	3602	excite 300:EM Spectrum Read#50
+C	5413	excite 300:EM Spectrum Read#50
+D	2631	excite 300:EM Spectrum Read#50
+E	5089	excite 300:EM Spectrum Read#50
+F	1546	excite 300:EM Spectrum Read#50
+G	681	excite 300:EM Spectrum Read#50
+H	1629	excite 300:EM Spectrum Read#50
+
+excite 300:EM Spectrum
+Wavelength 51 (600 nm)
+	1
+A	2668	excite 300:EM Spectrum Read#51
+B	2085	excite 300:EM Spectrum Read#51
+C	5512	excite 300:EM Spectrum Read#51
+D	2734	excite 300:EM Spectrum Read#51
+E	4426	excite 300:EM Spectrum Read#51
+F	1305	excite 300:EM Spectrum Read#51
+G	1104	excite 300:EM Spectrum Read#51
+H	1051	excite 300:EM Spectrum Read#51
+
+excite 350:EM Spectrum
+Wavelength 1 (380 nm)
+	1
+A	OVRFLW	excite 350:EM Spectrum Read#1
+B	OVRFLW	excite 350:EM Spectrum Read#1
+C	4357	excite 350:EM Spectrum Read#1
+D	4326	excite 350:EM Spectrum Read#1
+E	31288	excite 350:EM Spectrum Read#1
+F	9973	excite 350:EM Spectrum Read#1
+G	OVRFLW	excite 350:EM Spectrum Read#1
+H	OVRFLW	excite 350:EM Spectrum Read#1
+
+excite 350:EM Spectrum
+Wavelength 2 (385 nm)
+	1
+A	OVRFLW	excite 350:EM Spectrum Read#2
+B	OVRFLW	excite 350:EM Spectrum Read#2
+C	4179	excite 350:EM Spectrum Read#2
+D	3888	excite 350:EM Spectrum Read#2
+E	35530	excite 350:EM Spectrum Read#2
+F	9293	excite 350:EM Spectrum Read#2
+G	OVRFLW	excite 350:EM Spectrum Read#2
+H	OVRFLW	excite 350:EM Spectrum Read#2
+
+excite 350:EM Spectrum
+Wavelength 3 (390 nm)
+	1
+A	OVRFLW	excite 350:EM Spectrum Read#3
+B	OVRFLW	excite 350:EM Spectrum Read#3
+C	5464	excite 350:EM Spectrum Read#3
+D	4862	excite 350:EM Spectrum Read#3
+E	41076	excite 350:EM Spectrum Read#3
+F	10445	excite 350:EM Spectrum Read#3
+G	OVRFLW	excite 350:EM Spectrum Read#3
+H	OVRFLW	excite 350:EM Spectrum Read#3
+
+excite 350:EM Spectrum
+Wavelength 4 (395 nm)
+	1
+A	OVRFLW	excite 350:EM Spectrum Read#4
+B	OVRFLW	excite 350:EM Spectrum Read#4
+C	6333	excite 350:EM Spectrum Read#4
+D	5447	excite 350:EM Spectrum Read#4
+E	45912	excite 350:EM Spectrum Read#4
+F	13140	excite 350:EM Spectrum Read#4
+G	OVRFLW	excite 350:EM Spectrum Read#4
+H	OVRFLW	excite 350:EM Spectrum Read#4
+
+excite 350:EM Spectrum
+Wavelength 5 (400 nm)
+	1
+A	OVRFLW	excite 350:EM Spectrum Read#5
+B	OVRFLW	excite 350:EM Spectrum Read#5
+C	6453	excite 350:EM Spectrum Read#5
+D	6492	excite 350:EM Spectrum Read#5
+E	47213	excite 350:EM Spectrum Read#5
+F	13428	excite 350:EM Spectrum Read#5
+G	OVRFLW	excite 350:EM Spectrum Read#5
+H	OVRFLW	excite 350:EM Spectrum Read#5
+
+excite 350:EM Spectrum
+Wavelength 6 (405 nm)
+	1
+A	OVRFLW	excite 350:EM Spectrum Read#6
+B	OVRFLW	excite 350:EM Spectrum Read#6
+C	9020	excite 350:EM Spectrum Read#6
+D	6660	excite 350:EM Spectrum Read#6
+E	49310	excite 350:EM Spectrum Read#6
+F	15363	excite 350:EM Spectrum Read#6
+G	OVRFLW	excite 350:EM Spectrum Read#6
+H	OVRFLW	excite 350:EM Spectrum Read#6
+
+excite 350:EM Spectrum
+Wavelength 7 (410 nm)
+	1
+A	OVRFLW	excite 350:EM Spectrum Read#7
+B	OVRFLW	excite 350:EM Spectrum Read#7
+C	9307	excite 350:EM Spectrum Read#7
+D	8787	excite 350:EM Spectrum Read#7
+E	54254	excite 350:EM Spectrum Read#7
+F	16333	excite 350:EM Spectrum Read#7
+G	OVRFLW	excite 350:EM Spectrum Read#7
+H	OVRFLW	excite 350:EM Spectrum Read#7
+
+excite 350:EM Spectrum
+Wavelength 8 (415 nm)
+	1
+A	OVRFLW	excite 350:EM Spectrum Read#8
+B	OVRFLW	excite 350:EM Spectrum Read#8
+C	10805	excite 350:EM Spectrum Read#8
+D	8977	excite 350:EM Spectrum Read#8
+E	54678	excite 350:EM Spectrum Read#8
+F	16684	excite 350:EM Spectrum Read#8
+G	OVRFLW	excite 350:EM Spectrum Read#8
+H	OVRFLW	excite 350:EM Spectrum Read#8
+
+excite 350:EM Spectrum
+Wavelength 9 (420 nm)
+	1
+A	OVRFLW	excite 350:EM Spectrum Read#9
+B	OVRFLW	excite 350:EM Spectrum Read#9
+C	11483	excite 350:EM Spectrum Read#9
+D	8190	excite 350:EM Spectrum Read#9
+E	51262	excite 350:EM Spectrum Read#9
+F	17019	excite 350:EM Spectrum Read#9
+G	OVRFLW	excite 350:EM Spectrum Read#9
+H	OVRFLW	excite 350:EM Spectrum Read#9
+
+excite 350:EM Spectrum
+Wavelength 10 (425 nm)
+	1
+A	OVRFLW	excite 350:EM Spectrum Read#10
+B	OVRFLW	excite 350:EM Spectrum Read#10
+C	12241	excite 350:EM Spectrum Read#10
+D	9368	excite 350:EM Spectrum Read#10
+E	52529	excite 350:EM Spectrum Read#10
+F	16579	excite 350:EM Spectrum Read#10
+G	OVRFLW	excite 350:EM Spectrum Read#10
+H	OVRFLW	excite 350:EM Spectrum Read#10
+
+excite 350:EM Spectrum
+Wavelength 11 (430 nm)
+	1
+A	OVRFLW	excite 350:EM Spectrum Read#11
+B	98313	excite 350:EM Spectrum Read#11
+C	13857	excite 350:EM Spectrum Read#11
+D	9089	excite 350:EM Spectrum Read#11
+E	51537	excite 350:EM Spectrum Read#11
+F	16172	excite 350:EM Spectrum Read#11
+G	OVRFLW	excite 350:EM Spectrum Read#11
+H	OVRFLW	excite 350:EM Spectrum Read#11
+
+excite 350:EM Spectrum
+Wavelength 12 (435 nm)
+	1
+A	OVRFLW	excite 350:EM Spectrum Read#12
+B	83458	excite 350:EM Spectrum Read#12
+C	13250	excite 350:EM Spectrum Read#12
+D	9278	excite 350:EM Spectrum Read#12
+E	50441	excite 350:EM Spectrum Read#12
+F	16887	excite 350:EM Spectrum Read#12
+G	OVRFLW	excite 350:EM Spectrum Read#12
+H	OVRFLW	excite 350:EM Spectrum Read#12
+
+excite 350:EM Spectrum
+Wavelength 13 (440 nm)
+	1
+A	85532	excite 350:EM Spectrum Read#13
+B	70628	excite 350:EM Spectrum Read#13
+C	15374	excite 350:EM Spectrum Read#13
+D	10469	excite 350:EM Spectrum Read#13
+E	46122	excite 350:EM Spectrum Read#13
+F	16576	excite 350:EM Spectrum Read#13
+G	OVRFLW	excite 350:EM Spectrum Read#13
+H	OVRFLW	excite 350:EM Spectrum Read#13
+
+excite 350:EM Spectrum
+Wavelength 14 (445 nm)
+	1
+A	72180	excite 350:EM Spectrum Read#14
+B	60468	excite 350:EM Spectrum Read#14
+C	15298	excite 350:EM Spectrum Read#14
+D	9286	excite 350:EM Spectrum Read#14
+E	45989	excite 350:EM Spectrum Read#14
+F	15649	excite 350:EM Spectrum Read#14
+G	OVRFLW	excite 350:EM Spectrum Read#14
+H	OVRFLW	excite 350:EM Spectrum Read#14
+
+excite 350:EM Spectrum
+Wavelength 15 (450 nm)
+	1
+A	61782	excite 350:EM Spectrum Read#15
+B	52118	excite 350:EM Spectrum Read#15
+C	15965	excite 350:EM Spectrum Read#15
+D	9902	excite 350:EM Spectrum Read#15
+E	44922	excite 350:EM Spectrum Read#15
+F	16261	excite 350:EM Spectrum Read#15
+G	OVRFLW	excite 350:EM Spectrum Read#15
+H	OVRFLW	excite 350:EM Spectrum Read#15
+
+excite 350:EM Spectrum
+Wavelength 16 (455 nm)
+	1
+A	54052	excite 350:EM Spectrum Read#16
+B	43882	excite 350:EM Spectrum Read#16
+C	16006	excite 350:EM Spectrum Read#16
+D	8237	excite 350:EM Spectrum Read#16
+E	37642	excite 350:EM Spectrum Read#16
+F	14552	excite 350:EM Spectrum Read#16
+G	OVRFLW	excite 350:EM Spectrum Read#16
+H	OVRFLW	excite 350:EM Spectrum Read#16
+
+excite 350:EM Spectrum
+Wavelength 17 (460 nm)
+	1
+A	42964	excite 350:EM Spectrum Read#17
+B	37318	excite 350:EM Spectrum Read#17
+C	15405	excite 350:EM Spectrum Read#17
+D	7807	excite 350:EM Spectrum Read#17
+E	34925	excite 350:EM Spectrum Read#17
+F	12262	excite 350:EM Spectrum Read#17
+G	92927	excite 350:EM Spectrum Read#17
+H	OVRFLW	excite 350:EM Spectrum Read#17
+
+excite 350:EM Spectrum
+Wavelength 18 (465 nm)
+	1
+A	39347	excite 350:EM Spectrum Read#18
+B	31966	excite 350:EM Spectrum Read#18
+C	15703	excite 350:EM Spectrum Read#18
+D	8725	excite 350:EM Spectrum Read#18
+E	33057	excite 350:EM Spectrum Read#18
+F	12043	excite 350:EM Spectrum Read#18
+G	73041	excite 350:EM Spectrum Read#18
+H	OVRFLW	excite 350:EM Spectrum Read#18
+
+excite 350:EM Spectrum
+Wavelength 19 (470 nm)
+	1
+A	34187	excite 350:EM Spectrum Read#19
+B	27697	excite 350:EM Spectrum Read#19
+C	15953	excite 350:EM Spectrum Read#19
+D	8607	excite 350:EM Spectrum Read#19
+E	30662	excite 350:EM Spectrum Read#19
+F	11800	excite 350:EM Spectrum Read#19
+G	60911	excite 350:EM Spectrum Read#19
+H	OVRFLW	excite 350:EM Spectrum Read#19
+
+excite 350:EM Spectrum
+Wavelength 20 (475 nm)
+	1
+A	28922	excite 350:EM Spectrum Read#20
+B	25861	excite 350:EM Spectrum Read#20
+C	14444	excite 350:EM Spectrum Read#20
+D	7918	excite 350:EM Spectrum Read#20
+E	27821	excite 350:EM Spectrum Read#20
+F	10931	excite 350:EM Spectrum Read#20
+G	51212	excite 350:EM Spectrum Read#20
+H	87010	excite 350:EM Spectrum Read#20
+
+excite 350:EM Spectrum
+Wavelength 21 (480 nm)
+	1
+A	25823	excite 350:EM Spectrum Read#21
+B	22983	excite 350:EM Spectrum Read#21
+C	14630	excite 350:EM Spectrum Read#21
+D	6949	excite 350:EM Spectrum Read#21
+E	24415	excite 350:EM Spectrum Read#21
+F	10695	excite 350:EM Spectrum Read#21
+G	39717	excite 350:EM Spectrum Read#21
+H	72412	excite 350:EM Spectrum Read#21
+
+excite 350:EM Spectrum
+Wavelength 22 (485 nm)
+	1
+A	22594	excite 350:EM Spectrum Read#22
+B	19105	excite 350:EM Spectrum Read#22
+C	13639	excite 350:EM Spectrum Read#22
+D	7966	excite 350:EM Spectrum Read#22
+E	23918	excite 350:EM Spectrum Read#22
+F	9814	excite 350:EM Spectrum Read#22
+G	33094	excite 350:EM Spectrum Read#22
+H	56103	excite 350:EM Spectrum Read#22
+
+excite 350:EM Spectrum
+Wavelength 23 (490 nm)
+	1
+A	19729	excite 350:EM Spectrum Read#23
+B	18049	excite 350:EM Spectrum Read#23
+C	14434	excite 350:EM Spectrum Read#23
+D	6233	excite 350:EM Spectrum Read#23
+E	21209	excite 350:EM Spectrum Read#23
+F	8886	excite 350:EM Spectrum Read#23
+G	26493	excite 350:EM Spectrum Read#23
+H	45040	excite 350:EM Spectrum Read#23
+
+excite 350:EM Spectrum
+Wavelength 24 (495 nm)
+	1
+A	19725	excite 350:EM Spectrum Read#24
+B	15938	excite 350:EM Spectrum Read#24
+C	12711	excite 350:EM Spectrum Read#24
+D	5479	excite 350:EM Spectrum Read#24
+E	18401	excite 350:EM Spectrum Read#24
+F	8942	excite 350:EM Spectrum Read#24
+G	22206	excite 350:EM Spectrum Read#24
+H	36340	excite 350:EM Spectrum Read#24
+
+excite 350:EM Spectrum
+Wavelength 25 (500 nm)
+	1
+A	16995	excite 350:EM Spectrum Read#25
+B	14200	excite 350:EM Spectrum Read#25
+C	12820	excite 350:EM Spectrum Read#25
+D	5505	excite 350:EM Spectrum Read#25
+E	16566	excite 350:EM Spectrum Read#25
+F	7719	excite 350:EM Spectrum Read#25
+G	16547	excite 350:EM Spectrum Read#25
+H	28314	excite 350:EM Spectrum Read#25
+
+excite 350:EM Spectrum
+Wavelength 26 (505 nm)
+	1
+A	15098	excite 350:EM Spectrum Read#26
+B	13426	excite 350:EM Spectrum Read#26
+C	12910	excite 350:EM Spectrum Read#26
+D	6000	excite 350:EM Spectrum Read#26
+E	16769	excite 350:EM Spectrum Read#26
+F	6930	excite 350:EM Spectrum Read#26
+G	13399	excite 350:EM Spectrum Read#26
+H	25391	excite 350:EM Spectrum Read#26
+
+excite 350:EM Spectrum
+Wavelength 27 (510 nm)
+	1
+A	13201	excite 350:EM Spectrum Read#27
+B	11787	excite 350:EM Spectrum Read#27
+C	11407	excite 350:EM Spectrum Read#27
+D	5517	excite 350:EM Spectrum Read#27
+E	14473	excite 350:EM Spectrum Read#27
+F	5662	excite 350:EM Spectrum Read#27
+G	11407	excite 350:EM Spectrum Read#27
+H	20824	excite 350:EM Spectrum Read#27
+
+excite 350:EM Spectrum
+Wavelength 28 (515 nm)
+	1
+A	13007	excite 350:EM Spectrum Read#28
+B	11807	excite 350:EM Spectrum Read#28
+C	11400	excite 350:EM Spectrum Read#28
+D	5362	excite 350:EM Spectrum Read#28
+E	13415	excite 350:EM Spectrum Read#28
+F	5704	excite 350:EM Spectrum Read#28
+G	9461	excite 350:EM Spectrum Read#28
+H	15582	excite 350:EM Spectrum Read#28
+
+excite 350:EM Spectrum
+Wavelength 29 (520 nm)
+	1
+A	11299	excite 350:EM Spectrum Read#29
+B	10133	excite 350:EM Spectrum Read#29
+C	10016	excite 350:EM Spectrum Read#29
+D	5444	excite 350:EM Spectrum Read#29
+E	12255	excite 350:EM Spectrum Read#29
+F	5422	excite 350:EM Spectrum Read#29
+G	7058	excite 350:EM Spectrum Read#29
+H	11592	excite 350:EM Spectrum Read#29
+
+excite 350:EM Spectrum
+Wavelength 30 (525 nm)
+	1
+A	10213	excite 350:EM Spectrum Read#30
+B	8413	excite 350:EM Spectrum Read#30
+C	9379	excite 350:EM Spectrum Read#30
+D	4385	excite 350:EM Spectrum Read#30
+E	9506	excite 350:EM Spectrum Read#30
+F	5065	excite 350:EM Spectrum Read#30
+G	5837	excite 350:EM Spectrum Read#30
+H	9977	excite 350:EM Spectrum Read#30
+
+excite 350:EM Spectrum
+Wavelength 31 (530 nm)
+	1
+A	8977	excite 350:EM Spectrum Read#31
+B	8241	excite 350:EM Spectrum Read#31
+C	8106	excite 350:EM Spectrum Read#31
+D	4295	excite 350:EM Spectrum Read#31
+E	8337	excite 350:EM Spectrum Read#31
+F	4383	excite 350:EM Spectrum Read#31
+G	4957	excite 350:EM Spectrum Read#31
+H	8369	excite 350:EM Spectrum Read#31
+
+excite 350:EM Spectrum
+Wavelength 32 (535 nm)
+	1
+A	7686	excite 350:EM Spectrum Read#32
+B	7327	excite 350:EM Spectrum Read#32
+C	8577	excite 350:EM Spectrum Read#32
+D	4270	excite 350:EM Spectrum Read#32
+E	7568	excite 350:EM Spectrum Read#32
+F	4768	excite 350:EM Spectrum Read#32
+G	4489	excite 350:EM Spectrum Read#32
+H	6301	excite 350:EM Spectrum Read#32
+
+excite 350:EM Spectrum
+Wavelength 33 (540 nm)
+	1
+A	7968	excite 350:EM Spectrum Read#33
+B	7070	excite 350:EM Spectrum Read#33
+C	7410	excite 350:EM Spectrum Read#33
+D	3632	excite 350:EM Spectrum Read#33
+E	6980	excite 350:EM Spectrum Read#33
+F	4043	excite 350:EM Spectrum Read#33
+G	3767	excite 350:EM Spectrum Read#33
+H	5688	excite 350:EM Spectrum Read#33
+
+excite 350:EM Spectrum
+Wavelength 34 (545 nm)
+	1
+A	7264	excite 350:EM Spectrum Read#34
+B	6117	excite 350:EM Spectrum Read#34
+C	6343	excite 350:EM Spectrum Read#34
+D	3619	excite 350:EM Spectrum Read#34
+E	6583	excite 350:EM Spectrum Read#34
+F	3862	excite 350:EM Spectrum Read#34
+G	2789	excite 350:EM Spectrum Read#34
+H	4832	excite 350:EM Spectrum Read#34
+
+excite 350:EM Spectrum
+Wavelength 35 (550 nm)
+	1
+A	6503	excite 350:EM Spectrum Read#35
+B	5042	excite 350:EM Spectrum Read#35
+C	6669	excite 350:EM Spectrum Read#35
+D	2993	excite 350:EM Spectrum Read#35
+E	6378	excite 350:EM Spectrum Read#35
+F	3713	excite 350:EM Spectrum Read#35
+G	2542	excite 350:EM Spectrum Read#35
+H	4178	excite 350:EM Spectrum Read#35
+
+excite 350:EM Spectrum
+Wavelength 36 (555 nm)
+	1
+A	5386	excite 350:EM Spectrum Read#36
+B	5511	excite 350:EM Spectrum Read#36
+C	5522	excite 350:EM Spectrum Read#36
+D	2584	excite 350:EM Spectrum Read#36
+E	4901	excite 350:EM Spectrum Read#36
+F	3157	excite 350:EM Spectrum Read#36
+G	2104	excite 350:EM Spectrum Read#36
+H	3185	excite 350:EM Spectrum Read#36
+
+excite 350:EM Spectrum
+Wavelength 37 (560 nm)
+	1
+A	4874	excite 350:EM Spectrum Read#37
+B	5151	excite 350:EM Spectrum Read#37
+C	5336	excite 350:EM Spectrum Read#37
+D	3277	excite 350:EM Spectrum Read#37
+E	3757	excite 350:EM Spectrum Read#37
+F	3913	excite 350:EM Spectrum Read#37
+G	1561	excite 350:EM Spectrum Read#37
+H	2093	excite 350:EM Spectrum Read#37
+
+excite 350:EM Spectrum
+Wavelength 38 (565 nm)
+	1
+A	3906	excite 350:EM Spectrum Read#38
+B	4168	excite 350:EM Spectrum Read#38
+C	5717	excite 350:EM Spectrum Read#38
+D	3015	excite 350:EM Spectrum Read#38
+E	4816	excite 350:EM Spectrum Read#38
+F	2988	excite 350:EM Spectrum Read#38
+G	1164	excite 350:EM Spectrum Read#38
+H	1508	excite 350:EM Spectrum Read#38
+
+excite 350:EM Spectrum
+Wavelength 39 (570 nm)
+	1
+A	4345	excite 350:EM Spectrum Read#39
+B	4470	excite 350:EM Spectrum Read#39
+C	4773	excite 350:EM Spectrum Read#39
+D	3132	excite 350:EM Spectrum Read#39
+E	3760	excite 350:EM Spectrum Read#39
+F	2737	excite 350:EM Spectrum Read#39
+G	1114	excite 350:EM Spectrum Read#39
+H	2282	excite 350:EM Spectrum Read#39
+
+excite 350:EM Spectrum
+Wavelength 40 (575 nm)
+	1
+A	4028	excite 350:EM Spectrum Read#40
+B	4160	excite 350:EM Spectrum Read#40
+C	3845	excite 350:EM Spectrum Read#40
+D	1902	excite 350:EM Spectrum Read#40
+E	3620	excite 350:EM Spectrum Read#40
+F	1792	excite 350:EM Spectrum Read#40
+G	1125	excite 350:EM Spectrum Read#40
+H	1946	excite 350:EM Spectrum Read#40
+
+excite 350:EM Spectrum
+Wavelength 41 (580 nm)
+	1
+A	3179	excite 350:EM Spectrum Read#41
+B	3461	excite 350:EM Spectrum Read#41
+C	4441	excite 350:EM Spectrum Read#41
+D	2437	excite 350:EM Spectrum Read#41
+E	3072	excite 350:EM Spectrum Read#41
+F	2311	excite 350:EM Spectrum Read#41
+G	957	excite 350:EM Spectrum Read#41
+H	1364	excite 350:EM Spectrum Read#41
+
+excite 350:EM Spectrum
+Wavelength 42 (585 nm)
+	1
+A	3083	excite 350:EM Spectrum Read#42
+B	4197	excite 350:EM Spectrum Read#42
+C	4122	excite 350:EM Spectrum Read#42
+D	2559	excite 350:EM Spectrum Read#42
+E	3108	excite 350:EM Spectrum Read#42
+F	2739	excite 350:EM Spectrum Read#42
+G	636	excite 350:EM Spectrum Read#42
+H	1267	excite 350:EM Spectrum Read#42
+
+excite 350:EM Spectrum
+Wavelength 43 (590 nm)
+	1
+A	2711	excite 350:EM Spectrum Read#43
+B	4120	excite 350:EM Spectrum Read#43
+C	3888	excite 350:EM Spectrum Read#43
+D	2481	excite 350:EM Spectrum Read#43
+E	2425	excite 350:EM Spectrum Read#43
+F	1704	excite 350:EM Spectrum Read#43
+G	595	excite 350:EM Spectrum Read#43
+H	822	excite 350:EM Spectrum Read#43
+
+excite 350:EM Spectrum
+Wavelength 44 (595 nm)
+	1
+A	2799	excite 350:EM Spectrum Read#44
+B	2936	excite 350:EM Spectrum Read#44
+C	3246	excite 350:EM Spectrum Read#44
+D	1703	excite 350:EM Spectrum Read#44
+E	2189	excite 350:EM Spectrum Read#44
+F	1940	excite 350:EM Spectrum Read#44
+G	632	excite 350:EM Spectrum Read#44
+H	267	excite 350:EM Spectrum Read#44
+
+excite 350:EM Spectrum
+Wavelength 45 (600 nm)
+	1
+A	2043	excite 350:EM Spectrum Read#45
+B	2665	excite 350:EM Spectrum Read#45
+C	2568	excite 350:EM Spectrum Read#45
+D	1366	excite 350:EM Spectrum Read#45
+E	1987	excite 350:EM Spectrum Read#45
+F	1584	excite 350:EM Spectrum Read#45
+G	714	excite 350:EM Spectrum Read#45
+H	876	excite 350:EM Spectrum Read#45
+
+Data Audit Trail
+
+Date	User	Event	Comment
+6/10/2011 5:03:39 PM	User	Protocol "C:\Users\labuser\Documents\Protocols\Chodera\Emission spectrum - multiple excitation wavelengths.prt" (6/10/2011 5:03:33 PM) selected	
+6/10/2011 5:04:13 PM	User	Plate read started	
+6/10/2011 5:19:33 PM	User	Plate read successfully completed	
+
+Calculation Warnings
+
+Error/Warning messages
+No event recorded
+

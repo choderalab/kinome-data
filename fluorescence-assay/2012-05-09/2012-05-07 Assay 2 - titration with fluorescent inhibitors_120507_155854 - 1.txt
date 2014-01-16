@@ -1,0 +1,616 @@
+Procedure Summary
+
+Plate Type	Corning 3596 96 well flat bottom
+Shake	Shake: Medium for 0:10
+Read	Read:  Injection 0 - 280 nm excite (F) 280,340, 280,440, 280,460, 280,480
+Read	Read:  Injection 0 - 296 nm excite (F) 296,378
+Read	Read:  Injection 0 - 350 nm excite (F) 350,440, 350,460, 350,480
+Read	Read:  Injection 0 - 280 nm spectrum (F) Emission Spectrum [320nm to 550nm by 10]
+Plate In/Out	Plate Out,In   Perform injection 1
+
+Layout
+	1	2	3	4	5	6	7	8	9	10	11	12
+A													Well ID
+													Name
+B													Well ID
+													Name
+C													Well ID
+													Name
+D													Well ID
+													Name
+E													Well ID
+													Name
+F													Well ID
+													Name
+G													Well ID
+													Name
+H													Well ID
+													Name
+
+Data Reduction Summary
+
+Well Analysis	Min/Max RFU
+
+Layout
+	1	2	3	4	5	6	7	8	9	10	11	12
+A													Well ID
+													Name
+B													Well ID
+													Name
+C													Well ID
+													Name
+D													Well ID
+													Name
+E													Well ID
+													Name
+F													Well ID
+													Name
+G													Well ID
+													Name
+H													Well ID
+													Name
+
+Curves [Injection 0 - 280 nm spectrum:EM Spectrum]
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [Injection 0 - 280 nm spectrum:EM Spectrum]
+B	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [Injection 0 - 280 nm spectrum:EM Spectrum]
+C	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [Injection 0 - 280 nm spectrum:EM Spectrum]
+D	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [Injection 0 - 280 nm spectrum:EM Spectrum]
+E	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [Injection 0 - 280 nm spectrum:EM Spectrum]
+F	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [Injection 0 - 280 nm spectrum:EM Spectrum]
+G	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [Injection 0 - 280 nm spectrum:EM Spectrum]
+H	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [Injection 0 - 280 nm spectrum:EM Spectrum]
+
+Injection 0 - 280 nm excite:280,340
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	9232	47855	33470	32706	9578	25394	18895	19344	9831	16160	13105	13058	Injection 0 - 280 nm excite:280,340
+B	9393	48189	33617	32837	9522	25600	19284	19741	9434	15841	13194	13453	Injection 0 - 280 nm excite:280,340
+C	9107	50298	33315	32773	9661	24106	19235	19535	9636	15355	13444	13411	Injection 0 - 280 nm excite:280,340
+D	9154	48278	33188	33117	9330	25377	18729	19380	9402	15409	13061	13483	Injection 0 - 280 nm excite:280,340
+E	9229	48707	33084	33205	9203	24672	18505	19534	9288	15701	13009	13569	Injection 0 - 280 nm excite:280,340
+F	9408	48526	32299	32033	9530	24193	18871	18879	9470	15447	13470	13500	Injection 0 - 280 nm excite:280,340
+G	9314	47934	32883	32955	9854	25276	19608	19601	9755	15960	13294	13416	Injection 0 - 280 nm excite:280,340
+H	9346	47498	33708	32809	9496	24782	19081	19886	10139	15580	13078	13074	Injection 0 - 280 nm excite:280,340
+
+Injection 0 - 280 nm excite:280,440
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	5201	20525	17492	14218	5424	11763	10392	9087	5962	8387	8322	7508	Injection 0 - 280 nm excite:280,440
+B	5023	20543	20970	14321	6178	12307	34368	9706	6086	8344	8027	7086	Injection 0 - 280 nm excite:280,440
+C	5167	19992	17411	14332	28990	12466	11534	9671	6865	8344	14282	7124	Injection 0 - 280 nm excite:280,440
+D	5039	20178	18226	14663	12214	12178	10395	9581	6836	8283	7909	7972	Injection 0 - 280 nm excite:280,440
+E	5172	20649	17568	14531	5881	11968	10589	9541	6010	8166	8126	7263	Injection 0 - 280 nm excite:280,440
+F	5246	20402	17228	14396	5979	12506	10915	9503	6165	8646	8016	7236	Injection 0 - 280 nm excite:280,440
+G	5230	20847	17665	15175	6331	12665	11359	10159	6320	8522	8306	6884	Injection 0 - 280 nm excite:280,440
+H	5391	20424	18278	14733	5772	12074	11357	9771	6078	8446	9845	7232	Injection 0 - 280 nm excite:280,440
+
+Injection 0 - 280 nm excite:280,460
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	6371	16986	16435	13110	6904	11563	10714	9466	7143	8969	9017	8866	Injection 0 - 280 nm excite:280,460
+B	6134	16603	20151	13592	7317	11850	41136	10287	7150	9039	8936	8054	Injection 0 - 280 nm excite:280,460
+C	6256	16808	15820	13631	51117	12587	11419	9333	8309	8994	17977	8009	Injection 0 - 280 nm excite:280,460
+D	6242	16788	15926	13582	16491	11806	10675	9865	8001	9106	9084	8806	Injection 0 - 280 nm excite:280,460
+E	6323	17077	16007	13963	6962	11627	10809	10036	7310	8984	9046	8622	Injection 0 - 280 nm excite:280,460
+F	6314	16714	15636	13803	7213	14705	11099	10036	7369	9145	9335	7866	Injection 0 - 280 nm excite:280,460
+G	6649	16954	16136	14601	7531	12366	11579	10330	8467	9070	9112	7807	Injection 0 - 280 nm excite:280,460
+H	6579	17252	16688	13530	7222	11607	10918	10329	7398	9370	12201	8440	Injection 0 - 280 nm excite:280,460
+
+Injection 0 - 280 nm excite:280,480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	8845	19119	18007	16068	9643	13371	13086	11400	9765	11776	12246	12673	Injection 0 - 280 nm excite:280,480
+B	9124	17669	24165	16390	10296	14594	57981	12610	10573	11689	11872	10251	Injection 0 - 280 nm excite:280,480
+C	8536	18159	16705	16774	70744	15634	14345	12906	10803	11341	30007	10923	Injection 0 - 280 nm excite:280,480
+D	9110	17647	18016	16791	21113	13712	12750	12955	10519	11697	11683	11510	Injection 0 - 280 nm excite:280,480
+E	9164	17828	17903	16037	9805	13889	13682	12683	10873	11165	11624	10901	Injection 0 - 280 nm excite:280,480
+F	8999	18196	17370	16066	10712	24364	13323	12906	10168	11522	13536	11214	Injection 0 - 280 nm excite:280,480
+G	9493	18819	17871	17134	11151	14965	16803	13490	11516	11882	11468	10586	Injection 0 - 280 nm excite:280,480
+H	9141	18386	18615	16433	9976	14009	13702	13508	10340	12289	14489	10879	Injection 0 - 280 nm excite:280,480
+
+Injection 0 - 296 nm excite:296,378
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	1587	16070	9843	10137	1672	7504	4927	5200	1787	4069	3203	3379	Injection 0 - 296 nm excite:296,378
+B	1487	16232	9805	10333	1862	7851	5406	5503	2107	4200	3150	3158	Injection 0 - 296 nm excite:296,378
+C	1402	16278	9728	10183	1926	7618	5493	5513	2314	4075	3299	3229	Injection 0 - 296 nm excite:296,378
+D	1436	15956	9961	10435	1837	7668	5079	5959	2165	4104	3166	3672	Injection 0 - 296 nm excite:296,378
+E	1472	16057	9740	10401	1840	7468	4948	5400	2050	4020	3101	3811	Injection 0 - 296 nm excite:296,378
+F	1511	16286	9614	10087	1967	7446	5236	6047	1980	4264	4107	3222	Injection 0 - 296 nm excite:296,378
+G	1588	16127	9925	10575	2249	7865	6786	5578	2527	4329	3195	3121	Injection 0 - 296 nm excite:296,378
+H	1644	16014	10143	10279	1801	7419	5099	5849	1845	4051	3235	3122	Injection 0 - 296 nm excite:296,378
+
+Injection 0 - 350 nm excite:350,440
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	2595	2726	2820	2955	2571	2745	2792	2709	2711	2771	2807	2516	Injection 0 - 350 nm excite:350,440
+B	2587	2776	7806	3174	2728	2873	37072	2826	2775	2769	3212	2691	Injection 0 - 350 nm excite:350,440
+C	2529	2768	2713	3120	44608	3439	2924	2780	2868	2667	20697	2650	Injection 0 - 350 nm excite:350,440
+D	2573	2659	2754	3268	10983	2765	2634	2667	2844	2606	2739	2654	Injection 0 - 350 nm excite:350,440
+E	2582	2693	2769	3185	2675	2771	2856	2719	2854	2716	2739	2750	Injection 0 - 350 nm excite:350,440
+F	2605	2750	2711	3059	2679	33372	2689	2921	2754	2770	2918	2603	Injection 0 - 350 nm excite:350,440
+G	2666	2679	2694	3259	2742	2813	3298	2942	2840	2803	2770	3019	Injection 0 - 350 nm excite:350,440
+H	2643	2697	2760	3158	2694	2690	2699	2881	2746	2726	4076	2546	Injection 0 - 350 nm excite:350,440
+
+Injection 0 - 350 nm excite:350,460
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	2682	2925	3154	3525	2818	3000	2942	3060	3576	2865	2918	2863	Injection 0 - 350 nm excite:350,460
+B	2601	2965	8207	3485	2843	2989	39571	2891	3045	2929	3535	2826	Injection 0 - 350 nm excite:350,460
+C	2686	2873	3098	3492	43366	3990	2975	3042	3092	2838	24142	2866	Injection 0 - 350 nm excite:350,460
+D	2633	2963	2888	3668	10262	2931	2931	3008	2819	3019	3092	2790	Injection 0 - 350 nm excite:350,460
+E	2783	2970	2957	3425	2802	2835	2873	2954	3160	2807	2825	2939	Injection 0 - 350 nm excite:350,460
+F	2683	3001	2836	3287	2921	36298	2978	3201	2907	2868	3092	2770	Injection 0 - 350 nm excite:350,460
+G	2691	2845	9620	3457	3110	3013	3375	2984	3119	3134	2809	2890	Injection 0 - 350 nm excite:350,460
+H	2846	2862	2918	3410	2907	2853	2991	2934	2929	2884	4263	2696	Injection 0 - 350 nm excite:350,460
+
+Injection 0 - 350 nm excite:350,480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	3293	3178	3570	3767	3284	3468	3547	3239	3463	3221	3503	3234	Injection 0 - 350 nm excite:350,480
+B	3130	3455	8922	4026	3405	3469	40163	3675	3206	3368	4002	3311	Injection 0 - 350 nm excite:350,480
+C	3118	3424	3209	4087	43021	4888	3507	3410	3491	3474	26685	3403	Injection 0 - 350 nm excite:350,480
+D	3093	3423	3248	4275	10830	3400	3448	3396	3421	3170	3332	3314	Injection 0 - 350 nm excite:350,480
+E	3380	3417	3371	4024	3206	3450	3491	3451	3503	3199	3582	3290	Injection 0 - 350 nm excite:350,480
+F	3239	3449	3254	4001	3298	32471	3381	3749	3308	3399	3460	3212	Injection 0 - 350 nm excite:350,480
+G	3159	3447	4914	4126	3435	3413	3447	3721	3319	3498	3587	3378	Injection 0 - 350 nm excite:350,480
+H	3295	3340	3338	4060	3174	3343	3621	3443	3184	3324	4751	3192	Injection 0 - 350 nm excite:350,480
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 1 (320 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	2622	16485	11715	10985	2621	8063	5967	5964	2639	4583	3766	3739	Injection 0 - 280 nm spectrum:EM Spectrum Read#1
+B	2555	16191	11471	10850	2566	7951	6054	6083	2538	4560	3702	3747	Injection 0 - 280 nm spectrum:EM Spectrum Read#1
+C	2448	16329	11454	10901	2542	7579	5981	5976	2593	4423	3935	3745	Injection 0 - 280 nm spectrum:EM Spectrum Read#1
+D	2469	16160	11356	10886	2491	7867	5849	5936	2484	4368	3686	3810	Injection 0 - 280 nm spectrum:EM Spectrum Read#1
+E	2486	16274	11402	10917	2475	7681	5753	5898	2529	4441	3657	3768	Injection 0 - 280 nm spectrum:EM Spectrum Read#1
+F	2545	16182	11061	10570	2466	7538	6214	5823	2547	4465	3882	3794	Injection 0 - 280 nm spectrum:EM Spectrum Read#1
+G	2530	16019	11174	10845	2642	7835	6086	5973	2732	4548	3822	3758	Injection 0 - 280 nm spectrum:EM Spectrum Read#1
+H	2548	15605	11491	10805	2569	7662	5901	6027	2771	4457	3767	3722	Injection 0 - 280 nm spectrum:EM Spectrum Read#1
+
+Mean Min RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	1	7	8	2	3	1	2	6	8	6	5	2	Mean Min RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+B	2	6	0	3	2	6	10	2	0	2	3	0	Mean Min RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+C	0	4	7	1	9	7	6	0	3	0	7	1	Mean Min RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+D	3	3	7	6	5	5	3	7	2	3	1	2	Mean Min RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+E	3	7	2	3	1	6	1	2	4	5	3	2	Mean Min RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+F	5	4	3	6	1	14	6	5	0	3	0	1	Mean Min RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+G	0	9	8	4	0	0	1	6	0	2	1	1	Mean Min RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+H	3	1	0	1	6	5	2	0	4	6	6	0	Mean Min RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+
+W at Mean Min RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	530	520	530	550	520	540	550	540	550	520	540	530	W at Mean Min RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+B	530	550	550	540	540	540	540	530	530	520	510	530	W at Mean Min RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+C	530	550	540	550	550	540	530	540	550	530	550	520	W at Mean Min RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+D	530	520	540	540	550	520	500	550	540	540	530	540	W at Mean Min RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+E	530	550	540	540	520	520	530	540	520	520	550	530	W at Mean Min RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+F	490	530	550	540	540	550	540	530	550	490	550	510	W at Mean Min RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+G	520	540	540	530	520	540	520	540	530	530	540	530	W at Mean Min RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+H	520	520	540	550	520	500	540	530	540	540	520	540	W at Mean Min RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+
+Mean Max RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	2622	16485	11715	10985	2621	8063	5967	5964	2639	4583	3766	3739	Mean Max RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+B	2555	16191	11471	10850	2566	7951	6054	6083	2538	4560	3702	3747	Mean Max RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+C	2448	16329	11454	10901	2542	7579	5981	5976	2593	4423	3935	3745	Mean Max RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+D	2469	16160	11356	10886	2491	7867	5849	5936	2484	4368	3686	3810	Mean Max RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+E	2486	16274	11402	10917	2475	7681	5753	5898	2529	4441	3657	3768	Mean Max RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+F	2545	16182	11061	10570	2466	7538	6214	5823	2547	4465	3882	3794	Mean Max RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+G	2530	16019	11174	10845	2642	7835	6086	5973	2732	4548	3822	3758	Mean Max RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+H	2548	15605	11491	10805	2569	7662	5901	6027	2771	4457	3767	3722	Mean Max RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+
+W at Mean Max RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	320	320	320	320	320	320	320	320	320	320	320	320	W at Mean Max RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+B	320	320	320	320	320	320	320	320	320	320	320	320	W at Mean Max RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+C	320	320	320	320	320	320	320	320	320	320	320	320	W at Mean Max RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+D	320	320	320	320	320	320	320	320	320	320	320	320	W at Mean Max RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+E	320	320	320	320	320	320	320	320	320	320	320	320	W at Mean Max RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+F	320	320	320	320	320	320	320	320	320	320	320	320	W at Mean Max RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+G	320	320	320	320	320	320	320	320	320	320	320	320	W at Mean Max RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+H	320	320	320	320	320	320	320	320	320	320	320	320	W at Mean Max RFU [Injection 0 - 280 nm spectrum:EM Spectrum]
+
+Procedure Summary
+
+Plate Type	Corning 3596 96 well flat bottom
+Shake	Shake: Medium for 0:10
+Read	Read:  Injection 0 - 280 nm excite (F) 280,340, 280,440, 280,460, 280,480
+Read	Read:  Injection 0 - 296 nm excite (F) 296,378
+Read	Read:  Injection 0 - 350 nm excite (F) 350,440, 350,460, 350,480
+Read	Read:  Injection 0 - 280 nm spectrum (F) Emission Spectrum [320nm to 550nm by 10]
+Plate In/Out	Plate Out,In   Perform injection 1
+
+Layout
+	1	2	3	4	5	6	7	8	9	10	11	12
+A													Well ID
+													Name
+B													Well ID
+													Name
+C													Well ID
+													Name
+D													Well ID
+													Name
+E													Well ID
+													Name
+F													Well ID
+													Name
+G													Well ID
+													Name
+H													Well ID
+													Name
+
+Data Reduction Summary
+
+Well Analysis	Min/Max RFU
+
+Injection 0 - 280 nm excite:280,340
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	9232	47855	33470	32706	9578	25394	18895	19344	9831	16160	13105	13058	Injection 0 - 280 nm excite:280,340
+B	9393	48189	33617	32837	9522	25600	19284	19741	9434	15841	13194	13453	Injection 0 - 280 nm excite:280,340
+C	9107	50298	33315	32773	9661	24106	19235	19535	9636	15355	13444	13411	Injection 0 - 280 nm excite:280,340
+D	9154	48278	33188	33117	9330	25377	18729	19380	9402	15409	13061	13483	Injection 0 - 280 nm excite:280,340
+E	9229	48707	33084	33205	9203	24672	18505	19534	9288	15701	13009	13569	Injection 0 - 280 nm excite:280,340
+F	9408	48526	32299	32033	9530	24193	18871	18879	9470	15447	13470	13500	Injection 0 - 280 nm excite:280,340
+G	9314	47934	32883	32955	9854	25276	19608	19601	9755	15960	13294	13416	Injection 0 - 280 nm excite:280,340
+H	9346	47498	33708	32809	9496	24782	19081	19886	10139	15580	13078	13074	Injection 0 - 280 nm excite:280,340
+
+Injection 0 - 280 nm excite:280,440
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	5201	20525	17492	14218	5424	11763	10392	9087	5962	8387	8322	7508	Injection 0 - 280 nm excite:280,440
+B	5023	20543	20970	14321	6178	12307	34368	9706	6086	8344	8027	7086	Injection 0 - 280 nm excite:280,440
+C	5167	19992	17411	14332	28990	12466	11534	9671	6865	8344	14282	7124	Injection 0 - 280 nm excite:280,440
+D	5039	20178	18226	14663	12214	12178	10395	9581	6836	8283	7909	7972	Injection 0 - 280 nm excite:280,440
+E	5172	20649	17568	14531	5881	11968	10589	9541	6010	8166	8126	7263	Injection 0 - 280 nm excite:280,440
+F	5246	20402	17228	14396	5979	12506	10915	9503	6165	8646	8016	7236	Injection 0 - 280 nm excite:280,440
+G	5230	20847	17665	15175	6331	12665	11359	10159	6320	8522	8306	6884	Injection 0 - 280 nm excite:280,440
+H	5391	20424	18278	14733	5772	12074	11357	9771	6078	8446	9845	7232	Injection 0 - 280 nm excite:280,440
+
+Injection 0 - 280 nm excite:280,460
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	6371	16986	16435	13110	6904	11563	10714	9466	7143	8969	9017	8866	Injection 0 - 280 nm excite:280,460
+B	6134	16603	20151	13592	7317	11850	41136	10287	7150	9039	8936	8054	Injection 0 - 280 nm excite:280,460
+C	6256	16808	15820	13631	51117	12587	11419	9333	8309	8994	17977	8009	Injection 0 - 280 nm excite:280,460
+D	6242	16788	15926	13582	16491	11806	10675	9865	8001	9106	9084	8806	Injection 0 - 280 nm excite:280,460
+E	6323	17077	16007	13963	6962	11627	10809	10036	7310	8984	9046	8622	Injection 0 - 280 nm excite:280,460
+F	6314	16714	15636	13803	7213	14705	11099	10036	7369	9145	9335	7866	Injection 0 - 280 nm excite:280,460
+G	6649	16954	16136	14601	7531	12366	11579	10330	8467	9070	9112	7807	Injection 0 - 280 nm excite:280,460
+H	6579	17252	16688	13530	7222	11607	10918	10329	7398	9370	12201	8440	Injection 0 - 280 nm excite:280,460
+
+Injection 0 - 280 nm excite:280,480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	8845	19119	18007	16068	9643	13371	13086	11400	9765	11776	12246	12673	Injection 0 - 280 nm excite:280,480
+B	9124	17669	24165	16390	10296	14594	57981	12610	10573	11689	11872	10251	Injection 0 - 280 nm excite:280,480
+C	8536	18159	16705	16774	70744	15634	14345	12906	10803	11341	30007	10923	Injection 0 - 280 nm excite:280,480
+D	9110	17647	18016	16791	21113	13712	12750	12955	10519	11697	11683	11510	Injection 0 - 280 nm excite:280,480
+E	9164	17828	17903	16037	9805	13889	13682	12683	10873	11165	11624	10901	Injection 0 - 280 nm excite:280,480
+F	8999	18196	17370	16066	10712	24364	13323	12906	10168	11522	13536	11214	Injection 0 - 280 nm excite:280,480
+G	9493	18819	17871	17134	11151	14965	16803	13490	11516	11882	11468	10586	Injection 0 - 280 nm excite:280,480
+H	9141	18386	18615	16433	9976	14009	13702	13508	10340	12289	14489	10879	Injection 0 - 280 nm excite:280,480
+
+Injection 0 - 296 nm excite:296,378
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	1587	16070	9843	10137	1672	7504	4927	5200	1787	4069	3203	3379	Injection 0 - 296 nm excite:296,378
+B	1487	16232	9805	10333	1862	7851	5406	5503	2107	4200	3150	3158	Injection 0 - 296 nm excite:296,378
+C	1402	16278	9728	10183	1926	7618	5493	5513	2314	4075	3299	3229	Injection 0 - 296 nm excite:296,378
+D	1436	15956	9961	10435	1837	7668	5079	5959	2165	4104	3166	3672	Injection 0 - 296 nm excite:296,378
+E	1472	16057	9740	10401	1840	7468	4948	5400	2050	4020	3101	3811	Injection 0 - 296 nm excite:296,378
+F	1511	16286	9614	10087	1967	7446	5236	6047	1980	4264	4107	3222	Injection 0 - 296 nm excite:296,378
+G	1588	16127	9925	10575	2249	7865	6786	5578	2527	4329	3195	3121	Injection 0 - 296 nm excite:296,378
+H	1644	16014	10143	10279	1801	7419	5099	5849	1845	4051	3235	3122	Injection 0 - 296 nm excite:296,378
+
+Injection 0 - 350 nm excite:350,440
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	2595	2726	2820	2955	2571	2745	2792	2709	2711	2771	2807	2516	Injection 0 - 350 nm excite:350,440
+B	2587	2776	7806	3174	2728	2873	37072	2826	2775	2769	3212	2691	Injection 0 - 350 nm excite:350,440
+C	2529	2768	2713	3120	44608	3439	2924	2780	2868	2667	20697	2650	Injection 0 - 350 nm excite:350,440
+D	2573	2659	2754	3268	10983	2765	2634	2667	2844	2606	2739	2654	Injection 0 - 350 nm excite:350,440
+E	2582	2693	2769	3185	2675	2771	2856	2719	2854	2716	2739	2750	Injection 0 - 350 nm excite:350,440
+F	2605	2750	2711	3059	2679	33372	2689	2921	2754	2770	2918	2603	Injection 0 - 350 nm excite:350,440
+G	2666	2679	2694	3259	2742	2813	3298	2942	2840	2803	2770	3019	Injection 0 - 350 nm excite:350,440
+H	2643	2697	2760	3158	2694	2690	2699	2881	2746	2726	4076	2546	Injection 0 - 350 nm excite:350,440
+
+Injection 0 - 350 nm excite:350,460
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	2682	2925	3154	3525	2818	3000	2942	3060	3576	2865	2918	2863	Injection 0 - 350 nm excite:350,460
+B	2601	2965	8207	3485	2843	2989	39571	2891	3045	2929	3535	2826	Injection 0 - 350 nm excite:350,460
+C	2686	2873	3098	3492	43366	3990	2975	3042	3092	2838	24142	2866	Injection 0 - 350 nm excite:350,460
+D	2633	2963	2888	3668	10262	2931	2931	3008	2819	3019	3092	2790	Injection 0 - 350 nm excite:350,460
+E	2783	2970	2957	3425	2802	2835	2873	2954	3160	2807	2825	2939	Injection 0 - 350 nm excite:350,460
+F	2683	3001	2836	3287	2921	36298	2978	3201	2907	2868	3092	2770	Injection 0 - 350 nm excite:350,460
+G	2691	2845	9620	3457	3110	3013	3375	2984	3119	3134	2809	2890	Injection 0 - 350 nm excite:350,460
+H	2846	2862	2918	3410	2907	2853	2991	2934	2929	2884	4263	2696	Injection 0 - 350 nm excite:350,460
+
+Injection 0 - 350 nm excite:350,480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	3293	3178	3570	3767	3284	3468	3547	3239	3463	3221	3503	3234	Injection 0 - 350 nm excite:350,480
+B	3130	3455	8922	4026	3405	3469	40163	3675	3206	3368	4002	3311	Injection 0 - 350 nm excite:350,480
+C	3118	3424	3209	4087	43021	4888	3507	3410	3491	3474	26685	3403	Injection 0 - 350 nm excite:350,480
+D	3093	3423	3248	4275	10830	3400	3448	3396	3421	3170	3332	3314	Injection 0 - 350 nm excite:350,480
+E	3380	3417	3371	4024	3206	3450	3491	3451	3503	3199	3582	3290	Injection 0 - 350 nm excite:350,480
+F	3239	3449	3254	4001	3298	32471	3381	3749	3308	3399	3460	3212	Injection 0 - 350 nm excite:350,480
+G	3159	3447	4914	4126	3435	3413	3447	3721	3319	3498	3587	3378	Injection 0 - 350 nm excite:350,480
+H	3295	3340	3338	4060	3174	3343	3621	3443	3184	3324	4751	3192	Injection 0 - 350 nm excite:350,480
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 1 (320 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	2622	16485	11715	10985	2621	8063	5967	5964	2639	4583	3766	3739	Injection 0 - 280 nm spectrum:EM Spectrum Read#1
+B	2555	16191	11471	10850	2566	7951	6054	6083	2538	4560	3702	3747	Injection 0 - 280 nm spectrum:EM Spectrum Read#1
+C	2448	16329	11454	10901	2542	7579	5981	5976	2593	4423	3935	3745	Injection 0 - 280 nm spectrum:EM Spectrum Read#1
+D	2469	16160	11356	10886	2491	7867	5849	5936	2484	4368	3686	3810	Injection 0 - 280 nm spectrum:EM Spectrum Read#1
+E	2486	16274	11402	10917	2475	7681	5753	5898	2529	4441	3657	3768	Injection 0 - 280 nm spectrum:EM Spectrum Read#1
+F	2545	16182	11061	10570	2466	7538	6214	5823	2547	4465	3882	3794	Injection 0 - 280 nm spectrum:EM Spectrum Read#1
+G	2530	16019	11174	10845	2642	7835	6086	5973	2732	4548	3822	3758	Injection 0 - 280 nm spectrum:EM Spectrum Read#1
+H	2548	15605	11491	10805	2569	7662	5901	6027	2771	4457	3767	3722	Injection 0 - 280 nm spectrum:EM Spectrum Read#1
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 2 (330 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	1756	15436	9540	9379	1802	7011	4604	4814	1815	3703	2793	2883	Injection 0 - 280 nm spectrum:EM Spectrum Read#2
+B	1732	15193	9301	9311	1747	6960	4679	4943	1737	3677	2800	2792	Injection 0 - 280 nm spectrum:EM Spectrum Read#2
+C	1728	15252	9246	9402	1793	6652	4643	4854	1769	3533	2950	2854	Injection 0 - 280 nm spectrum:EM Spectrum Read#2
+D	1687	15223	9291	9399	1688	6879	4541	4855	1722	3474	2748	2933	Injection 0 - 280 nm spectrum:EM Spectrum Read#2
+E	1725	15203	9337	9391	1714	6798	4494	4814	1788	3529	2707	2810	Injection 0 - 280 nm spectrum:EM Spectrum Read#2
+F	1771	15148	8953	9212	1741	6571	4863	4687	1774	3564	2860	2877	Injection 0 - 280 nm spectrum:EM Spectrum Read#2
+G	1697	14908	9129	9325	1807	6834	4777	4874	1834	3679	2796	2883	Injection 0 - 280 nm spectrum:EM Spectrum Read#2
+H	1738	14434	9281	9307	1764	6621	4553	4875	1895	3575	2757	2863	Injection 0 - 280 nm spectrum:EM Spectrum Read#2
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 3 (340 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	1186	12629	7164	7320	1202	5540	3360	3627	1178	2729	1942	2049	Injection 0 - 280 nm spectrum:EM Spectrum Read#3
+B	1119	12595	7027	7304	1171	5501	3448	3680	1147	2727	1968	2031	Injection 0 - 280 nm spectrum:EM Spectrum Read#3
+C	1107	12582	6989	7329	1171	5273	3401	3683	1167	2624	2093	2035	Injection 0 - 280 nm spectrum:EM Spectrum Read#3
+D	1120	12535	7004	7343	1120	5450	3369	3641	1134	2621	1923	2070	Injection 0 - 280 nm spectrum:EM Spectrum Read#3
+E	1126	12531	7039	7287	1125	5371	3291	3607	1192	2668	1957	1999	Injection 0 - 280 nm spectrum:EM Spectrum Read#3
+F	1131	12603	6777	7090	1163	5227	3625	3523	1167	2642	2031	2073	Injection 0 - 280 nm spectrum:EM Spectrum Read#3
+G	1121	12330	6922	7316	1185	5445	3476	3641	1161	2753	1992	2040	Injection 0 - 280 nm spectrum:EM Spectrum Read#3
+H	1130	12029	7038	7220	1166	5240	3345	3661	1225	2681	1915	2024	Injection 0 - 280 nm spectrum:EM Spectrum Read#3
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 4 (350 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	736	9478	5172	5288	727	4045	2359	2526	766	1903	1323	1351	Injection 0 - 280 nm spectrum:EM Spectrum Read#4
+B	706	9258	5051	5251	730	3968	2433	2610	725	1944	1360	1371	Injection 0 - 280 nm spectrum:EM Spectrum Read#4
+C	688	9352	5055	5241	750	3878	2427	2543	739	1827	1398	1351	Injection 0 - 280 nm spectrum:EM Spectrum Read#4
+D	706	9347	5060	5249	721	4000	2341	2638	745	1838	1310	1413	Injection 0 - 280 nm spectrum:EM Spectrum Read#4
+E	683	9385	5103	5254	726	3938	2292	2582	752	1833	1294	1342	Injection 0 - 280 nm spectrum:EM Spectrum Read#4
+F	729	9338	4879	5097	735	3787	2646	2485	758	1870	1371	1375	Injection 0 - 280 nm spectrum:EM Spectrum Read#4
+G	736	9371	4976	5192	776	3916	2453	2559	760	1958	1334	1386	Injection 0 - 280 nm spectrum:EM Spectrum Read#4
+H	722	9013	5048	5227	742	3853	2322	2564	776	1864	1344	1377	Injection 0 - 280 nm spectrum:EM Spectrum Read#4
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 5 (360 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	417	6393	3478	3442	434	2683	1552	1643	444	1237	858	877	Injection 0 - 280 nm spectrum:EM Spectrum Read#5
+B	411	6293	3412	3463	439	2667	1575	1666	440	1240	850	860	Injection 0 - 280 nm spectrum:EM Spectrum Read#5
+C	411	6351	3420	3471	458	2591	1609	1639	453	1187	936	876	Injection 0 - 280 nm spectrum:EM Spectrum Read#5
+D	406	6353	3428	3484	429	2634	1552	1703	439	1203	850	908	Injection 0 - 280 nm spectrum:EM Spectrum Read#5
+E	408	6370	3382	3490	433	2644	1525	1621	452	1225	859	891	Injection 0 - 280 nm spectrum:EM Spectrum Read#5
+F	427	6333	3288	3422	436	2526	1823	1615	438	1223	880	878	Injection 0 - 280 nm spectrum:EM Spectrum Read#5
+G	411	6335	3359	3441	449	2658	1639	1655	447	1241	863	867	Injection 0 - 280 nm spectrum:EM Spectrum Read#5
+H	426	6050	3414	3443	440	2530	1527	1644	460	1221	855	864	Injection 0 - 280 nm spectrum:EM Spectrum Read#5
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 6 (370 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	271	4252	2356	2274	272	1772	1043	1059	286	826	561	562	Injection 0 - 280 nm spectrum:EM Spectrum Read#6
+B	256	4199	2293	2285	280	1801	1088	1091	278	810	568	554	Injection 0 - 280 nm spectrum:EM Spectrum Read#6
+C	244	4188	2307	2277	284	1716	1074	1076	294	798	613	562	Injection 0 - 280 nm spectrum:EM Spectrum Read#6
+D	244	4200	2313	2283	269	1762	1041	1100	291	782	555	590	Injection 0 - 280 nm spectrum:EM Spectrum Read#6
+E	246	4189	2313	2301	265	1715	1027	1055	305	812	555	563	Injection 0 - 280 nm spectrum:EM Spectrum Read#6
+F	246	4214	2234	2230	283	1692	1282	1072	301	797	583	560	Injection 0 - 280 nm spectrum:EM Spectrum Read#6
+G	263	4244	2277	2249	301	1744	1078	1091	301	812	559	563	Injection 0 - 280 nm spectrum:EM Spectrum Read#6
+H	261	4042	2321	2271	283	1699	1014	1081	290	799	569	548	Injection 0 - 280 nm spectrum:EM Spectrum Read#6
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 7 (380 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	169	2698	1526	1393	174	1118	676	651	182	519	362	359	Injection 0 - 280 nm spectrum:EM Spectrum Read#7
+B	156	2661	1505	1414	171	1136	702	687	175	515	371	358	Injection 0 - 280 nm spectrum:EM Spectrum Read#7
+C	150	2643	1512	1437	180	1105	697	686	201	497	411	356	Injection 0 - 280 nm spectrum:EM Spectrum Read#7
+D	157	2636	1512	1432	179	1113	672	720	204	511	359	378	Injection 0 - 280 nm spectrum:EM Spectrum Read#7
+E	156	2635	1482	1416	175	1103	679	670	217	501	355	374	Injection 0 - 280 nm spectrum:EM Spectrum Read#7
+F	156	2643	1438	1386	182	1068	883	693	191	517	389	359	Injection 0 - 280 nm spectrum:EM Spectrum Read#7
+G	173	2709	1485	1428	195	1097	723	697	196	530	379	352	Injection 0 - 280 nm spectrum:EM Spectrum Read#7
+H	170	2585	1515	1413	183	1049	663	677	183	514	382	358	Injection 0 - 280 nm spectrum:EM Spectrum Read#7
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 8 (390 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	109	1612	959	848	121	681	423	401	130	324	231	229	Injection 0 - 280 nm spectrum:EM Spectrum Read#8
+B	104	1604	947	877	114	692	451	426	125	323	235	224	Injection 0 - 280 nm spectrum:EM Spectrum Read#8
+C	103	1597	921	864	127	671	450	410	139	313	268	223	Injection 0 - 280 nm spectrum:EM Spectrum Read#8
+D	96	1618	957	876	124	688	426	451	137	315	229	247	Injection 0 - 280 nm spectrum:EM Spectrum Read#8
+E	105	1602	941	869	112	666	431	415	143	307	236	236	Injection 0 - 280 nm spectrum:EM Spectrum Read#8
+F	98	1607	918	837	122	667	603	438	129	328	254	231	Injection 0 - 280 nm spectrum:EM Spectrum Read#8
+G	102	1626	933	872	132	689	454	424	130	331	231	230	Injection 0 - 280 nm spectrum:EM Spectrum Read#8
+H	106	1575	949	859	116	657	417	420	124	325	254	223	Injection 0 - 280 nm spectrum:EM Spectrum Read#8
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 9 (400 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	77	988	615	529	78	434	285	264	128	210	166	156	Injection 0 - 280 nm spectrum:EM Spectrum Read#9
+B	80	983	611	538	83	434	349	273	89	215	163	144	Injection 0 - 280 nm spectrum:EM Spectrum Read#9
+C	68	981	596	525	142	432	292	268	95	202	201	149	Injection 0 - 280 nm spectrum:EM Spectrum Read#9
+D	66	985	622	529	89	430	279	292	99	207	169	160	Injection 0 - 280 nm spectrum:EM Spectrum Read#9
+E	75	970	610	533	82	416	279	268	108	201	162	160	Injection 0 - 280 nm spectrum:EM Spectrum Read#9
+F	68	1005	587	531	88	448	419	281	88	217	170	153	Injection 0 - 280 nm spectrum:EM Spectrum Read#9
+G	73	1016	632	538	88	422	296	273	104	211	160	146	Injection 0 - 280 nm spectrum:EM Spectrum Read#9
+H	83	954	612	546	93	412	273	271	83	202	181	152	Injection 0 - 280 nm spectrum:EM Spectrum Read#9
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 10 (410 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	56	604	392	325	58	261	173	157	191	137	116	106	Injection 0 - 280 nm spectrum:EM Spectrum Read#10
+B	57	585	400	328	57	263	330	171	70	141	119	101	Injection 0 - 280 nm spectrum:EM Spectrum Read#10
+C	53	596	376	328	244	273	201	169	77	133	203	103	Injection 0 - 280 nm spectrum:EM Spectrum Read#10
+D	48	598	392	335	99	266	187	195	73	138	107	114	Injection 0 - 280 nm spectrum:EM Spectrum Read#10
+E	55	589	393	324	57	261	191	168	78	131	112	104	Injection 0 - 280 nm spectrum:EM Spectrum Read#10
+F	55	591	372	321	65	418	287	190	65	143	113	103	Injection 0 - 280 nm spectrum:EM Spectrum Read#10
+G	60	614	414	334	66	274	188	176	69	140	113	100	Injection 0 - 280 nm spectrum:EM Spectrum Read#10
+H	57	585	389	334	68	253	198	176	59	133	123	100	Injection 0 - 280 nm spectrum:EM Spectrum Read#10
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 11 (420 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	45	376	254	211	46	163	129	107	198	96	79	69	Injection 0 - 280 nm spectrum:EM Spectrum Read#11
+B	46	368	270	209	46	179	295	115	52	98	84	72	Injection 0 - 280 nm spectrum:EM Spectrum Read#11
+C	40	355	236	210	259	182	129	117	62	93	186	68	Injection 0 - 280 nm spectrum:EM Spectrum Read#11
+D	42	351	245	205	91	174	126	129	57	100	81	84	Injection 0 - 280 nm spectrum:EM Spectrum Read#11
+E	44	357	260	207	54	163	125	120	58	95	73	82	Injection 0 - 280 nm spectrum:EM Spectrum Read#11
+F	39	366	241	216	55	352	203	125	57	97	87	74	Injection 0 - 280 nm spectrum:EM Spectrum Read#11
+G	47	388	292	204	58	181	137	112	61	95	79	71	Injection 0 - 280 nm spectrum:EM Spectrum Read#11
+H	44	356	245	209	50	162	123	117	47	95	95	72	Injection 0 - 280 nm spectrum:EM Spectrum Read#11
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 12 (430 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	33	214	158	131	34	108	93	72	169	67	63	56	Injection 0 - 280 nm spectrum:EM Spectrum Read#12
+B	28	224	167	131	36	113	231	83	38	70	59	43	Injection 0 - 280 nm spectrum:EM Spectrum Read#12
+C	26	214	155	135	223	113	90	73	43	61	153	53	Injection 0 - 280 nm spectrum:EM Spectrum Read#12
+D	30	226	160	134	70	106	79	88	41	62	52	58	Injection 0 - 280 nm spectrum:EM Spectrum Read#12
+E	30	213	154	139	37	114	82	77	47	59	57	55	Injection 0 - 280 nm spectrum:EM Spectrum Read#12
+F	35	219	154	133	38	279	133	87	37	71	62	49	Injection 0 - 280 nm spectrum:EM Spectrum Read#12
+G	39	234	203	131	43	115	90	74	41	63	61	48	Injection 0 - 280 nm spectrum:EM Spectrum Read#12
+H	33	214	162	139	40	108	79	73	36	68	70	50	Injection 0 - 280 nm spectrum:EM Spectrum Read#12
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 13 (440 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	29	137	104	89	31	70	58	50	162	52	44	44	Injection 0 - 280 nm spectrum:EM Spectrum Read#13
+B	23	137	132	88	28	75	211	56	33	49	47	34	Injection 0 - 280 nm spectrum:EM Spectrum Read#13
+C	23	144	106	87	217	84	66	57	32	51	146	37	Injection 0 - 280 nm spectrum:EM Spectrum Read#13
+D	23	143	103	88	68	73	56	63	35	48	39	48	Injection 0 - 280 nm spectrum:EM Spectrum Read#13
+E	26	138	105	92	28	75	63	55	37	42	44	36	Injection 0 - 280 nm spectrum:EM Spectrum Read#13
+F	26	138	103	83	28	266	98	61	39	43	47	40	Injection 0 - 280 nm spectrum:EM Spectrum Read#13
+G	27	157	148	93	29	80	64	56	36	50	34	39	Injection 0 - 280 nm spectrum:EM Spectrum Read#13
+H	23	126	109	91	32	73	62	55	32	50	52	34	Injection 0 - 280 nm spectrum:EM Spectrum Read#13
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 14 (450 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	25	101	73	53	28	56	47	39	139	35	30	36	Injection 0 - 280 nm spectrum:EM Spectrum Read#14
+B	24	103	90	61	21	57	178	41	26	32	27	32	Injection 0 - 280 nm spectrum:EM Spectrum Read#14
+C	22	98	72	61	172	64	50	32	26	39	122	30	Injection 0 - 280 nm spectrum:EM Spectrum Read#14
+D	23	91	77	56	58	51	43	45	22	35	28	29	Injection 0 - 280 nm spectrum:EM Spectrum Read#14
+E	30	81	78	71	27	48	48	44	26	34	37	29	Injection 0 - 280 nm spectrum:EM Spectrum Read#14
+F	20	100	78	68	24	216	76	48	26	33	35	27	Injection 0 - 280 nm spectrum:EM Spectrum Read#14
+G	32	116	118	60	34	59	52	51	28	41	31	26	Injection 0 - 280 nm spectrum:EM Spectrum Read#14
+H	17	99	74	59	26	48	45	40	28	26	45	30	Injection 0 - 280 nm spectrum:EM Spectrum Read#14
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 15 (460 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	15	57	47	42	15	36	28	22	96	26	26	20	Injection 0 - 280 nm spectrum:EM Spectrum Read#15
+B	12	65	58	49	24	32	121	24	23	28	32	16	Injection 0 - 280 nm spectrum:EM Spectrum Read#15
+C	20	59	48	41	129	45	28	27	19	20	88	11	Injection 0 - 280 nm spectrum:EM Spectrum Read#15
+D	18	65	48	50	43	35	19	29	16	27	24	25	Injection 0 - 280 nm spectrum:EM Spectrum Read#15
+E	18	54	51	46	17	41	33	33	20	23	17	18	Injection 0 - 280 nm spectrum:EM Spectrum Read#15
+F	20	58	44	38	19	158	53	30	23	22	19	21	Injection 0 - 280 nm spectrum:EM Spectrum Read#15
+G	18	64	69	48	13	40	23	34	24	28	24	21	Injection 0 - 280 nm spectrum:EM Spectrum Read#15
+H	16	59	48	46	17	24	32	34	13	27	34	17	Injection 0 - 280 nm spectrum:EM Spectrum Read#15
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 16 (470 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	11	46	36	32	15	23	25	23	83	19	17	19	Injection 0 - 280 nm spectrum:EM Spectrum Read#16
+B	17	48	44	35	16	30	101	21	16	20	22	16	Injection 0 - 280 nm spectrum:EM Spectrum Read#16
+C	18	39	36	32	111	34	22	24	19	16	69	14	Injection 0 - 280 nm spectrum:EM Spectrum Read#16
+D	17	39	36	33	32	29	24	19	17	22	12	21	Injection 0 - 280 nm spectrum:EM Spectrum Read#16
+E	15	36	35	36	17	23	22	22	20	13	20	15	Injection 0 - 280 nm spectrum:EM Spectrum Read#16
+F	14	43	30	29	15	131	35	26	22	16	23	18	Injection 0 - 280 nm spectrum:EM Spectrum Read#16
+G	13	47	56	37	14	26	28	19	25	17	15	18	Injection 0 - 280 nm spectrum:EM Spectrum Read#16
+H	15	43	34	40	11	30	26	22	7	27	26	22	Injection 0 - 280 nm spectrum:EM Spectrum Read#16
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 17 (480 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	10	33	19	17	11	21	21	15	64	19	19	15	Injection 0 - 280 nm spectrum:EM Spectrum Read#17
+B	9	29	37	29	13	22	84	13	14	19	15	16	Injection 0 - 280 nm spectrum:EM Spectrum Read#17
+C	13	31	25	15	78	19	18	21	7	18	50	16	Injection 0 - 280 nm spectrum:EM Spectrum Read#17
+D	12	35	27	26	23	18	14	21	15	9	9	19	Injection 0 - 280 nm spectrum:EM Spectrum Read#17
+E	10	24	24	25	12	21	16	22	18	13	13	13	Injection 0 - 280 nm spectrum:EM Spectrum Read#17
+F	10	27	24	27	11	88	29	21	14	15	11	15	Injection 0 - 280 nm spectrum:EM Spectrum Read#17
+G	12	33	38	24	16	26	16	18	15	18	15	11	Injection 0 - 280 nm spectrum:EM Spectrum Read#17
+H	9	31	23	28	14	23	17	18	10	15	19	12	Injection 0 - 280 nm spectrum:EM Spectrum Read#17
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 18 (490 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	14	22	18	21	12	22	17	16	41	17	15	11	Injection 0 - 280 nm spectrum:EM Spectrum Read#18
+B	8	24	28	16	9	16	57	16	10	12	13	13	Injection 0 - 280 nm spectrum:EM Spectrum Read#18
+C	12	22	19	19	54	16	16	17	13	12	40	8	Injection 0 - 280 nm spectrum:EM Spectrum Read#18
+D	9	24	17	23	21	18	12	17	13	10	9	12	Injection 0 - 280 nm spectrum:EM Spectrum Read#18
+E	11	26	20	22	5	10	13	18	9	17	10	12	Injection 0 - 280 nm spectrum:EM Spectrum Read#18
+F	5	16	19	19	13	64	22	20	9	3	14	11	Injection 0 - 280 nm spectrum:EM Spectrum Read#18
+G	11	23	31	18	14	20	16	14	10	7	11	11	Injection 0 - 280 nm spectrum:EM Spectrum Read#18
+H	13	19	22	21	9	19	14	12	14	8	13	11	Injection 0 - 280 nm spectrum:EM Spectrum Read#18
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 19 (500 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	10	17	20	14	10	11	9	8	40	12	8	9	Injection 0 - 280 nm spectrum:EM Spectrum Read#19
+B	10	14	24	17	7	13	42	8	15	13	11	14	Injection 0 - 280 nm spectrum:EM Spectrum Read#19
+C	10	25	17	16	45	17	15	13	10	9	29	11	Injection 0 - 280 nm spectrum:EM Spectrum Read#19
+D	5	8	19	10	13	12	3	15	10	10	8	14	Injection 0 - 280 nm spectrum:EM Spectrum Read#19
+E	9	15	18	13	3	17	17	13	10	7	4	8	Injection 0 - 280 nm spectrum:EM Spectrum Read#19
+F	6	15	16	17	10	48	14	16	6	13	13	8	Injection 0 - 280 nm spectrum:EM Spectrum Read#19
+G	8	26	19	16	12	10	10	13	9	15	13	8	Injection 0 - 280 nm spectrum:EM Spectrum Read#19
+H	7	19	12	21	11	5	12	8	13	12	14	6	Injection 0 - 280 nm spectrum:EM Spectrum Read#19
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 20 (510 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	12	12	15	5	8	9	8	9	21	14	6	11	Injection 0 - 280 nm spectrum:EM Spectrum Read#20
+B	13	18	25	15	12	9	32	9	6	13	3	4	Injection 0 - 280 nm spectrum:EM Spectrum Read#20
+C	5	12	10	6	32	10	13	8	4	8	21	8	Injection 0 - 280 nm spectrum:EM Spectrum Read#20
+D	7	15	14	11	13	6	6	9	5	9	8	4	Injection 0 - 280 nm spectrum:EM Spectrum Read#20
+E	7	13	16	13	6	11	9	5	8	6	11	10	Injection 0 - 280 nm spectrum:EM Spectrum Read#20
+F	9	16	19	12	7	41	10	7	8	6	14	1	Injection 0 - 280 nm spectrum:EM Spectrum Read#20
+G	7	17	15	11	5	13	7	10	6	6	5	6	Injection 0 - 280 nm spectrum:EM Spectrum Read#20
+H	8	15	14	15	9	13	10	10	8	7	14	12	Injection 0 - 280 nm spectrum:EM Spectrum Read#20
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 21 (520 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	5	7	9	13	3	12	11	11	17	6	8	8	Injection 0 - 280 nm spectrum:EM Spectrum Read#21
+B	6	10	16	6	7	10	19	8	8	2	6	10	Injection 0 - 280 nm spectrum:EM Spectrum Read#21
+C	8	8	10	10	16	16	15	4	8	10	14	1	Injection 0 - 280 nm spectrum:EM Spectrum Read#21
+D	5	3	8	8	9	5	6	10	3	7	9	5	Injection 0 - 280 nm spectrum:EM Spectrum Read#21
+E	9	15	16	5	1	6	7	9	4	5	6	6	Injection 0 - 280 nm spectrum:EM Spectrum Read#21
+F	9	11	7	12	7	24	15	11	6	4	4	3	Injection 0 - 280 nm spectrum:EM Spectrum Read#21
+G	0	15	13	10	0	11	1	10	3	6	9	9	Injection 0 - 280 nm spectrum:EM Spectrum Read#21
+H	3	1	14	14	6	15	4	10	9	11	6	7	Injection 0 - 280 nm spectrum:EM Spectrum Read#21
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 22 (530 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	1	13	8	3	9	8	6	8	16	7	8	2	Injection 0 - 280 nm spectrum:EM Spectrum Read#22
+B	2	8	15	8	5	8	15	2	0	12	7	0	Injection 0 - 280 nm spectrum:EM Spectrum Read#22
+C	0	15	14	10	18	10	6	4	4	0	16	6	Injection 0 - 280 nm spectrum:EM Spectrum Read#22
+D	3	11	12	13	8	8	5	10	8	12	1	7	Injection 0 - 280 nm spectrum:EM Spectrum Read#22
+E	3	11	9	6	4	11	1	10	10	8	7	2	Injection 0 - 280 nm spectrum:EM Spectrum Read#22
+F	6	4	8	8	3	16	8	5	5	8	8	12	Injection 0 - 280 nm spectrum:EM Spectrum Read#22
+G	2	14	15	4	2	9	6	9	0	2	11	1	Injection 0 - 280 nm spectrum:EM Spectrum Read#22
+H	8	14	8	13	10	6	8	0	6	7	9	6	Injection 0 - 280 nm spectrum:EM Spectrum Read#22
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 23 (540 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	1	13	16	12	10	1	11	6	10	8	5	6	Injection 0 - 280 nm spectrum:EM Spectrum Read#23
+B	5	15	11	3	2	6	10	5	3	2	5	4	Injection 0 - 280 nm spectrum:EM Spectrum Read#23
+C	7	7	7	5	11	7	10	0	6	13	9	6	Injection 0 - 280 nm spectrum:EM Spectrum Read#23
+D	6	5	7	6	8	6	5	8	2	3	6	2	Injection 0 - 280 nm spectrum:EM Spectrum Read#23
+E	3	10	2	3	1	11	7	2	9	7	8	3	Injection 0 - 280 nm spectrum:EM Spectrum Read#23
+F	6	11	7	6	1	15	6	6	12	7	4	10	Injection 0 - 280 nm spectrum:EM Spectrum Read#23
+G	4	9	8	5	6	0	5	6	6	8	1	3	Injection 0 - 280 nm spectrum:EM Spectrum Read#23
+H	5	10	0	10	10	5	2	13	4	6	7	0	Injection 0 - 280 nm spectrum:EM Spectrum Read#23
+
+Injection 0 - 280 nm spectrum:EM Spectrum
+Wavelength 24 (550 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	6	9	10	2	6	10	2	7	8	11	6	7	Injection 0 - 280 nm spectrum:EM Spectrum Read#24
+B	6	6	0	5	6	8	15	4	9	9	4	5	Injection 0 - 280 nm spectrum:EM Spectrum Read#24
+C	8	4	16	1	9	12	13	10	3	10	7	7	Injection 0 - 280 nm spectrum:EM Spectrum Read#24
+D	11	12	16	11	5	12	8	7	4	7	6	4	Injection 0 - 280 nm spectrum:EM Spectrum Read#24
+E	7	7	5	14	4	9	9	4	4	8	3	2	Injection 0 - 280 nm spectrum:EM Spectrum Read#24
+F	6	4	3	10	3	14	10	10	0	8	0	10	Injection 0 - 280 nm spectrum:EM Spectrum Read#24
+G	8	13	12	15	10	0	5	9	2	9	10	8	Injection 0 - 280 nm spectrum:EM Spectrum Read#24
+H	4	13	8	1	7	20	10	8	6	8	9	10	Injection 0 - 280 nm spectrum:EM Spectrum Read#24
+

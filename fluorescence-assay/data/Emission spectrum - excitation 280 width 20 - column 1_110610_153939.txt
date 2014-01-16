@@ -1,0 +1,676 @@
+Procedure Summary
+
+Plate Type	Costar 96 black opaque
+Read	Read:  Spectrum Read (F) Emission Spectrum [350nm to 600nm by 5]
+
+Data Reduction Summary
+
+	
+
+Spectrum Read:EM Spectrum
+Wavelength 1 (350 nm)
+	1
+A	523	Spectrum Read:EM Spectrum Read#1
+B	319	Spectrum Read:EM Spectrum Read#1
+C	193	Spectrum Read:EM Spectrum Read#1
+D	108	Spectrum Read:EM Spectrum Read#1
+E	306	Spectrum Read:EM Spectrum Read#1
+F	159	Spectrum Read:EM Spectrum Read#1
+G	1058	Spectrum Read:EM Spectrum Read#1
+H	951	Spectrum Read:EM Spectrum Read#1
+
+Spectrum Read:EM Spectrum
+Wavelength 2 (355 nm)
+	1
+A	466	Spectrum Read:EM Spectrum Read#2
+B	282	Spectrum Read:EM Spectrum Read#2
+C	135	Spectrum Read:EM Spectrum Read#2
+D	97	Spectrum Read:EM Spectrum Read#2
+E	271	Spectrum Read:EM Spectrum Read#2
+F	144	Spectrum Read:EM Spectrum Read#2
+G	1091	Spectrum Read:EM Spectrum Read#2
+H	1063	Spectrum Read:EM Spectrum Read#2
+
+Spectrum Read:EM Spectrum
+Wavelength 3 (360 nm)
+	1
+A	386	Spectrum Read:EM Spectrum Read#3
+B	232	Spectrum Read:EM Spectrum Read#3
+C	122	Spectrum Read:EM Spectrum Read#3
+D	45	Spectrum Read:EM Spectrum Read#3
+E	230	Spectrum Read:EM Spectrum Read#3
+F	94	Spectrum Read:EM Spectrum Read#3
+G	1226	Spectrum Read:EM Spectrum Read#3
+H	1305	Spectrum Read:EM Spectrum Read#3
+
+Spectrum Read:EM Spectrum
+Wavelength 4 (365 nm)
+	1
+A	426	Spectrum Read:EM Spectrum Read#4
+B	262	Spectrum Read:EM Spectrum Read#4
+C	83	Spectrum Read:EM Spectrum Read#4
+D	50	Spectrum Read:EM Spectrum Read#4
+E	231	Spectrum Read:EM Spectrum Read#4
+F	93	Spectrum Read:EM Spectrum Read#4
+G	1445	Spectrum Read:EM Spectrum Read#4
+H	1642	Spectrum Read:EM Spectrum Read#4
+
+Spectrum Read:EM Spectrum
+Wavelength 5 (370 nm)
+	1
+A	435	Spectrum Read:EM Spectrum Read#5
+B	327	Spectrum Read:EM Spectrum Read#5
+C	68	Spectrum Read:EM Spectrum Read#5
+D	38	Spectrum Read:EM Spectrum Read#5
+E	184	Spectrum Read:EM Spectrum Read#5
+F	59	Spectrum Read:EM Spectrum Read#5
+G	1711	Spectrum Read:EM Spectrum Read#5
+H	2018	Spectrum Read:EM Spectrum Read#5
+
+Spectrum Read:EM Spectrum
+Wavelength 6 (375 nm)
+	1
+A	477	Spectrum Read:EM Spectrum Read#6
+B	351	Spectrum Read:EM Spectrum Read#6
+C	58	Spectrum Read:EM Spectrum Read#6
+D	38	Spectrum Read:EM Spectrum Read#6
+E	196	Spectrum Read:EM Spectrum Read#6
+F	42	Spectrum Read:EM Spectrum Read#6
+G	1940	Spectrum Read:EM Spectrum Read#6
+H	2387	Spectrum Read:EM Spectrum Read#6
+
+Spectrum Read:EM Spectrum
+Wavelength 7 (380 nm)
+	1
+A	476	Spectrum Read:EM Spectrum Read#7
+B	382	Spectrum Read:EM Spectrum Read#7
+C	52	Spectrum Read:EM Spectrum Read#7
+D	32	Spectrum Read:EM Spectrum Read#7
+E	191	Spectrum Read:EM Spectrum Read#7
+F	42	Spectrum Read:EM Spectrum Read#7
+G	2137	Spectrum Read:EM Spectrum Read#7
+H	2729	Spectrum Read:EM Spectrum Read#7
+
+Spectrum Read:EM Spectrum
+Wavelength 8 (385 nm)
+	1
+A	530	Spectrum Read:EM Spectrum Read#8
+B	422	Spectrum Read:EM Spectrum Read#8
+C	31	Spectrum Read:EM Spectrum Read#8
+D	15	Spectrum Read:EM Spectrum Read#8
+E	192	Spectrum Read:EM Spectrum Read#8
+F	34	Spectrum Read:EM Spectrum Read#8
+G	2304	Spectrum Read:EM Spectrum Read#8
+H	2897	Spectrum Read:EM Spectrum Read#8
+
+Spectrum Read:EM Spectrum
+Wavelength 9 (390 nm)
+	1
+A	567	Spectrum Read:EM Spectrum Read#9
+B	475	Spectrum Read:EM Spectrum Read#9
+C	32	Spectrum Read:EM Spectrum Read#9
+D	4	Spectrum Read:EM Spectrum Read#9
+E	199	Spectrum Read:EM Spectrum Read#9
+F	28	Spectrum Read:EM Spectrum Read#9
+G	2301	Spectrum Read:EM Spectrum Read#9
+H	2940	Spectrum Read:EM Spectrum Read#9
+
+Spectrum Read:EM Spectrum
+Wavelength 10 (395 nm)
+	1
+A	520	Spectrum Read:EM Spectrum Read#10
+B	434	Spectrum Read:EM Spectrum Read#10
+C	36	Spectrum Read:EM Spectrum Read#10
+D	10	Spectrum Read:EM Spectrum Read#10
+E	192	Spectrum Read:EM Spectrum Read#10
+F	28	Spectrum Read:EM Spectrum Read#10
+G	2289	Spectrum Read:EM Spectrum Read#10
+H	2902	Spectrum Read:EM Spectrum Read#10
+
+Spectrum Read:EM Spectrum
+Wavelength 11 (400 nm)
+	1
+A	476	Spectrum Read:EM Spectrum Read#11
+B	375	Spectrum Read:EM Spectrum Read#11
+C	21	Spectrum Read:EM Spectrum Read#11
+D	7	Spectrum Read:EM Spectrum Read#11
+E	192	Spectrum Read:EM Spectrum Read#11
+F	3	Spectrum Read:EM Spectrum Read#11
+G	2183	Spectrum Read:EM Spectrum Read#11
+H	2783	Spectrum Read:EM Spectrum Read#11
+
+Spectrum Read:EM Spectrum
+Wavelength 12 (405 nm)
+	1
+A	413	Spectrum Read:EM Spectrum Read#12
+B	343	Spectrum Read:EM Spectrum Read#12
+C	20	Spectrum Read:EM Spectrum Read#12
+D	16	Spectrum Read:EM Spectrum Read#12
+E	200	Spectrum Read:EM Spectrum Read#12
+F	21	Spectrum Read:EM Spectrum Read#12
+G	2029	Spectrum Read:EM Spectrum Read#12
+H	2584	Spectrum Read:EM Spectrum Read#12
+
+Spectrum Read:EM Spectrum
+Wavelength 13 (410 nm)
+	1
+A	380	Spectrum Read:EM Spectrum Read#13
+B	285	Spectrum Read:EM Spectrum Read#13
+C	30	Spectrum Read:EM Spectrum Read#13
+D	12	Spectrum Read:EM Spectrum Read#13
+E	194	Spectrum Read:EM Spectrum Read#13
+F	27	Spectrum Read:EM Spectrum Read#13
+G	1826	Spectrum Read:EM Spectrum Read#13
+H	2350	Spectrum Read:EM Spectrum Read#13
+
+Spectrum Read:EM Spectrum
+Wavelength 14 (415 nm)
+	1
+A	343	Spectrum Read:EM Spectrum Read#14
+B	293	Spectrum Read:EM Spectrum Read#14
+C	26	Spectrum Read:EM Spectrum Read#14
+D	19	Spectrum Read:EM Spectrum Read#14
+E	204	Spectrum Read:EM Spectrum Read#14
+F	20	Spectrum Read:EM Spectrum Read#14
+G	1604	Spectrum Read:EM Spectrum Read#14
+H	2087	Spectrum Read:EM Spectrum Read#14
+
+Spectrum Read:EM Spectrum
+Wavelength 15 (420 nm)
+	1
+A	296	Spectrum Read:EM Spectrum Read#15
+B	212	Spectrum Read:EM Spectrum Read#15
+C	25	Spectrum Read:EM Spectrum Read#15
+D	16	Spectrum Read:EM Spectrum Read#15
+E	198	Spectrum Read:EM Spectrum Read#15
+F	14	Spectrum Read:EM Spectrum Read#15
+G	1411	Spectrum Read:EM Spectrum Read#15
+H	1812	Spectrum Read:EM Spectrum Read#15
+
+Spectrum Read:EM Spectrum
+Wavelength 16 (425 nm)
+	1
+A	234	Spectrum Read:EM Spectrum Read#16
+B	196	Spectrum Read:EM Spectrum Read#16
+C	34	Spectrum Read:EM Spectrum Read#16
+D	11	Spectrum Read:EM Spectrum Read#16
+E	202	Spectrum Read:EM Spectrum Read#16
+F	10	Spectrum Read:EM Spectrum Read#16
+G	1192	Spectrum Read:EM Spectrum Read#16
+H	1556	Spectrum Read:EM Spectrum Read#16
+
+Spectrum Read:EM Spectrum
+Wavelength 17 (430 nm)
+	1
+A	229	Spectrum Read:EM Spectrum Read#17
+B	155	Spectrum Read:EM Spectrum Read#17
+C	38	Spectrum Read:EM Spectrum Read#17
+D	13	Spectrum Read:EM Spectrum Read#17
+E	196	Spectrum Read:EM Spectrum Read#17
+F	17	Spectrum Read:EM Spectrum Read#17
+G	1012	Spectrum Read:EM Spectrum Read#17
+H	1313	Spectrum Read:EM Spectrum Read#17
+
+Spectrum Read:EM Spectrum
+Wavelength 18 (435 nm)
+	1
+A	189	Spectrum Read:EM Spectrum Read#18
+B	130	Spectrum Read:EM Spectrum Read#18
+C	39	Spectrum Read:EM Spectrum Read#18
+D	12	Spectrum Read:EM Spectrum Read#18
+E	182	Spectrum Read:EM Spectrum Read#18
+F	8	Spectrum Read:EM Spectrum Read#18
+G	838	Spectrum Read:EM Spectrum Read#18
+H	1094	Spectrum Read:EM Spectrum Read#18
+
+Spectrum Read:EM Spectrum
+Wavelength 19 (440 nm)
+	1
+A	165	Spectrum Read:EM Spectrum Read#19
+B	110	Spectrum Read:EM Spectrum Read#19
+C	38	Spectrum Read:EM Spectrum Read#19
+D	19	Spectrum Read:EM Spectrum Read#19
+E	166	Spectrum Read:EM Spectrum Read#19
+F	21	Spectrum Read:EM Spectrum Read#19
+G	715	Spectrum Read:EM Spectrum Read#19
+H	915	Spectrum Read:EM Spectrum Read#19
+
+Spectrum Read:EM Spectrum
+Wavelength 20 (445 nm)
+	1
+A	164	Spectrum Read:EM Spectrum Read#20
+B	82	Spectrum Read:EM Spectrum Read#20
+C	49	Spectrum Read:EM Spectrum Read#20
+D	12	Spectrum Read:EM Spectrum Read#20
+E	151	Spectrum Read:EM Spectrum Read#20
+F	13	Spectrum Read:EM Spectrum Read#20
+G	583	Spectrum Read:EM Spectrum Read#20
+H	769	Spectrum Read:EM Spectrum Read#20
+
+Spectrum Read:EM Spectrum
+Wavelength 21 (450 nm)
+	1
+A	134	Spectrum Read:EM Spectrum Read#21
+B	64	Spectrum Read:EM Spectrum Read#21
+C	47	Spectrum Read:EM Spectrum Read#21
+D	14	Spectrum Read:EM Spectrum Read#21
+E	166	Spectrum Read:EM Spectrum Read#21
+F	27	Spectrum Read:EM Spectrum Read#21
+G	503	Spectrum Read:EM Spectrum Read#21
+H	637	Spectrum Read:EM Spectrum Read#21
+
+Spectrum Read:EM Spectrum
+Wavelength 22 (455 nm)
+	1
+A	106	Spectrum Read:EM Spectrum Read#22
+B	69	Spectrum Read:EM Spectrum Read#22
+C	57	Spectrum Read:EM Spectrum Read#22
+D	12	Spectrum Read:EM Spectrum Read#22
+E	161	Spectrum Read:EM Spectrum Read#22
+F	14	Spectrum Read:EM Spectrum Read#22
+G	429	Spectrum Read:EM Spectrum Read#22
+H	493	Spectrum Read:EM Spectrum Read#22
+
+Spectrum Read:EM Spectrum
+Wavelength 23 (460 nm)
+	1
+A	100	Spectrum Read:EM Spectrum Read#23
+B	59	Spectrum Read:EM Spectrum Read#23
+C	48	Spectrum Read:EM Spectrum Read#23
+D	23	Spectrum Read:EM Spectrum Read#23
+E	141	Spectrum Read:EM Spectrum Read#23
+F	14	Spectrum Read:EM Spectrum Read#23
+G	317	Spectrum Read:EM Spectrum Read#23
+H	419	Spectrum Read:EM Spectrum Read#23
+
+Spectrum Read:EM Spectrum
+Wavelength 24 (465 nm)
+	1
+A	94	Spectrum Read:EM Spectrum Read#24
+B	62	Spectrum Read:EM Spectrum Read#24
+C	51	Spectrum Read:EM Spectrum Read#24
+D	16	Spectrum Read:EM Spectrum Read#24
+E	140	Spectrum Read:EM Spectrum Read#24
+F	0	Spectrum Read:EM Spectrum Read#24
+G	230	Spectrum Read:EM Spectrum Read#24
+H	329	Spectrum Read:EM Spectrum Read#24
+
+Spectrum Read:EM Spectrum
+Wavelength 25 (470 nm)
+	1
+A	75	Spectrum Read:EM Spectrum Read#25
+B	45	Spectrum Read:EM Spectrum Read#25
+C	54	Spectrum Read:EM Spectrum Read#25
+D	14	Spectrum Read:EM Spectrum Read#25
+E	122	Spectrum Read:EM Spectrum Read#25
+F	0	Spectrum Read:EM Spectrum Read#25
+G	210	Spectrum Read:EM Spectrum Read#25
+H	263	Spectrum Read:EM Spectrum Read#25
+
+Spectrum Read:EM Spectrum
+Wavelength 26 (475 nm)
+	1
+A	68	Spectrum Read:EM Spectrum Read#26
+B	51	Spectrum Read:EM Spectrum Read#26
+C	51	Spectrum Read:EM Spectrum Read#26
+D	13	Spectrum Read:EM Spectrum Read#26
+E	111	Spectrum Read:EM Spectrum Read#26
+F	13	Spectrum Read:EM Spectrum Read#26
+G	161	Spectrum Read:EM Spectrum Read#26
+H	196	Spectrum Read:EM Spectrum Read#26
+
+Spectrum Read:EM Spectrum
+Wavelength 27 (480 nm)
+	1
+A	66	Spectrum Read:EM Spectrum Read#27
+B	45	Spectrum Read:EM Spectrum Read#27
+C	57	Spectrum Read:EM Spectrum Read#27
+D	18	Spectrum Read:EM Spectrum Read#27
+E	95	Spectrum Read:EM Spectrum Read#27
+F	13	Spectrum Read:EM Spectrum Read#27
+G	136	Spectrum Read:EM Spectrum Read#27
+H	177	Spectrum Read:EM Spectrum Read#27
+
+Spectrum Read:EM Spectrum
+Wavelength 28 (485 nm)
+	1
+A	70	Spectrum Read:EM Spectrum Read#28
+B	24	Spectrum Read:EM Spectrum Read#28
+C	53	Spectrum Read:EM Spectrum Read#28
+D	15	Spectrum Read:EM Spectrum Read#28
+E	99	Spectrum Read:EM Spectrum Read#28
+F	7	Spectrum Read:EM Spectrum Read#28
+G	110	Spectrum Read:EM Spectrum Read#28
+H	140	Spectrum Read:EM Spectrum Read#28
+
+Spectrum Read:EM Spectrum
+Wavelength 29 (490 nm)
+	1
+A	62	Spectrum Read:EM Spectrum Read#29
+B	32	Spectrum Read:EM Spectrum Read#29
+C	47	Spectrum Read:EM Spectrum Read#29
+D	24	Spectrum Read:EM Spectrum Read#29
+E	83	Spectrum Read:EM Spectrum Read#29
+F	9	Spectrum Read:EM Spectrum Read#29
+G	100	Spectrum Read:EM Spectrum Read#29
+H	121	Spectrum Read:EM Spectrum Read#29
+
+Spectrum Read:EM Spectrum
+Wavelength 30 (495 nm)
+	1
+A	42	Spectrum Read:EM Spectrum Read#30
+B	34	Spectrum Read:EM Spectrum Read#30
+C	45	Spectrum Read:EM Spectrum Read#30
+D	14	Spectrum Read:EM Spectrum Read#30
+E	90	Spectrum Read:EM Spectrum Read#30
+F	2	Spectrum Read:EM Spectrum Read#30
+G	75	Spectrum Read:EM Spectrum Read#30
+H	82	Spectrum Read:EM Spectrum Read#30
+
+Spectrum Read:EM Spectrum
+Wavelength 31 (500 nm)
+	1
+A	41	Spectrum Read:EM Spectrum Read#31
+B	19	Spectrum Read:EM Spectrum Read#31
+C	49	Spectrum Read:EM Spectrum Read#31
+D	15	Spectrum Read:EM Spectrum Read#31
+E	64	Spectrum Read:EM Spectrum Read#31
+F	6	Spectrum Read:EM Spectrum Read#31
+G	43	Spectrum Read:EM Spectrum Read#31
+H	77	Spectrum Read:EM Spectrum Read#31
+
+Spectrum Read:EM Spectrum
+Wavelength 32 (505 nm)
+	1
+A	42	Spectrum Read:EM Spectrum Read#32
+B	12	Spectrum Read:EM Spectrum Read#32
+C	49	Spectrum Read:EM Spectrum Read#32
+D	12	Spectrum Read:EM Spectrum Read#32
+E	71	Spectrum Read:EM Spectrum Read#32
+F	9	Spectrum Read:EM Spectrum Read#32
+G	45	Spectrum Read:EM Spectrum Read#32
+H	60	Spectrum Read:EM Spectrum Read#32
+
+Spectrum Read:EM Spectrum
+Wavelength 33 (510 nm)
+	1
+A	38	Spectrum Read:EM Spectrum Read#33
+B	25	Spectrum Read:EM Spectrum Read#33
+C	41	Spectrum Read:EM Spectrum Read#33
+D	11	Spectrum Read:EM Spectrum Read#33
+E	70	Spectrum Read:EM Spectrum Read#33
+F	7	Spectrum Read:EM Spectrum Read#33
+G	38	Spectrum Read:EM Spectrum Read#33
+H	56	Spectrum Read:EM Spectrum Read#33
+
+Spectrum Read:EM Spectrum
+Wavelength 34 (515 nm)
+	1
+A	45	Spectrum Read:EM Spectrum Read#34
+B	20	Spectrum Read:EM Spectrum Read#34
+C	39	Spectrum Read:EM Spectrum Read#34
+D	16	Spectrum Read:EM Spectrum Read#34
+E	39	Spectrum Read:EM Spectrum Read#34
+F	5	Spectrum Read:EM Spectrum Read#34
+G	28	Spectrum Read:EM Spectrum Read#34
+H	69	Spectrum Read:EM Spectrum Read#34
+
+Spectrum Read:EM Spectrum
+Wavelength 35 (520 nm)
+	1
+A	34	Spectrum Read:EM Spectrum Read#35
+B	12	Spectrum Read:EM Spectrum Read#35
+C	36	Spectrum Read:EM Spectrum Read#35
+D	18	Spectrum Read:EM Spectrum Read#35
+E	48	Spectrum Read:EM Spectrum Read#35
+F	0	Spectrum Read:EM Spectrum Read#35
+G	12	Spectrum Read:EM Spectrum Read#35
+H	51	Spectrum Read:EM Spectrum Read#35
+
+Spectrum Read:EM Spectrum
+Wavelength 36 (525 nm)
+	1
+A	23	Spectrum Read:EM Spectrum Read#36
+B	0	Spectrum Read:EM Spectrum Read#36
+C	52	Spectrum Read:EM Spectrum Read#36
+D	27	Spectrum Read:EM Spectrum Read#36
+E	51	Spectrum Read:EM Spectrum Read#36
+F	0	Spectrum Read:EM Spectrum Read#36
+G	21	Spectrum Read:EM Spectrum Read#36
+H	34	Spectrum Read:EM Spectrum Read#36
+
+Spectrum Read:EM Spectrum
+Wavelength 37 (530 nm)
+	1
+A	6	Spectrum Read:EM Spectrum Read#37
+B	25	Spectrum Read:EM Spectrum Read#37
+C	35	Spectrum Read:EM Spectrum Read#37
+D	4	Spectrum Read:EM Spectrum Read#37
+E	32	Spectrum Read:EM Spectrum Read#37
+F	7	Spectrum Read:EM Spectrum Read#37
+G	22	Spectrum Read:EM Spectrum Read#37
+H	13	Spectrum Read:EM Spectrum Read#37
+
+Spectrum Read:EM Spectrum
+Wavelength 38 (535 nm)
+	1
+A	26	Spectrum Read:EM Spectrum Read#38
+B	0	Spectrum Read:EM Spectrum Read#38
+C	33	Spectrum Read:EM Spectrum Read#38
+D	21	Spectrum Read:EM Spectrum Read#38
+E	28	Spectrum Read:EM Spectrum Read#38
+F	2	Spectrum Read:EM Spectrum Read#38
+G	35	Spectrum Read:EM Spectrum Read#38
+H	29	Spectrum Read:EM Spectrum Read#38
+
+Spectrum Read:EM Spectrum
+Wavelength 39 (540 nm)
+	1
+A	27	Spectrum Read:EM Spectrum Read#39
+B	8	Spectrum Read:EM Spectrum Read#39
+C	24	Spectrum Read:EM Spectrum Read#39
+D	3	Spectrum Read:EM Spectrum Read#39
+E	35	Spectrum Read:EM Spectrum Read#39
+F	0	Spectrum Read:EM Spectrum Read#39
+G	21	Spectrum Read:EM Spectrum Read#39
+H	21	Spectrum Read:EM Spectrum Read#39
+
+Spectrum Read:EM Spectrum
+Wavelength 40 (545 nm)
+	1
+A	21	Spectrum Read:EM Spectrum Read#40
+B	17	Spectrum Read:EM Spectrum Read#40
+C	28	Spectrum Read:EM Spectrum Read#40
+D	11	Spectrum Read:EM Spectrum Read#40
+E	19	Spectrum Read:EM Spectrum Read#40
+F	2	Spectrum Read:EM Spectrum Read#40
+G	7	Spectrum Read:EM Spectrum Read#40
+H	0	Spectrum Read:EM Spectrum Read#40
+
+Spectrum Read:EM Spectrum
+Wavelength 41 (550 nm)
+	1
+A	15	Spectrum Read:EM Spectrum Read#41
+B	9	Spectrum Read:EM Spectrum Read#41
+C	20	Spectrum Read:EM Spectrum Read#41
+D	15	Spectrum Read:EM Spectrum Read#41
+E	16	Spectrum Read:EM Spectrum Read#41
+F	2	Spectrum Read:EM Spectrum Read#41
+G	20	Spectrum Read:EM Spectrum Read#41
+H	12	Spectrum Read:EM Spectrum Read#41
+
+Spectrum Read:EM Spectrum
+Wavelength 42 (555 nm)
+	1
+A	14	Spectrum Read:EM Spectrum Read#42
+B	0	Spectrum Read:EM Spectrum Read#42
+C	23	Spectrum Read:EM Spectrum Read#42
+D	14	Spectrum Read:EM Spectrum Read#42
+E	14	Spectrum Read:EM Spectrum Read#42
+F	0	Spectrum Read:EM Spectrum Read#42
+G	0	Spectrum Read:EM Spectrum Read#42
+H	9	Spectrum Read:EM Spectrum Read#42
+
+Spectrum Read:EM Spectrum
+Wavelength 43 (560 nm)
+	1
+A	7	Spectrum Read:EM Spectrum Read#43
+B	12	Spectrum Read:EM Spectrum Read#43
+C	10	Spectrum Read:EM Spectrum Read#43
+D	2	Spectrum Read:EM Spectrum Read#43
+E	14	Spectrum Read:EM Spectrum Read#43
+F	0	Spectrum Read:EM Spectrum Read#43
+G	2	Spectrum Read:EM Spectrum Read#43
+H	10	Spectrum Read:EM Spectrum Read#43
+
+Spectrum Read:EM Spectrum
+Wavelength 44 (565 nm)
+	1
+A	31	Spectrum Read:EM Spectrum Read#44
+B	1	Spectrum Read:EM Spectrum Read#44
+C	18	Spectrum Read:EM Spectrum Read#44
+D	5	Spectrum Read:EM Spectrum Read#44
+E	27	Spectrum Read:EM Spectrum Read#44
+F	0	Spectrum Read:EM Spectrum Read#44
+G	5	Spectrum Read:EM Spectrum Read#44
+H	24	Spectrum Read:EM Spectrum Read#44
+
+Spectrum Read:EM Spectrum
+Wavelength 45 (570 nm)
+	1
+A	3	Spectrum Read:EM Spectrum Read#45
+B	7	Spectrum Read:EM Spectrum Read#45
+C	20	Spectrum Read:EM Spectrum Read#45
+D	16	Spectrum Read:EM Spectrum Read#45
+E	8	Spectrum Read:EM Spectrum Read#45
+F	4	Spectrum Read:EM Spectrum Read#45
+G	2	Spectrum Read:EM Spectrum Read#45
+H	2	Spectrum Read:EM Spectrum Read#45
+
+Spectrum Read:EM Spectrum
+Wavelength 46 (575 nm)
+	1
+A	9	Spectrum Read:EM Spectrum Read#46
+B	0	Spectrum Read:EM Spectrum Read#46
+C	29	Spectrum Read:EM Spectrum Read#46
+D	0	Spectrum Read:EM Spectrum Read#46
+E	5	Spectrum Read:EM Spectrum Read#46
+F	0	Spectrum Read:EM Spectrum Read#46
+G	6	Spectrum Read:EM Spectrum Read#46
+H	2	Spectrum Read:EM Spectrum Read#46
+
+Spectrum Read:EM Spectrum
+Wavelength 47 (580 nm)
+	1
+A	33	Spectrum Read:EM Spectrum Read#47
+B	16	Spectrum Read:EM Spectrum Read#47
+C	25	Spectrum Read:EM Spectrum Read#47
+D	3	Spectrum Read:EM Spectrum Read#47
+E	6	Spectrum Read:EM Spectrum Read#47
+F	0	Spectrum Read:EM Spectrum Read#47
+G	17	Spectrum Read:EM Spectrum Read#47
+H	1	Spectrum Read:EM Spectrum Read#47
+
+Spectrum Read:EM Spectrum
+Wavelength 48 (585 nm)
+	1
+A	14	Spectrum Read:EM Spectrum Read#48
+B	26	Spectrum Read:EM Spectrum Read#48
+C	14	Spectrum Read:EM Spectrum Read#48
+D	7	Spectrum Read:EM Spectrum Read#48
+E	18	Spectrum Read:EM Spectrum Read#48
+F	4	Spectrum Read:EM Spectrum Read#48
+G	34	Spectrum Read:EM Spectrum Read#48
+H	0	Spectrum Read:EM Spectrum Read#48
+
+Spectrum Read:EM Spectrum
+Wavelength 49 (590 nm)
+	1
+A	0	Spectrum Read:EM Spectrum Read#49
+B	21	Spectrum Read:EM Spectrum Read#49
+C	14	Spectrum Read:EM Spectrum Read#49
+D	5	Spectrum Read:EM Spectrum Read#49
+E	17	Spectrum Read:EM Spectrum Read#49
+F	0	Spectrum Read:EM Spectrum Read#49
+G	0	Spectrum Read:EM Spectrum Read#49
+H	0	Spectrum Read:EM Spectrum Read#49
+
+Spectrum Read:EM Spectrum
+Wavelength 50 (595 nm)
+	1
+A	0	Spectrum Read:EM Spectrum Read#50
+B	0	Spectrum Read:EM Spectrum Read#50
+C	15	Spectrum Read:EM Spectrum Read#50
+D	0	Spectrum Read:EM Spectrum Read#50
+E	12	Spectrum Read:EM Spectrum Read#50
+F	3	Spectrum Read:EM Spectrum Read#50
+G	15	Spectrum Read:EM Spectrum Read#50
+H	12	Spectrum Read:EM Spectrum Read#50
+
+Spectrum Read:EM Spectrum
+Wavelength 51 (600 nm)
+	1
+A	17	Spectrum Read:EM Spectrum Read#51
+B	8	Spectrum Read:EM Spectrum Read#51
+C	13	Spectrum Read:EM Spectrum Read#51
+D	19	Spectrum Read:EM Spectrum Read#51
+E	13	Spectrum Read:EM Spectrum Read#51
+F	9	Spectrum Read:EM Spectrum Read#51
+G	2	Spectrum Read:EM Spectrum Read#51
+H	0	Spectrum Read:EM Spectrum Read#51
+
+Spectrum Read:EM Spectrum
+
+Wavelength	A6
+350	
+355	
+360	
+365	
+370	
+375	
+380	
+385	
+390	
+395	
+400	
+405	
+410	
+415	
+420	
+425	
+430	
+435	
+440	
+445	
+450	
+455	
+460	
+465	
+470	
+475	
+480	
+485	
+490	
+495	
+500	
+505	
+510	
+515	
+520	
+525	
+530	
+535	
+540	
+545	
+550	
+555	
+560	
+565	
+570	
+575	
+580	
+585	
+590	
+595	
+600	
+
