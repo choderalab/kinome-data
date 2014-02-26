@@ -1,4 +1,0 @@
-% Model accuracy of 1:2 dilution series.
-
-desired_concentrations = 1.0 * 2.^(-0:11);
-single_transfer_cv = 0.017; % single-transfer coefficient of variation
