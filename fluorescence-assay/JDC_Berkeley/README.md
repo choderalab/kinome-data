@@ -1,4 +1,5 @@
 Earlier work on kinase fluorescence assay from JDC at Berkeley.
+Originally 'Added fluorescence assay information from old 'bindtest' SVN archive.'
 
 Manifest
 --------
