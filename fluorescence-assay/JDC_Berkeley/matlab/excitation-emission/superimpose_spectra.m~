@@ -1,0 +1,6 @@
+function spectra2_scaled = superimpose_spectra(spectrum1_wavelengths, spectrum1, spectrum2_wavelengths, spectrum2)
+
+
+
+
+return

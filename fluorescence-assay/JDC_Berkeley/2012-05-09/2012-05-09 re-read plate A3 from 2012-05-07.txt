@@ -1,0 +1,293 @@
+Procedure Summary
+
+Plate Type	Corning 3596 96 well flat bottom
+Read	Read:  Trp fluorescence quenching (F) 280,340
+Read	Read:  Excite 280 read inhibitor fluorescence (F) 280,440, 280,460, 280,480
+Read	Read:  Excite 350 read inhibitor fluorescence (F) 350,440, 350,460, 350,480
+
+Layout
+	1	2	3	4	5	6	7	8	9	10	11	12
+A													Well ID
+													Name
+B													Well ID
+													Name
+C													Well ID
+													Name
+D													Well ID
+													Name
+E													Well ID
+													Name
+F													Well ID
+													Name
+G													Well ID
+													Name
+H													Well ID
+													Name
+
+Data Reduction Summary
+
+	
+
+Layout
+	1	2	3	4	5	6	7	8	9	10	11	12
+A													Well ID
+													Name
+B													Well ID
+													Name
+C													Well ID
+													Name
+D													Well ID
+													Name
+E													Well ID
+													Name
+F													Well ID
+													Name
+G													Well ID
+													Name
+H													Well ID
+													Name
+
+Trp fluorescence quenching:280,340
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	37008	38169	38040	39098	38136	39472	39142	38137	39573	37342	38346	36009	Trp fluorescence quenching:280,340
+B	37883	39242	40384	36866	38457	39915	39690	38420	36912	38431	37010	37790	Trp fluorescence quenching:280,340
+C	38815	39024	38284	37160	38270	35453	38516	37322	36769	35807	35903	35220	Trp fluorescence quenching:280,340
+D	39234	39394	37319	38729	36954	36411	36961	36947	36252	36069	37224	35696	Trp fluorescence quenching:280,340
+E	39467	39273	36181	41454	37761	36664	36678	38421	36522	37281	37648	38503	Trp fluorescence quenching:280,340
+F	38006	38499	36099	36067	36635	35590	38943	36306	37046	35596	38208	37100	Trp fluorescence quenching:280,340
+G	37628	37282	36867	38236	48556	39163	39769	36016	37223	37885	37710	38290	Trp fluorescence quenching:280,340
+H	37007	35904	37507	37525	35837	38879	39586	45851	39736	37313	36298	38423	Trp fluorescence quenching:280,340
+
+Excite 280 read inhibitor fluorescence:280,440
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	10050	10912	12342	11096	11448	12012	12111	12694	11763	11533	12155	12177	Excite 280 read inhibitor fluorescence:280,440
+B	10427	11037	11989	16461	10988	12580	12278	28224	12622	12443	12811	12239	Excite 280 read inhibitor fluorescence:280,440
+C	10450	10390	10638	11519	11309	11975	12452	23341	12743	12287	12061	11846	Excite 280 read inhibitor fluorescence:280,440
+D	10151	10868	10190	11247	10686	11020	11664	32574	13731	12115	11459	11782	Excite 280 read inhibitor fluorescence:280,440
+E	12626	10287	10635	17800	11875	10760	11492	12684	27690	30626	12475	11801	Excite 280 read inhibitor fluorescence:280,440
+F	9969	11217	11339	11772	11127	11565	11923	11968	12710	12684	12741	11993	Excite 280 read inhibitor fluorescence:280,440
+G	9991	11242	11090	12001	11052	11509	15012	38477	12640	11867	13972	13938	Excite 280 read inhibitor fluorescence:280,440
+H	10995	10701	10823	10843	18631	15893	13093	12768	14225	11301	11838	11088	Excite 280 read inhibitor fluorescence:280,440
+
+Excite 280 read inhibitor fluorescence:280,460
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	10868	11183	13561	12421	11885	13340	12524	13095	11818	12122	12642	13738	Excite 280 read inhibitor fluorescence:280,460
+B	10679	12243	12532	17912	12840	12859	14152	31634	13698	13081	12880	13189	Excite 280 read inhibitor fluorescence:280,460
+C	11146	11652	11824	12487	12727	12892	12980	24617	13167	13093	13554	12906	Excite 280 read inhibitor fluorescence:280,460
+D	10857	10924	11778	12186	11445	12326	12739	68645	15773	13310	12281	13122	Excite 280 read inhibitor fluorescence:280,460
+E	14005	11293	11672	19041	11937	11230	12418	14313	29936	37898	12556	12966	Excite 280 read inhibitor fluorescence:280,460
+F	11550	12650	11857	12661	10923	12881	12431	12479	13492	12722	13114	12835	Excite 280 read inhibitor fluorescence:280,460
+G	10907	11520	12053	12228	11884	12472	16221	44201	13430	12454	14442	12988	Excite 280 read inhibitor fluorescence:280,460
+H	11357	11208	11847	11943	19679	17649	13808	12680	16042	12167	12272	12077	Excite 280 read inhibitor fluorescence:280,460
+
+Excite 280 read inhibitor fluorescence:280,480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	9903	10776	12261	11270	10889	11649	11402	12819	11315	11550	11693	12047	Excite 280 read inhibitor fluorescence:280,480
+B	10900	11025	11783	15340	11084	11875	11510	28081	11678	11974	12061	12016	Excite 280 read inhibitor fluorescence:280,480
+C	11256	10334	10962	11261	11089	11813	11691	19581	11733	11360	12061	11009	Excite 280 read inhibitor fluorescence:280,480
+D	10515	10617	10744	11198	11251	10968	10626	57056	14348	12336	11309	11981	Excite 280 read inhibitor fluorescence:280,480
+E	41883	10864	10499	16997	11309	12528	11603	13419	24669	31896	11977	12085	Excite 280 read inhibitor fluorescence:280,480
+F	9928	11728	11241	11740	11279	10990	11417	11870	11617	11355	12194	10889	Excite 280 read inhibitor fluorescence:280,480
+G	10351	10688	11389	11646	11667	11808	15511	39750	12370	11370	13413	11771	Excite 280 read inhibitor fluorescence:280,480
+H	11365	10665	10795	10636	16357	15769	13273	11348	14756	11181	12021	10911	Excite 280 read inhibitor fluorescence:280,480
+
+Excite 350 read inhibitor fluorescence:350,440
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	2974	2938	3592	3033	3014	3097	3172	3154	3122	2968	3504	3072	Excite 350 read inhibitor fluorescence:350,440
+B	3449	3224	3177	8493	3156	3322	3233	21028	3114	3051	3071	3116	Excite 350 read inhibitor fluorescence:350,440
+C	2929	3165	2964	3108	3118	3063	3090	12614	3016	3214	3057	3043	Excite 350 read inhibitor fluorescence:350,440
+D	3014	3062	2985	3071	2898	3007	3186	48236	3837	3256	3075	3046	Excite 350 read inhibitor fluorescence:350,440
+E	7463	3096	3127	3554	3086	3078	3091	16957	10661	24395	3613	2999	Excite 350 read inhibitor fluorescence:350,440
+F	2995	3277	3072	3070	3111	3311	3183	2994	3198	3150	3114	3066	Excite 350 read inhibitor fluorescence:350,440
+G	2956	3006	2946	3198	3143	3156	3781	27802	3145	2991	4539	2923	Excite 350 read inhibitor fluorescence:350,440
+H	3906	3050	2946	2950	9254	6990	3771	3044	5259	3033	2967	3060	Excite 350 read inhibitor fluorescence:350,440
+
+Excite 350 read inhibitor fluorescence:350,460
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	3251	3163	3856	3416	3305	3332	3471	3444	3285	3247	3634	3266	Excite 350 read inhibitor fluorescence:350,460
+B	3565	3052	3184	7867	3269	3332	3665	21665	3260	3408	3318	3412	Excite 350 read inhibitor fluorescence:350,460
+C	3102	3046	3186	3233	3305	3329	3444	11625	3130	3466	3203	3404	Excite 350 read inhibitor fluorescence:350,460
+D	3067	3301	3011	3376	3258	3215	3383	42200	4078	3336	3193	3267	Excite 350 read inhibitor fluorescence:350,460
+E	3368	3084	3095	3809	3145	3098	3118	42829	11399	25504	3929	3377	Excite 350 read inhibitor fluorescence:350,460
+F	3261	3535	3040	3113	3260	3039	3385	3113	3312	3288	3268	3136	Excite 350 read inhibitor fluorescence:350,460
+G	3014	3022	3100	3373	3151	3384	4018	28912	3384	3219	4586	3212	Excite 350 read inhibitor fluorescence:350,460
+H	4336	3156	3057	3310	9668	6526	3878	3137	5927	3066	3208	3251	Excite 350 read inhibitor fluorescence:350,460
+
+Excite 350 read inhibitor fluorescence:350,480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	3852	3964	4546	4014	3927	3887	4029	4178	3806	3950	4589	3771	Excite 350 read inhibitor fluorescence:350,480
+B	4349	3817	3937	8501	3881	4043	4184	24054	3804	3633	3859	4210	Excite 350 read inhibitor fluorescence:350,480
+C	3898	3942	4269	3960	3694	3737	3945	13461	4009	4117	3853	3625	Excite 350 read inhibitor fluorescence:350,480
+D	3958	3632	3886	4147	3854	3881	4006	43291	4916	4146	4052	3767	Excite 350 read inhibitor fluorescence:350,480
+E	4006	4058	3916	4657	3993	3774	3779	50613	13675	28616	4504	4097	Excite 350 read inhibitor fluorescence:350,480
+F	3678	4401	3767	3879	3748	3682	3936	3678	3870	3839	3939	3817	Excite 350 read inhibitor fluorescence:350,480
+G	3666	3586	3766	3971	3838	3922	5084	29178	3713	3632	5226	3775	Excite 350 read inhibitor fluorescence:350,480
+H	4695	3820	3599	3792	11374	7765	4388	3832	7399	4085	3750	3871	Excite 350 read inhibitor fluorescence:350,480
+
+Well IDs
+
+Well ID	Name
+	
+
+Trp fluorescence quenching:280,340
+
+Well ID	Name	Well	Trp fluorescence quenching:280,340	Count	Mean	Std Dev	CV (%)
+							
+
+Excite 280 read inhibitor fluorescence:280,440
+
+Well ID	Name	Well	Excite 280 read inhibitor fluorescence:280,440	Count	Mean	Std Dev	CV (%)
+							
+
+Excite 280 read inhibitor fluorescence:280,460
+
+Well ID	Name	Well	Excite 280 read inhibitor fluorescence:280,460	Count	Mean	Std Dev	CV (%)
+							
+
+Excite 280 read inhibitor fluorescence:280,480
+
+Well ID	Name	Well	Excite 280 read inhibitor fluorescence:280,480	Count	Mean	Std Dev	CV (%)
+							
+
+Excite 350 read inhibitor fluorescence:350,440
+
+Well ID	Name	Well	Excite 350 read inhibitor fluorescence:350,440	Count	Mean	Std Dev	CV (%)
+							
+
+Excite 350 read inhibitor fluorescence:350,460
+
+Well ID	Name	Well	Excite 350 read inhibitor fluorescence:350,460	Count	Mean	Std Dev	CV (%)
+							
+
+Excite 350 read inhibitor fluorescence:350,480
+
+Well ID	Name	Well	Excite 350 read inhibitor fluorescence:350,480	Count	Mean	Std Dev	CV (%)
+							
+
+Data Audit Trail
+
+Date	User	Event	Comment
+5/9/2012 4:08:45 PM	User	Protocol "C:\Program Files (x86)\BioTek\Gen5 1.10\Protocols\John Chodera\Quinazoline inhibitor fluorescence reads quick.prt" (5/9/2012 3:51:50 PM) selected	
+5/9/2012 4:09:17 PM	User	Plate read started	
+5/9/2012 4:31:46 PM	User	Plate read cancelled by the user	
+5/9/2012 4:45:03 PM	User	Plate read started	
+5/9/2012 4:53:19 PM	User	Plate read successfully completed	
+
+Calculation Warnings
+
+Error/Warning messages
+No event recorded
+
+Field Group
+
+			
+			
+			
+
+Procedure Summary
+
+Plate Type	Corning 3596 96 well flat bottom
+Read	Read:  Trp fluorescence quenching (F) 280,340
+Read	Read:  Excite 280 read inhibitor fluorescence (F) 280,440, 280,460, 280,480
+Read	Read:  Excite 350 read inhibitor fluorescence (F) 350,440, 350,460, 350,480
+
+Layout
+	1	2	3	4	5	6	7	8	9	10	11	12
+A													Well ID
+													Name
+B													Well ID
+													Name
+C													Well ID
+													Name
+D													Well ID
+													Name
+E													Well ID
+													Name
+F													Well ID
+													Name
+G													Well ID
+													Name
+H													Well ID
+													Name
+
+Data Reduction Summary
+
+	
+
+Trp fluorescence quenching:280,340
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	37008	38169	38040	39098	38136	39472	39142	38137	39573	37342	38346	36009	Trp fluorescence quenching:280,340
+B	37883	39242	40384	36866	38457	39915	39690	38420	36912	38431	37010	37790	Trp fluorescence quenching:280,340
+C	38815	39024	38284	37160	38270	35453	38516	37322	36769	35807	35903	35220	Trp fluorescence quenching:280,340
+D	39234	39394	37319	38729	36954	36411	36961	36947	36252	36069	37224	35696	Trp fluorescence quenching:280,340
+E	39467	39273	36181	41454	37761	36664	36678	38421	36522	37281	37648	38503	Trp fluorescence quenching:280,340
+F	38006	38499	36099	36067	36635	35590	38943	36306	37046	35596	38208	37100	Trp fluorescence quenching:280,340
+G	37628	37282	36867	38236	48556	39163	39769	36016	37223	37885	37710	38290	Trp fluorescence quenching:280,340
+H	37007	35904	37507	37525	35837	38879	39586	45851	39736	37313	36298	38423	Trp fluorescence quenching:280,340
+
+Excite 280 read inhibitor fluorescence:280,440
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	10050	10912	12342	11096	11448	12012	12111	12694	11763	11533	12155	12177	Excite 280 read inhibitor fluorescence:280,440
+B	10427	11037	11989	16461	10988	12580	12278	28224	12622	12443	12811	12239	Excite 280 read inhibitor fluorescence:280,440
+C	10450	10390	10638	11519	11309	11975	12452	23341	12743	12287	12061	11846	Excite 280 read inhibitor fluorescence:280,440
+D	10151	10868	10190	11247	10686	11020	11664	32574	13731	12115	11459	11782	Excite 280 read inhibitor fluorescence:280,440
+E	12626	10287	10635	17800	11875	10760	11492	12684	27690	30626	12475	11801	Excite 280 read inhibitor fluorescence:280,440
+F	9969	11217	11339	11772	11127	11565	11923	11968	12710	12684	12741	11993	Excite 280 read inhibitor fluorescence:280,440
+G	9991	11242	11090	12001	11052	11509	15012	38477	12640	11867	13972	13938	Excite 280 read inhibitor fluorescence:280,440
+H	10995	10701	10823	10843	18631	15893	13093	12768	14225	11301	11838	11088	Excite 280 read inhibitor fluorescence:280,440
+
+Excite 280 read inhibitor fluorescence:280,460
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	10868	11183	13561	12421	11885	13340	12524	13095	11818	12122	12642	13738	Excite 280 read inhibitor fluorescence:280,460
+B	10679	12243	12532	17912	12840	12859	14152	31634	13698	13081	12880	13189	Excite 280 read inhibitor fluorescence:280,460
+C	11146	11652	11824	12487	12727	12892	12980	24617	13167	13093	13554	12906	Excite 280 read inhibitor fluorescence:280,460
+D	10857	10924	11778	12186	11445	12326	12739	68645	15773	13310	12281	13122	Excite 280 read inhibitor fluorescence:280,460
+E	14005	11293	11672	19041	11937	11230	12418	14313	29936	37898	12556	12966	Excite 280 read inhibitor fluorescence:280,460
+F	11550	12650	11857	12661	10923	12881	12431	12479	13492	12722	13114	12835	Excite 280 read inhibitor fluorescence:280,460
+G	10907	11520	12053	12228	11884	12472	16221	44201	13430	12454	14442	12988	Excite 280 read inhibitor fluorescence:280,460
+H	11357	11208	11847	11943	19679	17649	13808	12680	16042	12167	12272	12077	Excite 280 read inhibitor fluorescence:280,460
+
+Excite 280 read inhibitor fluorescence:280,480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	9903	10776	12261	11270	10889	11649	11402	12819	11315	11550	11693	12047	Excite 280 read inhibitor fluorescence:280,480
+B	10900	11025	11783	15340	11084	11875	11510	28081	11678	11974	12061	12016	Excite 280 read inhibitor fluorescence:280,480
+C	11256	10334	10962	11261	11089	11813	11691	19581	11733	11360	12061	11009	Excite 280 read inhibitor fluorescence:280,480
+D	10515	10617	10744	11198	11251	10968	10626	57056	14348	12336	11309	11981	Excite 280 read inhibitor fluorescence:280,480
+E	41883	10864	10499	16997	11309	12528	11603	13419	24669	31896	11977	12085	Excite 280 read inhibitor fluorescence:280,480
+F	9928	11728	11241	11740	11279	10990	11417	11870	11617	11355	12194	10889	Excite 280 read inhibitor fluorescence:280,480
+G	10351	10688	11389	11646	11667	11808	15511	39750	12370	11370	13413	11771	Excite 280 read inhibitor fluorescence:280,480
+H	11365	10665	10795	10636	16357	15769	13273	11348	14756	11181	12021	10911	Excite 280 read inhibitor fluorescence:280,480
+
+Excite 350 read inhibitor fluorescence:350,440
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	2974	2938	3592	3033	3014	3097	3172	3154	3122	2968	3504	3072	Excite 350 read inhibitor fluorescence:350,440
+B	3449	3224	3177	8493	3156	3322	3233	21028	3114	3051	3071	3116	Excite 350 read inhibitor fluorescence:350,440
+C	2929	3165	2964	3108	3118	3063	3090	12614	3016	3214	3057	3043	Excite 350 read inhibitor fluorescence:350,440
+D	3014	3062	2985	3071	2898	3007	3186	48236	3837	3256	3075	3046	Excite 350 read inhibitor fluorescence:350,440
+E	7463	3096	3127	3554	3086	3078	3091	16957	10661	24395	3613	2999	Excite 350 read inhibitor fluorescence:350,440
+F	2995	3277	3072	3070	3111	3311	3183	2994	3198	3150	3114	3066	Excite 350 read inhibitor fluorescence:350,440
+G	2956	3006	2946	3198	3143	3156	3781	27802	3145	2991	4539	2923	Excite 350 read inhibitor fluorescence:350,440
+H	3906	3050	2946	2950	9254	6990	3771	3044	5259	3033	2967	3060	Excite 350 read inhibitor fluorescence:350,440
+
+Excite 350 read inhibitor fluorescence:350,460
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	3251	3163	3856	3416	3305	3332	3471	3444	3285	3247	3634	3266	Excite 350 read inhibitor fluorescence:350,460
+B	3565	3052	3184	7867	3269	3332	3665	21665	3260	3408	3318	3412	Excite 350 read inhibitor fluorescence:350,460
+C	3102	3046	3186	3233	3305	3329	3444	11625	3130	3466	3203	3404	Excite 350 read inhibitor fluorescence:350,460
+D	3067	3301	3011	3376	3258	3215	3383	42200	4078	3336	3193	3267	Excite 350 read inhibitor fluorescence:350,460
+E	3368	3084	3095	3809	3145	3098	3118	42829	11399	25504	3929	3377	Excite 350 read inhibitor fluorescence:350,460
+F	3261	3535	3040	3113	3260	3039	3385	3113	3312	3288	3268	3136	Excite 350 read inhibitor fluorescence:350,460
+G	3014	3022	3100	3373	3151	3384	4018	28912	3384	3219	4586	3212	Excite 350 read inhibitor fluorescence:350,460
+H	4336	3156	3057	3310	9668	6526	3878	3137	5927	3066	3208	3251	Excite 350 read inhibitor fluorescence:350,460
+
+Excite 350 read inhibitor fluorescence:350,480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	3852	3964	4546	4014	3927	3887	4029	4178	3806	3950	4589	3771	Excite 350 read inhibitor fluorescence:350,480
+B	4349	3817	3937	8501	3881	4043	4184	24054	3804	3633	3859	4210	Excite 350 read inhibitor fluorescence:350,480
+C	3898	3942	4269	3960	3694	3737	3945	13461	4009	4117	3853	3625	Excite 350 read inhibitor fluorescence:350,480
+D	3958	3632	3886	4147	3854	3881	4006	43291	4916	4146	4052	3767	Excite 350 read inhibitor fluorescence:350,480
+E	4006	4058	3916	4657	3993	3774	3779	50613	13675	28616	4504	4097	Excite 350 read inhibitor fluorescence:350,480
+F	3678	4401	3767	3879	3748	3682	3936	3678	3870	3839	3939	3817	Excite 350 read inhibitor fluorescence:350,480
+G	3666	3586	3766	3971	3838	3922	5084	29178	3713	3632	5226	3775	Excite 350 read inhibitor fluorescence:350,480
+H	4695	3820	3599	3792	11374	7765	4388	3832	7399	4085	3750	3871	Excite 350 read inhibitor fluorescence:350,480
+

@@ -1,0 +1,104 @@
+Procedure Summary
+
+Plate Type	Costar 96 black opaque
+Read	Read:  complex + compound emission (F) Emission Spectrum [300nm to 600nm by 5]
+Read	Read:  protein excitation (F) Excitation Spectrum [260nm to 400nm by 5]
+Read	Read:  complex + compound excitation (F) Excitation Spectrum [260nm to 400nm by 5]
+Read	Read:  protein emission (F) Emission Spectrum [300nm to 600nm by 5]
+
+Data Reduction Summary
+
+	
+
+Curves [complex + compound emission:EM Spectrum]
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [complex + compound emission:EM Spectrum]
+B	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [complex + compound emission:EM Spectrum]
+C	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [complex + compound emission:EM Spectrum]
+D	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [complex + compound emission:EM Spectrum]
+E	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [complex + compound emission:EM Spectrum]
+F	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [complex + compound emission:EM Spectrum]
+G	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [complex + compound emission:EM Spectrum]
+H	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [complex + compound emission:EM Spectrum]
+
+Curves [complex + compound excitation:EX Spectrum]
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [complex + compound excitation:EX Spectrum]
+B	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [complex + compound excitation:EX Spectrum]
+C	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [complex + compound excitation:EX Spectrum]
+D	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [complex + compound excitation:EX Spectrum]
+E	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [complex + compound excitation:EX Spectrum]
+F	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [complex + compound excitation:EX Spectrum]
+G	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [complex + compound excitation:EX Spectrum]
+H	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [complex + compound excitation:EX Spectrum]
+
+Curves [protein emission:EM Spectrum]
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [protein emission:EM Spectrum]
+B	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [protein emission:EM Spectrum]
+C	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [protein emission:EM Spectrum]
+D	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [protein emission:EM Spectrum]
+E	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [protein emission:EM Spectrum]
+F	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [protein emission:EM Spectrum]
+G	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [protein emission:EM Spectrum]
+H	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [protein emission:EM Spectrum]
+
+Curves [protein excitation:EX Spectrum]
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [protein excitation:EX Spectrum]
+B	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [protein excitation:EX Spectrum]
+C	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [protein excitation:EX Spectrum]
+D	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [protein excitation:EX Spectrum]
+E	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [protein excitation:EX Spectrum]
+F	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [protein excitation:EX Spectrum]
+G	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [protein excitation:EX Spectrum]
+H	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Unsupported	Bitmap [protein excitation:EX Spectrum]
+
+complex + compound emission:EM Spectrum
+Wavelength 1 (300 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	712												complex + compound emission:EM Spectrum Read#1
+B	570												complex + compound emission:EM Spectrum Read#1
+C	300												complex + compound emission:EM Spectrum Read#1
+D	213												complex + compound emission:EM Spectrum Read#1
+E	355												complex + compound emission:EM Spectrum Read#1
+F	253												complex + compound emission:EM Spectrum Read#1
+G	2304												complex + compound emission:EM Spectrum Read#1
+H	2249												complex + compound emission:EM Spectrum Read#1
+
+protein excitation:EX Spectrum
+Wavelength 1 (260 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A												205	protein excitation:EX Spectrum Read#1
+B												76	protein excitation:EX Spectrum Read#1
+C												177	protein excitation:EX Spectrum Read#1
+D												131	protein excitation:EX Spectrum Read#1
+E												216	protein excitation:EX Spectrum Read#1
+F												133	protein excitation:EX Spectrum Read#1
+G												125	protein excitation:EX Spectrum Read#1
+H												144	protein excitation:EX Spectrum Read#1
+
+complex + compound excitation:EX Spectrum
+Wavelength 1 (260 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	81												complex + compound excitation:EX Spectrum Read#1
+B	37												complex + compound excitation:EX Spectrum Read#1
+C	94												complex + compound excitation:EX Spectrum Read#1
+D	38												complex + compound excitation:EX Spectrum Read#1
+E	141												complex + compound excitation:EX Spectrum Read#1
+F	27												complex + compound excitation:EX Spectrum Read#1
+G	224												complex + compound excitation:EX Spectrum Read#1
+H	318												complex + compound excitation:EX Spectrum Read#1
+
+protein emission:EM Spectrum
+Wavelength 1 (300 nm)
+	1	2	3	4	5	6	7	8	9	10	11	12
+A												OVRFLW	protein emission:EM Spectrum Read#1
+B												OVRFLW	protein emission:EM Spectrum Read#1
+C												OVRFLW	protein emission:EM Spectrum Read#1
+D												OVRFLW	protein emission:EM Spectrum Read#1
+E												OVRFLW	protein emission:EM Spectrum Read#1
+F												OVRFLW	protein emission:EM Spectrum Read#1
+G												OVRFLW	protein emission:EM Spectrum Read#1
+H												OVRFLW	protein emission:EM Spectrum Read#1
+

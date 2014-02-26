@@ -1,0 +1,2140 @@
+Procedure Summary
+
+Plate Type	Costar 96 well half area
+Read	Read:  absorbance (A) Spectrum [250nm to 700nm by 5]
+Read	Read:  excitation spectra 480 emission (F) Excitation Spectrum [250nm to 440nm by 5]
+Read	Read:  excitation spectra emission 480 bottom (F) Excitation Spectrum [250nm to 440nm by 5]
+Read	Read:  emission spectrum excite 280 (F) Emission Spectrum [320nm to 550nm by 5]
+Read	Read:  emission spectrum excite 280 bottom (F) Emission Spectrum [320nm to 550nm by 5]
+
+Layout
+	1	2	3	4	5	6	7	8	9	10	11	12
+A													Well ID
+													Name
+B													Well ID
+													Name
+C													Well ID
+													Name
+D													Well ID
+													Name
+E													Well ID
+													Name
+F													Well ID
+													Name
+G													Well ID
+													Name
+H													Well ID
+													Name
+
+Data Reduction Summary
+
+Well Analysis	Min/Max OD
+Well Analysis	Min/Max RFU
+Well Analysis	Min/Max RFU
+Well Analysis	Min/Max RFU
+Well Analysis	Min/Max RFU
+
+absorbance:Spectrum
+Wavelength 1 (250 nm)
+	1	2	3	4	5	6
+A	0.252	0.249	0.254	0.255	0.254	0.252	absorbance:Spectrum Read#1
+B	0.245	0.253	0.248	0.249	0.252	0.252	absorbance:Spectrum Read#1
+C	0.250	0.252	0.248	0.256	0.251	0.253	absorbance:Spectrum Read#1
+D	0.249	0.253	0.247	0.250	0.280	0.252	absorbance:Spectrum Read#1
+
+absorbance:Spectrum
+Wavelength 2 (255 nm)
+	1	2	3	4	5	6
+A	0.212	0.209	0.214	0.216	0.214	0.212	absorbance:Spectrum Read#2
+B	0.206	0.214	0.209	0.210	0.212	0.213	absorbance:Spectrum Read#2
+C	0.212	0.213	0.209	0.217	0.212	0.214	absorbance:Spectrum Read#2
+D	0.210	0.214	0.207	0.210	0.240	0.213	absorbance:Spectrum Read#2
+
+absorbance:Spectrum
+Wavelength 3 (260 nm)
+	1	2	3	4	5	6
+A	0.219	0.216	0.220	0.225	0.221	0.220	absorbance:Spectrum Read#3
+B	0.211	0.222	0.215	0.217	0.218	0.221	absorbance:Spectrum Read#3
+C	0.219	0.221	0.215	0.225	0.218	0.222	absorbance:Spectrum Read#3
+D	0.216	0.221	0.213	0.217	0.245	0.221	absorbance:Spectrum Read#3
+
+absorbance:Spectrum
+Wavelength 4 (265 nm)
+	1	2	3	4	5	6
+A	0.252	0.248	0.252	0.258	0.253	0.253	absorbance:Spectrum Read#4
+B	0.240	0.255	0.246	0.250	0.248	0.254	absorbance:Spectrum Read#4
+C	0.251	0.254	0.247	0.258	0.249	0.255	absorbance:Spectrum Read#4
+D	0.248	0.254	0.243	0.250	0.275	0.254	absorbance:Spectrum Read#4
+
+absorbance:Spectrum
+Wavelength 5 (270 nm)
+	1	2	3	4	5	6
+A	0.290	0.285	0.288	0.294	0.290	0.290	absorbance:Spectrum Read#5
+B	0.274	0.292	0.280	0.286	0.281	0.290	absorbance:Spectrum Read#5
+C	0.287	0.290	0.281	0.295	0.283	0.291	absorbance:Spectrum Read#5
+D	0.285	0.291	0.277	0.286	0.309	0.291	absorbance:Spectrum Read#5
+
+absorbance:Spectrum
+Wavelength 6 (275 nm)
+	1	2	3	4	5	6
+A	0.318	0.310	0.315	0.316	0.315	0.314	absorbance:Spectrum Read#6
+B	0.296	0.316	0.304	0.312	0.304	0.315	absorbance:Spectrum Read#6
+C	0.312	0.314	0.303	0.319	0.305	0.315	absorbance:Spectrum Read#6
+D	0.311	0.316	0.301	0.311	0.330	0.313	absorbance:Spectrum Read#6
+
+absorbance:Spectrum
+Wavelength 7 (280 nm)
+	1	2	3	4	5	6
+A	0.330	0.321	0.326	0.323	0.326	0.323	absorbance:Spectrum Read#7
+B	0.303	0.324	0.313	0.322	0.312	0.324	absorbance:Spectrum Read#7
+C	0.322	0.322	0.311	0.327	0.314	0.324	absorbance:Spectrum Read#7
+D	0.322	0.325	0.312	0.321	0.338	0.321	absorbance:Spectrum Read#7
+
+absorbance:Spectrum
+Wavelength 8 (285 nm)
+	1	2	3	4	5	6
+A	0.325	0.319	0.324	0.318	0.324	0.321	absorbance:Spectrum Read#8
+B	0.297	0.321	0.310	0.320	0.310	0.321	absorbance:Spectrum Read#8
+C	0.315	0.318	0.307	0.323	0.310	0.321	absorbance:Spectrum Read#8
+D	0.317	0.322	0.309	0.319	0.334	0.318	absorbance:Spectrum Read#8
+
+absorbance:Spectrum
+Wavelength 9 (290 nm)
+	1	2	3	4	5	6
+A	0.300	0.299	0.303	0.298	0.303	0.301	absorbance:Spectrum Read#9
+B	0.274	0.301	0.289	0.300	0.290	0.301	absorbance:Spectrum Read#9
+C	0.291	0.298	0.287	0.303	0.291	0.302	absorbance:Spectrum Read#9
+D	0.292	0.302	0.289	0.299	0.315	0.298	absorbance:Spectrum Read#9
+
+absorbance:Spectrum
+Wavelength 10 (295 nm)
+	1	2	3	4	5	6
+A	0.267	0.270	0.273	0.270	0.274	0.272	absorbance:Spectrum Read#10
+B	0.245	0.272	0.261	0.271	0.262	0.273	absorbance:Spectrum Read#10
+C	0.260	0.270	0.259	0.274	0.263	0.273	absorbance:Spectrum Read#10
+D	0.260	0.273	0.260	0.270	0.286	0.270	absorbance:Spectrum Read#10
+
+absorbance:Spectrum
+Wavelength 11 (300 nm)
+	1	2	3	4	5	6
+A	0.229	0.233	0.236	0.234	0.237	0.235	absorbance:Spectrum Read#11
+B	0.211	0.235	0.226	0.234	0.227	0.236	absorbance:Spectrum Read#11
+C	0.223	0.233	0.224	0.237	0.228	0.236	absorbance:Spectrum Read#11
+D	0.223	0.236	0.225	0.234	0.251	0.233	absorbance:Spectrum Read#11
+
+absorbance:Spectrum
+Wavelength 12 (305 nm)
+	1	2	3	4	5	6
+A	0.190	0.194	0.196	0.194	0.197	0.195	absorbance:Spectrum Read#12
+B	0.176	0.195	0.188	0.194	0.190	0.196	absorbance:Spectrum Read#12
+C	0.185	0.194	0.186	0.197	0.190	0.196	absorbance:Spectrum Read#12
+D	0.185	0.196	0.187	0.194	0.213	0.194	absorbance:Spectrum Read#12
+
+absorbance:Spectrum
+Wavelength 13 (310 nm)
+	1	2	3	4	5	6
+A	0.152	0.154	0.157	0.155	0.157	0.155	absorbance:Spectrum Read#13
+B	0.142	0.155	0.150	0.154	0.152	0.156	absorbance:Spectrum Read#13
+C	0.148	0.154	0.149	0.157	0.152	0.156	absorbance:Spectrum Read#13
+D	0.148	0.155	0.149	0.154	0.175	0.154	absorbance:Spectrum Read#13
+
+absorbance:Spectrum
+Wavelength 14 (315 nm)
+	1	2	3	4	5	6
+A	0.123	0.123	0.126	0.124	0.125	0.124	absorbance:Spectrum Read#14
+B	0.116	0.124	0.121	0.123	0.122	0.125	absorbance:Spectrum Read#14
+C	0.120	0.123	0.120	0.126	0.123	0.125	absorbance:Spectrum Read#14
+D	0.120	0.124	0.120	0.123	0.145	0.123	absorbance:Spectrum Read#14
+
+absorbance:Spectrum
+Wavelength 15 (320 nm)
+	1	2	3	4	5	6
+A	0.099	0.097	0.101	0.099	0.100	0.098	absorbance:Spectrum Read#15
+B	0.095	0.098	0.097	0.098	0.098	0.099	absorbance:Spectrum Read#15
+C	0.097	0.098	0.096	0.100	0.098	0.100	absorbance:Spectrum Read#15
+D	0.097	0.098	0.096	0.098	0.121	0.098	absorbance:Spectrum Read#15
+
+absorbance:Spectrum
+Wavelength 16 (325 nm)
+	1	2	3	4	5	6
+A	0.081	0.078	0.083	0.080	0.081	0.079	absorbance:Spectrum Read#16
+B	0.079	0.079	0.079	0.079	0.080	0.080	absorbance:Spectrum Read#16
+C	0.080	0.079	0.079	0.081	0.080	0.081	absorbance:Spectrum Read#16
+D	0.080	0.079	0.078	0.079	0.102	0.079	absorbance:Spectrum Read#16
+
+absorbance:Spectrum
+Wavelength 17 (330 nm)
+	1	2	3	4	5	6
+A	0.069	0.065	0.069	0.067	0.067	0.066	absorbance:Spectrum Read#17
+B	0.068	0.066	0.066	0.065	0.067	0.067	absorbance:Spectrum Read#17
+C	0.068	0.066	0.066	0.068	0.067	0.067	absorbance:Spectrum Read#17
+D	0.068	0.066	0.066	0.065	0.089	0.066	absorbance:Spectrum Read#17
+
+absorbance:Spectrum
+Wavelength 18 (335 nm)
+	1	2	3	4	5	6
+A	0.060	0.056	0.060	0.058	0.058	0.057	absorbance:Spectrum Read#18
+B	0.060	0.056	0.058	0.056	0.058	0.058	absorbance:Spectrum Read#18
+C	0.060	0.056	0.058	0.058	0.059	0.058	absorbance:Spectrum Read#18
+D	0.059	0.057	0.057	0.056	0.080	0.057	absorbance:Spectrum Read#18
+
+absorbance:Spectrum
+Wavelength 19 (340 nm)
+	1	2	3	4	5	6
+A	0.054	0.050	0.054	0.051	0.051	0.051	absorbance:Spectrum Read#19
+B	0.055	0.050	0.052	0.050	0.052	0.051	absorbance:Spectrum Read#19
+C	0.054	0.050	0.051	0.052	0.053	0.052	absorbance:Spectrum Read#19
+D	0.053	0.050	0.051	0.050	0.074	0.051	absorbance:Spectrum Read#19
+
+absorbance:Spectrum
+Wavelength 20 (345 nm)
+	1	2	3	4	5	6
+A	0.050	0.045	0.050	0.047	0.047	0.046	absorbance:Spectrum Read#20
+B	0.051	0.046	0.048	0.046	0.048	0.047	absorbance:Spectrum Read#20
+C	0.050	0.046	0.048	0.048	0.049	0.048	absorbance:Spectrum Read#20
+D	0.049	0.046	0.047	0.046	0.070	0.046	absorbance:Spectrum Read#20
+
+absorbance:Spectrum
+Wavelength 21 (350 nm)
+	1	2	3	4	5	6
+A	0.047	0.042	0.047	0.044	0.044	0.043	absorbance:Spectrum Read#21
+B	0.048	0.043	0.044	0.042	0.045	0.044	absorbance:Spectrum Read#21
+C	0.047	0.043	0.044	0.045	0.045	0.044	absorbance:Spectrum Read#21
+D	0.046	0.043	0.043	0.042	0.066	0.043	absorbance:Spectrum Read#21
+
+absorbance:Spectrum
+Wavelength 22 (355 nm)
+	1	2	3	4	5	6
+A	0.044	0.039	0.043	0.041	0.041	0.040	absorbance:Spectrum Read#22
+B	0.045	0.040	0.042	0.039	0.042	0.041	absorbance:Spectrum Read#22
+C	0.044	0.040	0.041	0.041	0.042	0.041	absorbance:Spectrum Read#22
+D	0.043	0.040	0.041	0.039	0.063	0.040	absorbance:Spectrum Read#22
+
+absorbance:Spectrum
+Wavelength 23 (360 nm)
+	1	2	3	4	5	6
+A	0.042	0.037	0.042	0.038	0.039	0.037	absorbance:Spectrum Read#23
+B	0.042	0.037	0.039	0.037	0.040	0.039	absorbance:Spectrum Read#23
+C	0.042	0.037	0.039	0.039	0.040	0.039	absorbance:Spectrum Read#23
+D	0.041	0.037	0.039	0.037	0.060	0.037	absorbance:Spectrum Read#23
+
+absorbance:Spectrum
+Wavelength 24 (365 nm)
+	1	2	3	4	5	6
+A	0.040	0.035	0.040	0.036	0.036	0.035	absorbance:Spectrum Read#24
+B	0.040	0.035	0.037	0.035	0.038	0.036	absorbance:Spectrum Read#24
+C	0.039	0.035	0.037	0.037	0.038	0.037	absorbance:Spectrum Read#24
+D	0.039	0.035	0.037	0.035	0.058	0.035	absorbance:Spectrum Read#24
+
+absorbance:Spectrum
+Wavelength 25 (370 nm)
+	1	2	3	4	5	6
+A	0.037	0.033	0.038	0.034	0.035	0.034	absorbance:Spectrum Read#25
+B	0.038	0.033	0.036	0.033	0.036	0.035	absorbance:Spectrum Read#25
+C	0.037	0.033	0.035	0.035	0.036	0.035	absorbance:Spectrum Read#25
+D	0.037	0.033	0.035	0.033	0.056	0.033	absorbance:Spectrum Read#25
+
+absorbance:Spectrum
+Wavelength 26 (375 nm)
+	1	2	3	4	5	6
+A	0.036	0.032	0.036	0.032	0.034	0.032	absorbance:Spectrum Read#26
+B	0.036	0.032	0.034	0.032	0.034	0.033	absorbance:Spectrum Read#26
+C	0.035	0.032	0.034	0.033	0.035	0.033	absorbance:Spectrum Read#26
+D	0.035	0.032	0.034	0.032	0.055	0.032	absorbance:Spectrum Read#26
+
+absorbance:Spectrum
+Wavelength 27 (380 nm)
+	1	2	3	4	5	6
+A	0.035	0.031	0.036	0.031	0.033	0.031	absorbance:Spectrum Read#27
+B	0.035	0.031	0.033	0.031	0.034	0.032	absorbance:Spectrum Read#27
+C	0.034	0.031	0.033	0.032	0.034	0.032	absorbance:Spectrum Read#27
+D	0.034	0.031	0.033	0.031	0.054	0.031	absorbance:Spectrum Read#27
+
+absorbance:Spectrum
+Wavelength 28 (385 nm)
+	1	2	3	4	5	6
+A	0.034	0.030	0.035	0.030	0.032	0.030	absorbance:Spectrum Read#28
+B	0.034	0.030	0.033	0.030	0.033	0.031	absorbance:Spectrum Read#28
+C	0.033	0.030	0.032	0.031	0.033	0.031	absorbance:Spectrum Read#28
+D	0.033	0.030	0.032	0.030	0.052	0.030	absorbance:Spectrum Read#28
+
+absorbance:Spectrum
+Wavelength 29 (390 nm)
+	1	2	3	4	5	6
+A	0.033	0.029	0.034	0.030	0.031	0.030	absorbance:Spectrum Read#29
+B	0.033	0.029	0.032	0.029	0.032	0.031	absorbance:Spectrum Read#29
+C	0.032	0.029	0.032	0.031	0.032	0.031	absorbance:Spectrum Read#29
+D	0.032	0.029	0.031	0.029	0.052	0.029	absorbance:Spectrum Read#29
+
+absorbance:Spectrum
+Wavelength 30 (395 nm)
+	1	2	3	4	5	6
+A	0.032	0.029	0.034	0.029	0.031	0.029	absorbance:Spectrum Read#30
+B	0.033	0.029	0.031	0.029	0.031	0.030	absorbance:Spectrum Read#30
+C	0.032	0.029	0.031	0.030	0.032	0.030	absorbance:Spectrum Read#30
+D	0.032	0.029	0.031	0.029	0.051	0.029	absorbance:Spectrum Read#30
+
+absorbance:Spectrum
+Wavelength 31 (400 nm)
+	1	2	3	4	5	6
+A	0.032	0.029	0.033	0.029	0.030	0.029	absorbance:Spectrum Read#31
+B	0.032	0.028	0.031	0.028	0.031	0.030	absorbance:Spectrum Read#31
+C	0.031	0.028	0.030	0.030	0.031	0.030	absorbance:Spectrum Read#31
+D	0.031	0.029	0.030	0.028	0.051	0.028	absorbance:Spectrum Read#31
+
+absorbance:Spectrum
+Wavelength 32 (405 nm)
+	1	2	3	4	5	6
+A	0.031	0.028	0.033	0.029	0.030	0.028	absorbance:Spectrum Read#32
+B	0.032	0.028	0.030	0.028	0.031	0.029	absorbance:Spectrum Read#32
+C	0.031	0.028	0.030	0.029	0.031	0.029	absorbance:Spectrum Read#32
+D	0.031	0.028	0.030	0.028	0.050	0.028	absorbance:Spectrum Read#32
+
+absorbance:Spectrum
+Wavelength 33 (410 nm)
+	1	2	3	4	5	6
+A	0.031	0.028	0.033	0.028	0.029	0.028	absorbance:Spectrum Read#33
+B	0.031	0.028	0.030	0.028	0.030	0.029	absorbance:Spectrum Read#33
+C	0.030	0.028	0.030	0.029	0.031	0.029	absorbance:Spectrum Read#33
+D	0.030	0.028	0.030	0.028	0.050	0.028	absorbance:Spectrum Read#33
+
+absorbance:Spectrum
+Wavelength 34 (415 nm)
+	1	2	3	4	5	6
+A	0.031	0.028	0.032	0.028	0.029	0.028	absorbance:Spectrum Read#34
+B	0.031	0.027	0.030	0.028	0.030	0.029	absorbance:Spectrum Read#34
+C	0.030	0.027	0.029	0.029	0.030	0.029	absorbance:Spectrum Read#34
+D	0.030	0.028	0.029	0.028	0.049	0.027	absorbance:Spectrum Read#34
+
+absorbance:Spectrum
+Wavelength 35 (420 nm)
+	1	2	3	4	5	6
+A	0.030	0.028	0.032	0.028	0.029	0.028	absorbance:Spectrum Read#35
+B	0.031	0.027	0.030	0.027	0.030	0.029	absorbance:Spectrum Read#35
+C	0.030	0.027	0.029	0.029	0.030	0.029	absorbance:Spectrum Read#35
+D	0.030	0.028	0.029	0.027	0.049	0.027	absorbance:Spectrum Read#35
+
+absorbance:Spectrum
+Wavelength 36 (425 nm)
+	1	2	3	4	5	6
+A	0.030	0.027	0.032	0.028	0.029	0.027	absorbance:Spectrum Read#36
+B	0.030	0.027	0.029	0.027	0.029	0.028	absorbance:Spectrum Read#36
+C	0.030	0.027	0.029	0.028	0.030	0.028	absorbance:Spectrum Read#36
+D	0.029	0.027	0.029	0.027	0.049	0.027	absorbance:Spectrum Read#36
+
+absorbance:Spectrum
+Wavelength 37 (430 nm)
+	1	2	3	4	5	6
+A	0.030	0.027	0.031	0.027	0.028	0.027	absorbance:Spectrum Read#37
+B	0.030	0.027	0.029	0.027	0.029	0.028	absorbance:Spectrum Read#37
+C	0.029	0.027	0.029	0.028	0.029	0.028	absorbance:Spectrum Read#37
+D	0.029	0.027	0.029	0.027	0.048	0.026	absorbance:Spectrum Read#37
+
+absorbance:Spectrum
+Wavelength 38 (435 nm)
+	1	2	3	4	5	6
+A	0.030	0.027	0.031	0.027	0.028	0.027	absorbance:Spectrum Read#38
+B	0.030	0.026	0.029	0.027	0.029	0.028	absorbance:Spectrum Read#38
+C	0.029	0.026	0.029	0.028	0.029	0.028	absorbance:Spectrum Read#38
+D	0.029	0.027	0.028	0.026	0.048	0.026	absorbance:Spectrum Read#38
+
+absorbance:Spectrum
+Wavelength 39 (440 nm)
+	1	2	3	4	5	6
+A	0.029	0.027	0.031	0.027	0.028	0.027	absorbance:Spectrum Read#39
+B	0.030	0.026	0.029	0.027	0.029	0.028	absorbance:Spectrum Read#39
+C	0.029	0.026	0.029	0.028	0.029	0.028	absorbance:Spectrum Read#39
+D	0.029	0.027	0.028	0.027	0.048	0.026	absorbance:Spectrum Read#39
+
+absorbance:Spectrum
+Wavelength 40 (445 nm)
+	1	2	3	4	5	6
+A	0.029	0.027	0.031	0.027	0.028	0.027	absorbance:Spectrum Read#40
+B	0.030	0.026	0.029	0.027	0.028	0.028	absorbance:Spectrum Read#40
+C	0.029	0.026	0.028	0.028	0.029	0.028	absorbance:Spectrum Read#40
+D	0.029	0.027	0.028	0.026	0.048	0.026	absorbance:Spectrum Read#40
+
+absorbance:Spectrum
+Wavelength 41 (450 nm)
+	1	2	3	4	5	6
+A	0.029	0.027	0.031	0.027	0.028	0.027	absorbance:Spectrum Read#41
+B	0.030	0.027	0.029	0.027	0.029	0.028	absorbance:Spectrum Read#41
+C	0.029	0.027	0.028	0.028	0.029	0.028	absorbance:Spectrum Read#41
+D	0.029	0.027	0.028	0.027	0.048	0.027	absorbance:Spectrum Read#41
+
+absorbance:Spectrum
+Wavelength 42 (455 nm)
+	1	2	3	4	5	6
+A	0.029	0.027	0.030	0.027	0.028	0.027	absorbance:Spectrum Read#42
+B	0.030	0.026	0.028	0.027	0.028	0.028	absorbance:Spectrum Read#42
+C	0.029	0.026	0.028	0.028	0.029	0.028	absorbance:Spectrum Read#42
+D	0.029	0.027	0.028	0.027	0.048	0.026	absorbance:Spectrum Read#42
+
+absorbance:Spectrum
+Wavelength 43 (460 nm)
+	1	2	3	4	5	6
+A	0.029	0.026	0.030	0.026	0.028	0.026	absorbance:Spectrum Read#43
+B	0.029	0.026	0.028	0.026	0.028	0.027	absorbance:Spectrum Read#43
+C	0.029	0.026	0.028	0.028	0.029	0.028	absorbance:Spectrum Read#43
+D	0.028	0.027	0.028	0.026	0.047	0.026	absorbance:Spectrum Read#43
+
+absorbance:Spectrum
+Wavelength 44 (465 nm)
+	1	2	3	4	5	6
+A	0.029	0.026	0.030	0.026	0.027	0.026	absorbance:Spectrum Read#44
+B	0.029	0.026	0.028	0.026	0.028	0.027	absorbance:Spectrum Read#44
+C	0.028	0.026	0.028	0.027	0.028	0.027	absorbance:Spectrum Read#44
+D	0.028	0.026	0.027	0.026	0.047	0.026	absorbance:Spectrum Read#44
+
+absorbance:Spectrum
+Wavelength 45 (470 nm)
+	1	2	3	4	5	6
+A	0.028	0.026	0.030	0.026	0.027	0.026	absorbance:Spectrum Read#45
+B	0.029	0.026	0.028	0.026	0.028	0.027	absorbance:Spectrum Read#45
+C	0.028	0.026	0.028	0.027	0.028	0.027	absorbance:Spectrum Read#45
+D	0.028	0.026	0.027	0.026	0.046	0.025	absorbance:Spectrum Read#45
+
+absorbance:Spectrum
+Wavelength 46 (475 nm)
+	1	2	3	4	5	6
+A	0.028	0.026	0.030	0.026	0.027	0.026	absorbance:Spectrum Read#46
+B	0.028	0.025	0.028	0.026	0.027	0.026	absorbance:Spectrum Read#46
+C	0.028	0.025	0.027	0.027	0.028	0.027	absorbance:Spectrum Read#46
+D	0.027	0.026	0.027	0.025	0.046	0.025	absorbance:Spectrum Read#46
+
+absorbance:Spectrum
+Wavelength 47 (480 nm)
+	1	2	3	4	5	6
+A	0.028	0.026	0.030	0.026	0.027	0.026	absorbance:Spectrum Read#47
+B	0.028	0.025	0.028	0.026	0.027	0.027	absorbance:Spectrum Read#47
+C	0.028	0.025	0.028	0.027	0.028	0.027	absorbance:Spectrum Read#47
+D	0.027	0.026	0.027	0.026	0.046	0.025	absorbance:Spectrum Read#47
+
+absorbance:Spectrum
+Wavelength 48 (485 nm)
+	1	2	3	4	5	6
+A	0.028	0.026	0.030	0.026	0.027	0.026	absorbance:Spectrum Read#48
+B	0.029	0.025	0.028	0.026	0.027	0.027	absorbance:Spectrum Read#48
+C	0.028	0.025	0.028	0.027	0.028	0.026	absorbance:Spectrum Read#48
+D	0.027	0.026	0.027	0.025	0.046	0.025	absorbance:Spectrum Read#48
+
+absorbance:Spectrum
+Wavelength 49 (490 nm)
+	1	2	3	4	5	6
+A	0.028	0.026	0.030	0.026	0.027	0.026	absorbance:Spectrum Read#49
+B	0.028	0.025	0.028	0.025	0.027	0.026	absorbance:Spectrum Read#49
+C	0.028	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#49
+D	0.027	0.025	0.027	0.025	0.046	0.025	absorbance:Spectrum Read#49
+
+absorbance:Spectrum
+Wavelength 50 (495 nm)
+	1	2	3	4	5	6
+A	0.028	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#50
+B	0.028	0.025	0.027	0.025	0.027	0.026	absorbance:Spectrum Read#50
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#50
+D	0.027	0.025	0.027	0.025	0.045	0.025	absorbance:Spectrum Read#50
+
+absorbance:Spectrum
+Wavelength 51 (500 nm)
+	1	2	3	4	5	6
+A	0.028	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#51
+B	0.028	0.025	0.027	0.025	0.027	0.026	absorbance:Spectrum Read#51
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#51
+D	0.027	0.025	0.026	0.025	0.045	0.025	absorbance:Spectrum Read#51
+
+absorbance:Spectrum
+Wavelength 52 (505 nm)
+	1	2	3	4	5	6
+A	0.028	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#52
+B	0.028	0.025	0.027	0.025	0.027	0.026	absorbance:Spectrum Read#52
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#52
+D	0.027	0.025	0.027	0.025	0.045	0.025	absorbance:Spectrum Read#52
+
+absorbance:Spectrum
+Wavelength 53 (510 nm)
+	1	2	3	4	5	6
+A	0.028	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#53
+B	0.028	0.025	0.027	0.025	0.026	0.026	absorbance:Spectrum Read#53
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#53
+D	0.027	0.025	0.026	0.025	0.045	0.025	absorbance:Spectrum Read#53
+
+absorbance:Spectrum
+Wavelength 54 (515 nm)
+	1	2	3	4	5	6
+A	0.027	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#54
+B	0.028	0.025	0.027	0.025	0.026	0.026	absorbance:Spectrum Read#54
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#54
+D	0.026	0.025	0.026	0.025	0.045	0.025	absorbance:Spectrum Read#54
+
+absorbance:Spectrum
+Wavelength 55 (520 nm)
+	1	2	3	4	5	6
+A	0.027	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#55
+B	0.028	0.025	0.027	0.025	0.026	0.026	absorbance:Spectrum Read#55
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#55
+D	0.026	0.025	0.026	0.025	0.045	0.024	absorbance:Spectrum Read#55
+
+absorbance:Spectrum
+Wavelength 56 (525 nm)
+	1	2	3	4	5	6
+A	0.027	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#56
+B	0.028	0.025	0.027	0.025	0.026	0.026	absorbance:Spectrum Read#56
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#56
+D	0.026	0.025	0.026	0.025	0.044	0.024	absorbance:Spectrum Read#56
+
+absorbance:Spectrum
+Wavelength 57 (530 nm)
+	1	2	3	4	5	6
+A	0.028	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#57
+B	0.028	0.025	0.027	0.025	0.026	0.026	absorbance:Spectrum Read#57
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#57
+D	0.027	0.025	0.026	0.025	0.045	0.025	absorbance:Spectrum Read#57
+
+absorbance:Spectrum
+Wavelength 58 (535 nm)
+	1	2	3	4	5	6
+A	0.027	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#58
+B	0.028	0.025	0.027	0.025	0.026	0.026	absorbance:Spectrum Read#58
+C	0.027	0.025	0.027	0.026	0.026	0.026	absorbance:Spectrum Read#58
+D	0.026	0.025	0.026	0.025	0.045	0.024	absorbance:Spectrum Read#58
+
+absorbance:Spectrum
+Wavelength 59 (540 nm)
+	1	2	3	4	5	6
+A	0.027	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#59
+B	0.028	0.025	0.027	0.025	0.026	0.026	absorbance:Spectrum Read#59
+C	0.027	0.025	0.027	0.026	0.026	0.026	absorbance:Spectrum Read#59
+D	0.026	0.025	0.026	0.025	0.044	0.024	absorbance:Spectrum Read#59
+
+absorbance:Spectrum
+Wavelength 60 (545 nm)
+	1	2	3	4	5	6
+A	0.027	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#60
+B	0.027	0.025	0.027	0.025	0.026	0.025	absorbance:Spectrum Read#60
+C	0.027	0.025	0.027	0.025	0.026	0.025	absorbance:Spectrum Read#60
+D	0.026	0.025	0.026	0.025	0.044	0.024	absorbance:Spectrum Read#60
+
+absorbance:Spectrum
+Wavelength 61 (550 nm)
+	1	2	3	4	5	6
+A	0.027	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#61
+B	0.027	0.024	0.027	0.025	0.026	0.025	absorbance:Spectrum Read#61
+C	0.026	0.024	0.026	0.025	0.026	0.025	absorbance:Spectrum Read#61
+D	0.026	0.025	0.026	0.025	0.044	0.024	absorbance:Spectrum Read#61
+
+absorbance:Spectrum
+Wavelength 62 (555 nm)
+	1	2	3	4	5	6
+A	0.027	0.025	0.029	0.025	0.025	0.025	absorbance:Spectrum Read#62
+B	0.027	0.025	0.027	0.025	0.026	0.025	absorbance:Spectrum Read#62
+C	0.026	0.024	0.026	0.025	0.026	0.025	absorbance:Spectrum Read#62
+D	0.026	0.025	0.026	0.024	0.044	0.024	absorbance:Spectrum Read#62
+
+absorbance:Spectrum
+Wavelength 63 (560 nm)
+	1	2	3	4	5	6
+A	0.027	0.025	0.029	0.025	0.025	0.025	absorbance:Spectrum Read#63
+B	0.027	0.024	0.027	0.025	0.026	0.025	absorbance:Spectrum Read#63
+C	0.026	0.024	0.026	0.025	0.026	0.025	absorbance:Spectrum Read#63
+D	0.026	0.025	0.026	0.024	0.044	0.024	absorbance:Spectrum Read#63
+
+absorbance:Spectrum
+Wavelength 64 (565 nm)
+	1	2	3	4	5	6
+A	0.027	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#64
+B	0.027	0.024	0.027	0.025	0.026	0.025	absorbance:Spectrum Read#64
+C	0.026	0.024	0.026	0.025	0.026	0.025	absorbance:Spectrum Read#64
+D	0.026	0.024	0.026	0.024	0.044	0.024	absorbance:Spectrum Read#64
+
+absorbance:Spectrum
+Wavelength 65 (570 nm)
+	1	2	3	4	5	6
+A	0.027	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#65
+B	0.027	0.024	0.027	0.025	0.026	0.025	absorbance:Spectrum Read#65
+C	0.026	0.024	0.026	0.025	0.026	0.025	absorbance:Spectrum Read#65
+D	0.026	0.024	0.026	0.024	0.044	0.024	absorbance:Spectrum Read#65
+
+absorbance:Spectrum
+Wavelength 66 (575 nm)
+	1	2	3	4	5	6
+A	0.027	0.025	0.029	0.025	0.025	0.025	absorbance:Spectrum Read#66
+B	0.027	0.024	0.027	0.025	0.026	0.025	absorbance:Spectrum Read#66
+C	0.026	0.024	0.026	0.025	0.026	0.025	absorbance:Spectrum Read#66
+D	0.026	0.025	0.026	0.024	0.044	0.024	absorbance:Spectrum Read#66
+
+absorbance:Spectrum
+Wavelength 67 (580 nm)
+	1	2	3	4	5	6
+A	0.027	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#67
+B	0.027	0.024	0.027	0.025	0.026	0.025	absorbance:Spectrum Read#67
+C	0.026	0.024	0.026	0.025	0.026	0.025	absorbance:Spectrum Read#67
+D	0.026	0.025	0.026	0.024	0.044	0.024	absorbance:Spectrum Read#67
+
+absorbance:Spectrum
+Wavelength 68 (585 nm)
+	1	2	3	4	5	6
+A	0.027	0.025	0.029	0.025	0.025	0.025	absorbance:Spectrum Read#68
+B	0.027	0.024	0.027	0.025	0.026	0.025	absorbance:Spectrum Read#68
+C	0.026	0.024	0.026	0.025	0.026	0.025	absorbance:Spectrum Read#68
+D	0.026	0.025	0.026	0.024	0.044	0.024	absorbance:Spectrum Read#68
+
+absorbance:Spectrum
+Wavelength 69 (590 nm)
+	1	2	3	4	5	6
+A	0.027	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#69
+B	0.027	0.025	0.027	0.025	0.026	0.025	absorbance:Spectrum Read#69
+C	0.026	0.024	0.026	0.025	0.026	0.025	absorbance:Spectrum Read#69
+D	0.026	0.025	0.026	0.024	0.044	0.024	absorbance:Spectrum Read#69
+
+absorbance:Spectrum
+Wavelength 70 (595 nm)
+	1	2	3	4	5	6
+A	0.027	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#70
+B	0.027	0.025	0.027	0.025	0.026	0.025	absorbance:Spectrum Read#70
+C	0.026	0.025	0.026	0.025	0.026	0.025	absorbance:Spectrum Read#70
+D	0.026	0.025	0.026	0.024	0.044	0.024	absorbance:Spectrum Read#70
+
+absorbance:Spectrum
+Wavelength 71 (600 nm)
+	1	2	3	4	5	6
+A	0.028	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#71
+B	0.028	0.025	0.027	0.025	0.026	0.026	absorbance:Spectrum Read#71
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#71
+D	0.026	0.025	0.026	0.025	0.044	0.025	absorbance:Spectrum Read#71
+
+absorbance:Spectrum
+Wavelength 72 (605 nm)
+	1	2	3	4	5	6
+A	0.028	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#72
+B	0.028	0.025	0.027	0.025	0.026	0.026	absorbance:Spectrum Read#72
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#72
+D	0.027	0.025	0.026	0.025	0.044	0.025	absorbance:Spectrum Read#72
+
+absorbance:Spectrum
+Wavelength 73 (610 nm)
+	1	2	3	4	5	6
+A	0.028	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#73
+B	0.028	0.025	0.027	0.025	0.026	0.026	absorbance:Spectrum Read#73
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#73
+D	0.027	0.025	0.026	0.025	0.044	0.025	absorbance:Spectrum Read#73
+
+absorbance:Spectrum
+Wavelength 74 (615 nm)
+	1	2	3	4	5	6
+A	0.028	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#74
+B	0.028	0.025	0.027	0.025	0.026	0.026	absorbance:Spectrum Read#74
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#74
+D	0.027	0.025	0.027	0.025	0.044	0.025	absorbance:Spectrum Read#74
+
+absorbance:Spectrum
+Wavelength 75 (620 nm)
+	1	2	3	4	5	6
+A	0.028	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#75
+B	0.028	0.025	0.027	0.025	0.026	0.026	absorbance:Spectrum Read#75
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#75
+D	0.027	0.025	0.026	0.025	0.044	0.025	absorbance:Spectrum Read#75
+
+absorbance:Spectrum
+Wavelength 76 (625 nm)
+	1	2	3	4	5	6
+A	0.028	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#76
+B	0.028	0.025	0.027	0.025	0.026	0.026	absorbance:Spectrum Read#76
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#76
+D	0.027	0.025	0.026	0.025	0.044	0.025	absorbance:Spectrum Read#76
+
+absorbance:Spectrum
+Wavelength 77 (630 nm)
+	1	2	3	4	5	6
+A	0.028	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#77
+B	0.028	0.025	0.027	0.025	0.026	0.026	absorbance:Spectrum Read#77
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#77
+D	0.027	0.025	0.026	0.025	0.044	0.025	absorbance:Spectrum Read#77
+
+absorbance:Spectrum
+Wavelength 78 (635 nm)
+	1	2	3	4	5	6
+A	0.028	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#78
+B	0.028	0.025	0.027	0.025	0.026	0.026	absorbance:Spectrum Read#78
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#78
+D	0.026	0.025	0.026	0.025	0.044	0.025	absorbance:Spectrum Read#78
+
+absorbance:Spectrum
+Wavelength 79 (640 nm)
+	1	2	3	4	5	6
+A	0.028	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#79
+B	0.028	0.025	0.027	0.025	0.026	0.026	absorbance:Spectrum Read#79
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#79
+D	0.027	0.025	0.026	0.025	0.044	0.025	absorbance:Spectrum Read#79
+
+absorbance:Spectrum
+Wavelength 80 (645 nm)
+	1	2	3	4	5	6
+A	0.028	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#80
+B	0.028	0.025	0.027	0.025	0.026	0.026	absorbance:Spectrum Read#80
+C	0.027	0.025	0.027	0.026	0.026	0.026	absorbance:Spectrum Read#80
+D	0.026	0.025	0.026	0.025	0.044	0.025	absorbance:Spectrum Read#80
+
+absorbance:Spectrum
+Wavelength 81 (650 nm)
+	1	2	3	4	5	6
+A	0.028	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#81
+B	0.028	0.025	0.027	0.025	0.026	0.026	absorbance:Spectrum Read#81
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#81
+D	0.027	0.025	0.027	0.025	0.044	0.025	absorbance:Spectrum Read#81
+
+absorbance:Spectrum
+Wavelength 82 (655 nm)
+	1	2	3	4	5	6
+A	0.028	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#82
+B	0.028	0.025	0.028	0.025	0.026	0.026	absorbance:Spectrum Read#82
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#82
+D	0.027	0.025	0.026	0.025	0.044	0.025	absorbance:Spectrum Read#82
+
+absorbance:Spectrum
+Wavelength 83 (660 nm)
+	1	2	3	4	5	6
+A	0.028	0.026	0.029	0.026	0.026	0.025	absorbance:Spectrum Read#83
+B	0.028	0.025	0.027	0.025	0.026	0.026	absorbance:Spectrum Read#83
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#83
+D	0.027	0.025	0.027	0.025	0.044	0.025	absorbance:Spectrum Read#83
+
+absorbance:Spectrum
+Wavelength 84 (665 nm)
+	1	2	3	4	5	6
+A	0.028	0.025	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#84
+B	0.028	0.025	0.028	0.025	0.026	0.026	absorbance:Spectrum Read#84
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#84
+D	0.027	0.025	0.027	0.025	0.044	0.025	absorbance:Spectrum Read#84
+
+absorbance:Spectrum
+Wavelength 85 (670 nm)
+	1	2	3	4	5	6
+A	0.028	0.026	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#85
+B	0.028	0.025	0.027	0.025	0.026	0.026	absorbance:Spectrum Read#85
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#85
+D	0.027	0.025	0.027	0.025	0.044	0.025	absorbance:Spectrum Read#85
+
+absorbance:Spectrum
+Wavelength 86 (675 nm)
+	1	2	3	4	5	6
+A	0.028	0.026	0.029	0.025	0.026	0.025	absorbance:Spectrum Read#86
+B	0.028	0.025	0.028	0.025	0.026	0.026	absorbance:Spectrum Read#86
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#86
+D	0.027	0.025	0.027	0.025	0.044	0.025	absorbance:Spectrum Read#86
+
+absorbance:Spectrum
+Wavelength 87 (680 nm)
+	1	2	3	4	5	6
+A	0.028	0.026	0.029	0.026	0.026	0.025	absorbance:Spectrum Read#87
+B	0.028	0.025	0.028	0.025	0.026	0.026	absorbance:Spectrum Read#87
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#87
+D	0.027	0.025	0.027	0.025	0.044	0.025	absorbance:Spectrum Read#87
+
+absorbance:Spectrum
+Wavelength 88 (685 nm)
+	1	2	3	4	5	6
+A	0.028	0.026	0.029	0.026	0.027	0.026	absorbance:Spectrum Read#88
+B	0.028	0.025	0.028	0.026	0.027	0.026	absorbance:Spectrum Read#88
+C	0.027	0.025	0.028	0.026	0.027	0.026	absorbance:Spectrum Read#88
+D	0.027	0.025	0.027	0.025	0.044	0.025	absorbance:Spectrum Read#88
+
+absorbance:Spectrum
+Wavelength 89 (690 nm)
+	1	2	3	4	5	6
+A	0.028	0.026	0.030	0.026	0.027	0.026	absorbance:Spectrum Read#89
+B	0.028	0.026	0.028	0.026	0.027	0.026	absorbance:Spectrum Read#89
+C	0.028	0.025	0.028	0.026	0.027	0.026	absorbance:Spectrum Read#89
+D	0.027	0.026	0.027	0.025	0.044	0.025	absorbance:Spectrum Read#89
+
+absorbance:Spectrum
+Wavelength 90 (695 nm)
+	1	2	3	4	5	6
+A	0.028	0.026	0.029	0.026	0.027	0.026	absorbance:Spectrum Read#90
+B	0.028	0.025	0.028	0.026	0.027	0.026	absorbance:Spectrum Read#90
+C	0.027	0.025	0.027	0.026	0.027	0.026	absorbance:Spectrum Read#90
+D	0.027	0.026	0.027	0.025	0.044	0.025	absorbance:Spectrum Read#90
+
+absorbance:Spectrum
+Wavelength 91 (700 nm)
+	1	2	3	4	5	6
+A	0.028	0.026	0.030	0.026	0.027	0.026	absorbance:Spectrum Read#91
+B	0.028	0.026	0.028	0.026	0.027	0.027	absorbance:Spectrum Read#91
+C	0.028	0.026	0.028	0.027	0.027	0.026	absorbance:Spectrum Read#91
+D	0.027	0.026	0.027	0.026	0.045	0.025	absorbance:Spectrum Read#91
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 1 (250 nm)
+	1	2	3	4	5	6
+A	2476	355	651	525	477	407	excitation spectra 480 emission:EX Spectrum Read#1
+B	2735	350	660	293	425	334	excitation spectra 480 emission:EX Spectrum Read#1
+C	2755	359	707	381	422	353	excitation spectra 480 emission:EX Spectrum Read#1
+D	2718	329	709	363	463	381	excitation spectra 480 emission:EX Spectrum Read#1
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 2 (255 nm)
+	1	2	3	4	5	6
+A	2967	418	809	556	520	397	excitation spectra 480 emission:EX Spectrum Read#2
+B	3360	361	748	305	521	387	excitation spectra 480 emission:EX Spectrum Read#2
+C	3242	378	777	348	499	393	excitation spectra 480 emission:EX Spectrum Read#2
+D	3442	362	721	366	499	410	excitation spectra 480 emission:EX Spectrum Read#2
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 3 (260 nm)
+	1	2	3	4	5	6
+A	3668	415	916	579	555	382	excitation spectra 480 emission:EX Spectrum Read#3
+B	4033	377	878	376	533	404	excitation spectra 480 emission:EX Spectrum Read#3
+C	4145	419	1006	380	559	341	excitation spectra 480 emission:EX Spectrum Read#3
+D	4246	361	913	392	543	412	excitation spectra 480 emission:EX Spectrum Read#3
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 4 (265 nm)
+	1	2	3	4	5	6
+A	4449	409	1074	541	559	410	excitation spectra 480 emission:EX Spectrum Read#4
+B	5012	360	1029	335	598	373	excitation spectra 480 emission:EX Spectrum Read#4
+C	4964	436	1099	350	542	349	excitation spectra 480 emission:EX Spectrum Read#4
+D	5135	391	1019	360	554	404	excitation spectra 480 emission:EX Spectrum Read#4
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 5 (270 nm)
+	1	2	3	4	5	6
+A	4924	361	1128	490	546	355	excitation spectra 480 emission:EX Spectrum Read#5
+B	5582	327	1094	318	588	339	excitation spectra 480 emission:EX Spectrum Read#5
+C	5506	373	1188	338	567	307	excitation spectra 480 emission:EX Spectrum Read#5
+D	5673	316	1109	329	573	361	excitation spectra 480 emission:EX Spectrum Read#5
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 6 (275 nm)
+	1	2	3	4	5	6
+A	5185	336	1134	454	552	338	excitation spectra 480 emission:EX Spectrum Read#6
+B	5915	294	1102	291	570	324	excitation spectra 480 emission:EX Spectrum Read#6
+C	5814	353	1233	315	543	287	excitation spectra 480 emission:EX Spectrum Read#6
+D	6018	317	1167	288	559	320	excitation spectra 480 emission:EX Spectrum Read#6
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 7 (280 nm)
+	1	2	3	4	5	6
+A	4685	253	1040	389	485	290	excitation spectra 480 emission:EX Spectrum Read#7
+B	5269	257	1023	245	506	280	excitation spectra 480 emission:EX Spectrum Read#7
+C	5210	293	1116	260	479	240	excitation spectra 480 emission:EX Spectrum Read#7
+D	5361	253	1017	260	468	273	excitation spectra 480 emission:EX Spectrum Read#7
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 8 (285 nm)
+	1	2	3	4	5	6
+A	3962	248	857	335	417	258	excitation spectra 480 emission:EX Spectrum Read#8
+B	4534	238	860	217	436	259	excitation spectra 480 emission:EX Spectrum Read#8
+C	4495	244	936	233	405	225	excitation spectra 480 emission:EX Spectrum Read#8
+D	4536	219	889	233	423	268	excitation spectra 480 emission:EX Spectrum Read#8
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 9 (290 nm)
+	1	2	3	4	5	6
+A	2970	237	701	339	381	251	excitation spectra 480 emission:EX Spectrum Read#9
+B	3452	215	688	198	375	245	excitation spectra 480 emission:EX Spectrum Read#9
+C	3334	244	737	229	370	223	excitation spectra 480 emission:EX Spectrum Read#9
+D	3424	211	704	224	358	263	excitation spectra 480 emission:EX Spectrum Read#9
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 10 (295 nm)
+	1	2	3	4	5	6
+A	2053	256	538	319	350	229	excitation spectra 480 emission:EX Spectrum Read#10
+B	2339	232	549	218	319	248	excitation spectra 480 emission:EX Spectrum Read#10
+C	2319	260	584	253	308	223	excitation spectra 480 emission:EX Spectrum Read#10
+D	2322	239	538	239	309	263	excitation spectra 480 emission:EX Spectrum Read#10
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 11 (300 nm)
+	1	2	3	4	5	6
+A	1431	241	447	322	313	288	excitation spectra 480 emission:EX Spectrum Read#11
+B	1670	233	446	223	297	286	excitation spectra 480 emission:EX Spectrum Read#11
+C	1623	282	486	256	293	241	excitation spectra 480 emission:EX Spectrum Read#11
+D	1683	229	463	255	326	274	excitation spectra 480 emission:EX Spectrum Read#11
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 12 (305 nm)
+	1	2	3	4	5	6
+A	1148	259	405	351	321	297	excitation spectra 480 emission:EX Spectrum Read#12
+B	1334	248	385	239	335	271	excitation spectra 480 emission:EX Spectrum Read#12
+C	1248	254	452	264	306	243	excitation spectra 480 emission:EX Spectrum Read#12
+D	1301	259	423	269	320	306	excitation spectra 480 emission:EX Spectrum Read#12
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 13 (310 nm)
+	1	2	3	4	5	6
+A	1097	288	424	350	349	319	excitation spectra 480 emission:EX Spectrum Read#13
+B	1225	284	410	286	346	285	excitation spectra 480 emission:EX Spectrum Read#13
+C	1198	298	421	333	328	275	excitation spectra 480 emission:EX Spectrum Read#13
+D	1202	249	438	267	370	310	excitation spectra 480 emission:EX Spectrum Read#13
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 14 (315 nm)
+	1	2	3	4	5	6
+A	999	295	446	406	371	343	excitation spectra 480 emission:EX Spectrum Read#14
+B	1212	292	430	260	345	314	excitation spectra 480 emission:EX Spectrum Read#14
+C	1183	307	490	311	334	282	excitation spectra 480 emission:EX Spectrum Read#14
+D	1233	276	421	286	355	283	excitation spectra 480 emission:EX Spectrum Read#14
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 15 (320 nm)
+	1	2	3	4	5	6
+A	1022	294	397	428	349	301	excitation spectra 480 emission:EX Spectrum Read#15
+B	1188	279	401	254	321	314	excitation spectra 480 emission:EX Spectrum Read#15
+C	1136	302	435	290	293	295	excitation spectra 480 emission:EX Spectrum Read#15
+D	1129	279	365	276	330	316	excitation spectra 480 emission:EX Spectrum Read#15
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 16 (325 nm)
+	1	2	3	4	5	6
+A	1009	279	393	424	313	313	excitation spectra 480 emission:EX Spectrum Read#16
+B	1152	265	368	257	346	339	excitation spectra 480 emission:EX Spectrum Read#16
+C	1138	309	411	325	327	327	excitation spectra 480 emission:EX Spectrum Read#16
+D	1158	268	376	268	336	331	excitation spectra 480 emission:EX Spectrum Read#16
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 17 (330 nm)
+	1	2	3	4	5	6
+A	1075	308	384	466	349	316	excitation spectra 480 emission:EX Spectrum Read#17
+B	1198	267	387	268	357	323	excitation spectra 480 emission:EX Spectrum Read#17
+C	1155	359	438	313	319	289	excitation spectra 480 emission:EX Spectrum Read#17
+D	1208	269	393	273	356	307	excitation spectra 480 emission:EX Spectrum Read#17
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 18 (335 nm)
+	1	2	3	4	5	6
+A	1073	318	440	541	320	296	excitation spectra 480 emission:EX Spectrum Read#18
+B	1178	275	426	255	348	329	excitation spectra 480 emission:EX Spectrum Read#18
+C	1163	339	444	339	358	320	excitation spectra 480 emission:EX Spectrum Read#18
+D	1222	282	442	287	366	348	excitation spectra 480 emission:EX Spectrum Read#18
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 19 (340 nm)
+	1	2	3	4	5	6
+A	1151	332	445	600	372	306	excitation spectra 480 emission:EX Spectrum Read#19
+B	1284	313	445	290	378	354	excitation spectra 480 emission:EX Spectrum Read#19
+C	1317	383	456	341	342	354	excitation spectra 480 emission:EX Spectrum Read#19
+D	1318	306	507	336	376	347	excitation spectra 480 emission:EX Spectrum Read#19
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 20 (345 nm)
+	1	2	3	4	5	6
+A	1228	350	457	587	362	348	excitation spectra 480 emission:EX Spectrum Read#20
+B	1384	313	470	301	388	377	excitation spectra 480 emission:EX Spectrum Read#20
+C	1392	358	478	333	388	324	excitation spectra 480 emission:EX Spectrum Read#20
+D	1472	297	509	354	377	392	excitation spectra 480 emission:EX Spectrum Read#20
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 21 (350 nm)
+	1	2	3	4	5	6
+A	1403	376	474	663	404	374	excitation spectra 480 emission:EX Spectrum Read#21
+B	1489	354	469	300	425	351	excitation spectra 480 emission:EX Spectrum Read#21
+C	1473	425	532	336	393	322	excitation spectra 480 emission:EX Spectrum Read#21
+D	1542	351	499	357	380	343	excitation spectra 480 emission:EX Spectrum Read#21
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 22 (355 nm)
+	1	2	3	4	5	6
+A	1355	321	496	704	376	365	excitation spectra 480 emission:EX Spectrum Read#22
+B	1563	306	494	304	392	401	excitation spectra 480 emission:EX Spectrum Read#22
+C	1499	422	522	333	350	341	excitation spectra 480 emission:EX Spectrum Read#22
+D	1553	336	516	339	409	346	excitation spectra 480 emission:EX Spectrum Read#22
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 23 (360 nm)
+	1	2	3	4	5	6
+A	1338	329	471	748	379	337	excitation spectra 480 emission:EX Spectrum Read#23
+B	1516	317	468	299	400	377	excitation spectra 480 emission:EX Spectrum Read#23
+C	1479	400	522	346	375	348	excitation spectra 480 emission:EX Spectrum Read#23
+D	1553	337	519	329	411	370	excitation spectra 480 emission:EX Spectrum Read#23
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 24 (365 nm)
+	1	2	3	4	5	6
+A	1260	316	467	715	355	334	excitation spectra 480 emission:EX Spectrum Read#24
+B	1373	328	452	303	361	365	excitation spectra 480 emission:EX Spectrum Read#24
+C	1348	421	515	336	376	353	excitation spectra 480 emission:EX Spectrum Read#24
+D	1407	308	485	334	396	405	excitation spectra 480 emission:EX Spectrum Read#24
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 25 (370 nm)
+	1	2	3	4	5	6
+A	1049	317	447	726	335	336	excitation spectra 480 emission:EX Spectrum Read#25
+B	1146	298	421	280	364	351	excitation spectra 480 emission:EX Spectrum Read#25
+C	1127	399	442	316	354	319	excitation spectra 480 emission:EX Spectrum Read#25
+D	1130	302	443	309	370	361	excitation spectra 480 emission:EX Spectrum Read#25
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 26 (375 nm)
+	1	2	3	4	5	6
+A	766	316	356	746	341	309	excitation spectra 480 emission:EX Spectrum Read#26
+B	839	282	349	273	339	334	excitation spectra 480 emission:EX Spectrum Read#26
+C	844	396	394	297	327	323	excitation spectra 480 emission:EX Spectrum Read#26
+D	865	282	359	295	351	349	excitation spectra 480 emission:EX Spectrum Read#26
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 27 (380 nm)
+	1	2	3	4	5	6
+A	564	264	311	723	291	284	excitation spectra 480 emission:EX Spectrum Read#27
+B	649	269	314	257	311	335	excitation spectra 480 emission:EX Spectrum Read#27
+C	609	355	313	341	281	300	excitation spectra 480 emission:EX Spectrum Read#27
+D	627	282	319	287	304	318	excitation spectra 480 emission:EX Spectrum Read#27
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 28 (385 nm)
+	1	2	3	4	5	6
+A	454	266	277	665	282	291	excitation spectra 480 emission:EX Spectrum Read#28
+B	469	242	286	264	279	324	excitation spectra 480 emission:EX Spectrum Read#28
+C	472	345	294	280	286	297	excitation spectra 480 emission:EX Spectrum Read#28
+D	481	256	301	272	287	301	excitation spectra 480 emission:EX Spectrum Read#28
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 29 (390 nm)
+	1	2	3	4	5	6
+A	349	244	266	652	259	263	excitation spectra 480 emission:EX Spectrum Read#29
+B	368	244	246	239	270	284	excitation spectra 480 emission:EX Spectrum Read#29
+C	353	310	268	266	251	259	excitation spectra 480 emission:EX Spectrum Read#29
+D	352	249	275	262	262	289	excitation spectra 480 emission:EX Spectrum Read#29
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 30 (395 nm)
+	1	2	3	4	5	6
+A	290	231	246	570	236	262	excitation spectra 480 emission:EX Spectrum Read#30
+B	276	214	230	211	263	271	excitation spectra 480 emission:EX Spectrum Read#30
+C	289	283	257	244	258	260	excitation spectra 480 emission:EX Spectrum Read#30
+D	292	223	221	238	278	299	excitation spectra 480 emission:EX Spectrum Read#30
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 31 (400 nm)
+	1	2	3	4	5	6
+A	224	244	216	558	232	258	excitation spectra 480 emission:EX Spectrum Read#31
+B	237	209	227	232	244	270	excitation spectra 480 emission:EX Spectrum Read#31
+C	245	261	236	250	248	251	excitation spectra 480 emission:EX Spectrum Read#31
+D	253	223	225	251	258	278	excitation spectra 480 emission:EX Spectrum Read#31
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 32 (405 nm)
+	1	2	3	4	5	6
+A	211	259	230	518	253	285	excitation spectra 480 emission:EX Spectrum Read#32
+B	251	239	253	244	273	283	excitation spectra 480 emission:EX Spectrum Read#32
+C	233	283	249	283	263	272	excitation spectra 480 emission:EX Spectrum Read#32
+D	248	252	239	271	283	319	excitation spectra 480 emission:EX Spectrum Read#32
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 33 (410 nm)
+	1	2	3	4	5	6
+A	236	292	268	487	280	338	excitation spectra 480 emission:EX Spectrum Read#33
+B	279	281	242	262	310	339	excitation spectra 480 emission:EX Spectrum Read#33
+C	259	316	289	305	278	319	excitation spectra 480 emission:EX Spectrum Read#33
+D	249	266	280	302	278	342	excitation spectra 480 emission:EX Spectrum Read#33
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 34 (415 nm)
+	1	2	3	4	5	6
+A	228	295	269	408	284	319	excitation spectra 480 emission:EX Spectrum Read#34
+B	251	255	256	258	285	330	excitation spectra 480 emission:EX Spectrum Read#34
+C	230	317	282	299	279	292	excitation spectra 480 emission:EX Spectrum Read#34
+D	253	276	263	287	289	366	excitation spectra 480 emission:EX Spectrum Read#34
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 35 (420 nm)
+	1	2	3	4	5	6
+A	169	239	205	301	251	260	excitation spectra 480 emission:EX Spectrum Read#35
+B	204	235	197	216	254	293	excitation spectra 480 emission:EX Spectrum Read#35
+C	185	241	222	247	227	258	excitation spectra 480 emission:EX Spectrum Read#35
+D	197	235	206	264	249	288	excitation spectra 480 emission:EX Spectrum Read#35
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 36 (425 nm)
+	1	2	3	4	5	6
+A	127	193	163	226	192	194	excitation spectra 480 emission:EX Spectrum Read#36
+B	157	179	153	161	200	217	excitation spectra 480 emission:EX Spectrum Read#36
+C	143	200	180	187	189	203	excitation spectra 480 emission:EX Spectrum Read#36
+D	147	160	163	191	198	225	excitation spectra 480 emission:EX Spectrum Read#36
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 37 (430 nm)
+	1	2	3	4	5	6
+A	105	156	149	174	163	153	excitation spectra 480 emission:EX Spectrum Read#37
+B	114	145	120	133	135	168	excitation spectra 480 emission:EX Spectrum Read#37
+C	115	150	143	146	151	158	excitation spectra 480 emission:EX Spectrum Read#37
+D	118	154	126	148	166	181	excitation spectra 480 emission:EX Spectrum Read#37
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 38 (435 nm)
+	1	2	3	4	5	6
+A	97	135	115	166	138	145	excitation spectra 480 emission:EX Spectrum Read#38
+B	103	126	107	117	131	168	excitation spectra 480 emission:EX Spectrum Read#38
+C	80	143	130	134	140	140	excitation spectra 480 emission:EX Spectrum Read#38
+D	115	126	121	138	134	145	excitation spectra 480 emission:EX Spectrum Read#38
+
+excitation spectra 480 emission:EX Spectrum
+Wavelength 39 (440 nm)
+	1	2	3	4	5	6
+A	105	139	123	171	134	132	excitation spectra 480 emission:EX Spectrum Read#39
+B	123	123	114	123	140	151	excitation spectra 480 emission:EX Spectrum Read#39
+C	116	151	131	136	141	141	excitation spectra 480 emission:EX Spectrum Read#39
+D	112	123	115	131	148	143	excitation spectra 480 emission:EX Spectrum Read#39
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 1 (250 nm)
+	1	2	3	4	5	6
+A	2476	443	737	376	543	391	excitation spectra emission 480 bottom:EX Spectrum Read#1
+B	2401	389	708	388	478	352	excitation spectra emission 480 bottom:EX Spectrum Read#1
+C	2561	420	673	408	510	345	excitation spectra emission 480 bottom:EX Spectrum Read#1
+D	2475	405	713	412	478	373	excitation spectra emission 480 bottom:EX Spectrum Read#1
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 2 (255 nm)
+	1	2	3	4	5	6
+A	3141	459	860	452	560	415	excitation spectra emission 480 bottom:EX Spectrum Read#2
+B	2999	412	821	389	557	367	excitation spectra emission 480 bottom:EX Spectrum Read#2
+C	3109	456	836	420	535	367	excitation spectra emission 480 bottom:EX Spectrum Read#2
+D	3163	428	836	448	559	353	excitation spectra emission 480 bottom:EX Spectrum Read#2
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 3 (260 nm)
+	1	2	3	4	5	6
+A	3934	511	1039	454	635	455	excitation spectra emission 480 bottom:EX Spectrum Read#3
+B	3777	433	978	439	624	397	excitation spectra emission 480 bottom:EX Spectrum Read#3
+C	3911	515	964	464	582	424	excitation spectra emission 480 bottom:EX Spectrum Read#3
+D	3930	492	927	469	609	411	excitation spectra emission 480 bottom:EX Spectrum Read#3
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 4 (265 nm)
+	1	2	3	4	5	6
+A	4816	493	1145	463	678	429	excitation spectra emission 480 bottom:EX Spectrum Read#4
+B	4631	483	1105	462	682	440	excitation spectra emission 480 bottom:EX Spectrum Read#4
+C	4816	516	1119	470	593	416	excitation spectra emission 480 bottom:EX Spectrum Read#4
+D	4748	496	1074	461	631	420	excitation spectra emission 480 bottom:EX Spectrum Read#4
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 5 (270 nm)
+	1	2	3	4	5	6
+A	5576	469	1282	439	689	413	excitation spectra emission 480 bottom:EX Spectrum Read#5
+B	5381	438	1219	429	661	391	excitation spectra emission 480 bottom:EX Spectrum Read#5
+C	5755	497	1246	443	654	374	excitation spectra emission 480 bottom:EX Spectrum Read#5
+D	5645	456	1175	450	673	386	excitation spectra emission 480 bottom:EX Spectrum Read#5
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 6 (275 nm)
+	1	2	3	4	5	6
+A	6012	456	1286	403	667	386	excitation spectra emission 480 bottom:EX Spectrum Read#6
+B	5799	423	1229	410	681	382	excitation spectra emission 480 bottom:EX Spectrum Read#6
+C	6117	458	1246	417	648	367	excitation spectra emission 480 bottom:EX Spectrum Read#6
+D	5987	448	1236	427	653	358	excitation spectra emission 480 bottom:EX Spectrum Read#6
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 7 (280 nm)
+	1	2	3	4	5	6
+A	5510	394	1219	351	619	335	excitation spectra emission 480 bottom:EX Spectrum Read#7
+B	5384	350	1124	346	602	329	excitation spectra emission 480 bottom:EX Spectrum Read#7
+C	5661	398	1151	358	563	306	excitation spectra emission 480 bottom:EX Spectrum Read#7
+D	5481	391	1117	370	566	313	excitation spectra emission 480 bottom:EX Spectrum Read#7
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 8 (285 nm)
+	1	2	3	4	5	6
+A	4754	347	1027	328	528	324	excitation spectra emission 480 bottom:EX Spectrum Read#8
+B	4583	316	955	327	522	310	excitation spectra emission 480 bottom:EX Spectrum Read#8
+C	4851	363	1018	336	519	298	excitation spectra emission 480 bottom:EX Spectrum Read#8
+D	4718	350	961	326	506	291	excitation spectra emission 480 bottom:EX Spectrum Read#8
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 9 (290 nm)
+	1	2	3	4	5	6
+A	3615	331	842	287	478	286	excitation spectra emission 480 bottom:EX Spectrum Read#9
+B	3508	287	812	306	445	266	excitation spectra emission 480 bottom:EX Spectrum Read#9
+C	3705	325	823	297	454	278	excitation spectra emission 480 bottom:EX Spectrum Read#9
+D	3668	318	799	300	436	277	excitation spectra emission 480 bottom:EX Spectrum Read#9
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 10 (295 nm)
+	1	2	3	4	5	6
+A	2618	308	665	282	441	286	excitation spectra emission 480 bottom:EX Spectrum Read#10
+B	2494	261	617	282	409	271	excitation spectra emission 480 bottom:EX Spectrum Read#10
+C	2665	301	646	273	388	272	excitation spectra emission 480 bottom:EX Spectrum Read#10
+D	2591	306	664	291	394	266	excitation spectra emission 480 bottom:EX Spectrum Read#10
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 11 (300 nm)
+	1	2	3	4	5	6
+A	1864	322	589	282	377	280	excitation spectra emission 480 bottom:EX Spectrum Read#11
+B	1813	281	539	284	373	260	excitation spectra emission 480 bottom:EX Spectrum Read#11
+C	1899	300	560	286	369	273	excitation spectra emission 480 bottom:EX Spectrum Read#11
+D	1860	297	536	290	382	260	excitation spectra emission 480 bottom:EX Spectrum Read#11
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 12 (305 nm)
+	1	2	3	4	5	6
+A	1453	312	529	283	367	287	excitation spectra emission 480 bottom:EX Spectrum Read#12
+B	1459	277	489	295	348	275	excitation spectra emission 480 bottom:EX Spectrum Read#12
+C	1523	306	525	304	352	272	excitation spectra emission 480 bottom:EX Spectrum Read#12
+D	1504	295	485	276	382	255	excitation spectra emission 480 bottom:EX Spectrum Read#12
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 13 (310 nm)
+	1	2	3	4	5	6
+A	1451	311	520	288	400	289	excitation spectra emission 480 bottom:EX Spectrum Read#13
+B	1315	280	484	283	357	303	excitation spectra emission 480 bottom:EX Spectrum Read#13
+C	1421	295	513	298	383	284	excitation spectra emission 480 bottom:EX Spectrum Read#13
+D	1377	300	499	287	365	273	excitation spectra emission 480 bottom:EX Spectrum Read#13
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 14 (315 nm)
+	1	2	3	4	5	6
+A	1358	285	526	268	385	271	excitation spectra emission 480 bottom:EX Spectrum Read#14
+B	1339	284	496	276	364	267	excitation spectra emission 480 bottom:EX Spectrum Read#14
+C	1410	307	530	272	364	271	excitation spectra emission 480 bottom:EX Spectrum Read#14
+D	1329	309	485	270	375	250	excitation spectra emission 480 bottom:EX Spectrum Read#14
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 15 (320 nm)
+	1	2	3	4	5	6
+A	1319	285	510	268	349	255	excitation spectra emission 480 bottom:EX Spectrum Read#15
+B	1288	255	466	267	353	263	excitation spectra emission 480 bottom:EX Spectrum Read#15
+C	1341	298	472	286	345	265	excitation spectra emission 480 bottom:EX Spectrum Read#15
+D	1331	278	463	261	376	269	excitation spectra emission 480 bottom:EX Spectrum Read#15
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 16 (325 nm)
+	1	2	3	4	5	6
+A	1351	279	488	263	356	258	excitation spectra emission 480 bottom:EX Spectrum Read#16
+B	1297	272	463	263	343	251	excitation spectra emission 480 bottom:EX Spectrum Read#16
+C	1371	289	475	276	332	238	excitation spectra emission 480 bottom:EX Spectrum Read#16
+D	1338	279	442	261	356	248	excitation spectra emission 480 bottom:EX Spectrum Read#16
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 17 (330 nm)
+	1	2	3	4	5	6
+A	1425	291	499	287	353	265	excitation spectra emission 480 bottom:EX Spectrum Read#17
+B	1342	250	479	279	349	268	excitation spectra emission 480 bottom:EX Spectrum Read#17
+C	1370	301	478	275	346	281	excitation spectra emission 480 bottom:EX Spectrum Read#17
+D	1382	290	468	291	337	253	excitation spectra emission 480 bottom:EX Spectrum Read#17
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 18 (335 nm)
+	1	2	3	4	5	6
+A	1458	308	546	258	369	278	excitation spectra emission 480 bottom:EX Spectrum Read#18
+B	1404	285	497	282	353	261	excitation spectra emission 480 bottom:EX Spectrum Read#18
+C	1446	295	492	281	370	270	excitation spectra emission 480 bottom:EX Spectrum Read#18
+D	1439	293	491	287	372	268	excitation spectra emission 480 bottom:EX Spectrum Read#18
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 19 (340 nm)
+	1	2	3	4	5	6
+A	1587	300	566	286	396	282	excitation spectra emission 480 bottom:EX Spectrum Read#19
+B	1506	288	508	277	398	297	excitation spectra emission 480 bottom:EX Spectrum Read#19
+C	1600	307	531	306	357	299	excitation spectra emission 480 bottom:EX Spectrum Read#19
+D	1521	343	497	303	391	314	excitation spectra emission 480 bottom:EX Spectrum Read#19
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 20 (345 nm)
+	1	2	3	4	5	6
+A	1657	297	595	321	377	284	excitation spectra emission 480 bottom:EX Spectrum Read#20
+B	1620	307	521	325	395	276	excitation spectra emission 480 bottom:EX Spectrum Read#20
+C	1703	359	528	308	371	271	excitation spectra emission 480 bottom:EX Spectrum Read#20
+D	1678	341	542	315	405	289	excitation spectra emission 480 bottom:EX Spectrum Read#20
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 21 (350 nm)
+	1	2	3	4	5	6
+A	1879	368	646	302	405	286	excitation spectra emission 480 bottom:EX Spectrum Read#21
+B	1787	313	552	331	429	305	excitation spectra emission 480 bottom:EX Spectrum Read#21
+C	1862	347	572	304	378	293	excitation spectra emission 480 bottom:EX Spectrum Read#21
+D	1848	346	566	354	433	280	excitation spectra emission 480 bottom:EX Spectrum Read#21
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 22 (355 nm)
+	1	2	3	4	5	6
+A	1939	332	630	300	438	308	excitation spectra emission 480 bottom:EX Spectrum Read#22
+B	1819	284	581	326	403	319	excitation spectra emission 480 bottom:EX Spectrum Read#22
+C	1887	343	579	302	414	302	excitation spectra emission 480 bottom:EX Spectrum Read#22
+D	1874	338	575	315	406	299	excitation spectra emission 480 bottom:EX Spectrum Read#22
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 23 (360 nm)
+	1	2	3	4	5	6
+A	1886	331	610	302	420	303	excitation spectra emission 480 bottom:EX Spectrum Read#23
+B	1773	303	566	309	424	300	excitation spectra emission 480 bottom:EX Spectrum Read#23
+C	1934	344	574	305	383	299	excitation spectra emission 480 bottom:EX Spectrum Read#23
+D	1883	300	566	314	408	292	excitation spectra emission 480 bottom:EX Spectrum Read#23
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 24 (365 nm)
+	1	2	3	4	5	6
+A	1706	307	610	302	397	308	excitation spectra emission 480 bottom:EX Spectrum Read#24
+B	1696	297	520	307	391	291	excitation spectra emission 480 bottom:EX Spectrum Read#24
+C	1722	311	568	313	390	298	excitation spectra emission 480 bottom:EX Spectrum Read#24
+D	1721	338	542	306	392	277	excitation spectra emission 480 bottom:EX Spectrum Read#24
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 25 (370 nm)
+	1	2	3	4	5	6
+A	1428	312	523	276	368	275	excitation spectra emission 480 bottom:EX Spectrum Read#25
+B	1339	289	478	284	384	286	excitation spectra emission 480 bottom:EX Spectrum Read#25
+C	1396	316	492	295	369	274	excitation spectra emission 480 bottom:EX Spectrum Read#25
+D	1384	301	480	281	380	275	excitation spectra emission 480 bottom:EX Spectrum Read#25
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 26 (375 nm)
+	1	2	3	4	5	6
+A	1035	286	445	262	341	262	excitation spectra emission 480 bottom:EX Spectrum Read#26
+B	1020	266	443	274	331	275	excitation spectra emission 480 bottom:EX Spectrum Read#26
+C	1076	277	444	262	332	259	excitation spectra emission 480 bottom:EX Spectrum Read#26
+D	1069	281	422	284	354	256	excitation spectra emission 480 bottom:EX Spectrum Read#26
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 27 (380 nm)
+	1	2	3	4	5	6
+A	823	257	407	254	313	252	excitation spectra emission 480 bottom:EX Spectrum Read#27
+B	790	232	383	253	304	271	excitation spectra emission 480 bottom:EX Spectrum Read#27
+C	838	285	382	260	299	246	excitation spectra emission 480 bottom:EX Spectrum Read#27
+D	817	275	362	253	325	236	excitation spectra emission 480 bottom:EX Spectrum Read#27
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 28 (385 nm)
+	1	2	3	4	5	6
+A	616	253	337	237	282	237	excitation spectra emission 480 bottom:EX Spectrum Read#28
+B	591	235	310	242	292	249	excitation spectra emission 480 bottom:EX Spectrum Read#28
+C	600	258	316	239	273	248	excitation spectra emission 480 bottom:EX Spectrum Read#28
+D	593	239	319	251	270	223	excitation spectra emission 480 bottom:EX Spectrum Read#28
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 29 (390 nm)
+	1	2	3	4	5	6
+A	457	218	319	206	265	222	excitation spectra emission 480 bottom:EX Spectrum Read#29
+B	447	207	280	224	273	220	excitation spectra emission 480 bottom:EX Spectrum Read#29
+C	462	246	283	227	262	237	excitation spectra emission 480 bottom:EX Spectrum Read#29
+D	469	227	295	244	273	212	excitation spectra emission 480 bottom:EX Spectrum Read#29
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 30 (395 nm)
+	1	2	3	4	5	6
+A	365	218	276	204	259	201	excitation spectra emission 480 bottom:EX Spectrum Read#30
+B	353	205	262	216	249	208	excitation spectra emission 480 bottom:EX Spectrum Read#30
+C	356	233	258	202	246	202	excitation spectra emission 480 bottom:EX Spectrum Read#30
+D	362	217	263	209	252	204	excitation spectra emission 480 bottom:EX Spectrum Read#30
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 31 (400 nm)
+	1	2	3	4	5	6
+A	323	219	269	195	245	190	excitation spectra emission 480 bottom:EX Spectrum Read#31
+B	308	185	256	198	232	207	excitation spectra emission 480 bottom:EX Spectrum Read#31
+C	283	218	241	195	238	206	excitation spectra emission 480 bottom:EX Spectrum Read#31
+D	294	208	233	198	244	198	excitation spectra emission 480 bottom:EX Spectrum Read#31
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 32 (405 nm)
+	1	2	3	4	5	6
+A	289	214	281	218	243	210	excitation spectra emission 480 bottom:EX Spectrum Read#32
+B	264	208	249	212	246	205	excitation spectra emission 480 bottom:EX Spectrum Read#32
+C	287	226	253	212	250	219	excitation spectra emission 480 bottom:EX Spectrum Read#32
+D	287	233	256	213	237	212	excitation spectra emission 480 bottom:EX Spectrum Read#32
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 33 (410 nm)
+	1	2	3	4	5	6
+A	336	268	331	259	311	242	excitation spectra emission 480 bottom:EX Spectrum Read#33
+B	332	250	300	271	316	253	excitation spectra emission 480 bottom:EX Spectrum Read#33
+C	320	258	311	255	300	267	excitation spectra emission 480 bottom:EX Spectrum Read#33
+D	340	264	311	271	305	242	excitation spectra emission 480 bottom:EX Spectrum Read#33
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 34 (415 nm)
+	1	2	3	4	5	6
+A	341	275	328	246	310	269	excitation spectra emission 480 bottom:EX Spectrum Read#34
+B	326	261	314	263	319	271	excitation spectra emission 480 bottom:EX Spectrum Read#34
+C	331	280	323	269	304	267	excitation spectra emission 480 bottom:EX Spectrum Read#34
+D	344	265	304	275	294	247	excitation spectra emission 480 bottom:EX Spectrum Read#34
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 35 (420 nm)
+	1	2	3	4	5	6
+A	257	210	263	204	231	194	excitation spectra emission 480 bottom:EX Spectrum Read#35
+B	252	192	233	204	240	197	excitation spectra emission 480 bottom:EX Spectrum Read#35
+C	230	214	245	191	226	201	excitation spectra emission 480 bottom:EX Spectrum Read#35
+D	242	212	228	214	231	189	excitation spectra emission 480 bottom:EX Spectrum Read#35
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 36 (425 nm)
+	1	2	3	4	5	6
+A	176	147	176	140	172	138	excitation spectra emission 480 bottom:EX Spectrum Read#36
+B	176	144	160	153	176	146	excitation spectra emission 480 bottom:EX Spectrum Read#36
+C	182	145	178	159	163	142	excitation spectra emission 480 bottom:EX Spectrum Read#36
+D	172	154	173	153	166	142	excitation spectra emission 480 bottom:EX Spectrum Read#36
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 37 (430 nm)
+	1	2	3	4	5	6
+A	149	118	149	119	137	115	excitation spectra emission 480 bottom:EX Spectrum Read#37
+B	146	109	138	115	145	123	excitation spectra emission 480 bottom:EX Spectrum Read#37
+C	140	116	135	125	130	105	excitation spectra emission 480 bottom:EX Spectrum Read#37
+D	153	123	132	127	137	115	excitation spectra emission 480 bottom:EX Spectrum Read#37
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 38 (435 nm)
+	1	2	3	4	5	6
+A	137	106	123	102	132	102	excitation spectra emission 480 bottom:EX Spectrum Read#38
+B	133	109	125	102	121	111	excitation spectra emission 480 bottom:EX Spectrum Read#38
+C	136	114	117	110	127	102	excitation spectra emission 480 bottom:EX Spectrum Read#38
+D	125	111	122	114	122	103	excitation spectra emission 480 bottom:EX Spectrum Read#38
+
+excitation spectra emission 480 bottom:EX Spectrum
+Wavelength 39 (440 nm)
+	1	2	3	4	5	6
+A	126	100	123	99	126	98	excitation spectra emission 480 bottom:EX Spectrum Read#39
+B	122	101	125	103	124	106	excitation spectra emission 480 bottom:EX Spectrum Read#39
+C	119	112	118	93	117	107	excitation spectra emission 480 bottom:EX Spectrum Read#39
+D	112	98	109	102	124	93	excitation spectra emission 480 bottom:EX Spectrum Read#39
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 1 (320 nm)
+	1	2	3	4	5	6
+A	4801	661	1107	651	786	637	emission spectrum excite 280:EM Spectrum Read#1
+B	5500	660	1140	644	801	612	emission spectrum excite 280:EM Spectrum Read#1
+C	5274	677	1223	605	795	616	emission spectrum excite 280:EM Spectrum Read#1
+D	5368	623	1111	633	769	618	emission spectrum excite 280:EM Spectrum Read#1
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 2 (325 nm)
+	1	2	3	4	5	6
+A	4506	473	929	467	589	432	emission spectrum excite 280:EM Spectrum Read#2
+B	5236	454	937	460	604	422	emission spectrum excite 280:EM Spectrum Read#2
+C	5005	468	1026	420	588	417	emission spectrum excite 280:EM Spectrum Read#2
+D	5036	435	935	440	583	415	emission spectrum excite 280:EM Spectrum Read#2
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 3 (330 nm)
+	1	2	3	4	5	6
+A	4240	351	821	337	496	340	emission spectrum excite 280:EM Spectrum Read#3
+B	4831	358	825	338	483	317	emission spectrum excite 280:EM Spectrum Read#3
+C	4635	368	901	311	470	323	emission spectrum excite 280:EM Spectrum Read#3
+D	4760	341	816	318	474	311	emission spectrum excite 280:EM Spectrum Read#3
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 4 (335 nm)
+	1	2	3	4	5	6
+A	3848	296	743	280	402	286	emission spectrum excite 280:EM Spectrum Read#4
+B	4429	298	725	271	433	256	emission spectrum excite 280:EM Spectrum Read#4
+C	4207	306	788	264	409	249	emission spectrum excite 280:EM Spectrum Read#4
+D	4303	288	732	278	409	255	emission spectrum excite 280:EM Spectrum Read#4
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 5 (340 nm)
+	1	2	3	4	5	6
+A	3426	264	637	238	353	226	emission spectrum excite 280:EM Spectrum Read#5
+B	3938	261	628	251	369	214	emission spectrum excite 280:EM Spectrum Read#5
+C	3772	287	706	205	365	231	emission spectrum excite 280:EM Spectrum Read#5
+D	3858	251	654	226	363	206	emission spectrum excite 280:EM Spectrum Read#5
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 6 (345 nm)
+	1	2	3	4	5	6
+A	2932	212	562	199	311	195	emission spectrum excite 280:EM Spectrum Read#6
+B	3381	204	575	207	303	196	emission spectrum excite 280:EM Spectrum Read#6
+C	3207	210	613	190	313	176	emission spectrum excite 280:EM Spectrum Read#6
+D	3263	197	550	187	296	183	emission spectrum excite 280:EM Spectrum Read#6
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 7 (350 nm)
+	1	2	3	4	5	6
+A	2568	191	488	182	271	184	emission spectrum excite 280:EM Spectrum Read#7
+B	2913	191	495	192	292	186	emission spectrum excite 280:EM Spectrum Read#7
+C	2790	199	549	154	269	169	emission spectrum excite 280:EM Spectrum Read#7
+D	2864	188	492	178	283	178	emission spectrum excite 280:EM Spectrum Read#7
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 8 (355 nm)
+	1	2	3	4	5	6
+A	2076	183	419	156	238	151	emission spectrum excite 280:EM Spectrum Read#8
+B	2391	177	411	162	247	142	emission spectrum excite 280:EM Spectrum Read#8
+C	2285	172	465	151	245	143	emission spectrum excite 280:EM Spectrum Read#8
+D	2304	174	419	154	232	158	emission spectrum excite 280:EM Spectrum Read#8
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 9 (360 nm)
+	1	2	3	4	5	6
+A	1717	161	362	147	211	142	emission spectrum excite 280:EM Spectrum Read#9
+B	1990	158	352	150	216	129	emission spectrum excite 280:EM Spectrum Read#9
+C	1896	161	393	137	213	129	emission spectrum excite 280:EM Spectrum Read#9
+D	1928	161	348	129	211	140	emission spectrum excite 280:EM Spectrum Read#9
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 10 (365 nm)
+	1	2	3	4	5	6
+A	1427	147	303	131	188	143	emission spectrum excite 280:EM Spectrum Read#10
+B	1600	145	301	133	187	114	emission spectrum excite 280:EM Spectrum Read#10
+C	1534	139	333	129	179	129	emission spectrum excite 280:EM Spectrum Read#10
+D	1590	142	305	134	175	132	emission spectrum excite 280:EM Spectrum Read#10
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 11 (370 nm)
+	1	2	3	4	5	6
+A	1181	139	262	119	172	124	emission spectrum excite 280:EM Spectrum Read#11
+B	1327	129	266	116	176	117	emission spectrum excite 280:EM Spectrum Read#11
+C	1262	135	290	114	164	125	emission spectrum excite 280:EM Spectrum Read#11
+D	1296	134	259	132	173	115	emission spectrum excite 280:EM Spectrum Read#11
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 12 (375 nm)
+	1	2	3	4	5	6
+A	926	133	223	115	148	114	emission spectrum excite 280:EM Spectrum Read#12
+B	1081	125	221	119	157	106	emission spectrum excite 280:EM Spectrum Read#12
+C	993	121	242	116	146	113	emission spectrum excite 280:EM Spectrum Read#12
+D	1032	126	215	122	151	108	emission spectrum excite 280:EM Spectrum Read#12
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 13 (380 nm)
+	1	2	3	4	5	6
+A	746	116	191	107	135	97	emission spectrum excite 280:EM Spectrum Read#13
+B	860	120	188	108	143	106	emission spectrum excite 280:EM Spectrum Read#13
+C	818	114	218	101	137	103	emission spectrum excite 280:EM Spectrum Read#13
+D	850	112	198	110	136	110	emission spectrum excite 280:EM Spectrum Read#13
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 14 (385 nm)
+	1	2	3	4	5	6
+A	615	114	167	95	126	100	emission spectrum excite 280:EM Spectrum Read#14
+B	702	115	165	102	126	96	emission spectrum excite 280:EM Spectrum Read#14
+C	675	114	187	100	127	103	emission spectrum excite 280:EM Spectrum Read#14
+D	701	114	178	106	121	98	emission spectrum excite 280:EM Spectrum Read#14
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 15 (390 nm)
+	1	2	3	4	5	6
+A	476	105	140	102	112	91	emission spectrum excite 280:EM Spectrum Read#15
+B	568	98	143	91	119	90	emission spectrum excite 280:EM Spectrum Read#15
+C	536	106	153	93	118	99	emission spectrum excite 280:EM Spectrum Read#15
+D	541	106	148	96	117	96	emission spectrum excite 280:EM Spectrum Read#15
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 16 (395 nm)
+	1	2	3	4	5	6
+A	406	102	137	96	103	96	emission spectrum excite 280:EM Spectrum Read#16
+B	459	103	131	97	112	95	emission spectrum excite 280:EM Spectrum Read#16
+C	454	106	148	94	102	101	emission spectrum excite 280:EM Spectrum Read#16
+D	473	104	137	99	102	99	emission spectrum excite 280:EM Spectrum Read#16
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 17 (400 nm)
+	1	2	3	4	5	6
+A	358	109	128	106	105	94	emission spectrum excite 280:EM Spectrum Read#17
+B	423	100	117	93	113	92	emission spectrum excite 280:EM Spectrum Read#17
+C	388	107	137	91	110	89	emission spectrum excite 280:EM Spectrum Read#17
+D	389	99	135	91	104	88	emission spectrum excite 280:EM Spectrum Read#17
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 18 (405 nm)
+	1	2	3	4	5	6
+A	306	96	113	129	106	94	emission spectrum excite 280:EM Spectrum Read#18
+B	371	100	115	93	107	88	emission spectrum excite 280:EM Spectrum Read#18
+C	364	104	132	101	100	94	emission spectrum excite 280:EM Spectrum Read#18
+D	361	93	120	96	102	93	emission spectrum excite 280:EM Spectrum Read#18
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 19 (410 nm)
+	1	2	3	4	5	6
+A	336	105	117	148	108	101	emission spectrum excite 280:EM Spectrum Read#19
+B	376	90	107	98	110	95	emission spectrum excite 280:EM Spectrum Read#19
+C	360	111	129	93	102	99	emission spectrum excite 280:EM Spectrum Read#19
+D	347	102	123	94	108	92	emission spectrum excite 280:EM Spectrum Read#19
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 20 (415 nm)
+	1	2	3	4	5	6
+A	358	105	118	161	111	93	emission spectrum excite 280:EM Spectrum Read#20
+B	415	94	113	101	111	97	emission spectrum excite 280:EM Spectrum Read#20
+C	401	105	131	100	103	97	emission spectrum excite 280:EM Spectrum Read#20
+D	410	104	125	103	102	94	emission spectrum excite 280:EM Spectrum Read#20
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 21 (420 nm)
+	1	2	3	4	5	6
+A	422	104	123	159	101	93	emission spectrum excite 280:EM Spectrum Read#21
+B	497	100	120	101	122	99	emission spectrum excite 280:EM Spectrum Read#21
+C	488	117	130	100	113	94	emission spectrum excite 280:EM Spectrum Read#21
+D	488	102	129	101	112	92	emission spectrum excite 280:EM Spectrum Read#21
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 22 (425 nm)
+	1	2	3	4	5	6
+A	519	100	144	157	110	100	emission spectrum excite 280:EM Spectrum Read#22
+B	621	94	139	101	115	93	emission spectrum excite 280:EM Spectrum Read#22
+C	577	107	152	89	113	95	emission spectrum excite 280:EM Spectrum Read#22
+D	604	100	148	98	118	94	emission spectrum excite 280:EM Spectrum Read#22
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 23 (430 nm)
+	1	2	3	4	5	6
+A	633	103	146	145	119	105	emission spectrum excite 280:EM Spectrum Read#23
+B	753	101	149	101	122	91	emission spectrum excite 280:EM Spectrum Read#23
+C	714	112	166	98	119	99	emission spectrum excite 280:EM Spectrum Read#23
+D	743	105	152	95	121	91	emission spectrum excite 280:EM Spectrum Read#23
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 24 (435 nm)
+	1	2	3	4	5	6
+A	795	105	163	161	121	96	emission spectrum excite 280:EM Spectrum Read#24
+B	924	95	165	102	128	95	emission spectrum excite 280:EM Spectrum Read#24
+C	887	108	180	102	117	98	emission spectrum excite 280:EM Spectrum Read#24
+D	899	97	172	93	129	91	emission spectrum excite 280:EM Spectrum Read#24
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 25 (440 nm)
+	1	2	3	4	5	6
+A	952	108	181	157	133	102	emission spectrum excite 280:EM Spectrum Read#25
+B	1121	109	186	111	132	97	emission spectrum excite 280:EM Spectrum Read#25
+C	1073	113	208	101	119	98	emission spectrum excite 280:EM Spectrum Read#25
+D	1096	99	195	97	127	96	emission spectrum excite 280:EM Spectrum Read#25
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 26 (445 nm)
+	1	2	3	4	5	6
+A	1133	103	196	164	131	99	emission spectrum excite 280:EM Spectrum Read#26
+B	1341	102	208	91	143	96	emission spectrum excite 280:EM Spectrum Read#26
+C	1288	111	239	91	132	96	emission spectrum excite 280:EM Spectrum Read#26
+D	1316	101	218	98	129	91	emission spectrum excite 280:EM Spectrum Read#26
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 27 (450 nm)
+	1	2	3	4	5	6
+A	1333	106	235	148	139	97	emission spectrum excite 280:EM Spectrum Read#27
+B	1589	102	229	99	151	104	emission spectrum excite 280:EM Spectrum Read#27
+C	1485	111	261	99	148	91	emission spectrum excite 280:EM Spectrum Read#27
+D	1547	104	242	104	154	97	emission spectrum excite 280:EM Spectrum Read#27
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 28 (455 nm)
+	1	2	3	4	5	6
+A	1509	114	247	149	152	97	emission spectrum excite 280:EM Spectrum Read#28
+B	1743	105	244	96	152	81	emission spectrum excite 280:EM Spectrum Read#28
+C	1687	105	282	95	154	90	emission spectrum excite 280:EM Spectrum Read#28
+D	1755	101	253	97	152	95	emission spectrum excite 280:EM Spectrum Read#28
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 29 (460 nm)
+	1	2	3	4	5	6
+A	1587	100	255	130	144	88	emission spectrum excite 280:EM Spectrum Read#29
+B	1865	94	253	91	154	88	emission spectrum excite 280:EM Spectrum Read#29
+C	1791	97	285	93	144	87	emission spectrum excite 280:EM Spectrum Read#29
+D	1849	101	254	98	146	86	emission spectrum excite 280:EM Spectrum Read#29
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 30 (465 nm)
+	1	2	3	4	5	6
+A	1681	101	266	121	151	89	emission spectrum excite 280:EM Spectrum Read#30
+B	2001	90	256	95	157	85	emission spectrum excite 280:EM Spectrum Read#30
+C	1915	107	303	85	146	86	emission spectrum excite 280:EM Spectrum Read#30
+D	1935	90	276	82	148	93	emission spectrum excite 280:EM Spectrum Read#30
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 31 (470 nm)
+	1	2	3	4	5	6
+A	1763	103	267	123	143	91	emission spectrum excite 280:EM Spectrum Read#31
+B	2068	93	265	88	150	79	emission spectrum excite 280:EM Spectrum Read#31
+C	1976	104	303	97	143	76	emission spectrum excite 280:EM Spectrum Read#31
+D	2059	95	269	92	150	82	emission spectrum excite 280:EM Spectrum Read#31
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 32 (475 nm)
+	1	2	3	4	5	6
+A	1830	103	269	117	141	87	emission spectrum excite 280:EM Spectrum Read#32
+B	2133	88	282	86	159	81	emission spectrum excite 280:EM Spectrum Read#32
+C	2049	100	310	90	140	81	emission spectrum excite 280:EM Spectrum Read#32
+D	2098	97	280	93	147	85	emission spectrum excite 280:EM Spectrum Read#32
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 33 (480 nm)
+	1	2	3	4	5	6
+A	1854	100	274	112	137	85	emission spectrum excite 280:EM Spectrum Read#33
+B	2156	85	266	87	152	85	emission spectrum excite 280:EM Spectrum Read#33
+C	2072	94	299	87	139	86	emission spectrum excite 280:EM Spectrum Read#33
+D	2155	89	276	87	143	83	emission spectrum excite 280:EM Spectrum Read#33
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 34 (485 nm)
+	1	2	3	4	5	6
+A	1845	86	274	101	133	80	emission spectrum excite 280:EM Spectrum Read#34
+B	2161	86	268	81	143	87	emission spectrum excite 280:EM Spectrum Read#34
+C	2065	87	302	86	141	76	emission spectrum excite 280:EM Spectrum Read#34
+D	2119	89	274	80	143	77	emission spectrum excite 280:EM Spectrum Read#34
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 35 (490 nm)
+	1	2	3	4	5	6
+A	1795	90	271	103	131	82	emission spectrum excite 280:EM Spectrum Read#35
+B	2142	76	257	80	144	74	emission spectrum excite 280:EM Spectrum Read#35
+C	2056	88	307	86	137	76	emission spectrum excite 280:EM Spectrum Read#35
+D	2103	81	273	78	136	82	emission spectrum excite 280:EM Spectrum Read#35
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 36 (495 nm)
+	1	2	3	4	5	6
+A	1755	88	252	85	128	80	emission spectrum excite 280:EM Spectrum Read#36
+B	2055	75	253	75	140	72	emission spectrum excite 280:EM Spectrum Read#36
+C	1992	86	294	80	136	77	emission spectrum excite 280:EM Spectrum Read#36
+D	2024	78	264	75	140	79	emission spectrum excite 280:EM Spectrum Read#36
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 37 (500 nm)
+	1	2	3	4	5	6
+A	1706	86	245	86	126	72	emission spectrum excite 280:EM Spectrum Read#37
+B	1991	76	245	83	135	74	emission spectrum excite 280:EM Spectrum Read#37
+C	1947	85	280	78	134	70	emission spectrum excite 280:EM Spectrum Read#37
+D	1968	75	252	76	131	66	emission spectrum excite 280:EM Spectrum Read#37
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 38 (505 nm)
+	1	2	3	4	5	6
+A	1626	84	240	80	123	74	emission spectrum excite 280:EM Spectrum Read#38
+B	1898	65	239	70	125	76	emission spectrum excite 280:EM Spectrum Read#38
+C	1845	86	260	71	121	66	emission spectrum excite 280:EM Spectrum Read#38
+D	1880	76	248	74	127	73	emission spectrum excite 280:EM Spectrum Read#38
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 39 (510 nm)
+	1	2	3	4	5	6
+A	1555	77	216	79	117	68	emission spectrum excite 280:EM Spectrum Read#39
+B	1847	69	224	74	119	67	emission spectrum excite 280:EM Spectrum Read#39
+C	1756	74	253	66	116	66	emission spectrum excite 280:EM Spectrum Read#39
+D	1804	74	227	75	114	59	emission spectrum excite 280:EM Spectrum Read#39
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 40 (515 nm)
+	1	2	3	4	5	6
+A	1436	73	208	71	103	59	emission spectrum excite 280:EM Spectrum Read#40
+B	1685	69	200	60	110	64	emission spectrum excite 280:EM Spectrum Read#40
+C	1639	76	242	66	106	69	emission spectrum excite 280:EM Spectrum Read#40
+D	1656	65	214	69	113	59	emission spectrum excite 280:EM Spectrum Read#40
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 41 (520 nm)
+	1	2	3	4	5	6
+A	1367	67	195	69	105	64	emission spectrum excite 280:EM Spectrum Read#41
+B	1573	68	198	61	107	55	emission spectrum excite 280:EM Spectrum Read#41
+C	1518	63	220	60	101	56	emission spectrum excite 280:EM Spectrum Read#41
+D	1579	65	205	69	105	56	emission spectrum excite 280:EM Spectrum Read#41
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 42 (525 nm)
+	1	2	3	4	5	6
+A	1254	70	186	67	94	58	emission spectrum excite 280:EM Spectrum Read#42
+B	1492	61	191	59	106	59	emission spectrum excite 280:EM Spectrum Read#42
+C	1446	63	211	61	97	53	emission spectrum excite 280:EM Spectrum Read#42
+D	1493	59	194	63	94	57	emission spectrum excite 280:EM Spectrum Read#42
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 43 (530 nm)
+	1	2	3	4	5	6
+A	1194	66	169	60	81	50	emission spectrum excite 280:EM Spectrum Read#43
+B	1362	51	169	52	94	57	emission spectrum excite 280:EM Spectrum Read#43
+C	1326	67	195	56	91	50	emission spectrum excite 280:EM Spectrum Read#43
+D	1358	56	184	56	92	55	emission spectrum excite 280:EM Spectrum Read#43
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 44 (535 nm)
+	1	2	3	4	5	6
+A	1086	67	155	54	78	47	emission spectrum excite 280:EM Spectrum Read#44
+B	1271	45	151	50	81	58	emission spectrum excite 280:EM Spectrum Read#44
+C	1242	60	168	46	79	48	emission spectrum excite 280:EM Spectrum Read#44
+D	1275	57	157	49	82	53	emission spectrum excite 280:EM Spectrum Read#44
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 45 (540 nm)
+	1	2	3	4	5	6
+A	1023	65	146	52	76	47	emission spectrum excite 280:EM Spectrum Read#45
+B	1179	48	146	51	88	48	emission spectrum excite 280:EM Spectrum Read#45
+C	1127	63	164	51	76	52	emission spectrum excite 280:EM Spectrum Read#45
+D	1169	56	142	57	79	51	emission spectrum excite 280:EM Spectrum Read#45
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 46 (545 nm)
+	1	2	3	4	5	6
+A	924	52	140	56	72	51	emission spectrum excite 280:EM Spectrum Read#46
+B	1089	54	139	46	77	49	emission spectrum excite 280:EM Spectrum Read#46
+C	1037	57	159	49	74	44	emission spectrum excite 280:EM Spectrum Read#46
+D	1052	52	138	45	77	40	emission spectrum excite 280:EM Spectrum Read#46
+
+emission spectrum excite 280:EM Spectrum
+Wavelength 47 (550 nm)
+	1	2	3	4	5	6
+A	831	51	119	47	66	41	emission spectrum excite 280:EM Spectrum Read#47
+B	984	45	119	46	72	46	emission spectrum excite 280:EM Spectrum Read#47
+C	946	46	137	49	66	45	emission spectrum excite 280:EM Spectrum Read#47
+D	956	42	123	41	70	43	emission spectrum excite 280:EM Spectrum Read#47
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 1 (320 nm)
+	1	2	3	4	5	6
+A	12330	1562	2557	1505	1708	1502	emission spectrum excite 280 bottom:EM Spectrum Read#1
+B	11660	1523	2490	1492	1682	1421	emission spectrum excite 280 bottom:EM Spectrum Read#1
+C	12295	1489	2564	1377	1654	1394	emission spectrum excite 280 bottom:EM Spectrum Read#1
+D	12118	1440	2466	1362	1607	1379	emission spectrum excite 280 bottom:EM Spectrum Read#1
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 2 (325 nm)
+	1	2	3	4	5	6
+A	11939	1218	2192	1185	1391	1163	emission spectrum excite 280 bottom:EM Spectrum Read#2
+B	11013	1183	2148	1152	1352	1083	emission spectrum excite 280 bottom:EM Spectrum Read#2
+C	11685	1147	2176	1021	1315	1083	emission spectrum excite 280 bottom:EM Spectrum Read#2
+D	11555	1143	2129	1060	1277	1015	emission spectrum excite 280 bottom:EM Spectrum Read#2
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 3 (330 nm)
+	1	2	3	4	5	6
+A	11205	987	1939	943	1139	965	emission spectrum excite 280 bottom:EM Spectrum Read#3
+B	10476	954	1899	931	1131	876	emission spectrum excite 280 bottom:EM Spectrum Read#3
+C	11040	931	1943	804	1107	845	emission spectrum excite 280 bottom:EM Spectrum Read#3
+D	10883	905	1873	851	1082	827	emission spectrum excite 280 bottom:EM Spectrum Read#3
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 4 (335 nm)
+	1	2	3	4	5	6
+A	10364	841	1695	779	983	784	emission spectrum excite 280 bottom:EM Spectrum Read#4
+B	9630	825	1656	786	945	721	emission spectrum excite 280 bottom:EM Spectrum Read#4
+C	10155	775	1747	672	930	694	emission spectrum excite 280 bottom:EM Spectrum Read#4
+D	10107	793	1645	703	887	696	emission spectrum excite 280 bottom:EM Spectrum Read#4
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 5 (340 nm)
+	1	2	3	4	5	6
+A	9383	709	1517	689	851	673	emission spectrum excite 280 bottom:EM Spectrum Read#5
+B	8677	701	1479	641	815	620	emission spectrum excite 280 bottom:EM Spectrum Read#5
+C	9200	682	1525	556	810	603	emission spectrum excite 280 bottom:EM Spectrum Read#5
+D	9110	652	1464	591	763	563	emission spectrum excite 280 bottom:EM Spectrum Read#5
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 6 (345 nm)
+	1	2	3	4	5	6
+A	8096	602	1282	577	732	561	emission spectrum excite 280 bottom:EM Spectrum Read#6
+B	7560	585	1272	561	690	509	emission spectrum excite 280 bottom:EM Spectrum Read#6
+C	7893	555	1330	462	669	499	emission spectrum excite 280 bottom:EM Spectrum Read#6
+D	7813	556	1283	506	650	495	emission spectrum excite 280 bottom:EM Spectrum Read#6
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 7 (350 nm)
+	1	2	3	4	5	6
+A	7061	529	1145	493	632	493	emission spectrum excite 280 bottom:EM Spectrum Read#7
+B	6582	519	1120	472	606	447	emission spectrum excite 280 bottom:EM Spectrum Read#7
+C	6895	496	1172	415	586	430	emission spectrum excite 280 bottom:EM Spectrum Read#7
+D	6926	467	1101	434	595	429	emission spectrum excite 280 bottom:EM Spectrum Read#7
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 8 (355 nm)
+	1	2	3	4	5	6
+A	5932	442	983	429	537	414	emission spectrum excite 280 bottom:EM Spectrum Read#8
+B	5501	450	955	418	520	381	emission spectrum excite 280 bottom:EM Spectrum Read#8
+C	5835	423	1009	370	512	369	emission spectrum excite 280 bottom:EM Spectrum Read#8
+D	5799	418	952	380	499	370	emission spectrum excite 280 bottom:EM Spectrum Read#8
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 9 (360 nm)
+	1	2	3	4	5	6
+A	5038	386	846	383	486	367	emission spectrum excite 280 bottom:EM Spectrum Read#9
+B	4559	384	806	354	448	336	emission spectrum excite 280 bottom:EM Spectrum Read#9
+C	4867	370	860	315	435	327	emission spectrum excite 280 bottom:EM Spectrum Read#9
+D	4806	366	835	339	430	322	emission spectrum excite 280 bottom:EM Spectrum Read#9
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 10 (365 nm)
+	1	2	3	4	5	6
+A	4134	348	745	340	423	332	emission spectrum excite 280 bottom:EM Spectrum Read#10
+B	3790	348	684	319	408	305	emission spectrum excite 280 bottom:EM Spectrum Read#10
+C	4065	325	733	299	394	297	emission spectrum excite 280 bottom:EM Spectrum Read#10
+D	4032	316	707	301	378	291	emission spectrum excite 280 bottom:EM Spectrum Read#10
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 11 (370 nm)
+	1	2	3	4	5	6
+A	3439	328	652	304	384	299	emission spectrum excite 280 bottom:EM Spectrum Read#11
+B	3194	312	613	292	356	274	emission spectrum excite 280 bottom:EM Spectrum Read#11
+C	3397	296	650	276	361	276	emission spectrum excite 280 bottom:EM Spectrum Read#11
+D	3286	304	607	281	356	279	emission spectrum excite 280 bottom:EM Spectrum Read#11
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 12 (375 nm)
+	1	2	3	4	5	6
+A	2835	301	573	289	343	294	emission spectrum excite 280 bottom:EM Spectrum Read#12
+B	2673	289	544	277	331	268	emission spectrum excite 280 bottom:EM Spectrum Read#12
+C	2784	286	567	262	318	249	emission spectrum excite 280 bottom:EM Spectrum Read#12
+D	2764	275	552	263	321	268	emission spectrum excite 280 bottom:EM Spectrum Read#12
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 13 (380 nm)
+	1	2	3	4	5	6
+A	2366	291	504	276	327	275	emission spectrum excite 280 bottom:EM Spectrum Read#13
+B	2214	276	487	263	315	256	emission spectrum excite 280 bottom:EM Spectrum Read#13
+C	2285	272	505	254	308	248	emission spectrum excite 280 bottom:EM Spectrum Read#13
+D	2307	264	488	262	304	252	emission spectrum excite 280 bottom:EM Spectrum Read#13
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 14 (385 nm)
+	1	2	3	4	5	6
+A	1925	279	458	274	308	254	emission spectrum excite 280 bottom:EM Spectrum Read#14
+B	1858	272	433	261	297	254	emission spectrum excite 280 bottom:EM Spectrum Read#14
+C	1927	269	463	240	298	249	emission spectrum excite 280 bottom:EM Spectrum Read#14
+D	1905	261	438	259	297	248	emission spectrum excite 280 bottom:EM Spectrum Read#14
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 15 (390 nm)
+	1	2	3	4	5	6
+A	1624	266	417	261	295	259	emission spectrum excite 280 bottom:EM Spectrum Read#15
+B	1533	268	398	250	283	245	emission spectrum excite 280 bottom:EM Spectrum Read#15
+C	1614	255	410	242	271	244	emission spectrum excite 280 bottom:EM Spectrum Read#15
+D	1591	252	398	244	277	239	emission spectrum excite 280 bottom:EM Spectrum Read#15
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 16 (395 nm)
+	1	2	3	4	5	6
+A	1426	273	386	252	284	259	emission spectrum excite 280 bottom:EM Spectrum Read#16
+B	1331	257	378	255	275	242	emission spectrum excite 280 bottom:EM Spectrum Read#16
+C	1400	246	392	242	277	251	emission spectrum excite 280 bottom:EM Spectrum Read#16
+D	1402	254	384	245	275	243	emission spectrum excite 280 bottom:EM Spectrum Read#16
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 17 (400 nm)
+	1	2	3	4	5	6
+A	1281	273	369	263	282	258	emission spectrum excite 280 bottom:EM Spectrum Read#17
+B	1178	262	353	254	273	243	emission spectrum excite 280 bottom:EM Spectrum Read#17
+C	1237	258	369	241	273	243	emission spectrum excite 280 bottom:EM Spectrum Read#17
+D	1245	257	370	245	275	238	emission spectrum excite 280 bottom:EM Spectrum Read#17
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 18 (405 nm)
+	1	2	3	4	5	6
+A	1218	274	379	277	286	262	emission spectrum excite 280 bottom:EM Spectrum Read#18
+B	1122	264	350	269	278	263	emission spectrum excite 280 bottom:EM Spectrum Read#18
+C	1168	268	371	249	274	259	emission spectrum excite 280 bottom:EM Spectrum Read#18
+D	1171	261	373	258	287	245	emission spectrum excite 280 bottom:EM Spectrum Read#18
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 19 (410 nm)
+	1	2	3	4	5	6
+A	1242	282	383	267	284	263	emission spectrum excite 280 bottom:EM Spectrum Read#19
+B	1128	281	348	263	295	269	emission spectrum excite 280 bottom:EM Spectrum Read#19
+C	1191	280	373	255	291	265	emission spectrum excite 280 bottom:EM Spectrum Read#19
+D	1194	279	364	266	295	257	emission spectrum excite 280 bottom:EM Spectrum Read#19
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 20 (415 nm)
+	1	2	3	4	5	6
+A	1369	289	389	278	288	276	emission spectrum excite 280 bottom:EM Spectrum Read#20
+B	1252	282	371	275	294	262	emission spectrum excite 280 bottom:EM Spectrum Read#20
+C	1309	291	391	279	301	274	emission spectrum excite 280 bottom:EM Spectrum Read#20
+D	1341	287	375	267	297	260	emission spectrum excite 280 bottom:EM Spectrum Read#20
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 21 (420 nm)
+	1	2	3	4	5	6
+A	1611	299	407	291	300	280	emission spectrum excite 280 bottom:EM Spectrum Read#21
+B	1470	293	403	280	300	269	emission spectrum excite 280 bottom:EM Spectrum Read#21
+C	1576	300	405	279	299	278	emission spectrum excite 280 bottom:EM Spectrum Read#21
+D	1554	285	407	277	312	271	emission spectrum excite 280 bottom:EM Spectrum Read#21
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 22 (425 nm)
+	1	2	3	4	5	6
+A	1963	309	444	291	322	286	emission spectrum excite 280 bottom:EM Spectrum Read#22
+B	1779	286	416	291	316	279	emission spectrum excite 280 bottom:EM Spectrum Read#22
+C	1910	299	449	280	314	282	emission spectrum excite 280 bottom:EM Spectrum Read#22
+D	1896	294	434	284	319	277	emission spectrum excite 280 bottom:EM Spectrum Read#22
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 23 (430 nm)
+	1	2	3	4	5	6
+A	2287	304	463	291	326	285	emission spectrum excite 280 bottom:EM Spectrum Read#23
+B	2123	288	453	287	324	276	emission spectrum excite 280 bottom:EM Spectrum Read#23
+C	2325	298	474	286	321	283	emission spectrum excite 280 bottom:EM Spectrum Read#23
+D	2307	295	458	285	328	278	emission spectrum excite 280 bottom:EM Spectrum Read#23
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 24 (435 nm)
+	1	2	3	4	5	6
+A	2783	302	499	295	336	279	emission spectrum excite 280 bottom:EM Spectrum Read#24
+B	2565	297	489	296	333	273	emission spectrum excite 280 bottom:EM Spectrum Read#24
+C	2764	300	507	284	331	276	emission spectrum excite 280 bottom:EM Spectrum Read#24
+D	2719	298	505	292	333	279	emission spectrum excite 280 bottom:EM Spectrum Read#24
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 25 (440 nm)
+	1	2	3	4	5	6
+A	3273	301	550	298	347	288	emission spectrum excite 280 bottom:EM Spectrum Read#25
+B	3031	297	531	297	349	276	emission spectrum excite 280 bottom:EM Spectrum Read#25
+C	3316	311	558	286	345	288	emission spectrum excite 280 bottom:EM Spectrum Read#25
+D	3290	298	549	287	354	273	emission spectrum excite 280 bottom:EM Spectrum Read#25
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 26 (445 nm)
+	1	2	3	4	5	6
+A	3920	310	612	307	371	290	emission spectrum excite 280 bottom:EM Spectrum Read#26
+B	3654	299	588	296	358	288	emission spectrum excite 280 bottom:EM Spectrum Read#26
+C	3936	304	618	291	362	291	emission spectrum excite 280 bottom:EM Spectrum Read#26
+D	3916	304	612	309	368	291	emission spectrum excite 280 bottom:EM Spectrum Read#26
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 27 (450 nm)
+	1	2	3	4	5	6
+A	4679	324	673	319	386	302	emission spectrum excite 280 bottom:EM Spectrum Read#27
+B	4249	314	647	296	381	291	emission spectrum excite 280 bottom:EM Spectrum Read#27
+C	4638	317	680	302	390	291	emission spectrum excite 280 bottom:EM Spectrum Read#27
+D	4682	313	675	303	382	296	emission spectrum excite 280 bottom:EM Spectrum Read#27
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 28 (455 nm)
+	1	2	3	4	5	6
+A	5200	329	706	302	390	297	emission spectrum excite 280 bottom:EM Spectrum Read#28
+B	4736	301	679	306	388	291	emission spectrum excite 280 bottom:EM Spectrum Read#28
+C	5197	327	701	304	384	300	emission spectrum excite 280 bottom:EM Spectrum Read#28
+D	5147	302	687	296	393	297	emission spectrum excite 280 bottom:EM Spectrum Read#28
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 29 (460 nm)
+	1	2	3	4	5	6
+A	5482	315	722	289	390	290	emission spectrum excite 280 bottom:EM Spectrum Read#29
+B	5095	300	698	290	381	271	emission spectrum excite 280 bottom:EM Spectrum Read#29
+C	5521	307	727	288	374	290	emission spectrum excite 280 bottom:EM Spectrum Read#29
+D	5436	306	702	293	396	285	emission spectrum excite 280 bottom:EM Spectrum Read#29
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 30 (465 nm)
+	1	2	3	4	5	6
+A	5783	306	721	282	394	277	emission spectrum excite 280 bottom:EM Spectrum Read#30
+B	5278	284	716	287	377	269	emission spectrum excite 280 bottom:EM Spectrum Read#30
+C	5831	292	746	279	375	277	emission spectrum excite 280 bottom:EM Spectrum Read#30
+D	5733	289	727	282	395	277	emission spectrum excite 280 bottom:EM Spectrum Read#30
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 31 (470 nm)
+	1	2	3	4	5	6
+A	6145	301	755	288	388	263	emission spectrum excite 280 bottom:EM Spectrum Read#31
+B	5594	284	736	284	384	269	emission spectrum excite 280 bottom:EM Spectrum Read#31
+C	6131	303	777	271	380	274	emission spectrum excite 280 bottom:EM Spectrum Read#31
+D	6003	286	733	281	381	262	emission spectrum excite 280 bottom:EM Spectrum Read#31
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 32 (475 nm)
+	1	2	3	4	5	6
+A	6278	289	760	270	383	273	emission spectrum excite 280 bottom:EM Spectrum Read#32
+B	5798	287	742	277	377	251	emission spectrum excite 280 bottom:EM Spectrum Read#32
+C	6348	290	779	272	375	265	emission spectrum excite 280 bottom:EM Spectrum Read#32
+D	6268	286	748	274	382	264	emission spectrum excite 280 bottom:EM Spectrum Read#32
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 33 (480 nm)
+	1	2	3	4	5	6
+A	6406	284	764	271	381	260	emission spectrum excite 280 bottom:EM Spectrum Read#33
+B	5829	278	738	260	370	245	emission spectrum excite 280 bottom:EM Spectrum Read#33
+C	6435	285	785	262	371	262	emission spectrum excite 280 bottom:EM Spectrum Read#33
+D	6354	274	744	260	373	257	emission spectrum excite 280 bottom:EM Spectrum Read#33
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 34 (485 nm)
+	1	2	3	4	5	6
+A	6431	272	751	263	367	262	emission spectrum excite 280 bottom:EM Spectrum Read#34
+B	5857	263	728	261	364	238	emission spectrum excite 280 bottom:EM Spectrum Read#34
+C	6382	279	763	251	359	253	emission spectrum excite 280 bottom:EM Spectrum Read#34
+D	6366	266	744	256	359	247	emission spectrum excite 280 bottom:EM Spectrum Read#34
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 35 (490 nm)
+	1	2	3	4	5	6
+A	6371	265	737	253	363	252	emission spectrum excite 280 bottom:EM Spectrum Read#35
+B	5835	257	703	250	358	237	emission spectrum excite 280 bottom:EM Spectrum Read#35
+C	6387	271	754	246	349	236	emission spectrum excite 280 bottom:EM Spectrum Read#35
+D	6309	261	728	251	362	238	emission spectrum excite 280 bottom:EM Spectrum Read#35
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 36 (495 nm)
+	1	2	3	4	5	6
+A	6230	262	730	246	352	236	emission spectrum excite 280 bottom:EM Spectrum Read#36
+B	5701	241	704	239	343	223	emission spectrum excite 280 bottom:EM Spectrum Read#36
+C	6231	263	730	239	344	241	emission spectrum excite 280 bottom:EM Spectrum Read#36
+D	6150	250	713	241	340	226	emission spectrum excite 280 bottom:EM Spectrum Read#36
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 37 (500 nm)
+	1	2	3	4	5	6
+A	6070	252	701	237	338	224	emission spectrum excite 280 bottom:EM Spectrum Read#37
+B	5500	234	664	233	337	217	emission spectrum excite 280 bottom:EM Spectrum Read#37
+C	6050	252	717	228	326	228	emission spectrum excite 280 bottom:EM Spectrum Read#37
+D	6009	244	680	238	334	226	emission spectrum excite 280 bottom:EM Spectrum Read#37
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 38 (505 nm)
+	1	2	3	4	5	6
+A	5798	239	674	223	320	218	emission spectrum excite 280 bottom:EM Spectrum Read#38
+B	5306	226	641	221	317	211	emission spectrum excite 280 bottom:EM Spectrum Read#38
+C	5798	236	679	223	322	214	emission spectrum excite 280 bottom:EM Spectrum Read#38
+D	5794	239	654	223	323	212	emission spectrum excite 280 bottom:EM Spectrum Read#38
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 39 (510 nm)
+	1	2	3	4	5	6
+A	5585	230	637	217	308	208	emission spectrum excite 280 bottom:EM Spectrum Read#39
+B	5051	220	623	210	301	195	emission spectrum excite 280 bottom:EM Spectrum Read#39
+C	5561	230	651	214	304	204	emission spectrum excite 280 bottom:EM Spectrum Read#39
+D	5539	221	625	210	305	201	emission spectrum excite 280 bottom:EM Spectrum Read#39
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 40 (515 nm)
+	1	2	3	4	5	6
+A	5249	217	595	210	286	202	emission spectrum excite 280 bottom:EM Spectrum Read#40
+B	4776	206	577	204	291	185	emission spectrum excite 280 bottom:EM Spectrum Read#40
+C	5272	215	615	199	278	196	emission spectrum excite 280 bottom:EM Spectrum Read#40
+D	5192	215	591	196	285	193	emission spectrum excite 280 bottom:EM Spectrum Read#40
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 41 (520 nm)
+	1	2	3	4	5	6
+A	4915	210	556	197	273	182	emission spectrum excite 280 bottom:EM Spectrum Read#41
+B	4457	198	546	186	270	180	emission spectrum excite 280 bottom:EM Spectrum Read#41
+C	4963	202	569	186	270	186	emission spectrum excite 280 bottom:EM Spectrum Read#41
+D	4863	195	553	178	266	184	emission spectrum excite 280 bottom:EM Spectrum Read#41
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 42 (525 nm)
+	1	2	3	4	5	6
+A	4574	191	524	187	255	182	emission spectrum excite 280 bottom:EM Spectrum Read#42
+B	4209	177	512	174	249	179	emission spectrum excite 280 bottom:EM Spectrum Read#42
+C	4568	185	533	176	255	177	emission spectrum excite 280 bottom:EM Spectrum Read#42
+D	4581	183	512	179	257	174	emission spectrum excite 280 bottom:EM Spectrum Read#42
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 43 (530 nm)
+	1	2	3	4	5	6
+A	4309	185	500	179	241	165	emission spectrum excite 280 bottom:EM Spectrum Read#43
+B	3951	170	479	170	234	165	emission spectrum excite 280 bottom:EM Spectrum Read#43
+C	4311	184	511	168	233	168	emission spectrum excite 280 bottom:EM Spectrum Read#43
+D	4247	176	489	174	231	165	emission spectrum excite 280 bottom:EM Spectrum Read#43
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 44 (535 nm)
+	1	2	3	4	5	6
+A	4007	174	452	169	227	156	emission spectrum excite 280 bottom:EM Spectrum Read#44
+B	3636	163	443	159	219	150	emission spectrum excite 280 bottom:EM Spectrum Read#44
+C	3953	173	466	163	223	157	emission spectrum excite 280 bottom:EM Spectrum Read#44
+D	3954	167	459	168	223	153	emission spectrum excite 280 bottom:EM Spectrum Read#44
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 45 (540 nm)
+	1	2	3	4	5	6
+A	3677	165	435	157	213	149	emission spectrum excite 280 bottom:EM Spectrum Read#45
+B	3367	156	413	151	209	142	emission spectrum excite 280 bottom:EM Spectrum Read#45
+C	3670	165	436	155	212	150	emission spectrum excite 280 bottom:EM Spectrum Read#45
+D	3640	159	421	154	204	144	emission spectrum excite 280 bottom:EM Spectrum Read#45
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 46 (545 nm)
+	1	2	3	4	5	6
+A	3366	166	406	148	201	141	emission spectrum excite 280 bottom:EM Spectrum Read#46
+B	3093	150	381	139	189	138	emission spectrum excite 280 bottom:EM Spectrum Read#46
+C	3368	153	408	141	193	140	emission spectrum excite 280 bottom:EM Spectrum Read#46
+D	3387	156	381	141	197	142	emission spectrum excite 280 bottom:EM Spectrum Read#46
+
+emission spectrum excite 280 bottom:EM Spectrum
+Wavelength 47 (550 nm)
+	1	2	3	4	5	6
+A	3142	144	366	145	179	138	emission spectrum excite 280 bottom:EM Spectrum Read#47
+B	2856	143	356	130	184	129	emission spectrum excite 280 bottom:EM Spectrum Read#47
+C	3129	144	382	131	178	134	emission spectrum excite 280 bottom:EM Spectrum Read#47
+D	3087	142	356	140	180	132	emission spectrum excite 280 bottom:EM Spectrum Read#47
+

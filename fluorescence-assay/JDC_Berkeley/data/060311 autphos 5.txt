@@ -1,0 +1,40 @@
+3 wavelenghts
+Kinetic read 1 ()
+	2
+A	43258	Read 2:500,532 Read#1
+	6225	Read 1:500,628 Read#1
+	0	Read 1:582,628 Read#1
+B	58303	Read 2:500,532 Read#1
+	8250	Read 1:500,628 Read#1
+	4	Read 1:582,628 Read#1
+C	47501	Read 2:500,532 Read#1
+	50784	Read 1:500,628 Read#1
+	44590	Read 1:582,628 Read#1
+D	53995	Read 2:500,532 Read#1
+	57014	Read 1:500,628 Read#1
+	49883	Read 1:582,628 Read#1
+E	48917	Read 2:500,532 Read#1
+	6997	Read 1:500,628 Read#1
+	6	Read 1:582,628 Read#1
+F	53401	Read 2:500,532 Read#1
+	7477	Read 1:500,628 Read#1
+	4	Read 1:582,628 Read#1
+G	48746	Read 2:500,532 Read#1
+	57876	Read 1:500,628 Read#1
+	46587	Read 1:582,628 Read#1
+H	46111	Read 2:500,532 Read#1
+	54882	Read 1:500,628 Read#1
+	44918	Read 1:582,628 Read#1
+I	45249	Read 2:500,532 Read#1
+	6064	Read 1:500,628 Read#1
+	20	Read 1:582,628 Read#1
+J	48936	Read 2:500,532 Read#1
+	51835	Read 1:500,628 Read#1
+	46422	Read 1:582,628 Read#1
+K	53056	Read 2:500,532 Read#1
+	7313	Read 1:500,628 Read#1
+	0	Read 1:582,628 Read#1
+L	47573	Read 2:500,532 Read#1
+	57938	Read 1:500,628 Read#1
+	46552	Read 1:582,628 Read#1
+

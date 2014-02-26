@@ -1,0 +1,5 @@
+% Check dilution series accuracy by using both absorbance and fluorescence.
+
+absorbance = [0.152   0.101   0.081   0.067   0.062   0.057   0.057   0.056   0.055   0.055   0.055   0.053];
+fluorescence = [3348    2223    1134    606     422     349     316     298     264     240     268     271];
+

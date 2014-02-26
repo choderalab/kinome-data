@@ -1,0 +1,656 @@
+Procedure Summary
+
+Plate Type	Costar 96 well half area
+Read	Read:  injection 0 absorbance (A) 280, 480
+Read	Read:  injection 0 fluorescence (F) 280,480, 280,480[2]
+Plate In/Out	Plate Out,In   injection 1
+Read	Read:  injection 1 absorbance (A) 280, 480
+Read	Read:  injection 1 fluorescence (F) 280,480, 280,480[2]
+Plate In/Out	Plate Out,In   injection 2
+Read	Read:  injection 2 absorbance (A) 280, 480
+Read	Read:  injection 2 fluorescence (F) 280,480, 280,480[2]
+Plate In/Out	Plate Out,In   injection 3
+Read	Read:  injection 3 absorbance (A) 280, 480
+Read	Read:  injection 3 fluorescence (F) 280,480, 280,480[2]
+Plate In/Out	Plate Out,In   injection 4
+Read	Read:  injection 4 absorbance (A) 280, 480
+Read	Read:  injection 4 fluorescence (F) 280,480, 280,480[2]
+Plate In/Out	Plate Out,In   injection 5
+Read	Read:  injection 5 absorbance (A) 280, 480
+Read	Read:  injection 5 fluorescence (F) 280,480, 280,480[2]
+Plate In/Out	Plate Out,In   injection 6
+Read	Read:  injection 6 absorbance (A) 280, 480
+Read	Read:  injection 6 fluorescence (F) 280,480, 280,480[2]
+Plate In/Out	Plate Out,In   injection 7
+Read	Read:  injection 7 absorbance (A) 280, 480
+Read	Read:  injection 7 fluorescence (F) 280,480, 280,480[2]
+Plate In/Out	Plate Out,In   injection 8
+Read	Read:  injection 8 absorbance (A) 280, 480
+Read	Read:  injection 8 fluorescence (F) 280,480, 280,480[2]
+Plate In/Out	Plate Out,In   injection 9
+Read	Read:  injection 9 absorbance (A) 280, 480
+Read	Read:  injection 9 fluorescence (F) 280,480, 280,480[2]
+Plate In/Out	Plate Out,In   injection 10
+Read	Read:  injection 10 absorbance (A) 280, 480
+Read	Read:  injection 10 fluorescence (F) 280,480, 280,480[2]
+Plate In/Out	Plate Out,In   injection 11
+Read	Read:  injection 11 absorbance (A) 280, 480
+Read	Read:  injection 11 fluorescence (F) 280,480, 280,480[2]
+Plate In/Out	Plate Out,In   injection 12
+Read	Read:  injection 12 absorbance (A) 280, 480
+Read	Read:  injection 12 fluorescence (F) 280,480, 280,480[2]
+
+Layout
+	1	2	3	4	5	6	7	8	9	10	11	12
+A													Well ID
+													Name
+B													Well ID
+													Name
+C													Well ID
+													Name
+D													Well ID
+													Name
+E													Well ID
+													Name
+F													Well ID
+													Name
+G													Well ID
+													Name
+H													Well ID
+													Name
+
+Data Reduction Summary
+
+	
+
+Layout
+	1	2	3	4	5	6	7	8	9	10	11	12
+A													Well ID
+													Name
+B													Well ID
+													Name
+C													Well ID
+													Name
+D													Well ID
+													Name
+E													Well ID
+													Name
+F													Well ID
+													Name
+G													Well ID
+													Name
+H													Well ID
+													Name
+
+injection 0 absorbance:280
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.303	0.305	0.309	0.309	0.309	0.308	0.052	0.052	0.051	0.055	0.053	0.051	injection 0 absorbance:280
+B	0.280	0.313	0.295	0.308	0.300	0.311	0.052	0.052	0.051	0.051	0.051	0.050	injection 0 absorbance:280
+C	0.297	0.308	0.294	0.312	0.298	0.308	0.052	0.052	0.051	0.051	0.051	0.049	injection 0 absorbance:280
+D	0.300	0.309	0.286	0.309	0.314	0.310	0.053	0.051	0.051	0.055	0.050	0.051	injection 0 absorbance:280
+E	0.151	0.090	0.076	0.068	0.063	0.058	0.058	0.057	0.054	0.055	0.056	0.054	injection 0 absorbance:280
+F	0.162	0.088	0.072	0.068	0.065	0.061	0.062	0.056	0.054	0.056	0.054	0.061	injection 0 absorbance:280
+G	0.155	0.092	0.075	0.067	0.064	0.060	0.060	0.058	0.057	0.057	0.055	0.053	injection 0 absorbance:280
+H	0.155	0.092	0.076	0.067	0.064	0.067	0.059	0.057	0.056	0.056	0.054	0.054	injection 0 absorbance:280
+
+injection 0 absorbance:480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.031	0.027	0.032	0.027	0.029	0.027	0.027	0.027	0.027	0.029	0.028	0.027	injection 0 absorbance:480
+B	0.030	0.027	0.029	0.027	0.030	0.028	0.028	0.027	0.027	0.027	0.027	0.027	injection 0 absorbance:480
+C	0.030	0.027	0.031	0.028	0.030	0.028	0.027	0.027	0.029	0.027	0.027	0.027	injection 0 absorbance:480
+D	0.031	0.027	0.030	0.027	0.042	0.027	0.028	0.027	0.028	0.031	0.027	0.028	injection 0 absorbance:480
+E	0.027	0.027	0.029	0.027	0.027	0.027	0.027	0.027	0.027	0.027	0.028	0.027	injection 0 absorbance:480
+F	0.028	0.027	0.027	0.028	0.028	0.028	0.028	0.027	0.027	0.027	0.027	0.032	injection 0 absorbance:480
+G	0.028	0.027	0.027	0.027	0.027	0.027	0.028	0.027	0.028	0.028	0.027	0.027	injection 0 absorbance:480
+H	0.027	0.027	0.028	0.027	0.027	0.033	0.027	0.027	0.027	0.027	0.027	0.028	injection 0 absorbance:480
+
+injection 0 fluorescence:280,480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	3387	2469	2641	2563	2655	2615	2804	2929	2873	3012	2849	2932	injection 0 fluorescence:280,480
+B	3065	2593	2527	2301	2576	2446	2757	2807	2696	2643	2644	2969	injection 0 fluorescence:280,480
+C	3321	2444	2905	2556	2487	2424	2607	2784	9423	2633	2647	2684	injection 0 fluorescence:280,480
+D	3439	2482	2722	2451	2660	2606	2869	2548	2634	3408	2778	2783	injection 0 fluorescence:280,480
+E	22594	14887	11346	8739	6151	5011	4636	4086	3670	3626	3645	3706	injection 0 fluorescence:280,480
+F	26299	14281	10592	8229	5951	5287	4745	4125	4540	3582	3645	24329	injection 0 fluorescence:280,480
+G	22254	14687	11231	8459	6278	5452	4678	4307	4141	3860	3680	4332	injection 0 fluorescence:280,480
+H	22868	14328	12315	8334	6323	5637	4466	4192	3976	3771	3788	3954	injection 0 fluorescence:280,480
+
+injection 0 fluorescence:280,480[2]
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	12793	10360	11149	10403	10557	10113	11334	11637	10978	11301	11321	11871	injection 0 fluorescence:280,480[2]
+B	12388	9994	10626	9959	10542	9966	10958	10768	10505	10634	10379	11317	injection 0 fluorescence:280,480[2]
+C	12521	9884	11057	9934	10482	9983	10547	10684	33344	10066	10265	11284	injection 0 fluorescence:280,480[2]
+D	12457	10075	10808	9348	10751	9740	10900	10159	10681	17650	10342	11264	injection 0 fluorescence:280,480[2]
+E	67734	49769	35832	25506	17884	14903	13402	11980	11164	10524	10938	11103	injection 0 fluorescence:280,480[2]
+F	70719	49263	33304	25308	18004	15028	13882	11732	10970	10706	10506	OVRFLW	injection 0 fluorescence:280,480[2]
+G	68728	50145	36615	25998	19913	16721	14013	12603	12285	11145	11354	10848	injection 0 fluorescence:280,480[2]
+H	68811	49009	38827	27110	20019	18097	13788	12543	11914	11291	10796	11526	injection 0 fluorescence:280,480[2]
+
+injection 1 absorbance:280
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.310	0.310	0.304	0.309	0.329	0.320							injection 1 absorbance:280
+B	0.322	0.325	0.327	0.309	0.316	0.333							injection 1 absorbance:280
+C	0.339	0.329	0.333	0.331	0.316	0.336							injection 1 absorbance:280
+D	0.318	0.305	0.311	0.320	0.336	0.335							injection 1 absorbance:280
+E													injection 1 absorbance:280
+F													injection 1 absorbance:280
+G													injection 1 absorbance:280
+H													injection 1 absorbance:280
+
+injection 1 absorbance:480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.030	0.027	0.030	0.027	0.028	0.027							injection 1 absorbance:480
+B	0.029	0.027	0.028	0.027	0.029	0.028							injection 1 absorbance:480
+C	0.029	0.029	0.029	0.028	0.029	0.028							injection 1 absorbance:480
+D	0.029	0.027	0.028	0.027	0.043	0.027							injection 1 absorbance:480
+E													injection 1 absorbance:480
+F													injection 1 absorbance:480
+G													injection 1 absorbance:480
+H													injection 1 absorbance:480
+
+injection 1 fluorescence:280,480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	4963	2661	5000	2694	4195	2683							injection 1 fluorescence:280,480
+B	4502	2676	4016	2591	3985	2765							injection 1 fluorescence:280,480
+C	5872	3092	3910	2562	3937	2547							injection 1 fluorescence:280,480
+D	5703	2554	5169	2476	4219	2609							injection 1 fluorescence:280,480
+E													injection 1 fluorescence:280,480
+F													injection 1 fluorescence:280,480
+G													injection 1 fluorescence:280,480
+H													injection 1 fluorescence:280,480
+
+injection 1 fluorescence:280,480[2]
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	14892	10519	14545	10288	12638	10149							injection 1 fluorescence:280,480[2]
+B	13038	10161	11669	9748	11945	10186							injection 1 fluorescence:280,480[2]
+C	14173	15925	11827	10162	11873	10109							injection 1 fluorescence:280,480[2]
+D	14949	9963	13145	9681	12110	9919							injection 1 fluorescence:280,480[2]
+E													injection 1 fluorescence:280,480[2]
+F													injection 1 fluorescence:280,480[2]
+G													injection 1 fluorescence:280,480[2]
+H													injection 1 fluorescence:280,480[2]
+
+injection 2 absorbance:280
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.330	0.309	0.327	0.317	0.329	0.321							injection 2 absorbance:280
+B	0.332	0.329	0.331	0.318	0.319	0.314							injection 2 absorbance:280
+C	0.347	0.325	0.328	0.321	0.314	0.325							injection 2 absorbance:280
+D	0.334	0.322	0.313	0.336	0.331	0.327							injection 2 absorbance:280
+E													injection 2 absorbance:280
+F													injection 2 absorbance:280
+G													injection 2 absorbance:280
+H													injection 2 absorbance:280
+
+injection 2 absorbance:480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.028	0.026	0.029	0.027	0.028	0.027							injection 2 absorbance:480
+B	0.028	0.027	0.027	0.026	0.028	0.028							injection 2 absorbance:480
+C	0.028	0.026	0.029	0.027	0.028	0.028							injection 2 absorbance:480
+D	0.028	0.026	0.028	0.026	0.044	0.026							injection 2 absorbance:480
+E													injection 2 absorbance:480
+F													injection 2 absorbance:480
+G													injection 2 absorbance:480
+H													injection 2 absorbance:480
+
+injection 2 fluorescence:280,480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	7193	2901	7116	2905	6172	2967							injection 2 fluorescence:280,480
+B	6845	2915	5571	2748	5528	2878							injection 2 fluorescence:280,480
+C	7598	2863	6583	2888	7049	2990							injection 2 fluorescence:280,480
+D	8405	2909	6749	2733	7203	2806							injection 2 fluorescence:280,480
+E													injection 2 fluorescence:280,480
+F													injection 2 fluorescence:280,480
+G													injection 2 fluorescence:280,480
+H													injection 2 fluorescence:280,480
+
+injection 2 fluorescence:280,480[2]
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	17295	10406	15330	10699	14695	10376							injection 2 fluorescence:280,480[2]
+B	15721	10359	13573	9524	13717	10267							injection 2 fluorescence:280,480[2]
+C	17434	9934	14938	10044	14794	10279							injection 2 fluorescence:280,480[2]
+D	17656	9893	15138	9728	14846	9919							injection 2 fluorescence:280,480[2]
+E													injection 2 fluorescence:280,480[2]
+F													injection 2 fluorescence:280,480[2]
+G													injection 2 fluorescence:280,480[2]
+H													injection 2 fluorescence:280,480[2]
+
+injection 3 absorbance:280
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.316	0.309	0.318	0.313	0.315	0.305							injection 3 absorbance:280
+B	0.278	0.316	0.324	0.313	0.325	0.323							injection 3 absorbance:280
+C	0.320	0.319	0.319	0.319	0.312	0.330							injection 3 absorbance:280
+D	0.332	0.314	0.314	0.325	0.328	0.345							injection 3 absorbance:280
+E													injection 3 absorbance:280
+F													injection 3 absorbance:280
+G													injection 3 absorbance:280
+H													injection 3 absorbance:280
+
+injection 3 absorbance:480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.028	0.026	0.030	0.027	0.028	0.027							injection 3 absorbance:480
+B	0.028	0.026	0.028	0.026	0.028	0.028							injection 3 absorbance:480
+C	0.028	0.026	0.029	0.027	0.028	0.028							injection 3 absorbance:480
+D	0.028	0.026	0.028	0.026	0.045	0.026							injection 3 absorbance:480
+E													injection 3 absorbance:480
+F													injection 3 absorbance:480
+G													injection 3 absorbance:480
+H													injection 3 absorbance:480
+
+injection 3 fluorescence:280,480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	11487	3083	10024	3073	9164	3221							injection 3 fluorescence:280,480
+B	12532	3075	8895	2906	7859	3162							injection 3 fluorescence:280,480
+C	11963	3035	10608	3130	9831	2950							injection 3 fluorescence:280,480
+D	11588	3027	9651	3205	9098	2982							injection 3 fluorescence:280,480
+E													injection 3 fluorescence:280,480
+F													injection 3 fluorescence:280,480
+G													injection 3 fluorescence:280,480
+H													injection 3 fluorescence:280,480
+
+injection 3 fluorescence:280,480[2]
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	21745	10446	19473	10531	18302	10379							injection 3 fluorescence:280,480[2]
+B	23647	10235	16381	9836	15728	10334							injection 3 fluorescence:280,480[2]
+C	20993	10456	18190	10303	17813	10147							injection 3 fluorescence:280,480[2]
+D	19796	10019	18787	9680	17010	9730							injection 3 fluorescence:280,480[2]
+E													injection 3 fluorescence:280,480[2]
+F													injection 3 fluorescence:280,480[2]
+G													injection 3 fluorescence:280,480[2]
+H													injection 3 fluorescence:280,480[2]
+
+injection 4 absorbance:280
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.332	0.319	0.338	0.324	0.316	0.314							injection 4 absorbance:280
+B	0.312	0.314	0.291	0.316	0.330	0.332							injection 4 absorbance:280
+C	0.331	0.321	0.308	0.324	0.312	0.330							injection 4 absorbance:280
+D	0.341	0.317	0.306	0.319	0.339	0.332							injection 4 absorbance:280
+E													injection 4 absorbance:280
+F													injection 4 absorbance:280
+G													injection 4 absorbance:280
+H													injection 4 absorbance:280
+
+injection 4 absorbance:480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.029	0.026	0.030	0.038	0.028	0.027							injection 4 absorbance:480
+B	0.028	0.027	0.027	0.026	0.028	0.028							injection 4 absorbance:480
+C	0.028	0.026	0.029	0.028	0.028	0.028							injection 4 absorbance:480
+D	0.028	0.026	0.028	0.027	0.046	0.026							injection 4 absorbance:480
+E													injection 4 absorbance:480
+F													injection 4 absorbance:480
+G													injection 4 absorbance:480
+H													injection 4 absorbance:480
+
+injection 4 fluorescence:280,480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	13816	3311	12875	24309	12327	3251							injection 4 fluorescence:280,480
+B	13539	3470	14612	3293	9788	3212							injection 4 fluorescence:280,480
+C	16990	3240	16273	3336	13315	3363							injection 4 fluorescence:280,480
+D	15674	3301	15548	3079	12400	3293							injection 4 fluorescence:280,480
+E													injection 4 fluorescence:280,480
+F													injection 4 fluorescence:280,480
+G													injection 4 fluorescence:280,480
+H													injection 4 fluorescence:280,480
+
+injection 4 fluorescence:280,480[2]
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	24531	10456	20544	OVRFLW	21221	10268							injection 4 fluorescence:280,480[2]
+B	22827	10249	23823	10011	17021	10358							injection 4 fluorescence:280,480[2]
+C	25127	9919	22924	10309	20935	10431							injection 4 fluorescence:280,480[2]
+D	23653	10332	24465	10037	20807	10137							injection 4 fluorescence:280,480[2]
+E													injection 4 fluorescence:280,480[2]
+F													injection 4 fluorescence:280,480[2]
+G													injection 4 fluorescence:280,480[2]
+H													injection 4 fluorescence:280,480[2]
+
+injection 5 absorbance:280
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.322	0.323	0.309	0.319	0.320	0.337							injection 5 absorbance:280
+B	0.316	0.320	0.313	0.328	0.325	0.335							injection 5 absorbance:280
+C	0.320	0.329	0.314	0.336	0.317	0.338							injection 5 absorbance:280
+D	0.313	0.333	0.305	0.317	0.339	0.327							injection 5 absorbance:280
+E													injection 5 absorbance:280
+F													injection 5 absorbance:280
+G													injection 5 absorbance:280
+H													injection 5 absorbance:280
+
+injection 5 absorbance:480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.029	0.026	0.030	0.026	0.028	0.026							injection 5 absorbance:480
+B	0.028	0.026	0.028	0.026	0.028	0.027							injection 5 absorbance:480
+C	0.028	0.026	0.028	0.027	0.029	0.027							injection 5 absorbance:480
+D	0.029	0.026	0.028	0.026	0.046	0.027							injection 5 absorbance:480
+E													injection 5 absorbance:480
+F													injection 5 absorbance:480
+G													injection 5 absorbance:480
+H													injection 5 absorbance:480
+
+injection 5 fluorescence:280,480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	20147	3422	19107	4019	14278	3451							injection 5 fluorescence:280,480
+B	18183	3612	17105	3228	12901	3493							injection 5 fluorescence:280,480
+C	24023	3492	21626	3347	14876	3376							injection 5 fluorescence:280,480
+D	23981	3353	22135	3349	14066	3529							injection 5 fluorescence:280,480
+E													injection 5 fluorescence:280,480
+F													injection 5 fluorescence:280,480
+G													injection 5 fluorescence:280,480
+H													injection 5 fluorescence:280,480
+
+injection 5 fluorescence:280,480[2]
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	29848	10626	28185	10679	22892	10499							injection 5 fluorescence:280,480[2]
+B	28175	10408	25318	9992	20851	10461							injection 5 fluorescence:280,480[2]
+C	32272	10329	28064	10369	22806	10504							injection 5 fluorescence:280,480[2]
+D	32114	9922	30762	9994	22066	9874							injection 5 fluorescence:280,480[2]
+E													injection 5 fluorescence:280,480[2]
+F													injection 5 fluorescence:280,480[2]
+G													injection 5 fluorescence:280,480[2]
+H													injection 5 fluorescence:280,480[2]
+
+injection 6 absorbance:280
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.328	0.323	0.324	0.322	0.319	0.329							injection 6 absorbance:280
+B	0.309	0.326	0.302	0.333	0.327	0.331							injection 6 absorbance:280
+C	0.321	0.334	0.314	0.333	0.309	0.326							injection 6 absorbance:280
+D	0.311	0.325	0.311	0.335	0.341	0.296							injection 6 absorbance:280
+E													injection 6 absorbance:280
+F													injection 6 absorbance:280
+G													injection 6 absorbance:280
+H													injection 6 absorbance:280
+
+injection 6 absorbance:480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.028	0.026	0.030	0.026	0.027	0.026							injection 6 absorbance:480
+B	0.028	0.026	0.027	0.026	0.028	0.027							injection 6 absorbance:480
+C	0.028	0.026	0.028	0.027	0.029	0.027							injection 6 absorbance:480
+D	0.028	0.026	0.028	0.026	0.046	0.027							injection 6 absorbance:480
+E													injection 6 absorbance:480
+F													injection 6 absorbance:480
+G													injection 6 absorbance:480
+H													injection 6 absorbance:480
+
+injection 6 fluorescence:280,480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	25979	3844	21746	4940	16029	3610							injection 6 fluorescence:280,480
+B	27919	3661	26454	3447	15001	3556							injection 6 fluorescence:280,480
+C	34444	3833	28555	3610	15528	3566							injection 6 fluorescence:280,480
+D	30753	3517	28944	3452	16038	3500							injection 6 fluorescence:280,480
+E													injection 6 fluorescence:280,480
+F													injection 6 fluorescence:280,480
+G													injection 6 fluorescence:280,480
+H													injection 6 fluorescence:280,480
+
+injection 6 fluorescence:280,480[2]
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	37890	10896	31941	10609	23846	10628							injection 6 fluorescence:280,480[2]
+B	39805	10704	37905	10144	23252	10714							injection 6 fluorescence:280,480[2]
+C	42079	10312	36806	10708	24506	10634							injection 6 fluorescence:280,480[2]
+D	42424	10419	34606	9836	23575	10076							injection 6 fluorescence:280,480[2]
+E													injection 6 fluorescence:280,480[2]
+F													injection 6 fluorescence:280,480[2]
+G													injection 6 fluorescence:280,480[2]
+H													injection 6 fluorescence:280,480[2]
+
+injection 7 absorbance:280
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.328	0.317	0.325	0.325	0.327	0.327							injection 7 absorbance:280
+B	0.309	0.318	0.299	0.332	0.318	0.303							injection 7 absorbance:280
+C	0.323	0.310	0.316	0.288	0.307	0.323							injection 7 absorbance:280
+D	0.314	0.308	0.308	0.335	0.314	0.328							injection 7 absorbance:280
+E													injection 7 absorbance:280
+F													injection 7 absorbance:280
+G													injection 7 absorbance:280
+H													injection 7 absorbance:280
+
+injection 7 absorbance:480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.029	0.026	0.031	0.027	0.028	0.027							injection 7 absorbance:480
+B	0.029	0.026	0.028	0.026	0.028	0.028							injection 7 absorbance:480
+C	0.029	0.026	0.029	0.028	0.029	0.028							injection 7 absorbance:480
+D	0.029	0.026	0.028	0.027	0.047	0.026							injection 7 absorbance:480
+E													injection 7 absorbance:480
+F													injection 7 absorbance:480
+G													injection 7 absorbance:480
+H													injection 7 absorbance:480
+
+injection 7 fluorescence:280,480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	30351	3869	27250	5058	15751	3818							injection 7 fluorescence:280,480
+B	32248	3964	35506	3587	15767	3918							injection 7 fluorescence:280,480
+C	39183	4144	33110	4086	15248	3897							injection 7 fluorescence:280,480
+D	43027	3878	32883	3569	15079	3724							injection 7 fluorescence:280,480
+E													injection 7 fluorescence:280,480
+F													injection 7 fluorescence:280,480
+G													injection 7 fluorescence:280,480
+H													injection 7 fluorescence:280,480
+
+injection 7 fluorescence:280,480[2]
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	48282	11034	40041	10658	23990	10502							injection 7 fluorescence:280,480[2]
+B	45724	10759	46751	10480	23986	10814							injection 7 fluorescence:280,480[2]
+C	49745	10670	42483	10585	24074	10514							injection 7 fluorescence:280,480[2]
+D	52598	10699	45181	10223	23539	9929							injection 7 fluorescence:280,480[2]
+E													injection 7 fluorescence:280,480[2]
+F													injection 7 fluorescence:280,480[2]
+G													injection 7 fluorescence:280,480[2]
+H													injection 7 fluorescence:280,480[2]
+
+injection 8 absorbance:280
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.323	0.317	0.323	0.316	0.327	0.323							injection 8 absorbance:280
+B	0.312	0.318	0.293	0.325	0.317	0.321							injection 8 absorbance:280
+C	0.318	0.322	0.307	0.317	0.308	0.333							injection 8 absorbance:280
+D	0.315	0.321	0.297	0.315	0.316	0.294							injection 8 absorbance:280
+E													injection 8 absorbance:280
+F													injection 8 absorbance:280
+G													injection 8 absorbance:280
+H													injection 8 absorbance:280
+
+injection 8 absorbance:480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.029	0.026	0.031	0.026	0.027	0.026							injection 8 absorbance:480
+B	0.028	0.026	0.029	0.026	0.028	0.027							injection 8 absorbance:480
+C	0.028	0.026	0.029	0.027	0.029	0.027							injection 8 absorbance:480
+D	0.029	0.027	0.028	0.026	0.047	0.026							injection 8 absorbance:480
+E													injection 8 absorbance:480
+F													injection 8 absorbance:480
+G													injection 8 absorbance:480
+H													injection 8 absorbance:480
+
+injection 8 fluorescence:280,480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	42902	4134	33876	4995	14684	3909							injection 8 fluorescence:280,480
+B	41402	3918	32041	3778	15272	3930							injection 8 fluorescence:280,480
+C	52856	4142	38487	3803	14346	3874							injection 8 fluorescence:280,480
+D	44084	3870	37004	3781	14698	3726							injection 8 fluorescence:280,480
+E													injection 8 fluorescence:280,480
+F													injection 8 fluorescence:280,480
+G													injection 8 fluorescence:280,480
+H													injection 8 fluorescence:280,480
+
+injection 8 fluorescence:280,480[2]
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	69355	11018	50480	10550	23384	10916							injection 8 fluorescence:280,480[2]
+B	60163	10922	49142	10372	24224	10662							injection 8 fluorescence:280,480[2]
+C	72856	10843	52999	10860	23710	10877							injection 8 fluorescence:280,480[2]
+D	64921	10769	52928	10258	22178	10516							injection 8 fluorescence:280,480[2]
+E													injection 8 fluorescence:280,480[2]
+F													injection 8 fluorescence:280,480[2]
+G													injection 8 fluorescence:280,480[2]
+H													injection 8 fluorescence:280,480[2]
+
+injection 9 absorbance:280
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.326	0.317	0.323	0.319	0.315	0.317							injection 9 absorbance:280
+B	0.285	0.309	0.307	0.325	0.309	0.321							injection 9 absorbance:280
+C	0.317	0.317	0.313	0.319	0.307	0.311							injection 9 absorbance:280
+D	0.315	0.318	0.294	0.311	0.318	0.292							injection 9 absorbance:280
+E													injection 9 absorbance:280
+F													injection 9 absorbance:280
+G													injection 9 absorbance:280
+H													injection 9 absorbance:280
+
+injection 9 absorbance:480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.029	0.026	0.031	0.026	0.028	0.027							injection 9 absorbance:480
+B	0.029	0.026	0.030	0.026	0.028	0.027							injection 9 absorbance:480
+C	0.029	0.026	0.029	0.027	0.029	0.027							injection 9 absorbance:480
+D	0.029	0.027	0.028	0.026	0.047	0.026							injection 9 absorbance:480
+E													injection 9 absorbance:480
+F													injection 9 absorbance:480
+G													injection 9 absorbance:480
+H													injection 9 absorbance:480
+
+injection 9 fluorescence:280,480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	50941	4378	33928	5835	13395	4072							injection 9 fluorescence:280,480
+B	79083	4061	31839	3907	13877	3991							injection 9 fluorescence:280,480
+C	62847	4535	36678	4047	13476	4146							injection 9 fluorescence:280,480
+D	61803	4173	35784	4081	13569	4213							injection 9 fluorescence:280,480
+E													injection 9 fluorescence:280,480
+F													injection 9 fluorescence:280,480
+G													injection 9 fluorescence:280,480
+H													injection 9 fluorescence:280,480
+
+injection 9 fluorescence:280,480[2]
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	88313	11218	55173	11088	23829	11229							injection 9 fluorescence:280,480[2]
+B	OVRFLW	11327	51732	10914	23289	10903							injection 9 fluorescence:280,480[2]
+C	OVRFLW	10904	56380	11070	23685	10903							injection 9 fluorescence:280,480[2]
+D	OVRFLW	11081	53726	10760	23516	10746							injection 9 fluorescence:280,480[2]
+E													injection 9 fluorescence:280,480[2]
+F													injection 9 fluorescence:280,480[2]
+G													injection 9 fluorescence:280,480[2]
+H													injection 9 fluorescence:280,480[2]
+
+injection 10 absorbance:280
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.324	0.317	0.318	0.317	0.314	0.307							injection 10 absorbance:280
+B	0.295	0.310	0.316	0.317	0.311	0.328							injection 10 absorbance:280
+C	0.314	0.316	0.306	0.323	0.308	0.318							injection 10 absorbance:280
+D	0.307	0.313	0.300	0.312	0.332	0.294							injection 10 absorbance:280
+E													injection 10 absorbance:280
+F													injection 10 absorbance:280
+G													injection 10 absorbance:280
+H													injection 10 absorbance:280
+
+injection 10 absorbance:480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.029	0.026	0.031	0.026	0.027	0.026							injection 10 absorbance:480
+B	0.029	0.026	0.029	0.026	0.028	0.027							injection 10 absorbance:480
+C	0.029	0.026	0.028	0.027	0.028	0.027							injection 10 absorbance:480
+D	0.029	0.026	0.028	0.026	0.046	0.025							injection 10 absorbance:480
+E													injection 10 absorbance:480
+F													injection 10 absorbance:480
+G													injection 10 absorbance:480
+H													injection 10 absorbance:480
+
+injection 10 fluorescence:280,480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	66416	4484	29136	4955	12100	4351							injection 10 fluorescence:280,480
+B	87224	4390	29166	4488	12967	4321							injection 10 fluorescence:280,480
+C	77734	4665	33517	4175	12461	4279							injection 10 fluorescence:280,480
+D	83007	4462	32575	4163	12468	4301							injection 10 fluorescence:280,480
+E													injection 10 fluorescence:280,480
+F													injection 10 fluorescence:280,480
+G													injection 10 fluorescence:280,480
+H													injection 10 fluorescence:280,480
+
+injection 10 fluorescence:280,480[2]
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	OVRFLW	11959	54798	11973	22738	11309							injection 10 fluorescence:280,480[2]
+B	OVRFLW	11840	52498	11320	23682	11321							injection 10 fluorescence:280,480[2]
+C	OVRFLW	11556	56082	11275	23525	11111							injection 10 fluorescence:280,480[2]
+D	OVRFLW	11666	53484	11193	23137	11214							injection 10 fluorescence:280,480[2]
+E													injection 10 fluorescence:280,480[2]
+F													injection 10 fluorescence:280,480[2]
+G													injection 10 fluorescence:280,480[2]
+H													injection 10 fluorescence:280,480[2]
+
+injection 11 absorbance:280
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.327	0.319	0.325	0.317	0.322	0.313							injection 11 absorbance:280
+B	0.298	0.316	0.309	0.316	0.315	0.316							injection 11 absorbance:280
+C	0.312	0.320	0.309	0.320	0.311	0.319							injection 11 absorbance:280
+D	0.312	0.309	0.304	0.315	0.320	0.295							injection 11 absorbance:280
+E													injection 11 absorbance:280
+F													injection 11 absorbance:280
+G													injection 11 absorbance:280
+H													injection 11 absorbance:280
+
+injection 11 absorbance:480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.029	0.026	0.030	0.026	0.027	0.026							injection 11 absorbance:480
+B	0.029	0.026	0.029	0.026	0.027	0.027							injection 11 absorbance:480
+C	0.029	0.026	0.028	0.027	0.028	0.027							injection 11 absorbance:480
+D	0.028	0.026	0.028	0.026	0.046	0.025							injection 11 absorbance:480
+E													injection 11 absorbance:480
+F													injection 11 absorbance:480
+G													injection 11 absorbance:480
+H													injection 11 absorbance:480
+
+injection 11 fluorescence:280,480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	OVRFLW	4979	26215	5444	11765	4804							injection 11 fluorescence:280,480
+B	OVRFLW	4775	23806	5013	12317	4540							injection 11 fluorescence:280,480
+C	OVRFLW	5358	28404	4806	11675	4575							injection 11 fluorescence:280,480
+D	90167	4894	27843	4691	11627	4517							injection 11 fluorescence:280,480
+E													injection 11 fluorescence:280,480
+F													injection 11 fluorescence:280,480
+G													injection 11 fluorescence:280,480
+H													injection 11 fluorescence:280,480
+
+injection 11 fluorescence:280,480[2]
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	OVRFLW	13388	54259	13246	25275	12647							injection 11 fluorescence:280,480[2]
+B	OVRFLW	12774	52515	13279	24642	11878							injection 11 fluorescence:280,480[2]
+C	OVRFLW	13819	55643	12902	24848	12523							injection 11 fluorescence:280,480[2]
+D	OVRFLW	13052	53562	12650	24099	11928							injection 11 fluorescence:280,480[2]
+E													injection 11 fluorescence:280,480[2]
+F													injection 11 fluorescence:280,480[2]
+G													injection 11 fluorescence:280,480[2]
+H													injection 11 fluorescence:280,480[2]
+
+injection 12 absorbance:280
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.334	0.325	0.331	0.324	0.328	0.324							injection 12 absorbance:280
+B	0.307	0.325	0.317	0.324	0.318	0.325							injection 12 absorbance:280
+C	0.325	0.324	0.315	0.331	0.313	0.325							injection 12 absorbance:280
+D	0.320	0.326	0.312	0.326	0.336	0.321							injection 12 absorbance:280
+E													injection 12 absorbance:280
+F													injection 12 absorbance:280
+G													injection 12 absorbance:280
+H													injection 12 absorbance:280
+
+injection 12 absorbance:480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	0.028	0.026	0.030	0.026	0.027	0.026							injection 12 absorbance:480
+B	0.028	0.026	0.028	0.026	0.027	0.027							injection 12 absorbance:480
+C	0.028	0.026	0.028	0.027	0.028	0.027							injection 12 absorbance:480
+D	0.028	0.026	0.027	0.026	0.046	0.025							injection 12 absorbance:480
+E													injection 12 absorbance:480
+F													injection 12 absorbance:480
+G													injection 12 absorbance:480
+H													injection 12 absorbance:480
+
+injection 12 fluorescence:280,480
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	OVRFLW	6433	24015	7266	11690	5861							injection 12 fluorescence:280,480
+B	OVRFLW	6137	23467	5646	11811	5490							injection 12 fluorescence:280,480
+C	OVRFLW	7070	27065	5734	11626	5290							injection 12 fluorescence:280,480
+D	OVRFLW	5840	25582	5623	11290	5127							injection 12 fluorescence:280,480
+E													injection 12 fluorescence:280,480
+F													injection 12 fluorescence:280,480
+G													injection 12 fluorescence:280,480
+H													injection 12 fluorescence:280,480
+
+injection 12 fluorescence:280,480[2]
+	1	2	3	4	5	6	7	8	9	10	11	12
+A	OVRFLW	18656	55708	16923	29841	16688							injection 12 fluorescence:280,480[2]
+B	OVRFLW	17672	53638	16567	27383	15728							injection 12 fluorescence:280,480[2]
+C	OVRFLW	19774	57577	17111	27070	15257							injection 12 fluorescence:280,480[2]
+D	OVRFLW	16609	57523	16790	27544	14989							injection 12 fluorescence:280,480[2]
+E													injection 12 fluorescence:280,480[2]
+F													injection 12 fluorescence:280,480[2]
+G													injection 12 fluorescence:280,480[2]
+H													injection 12 fluorescence:280,480[2]
+
