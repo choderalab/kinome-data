@@ -1,11 +1,6 @@
-Earlier work on kinase fluorescence assay from JDC at Berkeley.
-
-Manifest
+fluorescence-assays
 --------
-* `lab-notebook/` - download of google docs lab notebook
-* `matlab/` - Matlab scripts for modeling fluorescence experiments
+* `Fluorescence_Assays_iPython_Notebook_1/` - SMH's beginnings at plotting data from Magellan txt file output (Jan/Feb 2014)
+* `JDC_Berkeley/` - JDC's experiments ~2012 at Berkeley - incl. matlab scripts, figures, and data
+* `ph-titration/` - JDC's ph-titration experiments - incl. first xml file plotting
 * `references/` - relevant references
-* `data/` - some collected data
-* `manuals/` - instrument manuals
-* `52611/` - data from 26 May 2011
-* '2012-06-11/` - data from 11 Jun 2012
