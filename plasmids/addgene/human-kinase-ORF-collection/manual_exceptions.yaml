@@ -1,0 +1,25 @@
+--- #Manual exceptions
+23422:
+    name: CAMKK2
+    behavior: ignore
+    comment: >
+        No DNA sequence from depositing scientist.
+
+23414:
+    name: PRKFB1
+    behavior: ignore
+    comment: >
+        No DNA sequence from depositing scientist.
+
+23416:
+    name: MPP6
+    behavior: ignore
+    comment: >
+        No DNA sequence from depositing scientist.
+
+23417:
+    name: MPP4
+    behavior: ignore
+    comment: >
+        No DNA sequence from depositing scientist.
+
