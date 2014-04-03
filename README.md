@@ -1,4 +1,10 @@
-kinome-experiments
-==================
+Kinome project data
+===================
 
-Experimental measurements for the human kinome
+Manifest
+--------
+
+* fluorescence-assay/
+* PDB\_construct\_selection/ - contains results of efforts to select kinase constructs from PDB data, using ExpressionExplorer
+* plasmids/ - plasmid library data, plus analysis code/results
+* kinome-database/ - contains some analysis from the TargetExplorer kinome database
