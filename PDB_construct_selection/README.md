@@ -11,7 +11,7 @@ The aim is to select construct sequences which are likely to express well, by ra
 Manifest
 --------
 
-* ../scripts/select-PDB-constructs.py
+* scripts/select-PDB-constructs.py
     * selects PDB constructs based on various criteria and outputs data useful for initiating expression tests.
 * PDB\_constructs-data.txt:
     * text file output by the select-PDB-constructs.py script; displays various results for each target protein, including the top-ranked PDB chain and the target\_score from the database.
