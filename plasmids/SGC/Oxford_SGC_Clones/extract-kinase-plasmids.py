@@ -28,8 +28,11 @@ nrows = ws.get_highest_row()
 plasmid_df = {
 'cloneID':[],
 'HGNCSymbol':[],
+'UniProtAC':[],
+'UniProt_entry_name':[],
 'dna_seq':[],
 'aa_seq':[],
+'Protein family':[],
 'Expression system':[],
 'Expression cell line':[],
 'Availability comments':[],
@@ -41,6 +44,12 @@ plasmid_df = {
 'Vector comments':[],
 'Mutations/sequence comments':[],
 }
+
+# ========
+# Output columns for text file
+# ========
+
+txt_output_cols = ['cloneID', 'HGNCSymbol', 'UniProtAC', 'UniProt_entry_name', 'aa_seq', 'Protein family']
 
 # ========
 # Read in database
@@ -63,10 +72,16 @@ for row in range(2, nrows-1):
     if matching_DB_entry == None:
         continue
 
+    UniProtAC = matching_DB_entry.find('UniProt').get('AC')
+    UniProt_entry_name = matching_DB_entry.find('UniProt').get('entry_name')
+
     plasmid_df['cloneID'].append(cloneID)
     plasmid_df['HGNCSymbol'].append(HGNCSymbol)
+    plasmid_df['UniProtAC'].append(UniProtAC)
+    plasmid_df['UniProt_entry_name'].append(UniProt_entry_name)
     plasmid_df['aa_seq'].append( ws.cell('T%d' % row).value )
     plasmid_df['dna_seq'].append( ws.cell('U%d' % row).value )
+    plasmid_df['Protein family'].append( ws.cell('E%d' % row).value )
     plasmid_df['Expression system'].append( ws.cell('J%d' % row).value )
     plasmid_df['Expression cell line'].append( ws.cell('K%d' % row).value )
     plasmid_df['Availability comments'].append( ws.cell('L%d' % row).value )
@@ -82,4 +97,4 @@ plasmid_df = pd.DataFrame(plasmid_df)
 
 plasmid_df.to_csv('plasmid-data.csv')
 with open('plasmid-data.txt', 'w') as plasmid_data_txt_file:
-    plasmid_data_txt_file.write(plasmid_df.to_string())
+    plasmid_data_txt_file.write(plasmid_df.to_string(columns=txt_output_cols))
