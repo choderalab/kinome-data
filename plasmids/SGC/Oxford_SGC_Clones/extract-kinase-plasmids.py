@@ -30,6 +30,7 @@ plasmid_df = {
 'HGNCSymbol':[],
 'UniProtAC':[],
 'UniProt_entry_name':[],
+'target_rank':[],
 'dna_seq':[],
 'aa_seq':[],
 'Protein family':[],
@@ -49,7 +50,7 @@ plasmid_df = {
 # Output columns for text file
 # ========
 
-txt_output_cols = ['cloneID', 'HGNCSymbol', 'UniProtAC', 'UniProt_entry_name', 'aa_seq', 'Protein family']
+txt_output_cols = ['cloneID', 'HGNCSymbol', 'UniProtAC', 'UniProt_entry_name', 'aa_seq', 'Protein family', 'target_rank']
 
 # ========
 # Read in database
@@ -74,11 +75,15 @@ for row in range(2, nrows-1):
 
     UniProtAC = matching_DB_entry.find('UniProt').get('AC')
     UniProt_entry_name = matching_DB_entry.find('UniProt').get('entry_name')
+    target_rank = matching_DB_entry.find('target_score/domain')
+    if target_rank != None:
+        target_rank = target_rank.get('target_rank')
 
     plasmid_df['cloneID'].append(cloneID)
     plasmid_df['HGNCSymbol'].append(HGNCSymbol)
     plasmid_df['UniProtAC'].append(UniProtAC)
     plasmid_df['UniProt_entry_name'].append(UniProt_entry_name)
+    plasmid_df['target_rank'].append(target_rank)
     plasmid_df['aa_seq'].append( ws.cell('T%d' % row).value )
     plasmid_df['dna_seq'].append( ws.cell('U%d' % row).value )
     plasmid_df['Protein family'].append( ws.cell('E%d' % row).value )
