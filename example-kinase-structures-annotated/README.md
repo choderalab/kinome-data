@@ -1,5 +1,5 @@
 Example kinase structures with various types of useful annotation, such as
-domain spans (e.g. kinase catalytic domain, SH2 domain) named structural
+domain spans (e.g. kinase catalytic domain, SH2 domain), named structural
 elements (e.g. "C-helix", "A-loop"), functional information from literature
 (e.g. whether a structure is thought to represent an active state,
 autoinhibited state etc.).
