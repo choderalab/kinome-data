@@ -99,6 +99,7 @@ for row in range(2, nrows-1):
     plasmid_df['Mutations/sequence comments'].append( ws.cell('S%d' % row).value )
 
 plasmid_df = pd.DataFrame(plasmid_df)
+plasmid_df = plasmid_df.set_index(plasmid_df['cloneID'])
 
 plasmid_df.to_csv('plasmid-data.csv')
 with open('plasmid-data.txt', 'w') as plasmid_data_txt_file:

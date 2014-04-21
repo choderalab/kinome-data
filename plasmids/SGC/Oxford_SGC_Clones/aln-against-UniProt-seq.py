@@ -46,16 +46,23 @@ css_link.set('type','text/css')
 css_link.set('href',css_path)
 css_link.set('rel','stylesheet')
 
-def gen_html(aln, alnIDs, aa_css_class_list=None):
+def gen_html(aln, alnIDs, additional_data=[], aa_css_class_list=None):
     '''
-    additional_data_fields structure: [ { [PDB_ID]_[PDB_CHAIN_ID] : data }, { [PDB_ID]_[PDB_CHAIN_ID] : data }, ... ] with a separate dict for each data type, and where data is of len(alignment). Column headers not required.
+    additional_data structure: [ [data_for_first_field], [data_for_second_field], ...] where data_for_first_field is of length len(aln). Column headers not required.
     aa_css_class_list can be used to override the CSS classes assigned to each residue. Should be given as a list of lists, with shape: (len(alignment), len(alignment[0])).
     '''
-    html_table = E.table(STYLE='margin-bottom: 1cm')
+    html_table = E.table(STYLE='margin-bottom: 1cm; border-collapse:separate; border-spacing:15px 3px;')
 
     for r in range(len(aln)):
         row = E.tr()
         row.append( E.td( E.div(alnIDs[r], CLASS='ali'), nowrap='' ) )
+
+        for data_field in additional_data:
+            if data_field[r] != None:
+                row.append( E.td( E.div(str(data_field[r]), CLASS='ali'), nowrap='') )
+            else:
+                row.append( E.td( E.div('', CLASS='ali'), nowrap='') )
+
         if aa_css_class_list != None:
             if aa_css_class_list[r] != None:
                 prettyseq = TargetExplorer.core.seq2pretty_html(aln[r], aa_css_class_list=aa_css_class_list[r])
@@ -72,6 +79,14 @@ def gen_html(aln, alnIDs, aa_css_class_list=None):
 
     return html_table
 
+AlnPlasmidData = {
+'cloneID': [],
+'clone_seq_aln': [],
+'UniProt_seq_aln': [],
+'nconflicts_target_domain_region': [],
+}
+
+
 # ========
 # Iterate through plasmids
 # ========
@@ -79,9 +94,16 @@ def gen_html(aln, alnIDs, aa_css_class_list=None):
 ofile = open('aln.txt', 'w')
 
 for i in range(len(df)):
-# for i in range(2):
     plasmid_data = df.loc[i]
     cloneID = plasmid_data['cloneID']
+    AlnPlasmidData['cloneID'].append(cloneID)
+    AlnPlasmidData['clone_seq_aln'].append(None)
+    AlnPlasmidData['UniProt_seq_aln'].append(None)
+    AlnPlasmidData['nconflicts_target_domain_region'].append(None)
+
+    # if cloneID != 'CAMK2GA-c013':
+    #     continue
+
     print 'Working on cloneID %s' % cloneID
     UniProtAC = plasmid_data['UniProtAC']
     DB_entry = DB_root.find('entry/UniProt[@AC="%s"]/..' % UniProtAC)
@@ -108,7 +130,7 @@ for i in range(len(df)):
     aln = Bio.pairwise2.align.globalds(UniProt_seq, plasmid_insert_seq, matrix, gap_open, gap_extend)
     aln = [aln[0][0], aln[0][1]]
 
-    # Add expression tag back into the alignmed plasmid seq
+    # Add expression tag back into the aligned plasmid seq
     if expr_tag_seq != None:
         plasmid_seq_aln_aa_start = re.search('[A-Za-z]', aln[1]).start()
         UniProt_aln_list = list(aln[0])
@@ -138,11 +160,23 @@ for i in range(len(df)):
     domains = DB_entry.findall('UniProt/domains/domain[@targetID]')
     aa_css_class_list = [None] * len(aln)
     aa_css_class_list[0] = ['bl'] * len(aln[0])
+    nconflicts = []
     for domain in domains:
         domain_seq = ''.join(domain.findtext('sequence').strip().split('\n'))
         domain_seq_regex = ''.join( [ aa + '-*' for aa in domain_seq ] )
-        UniProt_aln_domain = re.search(domain_seq_regex, aln[0])
-        aa_css_class_list[0][slice(*UniProt_aln_domain.span())] = ['c4'] * (UniProt_aln_domain.end() - UniProt_aln_domain.start())
+        UniProt_domain_aln_coords = re.search(domain_seq_regex, aln[0])
+        aa_css_class_list[0][slice(*UniProt_domain_aln_coords.span())] = ['c4'] * (UniProt_domain_aln_coords.end() - UniProt_domain_aln_coords.start())
+
+        # Count conflicting residues within the target domain region
+        nconflicts.append(0)
+        for a in range(UniProt_domain_aln_coords.start(), UniProt_domain_aln_coords.end()):
+            if aln[0][a] == '-' or aln[1][a] == '-':
+                nconflicts[-1] += 1
+            elif aln[0][a].upper() != aln[1][a].upper():
+                nconflicts[-1] += 1
+
+    additional_data = [[None, nconflicts[0]],]
+
 
     # Write to aligned sequences to text file
     ofile.write(aln[0] + '\n')
@@ -150,12 +184,24 @@ for i in range(len(df)):
 
     # Generate html
     alnIDs = [UniProt_entry_name, cloneID]
-    html_table = gen_html(aln, alnIDs, aa_css_class_list=aa_css_class_list)
+    html_table = gen_html(aln, alnIDs, additional_data=additional_data, aa_css_class_list=aa_css_class_list)
     output_html_body.append(html_table)
+
+    # Construct AlnPlasmidData dict
+    AlnPlasmidData['clone_seq_aln'][-1] = aln[0]
+    AlnPlasmidData['UniProt_seq_aln'][-1] = aln[1]
+    AlnPlasmidData['nconflicts_target_domain_region'][-1] = str(nconflicts[0])
 
 ofile.close()
 
 # write html
 with open('aln.html', 'w') as htmlfile:
     htmlfile.write( etree.tostring(output_html_tree, pretty_print=True) )
+
+# write csv
+df = df.set_index(df['cloneID'])
+df['clone_seq_aln'] = pd.Series(AlnPlasmidData['clone_seq_aln'], index=pd.Series(AlnPlasmidData['cloneID']))
+df['UniProt_seq_aln'] = pd.Series(AlnPlasmidData['UniProt_seq_aln'], index=pd.Series(AlnPlasmidData['cloneID']))
+df['nconflicts_target_domain_region'] = pd.Series(AlnPlasmidData['nconflicts_target_domain_region'], index=pd.Series(AlnPlasmidData['cloneID']))
+df.to_csv('aln.csv')
 
