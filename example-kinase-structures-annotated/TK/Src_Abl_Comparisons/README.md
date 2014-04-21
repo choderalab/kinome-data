@@ -1,5 +1,14 @@
 This folder is simple so far, just this README and some .pml files
 
+PML Files
+---------
+
+* Shaw-PNAS-2009.pml
+* Aleksandrov-Simonson-JBC-2010.pml
+* Lovera-Gervasio-JACS-2012.pml
+* Lin-Roux-PNAS-2013.pml
+* Shukla-Pande-NComm-2014.pml
+
 
 # Src and Abl PDB notes. 
 
@@ -16,14 +25,14 @@ Abl
 ---
 
 * 1OPL (o)
-* 2F4J (i)              (1) (4)
+* 2F4J (i) **(1) (4)**
 * 2FO0
-* 2HYY (o)              (2)
+* 2HYY (o) **(2)**
 * 2Z60 T315I Mouse Abl
 * 3K5V (IMA)
-* 1IEP (IMA) (o)        (4)
-* 2G1T (10) (i)         (3)
-* 1OPK (o)              (1)
+* 1IEP (IMA) (o) **(4)**
+* 2G1T (10) (i) **(3)**
+* 1OPK (o) **(1)**
 * 1M52 (o)
 * 1FPU (o)
 * 3UE4 (6) (BOS)
@@ -32,10 +41,10 @@ Src
 ---
 
 * 1FMK
-* 1Y57 (i) (inact)      (4) (5)
+* 1Y57 (i) (inact) **(4) (5)**
 * 2H8H
-* 2SRC (i) (act)        (3) (5)
-* 2OIQ (8) (IMA) (o)    (2) (4)
+* 2SRC (i) (act) **(3) (5)**
+* 2OIQ (8) (IMA) (o) **(2) (4)**
 * 4MXO (7) (BOS) WT Human Src
 * 4MXX (7) (BOS) A403T Human Src
 * 4MXY (7) (BOS) M314L T338M Human Src
@@ -51,16 +60,19 @@ Src
 Relevant references
 -------------------
 
-1. PNAS 2009 (DE Shaw) - (i) vs (o) of Abl
-2. JBC 2010            - (o) of Abl vs (o) of Src
-3. JACS 2012           - (i) of Abl vs (i) of Src
-4. PNAS 2013 (Roux)    - (i&o) of Abl vs. (i&o) of Src
-5. Nat. Comm. 2014     - (inact) vs. (act) of Src
-
-6. PLoS ONE 2012
-7. Nat. Chem. Bio. 2014
-8. Structure 2007
-9. Cancer Res. 2009
-10. Plos Biol. 2006 
-
+1. Shan...Shaw, PNAS (2009)  
+ - (i) vs (o) of Abl [2F4J and 1OPK]
+2. Aleksandrov & Simonson, JBC (2010)            
+ - (o) of Abl vs (o) of Src [2HYY and 2OIQ]
+3. Lovera...Gervasio, JACS (2012)           
+ - (i) of Abl vs (i) of Src [2G1T and 2SRC]
+4. Lin...Roux, PNAS (2013)    
+ - (i&o) of Abl vs. (i&o) of Src [2F4J, 1IEP, 1Y57, and 2OIQ]
+5. Shukla...Pande, Nat. Comm. (2014)     
+ - (inact) vs. (act) of Src [1Y57 and 2SRC]
+6. Levinson & Boxer, PLoS ONE (2012) [3UE4]
+7. Levinson & Boxer, Nat. Chem. Bio. (2014) [4MXO 4MXX 4MXY 4MXZ]
+8. Seeliger...Kuriyan, Structure (2007) [2OIQ]
+9. Seeliger...Mali, Cancer Res. (2009) [3G6H 3G6G]
+10. Levinson...Kuriyan, Plos Biol. (2006) [2G1T]
 11. These are four Src structures in the PDB that are titled 'crystal structure of the L317I mutant of the chicken c-Src tyrosine kinase domain' complexed with either imatinib, dasatinib, or pyrazolopyrimidine-5 and annotated 'Journal: To be Published'.
