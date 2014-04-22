@@ -85,6 +85,8 @@ AlnPlasmidData = {
 'UniProt_seq_aln': [],
 'nconflicts_target_domain_region': [],
 'nextraneous_plasmid_residues': [],
+'matching_domainID': [],
+'matching_targetID': [],
 }
 
 
@@ -101,8 +103,10 @@ for cloneID in df.index:
     AlnPlasmidData['UniProt_seq_aln'].append(None)
     AlnPlasmidData['nconflicts_target_domain_region'].append(None)
     AlnPlasmidData['nextraneous_plasmid_residues'].append(None)
+    AlnPlasmidData['matching_domainID'].append(None)
+    AlnPlasmidData['matching_targetID'].append(None)
 
-    # if cloneID != 'CAMK2GA-c013':
+    # if cloneID != 'TAF1A-c005':
     #     continue
 
     print 'Working on cloneID %s' % cloneID
@@ -133,6 +137,7 @@ for cloneID in df.index:
     aln = [aln[0][0], aln[0][1]]
 
     # Calculate the number of plasmid residues outside the target domain region (excluding N-terminal expression tag)
+    # Also use this to determine which target domain the plasmid is most likely to represent
     nextraneous_plasmid_residues = []
     for domain in domains:
         nextraneous_plasmid_residues.append(0)
@@ -143,7 +148,10 @@ for cloneID in df.index:
             # print a, aln[1][a], UniProt_domain_aln_coords.start(), UniProt_domain_aln_coords.end()
             if (a < UniProt_domain_aln_coords.start() and aln[1][a] != '-') or (a >= UniProt_domain_aln_coords.end() and aln[1][a] != '-'):
                 nextraneous_plasmid_residues[-1] += 1
-    nextraneous_plasmid_residues = min(nextraneous_plasmid_residues)
+    from operator import itemgetter
+    domainID, nextraneous_plasmid_residues = min(enumerate(nextraneous_plasmid_residues), key=itemgetter(1))
+    targetID = UniProt_entry_name + '_D' + str(domainID)
+    print targetID
 
 
     # Add expression tag back into the aligned plasmid seq
@@ -190,7 +198,7 @@ for cloneID in df.index:
             elif aln[0][a].upper() != aln[1][a].upper():
                 nconflicts[-1] += 1
 
-    nconflicts = min(nconflicts)
+    nconflicts = nconflicts[domainID]
 
 
     additional_data = [[None, nconflicts],[None, nextraneous_plasmid_residues]]
@@ -209,6 +217,8 @@ for cloneID in df.index:
     AlnPlasmidData['UniProt_seq_aln'][-1] = aln[1]
     AlnPlasmidData['nconflicts_target_domain_region'][-1] = str(nconflicts)
     AlnPlasmidData['nextraneous_plasmid_residues'][-1] = str(nextraneous_plasmid_residues)
+    AlnPlasmidData['matching_domainID'][-1] = str(domainID)
+    AlnPlasmidData['matching_targetID'][-1] = str(targetID)
 
 ofile.close()
 

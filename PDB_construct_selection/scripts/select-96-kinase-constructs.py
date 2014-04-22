@@ -44,14 +44,25 @@ selected_pdb_constructs.set_index(np.arange(len(selected_sgc_plasmids), 96), inp
 # ========
 # Rename columns to be more readable, and so that sgc and pdb column names match
 # ========
-rename_dict = {
+pdb_rename_dict = {
 'top_cloneID': 'cloneID',
 'top_plasmid_nconflicts': 'nconflicts_target_domain_region',
 'nmatching_PDB_structures':'nPDBs',
 'top_cnstrct_expr_tag':'expr_tag',
 'top_cnstrct_auth_score':'auth_score',
 }
-selected_pdb_constructs.rename(columns=rename_dict, inplace=True)
+selected_pdb_constructs.rename(columns=pdb_rename_dict, inplace=True)
+
+sgc_rename_dict = {
+'matching_targetID': 'targetID',
+}
+selected_sgc_plasmids.rename(columns=sgc_rename_dict, inplace=True)
+
+# ========
+# Add column defining plasmid library source
+# ========
+selected_sgc_plasmids['plasmid_lib'] = pd.Series(['SGC Oxford'] * len(selected_sgc_plasmids), index=selected_sgc_plasmids.index)
+selected_pdb_constructs['plasmid_lib'] = pd.Series(['HIP pJP1520'] * len(selected_pdb_constructs), index=selected_pdb_constructs.index)
 
 # ========
 # Output data
