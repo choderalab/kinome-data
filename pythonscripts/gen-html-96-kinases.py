@@ -22,10 +22,28 @@ html = etree.parse(StringIO.StringIO(pd_html), parser).getroot()
 table_children = html.find('body/table').getchildren()
 
 # ========
+# Strip whitespace added by pandas (seems to happen due to a bug in pandas)
+# Also need to tell tablesorter to sort certain columns numerically (this is necessary if the column also contains non-numerical data, such as 'NaN' from pandas)
+# ========
+
+thead = table_children[0]
+tbody = table_children[-1]
+for tr in thead:
+    for element in tr.getchildren():
+        try:
+            element.text = element.text.strip()
+        except AttributeError:
+            continue
+        if element.text in ['nconflicts_target_domain_region', 'nextraneous_plasmid_residues', 'nPDBs', 'auth_score', 'DB_target_rank']:
+            element.set("class", "{sorter: 'digit'}")
+for tr in tbody:
+    for element in tr.getchildren():
+        element.text = element.text.strip()
+
+# ========
 # Add href links to alignments for HIP plasmids
 # ========
 
-tbody = table_children[-1]
 for tr in tbody:
     if 'HIP pJP1520' in tr.findtext('td'):
         cloneID_td = tr.find('td[2]')

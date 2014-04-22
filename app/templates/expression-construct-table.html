@@ -6,6 +6,7 @@
     <script type="text/javascript" src="javascript/jquery.tablesorter/jquery-latest.js"></script>
     <script type="text/javascript" src="javascript/jquery.tablesorter/jquery.tablesorter.min.js"></script>
     <script type="text/javascript" src="javascript/jquery.tablesorter/addons/pager/jquery.tablesorter.pager.js"></script>
+    <script type="text/javascript" src="javascript/jquery.tablesorter/jquery.metadata.js"></script>
     <script type="text/javascript">
     $(function() {
       // add new widget called repeatHeaders
@@ -38,6 +39,10 @@
     <div id="container">
       <h1>{{title}}</h1>
       <h3>{{subtitle}}</h3>
+      <h4>Notes</h4>
+      <p>
+        Click on the cloneID to see sequence alignment.
+      </p>
       <table border="1" class="tablesorter" id="maintable">
         {{maintable}}
       </table>

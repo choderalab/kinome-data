@@ -6,6 +6,7 @@
     <script type="text/javascript" src="javascript/jquery.tablesorter/jquery-latest.js"></script>
     <script type="text/javascript" src="javascript/jquery.tablesorter/jquery.tablesorter.min.js"></script>
     <script type="text/javascript" src="javascript/jquery.tablesorter/addons/pager/jquery.tablesorter.pager.js"></script>
+    <script type="text/javascript" src="javascript/jquery.tablesorter/jquery.metadata.js"></script>
     <script type="text/javascript">
     $(function() {
       // add new widget called repeatHeaders
@@ -38,978 +39,982 @@
     <div id="container">
       <h1>96 kinases</h1>
       <h3>Selected from SGC and HIP pJP1520 plasmid libraries</h3>
+      <h4>Notes</h4>
+      <p>
+        Click on the cloneID to see sequence alignment.
+      </p>
       <table border="1" class="tablesorter" id="maintable">
         <thead><tr style="text-align: right;"><th/>
       <th>plasmid_lib</th>
       <th>cloneID</th>
       <th>targetID</th>
-      <th>nconflicts_target_domain_region</th>
-      <th>nextraneous_plasmid_residues</th>
-      <th>nPDBs</th>
+      <th class="{sorter: 'digit'}">nconflicts_target_domain_region</th>
+      <th class="{sorter: 'digit'}">nextraneous_plasmid_residues</th>
+      <th class="{sorter: 'digit'}">nPDBs</th>
       <th>expr_tag</th>
-      <th>auth_score</th>
-      <th>DB_target_rank</th>
+      <th class="{sorter: 'digit'}">auth_score</th>
+      <th class="{sorter: 'digit'}">DB_target_rank</th>
     </tr></thead>
-<tbody><tr><th>0 </th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/AURKBA-c004.html">     AURKBA-c004</a></td>
-      <td> AURKB_HUMAN_D0</td>
-      <td> 1</td>
-      <td>  39</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+<tbody><tr><th>0</th>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/AURKBA-c004.html">AURKBA-c004</a></td>
+      <td>AURKB_HUMAN_D0</td>
+      <td>1</td>
+      <td>39</td>
       <td>NaN</td>
-      <td>  38</td>
-    </tr><tr><th>1 </th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/TYK2A-c075.html">      TYK2A-c075</a></td>
-      <td>  TYK2_HUMAN_D0</td>
-      <td> 2</td>
-      <td>  48</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
       <td>NaN</td>
-      <td>  64</td>
-    </tr><tr><th>2 </th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/PIM1A-c001.html">      PIM1A-c001</a></td>
-      <td>  PIM1_HUMAN_D0</td>
-      <td> 1</td>
-      <td>  58</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
       <td>NaN</td>
-      <td>  76</td>
-    </tr><tr><th>3 </th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/BMPR2A-c019.html">     BMPR2A-c019</a></td>
-      <td> BMPR2_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  34</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>38</td>
+    </tr><tr><th>1</th>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/TYK2A-c075.html">TYK2A-c075</a></td>
+      <td>TYK2_HUMAN_D0</td>
+      <td>2</td>
+      <td>48</td>
       <td>NaN</td>
-      <td>  77</td>
-    </tr><tr><th>4 </th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/DYRK1AA-c004.html">    DYRK1AA-c004</a></td>
-      <td> DYR1A_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  38</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
       <td>NaN</td>
-      <td>  81</td>
-    </tr><tr><th>5 </th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/LIMK1A-c056.html">     LIMK1A-c056</a></td>
-      <td> LIMK1_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  42</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
       <td>NaN</td>
-      <td>  85</td>
-    </tr><tr><th>6 </th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/CDKL5A-c014.html">     CDKL5A-c014</a></td>
-      <td> CDKL5_HUMAN_D0</td>
-      <td> 2</td>
-      <td>  17</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>64</td>
+    </tr><tr><th>2</th>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/PIM1A-c001.html">PIM1A-c001</a></td>
+      <td>PIM1_HUMAN_D0</td>
+      <td>1</td>
+      <td>58</td>
       <td>NaN</td>
-      <td> 103</td>
-    </tr><tr><th>7 </th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/PIM2A-c007.html">      PIM2A-c007</a></td>
-      <td>  PIM2_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  55</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
       <td>NaN</td>
-      <td> 105</td>
-    </tr><tr><th>8 </th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/BMPR1BA-c017.html">    BMPR1BA-c017</a></td>
-      <td> BMR1B_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  44</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
       <td>NaN</td>
-      <td> 106</td>
-    </tr><tr><th>9 </th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/DMPK1A-c026.html">     DMPK1A-c026</a></td>
-      <td>  DMPK_HUMAN_D0</td>
-      <td> 0</td>
-      <td> 141</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>76</td>
+    </tr><tr><th>3</th>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/BMPR2A-c019.html">BMPR2A-c019</a></td>
+      <td>BMPR2_HUMAN_D0</td>
+      <td>0</td>
+      <td>34</td>
       <td>NaN</td>
-      <td> 109</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>77</td>
+    </tr><tr><th>4</th>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/DYRK1AA-c004.html">DYRK1AA-c004</a></td>
+      <td>DYR1A_HUMAN_D0</td>
+      <td>0</td>
+      <td>38</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>81</td>
+    </tr><tr><th>5</th>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/LIMK1A-c056.html">LIMK1A-c056</a></td>
+      <td>LIMK1_HUMAN_D0</td>
+      <td>0</td>
+      <td>42</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>85</td>
+    </tr><tr><th>6</th>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/CDKL5A-c014.html">CDKL5A-c014</a></td>
+      <td>CDKL5_HUMAN_D0</td>
+      <td>2</td>
+      <td>17</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>103</td>
+    </tr><tr><th>7</th>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/PIM2A-c007.html">PIM2A-c007</a></td>
+      <td>PIM2_HUMAN_D0</td>
+      <td>0</td>
+      <td>55</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>105</td>
+    </tr><tr><th>8</th>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/BMPR1BA-c017.html">BMPR1BA-c017</a></td>
+      <td>BMR1B_HUMAN_D0</td>
+      <td>0</td>
+      <td>44</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>106</td>
+    </tr><tr><th>9</th>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/DMPK1A-c026.html">DMPK1A-c026</a></td>
+      <td>DMPK_HUMAN_D0</td>
+      <td>0</td>
+      <td>141</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>109</td>
     </tr><tr><th>10</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/ACVRL1A-c079.html">    ACVRL1A-c079</a></td>
-      <td> ACVL1_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  12</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/ACVRL1A-c079.html">ACVRL1A-c079</a></td>
+      <td>ACVL1_HUMAN_D0</td>
+      <td>0</td>
+      <td>12</td>
       <td>NaN</td>
-      <td> 113</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>113</td>
     </tr><tr><th>11</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/FESA-c001.html">       FESA-c001</a></td>
-      <td>   FES_HUMAN_D0</td>
-      <td> 0</td>
-      <td> 113</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/FESA-c001.html">FESA-c001</a></td>
+      <td>FES_HUMAN_D0</td>
+      <td>0</td>
+      <td>113</td>
       <td>NaN</td>
-      <td> 116</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>116</td>
     </tr><tr><th>12</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/ACVR1A-c076.html">     ACVR1A-c076</a></td>
-      <td> ACVR1_HUMAN_D0</td>
-      <td> 3</td>
-      <td>  36</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/ACVR1A-c076.html">ACVR1A-c076</a></td>
+      <td>ACVR1_HUMAN_D0</td>
+      <td>3</td>
+      <td>36</td>
       <td>NaN</td>
-      <td> 120</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>120</td>
     </tr><tr><th>13</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/ACVR1A-c096.html">     ACVR1A-c096</a></td>
-      <td> ACVR1_HUMAN_D0</td>
-      <td> 3</td>
-      <td>   7</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/ACVR1A-c096.html">ACVR1A-c096</a></td>
+      <td>ACVR1_HUMAN_D0</td>
+      <td>3</td>
+      <td>7</td>
       <td>NaN</td>
-      <td> 120</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>120</td>
     </tr><tr><th>14</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/STK10A-c013.html">     STK10A-c013</a></td>
-      <td> STK10_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  41</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/STK10A-c013.html">STK10A-c013</a></td>
+      <td>STK10_HUMAN_D0</td>
+      <td>0</td>
+      <td>41</td>
       <td>NaN</td>
-      <td> 125</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>125</td>
     </tr><tr><th>15</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/RPS6KA1A-c036.html">   RPS6KA1A-c036</a></td>
-      <td> KS6A1_HUMAN_D1</td>
-      <td> 0</td>
-      <td>  65</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/RPS6KA1A-c036.html">RPS6KA1A-c036</a></td>
+      <td>KS6A1_HUMAN_D1</td>
+      <td>0</td>
+      <td>65</td>
       <td>NaN</td>
-      <td> 130</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>130</td>
     </tr><tr><th>16</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/PHKG2A-c020.html">     PHKG2A-c020</a></td>
-      <td> PHKG2_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  20</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/PHKG2A-c020.html">PHKG2A-c020</a></td>
+      <td>PHKG2_HUMAN_D0</td>
+      <td>0</td>
+      <td>20</td>
       <td>NaN</td>
-      <td> 135</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>135</td>
     </tr><tr><th>17</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/NEK1A-c011.html">      NEK1A-c011</a></td>
-      <td>  NEK1_HUMAN_D0</td>
-      <td> 1</td>
-      <td>  72</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/NEK1A-c011.html">NEK1A-c011</a></td>
+      <td>NEK1_HUMAN_D0</td>
+      <td>1</td>
+      <td>72</td>
       <td>NaN</td>
-      <td> 139</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>139</td>
     </tr><tr><th>18</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/MAP3K5A-c005.html">    MAP3K5A-c005</a></td>
-      <td>  M3K5_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  34</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/MAP3K5A-c005.html">MAP3K5A-c005</a></td>
+      <td>M3K5_HUMAN_D0</td>
+      <td>0</td>
+      <td>34</td>
       <td>NaN</td>
-      <td> 152</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>152</td>
     </tr><tr><th>19</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/TTKA-c013.html">       TTKA-c013</a></td>
-      <td>   TTK_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  23</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/TTKA-c013.html">TTKA-c013</a></td>
+      <td>TTK_HUMAN_D0</td>
+      <td>0</td>
+      <td>23</td>
       <td>NaN</td>
-      <td> 157</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>157</td>
     </tr><tr><th>20</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/MAPK11A-c007.html">    MAPK11A-c007</a></td>
-      <td>  MK11_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  61</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/MAPK11A-c007.html">MAPK11A-c007</a></td>
+      <td>MK11_HUMAN_D0</td>
+      <td>0</td>
+      <td>61</td>
       <td>NaN</td>
-      <td> 158</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>158</td>
     </tr><tr><th>21</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/NEK2A-c112.html">      NEK2A-c112</a></td>
-      <td>  NEK2_HUMAN_D0</td>
-      <td> 1</td>
-      <td>  15</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/NEK2A-c112.html">NEK2A-c112</a></td>
+      <td>NEK2_HUMAN_D0</td>
+      <td>1</td>
+      <td>15</td>
       <td>NaN</td>
-      <td> 159</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>159</td>
     </tr><tr><th>22</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/PAK4A-c010.html">      PAK4A-c010</a></td>
-      <td>  PAK4_HUMAN_D0</td>
-      <td> 0</td>
-      <td> 280</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/PAK4A-c010.html">PAK4A-c010</a></td>
+      <td>PAK4_HUMAN_D0</td>
+      <td>0</td>
+      <td>280</td>
       <td>NaN</td>
-      <td> 163</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>163</td>
     </tr><tr><th>23</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/CLK1A-c007.html">      CLK1A-c007</a></td>
-      <td>  CLK1_HUMAN_D0</td>
-      <td> 1</td>
-      <td>  20</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/CLK1A-c007.html">CLK1A-c007</a></td>
+      <td>CLK1_HUMAN_D0</td>
+      <td>1</td>
+      <td>20</td>
       <td>NaN</td>
-      <td> 171</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>171</td>
     </tr><tr><th>24</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/CAMK2DA-c028.html">    CAMK2DA-c028</a></td>
-      <td> KCC2D_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  66</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/CAMK2DA-c028.html">CAMK2DA-c028</a></td>
+      <td>KCC2D_HUMAN_D0</td>
+      <td>0</td>
+      <td>66</td>
       <td>NaN</td>
-      <td> 173</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>173</td>
     </tr><tr><th>25</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/MAPK7A-c029.html">     MAPK7A-c029</a></td>
-      <td>  MK07_HUMAN_D0</td>
-      <td> 0</td>
-      <td> 103</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/MAPK7A-c029.html">MAPK7A-c029</a></td>
+      <td>MK07_HUMAN_D0</td>
+      <td>0</td>
+      <td>103</td>
       <td>NaN</td>
-      <td> 183</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>183</td>
     </tr><tr><th>26</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/CLK2A-c015.html">      CLK2A-c015</a></td>
-      <td>  CLK2_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  49</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/CLK2A-c015.html">CLK2A-c015</a></td>
+      <td>CLK2_HUMAN_D0</td>
+      <td>0</td>
+      <td>49</td>
       <td>NaN</td>
-      <td> 195</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>195</td>
     </tr><tr><th>27</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/DAPK3A-c010.html">     DAPK3A-c010</a></td>
-      <td> DAPK3_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  18</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/DAPK3A-c010.html">DAPK3A-c010</a></td>
+      <td>DAPK3_HUMAN_D0</td>
+      <td>0</td>
+      <td>18</td>
       <td>NaN</td>
-      <td> 196</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>196</td>
     </tr><tr><th>28</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/TNIKA-c012.html">      TNIKA-c012</a></td>
-      <td>  TNIK_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  59</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/TNIKA-c012.html">TNIKA-c012</a></td>
+      <td>TNIK_HUMAN_D0</td>
+      <td>0</td>
+      <td>59</td>
       <td>NaN</td>
-      <td> 199</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>199</td>
     </tr><tr><th>29</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/GAKA-c006.html">       GAKA-c006</a></td>
-      <td>   GAK_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  61</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/GAKA-c006.html">GAKA-c006</a></td>
+      <td>GAK_HUMAN_D0</td>
+      <td>0</td>
+      <td>61</td>
       <td>NaN</td>
-      <td> 203</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>203</td>
     </tr><tr><th>30</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/SLKA-c004.html">       SLKA-c004</a></td>
-      <td>   SLK_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  43</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/SLKA-c004.html">SLKA-c004</a></td>
+      <td>SLK_HUMAN_D0</td>
+      <td>0</td>
+      <td>43</td>
       <td>NaN</td>
-      <td> 210</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>210</td>
     </tr><tr><th>31</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/ABL2A-c055.html">      ABL2A-c055</a></td>
-      <td>  ABL2_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  16</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/ABL2A-c055.html">ABL2A-c055</a></td>
+      <td>ABL2_HUMAN_D0</td>
+      <td>0</td>
+      <td>16</td>
       <td>NaN</td>
-      <td> 213</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>213</td>
     </tr><tr><th>32</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/MAP2K6A-c025.html">    MAP2K6A-c025</a></td>
-      <td> MP2K6_HUMAN_D0</td>
-      <td> 2</td>
-      <td>  26</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/MAP2K6A-c025.html">MAP2K6A-c025</a></td>
+      <td>MP2K6_HUMAN_D0</td>
+      <td>2</td>
+      <td>26</td>
       <td>NaN</td>
-      <td> 216</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>216</td>
     </tr><tr><th>33</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/ACVR2A-c046.html">     ACVR2A-c046</a></td>
-      <td> AVR2A_HUMAN_D0</td>
-      <td> 0</td>
-      <td>   4</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/ACVR2A-c046.html">ACVR2A-c046</a></td>
+      <td>AVR2A_HUMAN_D0</td>
+      <td>0</td>
+      <td>4</td>
       <td>NaN</td>
-      <td> 222</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>222</td>
     </tr><tr><th>34</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/CAMK2GA-c006.html">    CAMK2GA-c006</a></td>
-      <td> KCC2G_HUMAN_D0</td>
-      <td> 1</td>
-      <td>  54</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/CAMK2GA-c006.html">CAMK2GA-c006</a></td>
+      <td>KCC2G_HUMAN_D0</td>
+      <td>1</td>
+      <td>54</td>
       <td>NaN</td>
-      <td> 225</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>225</td>
     </tr><tr><th>35</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/DDR1A-c002.html">      DDR1A-c002</a></td>
-      <td>  DDR1_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  17</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/DDR1A-c002.html">DDR1A-c002</a></td>
+      <td>DDR1_HUMAN_D0</td>
+      <td>0</td>
+      <td>17</td>
       <td>NaN</td>
-      <td> 226</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>226</td>
     </tr><tr><th>36</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/CAMK4A-c007.html">     CAMK4A-c007</a></td>
-      <td>  KCC4_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  71</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/CAMK4A-c007.html">CAMK4A-c007</a></td>
+      <td>KCC4_HUMAN_D0</td>
+      <td>0</td>
+      <td>71</td>
       <td>NaN</td>
-      <td> 228</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>228</td>
     </tr><tr><th>37</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/CLK3A-c005.html">      CLK3A-c005</a></td>
-      <td>  CLK3_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  41</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/CLK3A-c005.html">CLK3A-c005</a></td>
+      <td>CLK3_HUMAN_D0</td>
+      <td>0</td>
+      <td>41</td>
       <td>NaN</td>
-      <td> 229</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>229</td>
     </tr><tr><th>38</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/CDC42BPAA-c004.html">  CDC42BPAA-c004</a></td>
-      <td> MRCKA_HUMAN_D0</td>
-      <td> 4</td>
-      <td> 171</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/CDC42BPAA-c004.html">CDC42BPAA-c004</a></td>
+      <td>MRCKA_HUMAN_D0</td>
+      <td>4</td>
+      <td>171</td>
       <td>NaN</td>
-      <td> 233</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>233</td>
     </tr><tr><th>39</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/CSNK1G2A-c002.html">   CSNK1G2A-c002</a></td>
-      <td> KC1G2_HUMAN_D0</td>
-      <td> 1</td>
-      <td>  41</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/CSNK1G2A-c002.html">CSNK1G2A-c002</a></td>
+      <td>KC1G2_HUMAN_D0</td>
+      <td>1</td>
+      <td>41</td>
       <td>NaN</td>
-      <td> 236</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>236</td>
     </tr><tr><th>40</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/CAMK2BA-c013.html">    CAMK2BA-c013</a></td>
-      <td> KCC2B_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  34</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/CAMK2BA-c013.html">CAMK2BA-c013</a></td>
+      <td>KCC2B_HUMAN_D0</td>
+      <td>0</td>
+      <td>34</td>
       <td>NaN</td>
-      <td> 246</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>246</td>
     </tr><tr><th>41</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/PAK5A-c011.html">      PAK5A-c011</a></td>
-      <td>  PAK7_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  43</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/PAK5A-c011.html">PAK5A-c011</a></td>
+      <td>PAK7_HUMAN_D0</td>
+      <td>0</td>
+      <td>43</td>
       <td>NaN</td>
-      <td> 248</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>248</td>
     </tr><tr><th>42</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/CAMK1DA-c011.html">    CAMK1DA-c011</a></td>
-      <td> KCC1D_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  75</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/CAMK1DA-c011.html">CAMK1DA-c011</a></td>
+      <td>KCC1D_HUMAN_D0</td>
+      <td>0</td>
+      <td>75</td>
       <td>NaN</td>
-      <td> 249</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>249</td>
     </tr><tr><th>43</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/DYRK2A-c023.html">     DYRK2A-c023</a></td>
-      <td> DYRK2_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  80</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/DYRK2A-c023.html">DYRK2A-c023</a></td>
+      <td>DYRK2_HUMAN_D0</td>
+      <td>0</td>
+      <td>80</td>
       <td>NaN</td>
-      <td> 250</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>250</td>
     </tr><tr><th>44</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/DYRK2A-c022.html">     DYRK2A-c022</a></td>
-      <td> DYRK2_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  92</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/DYRK2A-c022.html">DYRK2A-c022</a></td>
+      <td>DYRK2_HUMAN_D0</td>
+      <td>0</td>
+      <td>92</td>
       <td>NaN</td>
-      <td> 250</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>250</td>
     </tr><tr><th>45</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/CSNK1G1A-c013.html">   CSNK1G1A-c013</a></td>
-      <td> KC1G1_HUMAN_D0</td>
-      <td> 1</td>
-      <td>  37</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/CSNK1G1A-c013.html">CSNK1G1A-c013</a></td>
+      <td>KC1G1_HUMAN_D0</td>
+      <td>1</td>
+      <td>37</td>
       <td>NaN</td>
-      <td> 274</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>274</td>
     </tr><tr><th>46</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/STK17BA-c014.html">    STK17BA-c014</a></td>
-      <td> ST17B_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  43</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/STK17BA-c014.html">STK17BA-c014</a></td>
+      <td>ST17B_HUMAN_D0</td>
+      <td>0</td>
+      <td>43</td>
       <td>NaN</td>
-      <td> 282</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>282</td>
     </tr><tr><th>47</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/PAK6A-c014.html">      PAK6A-c014</a></td>
-      <td>  PAK6_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  61</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/PAK6A-c014.html">PAK6A-c014</a></td>
+      <td>PAK6_HUMAN_D0</td>
+      <td>0</td>
+      <td>61</td>
       <td>NaN</td>
-      <td> 284</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>284</td>
     </tr><tr><th>48</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/MAPK6A-c013.html">     MAPK6A-c013</a></td>
-      <td>  MK06_HUMAN_D0</td>
-      <td> 1</td>
-      <td>  21</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/MAPK6A-c013.html">MAPK6A-c013</a></td>
+      <td>MK06_HUMAN_D0</td>
+      <td>1</td>
+      <td>21</td>
       <td>NaN</td>
-      <td> 288</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>288</td>
     </tr><tr><th>49</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/CSNK1G3A-c002.html">   CSNK1G3A-c002</a></td>
-      <td> KC1G3_HUMAN_D0</td>
-      <td> 1</td>
-      <td>  57</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/CSNK1G3A-c002.html">CSNK1G3A-c002</a></td>
+      <td>KC1G3_HUMAN_D0</td>
+      <td>1</td>
+      <td>57</td>
       <td>NaN</td>
-      <td> 291</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>291</td>
     </tr><tr><th>50</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/YSK1A-c020.html">      YSK1A-c020</a></td>
-      <td> STK25_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  41</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/YSK1A-c020.html">YSK1A-c020</a></td>
+      <td>STK25_HUMAN_D0</td>
+      <td>0</td>
+      <td>41</td>
       <td>NaN</td>
-      <td> 297</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>297</td>
     </tr><tr><th>51</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/STK16A-c002.html">     STK16A-c002</a></td>
-      <td> STK16_HUMAN_D0</td>
-      <td> 1</td>
-      <td>  20</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/STK16A-c002.html">STK16A-c002</a></td>
+      <td>STK16_HUMAN_D0</td>
+      <td>1</td>
+      <td>20</td>
       <td>NaN</td>
-      <td> 299</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>299</td>
     </tr><tr><th>52</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/PKMYT1A-c004.html">    PKMYT1A-c004</a></td>
-      <td> PMYT1_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  38</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/PKMYT1A-c004.html">PKMYT1A-c004</a></td>
+      <td>PMYT1_HUMAN_D0</td>
+      <td>0</td>
+      <td>38</td>
       <td>NaN</td>
-      <td> 304</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>304</td>
     </tr><tr><th>53</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/LOC340156A-c049.html"> LOC340156A-c049</a></td>
-      <td> MYLK4_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  93</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/LOC340156A-c049.html">LOC340156A-c049</a></td>
+      <td>MYLK4_HUMAN_D0</td>
+      <td>0</td>
+      <td>93</td>
       <td>NaN</td>
-      <td> 306</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>306</td>
     </tr><tr><th>54</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/CAMK1GA-c034.html">    CAMK1GA-c034</a></td>
-      <td> KCC1G_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  47</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/CAMK1GA-c034.html">CAMK1GA-c034</a></td>
+      <td>KCC1G_HUMAN_D0</td>
+      <td>0</td>
+      <td>47</td>
       <td>NaN</td>
-      <td> 309</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>309</td>
     </tr><tr><th>55</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/CDKL3A-c014.html">     CDKL3A-c014</a></td>
-      <td> CDKL3_HUMAN_D0</td>
-      <td> 2</td>
-      <td>  40</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/CDKL3A-c014.html">CDKL3A-c014</a></td>
+      <td>CDKL3_HUMAN_D0</td>
+      <td>2</td>
+      <td>40</td>
       <td>NaN</td>
-      <td> 343</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>343</td>
     </tr><tr><th>56</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/CDKL2A-c006.html">     CDKL2A-c006</a></td>
-      <td> CDKL2_HUMAN_D0</td>
-      <td> 2</td>
-      <td>  23</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/CDKL2A-c006.html">CDKL2A-c006</a></td>
+      <td>CDKL2_HUMAN_D0</td>
+      <td>2</td>
+      <td>23</td>
       <td>NaN</td>
-      <td> 348</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>348</td>
     </tr><tr><th>57</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/VRK2A-c017.html">      VRK2A-c017</a></td>
-      <td>  VRK2_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  31</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/VRK2A-c017.html">VRK2A-c017</a></td>
+      <td>VRK2_HUMAN_D0</td>
+      <td>0</td>
+      <td>31</td>
       <td>NaN</td>
-      <td> 355</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>355</td>
     </tr><tr><th>58</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/CDKL1A-c024.html">     CDKL1A-c024</a></td>
-      <td> CDKL1_HUMAN_D0</td>
-      <td> 4</td>
-      <td>  42</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/CDKL1A-c024.html">CDKL1A-c024</a></td>
+      <td>CDKL1_HUMAN_D0</td>
+      <td>4</td>
+      <td>42</td>
       <td>NaN</td>
-      <td> 360</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>360</td>
     </tr><tr><th>59</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/YANK1A-c051.html">     YANK1A-c051</a></td>
-      <td> ST32A_HUMAN_D0</td>
-      <td> 0</td>
-      <td> 123</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/YANK1A-c051.html">YANK1A-c051</a></td>
+      <td>ST32A_HUMAN_D0</td>
+      <td>0</td>
+      <td>123</td>
       <td>NaN</td>
-      <td> 361</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>361</td>
     </tr><tr><th>60</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/GSG2A-c009.html">      GSG2A-c009</a></td>
-      <td>  HASP_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  19</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/GSG2A-c009.html">GSG2A-c009</a></td>
+      <td>HASP_HUMAN_D0</td>
+      <td>0</td>
+      <td>19</td>
       <td>NaN</td>
-      <td> 371</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>371</td>
     </tr><tr><th>61</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/CAMK2AA-c026.html">    CAMK2AA-c026</a></td>
-      <td> KCC2A_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  31</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/CAMK2AA-c026.html">CAMK2AA-c026</a></td>
+      <td>KCC2A_HUMAN_D0</td>
+      <td>0</td>
+      <td>31</td>
       <td>NaN</td>
-      <td> 376</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>376</td>
     </tr><tr><th>62</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/ROR2A-c013.html">      ROR2A-c013</a></td>
-      <td>  ROR2_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  14</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/ROR2A-c013.html">ROR2A-c013</a></td>
+      <td>ROR2_HUMAN_D0</td>
+      <td>0</td>
+      <td>14</td>
       <td>NaN</td>
-      <td> 378</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>378</td>
     </tr><tr><th>63</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/VRK1A-c510.html">      VRK1A-c510</a></td>
-      <td>  VRK1_HUMAN_D0</td>
-      <td> 6</td>
-      <td>  81</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/VRK1A-c510.html">VRK1A-c510</a></td>
+      <td>VRK1_HUMAN_D0</td>
+      <td>6</td>
+      <td>81</td>
       <td>NaN</td>
-      <td> 384</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>384</td>
     </tr><tr><th>64</th>
-      <td>  SGC Oxford</td>
-      <td><a href="plasmid-construct-alignments/SGC-Oxford/VRK3A-c016.html">      VRK3A-c016</a></td>
-      <td>  VRK3_HUMAN_D0</td>
-      <td> 0</td>
-      <td>  37</td>
-      <td> NaN</td>
-      <td>                   NaN</td>
+      <td>SGC Oxford</td>
+      <td><a href="plasmid-construct-alignments/SGC-Oxford/VRK3A-c016.html">VRK3A-c016</a></td>
+      <td>VRK3_HUMAN_D0</td>
+      <td>0</td>
+      <td>37</td>
       <td>NaN</td>
-      <td> 444</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>444</td>
     </tr><tr><th>65</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/BRAF_HUMAN_D0.html">    HsCD00038290</a></td>
-      <td>  BRAF_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>   4</td>
-      <td>     Nterm_TEV_cleaved</td>
-      <td> 10</td>
-      <td>   4</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/BRAF_HUMAN_D0.html">HsCD00038290</a></td>
+      <td>BRAF_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>4</td>
+      <td>Nterm_TEV_cleaved</td>
+      <td>10</td>
+      <td>4</td>
     </tr><tr><th>66</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/MET_HUMAN_D0.html">    HsCD00038375</a></td>
-      <td>   MET_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>   5</td>
-      <td>          Nterm_Histag</td>
-      <td>  7</td>
-      <td>   6</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/MET_HUMAN_D0.html">HsCD00038375</a></td>
+      <td>MET_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>5</td>
+      <td>Nterm_Histag</td>
+      <td>7</td>
+      <td>6</td>
     </tr><tr><th>67</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/SRC_HUMAN_D0.html">    HsCD00038220</a></td>
-      <td>   SRC_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>   4</td>
-      <td>     Nterm_TEV_cleaved</td>
-      <td> 10</td>
-      <td>  10</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/SRC_HUMAN_D0.html">HsCD00038220</a></td>
+      <td>SRC_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>4</td>
+      <td>Nterm_TEV_cleaved</td>
+      <td>10</td>
+      <td>10</td>
     </tr><tr><th>68</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/FGFR1_HUMAN_D0.html">    HsCD00038214</a></td>
-      <td> FGFR1_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>  13</td>
-      <td>          Nterm_Histag</td>
-      <td>  7</td>
-      <td>  11</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/FGFR1_HUMAN_D0.html">HsCD00038214</a></td>
+      <td>FGFR1_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>13</td>
+      <td>Nterm_Histag</td>
+      <td>7</td>
+      <td>11</td>
     </tr><tr><th>69</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/ABL1_HUMAN_D0.html">    HsCD00038619</a></td>
-      <td>  ABL1_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>   6</td>
-      <td>     Nterm_TEV_cleaved</td>
-      <td> 10</td>
-      <td>  12</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/ABL1_HUMAN_D0.html">HsCD00038619</a></td>
+      <td>ABL1_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>6</td>
+      <td>Nterm_TEV_cleaved</td>
+      <td>10</td>
+      <td>12</td>
     </tr><tr><th>70</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/MK14_HUMAN_D0.html">    HsCD00038087</a></td>
-      <td>  MK14_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td> 188</td>
-      <td>     Nterm_TEV_cleaved</td>
-      <td> 10</td>
-      <td>  14</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/MK14_HUMAN_D0.html">HsCD00038087</a></td>
+      <td>MK14_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>188</td>
+      <td>Nterm_TEV_cleaved</td>
+      <td>10</td>
+      <td>14</td>
     </tr><tr><th>71</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/MK01_HUMAN_D0.html">    HsCD00038083</a></td>
-      <td>  MK01_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>  32</td>
-      <td>     Nterm_TEV_cleaved</td>
-      <td> 10</td>
-      <td>  16</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/MK01_HUMAN_D0.html">HsCD00038083</a></td>
+      <td>MK01_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>32</td>
+      <td>Nterm_TEV_cleaved</td>
+      <td>10</td>
+      <td>16</td>
     </tr><tr><th>72</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/CHK2_HUMAN_D0.html">    HsCD00038127</a></td>
-      <td>  CHK2_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>  36</td>
-      <td> Nterm_other_extra_seq</td>
-      <td>  4</td>
-      <td>  24</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/CHK2_HUMAN_D0.html">HsCD00038127</a></td>
+      <td>CHK2_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>36</td>
+      <td>Nterm_other_extra_seq</td>
+      <td>4</td>
+      <td>24</td>
     </tr><tr><th>73</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/CDK2_HUMAN_D0.html">    HsCD00037964</a></td>
-      <td>  CDK2_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td> 164</td>
-      <td>     Nterm_TEV_cleaved</td>
-      <td> 10</td>
-      <td>  26</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/CDK2_HUMAN_D0.html">HsCD00037964</a></td>
+      <td>CDK2_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>164</td>
+      <td>Nterm_TEV_cleaved</td>
+      <td>10</td>
+      <td>26</td>
     </tr><tr><th>74</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/FAK1_HUMAN_D0.html">    HsCD00038381</a></td>
-      <td>  FAK1_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>   1</td>
-      <td>     Nterm_TEV_cleaved</td>
-      <td> 10</td>
-      <td>  31</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/FAK1_HUMAN_D0.html">HsCD00038381</a></td>
+      <td>FAK1_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>Nterm_TEV_cleaved</td>
+      <td>10</td>
+      <td>31</td>
     </tr><tr><th>75</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/MK08_HUMAN_D0.html">    HsCD00038084</a></td>
-      <td>  MK08_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>  26</td>
-      <td>          Cterm_Histag</td>
-      <td>  6</td>
-      <td>  35</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/MK08_HUMAN_D0.html">HsCD00038084</a></td>
+      <td>MK08_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>26</td>
+      <td>Cterm_Histag</td>
+      <td>6</td>
+      <td>35</td>
     </tr><tr><th>76</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/AURKA_HUMAN_D0.html">    HsCD00038050</a></td>
-      <td> AURKA_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>  55</td>
-      <td>     Nterm_TEV_cleaved</td>
-      <td> 10</td>
-      <td>  44</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/AURKA_HUMAN_D0.html">HsCD00038050</a></td>
+      <td>AURKA_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>55</td>
+      <td>Nterm_TEV_cleaved</td>
+      <td>10</td>
+      <td>44</td>
     </tr><tr><th>77</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/MK03_HUMAN_D0.html">    HsCD00038354</a></td>
-      <td>  MK03_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>   1</td>
-      <td> Nterm_other_extra_seq</td>
-      <td>  4</td>
-      <td>  49</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/MK03_HUMAN_D0.html">HsCD00038354</a></td>
+      <td>MK03_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>Nterm_other_extra_seq</td>
+      <td>4</td>
+      <td>49</td>
     </tr><tr><th>78</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/KS6A3_HUMAN_D1.html">    HsCD00038078</a></td>
-      <td> KS6A3_HUMAN_D1</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>   5</td>
-      <td>          Nterm_Histag</td>
-      <td>  7</td>
-      <td>  51</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/KS6A3_HUMAN_D1.html">HsCD00038078</a></td>
+      <td>KS6A3_HUMAN_D1</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>5</td>
+      <td>Nterm_Histag</td>
+      <td>7</td>
+      <td>51</td>
     </tr><tr><th>79</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/CSK21_HUMAN_D0.html">    HsCD00038101</a></td>
-      <td> CSK21_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>  45</td>
-      <td> Nterm_other_extra_seq</td>
-      <td>  4</td>
-      <td>  63</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/CSK21_HUMAN_D0.html">HsCD00038101</a></td>
+      <td>CSK21_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>45</td>
+      <td>Nterm_other_extra_seq</td>
+      <td>4</td>
+      <td>63</td>
     </tr><tr><th>80</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/MAPK2_HUMAN_D0.html">    HsCD00037983</a></td>
-      <td> MAPK2_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>  21</td>
-      <td>     Nterm_TEV_cleaved</td>
-      <td> 10</td>
-      <td>  74</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/MAPK2_HUMAN_D0.html">HsCD00037983</a></td>
+      <td>MAPK2_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>21</td>
+      <td>Nterm_TEV_cleaved</td>
+      <td>10</td>
+      <td>74</td>
     </tr><tr><th>81</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/MP2K2_HUMAN_D0.html">    HsCD00038263</a></td>
-      <td> MP2K2_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>   1</td>
-      <td>          Cterm_Histag</td>
-      <td>  6</td>
-      <td>  87</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/MP2K2_HUMAN_D0.html">HsCD00038263</a></td>
+      <td>MP2K2_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>Cterm_Histag</td>
+      <td>6</td>
+      <td>87</td>
     </tr><tr><th>82</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/EPHB2_HUMAN_D0.html">    HsCD00038588</a></td>
-      <td> EPHB2_HUMAN_D0</td>
-      <td> 1</td>
-      <td> NaN</td>
-      <td>   1</td>
-      <td>     Nterm_TEV_cleaved</td>
-      <td> 10</td>
-      <td>  89</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/EPHB2_HUMAN_D0.html">HsCD00038588</a></td>
+      <td>EPHB2_HUMAN_D0</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>Nterm_TEV_cleaved</td>
+      <td>10</td>
+      <td>89</td>
     </tr><tr><th>83</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/KC1D_HUMAN_D0.html">    HsCD00037957</a></td>
-      <td>  KC1D_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>   2</td>
-      <td>     Nterm_TEV_cleaved</td>
-      <td> 10</td>
-      <td>  92</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/KC1D_HUMAN_D0.html">HsCD00037957</a></td>
+      <td>KC1D_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>2</td>
+      <td>Nterm_TEV_cleaved</td>
+      <td>10</td>
+      <td>92</td>
     </tr><tr><th>84</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/EPHA3_HUMAN_D0.html">    HsCD00038676</a></td>
-      <td> EPHA3_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>  21</td>
-      <td>          Nterm_Histag</td>
-      <td>  7</td>
-      <td>  93</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/EPHA3_HUMAN_D0.html">HsCD00038676</a></td>
+      <td>EPHA3_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>21</td>
+      <td>Nterm_Histag</td>
+      <td>7</td>
+      <td>93</td>
     </tr><tr><th>85</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/EPHB4_HUMAN_D0.html">    HsCD00038678</a></td>
-      <td> EPHB4_HUMAN_D0</td>
-      <td> 1</td>
-      <td> NaN</td>
-      <td>   1</td>
-      <td>     Nterm_TEV_cleaved</td>
-      <td> 10</td>
-      <td>  94</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/EPHB4_HUMAN_D0.html">HsCD00038678</a></td>
+      <td>EPHB4_HUMAN_D0</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>Nterm_TEV_cleaved</td>
+      <td>10</td>
+      <td>94</td>
     </tr><tr><th>86</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/CSKP_HUMAN_D0.html">    HsCD00038384</a></td>
-      <td>  CSKP_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>   8</td>
-      <td>          Nterm_Histag</td>
-      <td>  7</td>
-      <td> 108</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/CSKP_HUMAN_D0.html">HsCD00038384</a></td>
+      <td>CSKP_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>8</td>
+      <td>Nterm_Histag</td>
+      <td>7</td>
+      <td>108</td>
     </tr><tr><th>87</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/E2AK2_HUMAN_D0.html">    HsCD00038278</a></td>
-      <td> E2AK2_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>   3</td>
-      <td>          Cterm_Histag</td>
-      <td>  6</td>
-      <td> 128</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/E2AK2_HUMAN_D0.html">HsCD00038278</a></td>
+      <td>E2AK2_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>3</td>
+      <td>Cterm_Histag</td>
+      <td>6</td>
+      <td>128</td>
     </tr><tr><th>88</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/MELK_HUMAN_D0.html">    HsCD00038574</a></td>
-      <td>  MELK_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>   1</td>
-      <td>          Cterm_Histag</td>
-      <td>  6</td>
-      <td> 137</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/MELK_HUMAN_D0.html">HsCD00038574</a></td>
+      <td>MELK_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>Cterm_Histag</td>
+      <td>6</td>
+      <td>137</td>
     </tr><tr><th>89</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/CSK_HUMAN_D0.html">    HsCD00038091</a></td>
-      <td>   CSK_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>   3</td>
-      <td> Nterm_other_extra_seq</td>
-      <td>  4</td>
-      <td> 147</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/CSK_HUMAN_D0.html">HsCD00038091</a></td>
+      <td>CSK_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>3</td>
+      <td>Nterm_other_extra_seq</td>
+      <td>4</td>
+      <td>147</td>
     </tr><tr><th>90</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/CSK22_HUMAN_D0.html">    HsCD00037966</a></td>
-      <td> CSK22_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>   2</td>
-      <td> Nterm_other_extra_seq</td>
-      <td>  4</td>
-      <td> 151</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/CSK22_HUMAN_D0.html">HsCD00037966</a></td>
+      <td>CSK22_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>2</td>
+      <td>Nterm_other_extra_seq</td>
+      <td>4</td>
+      <td>151</td>
     </tr><tr><th>91</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/PAK1_HUMAN_D0.html">    HsCD00038597</a></td>
-      <td>  PAK1_HUMAN_D0</td>
-      <td> 1</td>
-      <td> NaN</td>
-      <td>  11</td>
-      <td>          Cterm_Histag</td>
-      <td>  6</td>
-      <td> 155</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/PAK1_HUMAN_D0.html">HsCD00038597</a></td>
+      <td>PAK1_HUMAN_D0</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>11</td>
+      <td>Cterm_Histag</td>
+      <td>6</td>
+      <td>155</td>
     </tr><tr><th>92</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/DAPK1_HUMAN_D0.html">    HsCD00038376</a></td>
-      <td> DAPK1_HUMAN_D0</td>
-      <td> 1</td>
-      <td> NaN</td>
-      <td>  31</td>
-      <td>     Nterm_TEV_cleaved</td>
-      <td> 10</td>
-      <td> 179</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/DAPK1_HUMAN_D0.html">HsCD00038376</a></td>
+      <td>DAPK1_HUMAN_D0</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>31</td>
+      <td>Nterm_TEV_cleaved</td>
+      <td>10</td>
+      <td>179</td>
     </tr><tr><th>93</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/MP2K4_HUMAN_D0.html">    HsCD00038296</a></td>
-      <td> MP2K4_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>   3</td>
-      <td>          Nterm_Histag</td>
-      <td>  7</td>
-      <td> 180</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/MP2K4_HUMAN_D0.html">HsCD00038296</a></td>
+      <td>MP2K4_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>3</td>
+      <td>Nterm_Histag</td>
+      <td>7</td>
+      <td>180</td>
     </tr><tr><th>94</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/KC1E_HUMAN_D0.html">    HsCD00038086</a></td>
-      <td>  KC1E_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>   2</td>
-      <td>     Nterm_TEV_cleaved</td>
-      <td> 10</td>
-      <td> 184</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/KC1E_HUMAN_D0.html">HsCD00038086</a></td>
+      <td>KC1E_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>2</td>
+      <td>Nterm_TEV_cleaved</td>
+      <td>10</td>
+      <td>184</td>
     </tr><tr><th>95</th>
-      <td> HIP pJP1520</td>
-      <td><a href="plasmid-construct-alignments/HIP-pJP1520/PLK2_HUMAN_D0.html">    HsCD00038156</a></td>
-      <td>  PLK2_HUMAN_D0</td>
-      <td> 0</td>
-      <td> NaN</td>
-      <td>   5</td>
-      <td>          Nterm_Histag</td>
-      <td>  7</td>
-      <td> 190</td>
+      <td>HIP pJP1520</td>
+      <td><a href="plasmid-construct-alignments/HIP-pJP1520/PLK2_HUMAN_D0.html">HsCD00038156</a></td>
+      <td>PLK2_HUMAN_D0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>5</td>
+      <td>Nterm_Histag</td>
+      <td>7</td>
+      <td>190</td>
     </tr></tbody>
       </table>
     </div>
