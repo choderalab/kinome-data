@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Chivo:900" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen"/>
+    <script type="text/javascript" src="javascript/jquery.tablesorter/jquery-latest.js"></script>
+    <script type="text/javascript" src="javascript/jquery.tablesorter/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.tablesorter/addons/pager/jquery.tablesorter.pager.js"></script>
+    <script type="text/javascript">
+    $(function() {
+      // add new widget called repeatHeaders
+      $.tablesorter.addWidget({
+        // give the widget a id
+        id: "repeatHeaders",
+        // format is called when the on init and when a sorting has finished
+        format: function(table) {
+          // cache and collect all TH headers
+          if(!this.headers) {
+            var h = this.headers = []; 
+            $("thead th",table).each(function() {
+              h.push(
+                "<th>" + $(this).text() + "</th>"
+              );
+            });
+          }
+          // remove appended headers by classname.
+          $("tr.repated-header",table).remove();
+        }
+      });
+      // call the tablesorter plugin and assign widgets with id "zebra" (Default widget in the core) and the newly created "repeatHeaders"
+      $("table").tablesorter({
+        widgets: ['zebra','repeatHeaders']
+      });
+    });     
+    </script>
+  </head>
+  <body>
+    <h1>{{title}}</h1>
+    <h3>{{subtitle}}</h3>
+    <table border="1" class="tablesorter" id="maintable">
+      {{maintable}}
+    </table>
+  </body>
+</html>
