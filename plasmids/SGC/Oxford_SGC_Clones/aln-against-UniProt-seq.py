@@ -28,30 +28,37 @@ df = pd.read_csv('plasmid-data.csv', index_col='cloneID')
 
 DB_root = etree.parse(args.database_path)
 
+alignments_dirpath = 'alignments'
+if not os.path.exists(alignments_dirpath):
+    os.mkdir(alignments_dirpath)
+
 # ========
 # HTML layout
 # ========
-
-output_html_tree = E.html(
-    E.head(
-        E.link()
-    ),
-    E.body(
-    )
-)
-
-output_html_body = output_html_tree.find('body')
-css_link = output_html_tree.find('head/link')
-css_link.set('type','text/css')
-css_link.set('href',css_path)
-css_link.set('rel','stylesheet')
 
 def gen_html(aln, alnIDs, additional_data=[], aa_css_class_list=None):
     '''
     additional_data structure: [ [data_for_first_field], [data_for_second_field], ...] where data_for_first_field is of length len(aln). Column headers not required.
     aa_css_class_list can be used to override the CSS classes assigned to each residue. Should be given as a list of lists, with shape: (len(alignment), len(alignment[0])).
     '''
-    html_table = E.table(STYLE='margin-bottom: 1cm; border-collapse:separate; border-spacing:15px 3px;')
+    html_tree = E.html(
+        E.head(
+            E.link()
+        ),
+        E.body(
+            E.table(
+            )
+        )
+    )
+
+    html_body = html_tree.find('body')
+    css_link = html_tree.find('head/link')
+    css_link.set('type','text/css')
+    css_link.set('href',css_path)
+    css_link.set('rel','stylesheet')
+
+    html_table = html_body.find('table')
+    html_table.set('style', 'margin-bottom: 1cm; border-collapse:separate; border-spacing:15px 3px;')
 
     for r in range(len(aln)):
         row = E.tr()
@@ -77,7 +84,7 @@ def gen_html(aln, alnIDs, additional_data=[], aa_css_class_list=None):
         row.append( E.td( seq_div, nowrap='' ) )
         html_table.append(row)
 
-    return html_table
+    return html_tree
 
 AlnPlasmidData = {
 'cloneID': [],
@@ -207,11 +214,6 @@ for cloneID in df.index:
     ofile.write(aln[0] + '\n')
     ofile.write(aln[1] + '\n\n')
 
-    # Generate html
-    alnIDs = [UniProt_entry_name, cloneID]
-    html_table = gen_html(aln, alnIDs, additional_data=additional_data, aa_css_class_list=aa_css_class_list)
-    output_html_body.append(html_table)
-
     # Construct AlnPlasmidData dict
     AlnPlasmidData['clone_seq_aln'][-1] = aln[0]
     AlnPlasmidData['UniProt_seq_aln'][-1] = aln[1]
@@ -220,11 +222,17 @@ for cloneID in df.index:
     AlnPlasmidData['matching_domainID'][-1] = str(domainID)
     AlnPlasmidData['matching_targetID'][-1] = str(targetID)
 
-ofile.close()
+    # Generate html
+    alnIDs = [UniProt_entry_name, cloneID]
+    html_tree = gen_html(aln, alnIDs, additional_data=additional_data, aa_css_class_list=aa_css_class_list)
 
-# write html
-with open('aln.html', 'w') as htmlfile:
-    htmlfile.write( etree.tostring(output_html_tree, pretty_print=True) )
+    # write html
+    html_filepath = os.path.join(alignments_dirpath, cloneID + '.html')
+    with open(html_filepath, 'w') as htmlfile:
+        htmlfile.write( etree.tostring(html_tree, pretty_print=True) )
+
+
+ofile.close()
 
 # write csv
 AlnPlasmidData = pd.DataFrame(AlnPlasmidData)
