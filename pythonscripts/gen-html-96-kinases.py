@@ -7,7 +7,7 @@ import jinja2
 
 title = '96 kinases'
 subtitle = 'Selected from SGC and HIP pJP1520 plasmid libraries'
-html_output_cols = ['cloneID', 'UniProt_entry_name', 'nconflicts_target_domain_region', 'nextraneous_plasmid_residues', 'DB_target_rank']
+html_output_cols = ['cloneID', 'UniProt_entry_name', 'nconflicts_target_domain_region', 'nextraneous_plasmid_residues', 'nPDBs', 'expr_tag', 'auth_score', 'DB_target_rank']
 
 parser = etree.HTMLParser(remove_blank_text=True)
 
