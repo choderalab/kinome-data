@@ -20,7 +20,7 @@ args = argparser.parse_args()
 # Read in plasmid data
 # ========
 
-df = pd.read_csv('plasmid-data.csv')
+df = pd.read_csv('plasmid-data.csv', index_col='cloneID')
 
 # ========
 # Read in database
@@ -55,7 +55,7 @@ def gen_html(aln, alnIDs, additional_data=[], aa_css_class_list=None):
 
     for r in range(len(aln)):
         row = E.tr()
-        row.append( E.td( E.div(alnIDs[r], CLASS='ali'), nowrap='' ) )
+        row.append( E.td( E.div(str(alnIDs[r]), CLASS='ali'), nowrap='' ) )
 
         for data_field in additional_data:
             if data_field[r] != None:
@@ -84,6 +84,7 @@ AlnPlasmidData = {
 'clone_seq_aln': [],
 'UniProt_seq_aln': [],
 'nconflicts_target_domain_region': [],
+'nextraneous_plasmid_residues': [],
 }
 
 
@@ -93,13 +94,13 @@ AlnPlasmidData = {
 
 ofile = open('aln.txt', 'w')
 
-for i in range(len(df)):
-    plasmid_data = df.loc[i]
-    cloneID = plasmid_data['cloneID']
+for cloneID in df.index:
+    plasmid_data = df.loc[cloneID]
     AlnPlasmidData['cloneID'].append(cloneID)
     AlnPlasmidData['clone_seq_aln'].append(None)
     AlnPlasmidData['UniProt_seq_aln'].append(None)
     AlnPlasmidData['nconflicts_target_domain_region'].append(None)
+    AlnPlasmidData['nextraneous_plasmid_residues'].append(None)
 
     # if cloneID != 'CAMK2GA-c013':
     #     continue
@@ -108,9 +109,10 @@ for i in range(len(df)):
     UniProtAC = plasmid_data['UniProtAC']
     DB_entry = DB_root.find('entry/UniProt[@AC="%s"]/..' % UniProtAC)
     UniProt_entry_name = DB_entry.find('UniProt').get('entry_name')
+    domains = DB_entry.findall('UniProt/domains/domain[@targetID]')
 
     UniProt_seq = ''.join(DB_entry.findtext('UniProt/isoforms/canonical_isoform/sequence').strip().split('\n'))
-    plasmid_aa_seq = plasmid_data['aa_seq']
+    plasmid_aa_seq = plasmid_data['construct_aa_seq']
 
     # Separate expression tag from the plasmid insert sequence
 
@@ -129,6 +131,20 @@ for i in range(len(df)):
     gap_extend = -0.5
     aln = Bio.pairwise2.align.globalds(UniProt_seq, plasmid_insert_seq, matrix, gap_open, gap_extend)
     aln = [aln[0][0], aln[0][1]]
+
+    # Calculate the number of plasmid residues outside the target domain region (excluding N-terminal expression tag)
+    nextraneous_plasmid_residues = []
+    for domain in domains:
+        nextraneous_plasmid_residues.append(0)
+        domain_seq = ''.join(domain.findtext('sequence').strip().split('\n'))
+        domain_seq_regex = ''.join( [ aa + '-*' for aa in domain_seq ] )
+        UniProt_domain_aln_coords = re.search(domain_seq_regex, aln[0])
+        for a in range(len(aln[0])):
+            # print a, aln[1][a], UniProt_domain_aln_coords.start(), UniProt_domain_aln_coords.end()
+            if (a < UniProt_domain_aln_coords.start() and aln[1][a] != '-') or (a >= UniProt_domain_aln_coords.end() and aln[1][a] != '-'):
+                nextraneous_plasmid_residues[-1] += 1
+    nextraneous_plasmid_residues = min(nextraneous_plasmid_residues)
+
 
     # Add expression tag back into the aligned plasmid seq
     if expr_tag_seq != None:
@@ -157,7 +173,6 @@ for i in range(len(df)):
     aln[1] = ''.join(plasmid_aln_list)
 
     # find UniProt domains and generate custom CSS assignments to highlight target domains of UniProt sequence in red ('c4')
-    domains = DB_entry.findall('UniProt/domains/domain[@targetID]')
     aa_css_class_list = [None] * len(aln)
     aa_css_class_list[0] = ['bl'] * len(aln[0])
     nconflicts = []
@@ -175,8 +190,10 @@ for i in range(len(df)):
             elif aln[0][a].upper() != aln[1][a].upper():
                 nconflicts[-1] += 1
 
-    additional_data = [[None, nconflicts[0]],]
+    nconflicts = min(nconflicts)
 
+
+    additional_data = [[None, nconflicts],[None, nextraneous_plasmid_residues]]
 
     # Write to aligned sequences to text file
     ofile.write(aln[0] + '\n')
@@ -190,7 +207,8 @@ for i in range(len(df)):
     # Construct AlnPlasmidData dict
     AlnPlasmidData['clone_seq_aln'][-1] = aln[0]
     AlnPlasmidData['UniProt_seq_aln'][-1] = aln[1]
-    AlnPlasmidData['nconflicts_target_domain_region'][-1] = str(nconflicts[0])
+    AlnPlasmidData['nconflicts_target_domain_region'][-1] = str(nconflicts)
+    AlnPlasmidData['nextraneous_plasmid_residues'][-1] = str(nextraneous_plasmid_residues)
 
 ofile.close()
 
@@ -199,9 +217,17 @@ with open('aln.html', 'w') as htmlfile:
     htmlfile.write( etree.tostring(output_html_tree, pretty_print=True) )
 
 # write csv
-df = df.set_index(df['cloneID'])
-df['clone_seq_aln'] = pd.Series(AlnPlasmidData['clone_seq_aln'], index=pd.Series(AlnPlasmidData['cloneID']))
-df['UniProt_seq_aln'] = pd.Series(AlnPlasmidData['UniProt_seq_aln'], index=pd.Series(AlnPlasmidData['cloneID']))
-df['nconflicts_target_domain_region'] = pd.Series(AlnPlasmidData['nconflicts_target_domain_region'], index=pd.Series(AlnPlasmidData['cloneID']))
-df.to_csv('aln.csv')
+AlnPlasmidData = pd.DataFrame(AlnPlasmidData)
+AlnPlasmidData.set_index('cloneID', inplace=True)
+#merged = pd.merge(left=df, right=AlnPlasmidData, how='left', on='cloneID')
+#df.join(AlnPlasmidData, on='cloneID')
+merged = pd.concat([df, AlnPlasmidData], axis=1)
+#merged.set_index('cloneID', inplace=True)
+#AlnPlasmidData.set_index(AlnPlasmidData['cloneID'])
+#df.set_index(df['cloneID'], inplace=True, append=True)
+#df.append(AlnPlasmidData, ignore_index=True)
+# df['clone_seq_aln'] = AlnPlasmidData['clone_seq_aln']
+# df['UniProt_seq_aln'] = AlnPlasmidData['UniProt_seq_aln']
+# df['nconflicts_target_domain_region'] = AlnPlasmidData['nconflicts_target_domain_region']
+merged.to_csv('aln.csv')
 

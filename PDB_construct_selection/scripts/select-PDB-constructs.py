@@ -48,7 +48,7 @@ html_alignments_dir = os.path.join(results_dir, 'alignments')
 css_filename = 'seqlib.css'
 css_filepath = os.path.join(html_alignments_dir, css_filename)
 
-output_columns = ['targetID', 'top_plasmid_nconflicts', 'nmatching_PDB_structures', 'top_PDB_chain_ID', 'top_cnstrct_expr_tag', 'top_cnstrct_auth_score', 'top_cnstrct_expr_sys', 'top_cnstrct_taxname', 'DB_target_rank', 'DB_target_score']
+output_columns = ['top_cloneID', 'targetID', 'top_plasmid_nconflicts', 'nmatching_PDB_structures', 'top_PDB_chain_ID', 'top_cnstrct_expr_tag', 'top_cnstrct_auth_score', 'top_cnstrct_expr_sys', 'top_cnstrct_taxname', 'DB_target_rank', 'DB_target_score']
 
 # ===========
 # function definitions
@@ -122,6 +122,7 @@ def process_target(t):
     null_target_results = {
     'targetID' : target,
     'UniProtAC' : None,
+    'UniProt_entry_name' : None,
     'nmatching_PDB_structures' : 0,
     'top_PDB_chain_ID' : None,
     'top_cnstrct_expr_tag' : None,
@@ -182,6 +183,7 @@ def process_target(t):
     DB_entry = DB_domain.getparent().getparent().getparent()
 
     # get IDs
+    target_UniProtAC = DB_entry.find('UniProt').get('AC')
     target_UniProt_entry_name = DB_entry.find('UniProt').get('entry_name')
     target_NCBI_Gene_node = DB_entry.find('NCBI_Gene/entry[@ID]')
     if target_NCBI_Gene_node == None:
@@ -555,8 +557,10 @@ def process_target(t):
 
     # Construct target results dict
     target_results = {}
+    target_results['top_cloneID'] = top_cloneID
     target_results['targetID'] = target
-    target_results['UniProtAC'] = target_UniProt_entry_name
+    target_results['UniProtAC'] = target_UniProtAC
+    target_results['UniProt_entry_name'] = target_UniProt_entry_name
     target_results['nmatching_PDB_structures'] = nmatching_PDB_structures
     target_results['top_PDB_chain_ID'] = top_PDB_chain_ID
     # And the construct_data for the top_PDB_chain_ID

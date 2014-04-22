@@ -1,0 +1,50 @@
+import pandas as pd
+import numpy as np
+
+sgc_plasmids = pd.DataFrame.from_csv('../plasmids/SGC/Oxford_SGC_Clones/aln.csv')
+
+selected_sgc_plasmids = sgc_plasmids[ sgc_plasmids['nconflicts_target_domain_region'] < 10 ]
+print 'Number of SGC plasmids with < 10 conflicts in the target domain region:', len(selected_sgc_plasmids)
+selected_sgc_plasmids.sort('DB_target_rank', inplace=True)
+selected_sgc_plasmids.reset_index(inplace=True) # add numerical index and move 'cloneID' to a column
+
+pdb_constructs = pd.DataFrame.from_csv('PDB_constructs-data.csv')
+# Remove PDB constructs with no matching UniProtAC
+pdb_constructs_with_matching_UniProtAC = pdb_constructs['UniProtAC'].notnull()
+pdb_constructs = pdb_constructs[ pdb_constructs_with_matching_UniProtAC ]
+pdb_constructs_sorted = pdb_constructs.sort(columns='DB_target_rank')
+nselected_pdb_constructs = 96 - len(selected_sgc_plasmids)
+print '\nNumber of PDB constructs with a matching UniProt entry:', len(pdb_constructs_sorted)
+
+intersecting_UniProt_entry_names = [ x for x in pdb_constructs_sorted['UniProt_entry_name'].values if x in list(selected_sgc_plasmids['UniProt_entry_name']) ]
+print '\nThe following %d UniProt entries are present in both SGC Oxford and HIP pJP1520 plasmid libraries. Only the SGC Oxford plasmids will be selected for expression testing.' % len(intersecting_UniProt_entry_names)
+print intersecting_UniProt_entry_names
+
+nonintersecting_UniProtACs = [ True if x not in list(selected_sgc_plasmids['UniProtAC']) else False for x in pdb_constructs_sorted['UniProtAC'].values ]
+print '\nNumber of PDB constructs with matching HIP pJP1520 plasmids, which do not intersect with the SGC Oxford kinases:', sum(nonintersecting_UniProtACs)
+
+
+selected_pdb_constructs = pdb_constructs_sorted[ nonintersecting_UniProtACs ]
+selected_pdb_constructs = selected_pdb_constructs.head(nselected_pdb_constructs)
+
+# selected_pdb_constructs.rename(columns={'target_rank': 'DB_target_rank'}, inplace=True)
+
+selected_pdb_constructs.reset_index(inplace=True)
+selected_pdb_constructs.set_index(np.arange(len(selected_sgc_plasmids), 96), inplace=True)
+
+# ========
+# output data
+# ========
+
+sgc_output_cols = ['cloneID', 'DB_target_rank', 'UniProt_entry_name', 'nconflicts_target_domain_region', 'nextraneous_plasmid_residues']
+print selected_sgc_plasmids.to_string(columns=sgc_output_cols)
+
+pdb_output_cols = ['top_cloneID', 'DB_target_rank', 'UniProt_entry_name', 'top_plasmid_nconflicts']
+print selected_pdb_constructs.to_string(columns=pdb_output_cols)
+
+print selected_sgc_plasmids.sort('nextraneous_plasmid_residues', ascending=False).reset_index().to_string(columns=sgc_output_cols)
+
+merged = pd.concat([selected_sgc_plasmids, selected_pdb_constructs])
+
+merged.to_csv('96-kinases-sgc_and_hip.csv')
+
