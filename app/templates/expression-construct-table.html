@@ -36,19 +36,18 @@
     </script>
   </head>
   <body>
-    <div id="container">
-      <h1>{{title}}</h1>
-      <h3>{{subtitle}}</h3>
-      <h4>Notes</h4>
-      <p>
+    <div id="leftjstfdpage">
+      <div id="container">
+        <h1>{{title}}</h1>
+        <h3>{{subtitle}}</h3>
+        <h4>Notes</h4>
         Click on the cloneID to see sequence alignment.
-      </p>
-      <p>
-        <strong>nextraneous_plasmid_residues</strong>: the number of residues outside the matched target domain
-      </p>
-      <table border="1" class="tablesorter" id="maintable">
-        {{maintable}}
-      </table>
+        <li><strong>nextraneous_plasmid_residues</strong>: the number of residues outside the matched target domain</li>
+        <br/>
+        <table border="1" class="tablesorter" id="maintable">
+          {{maintable}}
+        </table>
+      </div>
     </div>
   </body>
 </html>

@@ -88,6 +88,10 @@ header h2 {
   min-height: 595px;
 }
 
+#leftjstfdpage {
+  margin-left: 20px;
+}
+
 .inner {
   width: 620px;
   margin: 0 auto;
