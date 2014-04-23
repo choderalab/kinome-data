@@ -1,4 +1,4 @@
-                HGNCSymbol UniProtAC UniProt_entry_name                                   construct_aa_seq Protein family DB_target_rank
+                HGNCSymbol UniProtAC UniProt_entry_name                                      insert_aa_seq Protein family DB_target_rank
 cloneID                                                                                                                                 
 MAPK6A-c013          MAPK6    Q16659         MK06_HUMAN  MHHHHHHSSGVDLGTENLYFQSMNIHGFDLGSRYMDLKPLGCGGNG...    Kinase-CMGC            288
 PAK5A-c011            PAK7    Q9P286         PAK7_HUMAN  MHHHHHHSSGVDLGTENLYFQSMSRVSHEQFRAALQLVVSPGDPRE...     Kinase-STE            248

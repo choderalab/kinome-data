@@ -1,4 +1,4 @@
-import os, re
+import os, re, argparse
 import openpyxl
 from openpyxl import Workbook
 import Bio, Bio.Seq, Bio.Alphabet
@@ -9,6 +9,14 @@ import pandas as pd
 
 plasmid_library_dir = '.'
 Harvard_plasmid_library_filepath = os.path.join(plasmid_library_dir, 'Mehle_Kinase_VS1_pJP1520_new_plates.xlsx')
+
+# ========
+# Command-line args
+# ========
+
+argparser = argparse.ArgumentParser()
+argparser.add_argument('--database_path', type=str, help='Path to a TargetExplorer database XML file', required=True)
+args = argparser.parse_args()
 
 # ==========
 # Parse plasmid library spreadsheet
@@ -49,9 +57,7 @@ for row in range(2,nrows):
 
 plasmid_df = pd.DataFrame(plasmid_df)
 
-DB_path = os.path.join('..', '..', '..', '..', 'database', 'database.xml')
-
-DB_root = etree.parse(DB_path).getroot()
+DB_root = etree.parse(args.database_path).getroot()
 
 
 # To be used to construct a pandas DataFrame
@@ -116,6 +122,6 @@ for p in plasmid_df.index:
 
 # construct pandas DataFrame and write to csv
 
-output_data = pd.DataFrame(output_data)
-output_data.to_csv('plasmid_insert_data.csv')
+output_data.set_index('cloneID', inplace=True)
+output_data.to_csv('plasmid-data.csv')
 

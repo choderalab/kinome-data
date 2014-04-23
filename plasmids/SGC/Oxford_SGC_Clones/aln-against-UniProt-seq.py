@@ -91,6 +91,7 @@ AlnPlasmidData = {
 'clone_seq_aln': [],
 'UniProt_seq_aln': [],
 'nconflicts_target_domain_region': [],
+'pctidentity_target_domain_region': [],
 'nextraneous_plasmid_residues': [],
 'matching_domainID': [],
 'matching_targetID': [],
@@ -109,6 +110,7 @@ for cloneID in df.index:
     AlnPlasmidData['clone_seq_aln'].append(None)
     AlnPlasmidData['UniProt_seq_aln'].append(None)
     AlnPlasmidData['nconflicts_target_domain_region'].append(None)
+    AlnPlasmidData['pctidentity_target_domain_region'].append(None)
     AlnPlasmidData['nextraneous_plasmid_residues'].append(None)
     AlnPlasmidData['matching_domainID'].append(None)
     AlnPlasmidData['matching_targetID'].append(None)
@@ -123,7 +125,7 @@ for cloneID in df.index:
     domains = DB_entry.findall('UniProt/domains/domain[@targetID]')
 
     UniProt_seq = ''.join(DB_entry.findtext('UniProt/isoforms/canonical_isoform/sequence').strip().split('\n'))
-    plasmid_aa_seq = plasmid_data['construct_aa_seq']
+    plasmid_aa_seq = plasmid_data['insert_aa_seq']
 
     # Separate expression tag from the plasmid insert sequence
 
@@ -158,7 +160,6 @@ for cloneID in df.index:
     from operator import itemgetter
     domainID, nextraneous_plasmid_residues = min(enumerate(nextraneous_plasmid_residues), key=itemgetter(1))
     targetID = UniProt_entry_name + '_D' + str(domainID)
-    print targetID
 
 
     # Add expression tag back into the aligned plasmid seq
@@ -191,6 +192,7 @@ for cloneID in df.index:
     aa_css_class_list = [None] * len(aln)
     aa_css_class_list[0] = ['bl'] * len(aln[0])
     nconflicts = []
+    pctidentity = []
     for domain in domains:
         domain_seq = ''.join(domain.findtext('sequence').strip().split('\n'))
         domain_seq_regex = ''.join( [ aa + '-*' for aa in domain_seq ] )
@@ -205,7 +207,11 @@ for cloneID in df.index:
             elif aln[0][a].upper() != aln[1][a].upper():
                 nconflicts[-1] += 1
 
+        # Calculate percent identity
+        pctidentity.append( (len(domain_seq) - nconflicts[-1]) * 100. / float(len(domain_seq)) )
+
     nconflicts = nconflicts[domainID]
+    pctidentity = pctidentity[domainID]
 
 
     additional_data = [[None, nconflicts],[None, nextraneous_plasmid_residues]]
@@ -218,6 +224,7 @@ for cloneID in df.index:
     AlnPlasmidData['clone_seq_aln'][-1] = aln[0]
     AlnPlasmidData['UniProt_seq_aln'][-1] = aln[1]
     AlnPlasmidData['nconflicts_target_domain_region'][-1] = str(nconflicts)
+    AlnPlasmidData['pctidentity_target_domain_region'][-1] = str(pctidentity)
     AlnPlasmidData['nextraneous_plasmid_residues'][-1] = str(nextraneous_plasmid_residues)
     AlnPlasmidData['matching_domainID'][-1] = str(domainID)
     AlnPlasmidData['matching_targetID'][-1] = str(targetID)
@@ -237,15 +244,6 @@ ofile.close()
 # write csv
 AlnPlasmidData = pd.DataFrame(AlnPlasmidData)
 AlnPlasmidData.set_index('cloneID', inplace=True)
-#merged = pd.merge(left=df, right=AlnPlasmidData, how='left', on='cloneID')
-#df.join(AlnPlasmidData, on='cloneID')
 merged = pd.concat([df, AlnPlasmidData], axis=1)
-#merged.set_index('cloneID', inplace=True)
-#AlnPlasmidData.set_index(AlnPlasmidData['cloneID'])
-#df.set_index(df['cloneID'], inplace=True, append=True)
-#df.append(AlnPlasmidData, ignore_index=True)
-# df['clone_seq_aln'] = AlnPlasmidData['clone_seq_aln']
-# df['UniProt_seq_aln'] = AlnPlasmidData['UniProt_seq_aln']
-# df['nconflicts_target_domain_region'] = AlnPlasmidData['nconflicts_target_domain_region']
 merged.to_csv('aln.csv')
 

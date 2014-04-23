@@ -31,8 +31,8 @@ plasmid_df = {
 'UniProtAC':[],
 'UniProt_entry_name':[],
 'DB_target_rank':[],
-'construct_dna_seq':[],
-'construct_aa_seq':[],
+'insert_dna_seq':[],
+'insert_aa_seq':[],
 'Protein family':[],
 'Expression system':[],
 'Expression cell line':[],
@@ -50,7 +50,7 @@ plasmid_df = {
 # Output columns for text file
 # ========
 
-txt_output_cols = ['HGNCSymbol', 'UniProtAC', 'UniProt_entry_name', 'construct_aa_seq', 'Protein family', 'DB_target_rank']
+txt_output_cols = ['HGNCSymbol', 'UniProtAC', 'UniProt_entry_name', 'insert_aa_seq', 'Protein family', 'DB_target_rank']
 
 # ========
 # Read in database
@@ -84,8 +84,8 @@ for row in range(2, nrows-1):
     plasmid_df['UniProtAC'].append(UniProtAC)
     plasmid_df['UniProt_entry_name'].append(UniProt_entry_name)
     plasmid_df['DB_target_rank'].append(target_rank)
-    plasmid_df['construct_aa_seq'].append( ws.cell('T%d' % row).value )
-    plasmid_df['construct_dna_seq'].append( ws.cell('U%d' % row).value )
+    plasmid_df['insert_aa_seq'].append( ws.cell('T%d' % row).value )
+    plasmid_df['insert_dna_seq'].append( ws.cell('U%d' % row).value )
     plasmid_df['Protein family'].append( ws.cell('E%d' % row).value )
     plasmid_df['Expression system'].append( ws.cell('J%d' % row).value )
     plasmid_df['Expression cell line'].append( ws.cell('K%d' % row).value )
