@@ -11,7 +11,7 @@ import jinja2
 
 title = '96 kinases'
 subtitle = 'Selected from SGC Oxford and HIP pJP1520 plasmid libraries'
-html_output_cols = ['plasmid_lib', 'cloneID', 'targetID', 'nconflicts_target_domain_region', 'nextraneous_plasmid_residues', 'nPDBs', 'expr_tag', 'auth_score', 'DB_target_rank']
+html_output_cols = ['plasmid_lib', 'cloneID', 'targetID', 'nconflicts_target_domain_region', 'nextraneous_plasmid_residues', 'nPDBs', 'top_expr_tag', 'top_auth_score', 'DB_target_rank']
 
 parser = etree.HTMLParser(remove_blank_text=True)
 
@@ -19,13 +19,13 @@ df = pd.DataFrame.from_csv('../PDB_construct_selection/96-kinases-sgc_and_hip.cs
 
 pd_html = df.to_html(columns=html_output_cols)
 html = etree.parse(StringIO.StringIO(pd_html), parser).getroot()
-table_children = html.find('body/table').getchildren()
 
 # ========
 # Strip whitespace added by pandas (seems to happen due to a bug in pandas)
 # Also need to tell tablesorter to sort certain columns numerically (this is necessary if the column also contains non-numerical data, such as 'NaN' from pandas)
 # ========
 
+table_children = html.find('body/table').getchildren()
 thead = table_children[0]
 tbody = table_children[-1]
 for tr in thead:
