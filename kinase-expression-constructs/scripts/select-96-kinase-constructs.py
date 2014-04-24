@@ -1,3 +1,4 @@
+from lxml import etree
 import pandas as pd
 import numpy as np
 
@@ -11,7 +12,14 @@ print 'Number of SGC plasmids with < 10 conflicts in the target domain region:',
 selected_sgc_plasmids.sort('DB_target_rank', inplace=True)
 selected_sgc_plasmids.reset_index(inplace=True) # add numerical index and move 'cloneID' to a column
 
-all_pdb_constructs = pd.DataFrame.from_csv('PDB_constructs-data.csv')
+hip_plasmids = pd.DataFrame.from_csv('../plasmids/DFHCC-PlasmID/HIP-human_kinase_collection-pJP1520/aln.csv')
+print 'Number of HIP plasmids:', len(hip_plasmids)
+
+parser = etree.XMLParser(remove_blank_text=True)
+pdb_data = etree.parse('../PDB-constructs/PDB_constructs-data.xml', parser).getroot()
+print len(pdb_data.findall('target'))
+
+import sys; sys.exit()
 
 
 # ========

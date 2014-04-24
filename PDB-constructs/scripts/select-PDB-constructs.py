@@ -149,7 +149,7 @@ def process_target(t):
     'target_domain_len' : None,
     'DB_target_score' : None,
     'DB_target_rank' : None,
-    'XML' : target_results_xml,
+    'XML' : etree.tostring(target_results_xml),
     }
 
     target_manual_exception = clab.core.parse_nested_dicts(manual_exceptions, [target, 'behavior'])
@@ -494,9 +494,18 @@ def process_target(t):
         pdbconstructnode.set('auth_score', str(0-dict_for_sorting[pdbconstructID][0]))
         pdbconstructnode.set('nextraneous_residues', str(dict_for_sorting[pdbconstructID][1]))
         pdbconstructnode.set('nconflicts_target_domain_region', str(nconflicts[pdbconstructID]))
-        pdbconstructnode.set('expr_tag_string', expr_tag_strings[ID])
-        pdbconstructnode.set('expr_tag_type', constructs_data[ID]['tag_type'])
-        pdbconstructnode.set('expr_tag_loc', constructs_data[ID]['tag_loc'])
+        if expr_tag_strings[ID] != None:
+            pdbconstructnode.set('expr_tag_string', expr_tag_strings[ID])
+        else:
+            pdbconstructnode.set('expr_tag_string', '')
+        if constructs_data[ID]['tag_type'] != None:
+            pdbconstructnode.set('expr_tag_type', constructs_data[ID]['tag_type'])
+        else:
+            pdbconstructnode.set('expr_tag_type', '')
+        if constructs_data[ID]['tag_loc'] != None:
+            pdbconstructnode.set('expr_tag_loc', constructs_data[ID]['tag_loc'])
+        else:
+            pdbconstructnode.set('expr_tag_loc', '')
         seq = PDB_construct_seq_aln[1]
         etree.SubElement(pdbconstructnode, 'seq_aln').text = seq
 
@@ -631,7 +640,7 @@ def process_target(t):
     target_results['DB_target_rank'] = DB_target_rank
     target_results_xml.set('DB_target_score', DB_target_score)
     target_results_xml.set('DB_target_rank', DB_target_rank)
-    target_results['XML'] = target_results_xml
+    target_results['XML'] = etree.tostring(target_results_xml)
 
     return target_results
 
@@ -699,7 +708,7 @@ if __name__ == '__main__':
     # targets_data and targets_results structure:[ { targetID : data } , ... ] where data will be constructed as [nmatching_PDB_structures, top_PDB_chain_ID, top_construct_data ]
     targets_data = []
 
-    targets = ['SRC_HUMAN_D0']
+    # targets = ['STK3_HUMAN_D0', 'SRC_HUMAN_D0']
     for target in targets:
         # get DB entry
         DB_domain = DB_root.find('entry/UniProt/domains/domain[@targetID="%s"]' % target)
@@ -762,11 +771,8 @@ if __name__ == '__main__':
 
     from multiprocessing import Pool
     pool = Pool()
-    # targets_results = pool.map(process_target, range(len(targets_data)))
-    targets_results = map(process_target, range(len(targets_data)))
-    # print targets_results
-    # print targets_results[0]['XML'].attrib
-    targets_results_xml = [target_results.pop('XML') for target_results in targets_results]
+    targets_results = pool.map(process_target, range(len(targets_data)))
+    targets_results_xml = [etree.fromstring(target_results.pop('XML')) for target_results in targets_results]
     targets_results = pd.DataFrame(targets_results)
 
     # ===========
