@@ -1,0 +1,2 @@
+,DB_target_rank,DB_target_score,UniProtAC,UniProt_entry_name,nmatching_PDB_structures,targetID,target_NCBI_GeneID,target_domain_len,top_PDB_chain_ID,top_cnstrct_auth_score,top_cnstrct_expr_sys,top_cnstrct_expr_tag,top_cnstrct_taxname
+0,10,65.2,P12931,SRC_HUMAN,4,SRC_HUMAN_D0,6714,254,4MXO_A,10,ESCHERICHIA COLI,Nterm_TEV_cleaved,Human

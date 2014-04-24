@@ -1,0 +1,2 @@
+       targetID  nmatching_PDB_structures top_PDB_chain_ID top_cnstrct_expr_tag  top_cnstrct_auth_score top_cnstrct_expr_sys top_cnstrct_taxname DB_target_rank DB_target_score
+0  SRC_HUMAN_D0                         4           4MXO_A    Nterm_TEV_cleaved                      10     ESCHERICHIA COLI               Human             10            65.2
