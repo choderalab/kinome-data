@@ -1,121 +1,144 @@
+import os, copy
 from lxml import etree
 import pandas as pd
 import numpy as np
+
+ofilename = '96-kinases-sgc_and_hip'
 
 # ========
 # Read in data
 # ========
 sgc_plasmids = pd.DataFrame.from_csv('../plasmids/SGC/Oxford_SGC_Clones/aln.csv')
 
-selected_sgc_plasmids = sgc_plasmids[ sgc_plasmids['nconflicts_target_domain_region'] < 10 ]
-print 'Number of SGC plasmids with < 10 conflicts in the target domain region:', len(selected_sgc_plasmids)
-selected_sgc_plasmids.sort('DB_target_rank', inplace=True)
+selected_sgc_plasmids = sgc_plasmids[ sgc_plasmids['nconflicts_target_domain_region'] < 100 ]
 selected_sgc_plasmids.reset_index(inplace=True) # add numerical index and move 'cloneID' to a column
+print 'Number of SGC plasmids with < 100 conflicts in the target domain region:', len(selected_sgc_plasmids)
 
 hip_plasmids = pd.DataFrame.from_csv('../plasmids/DFHCC-PlasmID/HIP-human_kinase_collection-pJP1520/aln.csv')
+hip_plasmids.reset_index(inplace=True) # add numerical index and move 'cloneID' to a column
 print 'Number of HIP plasmids:', len(hip_plasmids)
 
 parser = etree.XMLParser(remove_blank_text=True)
-pdb_data = etree.parse('../PDB-constructs/PDB_constructs-data.xml', parser).getroot()
-print len(pdb_data.findall('target'))
-
-import sys; sys.exit()
-
+pdbconstructs_xml = etree.parse('../PDB-constructs/PDB_constructs-data.xml', parser).getroot()
+print 'Number of targets:', len(pdbconstructs_xml.findall('target'))
+print 'Number of PDB constructs:', len(pdbconstructs_xml.findall('target/PDB_construct'))
 
 # ========
-# Filter out PDB constructs with no matching UniProtAC, and those with an authenticity score <= 0
+# Iterate through targets
 # ========
-pdb_constructs_with_matching_UniProtAC = all_pdb_constructs['UniProtAC'].notnull()
-pdb_constructs = all_pdb_constructs[ pdb_constructs_with_matching_UniProtAC ]
-
-pdb_constructs_with_positive_auth_score = pdb_constructs['top_cnstrct_auth_score'] > 0
-pdb_constructs = pdb_constructs[ pdb_constructs_with_positive_auth_score ]
-
-pdb_constructs_sorted = pdb_constructs.sort(columns='DB_target_rank')
-nselected_pdb_constructs = 96 - len(selected_sgc_plasmids)
-print '\nNumber of PDB constructs with a matching UniProt entry:', len(pdb_constructs_sorted)
-
-intersecting_UniProt_entry_names = [ x for x in pdb_constructs_sorted['UniProt_entry_name'].values if x in list(selected_sgc_plasmids['UniProt_entry_name']) ]
-print '\nThe following %d UniProt entries are present in both SGC Oxford and HIP pJP1520 plasmid libraries. Only the SGC Oxford plasmids will be selected for expression testing.' % len(intersecting_UniProt_entry_names)
-print intersecting_UniProt_entry_names
-
-nonintersecting_UniProtACs = [ True if x not in list(selected_sgc_plasmids['UniProtAC']) else False for x in pdb_constructs_sorted['UniProtAC'].values ]
-print '\nNumber of PDB constructs with matching HIP pJP1520 plasmids, which do not intersect with the SGC Oxford kinases:', sum(nonintersecting_UniProtACs)
-
-
-selected_pdb_constructs = pdb_constructs_sorted[ nonintersecting_UniProtACs ]
-selected_pdb_constructs = selected_pdb_constructs.head(nselected_pdb_constructs)
-
-selected_pdb_constructs.reset_index(inplace=True)
-selected_pdb_constructs.set_index(np.arange(len(selected_sgc_plasmids), 96), inplace=True)
-
-
-# ========
-# Rename columns to be more readable, and so that sgc and pdb column names match
-# ========
-pdb_rename_dict = {
-'top_cloneID': 'cloneID',
-'top_plasmid_nconflicts': 'nconflicts_target_domain_region',
-'nmatching_PDB_structures':'nPDBs',
-'top_cnstrct_expr_tag':'top_expr_tag',
-'top_cnstrct_auth_score':'top_auth_score',
+targets_results = {
+'targetID':[],
+'DB_target_rank':[],
+'plasmid_source':[],
+'plasmid_ID':[],
+'plasmid_nconflicts_in_domain':[],
+'plasmid_nextraneous_residues':[],
+'nPDBs':[],
+'top_pdb_ID':[],
+'top_pdb_expr_tag':[],
+'top_pdb_auth_score':[],
+'top_pdb_nextraneous_residues':[],
+'top_pdb_taxon':[],
 }
-all_pdb_constructs.rename(columns=pdb_rename_dict, inplace=True)
-pdb_constructs.rename(columns=pdb_rename_dict, inplace=True)
-selected_pdb_constructs.rename(columns=pdb_rename_dict, inplace=True)
 
-sgc_rename_dict = {
-'matching_targetID': 'targetID',
-}
-selected_sgc_plasmids.rename(columns=sgc_rename_dict, inplace=True)
+hip_results = copy.deepcopy(targets_results)
+
+# firstly look for targets with SGC plasmids
+for target in pdbconstructs_xml:
+    targetID = target.get('targetID')
+    matching_sgc_plasmids = selected_sgc_plasmids[ selected_sgc_plasmids['matching_targetID'] == targetID ]
+    # if found, rank by nextraneous residues and nconflicts, and take the top-ranked plasmid
+    if len(matching_sgc_plasmids) > 0:
+        matching_sgc_plasmids.sort(('nextraneous_plasmid_residues', 'nconflicts_target_domain_region'), inplace=True)
+        chosen_sgc_plasmid = matching_sgc_plasmids.head(1)
+        targets_results['targetID'].append(targetID)
+        targets_results['plasmid_source'].append('SGC Oxford')
+        targets_results['plasmid_ID'].append(chosen_sgc_plasmid['cloneID'].values[0])
+        targets_results['plasmid_nconflicts_in_domain'].append(chosen_sgc_plasmid['nconflicts_target_domain_region'].values[0])
+        targets_results['plasmid_nextraneous_residues'].append(chosen_sgc_plasmid['nextraneous_plasmid_residues'].values[0])
+
+        targets_results['DB_target_rank'].append(target.get('DB_target_rank'))
+        targets_results['nPDBs'].append(target.get('nPDBs'))
+
+        # get pdbconstruct data
+        pdbconstructs = target.findall('PDB_construct')
+        if len(pdbconstructs) > 0:
+            targets_results['top_pdb_ID'].append(pdbconstructs[0].get('PDBconstructID'))
+            targets_results['top_pdb_expr_tag'].append(pdbconstructs[0].get('expr_tag_string'))
+            targets_results['top_pdb_auth_score'].append(pdbconstructs[0].get('auth_score'))
+            targets_results['top_pdb_nextraneous_residues'].append(pdbconstructs[0].get('nextraneous_residues'))
+            targets_results['top_pdb_taxon'].append(pdbconstructs[0].get('taxname'))
+        else:
+            targets_results['top_pdb_ID'].append('-')
+            targets_results['top_pdb_expr_tag'].append('-')
+            targets_results['top_pdb_auth_score'].append('-')
+            targets_results['top_pdb_nextraneous_residues'].append('-')
+            targets_results['top_pdb_taxon'].append('-')
+
+targets_results = pd.DataFrame(targets_results)
+
+# for targets without SGC plasmids, look for HIP plasmids
+for target in pdbconstructs_xml:
+    targetID = target.get('targetID')
+    # skip if this target has a matching SGC plasmid
+    if targetID in list(targets_results['targetID']):
+        continue
+
+    matching_hip_plasmids = hip_plasmids[ hip_plasmids['matching_targetID'] == targetID ]
+    if len(matching_hip_plasmids) > 0:
+        matching_hip_plasmids.sort(('nextraneous_plasmid_residues', 'nconflicts_target_domain_region'), inplace=True)
+        chosen_hip_plasmid = matching_hip_plasmids.head(1)
+        hip_results['targetID'].append(targetID)
+        hip_results['plasmid_source'].append('HIP pJP1520')
+        hip_results['plasmid_ID'].append(chosen_hip_plasmid['cloneID'].values[0])
+        hip_results['plasmid_nconflicts_in_domain'].append(chosen_hip_plasmid['nconflicts_target_domain_region'].values[0])
+        hip_results['plasmid_nextraneous_residues'].append(chosen_hip_plasmid['nextraneous_plasmid_residues'].values[0])
+
+        hip_results['DB_target_rank'].append(target.get('DB_target_rank'))
+        hip_results['nPDBs'].append(target.get('nPDBs'))
+
+        # get pdbconstruct data
+        pdbconstructs = target.findall('PDB_construct')
+        if len(pdbconstructs) > 0:
+            hip_results['top_pdb_ID'].append(pdbconstructs[0].get('PDBconstructID'))
+            hip_results['top_pdb_expr_tag'].append(pdbconstructs[0].get('expr_tag_string'))
+            hip_results['top_pdb_auth_score'].append(pdbconstructs[0].get('auth_score'))
+            hip_results['top_pdb_nextraneous_residues'].append(pdbconstructs[0].get('nextraneous_residues'))
+            hip_results['top_pdb_taxon'].append(pdbconstructs[0].get('taxname'))
+        else:
+            hip_results['top_pdb_ID'].append('-')
+            hip_results['top_pdb_expr_tag'].append('-')
+            hip_results['top_pdb_auth_score'].append('-')
+            hip_results['top_pdb_nextraneous_residues'].append('-')
+            hip_results['top_pdb_taxon'].append('-')
+
+hip_results = pd.DataFrame(hip_results)
+# filter targets to keep only those with nPDBs > 0
+hip_results = hip_results[ hip_results['nPDBs'].astype(int) > 0 ]
+print '%d/%d targets have one or matching HIP pJP1520 plasmids, and > 0 matching PDB constructs' % (len(hip_results), len(pdbconstructs_xml))
+
+# filter targets to keep only those with top_pdb_auth_score > 0
+hip_results = hip_results[ hip_results['top_pdb_auth_score'].astype(int) > 0 ]
+print '%d/%d targets have one or matching HIP pJP1520 plasmids, > 0 matching PDB constructs, and a positive authenticity score' % (len(hip_results), len(pdbconstructs_xml))
+
+# convert 'DB_target_rank' column to int dtype (from str), ready for sorting
+hip_results['DB_target_rank'] = hip_results['DB_target_rank'].astype(int)
+# sort targets by 'DB_target_rank'
+hip_results.sort('DB_target_rank', inplace=True)
+
+# Take the required number of targets with HIP plasmids, and add to the main list of selected targets
+ntargets_w_hip_plasmid_required = 96 - len(targets_results)
+selected_hip_results = hip_results.head(ntargets_w_hip_plasmid_required)
+selected_hip_results.set_index(np.arange(len(selected_hip_results)) + len(targets_results), inplace=True)
+targets_results = pd.concat([targets_results, selected_hip_results])
 
 
-# ========
-# For targets with multiple SGC plasmids, rank these and keep only the top-ranked plasmid
-# ========
+# Write csv file
+#targets_results.set_index('targetID', inplace=True)
+targets_results.to_csv(ofilename + '.csv')
 
-clones_to_delete = []
-
-for targetID in set(selected_sgc_plasmids['targetID']):
-    target_plasmids = selected_sgc_plasmids[ selected_sgc_plasmids['targetID'] == targetID ]
-    if len(target_plasmids) > 1:
-        print '%d SGC plasmids found for targetID %s. Will rank and keep only the top-ranked plasmid.' % (len(target_plasmids), targetID)
-        target_plasmids.sort(('nextraneous_plasmid_residues', 'nconflicts_target_domain_region'), inplace=True)
-        clones_to_delete += [cloneID for cloneID in target_plasmids['cloneID'] ][1:]
-
-clones_to_keep = [ False if cloneID in clones_to_delete else True for cloneID in selected_sgc_plasmids['cloneID'] ]
-selected_sgc_plasmids = selected_sgc_plasmids[ clones_to_keep ]
-
-
-# ========
-# Add ExpressionExplorer results for SGC plasmids
-# ========
-
-sgc_additional_data = {'nPDBs':[], 'top_expr_tag':[], 'top_auth_score':[]}
-for targetID in selected_sgc_plasmids['targetID']:
-    pdb_constructs_data = all_pdb_constructs[all_pdb_constructs['targetID'] == targetID]
-    nPDBs = pdb_constructs_data['nPDBs'].values[0]
-    expr_tag = pdb_constructs_data['top_expr_tag'].values[0]
-    auth_score = pdb_constructs_data['top_auth_score'].values[0]
-    sgc_additional_data['nPDBs'].append( nPDBs )
-    sgc_additional_data['top_expr_tag'].append( expr_tag )
-    sgc_additional_data['top_auth_score'].append( auth_score )
-
-for key in sgc_additional_data:
-    selected_sgc_plasmids[key] = pd.Series(sgc_additional_data[key], index=selected_sgc_plasmids.index)
-
-
-# ========
-# Add column defining plasmid library source
-# ========
-selected_sgc_plasmids['plasmid_lib'] = pd.Series(['SGC Oxford'] * len(selected_sgc_plasmids), index=selected_sgc_plasmids.index)
-selected_pdb_constructs['plasmid_lib'] = pd.Series(['HIP pJP1520'] * len(selected_pdb_constructs), index=selected_pdb_constructs.index)
-
-# ========
-# Output data
-# ========
-
-merged = pd.concat([selected_sgc_plasmids, selected_pdb_constructs])
-
-merged.to_csv('96-kinases-sgc_and_hip.csv')
+# Write text file
+output_columns=['targetID', 'DB_target_rank', 'plasmid_source', 'plasmid_ID', 'plasmid_nconflicts_in_domain', 'plasmid_nextraneous_residues', 'nPDBs', 'top_pdb_ID', 'top_pdb_expr_tag', 'top_pdb_auth_score', 'top_pdb_nextraneous_residues', 'top_pdb_taxon']
+with open(ofilename + '.txt', 'w') as otxtfile:
+    otxtfile.write(targets_results.to_string(columns=output_columns))
 
