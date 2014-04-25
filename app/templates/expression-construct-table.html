@@ -45,12 +45,15 @@
         <br/>
         <br/>
         <li><strong>targetID</strong>: matching UniProt entry name followed by the target domain index</li>
-        <li><strong>nconflicts_target_domain_region</strong>: number of conflicts between plasmid and UniProt sequence in the region of the target domain</li>
-        <li><strong>nextraneous_plasmid_residues</strong>: number of residues outside the matched target domain</li>
-        <li><strong>nPDBs</strong>: number of PDBs matched by ExpressionExplorer</li>
-        <li><strong>expr_tag</strong>: type of expression tag detected for top-ranked PDB construct</li>
-        <li><strong>auth_score</strong>: authenticity score assigned to top-ranked PDB construct</li>
         <li><strong>DB_target_rank</strong>: TargetExplorer database target rank</li>
+        <li><strong>plasmid_nconflicts_target_domain_region</strong>: number of conflicts between plasmid and UniProt sequence in the region of the target domain</li>
+        <li><strong>plasmid_nextraneous_plasmid_residues</strong>: number of plasmid insert residues outside the matched target domain</li>
+        <li><strong>nPDBs</strong>: number of PDBs matched by ExpressionExplorer</li>
+        <li><strong>top_pdb_ID</strong>: top-ranked PDB (and chain ID)</li>
+        <li><strong>top_pdb_expr_tag</strong>: type of expression tag detected for top-ranked PDB construct</li>
+        <li><strong>top_pdb_auth_score</strong>: authenticity score assigned to top-ranked PDB construct</li>
+        <li><strong>top_pdb_nextraneous_residues</strong>: number of residues outside the matched target domain for the top-ranked PDB construct</li>
+        <li><strong>top_pdb_taxon</strong>: source organism for the top-ranked PDB construct</li>
         <br/>
         <table border="1" class="tablesorter" id="maintable">
           {{maintable}}
