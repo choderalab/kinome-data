@@ -1,10 +1,8 @@
 # For a set of target protein domains, aligns PDB sequences against the target
-# protein sequence and a sequence from a chosen plasmid library. Ranks the PDB
-# sequences based on variables such as similarity to the target domain
-# sequence, and likely authenticity of the PDB construct sequence (given that
-# there are frequently errors in PDB SEQRES records). Outputs a list of chosen
-# constructs in text format, a spreadsheet containing the constructs mapped
-# onto the plasmid insert DNA sequences, and pretty HTML renderings of the
+# protein sequence. Ranks the PDB sequences based on variables such as
+# similarity to the target domain sequence, and likely authenticity of the PDB
+# construct sequence (given that there are frequently errors in PDB SEQRES
+# records). Outputs data CSV file, as well as pretty HTML renderings of the
 # alignments.
 #
 # Daniel L. Parton <partond@mskcc.org> - 3 Jan 2014
@@ -48,7 +46,6 @@ html_alignments_dir = os.path.join(results_dir, 'alignments')
 css_filename = 'seqlib.css'
 css_filepath = os.path.join(html_alignments_dir, css_filename)
 
-# output_columns = ['top_cloneID', 'targetID', 'top_plasmid_nconflicts', 'nmatching_PDB_structures', 'top_PDB_chain_ID', 'top_cnstrct_expr_tag', 'top_cnstrct_auth_score', 'top_cnstrct_expr_sys', 'top_cnstrct_taxname', 'DB_target_rank', 'DB_target_score']
 output_columns = ['targetID', 'nmatching_PDB_structures', 'top_PDB_chain_ID', 'top_cnstrct_expr_tag', 'top_cnstrct_auth_score', 'top_cnstrct_expr_sys', 'top_cnstrct_taxname', 'DB_target_rank', 'DB_target_score']
 
 # ===========
@@ -124,8 +121,49 @@ def process_target(t):
     # target_results_xml (XML); the latter contains full info on PDB
     # constructs, whereas the former contains only summary info for each target
 
+    # ===========
+    # Get target info from DB
+    # ===========
+
+    # get DB entry
+    DB_domain = DB_root.find('entry/UniProt/domains/domain[@targetID="%s"]' % target)
+    domainID = DB_domain.get('domainID')
+    target_domain_len = int(DB_domain.get('length'))
+    DB_entry = DB_domain.getparent().getparent().getparent()
+
+    # get IDs
+    target_UniProtAC = DB_entry.find('UniProt').get('AC')
+    target_UniProt_entry_name = DB_entry.find('UniProt').get('entry_name')
+    target_NCBI_Gene_node = DB_entry.find('NCBI_Gene/entry[@ID]')
+    if target_NCBI_Gene_node != None:
+        target_NCBI_GeneID = int(target_NCBI_Gene_node.get('ID'))
+    else:
+        target_NCBI_GeneID = None
+
+    # get UniProt canonical isoform sequence
+    UniProt_canonseq = clab.core.sequnwrap( DB_entry.findtext('UniProt/isoforms/canonical_isoform/sequence') )
+    target_domain_seq = clab.core.sequnwrap( DB_domain.findtext('sequence') )
+
+    # ===========
+    # get the target_score and target_rank from the DB
+    # ===========
+
+    DB_target_score_node = DB_root.find('entry/target_score/domain[@targetID="%s"]' % target)
+    DB_target_score = DB_target_score_node.get('target_score')
+    DB_target_rank = DB_target_score_node.get('target_rank')
+
+    # ===========
+    # construct null result obj
+    # ===========
+
     target_results_xml = etree.Element('target')
     target_results_xml.set('targetID', target)
+    target_results_xml.set('DB_target_score', DB_target_score)
+    target_results_xml.set('DB_target_rank', DB_target_rank)
+    target_results_xml.set('domainID', domainID)
+    target_results_xml.set('nPDBs', '0')
+    etree.SubElement(target_results_xml, 'seq').text = UniProt_canonseq
+    etree.SubElement(target_results_xml, 'domain_seq').text = target_domain_seq
 
     null_target_results = {
     'targetID' : target,
@@ -137,20 +175,16 @@ def process_target(t):
     'top_cnstrct_auth_score' : 0,
     'top_cnstrct_expr_sys' : None,
     'top_cnstrct_taxname' : None,
-    'target_NCBI_GeneID' : None,
-    # 'construct_aa_start' : None,
-    # 'construct_aa_end' : None,
-    # 'construct_aa_seq' : None,
-    # 'construct_dna_start' : None,
-    # 'construct_dna_end' : None,
-    # 'construct_dna_seq' : None,
-    # 'top_plasmid_nconflicts' : None,
-    # 'top_plasmid_pctidentity' : None,
+    'target_NCBI_GeneID' : target_NCBI_GeneID,
     'target_domain_len' : None,
-    'DB_target_score' : None,
-    'DB_target_rank' : None,
+    'DB_target_score' : DB_target_score,
+    'DB_target_rank' : DB_target_rank,
     'XML' : etree.tostring(target_results_xml),
     }
+
+    if target_domain_len > 350 or target_domain_len < 191:
+        print 'Target domain length %d. Skipping...' % target_domain_len
+        return null_target_results
 
     target_manual_exception = clab.core.parse_nested_dicts(manual_exceptions, [target, 'behavior'])
     if target_manual_exception != None:
@@ -179,48 +213,10 @@ def process_target(t):
     css_link.set('rel','stylesheet')
 
     # ===========
-    # Get target info from DB
-    # ===========
-
-    # get DB entry
-    DB_domain = DB_root.find('entry/UniProt/domains/domain[@targetID="%s"]' % target)
-    domainID = DB_domain.get('domainID')
-    target_domain_len = int(DB_domain.get('length'))
-    if target_domain_len > 350 or target_domain_len < 191:
-        print 'Target domain length %d. Skipping...' % target_domain_len
-        return null_target_results
-    DB_entry = DB_domain.getparent().getparent().getparent()
-
-    # get IDs
-    target_UniProtAC = DB_entry.find('UniProt').get('AC')
-    target_UniProt_entry_name = DB_entry.find('UniProt').get('entry_name')
-    target_NCBI_Gene_node = DB_entry.find('NCBI_Gene/entry[@ID]')
-    if target_NCBI_Gene_node == None:
-        print 'Gene ID not found for target %s' % target_UniProt_entry_name
-        return null_target_results
-    target_NCBI_GeneID = int(target_NCBI_Gene_node.get('ID'))
-
-    # #if target_NCBI_GeneID not in plasmid_data['NCBI_GeneID']:
-    # if sum(plasmid_data['NCBI_GeneID'] == target_NCBI_GeneID) == 0:
-    #     print 'Gene ID %s (%s) not found in plasmid library.' % (target_NCBI_GeneID, target_UniProt_entry_name)
-    #     return null_target_results
-
-    # get UniProt canonical isoform sequence
-    UniProt_canonseq = clab.core.sequnwrap( DB_entry.findtext('UniProt/isoforms/canonical_isoform/sequence') )
-
-    # # ===========
-    # # Get matching plasmids (via NCBI Gene ID)
-    # # ===========
-    #
-    # matching_plasmid_data = plasmid_data[ plasmid_data['NCBI_GeneID'] == target_NCBI_GeneID ]
-    # matching_plasmid_data.index = range(len(matching_plasmid_data))
-
-    # ===========
     # Get PDB info from DB
     # ===========
 
     # get PDB sequences which correspond to the target domain and have the desired expression_system tag, and store in dict e.g. { '3GKZ_B' : 'MGYL...' }
-    #PDB_matching_seq_nodes = DB_entry.xpath( 'PDB/structure/expression_data[match_regex(@EXPRESSION_SYSTEM, "%s")]/../chain[@domainID="%s"]/experimental_sequence/sequence' % (desired_expression_system_regex, domainID), extensions = { (None, 'match_regex'): match_regex } )
     gene_name = DB_entry.findtext('UniProt/gene_names/gene_name[@type="primary"]')
     PDB_matching_seq_nodes = DB_root.xpath( 'entry/UniProt/gene_names/gene_name[@type="primary"][text()="%s"]/../../../PDB/structure/expression_data[match_regex(@EXPRESSION_SYSTEM, "%s")]/../chain[@domainID="%s"]/experimental_sequence/sequence' % (gene_name, desired_expression_system_regex, domainID), extensions = { (None, 'match_regex'): match_regex } )
     if len(PDB_matching_seq_nodes) == 0:
@@ -258,7 +254,7 @@ def process_target(t):
             alignment[alignment_PDBs_span[0] + i][1] = alignment_override.strip()
 
     # ===========
-    # compare plasmid and PDB seqs with aligned UniProt canonical seq - put non-matching aas in lower case
+    # compare PDB seqs with aligned UniProt canonical seq - put non-matching aas in lower case
     # ===========
     for seq_iter in range(len(alignment))[1:]:
         seq = list(alignment[seq_iter][1]) # sequence needs to be mutable so convert to list
@@ -270,7 +266,6 @@ def process_target(t):
     # ===========
     # find the target domain within the aligned target domain seq
     # ===========
-    target_domain_seq = clab.core.sequnwrap( DB_domain.findtext('sequence') )
     # to do this, we construct a regex which accounts for the possible presence of '-' chars within the target domain sequence.
     target_domain_seq_regex = ''.join([ aa + '-*' for aa in target_domain_seq ])[:-2] # ignore last '-*'
     aligned_UniProt_seq_target_domain_match = re.search(target_domain_seq_regex, UniProt_aligned[1])
@@ -280,47 +275,8 @@ def process_target(t):
     # set up data structures in preparation for sorting
     # ===========
 
-    sorted_alignment = [alignment[0]] # the UniProt seq and plasmid seqs stay at the beginning
-    # plasmids_aligned = alignment[alignment_plasmids_span[0] : alignment_plasmids_span[1]]
-    # PDB_construct_seqs_aligned structure: [ ['PDB_chain_ID', 'sequence'], ... ]
+    sorted_alignment = [alignment[0]] # the UniProt seq stays at the beginning
     PDB_construct_seqs_aligned = alignment[alignment_PDBs_span[0] : alignment_PDBs_span[1]]
-
-    # # ===========
-    # # now run pairwise alignments of the plasmid seqs against the UniProt canon seq target domain, calculate the number of conflicts, and sort the plasmid seqs based on nconflicts
-    # # ===========
-    #
-    # plasmids_nconflicts = []
-    # plasmids_pctidentity = []
-    #
-    # for p in matching_plasmid_data.index:
-    #
-    #     pair_alignment_IDs = ['UniProt', matching_plasmid_data['cloneID'][p]]
-    #     pair_pre_alignment_seqs = [target_domain_seq, matching_plasmid_data['aa_seq'][p]]
-    #     pair_aligned_seqs = clab.align.run_clustalo(pair_alignment_IDs, pair_pre_alignment_seqs)
-    #     pair_alignment = [ [pair_alignment_IDs[i], seq] for i, seq in enumerate(pair_aligned_seqs) ] # convert aligned_seqs to this list of 2-element lists
-    #
-    #     regex_start = re.search('[A-Z]', pair_alignment[0][1])
-    #     regex_end = re.search('[A-Z]', pair_alignment[0][1][::-1])
-    #     target_domain_start_pair_aln_coords = regex_start.start()
-    #     target_domain_end_pair_aln_coords = len(pair_alignment[0][1]) - regex_end.start() - 1  # 0-based index of the last residue
-    #
-    #     pair_aln_seqs_target_domain_region = [pair_aln_seq[1][target_domain_start_pair_aln_coords : target_domain_end_pair_aln_coords + 1] for pair_aln_seq in pair_alignment]
-    #     nconflicts = len( [ aa_iter for aa_iter in range(len(pair_aln_seqs_target_domain_region[0])) if pair_aln_seqs_target_domain_region[0][aa_iter] == '-' or pair_aln_seqs_target_domain_region[1][aa_iter] == '-' or (pair_aln_seqs_target_domain_region[0][aa_iter] != pair_aln_seqs_target_domain_region[1][aa_iter]) ] )
-    #     pctidentity = (len(target_domain_seq) - nconflicts) * 100. / float(len(target_domain_seq))
-    #     plasmids_nconflicts.append( nconflicts )
-    #     plasmids_pctidentity.append( pctidentity )
-    #
-    # matching_plasmid_data['nconflicts'] = pd.Series(plasmids_nconflicts, index=matching_plasmid_data.index)
-    # matching_plasmid_data['pctidentity'] = pd.Series(plasmids_pctidentity, index=matching_plasmid_data.index)
-    #
-    # # sort plasmid seqs based on number of conflicts
-    #
-    # plasmids_aligned = sorted( plasmids_aligned, key = lambda x: matching_plasmid_data[ matching_plasmid_data['cloneID'] == x[0] ]['nconflicts'].values[0] )
-    # top_cloneID = plasmids_aligned[0][0]
-    #
-    # # put the sorted plasmids back into the main alignment lists
-    # alignment[alignment_plasmids_span[0] : alignment_plasmids_span[1]] = plasmids_aligned
-    # sorted_alignment[alignment_plasmids_span[0] : alignment_plasmids_span[1]] = plasmids_aligned
 
     # ===========
     # Detect extraneous expression tags - then calculate an "authenticity score", in an attempt to downrank misannotated construct sequences
@@ -471,7 +427,6 @@ def process_target(t):
     # ===========
     # dict_for_sorting structure: { sequence : (authenticity_score, alignment_score, num_aas_outside_target_domain), ... }
     # negate values for reverse sorting
-    #dict_for_sorting = { x[0] : (-authenticity_scores[i], aln_scores[i], num_aas_outside_target_domain[i]) for i, x in enumerate(PDB_construct_seqs_aligned) }
     dict_for_sorting = { x[0] : (-authenticity_scores[i], num_aas_outside_target_domain[i], aln_scores[i]) for i, x in enumerate(PDB_construct_seqs_aligned) }
     # PDB_construct_seqs_aligned structure: [ ['PDB_chain_ID', 'sequence'], ... ]
     PDB_construct_seqs_aligned = sorted( PDB_construct_seqs_aligned, key = lambda x: dict_for_sorting[x[0]])
@@ -506,8 +461,14 @@ def process_target(t):
             pdbconstructnode.set('expr_tag_loc', constructs_data[ID]['tag_loc'])
         else:
             pdbconstructnode.set('expr_tag_loc', '')
-        seq = PDB_construct_seq_aln[1]
-        etree.SubElement(pdbconstructnode, 'seq_aln').text = seq
+        if constructs_data[ID]['taxname'] != None:
+            pdbconstructnode.set('taxname', constructs_data[ID]['taxname'])
+        else:
+            pdbconstructnode.set('taxname', '')
+        seq = PDB_seqs[pdbconstructID]
+        etree.SubElement(pdbconstructnode, 'seq').text = seq
+        seq_aln = PDB_construct_seq_aln[1]
+        etree.SubElement(pdbconstructnode, 'seq_aln').text = seq_aln
 
     # ===========
     # generate HTML version of the alignment
@@ -569,34 +530,6 @@ def process_target(t):
         raise e
     construct_target_region_end_aln_coords = regex_match.end() - 1
 
-    # # now get the top aligned plasmid sequence for the same span
-    # construct_target_region_aln_plasmid_seq = plasmids_aligned[0][1][ construct_target_region_start_aln_coords : construct_target_region_end_aln_coords + 1 ]
-    # # now get the (non-aligned) plasmid sequence; just need to remove '-' chars and convert conflicts back to upper case
-    # construct_target_region_plasmid_seq = construct_target_region_aln_plasmid_seq.replace('-', '').upper()
-    # # now get the start and end for the construct target region in the coords of the original plasmid seq
-    # top_plasmid_data = matching_plasmid_data[ matching_plasmid_data['cloneID'] == top_cloneID ]
-    # top_plasmid_data.index = [0]
-    # regex_match = re.search(construct_target_region_plasmid_seq, top_plasmid_data.aa_seq[0])
-    # construct_aa_start = regex_match.start()
-    # construct_aa_end = regex_match.end() - 1 # refers to the last residue in 0-based aa coords
-
-    # ===========
-    # get the target_score and target_rank from the DB
-    # ===========
-
-    DB_target_score_node = DB_root.find('entry/target_score/domain[@targetID="%s"]' % target)
-    DB_target_score = DB_target_score_node.get('target_score')
-    DB_target_rank = DB_target_score_node.get('target_rank')
-
-    # # ===========
-    # # extract construct span from plasmid DNA sequence
-    # # ===========
-    #
-    # construct_dna_start = (construct_aa_start * 3) # 0-based
-    # construct_dna_end = (construct_aa_end * 3) + 2 # this refers to the last nucleotide in 0-based nucleotide coordinates
-    # top_plasmid_dna_seq = top_plasmid_data.dna_seq[0]
-    # construct_dna_seq = top_plasmid_dna_seq[ construct_dna_start : construct_dna_end + 1 ]
-
     # ===========
     # add data to targets_results
     # ===========
@@ -623,23 +556,14 @@ def process_target(t):
     # And the Gene ID
     target_results['target_NCBI_GeneID'] = target_NCBI_GeneID
     target_results_xml.set('NCBI_GeneID', str(target_NCBI_GeneID))
-    # # Add the plasmid sequence corresponding to the construct target region, and the start and end coordinates
-    # target_results['construct_aa_start'] = construct_aa_start
-    # target_results['construct_aa_end'] = construct_aa_end
-    # target_results['construct_aa_seq'] = construct_target_region_plasmid_seq
-    # target_results['construct_dna_start'] = construct_dna_start
-    # target_results['construct_dna_end'] = construct_dna_end
-    # target_results['construct_dna_seq'] = construct_dna_seq
-    # And the number of conflicts between plasmid and UniProt canon seq within the target domain region
-    # matching_plasmid_data['nconflicts'] = pd.Series(plasmids_nconflicts, index=matching_plasmid_data.index)
-    # target_results['top_plasmid_nconflicts'] = top_plasmid_data.nconflicts[0]
-    # target_results['top_plasmid_pctidentity'] = top_plasmid_data.pctidentity[0]
     target_results['target_domain_len'] = len(target_domain_seq)
     # And the DB target_score and target_rank
     target_results['DB_target_score'] = DB_target_score
     target_results['DB_target_rank'] = DB_target_rank
     target_results_xml.set('DB_target_score', DB_target_score)
     target_results_xml.set('DB_target_rank', DB_target_rank)
+    target_results_xml.set('aln_domain_start', str(aligned_UniProt_seq_target_domain_match.start()))
+    target_results_xml.set('aln_domain_end', str(aligned_UniProt_seq_target_domain_match.end() - 1))
     target_results['XML'] = etree.tostring(target_results_xml)
 
     return target_results
@@ -718,52 +642,11 @@ if __name__ == '__main__':
         gene_name = DB_entry.findtext('UniProt/gene_names/gene_name[@type="primary"]')
 
         # get PDB structures
-        #matching_PDB_structures = DB_entry.xpath( 'PDB/structure/expression_data[match_regex(@EXPRESSION_SYSTEM, "%s")]' % desired_expression_system_regex, extensions = { (None, 'match_regex'): match_regex } )
 
         genes_from_all_species = DB_root.xpath('entry/UniProt/gene_names/gene_name[@type="primary"][text()="%s"]' % gene_name)
         matching_PDB_structures = DB_root.xpath( 'entry/UniProt/gene_names/gene_name[@type="primary"][text()="%s"]/../../../PDB/structure/expression_data[match_regex(@EXPRESSION_SYSTEM, "%s")]' % (gene_name, desired_expression_system_regex), extensions = { (None, 'match_regex'): match_regex } )
 
         targets_data.append( { target : [ len(matching_PDB_structures) ] } )
-
-    # # ===========
-    # # Get Harvard plasmid library sequences
-    # # ===========
-    #
-    # plasmid_library_dir = os.path.join('..', 'plasmids', 'DFHCC-PlasmID', 'HIP-human_kinase_collection-pJP1520')
-    # Harvard_plasmid_library_filepath = os.path.join(plasmid_library_dir, 'Mehle_Kinase_VS1_pJP1520_new_plates.xlsx')
-    #
-    # wb = openpyxl.load_workbook(Harvard_plasmid_library_filepath)
-    # sheet_ranges = wb.get_sheet_by_name(name = 'Kinase_VS1_pJP1520_new_plates')
-    # nrows = sheet_ranges.get_highest_row()
-    # plasmid_data = {
-    # 'cloneID':[],
-    # 'NCBI_GeneID':[],
-    # 'dna_seq':[],
-    # 'aa_seq':[],
-    # }
-    # #plasmid_aa_seqs = {}
-    # #plasmid_dna_seqs = {}
-    # for row in range(2,nrows):
-    #     cloneID = sheet_ranges.cell('E%d' % row).value
-    #     NCBI_GeneID = sheet_ranges.cell('H%d' % row).value    # returns int
-    #     Symbol = sheet_ranges.cell('I%d' % row).value
-    #     dna_seq = sheet_ranges.cell('L%d' % row).value 
-    #     if len(dna_seq) % 3 != 0:
-    #         print 'WARNING: length of DNA sequence not divisible by 3, for plasmid with Gene Symbol %s and NCBI Gene ID %s' % (Symbol, NCBI_GeneID)
-    #     # Translate to DNA sequence (don't include stop codon)
-    #     aa_seq = Bio.Seq.Seq(dna_seq, Bio.Alphabet.generic_dna).translate(to_stop=True)
-    #     #plasmid_aa_seqs[NCBI_GeneID] = aa_seq
-    #     #plasmid_dna_seqs[NCBI_GeneID] = dna_seq
-    #     plasmid_data['cloneID'].append(cloneID)
-    #     plasmid_data['NCBI_GeneID'].append(NCBI_GeneID)
-    #     plasmid_data['dna_seq'].append(dna_seq)
-    #     plasmid_data['aa_seq'].append(str(aa_seq))
-    #
-    # plasmid_data = pd.DataFrame(plasmid_data)
-    #
-    # #plasmid_NCBI_GeneIDs = plasmid_aa_seqs.keys()
-    #
-    # print ''
 
     # ===========
     # iterate through targets
