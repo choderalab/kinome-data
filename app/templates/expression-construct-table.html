@@ -55,6 +55,19 @@
         <li><strong>top_pdb_nextraneous_residues</strong>: number of residues outside the matched target domain for the top-ranked PDB construct</li>
         <li><strong>top_pdb_taxon</strong>: source organism for the top-ranked PDB construct</li>
         <br/>
+        <table border="1" id="tableindex">
+          <thead>
+            <tr>
+              <th id="tableindexheader">index</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for index in indices %}
+            <tr>
+              <th>{{ index }}</th>
+            </tr>
+          {% endfor %}
+          </tbody>
         <table border="1" class="tablesorter" id="maintable">
           {{maintable}}
         </table>

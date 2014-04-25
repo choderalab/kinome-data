@@ -17,7 +17,7 @@ parser = etree.HTMLParser(remove_blank_text=True)
 
 df = pd.DataFrame.from_csv('../kinase-expression-constructs/96-kinases-sgc_and_hip.csv')
 
-pd_html = df.to_html(columns=html_output_cols)
+pd_html = df.to_html(columns=html_output_cols, index=False)
 html = etree.parse(StringIO.StringIO(pd_html), parser).getroot()
 
 # ========
@@ -74,7 +74,7 @@ env = jinja2.Environment(loader=jinja2.PackageLoader('app', 'templates'))
 template = env.get_template('expression-construct-table.html')
 
 with open('96-kinases-sgc_and_hip.html', 'w') as html_file:
-    html_file.write( template.render(title=title, subtitle=subtitle, maintable=table_content) )
+    html_file.write( template.render(title=title, subtitle=subtitle, maintable=table_content, indices=range(len(df))) )
 
 # ========
 # Copy html alignment files from main branch
