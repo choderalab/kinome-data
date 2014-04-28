@@ -17,7 +17,7 @@ parser = etree.HTMLParser(remove_blank_text=True)
 
 df = pd.DataFrame.from_csv('../kinase-expression-constructs/96-kinases-sgc_and_hip.csv')
 
-pd_html = df.to_html(columns=html_output_cols, index=False)
+pd_html = df.to_html(columns=html_output_cols, index=False, na_rep='-')
 html = etree.parse(StringIO.StringIO(pd_html), parser).getroot()
 
 # ========
