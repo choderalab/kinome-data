@@ -17,7 +17,7 @@ parser = etree.HTMLParser(remove_blank_text=True)
 
 df = pd.DataFrame.from_csv('../kinase-expression-constructs/96-kinases-sgc_and_hip.csv')
 
-pd_html = df.to_html(columns=html_output_cols, index=False, na_rep='-')
+pd_html = df.to_html(columns=html_output_cols, index=True, na_rep='--')
 html = etree.parse(StringIO.StringIO(pd_html), parser).getroot()
 
 # ========
@@ -34,8 +34,8 @@ for tr in thead:
             element.text = element.text.strip()
         except AttributeError:
             continue
-        if element.text in ['plasmid_nconflicts_in_domain', 'plasmid_nextraneous_residues', 'nPDBs', 'top_pdb_auth_score', 'top_pdb_nextraneous_residues', 'DB_target_rank']:
-            element.set("class", "{sorter: 'digit'}")
+        # if element.text in ['plasmid_nconflicts_in_domain', 'plasmid_nextraneous_residues', 'nPDBs', 'top_pdb_auth_score', 'top_pdb_nextraneous_residues', 'DB_target_rank']:
+        #     element.set("class", "{sorter: 'digit'}")
 for tr in tbody:
     for element in tr.getchildren():
         element.text = element.text.strip()
@@ -47,7 +47,6 @@ for tr in tbody:
 for tr in tbody:
     for td in tr:
         if 'HIP pJP1520' in td.text:
-            #cloneID_td = tr.find('td[4]')
             targetID_td = tr.find('td[1]')
             targetID = targetID_td.text
             targetID_td.text = ''
@@ -74,7 +73,7 @@ env = jinja2.Environment(loader=jinja2.PackageLoader('app', 'templates'))
 template = env.get_template('expression-construct-table.html')
 
 with open('96-kinases-sgc_and_hip.html', 'w') as html_file:
-    html_file.write( template.render(title=title, subtitle=subtitle, maintable=table_content, indices=range(len(df))) )
+    html_file.write( template.render(title=title, subtitle=subtitle, maintable=table_content) )
 
 # ========
 # Copy html alignment files from main branch

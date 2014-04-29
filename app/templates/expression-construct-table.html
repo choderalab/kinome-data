@@ -3,36 +3,87 @@
     <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Chivo:900" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen"/>
-    <script type="text/javascript" src="javascript/jquery.tablesorter/jquery-latest.js"></script>
-    <script type="text/javascript" src="javascript/jquery.tablesorter/jquery.tablesorter.min.js"></script>
-    <script type="text/javascript" src="javascript/jquery.tablesorter/addons/pager/jquery.tablesorter.pager.js"></script>
-    <script type="text/javascript" src="javascript/jquery.tablesorter/jquery.metadata.js"></script>
-    <script type="text/javascript">
-    $(function() {
-      // add new widget called repeatHeaders
-      $.tablesorter.addWidget({
-        // give the widget a id
-        id: "repeatHeaders",
-        // format is called when the on init and when a sorting has finished
-        format: function(table) {
-          // cache and collect all TH headers
-          if(!this.headers) {
-            var h = this.headers = []; 
-            $("thead th",table).each(function() {
-              h.push(
-                "<th>" + $(this).text() + "</th>"
-              );
-            });
-          }
-          // remove appended headers by classname.
-          $("tr.repated-header",table).remove();
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css" title="currentStyle">
+        @import "javascript/DataTables-1.9.4/media/css/demo_page.css";
+        @import "javascript/DataTables-1.9.4/media/css/demo_table.css";
+        .FixedHeader_Cloned th { background-color: white; text-align: center }
+        .FixedHeader_Cloned thead { border: 1px solid black; }
+        td.index { background-color: white; border-right: 1px solid black; }
+       /*  table.display th.sorting_disabled { border-bottom: 0px solid black; } */
+    </style>
+    <script type="text/javascript" language="javascript" src="javascript/DataTables-1.9.4/media/js/jquery.js"></script>
+    <script type="text/javascript" language="javascript" src="javascript/DataTables-1.9.4/media/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" language="javascript" src="javascript/DataTables-1.9.4/extras/FixedHeader/js/FixedHeader.js"></script>
+    <script type="text/javascript" language="javascript" src="javascript/DataTables-1.9.4/extras/ColReorder/media/js/ColReorder.js"></script>
+    <script type="text/javascript" language="javascript" src="javascript/DataTables-1.9.4/extras/FixedColumns/media/js/FixedColumns.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    jQuery.fn.dataTableExt.oSort['numeric-null-asc']  = function(a,b) {
+        if (a == "--" && b == "--") {
+            x = y = -1;
         }
-      });
-      // call the tablesorter plugin and assign widgets with id "zebra" (Default widget in the core) and the newly created "repeatHeaders"
-      $("table").tablesorter({
-        widgets: ['zebra','repeatHeaders']
-      });
-    });     
+        else if (a == "--") {
+            x = -1;
+            y = parseFloat( b );
+        }
+        else if (b == "--") {
+            x = parseFloat( a );
+            y = -1;
+        }
+        else {
+            x = parseFloat( a );
+            y = parseFloat( b );
+        }
+        return ((x < y) ? -1 : ((x > y) ?  1 : 0));
+    };
+
+    jQuery.fn.dataTableExt.oSort['numeric-null-desc']  = function(a,b) {
+        if (a == "--" && b == "--") {
+            x = y = -1;
+        }
+        else if (a == "--") {
+            x = -1;
+            y = parseFloat( b );
+        }
+        else if (b == "--") {
+            x = parseFloat( a );
+            y = -1;
+        }
+        else {
+            x = parseFloat( a );
+            y = parseFloat( b );
+        }
+        return ((x < y) ?  1 : ((x > y) ? -1 : 0));
+    };
+
+    $(document).ready(function() {
+
+        var mainTable = $('#maintable').dataTable( {
+           /*  "aaSorting": [[ 0, "asc" ]], */
+            "bPaginate": false,
+            "bAutoWidth": true,
+            "sDom": 'Rlfrtip',
+            "fnDrawCallback": function ( oSettings ) {
+                /* Need to redo the counters if filtered or sorted */
+                if ( oSettings.bSorted || oSettings.bFiltered ) {
+                    for ( var i=0, iLen=oSettings.aiDisplay.length ; i<iLen ; i++ ) {
+                        $('th:eq(0)', oSettings.aoData[ oSettings.aiDisplay[i] ].nTr ).html( i+1 );
+                    }
+                }
+            },
+            "aoColumnDefs": [
+                { "bSortable": false, "sClass": "index", "aTargets": [ 0 ] },
+                { "sType": "numeric-null", "aTargets": [ 10, 11 ] },
+            ],
+            "oColReorder": {
+                "iFixedColumns": 1
+            },
+        } );
+
+        new FixedHeader( mainTable );
+
+    } );
     </script>
   </head>
   <body>
@@ -55,20 +106,7 @@
         <li><strong>top_pdb_nextraneous_residues</strong>: number of residues outside the matched target domain for the top-ranked PDB construct</li>
         <li><strong>top_pdb_taxon</strong>: source organism for the top-ranked PDB construct</li>
         <br/>
-        <table border="1" id="tableindex">
-          <thead>
-            <tr>
-              <th id="tableindexheader">index</th>
-            </tr>
-          </thead>
-          <tbody>
-          {% for index in indices %}
-            <tr>
-              <th>{{ index }}</th>
-            </tr>
-          {% endfor %}
-          </tbody>
-        <table border="1" class="tablesorter" id="maintable">
+        <table class="display" id="maintable">
           {{maintable}}
         </table>
       </div>

@@ -222,6 +222,22 @@ ul, ol, dl {
   margin-bottom: 20px;
 }
 
+/* MAIN TABLE - maintable */
+
+table#maintable {
+    border: 0px;
+}
+
+#maintable th {
+    text-align: center;
+   /*  background-color: #FFF; */
+    border: 0px;
+}
+
+#maintable td {
+    border: 0px;
+}
+
 
 /* TABLESORTER STYLES */
 
