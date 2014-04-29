@@ -163,6 +163,9 @@ selected_targets.reset_index(inplace=True)
 # Write csv file
 selected_targets.to_csv(ofilename + '.csv')
 
+unfiltered_targets = targets_results[ targets_results['plasmid_nconflicts_in_domain'] < 25 ]
+unfiltered_targets.to_csv(ofilename + '-unfiltered.csv')
+
 # Write text file
 with open(ofilename + '.txt', 'w') as otxtfile:
     otxtfile.write(targets_results.to_string(columns=output_columns))
