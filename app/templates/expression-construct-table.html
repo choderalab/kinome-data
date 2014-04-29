@@ -19,6 +19,23 @@
     <script type="text/javascript" language="javascript" src="javascript/DataTables-1.9.4/extras/FixedColumns/media/js/FixedColumns.js"></script>
     <script type="text/javascript" charset="utf-8">
 
+    /* Custom filtering function which will filter data in column four between two values */
+    $.fn.dataTableExt.afnFiltering.push(
+        function( oSettings, aData, iDataIndex ) {
+            var iMax = document.getElementById('db_target_rank_max').value * 1;
+            var iValue = aData[2] == "--" ? 0 : aData[2]*1;
+            if ( iMax == "" )
+            {
+                return true;
+            }
+            else if ( iValue < iMax )
+            {
+                return true;
+            }
+            return false;
+        }
+    );
+
     jQuery.fn.dataTableExt.oSort['numeric-null-asc']  = function(a,b) {
         if (a == "--" && b == "--") {
             x = y = -1;
@@ -81,6 +98,9 @@
             },
         } );
 
+        /* Add event listeners to the two range filtering inputs */
+        $('#db_target_rank_max').keyup( function() { mainTable.fnDraw(); } );
+
         new FixedHeader( mainTable );
 
     } );
@@ -106,6 +126,15 @@
         <li><strong>top_pdb_nextraneous_residues</strong>: number of residues outside the matched target domain for the top-ranked PDB construct</li>
         <li><strong>top_pdb_taxon</strong>: source organism for the top-ranked PDB construct</li>
         <br/>
+
+        <h4>Filters</h4>
+        <table border="0" cellspacing="5" cellpadding="5">
+            <tr>
+                <td>DB_target_rank (enter the desired maximum):</td>
+                <td><input type="text" id="db_target_rank_max" name="db_target_rank_max"></td>
+            </tr>
+        </table>
+
         <table class="display" id="maintable">
           {{maintable}}
         </table>
