@@ -148,7 +148,8 @@ print '%d/%d targets have nPDBs > 0 and top_pdb_auth_score > 0' % (len( targets_
 
 # filter targets
 # print targets_results.sort('plasmid_nextraneous_residues').reset_index().to_string(columns=output_columns)
-selected_targets = targets_results[ targets_results['plasmid_nextraneous_residues'] < 40 ]
+selected_targets = targets_results[ targets_results['plasmid_nconflicts_in_domain'] < 40 ]
+selected_targets = selected_targets[ selected_targets['plasmid_nextraneous_residues'] < 40 ]
 selected_targets.sort('DB_target_rank', inplace=True)
 selected_targets = pd.concat((selected_targets, targets_results[ elem_all_true( [targets_results['nPDBs'] > 0, targets_results['top_pdb_auth_score'] > 0, targets_results['plasmid_nextraneous_residues'] >= 40 ] ) ].sort('top_pdb_nextraneous_residues')))
 # selected_targets = selected_targets[ selected_targets['DB_target_rank'] < 400 ]
