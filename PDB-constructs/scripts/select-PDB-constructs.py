@@ -449,20 +449,20 @@ def process_target(t):
         pdbconstructnode.set('auth_score', str(0-dict_for_sorting[pdbconstructID][0]))
         pdbconstructnode.set('nextraneous_residues', str(dict_for_sorting[pdbconstructID][1]))
         pdbconstructnode.set('nconflicts_target_domain_region', str(nconflicts[pdbconstructID]))
-        if expr_tag_strings[ID] != None:
-            pdbconstructnode.set('expr_tag_string', expr_tag_strings[ID])
+        if expr_tag_strings[pdbconstructID] != None:
+            pdbconstructnode.set('expr_tag_string', expr_tag_strings[pdbconstructID])
         else:
             pdbconstructnode.set('expr_tag_string', '')
-        if constructs_data[ID]['tag_type'] != None:
-            pdbconstructnode.set('expr_tag_type', constructs_data[ID]['tag_type'])
+        if constructs_data[pdbconstructID]['tag_type'] != None:
+            pdbconstructnode.set('expr_tag_type', constructs_data[pdbconstructID]['tag_type'])
         else:
             pdbconstructnode.set('expr_tag_type', '')
-        if constructs_data[ID]['tag_loc'] != None:
-            pdbconstructnode.set('expr_tag_loc', constructs_data[ID]['tag_loc'])
+        if constructs_data[pdbconstructID]['tag_loc'] != None:
+            pdbconstructnode.set('expr_tag_loc', constructs_data[pdbconstructID]['tag_loc'])
         else:
             pdbconstructnode.set('expr_tag_loc', '')
-        if constructs_data[ID]['taxname'] != None:
-            pdbconstructnode.set('taxname', constructs_data[ID]['taxname'])
+        if constructs_data[pdbconstructID]['taxname'] != None:
+            pdbconstructnode.set('taxname', constructs_data[pdbconstructID]['taxname'])
         else:
             pdbconstructnode.set('taxname', '')
         seq = PDB_seqs[pdbconstructID]
@@ -632,7 +632,7 @@ if __name__ == '__main__':
     # targets_data and targets_results structure:[ { targetID : data } , ... ] where data will be constructed as [nmatching_PDB_structures, top_PDB_chain_ID, top_construct_data ]
     targets_data = []
 
-    # targets = ['STK3_HUMAN_D0', 'SRC_HUMAN_D0']
+    # targets = ['PAK4_HUMAN_D0']
     for target in targets:
         # get DB entry
         DB_domain = DB_root.find('entry/UniProt/domains/domain[@targetID="%s"]' % target)
