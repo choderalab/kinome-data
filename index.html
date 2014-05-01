@@ -1,51 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/ico/seqaln.ico">
+    <link rel="stylesheet" href="packages/bootstrap-3.1.1-dist/css/bootstrap.min.css">
+    <style type="text/css" title="currentStyle">
+      .container {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: 15px;
+      margin-left: 15px;
+      width: auto;
+      }
+    </style>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <title>kinome-data</title>
+    <script src="packages/jquery-1.11.0/jquery.min.js"></script>
+    <script src="packages/bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+    
+  <meta name="description" content="kinome-data">
+  <meta name="author" content="Daniel L. Parton">
+  <style type="text/css" title="currentStyle">
+    .centercontainer {
+    // padding-right: 15px;
+    // padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 768px;
+    }
+    .centercontainer .jumbotron {
+    border-radius: 6px;
+    text-align: center;
+    }
+  </style>
+  <title>kinome-data</title>
+
   </head>
-
   <body>
-    <div id="container">
-      <div class="inner">
 
-        <header>
-          <h1>kinome-data</h1>
-          <h2></h2>
-        </header>
-
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/choderalab/kinome-data/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/choderalab/kinome-data/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/choderalab/kinome-data" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
-
-        <hr>
-
-        <section id="main_content">
-          <h1>
-            <a name="targetexplorerdb" class="anchor" href="#targetexplorerdb"><span class="octicon octicon-link"></span></a>
-            index
-          </h1>
-
-          <h2><a href="SGC_Oxford_plasmids_vs_UniProt.html">SGC Oxford plasmids aligned against UniProt seqs</a></h2>
-          <h2><a href="kinase_constructs-sgc_and_hip.html">kinase construct selection</a></h2>
-          <h2><a href="kinase_constructs-sgc_and_hip-unfiltered.html">kinase construct selection (unfiltered)</a></h2>
-        </section>
-
-        <footer>
-          kinome-data is maintained by <a href="https://github.com/choderalab">choderalab</a><br>
-        </footer>
-
+  <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://choderalab.github.io/kinome-data/">kinome-data</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kinase expression constructs<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://choderalab.github.io/kinome-data/kinase_constructs-sgc_and_hip.html">SGC/HIP plasmids (custom selection)</a></li>
+                <li><a href="http://choderalab.github.io/kinome-data/kinase_constructs-sgc_and_hip-unfiltered.html">SGC/HIP plasmids (all data)</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://github.com/choderalab">choderalab@GitHub</a></li>
+            <li><a href="http://www.choderalab.org/">choderalab.org</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
     </div>
-  </body>
+
+  <div class="centercontainer">
+    <div class="jumbotron">
+      <h1>kinome-data</h1>
+    </div>
+  </div>
+
+</body>
 </html>

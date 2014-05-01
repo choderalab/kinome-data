@@ -1,24 +1,59 @@
-<html>
-  <head>
-    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Chivo:900" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+{% extends "base.html" %}
+{% block head %}
+    <meta name="description" content="Kinase expression construct selection table">
+    <meta name="author" content="Daniel L. Parton">
+    <title>Kinase expression construct selection</title>
+
     <style type="text/css" title="currentStyle">
-        @import "javascript/DataTables-1.9.4/media/css/demo_page.css";
-        @import "javascript/DataTables-1.9.4/media/css/demo_table.css";
-        .FixedHeader_Cloned th { background-color: white; text-align: center }
-        .FixedHeader_Cloned thead { border: 1px solid black; }
-        td.index { background-color: white; border-right: 1px solid black; }
-       /*  table.display th.sorting_disabled { border-bottom: 0px solid black; } */
+      @import "packages/DataTables-1.9.4/media/css/demo_page.css";
+      @import "packages/DataTables-1.9.4/media/css/demo_table.css";
+
+      .description_table {
+        border-collapse: separate;
+        background-color: #f5f5f5;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+      .description_table th {
+        text-align: right;
+        border-right: 1px solid #ccc;
+        padding-right: 15px;
+      }
+      .description_table td {
+        padding: 2px 15px;
+      }
+
+      table#maintable {
+          border: 0px;
+      }
+      #maintable th {
+          text-align: center;
+         /*  background-color: #FFF; */
+          border: 0px;
+      }
+      #maintable td {
+          border: 0px;
+      }
+
+      /* Don't display the DataTables search box */
+      .dataTables_filter {
+        display: none;
+      }
+
+      .FixedHeader_Cloned th { background-color: white; text-align: center }
+      .FixedHeader_Cloned thead { border: 1px solid black; }
+      td.index { background-color: white; border-right: 1px solid black; }
+     /*  table.display th.sorting_disabled { border-bottom: 0px solid black; } */
     </style>
-    <script type="text/javascript" language="javascript" src="javascript/DataTables-1.9.4/media/js/jquery.js"></script>
-    <script type="text/javascript" language="javascript" src="javascript/DataTables-1.9.4/media/js/jquery.dataTables.js"></script>
-    <script type="text/javascript" language="javascript" src="javascript/DataTables-1.9.4/extras/FixedHeader/js/FixedHeader.js"></script>
-    <script type="text/javascript" language="javascript" src="javascript/DataTables-1.9.4/extras/ColReorder/media/js/ColReorder.js"></script>
-    <script type="text/javascript" language="javascript" src="javascript/DataTables-1.9.4/extras/FixedColumns/media/js/FixedColumns.js"></script>
+    <script type="text/javascript" language="javascript" src="packages/DataTables-1.9.4/media/js/jquery.js"></script>
+    <script type="text/javascript" language="javascript" src="packages/DataTables-1.9.4/media/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" language="javascript" src="packages/DataTables-1.9.4/extras/FixedHeader/js/FixedHeader.js"></script>
+    <script type="text/javascript" language="javascript" src="packages/DataTables-1.9.4/extras/ColReorder/media/js/ColReorder.js"></script>
+    <script type="text/javascript" language="javascript" src="packages/DataTables-1.9.4/extras/FixedColumns/media/js/FixedColumns.js"></script>
     <script type="text/javascript" charset="utf-8">
 
+    {% if display_filters %}
     /* Custom filtering function which will filter data in column four between two values */
     $.fn.dataTableExt.afnFiltering.push(
         function( oSettings, aData, iDataIndex ) {
@@ -35,6 +70,7 @@
             return false;
         }
     );
+    {% endif %}
 
     jQuery.fn.dataTableExt.oSort['numeric-null-asc']  = function(a,b) {
         if (a == "--" && b == "--") {
@@ -98,47 +134,110 @@
             },
         } );
 
-        /* Add event listeners to the two range filtering inputs */
+        {% if display_filters %}
+        /* Add event listeners to the range filtering inputs */
         $('#db_target_rank_max').keyup( function() { mainTable.fnDraw(); } );
+        {% endif %}
 
         new FixedHeader( mainTable );
 
     } );
     </script>
-  </head>
-  <body>
-    <div id="leftjstfdpage">
-      <div id="container">
-        <h1>{{title}}</h1>
-        <h3>{{subtitle}}</h3>
-        <h4>Notes</h4>
-        Click on the targetID to see sequence alignment.
-        <br/>
-        <br/>
-        <li><strong>targetID</strong>: matching UniProt entry name followed by the target domain index</li>
-        <li><strong>DB_target_rank</strong>: TargetExplorer database target rank</li>
-        <li><strong>plasmid_nconflicts_in_domain</strong>: number of conflicts between plasmid and UniProt sequence in the region of the target domain</li>
-        <li><strong>plasmid_nextraneous_residues</strong>: number of plasmid insert residues outside the matched target domain</li>
-        <li><strong>nPDBs</strong>: number of PDBs matched by ExpressionExplorer</li>
-        <li><strong>top_pdb_ID</strong>: top-ranked PDB (and chain ID)</li>
-        <li><strong>top_pdb_expr_tag</strong>: type of expression tag detected for top-ranked PDB construct</li>
-        <li><strong>top_pdb_auth_score</strong>: authenticity score assigned to top-ranked PDB construct</li>
-        <li><strong>top_pdb_nextraneous_residues</strong>: number of residues outside the matched target domain for the top-ranked PDB construct</li>
-        <li><strong>top_pdb_taxon</strong>: source organism for the top-ranked PDB construct</li>
-        <br/>
-
-        <h4>Filters</h4>
-        <table border="0" cellspacing="5" cellpadding="5">
-            <tr>
-                <td>DB_target_rank (enter the desired maximum):</td>
-                <td><input type="text" id="db_target_rank_max" name="db_target_rank_max"></td>
-            </tr>
+{% endblock %}
+{% block content %}
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Kinase expression constructs</h1>
+        <h2>Information</h2>
+        <h4>Custom selection procedure:</h4>
+        <ul class="list-group">
+          <li>All kinase domain targets which have matching plasmids with &lt; 40 extraneous residues</li>
+          <li>Plus all kinase domain targets which have a matching PDB construct with an authenticity score of &gt; 0</li>
+          <li>While filtering out kinase domain targets with DB_target_rank &gt; 450 (this removes the lowest-ranked of the 498 kinase domain targets, many of which are pseudokinases, or have unusually long/short kinase domains)</li>
+        </ul>
+        <h4>Formal notation:</h4>
+        <p><pre>( ( <span class="text-primary">plasmid_nextraneous_residues</span> &lt; 40 ) or ( <span class="text-primary">nPDBs</span> &gt; 0 and <span class="text-primary">top_pdb_auth_score</span> &gt; 0 ) ) and <span class="text-primary">DB_target_rank</span> &lt; 450</pre></p>
+        <h4>Description of table fields with details of selection procedure:</h4>
+        <table class="description_table">
+          <tr>
+          <th>targetID</th>
+          <td>Kinase domain targets are given an identifier consisting of UniProt entry name followed by the kinase domain index (since some kinases have two catalytic domains)</td>
+          </tr>
+          <tr>
+          <th>DB_target_rank</th>
+          <td>Target rank (based on metrics such as number of bioassays, number of PDBs, number of publications, % mutation rate in sequenced tumor samples)</td>
+          </tr>
+          <tr>
+          <th>plasmid_source</th>
+          <td>Two plasmid libraries are currently available to the Chodera lab - SGC Oxford and HIP pJP1520</td>
+          </tr>
+          <tr>
+          <th>plasmid_ID</th>
+          <td>For a given target, all matching plasmids are aligned and sorted based on nconflicts and nextraneous_residues (see below), and the top-ranked plasmid is selected (click the targetID to see the alignment)</td>
+          </tr>
+          <tr>
+          <th>plasmid_nconflicts</th>
+          <td>Number of conflicts between plasmid and UniProt sequence in the region of the target domain</td>
+          </tr>
+          <tr>
+          <th>plasmid_nextraneous_residues</th>
+          <td>Number of plasmid residues outside the target domain region</td>
+          </tr>
+          <tr>
+          <th>nPDBs</th>
+          <td>Number of PDB constructs with an E coli expression system annotation</td>
+          </tr>
+          <tr>
+          <th>top_pdb_ID</th>
+          <td>Matching PDB constructs are ranked by auth_score (see below), nconflicts, and nextraneous_residues, and the top-ranked PDB (and chain ID) is selected</td>
+          </tr>
+          <tr>
+          <th>top_pdb_expr_tag</th>
+          <td>Type of expression tag detected for top-ranked PDB construct</td>
+          </tr>
+          <tr>
+          <th>top_pdb_auth_score</th>
+          <td>Authenticity score assigned to top-ranked PDB construct based on the expression tag detected. Currently this is only used to distinguish between constructs with expression tags (auth_score &gt; 0) and those without (auth_score = 0)</td>
+          </tr>
+          <tr>
+          <th>top_pdb_nextraneous_residues</th>
+          <td>Number of PDB construct residues outside the target domain region</td>
+          </tr>
+          <tr>
+          <th>family</th>
+          <td>UniProt protein family annotation</td>
+          </tr>
+          <!-- <tr>
+          <th>top_pdb_taxon</th>
+          <td>source organism for the top-ranked PDB construct</td>
+          </tr> -->
         </table>
+        <h4>Other notes:</h4>
+        Sort table by clicking on column headers. Shift-click for multicolumn sorting. Drag-click to rearrange columns.<br/>
+        Click on the targetID to see alignments of plasmids and PDB constructs against the target UniProt sequence (kinase catalytic domain highlighted in red).
+      </div>
 
-        <table class="display" id="maintable">
-          {{maintable}}
+    </div> <!-- /container -->
+
+  <div class="container">
+    <h2>Table of kinase expression constructs</h2>
+    {% if display_filters %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">Filters</h4>
+      </div>
+      <div class="panel-body">
+        <table class="description_table" border="0" cellspacing="5" cellpadding="5">
+          <tr>
+            <th>DB_target_rank (max):</th>
+            <td><input type="text" id="db_target_rank_max" name="db_target_rank_max"></td>
+          </tr>
         </table>
       </div>
     </div>
-  </body>
-</html>
+    {% endif %}
+    <table class="display" id="maintable">
+      {{maintable}}
+    </table>
+  </div>
+{% endblock %}

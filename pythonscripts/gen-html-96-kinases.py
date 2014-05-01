@@ -1,8 +1,6 @@
 import os, shutil, StringIO
 import pandas as pd
-import lxml.html
 from lxml import etree
-from lxml.html import builder as E
 import jinja2
 
 # ========
@@ -11,7 +9,7 @@ import jinja2
 
 title = '96 kinases'
 subtitle = 'Selected from SGC Oxford and HIP pJP1520 plasmid libraries'
-html_output_cols = ['targetID', 'DB_target_rank', 'plasmid_source', 'plasmid_ID', 'plasmid_nconflicts_in_domain', 'plasmid_nextraneous_residues', 'nPDBs', 'top_pdb_ID', 'top_pdb_expr_tag', 'top_pdb_auth_score', 'top_pdb_nextraneous_residues', 'top_pdb_taxon']
+html_output_cols = ['targetID', 'DB_target_rank', 'plasmid_source', 'plasmid_ID', 'plasmid_nconflicts', 'plasmid_nextraneous_residues', 'nPDBs', 'top_pdb_ID', 'top_pdb_expr_tag', 'top_pdb_auth_score', 'top_pdb_nextraneous_residues', 'family']
 
 parser = etree.HTMLParser(remove_blank_text=True)
 
@@ -34,8 +32,6 @@ for tr in thead:
             element.text = element.text.strip()
         except AttributeError:
             continue
-        # if element.text in ['plasmid_nconflicts_in_domain', 'plasmid_nextraneous_residues', 'nPDBs', 'top_pdb_auth_score', 'top_pdb_nextraneous_residues', 'DB_target_rank']:
-        #     element.set("class", "{sorter: 'digit'}")
 for tr in tbody:
     for element in tr.getchildren():
         element.text = element.text.strip()
@@ -72,27 +68,19 @@ table_content = '\n'.join([etree.tostring(element) for element in table_children
 env = jinja2.Environment(loader=jinja2.PackageLoader('app', 'templates'))
 template = env.get_template('expression-construct-table.html')
 
-with open('96-kinases-sgc_and_hip.html', 'w') as html_file:
-    html_file.write( template.render(title=title, subtitle=subtitle, maintable=table_content) )
+with open('kinase_constructs-sgc_and_hip.html', 'w') as html_file:
+    html_file.write( template.render(title=title, subtitle=subtitle, maintable=table_content, display_filters=False) )
 
 # ========
 # Copy html alignment files from main branch
 # ========
 
 # copy CSS
-# shutil.copy('stylesheets/seqlib.css', 'plasmid-construct-alignments/HIP-pJP1520/seqlib.css')
-# shutil.copy('stylesheets/seqlib.css', 'plasmid-construct-alignments/SGC-Oxford/seqlib.css')
 shutil.copy('stylesheets/seqlib.css', 'plasmid-construct-alignments/seqlib.css')
 
 targetIDs = list(df['targetID'])
 for targetID in targetIDs:
-    src_html_filepath = os.path.join('..', 'kinase-expression-constructs', 'alignments', targetID + '.html') # XXX directory location will prob change soon
+    src_html_filepath = os.path.join('..', 'kinase-expression-constructs', 'alignments', targetID + '.html')
     dest_html_filepath = os.path.join('plasmid-construct-alignments', targetID + '.html')
     shutil.copy(src_html_filepath, dest_html_filepath)
-
-# SGC_plasmid_cloneIDs = list( df[df['plasmid_source'] == 'SGC Oxford']['cloneID'] )
-# for cloneID in SGC_plasmid_cloneIDs:
-#     src_html_filepath = os.path.join('..', 'kinase-expression-constructs', 'alignments', targetID + '.html')
-#     dest_html_filepath = os.path.join('plasmid-construct-alignments', 'SGC-Oxford', cloneID + '.html')
-#     shutil.copy(src_html_filepath, dest_html_filepath)
 
