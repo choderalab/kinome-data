@@ -393,13 +393,24 @@ def process_target(t):
     num_aas_outside_target_domain = [0] * len(PDB_construct_seqs_aligned)
     for i in range(len(PDB_construct_seqs_aligned)):
         PDB_chain_ID = PDB_construct_seqs_aligned[i][0]
-        # to get the total number of aas in the PDB construct, we take the mapping of that sequence against the UniProt sequence (derived from SIFTS data, not an alignment)
-        # get this from the PDB construct sequence mapped (using SIFTS data - not an alignment) against the UniProt seq coords
-        PDB_construct_start_UniProt_coords = re.search('[A-Za-z]', PDB_seqs_aln_vs_UniProt_conflicts[PDB_chain_ID]).start()
-        PDB_construct_end_UniProt_coords = len(PDB_seqs_aln_vs_UniProt_conflicts[PDB_chain_ID]) - re.search('[A-Z]', PDB_seqs_aln_vs_UniProt_conflicts[PDB_chain_ID][::-1]).start()
-        # this calculation will include '-' and 'x' chars within the span
-        PDB_construct_len = PDB_construct_end_UniProt_coords - PDB_construct_start_UniProt_coords + 1
-        num_aas_outside_target_domain[i] = PDB_construct_len - target_domain_len
+        PDB_seq_aln = PDB_construct_seqs_aligned[i][1]
+        UniProt_seq_aln = UniProt_aligned[1]
+        extraneous_PDB_seq_aln = PDB_seq_aln[0: aligned_UniProt_seq_target_domain_match.start() + 1] + PDB_seq_aln[aligned_UniProt_seq_target_domain_match.end(): ]
+        nextraneous_residues = len( extraneous_PDB_seq_aln.replace('-', '') )
+        num_aas_outside_target_domain[i] = nextraneous_residues
+
+    # num_aas_outside_target_domain = [0] * len(PDB_construct_seqs_aligned)
+    # for i in range(len(PDB_construct_seqs_aligned)):
+    #     PDB_chain_ID = PDB_construct_seqs_aligned[i][0]
+    #     # to get the total number of aas in the PDB construct, we take the mapping of that sequence against the UniProt sequence (derived from SIFTS data, not an alignment)
+    #     # get this from the PDB construct sequence mapped (using SIFTS data - not an alignment) against the UniProt seq coords
+    #     PDB_construct_start_UniProt_coords = re.search('[A-Za-z]', PDB_seqs_aln_vs_UniProt_conflicts[PDB_chain_ID]).start()
+    #     PDB_construct_end_UniProt_coords = len(PDB_seqs_aln_vs_UniProt_conflicts[PDB_chain_ID]) - re.search('[A-Z]', PDB_seqs_aln_vs_UniProt_conflicts[PDB_chain_ID][::-1]).start()
+    #     # this calculation will include '-' and 'x' chars within the span
+    #     PDB_construct_len = PDB_construct_end_UniProt_coords - PDB_construct_start_UniProt_coords + 1
+    #     num_aas_outside_target_domain[i] = PDB_construct_len - target_domain_len
+    #     print PDB_chain_ID, num_aas_outside_target_domain[i], PDB_construct_start_UniProt_coords, PDB_construct_end_UniProt_coords
+    #     print PDB_seqs_aln_vs_UniProt_conflicts[PDB_chain_ID]
 
     # ===========
     # score the alignment quality for the target domain sequence
@@ -500,35 +511,35 @@ def process_target(t):
     # find the "construct target region" (the central portion of the construct with sequence matching the target protein sequence, i.e. excluding expression tags etc.)
     # ===========
 
-    # get this from the PDB construct sequence mapped (using SIFTS data - not an alignment) against the UniProt seq coords
-    # desired span is from the first upper-case character to the last
-
-    top_PDB_seq_aln_vs_UniProt_conflicts = PDB_seqs_aln_vs_UniProt_conflicts[top_PDB_chain_ID]
-    regex_match_forward = re.search('[A-Z]', top_PDB_seq_aln_vs_UniProt_conflicts)
-    top_PDB_seq_aln_vs_UniProt_conflicts_reverse = top_PDB_seq_aln_vs_UniProt_conflicts[::-1]
-    regex_match_backward = re.search('[A-Z]', top_PDB_seq_aln_vs_UniProt_conflicts_reverse)
-    construct_target_region_start_UniProt_coords = regex_match_forward.start()
-    construct_target_region_end_UniProt_coords = len(top_PDB_seq_aln_vs_UniProt_conflicts) - regex_match_backward.end()
-    construct_target_region_seq = top_PDB_seq_aln_vs_UniProt_conflicts[ construct_target_region_start_UniProt_coords : construct_target_region_end_UniProt_coords + 1]
-
-    # now get the construct target region span in the coordinates of the alignment
-    # do this by constructing a regex which accounts for the presence of '-' chars, and searching it against the aligned construct sequence
-    # ignore '-' chars existing within construct_target_region_seq (which shouldn't be there according to the PDB standard, but frequently are, as SEQRES records often contain the observed sequence rather than the experimental sequence)
-    # also convert all residues to upper case. This helps to avoid errors occurring due to non-ideal alignments.
-
-    construct_target_region_regex = ''.join([ aa + '-*' for aa in construct_target_region_seq if aa != '-' ])[:-2] # ignore last '-*'
-    regex_match = re.search(construct_target_region_regex.upper(), PDB_construct_seqs_aligned[0][1].upper())
-    try:
-        construct_target_region_start_aln_coords = regex_match.start()
-    except Exception as e:
-        print UniProt_canon_seq_target_domain_seq
-        print construct_target_region_seq
-        print construct_target_region_regex
-        print PDB_construct_seqs_aligned[0][1]
-        print PDB_construct_seqs_aligned[0][1].replace('-', '')
-        print traceback.format_exc()
-        raise e
-    construct_target_region_end_aln_coords = regex_match.end() - 1
+    # # get this from the PDB construct sequence mapped (using SIFTS data - not an alignment) against the UniProt seq coords
+    # # desired span is from the first upper-case character to the last
+    #
+    # top_PDB_seq_aln_vs_UniProt_conflicts = PDB_seqs_aln_vs_UniProt_conflicts[top_PDB_chain_ID]
+    # regex_match_forward = re.search('[A-Z]', top_PDB_seq_aln_vs_UniProt_conflicts)
+    # top_PDB_seq_aln_vs_UniProt_conflicts_reverse = top_PDB_seq_aln_vs_UniProt_conflicts[::-1]
+    # regex_match_backward = re.search('[A-Z]', top_PDB_seq_aln_vs_UniProt_conflicts_reverse)
+    # construct_target_region_start_UniProt_coords = regex_match_forward.start()
+    # construct_target_region_end_UniProt_coords = len(top_PDB_seq_aln_vs_UniProt_conflicts) - regex_match_backward.end()
+    # construct_target_region_seq = top_PDB_seq_aln_vs_UniProt_conflicts[ construct_target_region_start_UniProt_coords : construct_target_region_end_UniProt_coords + 1]
+    #
+    # # now get the construct target region span in the coordinates of the alignment
+    # # do this by constructing a regex which accounts for the presence of '-' chars, and searching it against the aligned construct sequence
+    # # ignore '-' chars existing within construct_target_region_seq (which shouldn't be there according to the PDB standard, but frequently are, as SEQRES records often contain the observed sequence rather than the experimental sequence)
+    # # also convert all residues to upper case. This helps to avoid errors occurring due to non-ideal alignments.
+    #
+    # construct_target_region_regex = ''.join([ aa + '-*' for aa in construct_target_region_seq if aa != '-' ])[:-2] # ignore last '-*'
+    # regex_match = re.search(construct_target_region_regex.upper(), PDB_construct_seqs_aligned[0][1].upper())
+    # try:
+    #     construct_target_region_start_aln_coords = regex_match.start()
+    # except Exception as e:
+    #     print UniProt_canon_seq_target_domain_seq
+    #     print construct_target_region_seq
+    #     print construct_target_region_regex
+    #     print PDB_construct_seqs_aligned[0][1]
+    #     print PDB_construct_seqs_aligned[0][1].replace('-', '')
+    #     print traceback.format_exc()
+    #     raise e
+    # construct_target_region_end_aln_coords = regex_match.end() - 1
 
     # ===========
     # add data to targets_results
@@ -632,7 +643,6 @@ if __name__ == '__main__':
     # targets_data and targets_results structure:[ { targetID : data } , ... ] where data will be constructed as [nmatching_PDB_structures, top_PDB_chain_ID, top_construct_data ]
     targets_data = []
 
-    # targets = ['PAK4_HUMAN_D0']
     for target in targets:
         # get DB entry
         DB_domain = DB_root.find('entry/UniProt/domains/domain[@targetID="%s"]' % target)

@@ -23,8 +23,6 @@ pdbconstruct_data = etree.parse('../PDB-constructs/PDB_constructs-data.xml').get
 
 alignments_dir = 'alignments'
 
-print plasmid_data.columns
-
 # ========
 # defs
 # ========
@@ -106,14 +104,15 @@ def process_target(t):
     print 'Working on target:', targetID
 
     plasmids = plasmid_data[ plasmid_data['matching_targetID'] == targetID ]
-    cloneIDs = list(plasmids.index)
-    plasmid_seqs = list(plasmids['insert_aa_seq'])
 
     if len(plasmids) == 0:
         return None
 
     # sort plasmids
     plasmids.sort(('nextraneous_plasmid_residues', 'nconflicts_target_domain_region'), inplace=True)
+
+    cloneIDs = list(plasmids.index)
+    plasmid_seqs = list(plasmids['insert_aa_seq'])
 
     pdbconstructs = target.findall('PDB_construct')
     pdbconstructIDs = [x.get('PDBconstructID') for x in pdbconstructs]
