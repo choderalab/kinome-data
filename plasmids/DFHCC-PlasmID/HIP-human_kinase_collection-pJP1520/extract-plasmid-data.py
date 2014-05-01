@@ -61,16 +61,8 @@ DB_root = etree.parse(args.database_path).getroot()
 
 
 # To be used to construct a pandas DataFrame
-data_fields = ['cloneID', 'NCBI_GeneID', 'orig_gene_symbol', 'UniProtAC', 'UniProt_entry_name', 'insert_dna_seq', 'insert_aa_seq']
+data_fields = ['cloneID', 'NCBI_GeneID', 'orig_gene_symbol', 'UniProtAC', 'UniProt_entry_name', 'UniProt_family', 'insert_dna_seq', 'insert_aa_seq']
 output_data = pd.DataFrame( [['None'] * len(data_fields)] * len(plasmid_df), columns=data_fields)
-# output_data = {
-# 'cloneID':[],
-# 'orig_gene_symbol':[],
-# 'UniProtAC':[],
-# 'UniProt_entry_name':[],
-# 'insert_dna_seq':[],
-# 'insert_aa_seq':[],
-# }
 
 print output_data
 
@@ -113,10 +105,12 @@ for p in plasmid_df.index:
     DB_domains = DB_UniProt_node.findall('domains/domain[@targetID]')
     UniProtAC = DB_UniProt_node.get('AC')
     UniProt_entry_name = DB_UniProt_node.get('entry_name')
+    UniProt_family = DB_UniProt_node.get('family')
     UniProt_canonseq = clab.core.sequnwrap( DB_UniProt_node.find('isoforms/canonical_isoform/sequence').text )
 
     output_data['UniProtAC'][p] = UniProtAC
     output_data['UniProt_entry_name'][p] = UniProt_entry_name
+    output_data['UniProt_family'][p] = UniProt_family
 
     #break
 

@@ -30,6 +30,7 @@ plasmid_df = {
 'HGNCSymbol':[],
 'UniProtAC':[],
 'UniProt_entry_name':[],
+'UniProt_family':[],
 'DB_target_rank':[],
 'insert_dna_seq':[],
 'insert_aa_seq':[],
@@ -75,6 +76,7 @@ for row in range(2, nrows-1):
 
     UniProtAC = matching_DB_entry.find('UniProt').get('AC')
     UniProt_entry_name = matching_DB_entry.find('UniProt').get('entry_name')
+    UniProt_family = matching_DB_entry.find('UniProt').get('family')
     target_rank = matching_DB_entry.find('target_score/domain')
     if target_rank != None:
         target_rank = target_rank.get('target_rank')
@@ -83,6 +85,7 @@ for row in range(2, nrows-1):
     plasmid_df['HGNCSymbol'].append(HGNCSymbol)
     plasmid_df['UniProtAC'].append(UniProtAC)
     plasmid_df['UniProt_entry_name'].append(UniProt_entry_name)
+    plasmid_df['UniProt_family'].append(UniProt_family)
     plasmid_df['DB_target_rank'].append(target_rank)
     plasmid_df['insert_aa_seq'].append( ws.cell('T%d' % row).value )
     plasmid_df['insert_dna_seq'].append( ws.cell('U%d' % row).value )

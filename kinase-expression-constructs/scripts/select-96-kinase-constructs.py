@@ -5,7 +5,7 @@ import numpy as np
 
 ofilename = '96-kinases-sgc_and_hip'
 
-output_columns=['targetID', 'DB_target_rank', 'plasmid_source', 'plasmid_ID', 'plasmid_nconflicts_in_domain', 'plasmid_nextraneous_residues', 'nPDBs', 'top_pdb_ID', 'top_pdb_expr_tag', 'top_pdb_auth_score', 'top_pdb_nextraneous_residues', 'top_pdb_taxon']
+output_columns=['targetID', 'DB_target_rank', 'plasmid_source', 'plasmid_ID', 'plasmid_nconflicts', 'plasmid_nextraneous_residues', 'nPDBs', 'top_pdb_ID', 'top_pdb_expr_tag', 'top_pdb_auth_score', 'top_pdb_nextraneous_residues', 'family']
 
 # ========
 # Read in data
@@ -56,14 +56,14 @@ targets_results = {
 'DB_target_rank':[],
 'plasmid_source':[],
 'plasmid_ID':[],
-'plasmid_nconflicts_in_domain':[],
+'plasmid_nconflicts':[],
 'plasmid_nextraneous_residues':[],
 'nPDBs':[],
 'top_pdb_ID':[],
 'top_pdb_expr_tag':[],
 'top_pdb_auth_score':[],
 'top_pdb_nextraneous_residues':[],
-'top_pdb_taxon':[],
+'family':[],
 }
 
 hip_results = copy.deepcopy(targets_results)
@@ -79,8 +79,9 @@ for target in pdbconstructs_xml:
         targets_results['targetID'].append(targetID)
         targets_results['plasmid_source'].append('SGC Oxford')
         targets_results['plasmid_ID'].append(chosen_sgc_plasmid['cloneID'].values[0])
-        targets_results['plasmid_nconflicts_in_domain'].append(chosen_sgc_plasmid['nconflicts_target_domain_region'].values[0])
+        targets_results['plasmid_nconflicts'].append(chosen_sgc_plasmid['nconflicts_target_domain_region'].values[0])
         targets_results['plasmid_nextraneous_residues'].append(chosen_sgc_plasmid['nextraneous_plasmid_residues'].values[0])
+        targets_results['family'].append(chosen_sgc_plasmid['UniProt_family'].values[0])
 
         targets_results['DB_target_rank'].append(target.get('DB_target_rank'))
         targets_results['nPDBs'].append(target.get('nPDBs'))
@@ -92,13 +93,13 @@ for target in pdbconstructs_xml:
             targets_results['top_pdb_expr_tag'].append(pdbconstructs[0].get('expr_tag_string'))
             targets_results['top_pdb_auth_score'].append(pdbconstructs[0].get('auth_score'))
             targets_results['top_pdb_nextraneous_residues'].append(pdbconstructs[0].get('nextraneous_residues'))
-            targets_results['top_pdb_taxon'].append(pdbconstructs[0].get('taxname'))
+            # targets_results['top_pdb_taxon'].append(pdbconstructs[0].get('taxname'))
         else:
             targets_results['top_pdb_ID'].append(np.nan)
             targets_results['top_pdb_expr_tag'].append(np.nan)
             targets_results['top_pdb_auth_score'].append(np.nan)
             targets_results['top_pdb_nextraneous_residues'].append(np.nan)
-            targets_results['top_pdb_taxon'].append(np.nan)
+            # targets_results['top_pdb_taxon'].append(np.nan)
 
 # for targets without SGC plasmids, look for HIP plasmids
 for target in pdbconstructs_xml:
@@ -114,8 +115,9 @@ for target in pdbconstructs_xml:
         targets_results['targetID'].append(targetID)
         targets_results['plasmid_source'].append('HIP pJP1520')
         targets_results['plasmid_ID'].append(chosen_hip_plasmid['cloneID'].values[0])
-        targets_results['plasmid_nconflicts_in_domain'].append(chosen_hip_plasmid['nconflicts_target_domain_region'].values[0])
+        targets_results['plasmid_nconflicts'].append(chosen_hip_plasmid['nconflicts_target_domain_region'].values[0])
         targets_results['plasmid_nextraneous_residues'].append(chosen_hip_plasmid['nextraneous_plasmid_residues'].values[0])
+        targets_results['family'].append(chosen_hip_plasmid['UniProt_family'].values[0])
 
         targets_results['DB_target_rank'].append(target.get('DB_target_rank'))
         targets_results['nPDBs'].append(target.get('nPDBs'))
@@ -127,13 +129,13 @@ for target in pdbconstructs_xml:
             targets_results['top_pdb_expr_tag'].append(pdbconstructs[0].get('expr_tag_string'))
             targets_results['top_pdb_auth_score'].append(pdbconstructs[0].get('auth_score'))
             targets_results['top_pdb_nextraneous_residues'].append(pdbconstructs[0].get('nextraneous_residues'))
-            targets_results['top_pdb_taxon'].append(pdbconstructs[0].get('taxname'))
+            # targets_results['top_pdb_taxon'].append(pdbconstructs[0].get('taxname'))
         else:
             targets_results['top_pdb_ID'].append(np.nan)
             targets_results['top_pdb_expr_tag'].append(np.nan)
             targets_results['top_pdb_auth_score'].append(np.nan)
             targets_results['top_pdb_nextraneous_residues'].append(np.nan)
-            targets_results['top_pdb_taxon'].append(np.nan)
+            # targets_results['top_pdb_taxon'].append(np.nan)
 
 targets_results = pd.DataFrame(targets_results)
 # convert 'DB_target_rank' column to int dtype (from str), ready for sorting
@@ -148,8 +150,9 @@ print '%d/%d targets have nPDBs > 0 and top_pdb_auth_score > 0' % (len( targets_
 
 # filter targets
 # print targets_results.sort('plasmid_nextraneous_residues').reset_index().to_string(columns=output_columns)
-selected_targets = targets_results[ targets_results['plasmid_nconflicts_in_domain'] < 40 ]
+selected_targets = targets_results[ targets_results['plasmid_nconflicts'] < 40 ]
 selected_targets = selected_targets[ selected_targets['plasmid_nextraneous_residues'] < 40 ]
+selected_targets = selected_targets[ selected_targets['DB_target_rank'] < 450 ]
 selected_targets.sort('DB_target_rank', inplace=True)
 selected_targets = pd.concat((selected_targets, targets_results[ elem_all_true( [targets_results['nPDBs'] > 0, targets_results['top_pdb_auth_score'] > 0, targets_results['plasmid_nextraneous_residues'] >= 40 ] ) ].sort('top_pdb_nextraneous_residues')))
 # selected_targets = selected_targets[ selected_targets['DB_target_rank'] < 400 ]
@@ -163,7 +166,7 @@ selected_targets.reset_index(inplace=True)
 # Write csv file
 selected_targets.to_csv(ofilename + '.csv')
 
-unfiltered_targets = targets_results[ targets_results['plasmid_nconflicts_in_domain'] < 25 ]
+unfiltered_targets = targets_results[ targets_results['plasmid_nconflicts'] < 25 ]
 unfiltered_targets.to_csv(ofilename + '-unfiltered.csv')
 
 # Write text file
