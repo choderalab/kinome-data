@@ -184,14 +184,16 @@
       <div class="jumbotron">
         <h1>Kinase expression constructs</h1>
         <h2>Information</h2>
-        <h4>Custom selection procedure:</h4>
-        <ul class="list-group">
-          <li>All kinase domain targets which have matching plasmids with &lt; 40 extraneous residues</li>
-          <li>Plus all kinase domain targets which have a matching PDB construct with an authenticity score of &gt; 0</li>
-          <li>While filtering out kinase domain targets with DB_target_rank &gt; 450 (this removes the lowest-ranked of the 498 kinase domain targets, many of which are pseudokinases, or have unusually long/short kinase domains)</li>
-        </ul>
-        <h4>Formal notation:</h4>
-        <p><pre>( ( <span class="text-primary">plasmid_nextraneous_residues</span> &lt; 40 ) or ( <span class="text-primary">nPDBs</span> &gt; 0 and <span class="text-primary">top_pdb_auth_score</span> &gt; 0 ) ) and <span class="text-primary">DB_target_rank</span> &lt; 450</pre></p>
+        
+  <h4>Custom selection procedure:</h4>
+  <ul class="list-group">
+    <li>All kinase domain targets which have matching plasmids with &lt; 40 extraneous residues</li>
+    <li>Plus all kinase domain targets which have a matching PDB construct with an authenticity score of &gt; 0</li>
+    <li>While filtering out kinase domain targets with DB_target_rank &gt; 450 (this removes the lowest-ranked of the 498 kinase domain targets, many of which are pseudokinases, or have unusually long/short kinase domains)</li>
+  </ul>
+  <h4>And again in pseudocode notation:</h4>
+  <p><pre>( ( <span class="text-primary">plasmid_nextraneous_residues</span> &lt; 40 ) or ( <span class="text-primary">nPDBs</span> &gt; 0 and <span class="text-primary">top_pdb_auth_score</span> &gt; 0 ) ) and <span class="text-primary">DB_target_rank</span> &lt; 450</pre></p>
+
         <h4>Description of table fields with details of selection procedure:</h4>
         <table class="description_table">
           <tr>
