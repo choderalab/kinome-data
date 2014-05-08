@@ -164,7 +164,7 @@
 
         // Client-side routes    
         Sammy(function () {
-            this.get('/push/:target_ac', function () {
+            this.get('testrouting.html/push/:target_ac', function () {
                 self.currentTargetAC(this.params.target_ac);
                 self.ajax(self.dbURI + "/" + self.currentTargetAC(), 'GET').done(function(data) {
                     self.dbtarget.updatedata(data);
