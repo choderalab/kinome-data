@@ -80,9 +80,9 @@
       <!-- content goes here... -->
 
       <div class="btn-group">
-      <a class="btn btn-primary" href="testrouting.html#/push/P12931">src</a>
-      <a class="btn btn-primary" href="testrouting.html#/push/P00519">abl1</a>
-      <a class="btn btn-primary" href="testrouting.html#/push/P00533">egfr</a>
+      <a class="btn btn-primary" href="testrouting.html/push/P12931">src</a>
+      <a class="btn btn-primary" href="testrouting.html/push/P00519">abl1</a>
+      <a class="btn btn-primary" href="testrouting.html/push/P00533">egfr</a>
       </div>
 
       <div class="panel panel-default">
@@ -163,7 +163,7 @@
 
         // Client-side routes    
         Sammy(function () {
-            this.get('#/push/:target_ac', function () {
+            this.get('/push/:target_ac', function () {
                 self.currentTargetAC(this.params.target_ac);
                 self.ajax(self.dbURI + "/" + self.currentTargetAC(), 'GET').done(function(data) {
                     self.dbtarget.updatedata(data);
