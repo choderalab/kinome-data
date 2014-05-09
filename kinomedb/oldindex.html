@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <base href="http://choderalab.github.io/kinome-data/kinomedb/">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta name="description" content="">
@@ -74,32 +73,12 @@
     </div><!-- headerbar -->
         
     <div class="pageheader">
-      <h2><i class="fa fa-crosshairs"></i><kovar data-bind="text: dbtarget.entry_name"> Target protein </kovar><span data-bind="text: dbtarget.ac"></span></h2>
+      <h2><i class="fa fa-home"></i> Home <span>homepage</span></h2>
     </div>
     
     <div class="contentpanel">
       <!-- content goes here... -->
-
-      <div class="btn-group">
-      <a class="btn btn-primary" href="testrouting.html/push/P12931">src</a>
-      <a class="btn btn-primary" href="testrouting.html/push/P00519">abl1</a>
-      <a class="btn btn-primary" href="testrouting.html/push/P00533">egfr</a>
-      </div>
-
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">UniProt</h4>
-        </div><!-- panel-heading -->
-        <div class="panel-body">
-          <ul>
-            <li>accession code (AC): <span data-bind="text: dbtarget.ac"></span></li>
-            <li>entry_name: <span data-bind="text: dbtarget.entry_name"></span></li>
-            <li>family: <span data-bind="text: dbtarget.family"></span></li>
-            </div>
-          </ul>
-        </div><!-- panel-body -->
-      </div><!-- panel -->
-
+      Content
     </div>
     
   </div><!-- mainpanel -->
@@ -116,69 +95,8 @@
 <script src="js/toggles.min.js"></script>
 <script src="js/retina.min.js"></script>
 <script src="js/jquery.cookies.js"></script>
-<script src="js/knockout-3.1.0.js"></script>
-<script src="js/sammy-latest.min.js"></script>
 
 <script src="js/custom.js"></script>
-
-<script type="text/javascript">
-    function targetModel(context) {
-        var self = this;
-        self.ac = ko.observable(context.ac);
-        self.entry_name = ko.observable(context.entry_name);
-        self.family = ko.observable(context.family);
-
-        self.updatedata = function(data) {
-            self.ac(data.ac);
-            self.entry_name(data.entry_name);
-            self.family(data.family);
-        };
-    }
-
-    function targetViewModel() {
-        var self = this;
-        self.dbURI = 'http://ec2-54-227-62-182.compute-1.amazonaws.com';
-        null_targetdata = {"ac":"", "entry_name":"", "family":""};
-        self.dbtarget = new targetModel(null_targetdata);
-
-        self.ajax = function(uri, method, data) {
-            var request = {
-                url: uri,
-                type: method,
-                contentType: "application/json",
-                accepts: "application/json",
-                cache: false,
-                dataType: 'json',
-                data: JSON.stringify(data),
-                error: function(jqXHR) {
-                    console.log("ajax error " + jqXHR.status);
-                }
-            };
-            return $.ajax(request);
-        };
-
-        // Update the target AC URL hash
-        self.goToTarget = function (target_ac) { location.hash = target_ac };
-
-        self.currentTargetAC = ko.observable();
-
-        // Client-side routes    
-        Sammy(function () {
-            this.get('testrouting.html/push/:target_ac', function () {
-                self.currentTargetAC(this.params.target_ac);
-                self.ajax(self.dbURI + "/" + self.currentTargetAC(), 'GET').done(function(data) {
-                    self.dbtarget.updatedata(data);
-                });
-            });
-
-        }).run();
-
-    }
-
-    var tvm = new targetViewModel();
-    ko.applyBindings(tvm);
-
-</script>
 
 </body>
 </html>
