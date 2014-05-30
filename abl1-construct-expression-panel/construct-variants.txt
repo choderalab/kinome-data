@@ -1,0 +1,30 @@
+= 9 N-term variants =
+228
+229 # start of most PDB constructs
+230
+237
+238
+240
+241
+242
+243
+
+= 9 C-term variants =
+490
+493
+494
+496
+500 # end of 3CS9 construct
+511 # end of C-terminal helix according to 2FO0
+512 # end of 2G2H construct
+513
+515 # end of 2E2B construct
+
+= Control constructs (known expression data in literature) - five replicates of each =
+229-500  (3CS9 - Dana-Farber Institute 2005)
+229-512  (2G2H - Kuriyan lab 2006)
+229-515  (2E2B - Nippon Shinyaku Research Labs 2007)
+
+= UniProt kinase domain span =
+242-493
+

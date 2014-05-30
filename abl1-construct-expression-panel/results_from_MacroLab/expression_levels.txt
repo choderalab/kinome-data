@@ -1,0 +1,43 @@
+Well
+Label	AAstart	AAend	Abl Conc. (ng/ul)	YopH conc 
+A07	228	496	8	11 
+A08	228	500	5	6 
+A09	228	511	18	5 
+A10	228	512	30	5 
+A11	228	513	22	5 
+A12	228	515	23	0 
+B04	229	496	11	29 
+A01	229	500	9	9 
+B05	229	500	11	9 
+C12	229	500	19	23 
+D02	229	500	14	17 
+G10	229	500	14	13 
+H10	229	500	9	9 
+B06	229	511	22	7 
+A02	229	512	39	6 
+B07	229	512	23	4 
+D11	229	512	42	11 
+G02	229	512	42	7 
+H11	229	512	38	10 
+B08	229	513	47	10 
+A03	229	515	40	5 
+B09	229	515	22	5 
+D06	229	515	34	7 
+E10	229	515	30	4 
+F12	229	515	35	7 
+H12	229	515	31	5 
+C02	230	496	8	10 
+C03	230	500	22	10 
+C04	230	511	36	6 
+C05	230	512	46	10 
+C06	230	513	49	8 
+F11	241	513	3	20 
+
+Detection threshold is ~5 ng/ul
+
+Chris Jeans suggests that at least ~250 ng/ul is necessary in order to have confidence that a reasonable amount of protein will be purified on a large scale.
+He would expect yields of 1 mg per L cells at best. Probably rather lower.
+
+Markus Seeliger got 5-15 mg per L for WT Src and Abl in his original experiments. (Seeliger et al 2005)
+Chris Jeans also tried expression of WT Src and Abl with YopH phosphatase back in 2011 and got yields - now thinks they may have anomalously high.
+
