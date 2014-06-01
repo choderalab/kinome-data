@@ -1,16 +1,18 @@
-import os
+import os, re
 import argparse
 import openpyxl
 import pandas as pd
 from lxml import etree
 
 # ========
-# Command-line args
+# Command-line args and parameters
 # ========
 
 argparser = argparse.ArgumentParser()
 argparser.add_argument('--database_path', type=str, help='Path to a TargetExplorer database XML file', required=True)
 args = argparser.parse_args()
+
+expression_system_regex = 'E\. coli'
 
 # ========
 # Read in plasmid spreadsheet
@@ -67,6 +69,9 @@ for row in range(2, nrows-1):
     cloneID = ws.cell('C%d' % row).value
     if cloneID == None:
         continue
+    expression_system = ws.cell('J%d' % row).value
+    if not re.match(expression_system_regex, expression_system):
+        continue
     HGNCSymbol = ws.cell('G%d' % row).value
 
     # Search for Hugo Symbol in database
@@ -90,7 +95,7 @@ for row in range(2, nrows-1):
     plasmid_df['insert_aa_seq'].append( ws.cell('T%d' % row).value )
     plasmid_df['insert_dna_seq'].append( ws.cell('U%d' % row).value )
     plasmid_df['Protein family'].append( ws.cell('E%d' % row).value )
-    plasmid_df['Expression system'].append( ws.cell('J%d' % row).value )
+    plasmid_df['Expression system'].append( expression_system )
     plasmid_df['Expression cell line'].append( ws.cell('K%d' % row).value )
     plasmid_df['Availability comments'].append( ws.cell('L%d' % row).value )
     plasmid_df['Special expression comments'].append( ws.cell('M%d' % row).value )
