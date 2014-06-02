@@ -1,499 +1,499 @@
-           targetID  nmatching_PDB_structures top_PDB_chain_ID   top_cnstrct_expr_tag  top_cnstrct_auth_score        top_cnstrct_expr_sys top_cnstrct_taxname DB_target_rank DB_target_score
-0     MK14_HUMAN_D0                       188           2Y8O_A      Nterm_TEV_cleaved                      10            ESCHERICHIA COLI               Human             14            61.2
-1     CDK2_HUMAN_D0                       164           4EOO_A      Nterm_TEV_cleaved                      10            ESCHERICHIA COLI               Human             26            53.6
-2    AURKA_HUMAN_D0                        55           2NP8_A      Nterm_TEV_cleaved                      10            ESCHERICHIA COLI               Human             44            47.9
-3     MK01_HUMAN_D0                        32           4FMQ_A      Nterm_TEV_cleaved                      10            ESCHERICHIA COLI               Human             16            58.9
-4    DAPK1_HUMAN_D0                        31           4B4L_A      Nterm_TEV_cleaved                      10            ESCHERICHIA COLI               Human            179            33.0
-5    MAPK2_HUMAN_D0                        21           2JBO_A      Nterm_TEV_cleaved                      10            ESCHERICHIA COLI               Human             74            41.8
-6    FGFR2_HUMAN_D0                        17           3RI1_B      Nterm_TEV_cleaved                      10            ESCHERICHIA COLI               Human             17            58.4
-7     PAK4_HUMAN_D0                        17           2J0I_A      Nterm_TEV_cleaved                      10            ESCHERICHIA COLI               Human            163            33.8
-8    DYR1A_HUMAN_D0                         7           3ANQ_D      Nterm_TEV_cleaved                      10            ESCHERICHIA COLI               Human             81            40.8
-9     ABL1_HUMAN_D0                         6           3UE4_A      Nterm_TEV_cleaved                      10            ESCHERICHIA COLI               Human             12            62.2
-10    BRAF_HUMAN_D0                         4           4JVG_D      Nterm_TEV_cleaved                      10            ESCHERICHIA COLI               Human              4            75.2
-11    MST4_HUMAN_D0                         4           4FZD_B      Nterm_TEV_cleaved                      10            ESCHERICHIA COLI               Human            307            29.7
-12     SRC_HUMAN_D0                         4           4MXO_A      Nterm_TEV_cleaved                      10            ESCHERICHIA COLI               Human             10            65.2
-13   AAPK2_HUMAN_D0                         3           2H6D_A      Nterm_TEV_cleaved                      10       ESCHERICHIA COLI BL21               Human            201            32.0
-14   MKNK2_HUMAN_D0                         3           2AC5_A      Nterm_TEV_cleaved                      10       ESCHERICHIA COLI BL21               Human            247            30.9
-15    KC1D_HUMAN_D0                         2           4HNF_B      Nterm_TEV_cleaved                      10            ESCHERICHIA COLI               Human             92            39.1
-16    KC1E_HUMAN_D0                         2           4HNI_A      Nterm_TEV_cleaved                      10            ESCHERICHIA COLI               Human            184            32.6
-17    MK07_HUMAN_D0                         2           4IC7_D      Nterm_TEV_cleaved                      10            ESCHERICHIA COLI               Human            183            32.7
-18    STK3_HUMAN_D0                         2           4LG4_B      Nterm_TEV_cleaved                      10            ESCHERICHIA COLI               Human            217            31.5
-19   EPHB4_HUMAN_D0                         1           3ZEW_A      Nterm_TEV_cleaved                      10            ESCHERICHIA COLI               Human             94            38.8
-20   EPHB1_HUMAN_D0                         1           3ZFX_F      Nterm_TEV_cleaved                      10            ESCHERICHIA COLI               Human            182            32.7
-21   EPHB2_HUMAN_D0                         1           3ZFM_A      Nterm_TEV_cleaved                      10            ESCHERICHIA COLI               Human             89            39.5
-22   EPHB3_HUMAN_D0                         1           3ZFY_B      Nterm_TEV_cleaved                      10            ESCHERICHIA COLI               Human            204            31.9
-23    FAK1_HUMAN_D0                         1           2IJM_B      Nterm_TEV_cleaved                      10            ESCHERICHIA COLI               Human             31            51.7
-24   MKNK1_HUMAN_D0                         1           2HW6_B      Nterm_TEV_cleaved                      10            ESCHERICHIA COLI               Human            215            31.6
-25    PIM1_HUMAN_D0                        81           4A7C_A    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human             76            41.4
-26     TTK_HUMAN_D0                        18           3H9F_A    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human            157            34.3
-27   KC1G3_HUMAN_D0                         9           2CHL_A    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human            291            30.0
-28   STK24_HUMAN_D0                         8           3ZHP_C    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human            267            30.4
-29    HASP_HUMAN_D0                         7           3E7V_A    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human            371            21.5
-30    CLK3_HUMAN_D0                         5           2WU7_A    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human            229            31.4
-31   DAPK3_HUMAN_D0                         4           2J90_A    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human            196            32.1
-32   MAPK3_HUMAN_D0                         4           3FXW_A    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human            372            20.3
-33     SLK_HUMAN_D0                         4           2JFL_A    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human            210            31.8
-34   DYRK2_HUMAN_D0                         3           4AZF_A    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human            250            30.8
-35    PAK6_HUMAN_D0                         3           2C30_A    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human            284            30.1
-36   KCC2A_HUMAN_D0                         2           2VZ6_B    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human            376            17.2
-37   MRCKB_HUMAN_D0                         2           3TKU_B    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human            255            30.7
-38    NEK1_HUMAN_D0                         2           4APC_A    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human            139            35.8
-39   ST17B_HUMAN_D0                         2           3LM0_A    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human            282            30.2
-40    KCC4_HUMAN_D0                         1           2W4O_A    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human            228            31.4
-41   CDKL1_HUMAN_D0                         1           4AGU_C    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human            360            27.1
-42   EPHA8_HUMAN_D0                         1           3KUL_B    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human            219            31.5
-43   KCC2G_HUMAN_D0                         1           2V7O_A    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human            225            31.4
-44    PAK7_HUMAN_D0                         1           2F57_B    Nterm_TEV_uncleaved                       9  ESCHERICHIA COLI BL21(DE3)               Human            248            30.8
-45   PHKG2_HUMAN_D0                         1           2Y7J_D    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human            135            35.8
-46   PMYT1_HUMAN_D0                         1           3P1A_A    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human            304            29.8
-47   STK16_HUMAN_D0                         1           2BUJ_B    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human            299            29.9
-48   STRAA_HUMAN_D0                         1           3GNI_B    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human            402            11.5
-49    VRK3_HUMAN_D0                         1           2JII_A    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human            444             6.3
-50    VRK2_HUMAN_D0                         1           2V62_B    Nterm_TEV_uncleaved                       9            ESCHERICHIA COLI               Human            355            27.4
-51   EPHA3_HUMAN_D0                        21           4GK2_A           Nterm_Histag                       7            ESCHERICHIA COLI               Human             93            39.0
-52   FGFR1_HUMAN_D0                        13           3KY2_A           Nterm_Histag                       7            ESCHERICHIA COLI               Human             11            62.3
-53    CSKP_HUMAN_D0                         8           3TAC_A           Nterm_Histag                       7            ESCHERICHIA COLI               Human            108            37.3
-54   GSK3B_HUMAN_D0                         7           2O5K_A           Nterm_Histag                       7       ESCHERICHIA COLI BL21               Human             25            54.3
-55   KS6A3_HUMAN_D1                         5           4JG7_A           Nterm_Histag                       7            ESCHERICHIA COLI               Human             51            45.8
-56   MERTK_HUMAN_D0                         5           3BPR_B           Nterm_Histag                       7  ESCHERICHIA COLI BL21(DE3)               Human             95            38.5
-57     MET_HUMAN_D0                         5           4EEV_A           Nterm_Histag                       7            ESCHERICHIA COLI               Human              6            68.5
-58    PLK2_HUMAN_D0                         5           4I5P_A           Nterm_Histag                       7            ESCHERICHIA COLI               Human            190            32.5
-59    MK13_HUMAN_D0                         4           4EYJ_A           Nterm_Histag                       7            ESCHERICHIA COLI               Human            239            31.0
-60   MP2K4_HUMAN_D0                         3           3ALN_C           Nterm_Histag                       7            ESCHERICHIA COLI               Human            180            33.0
-61   FGFR3_HUMAN_D0                         1           4K33_A           Nterm_Histag                       7            ESCHERICHIA COLI               Human             13            61.9
-62     KIT_HUMAN_D0                         1           4HVS_A           Nterm_Histag                       7            ESCHERICHIA COLI               Human              8            66.0
-63   KS6A1_HUMAN_D1                         1           3RNY_B           Nterm_Histag                       7            ESCHERICHIA COLI               Human            131            36.1
-64    MK08_HUMAN_D0                        26           1UKH_A           Cterm_Histag                       6            ESCHERICHIA COLI               Human             35            50.6
-65    NEK2_HUMAN_D0                        20           2XKE_A           Cterm_Histag                       6            ESCHERICHIA COLI               Human            159            34.1
-66    PAK1_HUMAN_D0                        11           3Q52_A           Cterm_Histag                       6            ESCHERICHIA COLI               Human            155            34.3
-67   E2AK2_HUMAN_D0                         3           3UIU_A           Cterm_Histag                       6            ESCHERICHIA COLI               Human            128            36.2
-68    CDK6_HUMAN_D0                         2           4EZ5_A           Cterm_Histag                       6            ESCHERICHIA COLI               Human            314            29.1
-69   EPHA7_HUMAN_D0                         2           2REI_A           Cterm_Histag                       6  ESCHERICHIA COLI BL21(DE3)               Human            200            32.1
-70   MP2K6_HUMAN_D0                         2           3VN9_A           Cterm_Histag                       6            ESCHERICHIA COLI               Human            216            31.5
-71    NEK7_HUMAN_D0                         2           2WQN_A           Cterm_Histag                       6            ESCHERICHIA COLI               Human            289            30.0
-72   BMPR2_HUMAN_D0                         1           3G2F_A           Cterm_Histag                       6            ESCHERICHIA COLI               Human             77            41.2
-73   CDK16_HUMAN_D0                         1           3MTL_A           Cterm_Histag                       6            ESCHERICHIA COLI               Human            256            30.7
-74   EPHA5_HUMAN_D0                         1           2R2P_A           Cterm_Histag                       6  ESCHERICHIA COLI BL21(DE3)               Human            189            32.5
-75    MELK_HUMAN_D0                         1           4IXP_A           Cterm_Histag                       6            ESCHERICHIA COLI               Human            137            35.8
-76   MP2K2_HUMAN_D0                         1           1S9I_A           Cterm_Histag                       6  ESCHERICHIA COLI BL21(DE3)               Human             87            39.7
-77   CSK21_HUMAN_D0                        45           3AXW_A  Nterm_other_extra_seq                       4            ESCHERICHIA COLI               Human             63            43.5
-78    CHK2_HUMAN_D0                        36           2CN5_A  Nterm_other_extra_seq                       4            ESCHERICHIA COLI               Human             24            55.2
-79     CSK_HUMAN_D0                         3           3D7T_A  Nterm_other_extra_seq                       4            ESCHERICHIA COLI               Human            147            35.0
-80    MK11_HUMAN_D0                         3           3GC8_A  Nterm_other_extra_seq                       4            ESCHERICHIA COLI               Human            158            34.1
-81   CSK22_HUMAN_D0                         2           3E3B_X  Nterm_other_extra_seq                       4            ESCHERICHIA COLI               Human            151            34.6
-82   MARK3_HUMAN_D0                         2           2QNJ_A  Nterm_other_extra_seq                       4  ESCHERICHIA COLI BL21(DE3)               Human            365            25.5
-83   MARK2_HUMAN_D0                         1           3IEC_D  Nterm_other_extra_seq                       4            ESCHERICHIA COLI               Human            240            31.0
-84    MK03_HUMAN_D0                         1           2ZOQ_B  Nterm_other_extra_seq                       4            ESCHERICHIA COLI               Human             49            45.9
-85    VRK1_HUMAN_D0                         1           3OP5_D  Nterm_other_extra_seq                       4            ESCHERICHIA COLI               Human            384            15.4
-86   KAPCA_HUMAN_D0                        94           4IJ9_A                   None                       0            ESCHERICHIA COLI              Bovine             62            43.5
-87    MK10_HUMAN_D0                        36           3FI2_A                   None                       0            ESCHERICHIA COLI               Human             43            48.0
-88    CHK1_HUMAN_D0                         9           2E9V_A                   None                       0            ESCHERICHIA COLI               Human             40            48.6
-89   DAPK2_HUMAN_D0                         6           1ZWS_H                   None                       0            ESCHERICHIA COLI               Human            293            30.0
-90     FES_HUMAN_D0                         4           3CBL_A                   None                       0            ESCHERICHIA COLI               Human            116            36.6
-91     GAK_HUMAN_D0                         4           4O38_A                   None                       0            ESCHERICHIA COLI               Human            203            32.0
-92    JAK2_HUMAN_D0                         4           2XA4_B                   None                       0            ESCHERICHIA COLI               Human              5            71.5
-93   KCC1A_HUMAN_D0                         4           4FG7_A                   None                       0            ESCHERICHIA COLI               Human            254            30.7
-94   STK10_HUMAN_D0                         4           4BC6_A                   None                       0            ESCHERICHIA COLI               Human            125            36.3
-95     ILK_HUMAN_D0                         3           3KMW_A                   None                       0            ESCHERICHIA COLI               Human            389            14.2
-96    KSYK_HUMAN_D0                         3           4F4P_A                   None                       0            ESCHERICHIA COLI               Human             70            42.5
-97    TIE2_HUMAN_D0                         3           3L8P_A                   None                       0            ESCHERICHIA COLI               Human             36            50.4
-98   VGFR2_HUMAN_D0                         3           1Y6A_A                   None                       0            ESCHERICHIA COLI               Human              7            66.9
-99    M3K5_HUMAN_D0                         2           3VW6_A                   None                       0            ESCHERICHIA COLI               Human            152            34.6
-100   CLK1_HUMAN_D0                         2           2VAG_A                   None                       0            ESCHERICHIA COLI               Human            171            33.5
-101   FAK2_HUMAN_D0                         2           3ET7_A                   None                       0            ESCHERICHIA COLI               Human             75            41.8
-102  IGF1R_HUMAN_D0                         2           3O23_A                   None                       0            ESCHERICHIA COLI               Human             18            57.2
-103   JAK1_HUMAN_D0                         2           3EYH_A                   None                       0            ESCHERICHIA COLI               Human             73            41.9
-104  KCC2D_HUMAN_D0                         2           2VN9_A                   None                       0            ESCHERICHIA COLI               Human            173            33.5
-105  KS6A5_HUMAN_D1                         2           3KN6_A                   None                       0            ESCHERICHIA COLI               Human            127            36.3
-106   MK09_HUMAN_D0                         2           3E7O_A                   None                       0            ESCHERICHIA COLI               Human             79            41.1
-107  OXSR1_HUMAN_D0                         2           3DAK_B                   None                       0            ESCHERICHIA COLI               Human            344            27.7
-108  AURKB_HUMAN_D0                         1           4AF3_A                   None                       0            ESCHERICHIA COLI               Human             38            50.0
-109    BTK_HUMAN_D0                         1           1K2P_A                   None                       0            ESCHERICHIA COLI               Human             55            45.3
-110   CLK2_HUMAN_D0                         1           3NR9_C                   None                       0            ESCHERICHIA COLI               Human            195            32.1
-111   DMPK_HUMAN_D0                         1           2VD5_B                   None                       0            ESCHERICHIA COLI               Human            109            37.2
-112    HCK_HUMAN_D0                         1           2HK5_A                   None                       0            ESCHERICHIA COLI               Human             57            45.2
-113   INSR_HUMAN_D0                         1           2AUH_A                   None                       0            ESCHERICHIA COLI               Human             15            60.7
-114   JAK3_HUMAN_D0                         1           1YVJ_A                   None                       0            ESCHERICHIA COLI               Human             47            46.8
-115  KC1G1_HUMAN_D0                         1           2CMW_A                   None                       0            ESCHERICHIA COLI               Human            274            30.3
-116  KC1G2_HUMAN_D0                         1           2C47_A                   None                       0            ESCHERICHIA COLI               Human            236            31.1
-117  KCC1D_HUMAN_D0                         1           2JC6_A                   None                       0            ESCHERICHIA COLI               Human            249            30.8
-118  KCC1G_HUMAN_D0                         1           2JAM_A                   None                       0            ESCHERICHIA COLI               Human            309            29.6
-119  KCC2B_HUMAN_D0                         1           3BHH_D                   None                       0            ESCHERICHIA COLI               Human            246            30.9
-120   KPCT_HUMAN_D0                         1           1XJD_A                   None                       0  ESCHERICHIA COLI BL21(DE3)               Human             83            40.7
-121   M3K9_HUMAN_D0                         1           3DTC_A                   None                       0            ESCHERICHIA COLI               Human            123            36.4
-122  MARK1_HUMAN_D0                         1           2HAK_E                   None                       0            ESCHERICHIA COLI               Human            110            37.0
-123   MK06_HUMAN_D0                         1           2I6L_B                   None                       0            ESCHERICHIA COLI               Human            288            30.0
-124   MK12_HUMAN_D0                         1           1CM8_A                   None                       0            ESCHERICHIA COLI               Human            111            36.9
-125   MLKL_HUMAN_D0                         1           4M67_A                   None                       0            ESCHERICHIA COLI               Human            429             6.4
-126  NTRK1_HUMAN_D0                         1           4F0I_A                   None                       0            ESCHERICHIA COLI               Human             45            47.2
-127  PDPK1_HUMAN_D0                         1           2R7B_A                   None                       0            ESCHERICHIA COLI               Human             96            38.5
-128   PIM2_HUMAN_D0                         1           2IWI_A                   None                       0            ESCHERICHIA COLI               Human            105            37.4
-129   PLK4_HUMAN_D0                         1           3COK_B                   None                       0  ESCHERICHIA COLI BL21(DE3)               Human            202            32.0
-130   PLK1_HUMAN_D0                         1           3THB_A                   None                       0            ESCHERICHIA COLI               Human             29            52.2
-131  STK25_HUMAN_D0                         1           2XIK_A                   None                       0            ESCHERICHIA COLI               Human            297            29.9
-132   STK4_HUMAN_D0                         1           3COM_A                   None                       0  ESCHERICHIA COLI BL21(DE3)               Human            112            36.8
-133  TGFR1_HUMAN_D0                         1           1B6C_F                   None                       0            ESCHERICHIA COLI               Human             19            56.4
-134  VGFR1_HUMAN_D0                         1           3HNG_A                   None                       0            ESCHERICHIA COLI               Human             20            56.4
-135  AAPK1_HUMAN_D0                         0             None                   None                       0                        None                None            187            32.6
-136   CDK1_HUMAN_D0                         0             None                   None                       0                        None                None             34            51.2
-137   CDK4_HUMAN_D0                         0             None                   None                       0                        None                None             27            52.5
-138   CDK9_HUMAN_D0                         0             None                   None                       0                        None                None             67            42.9
-139   CDK7_HUMAN_D0                         0             None                   None                       0                        None                None            136            35.8
-140   CDK5_HUMAN_D0                         0             None                   None                       0                        None                None             60            44.6
-141   EGFR_HUMAN_D0                         0             None                   None                       0                        None                None              1           100.0
-142  ERBB4_HUMAN_D0                         0             None                   None                       0                        None                None            114            36.7
-143  ERBB2_HUMAN_D0                         0             None                   None                       0                        None                None              3            81.3
-144  HIPK2_HUMAN_D0                         0             None                   None                       0                        None                None            287            30.1
-145   IKKA_HUMAN_D0                         0             None                   None                       0                        None                None             48            46.4
-146   IKKB_HUMAN_D0                         0             None                   None                       0                        None                None             53            45.7
-147   M3K7_HUMAN_D0                         0             None                   None                       0                        None                None            188            32.5
-148   AAK1_HUMAN_D0                         0             None                   None                       0                        None                None            268            30.4
-149   ABL2_HUMAN_D0                         0             None                   None                       0                        None                None            213            31.7
-150   ACK1_HUMAN_D0                         0             None                   None                       0                        None                None            156            34.3
-151  ACV1C_HUMAN_D0                         0             None                   None                       0                        None                None            454             6.1
-152  ACV1B_HUMAN_D0                         0             None                   None                       0                        None                None            121            36.5
-153  ACVR1_HUMAN_D0                         0             None                   None                       0                        None                None            120            36.5
-154  ACVL1_HUMAN_D0                         0             None                   None                       0                        None                None            113            36.8
-155  ADCK1_HUMAN_D0                         0             None                   None                       0                        None                None            456             6.1
-156  ADCK2_HUMAN_D0                         0             None                   None                       0                        None                None            480         -4305.4
-157  ADCK3_HUMAN_D0                         0             None                   None                       0                        None                None            495         -4275.6
-158  ADCK4_HUMAN_D0                         0             None                   None                       0                        None                None            144            35.5
-159  ADCK5_HUMAN_D0                         0             None                   None                       0                        None                None            472             5.7
-160   AKT3_HUMAN_D0                         0             None                   None                       0                        None                None             54            45.4
-161   AKT2_HUMAN_D0                         0             None                   None                       0                        None                None             32            51.6
-162   AKT1_HUMAN_D0                         0             None                   None                       0                        None                None              2            82.6
-163    ALK_HUMAN_D0                         0             None                   None                       0                        None                None             21            55.8
-164  AMHR2_HUMAN_D0                         0             None                   None                       0                        None                None            399            12.0
-165  ANKK1_HUMAN_D0                         0             None                   None                       0                        None                None            241            31.0
-166  ANPRB_HUMAN_D0                         0             None                   None                       0                        None                None            395            12.6
-167  ANPRA_HUMAN_D0                         0             None                   None                       0                        None                None            356            27.3
-168   ARAF_HUMAN_D0                         0             None                   None                       0                        None                None            405            10.4
-169  ARBK2_HUMAN_D0                         0             None                   None                       0                        None                None            407             9.9
-170  ARBK1_HUMAN_D0                         0             None                   None                       0                        None                None            338            27.9
-171  AURKC_HUMAN_D0                         0             None                   None                       0                        None                None            101            37.7
-172  AVR2A_HUMAN_D0                         0             None                   None                       0                        None                None            222            31.5
-173  AVR2B_HUMAN_D0                         0             None                   None                       0                        None                None            134            35.9
-174    BLK_HUMAN_D0                         0             None                   None                       0                        None                None            104            37.5
-175  BMP2K_HUMAN_D0                         0             None                   None                       0                        None                None            260            30.6
-176  BMR1B_HUMAN_D0                         0             None                   None                       0                        None                None            106            37.4
-177  BMR1A_HUMAN_D0                         0             None                   None                       0                        None                None             72            42.3
-178    BMX_HUMAN_D0                         0             None                   None                       0                        None                None            211            31.7
-179  BRSK2_HUMAN_D0                         0             None                   None                       0                        None                None            283            30.1
-180  BRSK1_HUMAN_D0                         0             None                   None                       0                        None                None            277            30.3
-181   BUB1_HUMAN_D0                         0             None                   None                       0                        None                None            385            15.1
-182  BUB1B_HUMAN_D0                         0             None                   None                       0                        None                None            373            19.4
-183  CAMKV_HUMAN_D0                         0             None                   None                       0                        None                None            448             6.2
-184  CD11A_HUMAN_D0                         0             None                   None                       0                        None                None            298            29.9
-185  CD11B_HUMAN_D0                         0             None                   None                       0                        None                None            264            30.5
-186   CDC7_HUMAN_D0                         0             None                   None                       0                        None                None            494         -4276.1
-187  CDK10_HUMAN_D0                         0             None                   None                       0                        None                None            451             6.1
-188  CDK14_HUMAN_D0                         0             None                   None                       0                        None                None            295            29.9
-189  CDK12_HUMAN_D0                         0             None                   None                       0                        None                None            396            12.6
-190  CDK13_HUMAN_D0                         0             None                   None                       0                        None                None            342            27.8
-191  CDK18_HUMAN_D0                         0             None                   None                       0                        None                None            275            30.3
-192  CDK15_HUMAN_D0                         0             None                   None                       0                        None                None            349            27.6
-193  CDK19_HUMAN_D0                         0             None                   None                       0                        None                None            285            30.1
-194  CDK17_HUMAN_D0                         0             None                   None                       0                        None                None            305            29.7
-195  CDK20_HUMAN_D0                         0             None                   None                       0                        None                None            436             6.4
-196   CDK3_HUMAN_D0                         0             None                   None                       0                        None                None            230            31.4
-197   CDK8_HUMAN_D0                         0             None                   None                       0                        None                None            251            30.8
-198  CDKL2_HUMAN_D0                         0             None                   None                       0                        None                None            348            27.6
-199  CDKL3_HUMAN_D0                         0             None                   None                       0                        None                None            343            27.8
-200  CDKL4_HUMAN_D0                         0             None                   None                       0                        None                None            467             5.8
-201  CDKL5_HUMAN_D0                         0             None                   None                       0                        None                None            103            37.6
-202   CLK4_HUMAN_D0                         0             None                   None                       0                        None                None            185            32.6
-203  CSF1R_HUMAN_D0                         0             None                   None                       0                        None                None             30            51.8
-204  CSK23_HUMAN_D0                         0             None                   None                       0                        None                None            469             5.7
-205   CTRO_HUMAN_D0                         0             None                   None                       0                        None                None            193            32.3
-206  DCLK1_HUMAN_D0                         0             None                   None                       0                        None                None            237            31.0
-207  DCLK2_HUMAN_D0                         0             None                   None                       0                        None                None            367            24.7
-208  DCLK3_HUMAN_D0                         0             None                   None                       0                        None                None            270            30.4
-209   DDR1_HUMAN_D0                         0             None                   None                       0                        None                None            226            31.4
-210   DDR2_HUMAN_D0                         0             None                   None                       0                        None                None            124            36.3
-211  DUSTY_HUMAN_D0                         0             None                   None                       0                        None                None            354            27.4
-212  DYR1B_HUMAN_D0                         0             None                   None                       0                        None                None            221            31.5
-213  DYRK3_HUMAN_D0                         0             None                   None                       0                        None                None            382            15.8
-214  DYRK4_HUMAN_D0                         0             None                   None                       0                        None                None            391            13.3
-215  E2AK1_HUMAN_D0                         0             None                   None                       0                        None                None            491         -4281.8
-216  E2AK4_HUMAN_D0                         0             None                   None                       0                        None                None            484         -4304.2
-217  E2AK3_HUMAN_D0                         0             None                   None                       0                        None                None            496         -4270.0
-218  EPHA2_HUMAN_D0                         0             None                   None                       0                        None                None             66            43.1
-219  EPHA1_HUMAN_D0                         0             None                   None                       0                        None                None            244            30.9
-220  EPHA6_HUMAN_D0                         0             None                   None                       0                        None                None            208            31.8
-221  EPHAA_HUMAN_D0                         0             None                   None                       0                        None                None            428             6.6
-222  EPHA4_HUMAN_D0                         0             None                   None                       0                        None                None            198            32.1
-223  EPHB6_HUMAN_D0                         0             None                   None                       0                        None                None            313            29.2
-224  ERBB3_HUMAN_D0                         0             None                   None                       0                        None                None            100            37.9
-225   ERN2_HUMAN_D0                         0             None                   None                       0                        None                None            422             6.9
-226   ERN1_HUMAN_D0                         0             None                   None                       0                        None                None            317            28.7
-227    FER_HUMAN_D0                         0             None                   None                       0                        None                None            223            31.4
-228  FGFR4_HUMAN_D0                         0             None                   None                       0                        None                None            150            34.6
-229    FGR_HUMAN_D0                         0             None                   None                       0                        None                None            102            37.7
-230   FLT3_HUMAN_D0                         0             None                   None                       0                        None                None             22            55.6
-231    FRK_HUMAN_D0                         0             None                   None                       0                        None                None            231            31.4
-232    FYN_HUMAN_D0                         0             None                   None                       0                        None                None             82            40.8
-233   GRK5_HUMAN_D0                         0             None                   None                       0                        None                None            390            14.0
-234   GRK4_HUMAN_D0                         0             None                   None                       0                        None                None            323            28.4
-235   GRK6_HUMAN_D0                         0             None                   None                       0                        None                None            392            13.2
-236   GRK7_HUMAN_D0                         0             None                   None                       0                        None                None            333            28.1
-237  GSK3A_HUMAN_D0                         0             None                   None                       0                        None                None             99            38.0
-238  GUC2C_HUMAN_D0                         0             None                   None                       0                        None                None            381            15.9
-239  GUC2D_HUMAN_D0                         0             None                   None                       0                        None                None            383            15.6
-240  GUC2F_HUMAN_D0                         0             None                   None                       0                        None                None            418             7.1
-241    GWL_HUMAN_D0                         0             None                   None                       0                        None                None            486         -4299.2
-242  HIPK4_HUMAN_D0                         0             None                   None                       0                        None                None            347            27.6
-243  HIPK1_HUMAN_D0                         0             None                   None                       0                        None                None            318            28.7
-244  HIPK3_HUMAN_D0                         0             None                   None                       0                        None                None            325            28.4
-245   HUNK_HUMAN_D0                         0             None                   None                       0                        None                None            357            27.3
-246    ICK_HUMAN_D0                         0             None                   None                       0                        None                None            176            33.4
-247   IKKE_HUMAN_D0                         0             None                   None                       0                        None                None            162            33.9
-248  INSRR_HUMAN_D0                         0             None                   None                       0                        None                None            227            31.4
-249  IRAK4_HUMAN_D0                         0             None                   None                       0                        None                None             68            42.7
-250  IRAK2_HUMAN_D0                         0             None                   None                       0                        None                None            426             6.7
-251  IRAK3_HUMAN_D0                         0             None                   None                       0                        None                None            129            36.2
-252  IRAK1_HUMAN_D0                         0             None                   None                       0                        None                None            242            31.0
-253  KALRN_HUMAN_D0                         0             None                   None                       0                        None                None            386            15.1
-254  KAPCG_HUMAN_D0                         0             None                   None                       0                        None                None            165            33.8
-255  KAPCB_HUMAN_D0                         0             None                   None                       0                        None                None            122            36.5
-256   KC1A_HUMAN_D0                         0             None                   None                       0                        None                None            192            32.4
-257  KC1AL_HUMAN_D0                         0             None                   None                       0                        None                None            311            29.4
-258  KCC1B_HUMAN_D0                         0             None                   None                       0                        None                None            468             5.8
-259   KGP2_HUMAN_D0                         0             None                   None                       0                        None                None            263            30.5
-260   KGP1_HUMAN_D0                         0             None                   None                       0                        None                None            366            25.5
-261  KKCC1_HUMAN_D0                         0             None                   None                       0                        None                None            278            30.2
-262  KKCC2_HUMAN_D0                         0             None                   None                       0                        None                None            245            30.9
-263  KPCD3_HUMAN_D0                         0             None                   None                       0                        None                None            238            31.0
-264   KPCD_HUMAN_D0                         0             None                   None                       0                        None                None             46            46.9
-265   KPCB_HUMAN_D0                         0             None                   None                       0                        None                None             69            42.7
-266   KPCG_HUMAN_D0                         0             None                   None                       0                        None                None             71            42.5
-267  KPCD1_HUMAN_D0                         0             None                   None                       0                        None                None            145            35.2
-268   KPCI_HUMAN_D0                         0             None                   None                       0                        None                None            302            29.8
-269   KPCL_HUMAN_D0                         0             None                   None                       0                        None                None            178            33.1
-270   KPCE_HUMAN_D0                         0             None                   None                       0                        None                None             78            41.2
-271  KPCD2_HUMAN_D0                         0             None                   None                       0                        None                None            377            17.1
-272   KPCA_HUMAN_D0                         0             None                   None                       0                        None                None             33            51.4
-273   KPCZ_HUMAN_D0                         0             None                   None                       0                        None                None            141            35.6
-274  KPSH2_HUMAN_D0                         0             None                   None                       0                        None                None            461             6.0
-275  KPSH1_HUMAN_D0                         0             None                   None                       0                        None                None            465             5.9
-276  KS6B2_HUMAN_D0                         0             None                   None                       0                        None                None            442             6.3
-277  KS6C1_HUMAN_D0                         0             None                   None                       0                        None                None            421             6.9
-278  KS6A1_HUMAN_D0                         0             None                   None                       0                        None                None            130            36.1
-279  KS6A6_HUMAN_D0                         0             None                   None                       0                        None                None            160            34.1
-280  KS6A6_HUMAN_D1                         0             None                   None                       0                        None                None            161            34.1
-281  KS6A2_HUMAN_D0                         0             None                   None                       0                        None                None            148            34.8
-282  KS6A2_HUMAN_D1                         0             None                   None                       0                        None                None            149            34.8
-283  KS6A3_HUMAN_D0                         0             None                   None                       0                        None                None             50            45.8
-284  KS6A4_HUMAN_D0                         0             None                   None                       0                        None                None            168            33.5
-285  KS6A4_HUMAN_D1                         0             None                   None                       0                        None                None            169            33.5
-286   KSR2_HUMAN_D0                         0             None                   None                       0                        None                None            419             7.1
-287  KS6A5_HUMAN_D0                         0             None                   None                       0                        None                None            126            36.3
-288  KS6B1_HUMAN_D0                         0             None                   None                       0                        None                None            138            35.8
-289   KSR1_HUMAN_D0                         0             None                   None                       0                        None                None            424             6.8
-290  LATS2_HUMAN_D0                         0             None                   None                       0                        None                None            261            30.5
-291  LATS1_HUMAN_D0                         0             None                   None                       0                        None                None            234            31.2
-292    LCK_HUMAN_D0                         0             None                   None                       0                        None                None             23            55.3
-293  LIMK2_HUMAN_D0                         0             None                   None                       0                        None                None            191            32.4
-294  LIMK1_HUMAN_D0                         0             None                   None                       0                        None                None             85            39.9
-295  LMTK1_HUMAN_D0                         0             None                   None                       0                        None                None            440             6.3
-296  LMTK3_HUMAN_D0                         0             None                   None                       0                        None                None            457             6.0
-297  LMTK2_HUMAN_D0                         0             None                   None                       0                        None                None            416             7.1
-298  LRRK1_HUMAN_D0                         0             None                   None                       0                        None                None            414             7.2
-299  LRRK2_HUMAN_D0                         0             None                   None                       0                        None                None             42            48.0
-300    LTK_HUMAN_D0                         0             None                   None                       0                        None                None            143            35.5
-301    LYN_HUMAN_D0                         0             None                   None                       0                        None                None             58            45.1
-302  M3K12_HUMAN_D0                         0             None                   None                       0                        None                None            345            27.7
-303  M3K13_HUMAN_D0                         0             None                   None                       0                        None                None            329            28.2
-304  M3K19_HUMAN_D0                         0             None                   None                       0                        None                None            316            28.7
-305  M3K14_HUMAN_D0                         0             None                   None                       0                        None                None            374            18.7
-306  M3K15_HUMAN_D0                         0             None                   None                       0                        None                None            341            27.9
-307   M3K3_HUMAN_D0                         0             None                   None                       0                        None                None            321            28.5
-308  M3K11_HUMAN_D0                         0             None                   None                       0                        None                None            218            31.5
-309   M3K6_HUMAN_D0                         0             None                   None                       0                        None                None            336            28.0
-310   M3K4_HUMAN_D0                         0             None                   None                       0                        None                None            393            13.1
-311  M3K10_HUMAN_D0                         0             None                   None                       0                        None                None            266            30.4
-312   M3K8_HUMAN_D0                         0             None                   None                       0                        None                None            153            34.5
-313   M3K2_HUMAN_D0                         0             None                   None                       0                        None                None            320            28.6
-314   M3K1_HUMAN_D0                         0             None                   None                       0                        None                None             91            39.2
-315  M3KL4_HUMAN_D0                         0             None                   None                       0                        None                None            476             5.2
-316   M4K1_HUMAN_D0                         0             None                   None                       0                        None                None            253            30.8
-317   M4K4_HUMAN_D0                         0             None                   None                       0                        None                None            269            30.4
-318   M4K2_HUMAN_D0                         0             None                   None                       0                        None                None            119            36.5
-319   M4K5_HUMAN_D0                         0             None                   None                       0                        None                None            273            30.3
-320   M4K3_HUMAN_D0                         0             None                   None                       0                        None                None            243            30.9
-321    MAK_HUMAN_D0                         0             None                   None                       0                        None                None            174            33.5
-322  MAPK5_HUMAN_D0                         0             None                   None                       0                        None                None            205            31.8
-323  MARK4_HUMAN_D0                         0             None                   None                       0                        None                None            296            29.9
-324  MAST3_HUMAN_D0                         0             None                   None                       0                        None                None            443             6.3
-325  MAST2_HUMAN_D0                         0             None                   None                       0                        None                None            420             7.0
-326  MAST1_HUMAN_D0                         0             None                   None                       0                        None                None            324            28.4
-327  MAST4_HUMAN_D0                         0             None                   None                       0                        None                None            413             7.4
-328   MATK_HUMAN_D0                         0             None                   None                       0                        None                None            337            28.0
-329  MINK1_HUMAN_D0                         0             None                   None                       0                        None                None            400            11.8
-330   MK04_HUMAN_D0                         0             None                   None                       0                        None                None            286            30.1
-331   MK15_HUMAN_D0                         0             None                   None                       0                        None                None            290            30.0
-332   MLTK_HUMAN_D0                         0             None                   None                       0                        None                None            327            28.3
-333    MOK_HUMAN_D0                         0             None                   None                       0                        None                None            460             6.0
-334    MOS_HUMAN_D0                         0             None                   None                       0                        None                None            432             6.4
-335  MP2K5_HUMAN_D0                         0             None                   None                       0                        None                None            339            27.9
-336  MP2K3_HUMAN_D0                         0             None                   None                       0                        None                None            115            36.7
-337  MP2K7_HUMAN_D0                         0             None                   None                       0                        None                None            322            28.5
-338  MP2K1_HUMAN_D0                         0             None                   None                       0                        None                None             41            48.4
-339  MRCKA_HUMAN_D0                         0             None                   None                       0                        None                None            233            31.3
-340  MRCKG_HUMAN_D0                         0             None                   None                       0                        None                None            445             6.2
-341   MUSK_HUMAN_D0                         0             None                   None                       0                        None                None            118            36.6
-342  MYLK3_HUMAN_D0                         0             None                   None                       0                        None                None            335            28.1
-343  MYLK4_HUMAN_D0                         0             None                   None                       0                        None                None            306            29.7
-344  MYLK2_HUMAN_D0                         0             None                   None                       0                        None                None            133            36.0
-345   MYLK_HUMAN_D0                         0             None                   None                       0                        None                None             86            39.9
-346  MYO3B_HUMAN_D0                         0             None                   None                       0                        None                None            415             7.2
-347  MYO3A_HUMAN_D0                         0             None                   None                       0                        None                None            107            37.3
-348  NEK11_HUMAN_D0                         0             None                   None                       0                        None                None            353            27.4
-349  NEK10_HUMAN_D0                         0             None                   None                       0                        None                None            438             6.3
-350   NEK3_HUMAN_D0                         0             None                   None                       0                        None                None            352            27.4
-351   NEK4_HUMAN_D0                         0             None                   None                       0                        None                None            346            27.6
-352   NEK5_HUMAN_D0                         0             None                   None                       0                        None                None            271            30.4
-353   NEK6_HUMAN_D0                         0             None                   None                       0                        None                None            262            30.5
-354   NEK8_HUMAN_D0                         0             None                   None                       0                        None                None            387            14.9
-355   NEK9_HUMAN_D0                         0             None                   None                       0                        None                None            279            30.2
-356   NIM1_HUMAN_D0                         0             None                   None                       0                        None                None            362            27.0
-357    NLK_HUMAN_D0                         0             None                   None                       0                        None                None            259            30.6
-358   NRBP_HUMAN_D0                         0             None                   None                       0                        None                None            449             6.2
-359  NRBP2_HUMAN_D0                         0             None                   None                       0                        None                None            473             5.6
-360    NRK_HUMAN_D0                         0             None                   None                       0                        None                None            412             7.6
-361   NTKL_HUMAN_D0                         0             None                   None                       0                        None                None            441             6.3
-362  NTRK2_HUMAN_D0                         0             None                   None                       0                        None                None             90            39.4
-363  NTRK3_HUMAN_D0                         0             None                   None                       0                        None                None            194            32.3
-364  NUAK2_HUMAN_D0                         0             None                   None                       0                        None                None            276            30.3
-365  NUAK1_HUMAN_D0                         0             None                   None                       0                        None                None            232            31.3
-366  OBSCN_HUMAN_D0                         0             None                   None                       0                        None                None            379            16.2
-367  OBSCN_HUMAN_D1                         0             None                   None                       0                        None                None            380            16.2
-368  PACE1_HUMAN_D0                         0             None                   None                       0                        None                None            446             6.2
-369   PAK2_HUMAN_D0                         0             None                   None                       0                        None                None            209            31.8
-370   PAK3_HUMAN_D0                         0             None                   None                       0                        None                None            132            36.0
-371   PAN3_HUMAN_D0                         0             None                   None                       0                        None                None            430             6.4
-372   PASK_HUMAN_D0                         0             None                   None                       0                        None                None            397            12.3
-373  PDK1L_HUMAN_D0                         0             None                   None                       0                        None                None            471             5.7
-374  PDPK2_HUMAN_D0                         0             None                   None                       0                        None                None            477         -4306.1
-375  PEAK1_HUMAN_D0                         0             None                   None                       0                        None                None            479         -4305.8
-376  PGFRB_HUMAN_D0                         0             None                   None                       0                        None                None            498         -4247.6
-377  PGFRA_HUMAN_D0                         0             None                   None                       0                        None                None            497         -4258.9
-378  PI3R4_HUMAN_D0                         0             None                   None                       0                        None                None            404            10.6
-379   PIM3_HUMAN_D0                         0             None                   None                       0                        None                None            177            33.2
-380  PINK1_HUMAN_D0                         0             None                   None                       0                        None                None            487         -4297.1
-381  PKDCC_HUMAN_D0                         0             None                   None                       0                        None                None            482         -4305.2
-382   PKN3_HUMAN_D0                         0             None                   None                       0                        None                None            447             6.2
-383   PKN2_HUMAN_D0                         0             None                   None                       0                        None                None            197            32.1
-384   PKN1_HUMAN_D0                         0             None                   None                       0                        None                None            220            31.5
-385   PLK3_HUMAN_D0                         0             None                   None                       0                        None                None            164            33.8
-386   PRKY_HUMAN_D0                         0             None                   None                       0                        None                None            485         -4300.2
-387   PRKX_HUMAN_D0                         0             None                   None                       0                        None                None            146            35.1
-388  PRP4B_HUMAN_D0                         0             None                   None                       0                        None                None            340            27.9
-389   PRPK_HUMAN_D0                         0             None                   None                       0                        None                None            466             5.9
-390   PTK6_HUMAN_D0                         0             None                   None                       0                        None                None            175            33.4
-391    PXK_HUMAN_D0                         0             None                   None                       0                        None                None            483         -4305.0
-392   RAF1_HUMAN_D0                         0             None                   None                       0                        None                None             28            52.3
-393    RET_HUMAN_D0                         0             None                   None                       0                        None                None              9            65.6
-394  RIOK2_HUMAN_D0                         0             None                   None                       0                        None                None            310            29.5
-395  RIOK3_HUMAN_D0                         0             None                   None                       0                        None                None            294            30.0
-396  RIOK1_HUMAN_D0                         0             None                   None                       0                        None                None            224            31.4
-397  RIPK4_HUMAN_D0                         0             None                   None                       0                        None                None            170            33.5
-398  RIPK3_HUMAN_D0                         0             None                   None                       0                        None                None            408             9.8
-399  RIPK1_HUMAN_D0                         0             None                   None                       0                        None                None            186            32.6
-400  RIPK2_HUMAN_D0                         0             None                   None                       0                        None                None            117            36.6
-401     RK_HUMAN_D0                         0             None                   None                       0                        None                None            167            33.6
-402   RN5A_HUMAN_D0                         0             None                   None                       0                        None                None            154            34.5
-403  ROCK2_HUMAN_D0                         0             None                   None                       0                        None                None            172            33.5
-404  ROCK1_HUMAN_D0                         0             None                   None                       0                        None                None             80            40.9
-405   ROR1_HUMAN_D0                         0             None                   None                       0                        None                None            417             7.1
-406    RON_HUMAN_D0                         0             None                   None                       0                        None                None            369            22.9
-407   ROS1_HUMAN_D0                         0             None                   None                       0                        None                None             97            38.5
-408   ROR2_HUMAN_D0                         0             None                   None                       0                        None                None            378            16.4
-409  RPKL1_HUMAN_D0                         0             None                   None                       0                        None                None            481         -4305.4
-410    RYK_HUMAN_D0                         0             None                   None                       0                        None                None            474             5.4
-411   SBK1_HUMAN_D0                         0             None                   None                       0                        None                None            363            26.8
-412   SBK3_HUMAN_D0                         0             None                   None                       0                        None                None            364            26.7
-413   SBK2_HUMAN_D0                         0             None                   None                       0                        None                None            470             5.7
-414  SCYL2_HUMAN_D0                         0             None                   None                       0                        None                None            437             6.3
-415  SG223_HUMAN_D0                         0             None                   None                       0                        None                None            475             5.3
-416  SG494_HUMAN_D0                         0             None                   None                       0                        None                None            478         -4306.0
-417   SGK1_HUMAN_D0                         0             None                   None                       0                        None                None            206            31.8
-418   SGK3_HUMAN_D0                         0             None                   None                       0                        None                None            350            27.5
-419  SGK71_HUMAN_D0                         0             None                   None                       0                        None                None            458             6.0
-420   SGK2_HUMAN_D0                         0             None                   None                       0                        None                None            452             6.1
-421   SIK2_HUMAN_D0                         0             None                   None                       0                        None                None            257            30.6
-422   SIK1_HUMAN_D0                         0             None                   None                       0                        None                None            140            35.7
-423   SIK3_HUMAN_D0                         0             None                   None                       0                        None                None            319            28.6
-424   SNRK_HUMAN_D0                         0             None                   None                       0                        None                None            358            27.3
-425   SPEG_HUMAN_D0                         0             None                   None                       0                        None                None            410             7.8
-426   SPEG_HUMAN_D1                         0             None                   None                       0                        None                None            411             7.8
-427   SRMS_HUMAN_D0                         0             None                   None                       0                        None                None            308            29.6
-428  SRPK3_HUMAN_D0                         0             None                   None                       0                        None                None            490         -4283.7
-429  SRPK1_HUMAN_D0                         0             None                   None                       0                        None                None            493         -4280.1
-430  SRPK2_HUMAN_D0                         0             None                   None                       0                        None                None            492         -4281.2
-431  ST17A_HUMAN_D0                         0             None                   None                       0                        None                None            280            30.2
-432  ST32A_HUMAN_D0                         0             None                   None                       0                        None                None            361            27.0
-433  ST32B_HUMAN_D0                         0             None                   None                       0                        None                None            303            29.8
-434  ST32C_HUMAN_D0                         0             None                   None                       0                        None                None            312            29.3
-435  ST38L_HUMAN_D0                         0             None                   None                       0                        None                None            292            30.0
-436  STK38_HUMAN_D0                         0             None                   None                       0                        None                None            326            28.4
-437  STK33_HUMAN_D0                         0             None                   None                       0                        None                None            142            35.5
-438  STK39_HUMAN_D0                         0             None                   None                       0                        None                None            331            28.1
-439  STK35_HUMAN_D0                         0             None                   None                       0                        None                None            359            27.2
-440  STK11_HUMAN_D0                         0             None                   None                       0                        None                None             56            45.3
-441  STK40_HUMAN_D0                         0             None                   None                       0                        None                None            455             6.1
-442  STK36_HUMAN_D0                         0             None                   None                       0                        None                None            265            30.4
-443  STK31_HUMAN_D0                         0             None                   None                       0                        None                None            406            10.4
-444  STRAB_HUMAN_D0                         0             None                   None                       0                        None                None            459             6.0
-445  STYK1_HUMAN_D0                         0             None                   None                       0                        None                None            450             6.2
-446   TAF1_HUMAN_D0                         0             None                   None                       0                        None                None            488         -4296.0
-447   TAF1_HUMAN_D1                         0             None                   None                       0                        None                None            489         -4296.0
-448  TAOK2_HUMAN_D0                         0             None                   None                       0                        None                None            334            28.1
-449  TAOK1_HUMAN_D0                         0             None                   None                       0                        None                None            315            28.9
-450  TAOK3_HUMAN_D0                         0             None                   None                       0                        None                None            330            28.1
-451   TBCK_HUMAN_D0                         0             None                   None                       0                        None                None            433             6.4
-452   TBK1_HUMAN_D0                         0             None                   None                       0                        None                None             88            39.6
-453    TEC_HUMAN_D0                         0             None                   None                       0                        None                None            235            31.1
-454  TESK1_HUMAN_D0                         0             None                   None                       0                        None                None            258            30.6
-455  TESK2_HUMAN_D0                         0             None                   None                       0                        None                None            370            21.7
-456  TEX14_HUMAN_D0                         0             None                   None                       0                        None                None            423             6.8
-457  TGFR2_HUMAN_D0                         0             None                   None                       0                        None                None             37            50.4
-458   TIE1_HUMAN_D0                         0             None                   None                       0                        None                None            212            31.7
-459  TITIN_HUMAN_D0                         0             None                   None                       0                        None                None             59            44.9
-460   TLK1_HUMAN_D0                         0             None                   None                       0                        None                None            272            30.4
-461   TLK2_HUMAN_D0                         0             None                   None                       0                        None                None            301            29.8
-462  TNI3K_HUMAN_D0                         0             None                   None                       0                        None                None            214            31.6
-463   TNIK_HUMAN_D0                         0             None                   None                       0                        None                None            199            32.1
-464   TNK1_HUMAN_D0                         0             None                   None                       0                        None                None            300            29.8
-465   TOPK_HUMAN_D0                         0             None                   None                       0                        None                None            401            11.5
-466  TRIB1_HUMAN_D0                         0             None                   None                       0                        None                None            435             6.4
-467  TRIB3_HUMAN_D0                         0             None                   None                       0                        None                None            427             6.6
-468  TRIB2_HUMAN_D0                         0             None                   None                       0                        None                None            431             6.4
-469   TRIO_HUMAN_D0                         0             None                   None                       0                        None                None            409             8.1
-470  TSSK1_HUMAN_D0                         0             None                   None                       0                        None                None            281            30.2
-471  TSSK3_HUMAN_D0                         0             None                   None                       0                        None                None            464             5.9
-472  TSSK2_HUMAN_D0                         0             None                   None                       0                        None                None            375            18.0
-473  TSSK4_HUMAN_D0                         0             None                   None                       0                        None                None            463             5.9
-474  TSSK6_HUMAN_D0                         0             None                   None                       0                        None                None            462             5.9
-475  TTBK1_HUMAN_D0                         0             None                   None                       0                        None                None            434             6.4
-476  TTBK2_HUMAN_D0                         0             None                   None                       0                        None                None            398            12.1
-477    TXK_HUMAN_D0                         0             None                   None                       0                        None                None            252            30.8
-478   TYK2_HUMAN_D0                         0             None                   None                       0                        None                None             64            43.1
-479   TYK2_HUMAN_D1                         0             None                   None                       0                        None                None             65            43.1
-480  TYRO3_HUMAN_D0                         0             None                   None                       0                        None                None            181            32.9
-481    UFO_HUMAN_D0                         0             None                   None                       0                        None                None             84            40.5
-482  UHMK1_HUMAN_D0                         0             None                   None                       0                        None                None            453             6.1
-483   ULK3_HUMAN_D0                         0             None                   None                       0                        None                None            351            27.4
-484   ULK4_HUMAN_D0                         0             None                   None                       0                        None                None            425             6.7
-485   ULK1_HUMAN_D0                         0             None                   None                       0                        None                None            328            28.3
-486   ULK2_HUMAN_D0                         0             None                   None                       0                        None                None            439             6.3
-487  VGFR3_HUMAN_D0                         0             None                   None                       0                        None                None             39            49.8
-488   WEE1_HUMAN_D0                         0             None                   None                       0                        None                None             98            38.1
-489   WEE2_HUMAN_D0                         0             None                   None                       0                        None                None            332            28.1
-490   WNK1_HUMAN_D0                         0             None                   None                       0                        None                None            368            24.2
-491   WNK2_HUMAN_D0                         0             None                   None                       0                        None                None            388            14.9
-492   WNK3_HUMAN_D0                         0             None                   None                       0                        None                None            403            10.9
-493   WNK4_HUMAN_D0                         0             None                   None                       0                        None                None            394            12.8
-494    YES_HUMAN_D0                         0             None                   None                       0                        None                None            166            33.6
-495  ZAP70_HUMAN_D0                         0             None                   None                       0                        None                None             61            44.3
-496    ITK_HUMAN_D0                         5           1SNU_A                   None                     -10            ESCHERICHIA COLI               Human             52            45.7
-497  PHKG1_HUMAN_D0                         3           2PHK_A                   None                     -10  ESCHERICHIA COLI BL21(DE3)              Rabbit            207            31.8
+           targetID  nmatching_PDB_structures top_PDB_chain_ID   top_cnstrct_expr_tag  top_cnstrct_auth_score        top_cnstrct_expr_sys  top_cnstrct_taxname DB_target_rank DB_target_score
+0     MK01_HUMAN_D0                       309           4FMQ_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI                Human             16            58.4
+1     MK14_HUMAN_D0                       213           2Y8O_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI                Human             14            60.9
+2     CDK2_HUMAN_D0                       164           4EOO_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI                Human             26            53.3
+3    KAPCA_HUMAN_D0                       143           4IAC_A           Nterm_Histag                       2            ESCHERICHIA COLI                Mouse             63            43.3
+4     PIM1_HUMAN_D0                        85           2O65_A           Cterm_Histag                       2            ESCHERICHIA COLI                Human             77            41.3
+5    AURKA_HUMAN_D0                        68           2NP8_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI                Human             43            47.8
+6      SRC_HUMAN_D0                        48           4MXO_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI                Human             10            64.8
+7    DAPK1_HUMAN_D0                        31           4B4L_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI                Human            180            32.8
+8     MK08_HUMAN_D0                        26           1UKH_A           Cterm_Histag                       2            ESCHERICHIA COLI                Human             36            50.4
+9    EPHA3_HUMAN_D0                        21           4GK2_A           Nterm_Histag                       2            ESCHERICHIA COLI                Human             95            38.9
+10   MAPK2_HUMAN_D0                        21           2JBO_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI                Human             75            41.7
+11    NEK2_HUMAN_D0                        20           2XKE_A           Cterm_Histag                       2            ESCHERICHIA COLI                Human             89            39.6
+12    PAK4_HUMAN_D0                        20           2J0I_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI                Human            162            33.9
+13     TTK_HUMAN_D0                        20           3H9F_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                Human            158            34.1
+14   FGFR2_HUMAN_D0                        17           3RI1_B      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI                Human             17            58.1
+15    ABL1_HUMAN_D0                        16           3UE4_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI                Human             12            62.0
+16   FGFR1_HUMAN_D0                        13           3KY2_A           Nterm_Histag                       2            ESCHERICHIA COLI                Human             11            63.0
+17    PAK1_HUMAN_D0                        13           3Q52_A           Cterm_Histag                       2            ESCHERICHIA COLI                Human            157            34.2
+18   KS6A3_HUMAN_D0                        11           4GUE_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI                Mouse             49            45.7
+19   KS6A3_HUMAN_D1                        11           4JG7_A           Nterm_Histag                       2            ESCHERICHIA COLI                Human             50            45.7
+20   GSK3B_HUMAN_D0                        10           2O5K_A           Nterm_Histag                       2       ESCHERICHIA COLI BL21                Human             25            54.0
+21   KC1G3_HUMAN_D0                         9           2CHL_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                Human            294            29.9
+22    CSKP_HUMAN_D0                         8           3TAC_A           Nterm_Histag                       2            ESCHERICHIA COLI                Human            111            37.0
+23   STK24_HUMAN_D0                         8           3ZHP_C    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                Human            274            30.2
+24   DYR1A_HUMAN_D0                         7           3ANQ_D      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI                Human             83            40.7
+25    HASP_HUMAN_D0                         7           3E7V_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                Human            371            21.5
+26    KC1D_HUMAN_D0                         5           4HNF_B      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI                Human             93            39.1
+27    CLK3_HUMAN_D0                         5           2WU7_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                Human            223            31.3
+28   MERTK_HUMAN_D0                         5           3BPR_B           Nterm_Histag                       2  ESCHERICHIA COLI BL21(DE3)                Human             98            38.4
+29     MET_HUMAN_D0                         5           4EEV_A           Nterm_Histag                       2            ESCHERICHIA COLI                Human              6            68.5
+30    PLK2_HUMAN_D0                         5           4I5P_A           Nterm_Histag                       2            ESCHERICHIA COLI                Human            190            32.4
+31   DAPK3_HUMAN_D0                         4           2J90_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                Human            198            32.0
+32   MAPK3_HUMAN_D0                         4           3FXW_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                Human            372            20.3
+33    MK13_HUMAN_D0                         4           4EYJ_A           Nterm_Histag                       2            ESCHERICHIA COLI                Human            240            30.9
+34    MST4_HUMAN_D0                         4           4FZD_B      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI                Human            308            29.6
+35     SLK_HUMAN_D0                         4           2JFL_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                Human            207            31.7
+36   AAPK2_HUMAN_D0                         3           2H6D_A      Nterm_TEV_cleaved                       2       ESCHERICHIA COLI BL21                Human            194            32.1
+37   DYRK2_HUMAN_D0                         3           4AZF_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                Human            250            30.8
+38    BRAF_HUMAN_D0                         3           4JVG_D      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI                Human              4            75.8
+39   E2AK2_HUMAN_D0                         3           3UIU_A           Cterm_Histag                       2            ESCHERICHIA COLI                Human            135            35.9
+40   EPHB2_HUMAN_D0                         3           3ZFM_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI                Human             91            39.5
+41    FAK1_HUMAN_D0                         3           2IJM_B      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI                Human             32            51.6
+42   MKNK2_HUMAN_D0                         3           2AC5_A      Nterm_TEV_cleaved                       2       ESCHERICHIA COLI BL21                Human            251            30.8
+43   MP2K4_HUMAN_D0                         3           3VUT_B           Cterm_Histag                       2            ESCHERICHIA COLI                Human            181            32.8
+44    PAK6_HUMAN_D0                         3           2C30_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                Human            282            30.1
+45    CDK6_HUMAN_D0                         2           4EZ5_A           Cterm_Histag                       2            ESCHERICHIA COLI                Human            314            29.0
+46   EPHA7_HUMAN_D0                         2           2REI_A           Cterm_Histag                       2  ESCHERICHIA COLI BL21(DE3)                Human            196            32.1
+47    KC1E_HUMAN_D0                         2           4HNI_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI                Human            233            31.2
+48   KCC2A_HUMAN_D0                         2           2VZ6_B    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                Human            376            17.2
+49    MELK_HUMAN_D0                         2           4BFM_A           Cterm_Histag                       2            ESCHERICHIA COLI                Mouse            137            35.8
+50    MK07_HUMAN_D0                         2           4IC7_D      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI                Human            186            32.5
+51   MP2K6_HUMAN_D0                         2           3VN9_A           Cterm_Histag                       2            ESCHERICHIA COLI                Human            222            31.4
+52   MRCKB_HUMAN_D0                         2           3TKU_B    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                Human            254            30.6
+53    NEK1_HUMAN_D0                         2           4APC_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                Human            141            35.7
+54    NEK7_HUMAN_D0                         2           2WQN_A           Cterm_Histag                       2            ESCHERICHIA COLI                Human            299            29.8
+55   ST17B_HUMAN_D0                         2           3LM0_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                Human            279            30.1
+56    STK3_HUMAN_D0                         2           4LG4_B      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI                Human            219            31.4
+57   AAPK1_HUMAN_D0                         1           4CFH_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                  Rat            183            32.5
+58    CDK1_HUMAN_D0                         1           3MTL_A           Cterm_Histag                       2            ESCHERICHIA COLI                Human             35            50.9
+59    KCC4_HUMAN_D0                         1           2W4O_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                Human            224            31.3
+60   BMPR2_HUMAN_D0                         1           3G2F_A           Cterm_Histag                       2            ESCHERICHIA COLI                Human             78            41.1
+61   CDK16_HUMAN_D0                         1           3MTL_A           Cterm_Histag                       2            ESCHERICHIA COLI                Human            257            30.6
+62   CDKL1_HUMAN_D0                         1           4AGU_B              Cterm_TEV                       2            ESCHERICHIA COLI                Human            361            27.1
+63   EPHA5_HUMAN_D0                         1           2R2P_A           Cterm_Histag                       2  ESCHERICHIA COLI BL21(DE3)                Human            189            32.4
+64   EPHA8_HUMAN_D0                         1           3KUL_B    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                Human            217            31.4
+65   EPHB1_HUMAN_D0                         1           3ZFX_F      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI                Human            182            32.6
+66   EPHB3_HUMAN_D0                         1           3ZFY_B      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI                Human            202            31.9
+67   EPHB4_HUMAN_D0                         1           3ZEW_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI                Human             96            38.7
+68   FGFR3_HUMAN_D0                         1           4K33_A           Nterm_Histag                       2            ESCHERICHIA COLI                Human             13            62.0
+69   KCC2G_HUMAN_D0                         1           2V7O_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                Human            218            31.4
+70     KIT_HUMAN_D0                         1           4HVS_A           Nterm_Histag                       2            ESCHERICHIA COLI                Human              8            65.7
+71   KS6A1_HUMAN_D1                         1           3RNY_B           Nterm_Histag                       2            ESCHERICHIA COLI                Human            132            36.0
+72   MKNK1_HUMAN_D0                         1           2HW6_B      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI                Human            214            31.5
+73   MP2K2_HUMAN_D0                         1           1S9I_A           Cterm_Histag                       2  ESCHERICHIA COLI BL21(DE3)                Human             88            39.6
+74   MRCKA_HUMAN_D0                         1           4AW2_A              Cterm_TEV                       2            ESCHERICHIA COLI                  Rat            232            31.2
+75    PAK7_HUMAN_D0                         1           2F57_B    Nterm_TEV_uncleaved                       2  ESCHERICHIA COLI BL21(DE3)                Human            236            31.1
+76   PHKG2_HUMAN_D0                         1           2Y7J_D    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                Human            134            35.9
+77   PMYT1_HUMAN_D0                         1           3P1A_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                Human            304            29.6
+78   STK16_HUMAN_D0                         1           2BUJ_B    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                Human            302            29.7
+79   STRAA_HUMAN_D0                         1           3GNI_B    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                Human            402            11.5
+80    VRK2_HUMAN_D0                         1           2V62_B    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                Human            354            27.4
+81    VRK3_HUMAN_D0                         1           2JII_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                Human            445             6.3
+82   CSK21_HUMAN_D0                        47           3AXW_A  Nterm_other_extra_seq                       1            ESCHERICHIA COLI                Human             62            43.3
+83    CHK2_HUMAN_D0                        36           2CN5_A  Nterm_other_extra_seq                       1            ESCHERICHIA COLI                Human             24            55.0
+84   MARK2_HUMAN_D0                         7           3IEC_D  Nterm_other_extra_seq                       1            ESCHERICHIA COLI                Human            237            31.0
+85   KCC1A_HUMAN_D0                         6           2JAM_A  Nterm_other_extra_seq                       1            ESCHERICHIA COLI                Human            255            30.6
+86     CSK_HUMAN_D0                         3           3D7T_A  Nterm_other_extra_seq                       1            ESCHERICHIA COLI                Human            148            35.0
+87    MK11_HUMAN_D0                         3           3GC8_A  Nterm_other_extra_seq                       1            ESCHERICHIA COLI                Human            159            34.1
+88   CSK22_HUMAN_D0                         2           3E3B_X  Nterm_other_extra_seq                       1            ESCHERICHIA COLI                Human            154            34.5
+89   MARK3_HUMAN_D0                         2           2QNJ_A  Nterm_other_extra_seq                       1  ESCHERICHIA COLI BL21(DE3)                Human            366            25.4
+90    MK03_HUMAN_D0                         1           2ZOQ_B  Nterm_other_extra_seq                       1            ESCHERICHIA COLI                Human             52            45.6
+91    VRK1_HUMAN_D0                         1           3OP5_D  Nterm_other_extra_seq                       1            ESCHERICHIA COLI                Human            384            15.3
+92    MK10_HUMAN_D0                        36           3FI2_A                   None                       0            ESCHERICHIA COLI                Human             44            47.8
+93   AURKB_HUMAN_D0                        10           4C2W_A                   None                       0            ESCHERICHIA COLI  African clawed frog             40            49.7
+94    CHK1_HUMAN_D0                         9           2E9V_A                   None                       0            ESCHERICHIA COLI                Human             41            48.4
+95   DAPK2_HUMAN_D0                         9           1ZWS_H                   None                       0            ESCHERICHIA COLI                Human            289            30.0
+96   EPHA4_HUMAN_D0                         4           2XYU_A                   None                       0            ESCHERICHIA COLI                Mouse            197            32.0
+97     FES_HUMAN_D0                         4           3CBL_A                   None                       0            ESCHERICHIA COLI                Human            119            36.5
+98     GAK_HUMAN_D0                         4           4O38_A                   None                       0            ESCHERICHIA COLI                Human            201            31.9
+99    JAK2_HUMAN_D0                         4           2XA4_B                   None                       0            ESCHERICHIA COLI                Human              5            71.1
+100  STK10_HUMAN_D0                         4           4BC6_A                   None                       0            ESCHERICHIA COLI                Human            126            36.2
+101    ILK_HUMAN_D0                         3           3KMW_A                   None                       0            ESCHERICHIA COLI                Human            389            14.1
+102   KSYK_HUMAN_D0                         3           4F4P_A                   None                       0            ESCHERICHIA COLI                Human             67            42.7
+103   TIE2_HUMAN_D0                         3           3L8P_A                   None                       0            ESCHERICHIA COLI                Human             37            50.3
+104  VGFR2_HUMAN_D0                         3           1Y6A_A                   None                       0            ESCHERICHIA COLI                Human              7            66.8
+105   M3K5_HUMAN_D0                         2           3VW6_A                   None                       0            ESCHERICHIA COLI                Human            151            34.6
+106   CLK1_HUMAN_D0                         2           2VAG_A                   None                       0            ESCHERICHIA COLI                Human            171            33.4
+107   FAK2_HUMAN_D0                         2           3ET7_A                   None                       0            ESCHERICHIA COLI                Human             76            41.6
+108  IGF1R_HUMAN_D0                         2           3O23_A                   None                       0            ESCHERICHIA COLI                Human             18            57.0
+109   JAK1_HUMAN_D0                         2           3EYH_A                   None                       0            ESCHERICHIA COLI                Human             74            41.8
+110  KCC2D_HUMAN_D0                         2           2VN9_A                   None                       0            ESCHERICHIA COLI                Human            172            33.4
+111  KS6A5_HUMAN_D1                         2           3KN6_A                   None                       0            ESCHERICHIA COLI                Human            129            36.2
+112   MK09_HUMAN_D0                         2           3E7O_A                   None                       0            ESCHERICHIA COLI                Human             80            40.9
+113   MLKL_HUMAN_D0                         2           4M68_A                   None                       0            ESCHERICHIA COLI                Mouse            438             6.4
+114  OXSR1_HUMAN_D0                         2           3DAK_B                   None                       0            ESCHERICHIA COLI                Human            345            27.7
+115   PAN3_HUMAN_D0                         2           4BWX_A                   None                       0            ESCHERICHIA COLI                                 444             6.3
+116   PLK4_HUMAN_D0                         2           4JXF_A                   None                       0            ESCHERICHIA COLI                Human            195            32.1
+117   RN5A_HUMAN_D0                         2           4OAV_B                   None                       0            ESCHERICHIA COLI                Human            156            34.4
+118    BTK_HUMAN_D0                         1           1K2P_A                   None                       0            ESCHERICHIA COLI                Human             56            45.2
+119   CLK2_HUMAN_D0                         1           3NR9_C                   None                       0            ESCHERICHIA COLI                Human            199            31.9
+120   DMPK_HUMAN_D0                         1           2VD5_B                   None                       0            ESCHERICHIA COLI                Human            110            37.1
+121    HCK_HUMAN_D0                         1           2HK5_A                   None                       0            ESCHERICHIA COLI                Human             57            45.1
+122   INSR_HUMAN_D0                         1           2AUH_A                   None                       0            ESCHERICHIA COLI                Human             15            60.5
+123   JAK3_HUMAN_D0                         1           1YVJ_A                   None                       0            ESCHERICHIA COLI                Human             47            46.8
+124  KC1G1_HUMAN_D0                         1           2CMW_A                   None                       0            ESCHERICHIA COLI                Human            276            30.2
+125  KC1G2_HUMAN_D0                         1           2C47_A                   None                       0            ESCHERICHIA COLI                Human            238            31.0
+126  KCC1D_HUMAN_D0                         1           2JC6_A                   None                       0            ESCHERICHIA COLI                Human            253            30.7
+127  KCC1G_HUMAN_D0                         1           2JAM_A                   None                       0            ESCHERICHIA COLI                Human            305            29.6
+128  KCC2B_HUMAN_D0                         1           3BHH_D                   None                       0            ESCHERICHIA COLI                Human            249            30.8
+129   KPCT_HUMAN_D0                         1           1XJD_A                   None                       0  ESCHERICHIA COLI BL21(DE3)                Human             84            40.6
+130   M3K9_HUMAN_D0                         1           3DTC_A                   None                       0            ESCHERICHIA COLI                Human            121            36.4
+131  MARK1_HUMAN_D0                         1           2HAK_E                   None                       0            ESCHERICHIA COLI                Human            112            36.9
+132   MK06_HUMAN_D0                         1           2I6L_B                   None                       0            ESCHERICHIA COLI                Human            285            30.0
+133   MK12_HUMAN_D0                         1           1CM8_A                   None                       0            ESCHERICHIA COLI                Human            113            36.8
+134  NTRK1_HUMAN_D0                         1           4F0I_A                   None                       0            ESCHERICHIA COLI                Human             46            47.1
+135  PDPK1_HUMAN_D0                         1           2R7B_A                   None                       0            ESCHERICHIA COLI                Human             99            38.3
+136   PIM2_HUMAN_D0                         1           2IWI_A                   None                       0            ESCHERICHIA COLI                Human            107            37.4
+137   PLK1_HUMAN_D0                         1           3THB_A                   None                       0            ESCHERICHIA COLI                Human             30            52.0
+138  STK25_HUMAN_D0                         1           2XIK_A                   None                       0            ESCHERICHIA COLI                Human            297            29.8
+139   STK4_HUMAN_D0                         1           3COM_A                   None                       0  ESCHERICHIA COLI BL21(DE3)                Human            114            36.7
+140  TGFR1_HUMAN_D0                         1           1B6C_F                   None                       0            ESCHERICHIA COLI                Human             20            56.2
+141  VGFR1_HUMAN_D0                         1           3HNG_A                   None                       0            ESCHERICHIA COLI                Human             19            56.3
+142   WNK1_HUMAN_D0                         1           3FPQ_A                   None                       0            ESCHERICHIA COLI                  Rat            368            24.1
+143   CDK4_HUMAN_D0                         0             None                   None                       0                        None                 None             27            52.4
+144   CDK5_HUMAN_D0                         0             None                   None                       0                        None                 None             60            44.5
+145   CDK7_HUMAN_D0                         0             None                   None                       0                        None                 None            139            35.7
+146   CDK9_HUMAN_D0                         0             None                   None                       0                        None                 None             68            42.7
+147   EGFR_HUMAN_D0                         0             None                   None                       0                        None                 None              1           100.0
+148  ERBB2_HUMAN_D0                         0             None                   None                       0                        None                 None              3            81.1
+149  ERBB4_HUMAN_D0                         0             None                   None                       0                        None                 None             72            42.1
+150  HIPK2_HUMAN_D0                         0             None                   None                       0                        None                 None            287            30.0
+151   IKKA_HUMAN_D0                         0             None                   None                       0                        None                 None             48            46.2
+152   IKKB_HUMAN_D0                         0             None                   None                       0                        None                 None             53            45.6
+153   M3K7_HUMAN_D0                         0             None                   None                       0                        None                 None            187            32.4
+154   AAK1_HUMAN_D0                         0             None                   None                       0                        None                 None            267            30.3
+155   ABL2_HUMAN_D0                         0             None                   None                       0                        None                 None            212            31.6
+156   ACK1_HUMAN_D0                         0             None                   None                       0                        None                 None            155            34.4
+157  ACV1B_HUMAN_D0                         0             None                   None                       0                        None                 None            122            36.4
+158  ACV1C_HUMAN_D0                         0             None                   None                       0                        None                 None            451             6.2
+159  ACVL1_HUMAN_D0                         0             None                   None                       0                        None                 None            115            36.7
+160  ACVR1_HUMAN_D0                         0             None                   None                       0                        None                 None            116            36.6
+161  ADCK1_HUMAN_D0                         0             None                   None                       0                        None                 None            455             6.1
+162  ADCK2_HUMAN_D0                         0             None                   None                       0                        None                 None            480         -4289.5
+163  ADCK3_HUMAN_D0                         0             None                   None                       0                        None                 None            495         -4259.7
+164  ADCK4_HUMAN_D0                         0             None                   None                       0                        None                 None            144            35.5
+165  ADCK5_HUMAN_D0                         0             None                   None                       0                        None                 None            468             5.8
+166   AKT1_HUMAN_D0                         0             None                   None                       0                        None                 None              2            82.0
+167   AKT2_HUMAN_D0                         0             None                   None                       0                        None                 None             33            51.4
+168   AKT3_HUMAN_D0                         0             None                   None                       0                        None                 None             55            45.3
+169    ALK_HUMAN_D0                         0             None                   None                       0                        None                 None             21            56.0
+170  AMHR2_HUMAN_D0                         0             None                   None                       0                        None                 None            399            12.0
+171  ANKK1_HUMAN_D0                         0             None                   None                       0                        None                 None            243            30.9
+172  ANPRA_HUMAN_D0                         0             None                   None                       0                        None                 None            355            27.3
+173  ANPRB_HUMAN_D0                         0             None                   None                       0                        None                 None            394            12.8
+174   ARAF_HUMAN_D0                         0             None                   None                       0                        None                 None            406            10.4
+175  ARBK1_HUMAN_D0                         0             None                   None                       0                        None                 None            338            27.9
+176  ARBK2_HUMAN_D0                         0             None                   None                       0                        None                 None            407             9.9
+177  AURKC_HUMAN_D0                         0             None                   None                       0                        None                 None            104            37.7
+178  AVR2A_HUMAN_D0                         0             None                   None                       0                        None                 None            227            31.3
+179  AVR2B_HUMAN_D0                         0             None                   None                       0                        None                 None            136            35.9
+180    BLK_HUMAN_D0                         0             None                   None                       0                        None                 None            106            37.5
+181  BMP2K_HUMAN_D0                         0             None                   None                       0                        None                 None            259            30.5
+182  BMR1A_HUMAN_D0                         0             None                   None                       0                        None                 None             73            42.0
+183  BMR1B_HUMAN_D0                         0             None                   None                       0                        None                 None            108            37.3
+184    BMX_HUMAN_D0                         0             None                   None                       0                        None                 None            210            31.7
+185  BRSK1_HUMAN_D0                         0             None                   None                       0                        None                 None            273            30.2
+186  BRSK2_HUMAN_D0                         0             None                   None                       0                        None                 None            283            30.1
+187  BUB1B_HUMAN_D0                         0             None                   None                       0                        None                 None            373            19.3
+188   BUB1_HUMAN_D0                         0             None                   None                       0                        None                 None            385            15.2
+189  CAMKV_HUMAN_D0                         0             None                   None                       0                        None                 None            448             6.2
+190  CD11A_HUMAN_D0                         0             None                   None                       0                        None                 None            290            29.9
+191  CD11B_HUMAN_D0                         0             None                   None                       0                        None                 None            266            30.3
+192   CDC7_HUMAN_D0                         0             None                   None                       0                        None                 None            494         -4260.3
+193  CDK10_HUMAN_D0                         0             None                   None                       0                        None                 None            452             6.2
+194  CDK12_HUMAN_D0                         0             None                   None                       0                        None                 None            396            12.7
+195  CDK13_HUMAN_D0                         0             None                   None                       0                        None                 None            344            27.7
+196  CDK14_HUMAN_D0                         0             None                   None                       0                        None                 None            291            29.9
+197  CDK15_HUMAN_D0                         0             None                   None                       0                        None                 None            349            27.5
+198  CDK17_HUMAN_D0                         0             None                   None                       0                        None                 None            303            29.7
+199  CDK18_HUMAN_D0                         0             None                   None                       0                        None                 None            281            30.1
+200  CDK19_HUMAN_D0                         0             None                   None                       0                        None                 None            288            30.0
+201  CDK20_HUMAN_D0                         0             None                   None                       0                        None                 None            436             6.4
+202   CDK3_HUMAN_D0                         0             None                   None                       0                        None                 None            231            31.2
+203   CDK8_HUMAN_D0                         0             None                   None                       0                        None                 None            247            30.8
+204  CDKL2_HUMAN_D0                         0             None                   None                       0                        None                 None            346            27.6
+205  CDKL3_HUMAN_D0                         0             None                   None                       0                        None                 None            348            27.6
+206  CDKL4_HUMAN_D0                         0             None                   None                       0                        None                 None            464             5.9
+207  CDKL5_HUMAN_D0                         0             None                   None                       0                        None                 None            105            37.6
+208   CLK4_HUMAN_D0                         0             None                   None                       0                        None                 None            185            32.5
+209  CSF1R_HUMAN_D0                         0             None                   None                       0                        None                 None             31            51.7
+210  CSK23_HUMAN_D0                         0             None                   None                       0                        None                 None            467             5.8
+211   CTRO_HUMAN_D0                         0             None                   None                       0                        None                 None            193            32.3
+212  DCLK1_HUMAN_D0                         0             None                   None                       0                        None                 None            235            31.1
+213  DCLK2_HUMAN_D0                         0             None                   None                       0                        None                 None            367            24.6
+214  DCLK3_HUMAN_D0                         0             None                   None                       0                        None                 None            265            30.4
+215   DDR1_HUMAN_D0                         0             None                   None                       0                        None                 None            220            31.4
+216   DDR2_HUMAN_D0                         0             None                   None                       0                        None                 None            124            36.3
+217  DUSTY_HUMAN_D0                         0             None                   None                       0                        None                 None            358            27.3
+218  DYR1B_HUMAN_D0                         0             None                   None                       0                        None                 None            216            31.4
+219  DYRK3_HUMAN_D0                         0             None                   None                       0                        None                 None            382            15.8
+220  DYRK4_HUMAN_D0                         0             None                   None                       0                        None                 None            392            13.2
+221  E2AK1_HUMAN_D0                         0             None                   None                       0                        None                 None            491         -4265.9
+222  E2AK3_HUMAN_D0                         0             None                   None                       0                        None                 None            496         -4254.2
+223  E2AK4_HUMAN_D0                         0             None                   None                       0                        None                 None            483         -4288.3
+224  EPHA1_HUMAN_D0                         0             None                   None                       0                        None                 None            246            30.9
+225  EPHA2_HUMAN_D0                         0             None                   None                       0                        None                 None             64            43.1
+226  EPHA6_HUMAN_D0                         0             None                   None                       0                        None                 None            204            31.9
+227  EPHAA_HUMAN_D0                         0             None                   None                       0                        None                 None            428             6.6
+228  EPHB6_HUMAN_D0                         0             None                   None                       0                        None                 None            312            29.2
+229  ERBB3_HUMAN_D0                         0             None                   None                       0                        None                 None            102            37.8
+230   ERN1_HUMAN_D0                         0             None                   None                       0                        None                 None            317            28.6
+231   ERN2_HUMAN_D0                         0             None                   None                       0                        None                 None            422             6.8
+232    FER_HUMAN_D0                         0             None                   None                       0                        None                 None            213            31.5
+233  FGFR4_HUMAN_D0                         0             None                   None                       0                        None                 None            152            34.6
+234    FGR_HUMAN_D0                         0             None                   None                       0                        None                 None            103            37.7
+235   FLT3_HUMAN_D0                         0             None                   None                       0                        None                 None             22            55.4
+236    FRK_HUMAN_D0                         0             None                   None                       0                        None                 None            229            31.3
+237    FYN_HUMAN_D0                         0             None                   None                       0                        None                 None             82            40.7
+238   GRK4_HUMAN_D0                         0             None                   None                       0                        None                 None            322            28.4
+239   GRK5_HUMAN_D0                         0             None                   None                       0                        None                 None            390            13.9
+240   GRK6_HUMAN_D0                         0             None                   None                       0                        None                 None            391            13.2
+241   GRK7_HUMAN_D0                         0             None                   None                       0                        None                 None            334            28.0
+242  GSK3A_HUMAN_D0                         0             None                   None                       0                        None                 None            101            37.9
+243  GUC2C_HUMAN_D0                         0             None                   None                       0                        None                 None            381            15.9
+244  GUC2D_HUMAN_D0                         0             None                   None                       0                        None                 None            383            15.7
+245  GUC2F_HUMAN_D0                         0             None                   None                       0                        None                 None            419             7.1
+246    GWL_HUMAN_D0                         0             None                   None                       0                        None                 None            486         -4283.4
+247  HIPK1_HUMAN_D0                         0             None                   None                       0                        None                 None            318            28.6
+248  HIPK3_HUMAN_D0                         0             None                   None                       0                        None                 None            325            28.3
+249  HIPK4_HUMAN_D0                         0             None                   None                       0                        None                 None            343            27.7
+250   HUNK_HUMAN_D0                         0             None                   None                       0                        None                 None            356            27.3
+251    ICK_HUMAN_D0                         0             None                   None                       0                        None                 None            175            33.3
+252   IKKE_HUMAN_D0                         0             None                   None                       0                        None                 None            163            33.8
+253  INSRR_HUMAN_D0                         0             None                   None                       0                        None                 None            230            31.2
+254  IRAK1_HUMAN_D0                         0             None                   None                       0                        None                 None            244            30.9
+255  IRAK2_HUMAN_D0                         0             None                   None                       0                        None                 None            425             6.7
+256  IRAK3_HUMAN_D0                         0             None                   None                       0                        None                 None            127            36.2
+257  IRAK4_HUMAN_D0                         0             None                   None                       0                        None                 None             70            42.5
+258  KALRN_HUMAN_D0                         0             None                   None                       0                        None                 None            386            15.1
+259  KAPCB_HUMAN_D0                         0             None                   None                       0                        None                 None            125            36.3
+260  KAPCG_HUMAN_D0                         0             None                   None                       0                        None                 None            165            33.7
+261  KC1AL_HUMAN_D0                         0             None                   None                       0                        None                 None            311            29.3
+262   KC1A_HUMAN_D0                         0             None                   None                       0                        None                 None            192            32.3
+263  KCC1B_HUMAN_D0                         0             None                   None                       0                        None                 None            470             5.8
+264   KGP1_HUMAN_D0                         0             None                   None                       0                        None                 None            365            25.5
+265   KGP2_HUMAN_D0                         0             None                   None                       0                        None                 None            260            30.5
+266  KKCC1_HUMAN_D0                         0             None                   None                       0                        None                 None            275            30.2
+267  KKCC2_HUMAN_D0                         0             None                   None                       0                        None                 None            245            30.9
+268   KPCA_HUMAN_D0                         0             None                   None                       0                        None                 None             34            51.0
+269   KPCB_HUMAN_D0                         0             None                   None                       0                        None                 None             69            42.6
+270  KPCD1_HUMAN_D0                         0             None                   None                       0                        None                 None            146            35.1
+271  KPCD2_HUMAN_D0                         0             None                   None                       0                        None                 None            377            17.2
+272  KPCD3_HUMAN_D0                         0             None                   None                       0                        None                 None            241            30.9
+273   KPCD_HUMAN_D0                         0             None                   None                       0                        None                 None             28            52.3
+274   KPCE_HUMAN_D0                         0             None                   None                       0                        None                 None             79            41.0
+275   KPCG_HUMAN_D0                         0             None                   None                       0                        None                 None             71            42.3
+276   KPCI_HUMAN_D0                         0             None                   None                       0                        None                 None            300            29.8
+277   KPCL_HUMAN_D0                         0             None                   None                       0                        None                 None            178            33.0
+278   KPCZ_HUMAN_D0                         0             None                   None                       0                        None                 None            143            35.5
+279  KPSH1_HUMAN_D0                         0             None                   None                       0                        None                 None            462             5.9
+280  KPSH2_HUMAN_D0                         0             None                   None                       0                        None                 None            461             6.0
+281  KS6A1_HUMAN_D0                         0             None                   None                       0                        None                 None            131            36.0
+282  KS6A2_HUMAN_D0                         0             None                   None                       0                        None                 None            149            34.7
+283  KS6A2_HUMAN_D1                         0             None                   None                       0                        None                 None            150            34.7
+284  KS6B2_HUMAN_D0                         0             None                   None                       0                        None                 None            441             6.3
+285  KS6B1_HUMAN_D0                         0             None                   None                       0                        None                 None            138            35.7
+286  KS6A4_HUMAN_D0                         0             None                   None                       0                        None                 None            166            33.5
+287  KS6A4_HUMAN_D1                         0             None                   None                       0                        None                 None            167            33.5
+288  KS6A6_HUMAN_D0                         0             None                   None                       0                        None                 None            160            34.0
+289  KS6A6_HUMAN_D1                         0             None                   None                       0                        None                 None            161            34.0
+290  KS6A5_HUMAN_D0                         0             None                   None                       0                        None                 None            128            36.2
+291  KS6C1_HUMAN_D0                         0             None                   None                       0                        None                 None            423             6.8
+292   KSR1_HUMAN_D0                         0             None                   None                       0                        None                 None            426             6.7
+293   KSR2_HUMAN_D0                         0             None                   None                       0                        None                 None            418             7.1
+294  LATS1_HUMAN_D0                         0             None                   None                       0                        None                 None            234            31.2
+295  LATS2_HUMAN_D0                         0             None                   None                       0                        None                 None            263            30.5
+296    LCK_HUMAN_D0                         0             None                   None                       0                        None                 None             23            55.2
+297  LIMK1_HUMAN_D0                         0             None                   None                       0                        None                 None             86            39.9
+298  LIMK2_HUMAN_D0                         0             None                   None                       0                        None                 None            191            32.4
+299  LMTK1_HUMAN_D0                         0             None                   None                       0                        None                 None            443             6.3
+300  LMTK2_HUMAN_D0                         0             None                   None                       0                        None                 None            413             7.2
+301  LMTK3_HUMAN_D0                         0             None                   None                       0                        None                 None            453             6.1
+302  LRRK1_HUMAN_D0                         0             None                   None                       0                        None                 None            417             7.1
+303  LRRK2_HUMAN_D0                         0             None                   None                       0                        None                 None             45            47.5
+304    LTK_HUMAN_D0                         0             None                   None                       0                        None                 None            142            35.6
+305    LYN_HUMAN_D0                         0             None                   None                       0                        None                 None             58            44.9
+306  M3K10_HUMAN_D0                         0             None                   None                       0                        None                 None            268            30.3
+307  M3K11_HUMAN_D0                         0             None                   None                       0                        None                 None            228            31.3
+308  M3K12_HUMAN_D0                         0             None                   None                       0                        None                 None            347            27.6
+309  M3K13_HUMAN_D0                         0             None                   None                       0                        None                 None            329            28.2
+310  M3K14_HUMAN_D0                         0             None                   None                       0                        None                 None            374            18.6
+311  M3K15_HUMAN_D0                         0             None                   None                       0                        None                 None            340            27.9
+312  M3K19_HUMAN_D0                         0             None                   None                       0                        None                 None            316            28.7
+313   M3K1_HUMAN_D0                         0             None                   None                       0                        None                 None             94            39.0
+314   M3K2_HUMAN_D0                         0             None                   None                       0                        None                 None            323            28.3
+315   M3K3_HUMAN_D0                         0             None                   None                       0                        None                 None            324            28.3
+316   M3K4_HUMAN_D0                         0             None                   None                       0                        None                 None            393            12.9
+317   M3K6_HUMAN_D0                         0             None                   None                       0                        None                 None            337            27.9
+318   M3K8_HUMAN_D0                         0             None                   None                       0                        None                 None            153            34.5
+319  M3KL4_HUMAN_D0                         0             None                   None                       0                        None                 None            475             5.2
+320   M4K1_HUMAN_D0                         0             None                   None                       0                        None                 None            252            30.7
+321   M4K2_HUMAN_D0                         0             None                   None                       0                        None                 None            123            36.4
+322   M4K3_HUMAN_D0                         0             None                   None                       0                        None                 None            242            30.9
+323   M4K4_HUMAN_D0                         0             None                   None                       0                        None                 None            264            30.4
+324   M4K5_HUMAN_D0                         0             None                   None                       0                        None                 None            270            30.3
+325    MAK_HUMAN_D0                         0             None                   None                       0                        None                 None            174            33.3
+326  MAPK5_HUMAN_D0                         0             None                   None                       0                        None                 None            208            31.7
+327  MARK4_HUMAN_D0                         0             None                   None                       0                        None                 None            295            29.9
+328  MAST1_HUMAN_D0                         0             None                   None                       0                        None                 None            321            28.4
+329  MAST2_HUMAN_D0                         0             None                   None                       0                        None                 None            420             6.9
+330  MAST3_HUMAN_D0                         0             None                   None                       0                        None                 None            440             6.3
+331  MAST4_HUMAN_D0                         0             None                   None                       0                        None                 None            415             7.2
+332   MATK_HUMAN_D0                         0             None                   None                       0                        None                 None            339            27.9
+333  MINK1_HUMAN_D0                         0             None                   None                       0                        None                 None            400            11.8
+334   MK04_HUMAN_D0                         0             None                   None                       0                        None                 None            284            30.0
+335   MK15_HUMAN_D0                         0             None                   None                       0                        None                 None            293            29.9
+336   MLTK_HUMAN_D0                         0             None                   None                       0                        None                 None            328            28.2
+337    MOK_HUMAN_D0                         0             None                   None                       0                        None                 None            457             6.0
+338    MOS_HUMAN_D0                         0             None                   None                       0                        None                 None            432             6.4
+339  MP2K1_HUMAN_D0                         0             None                   None                       0                        None                 None             42            48.3
+340  MP2K3_HUMAN_D0                         0             None                   None                       0                        None                 None            117            36.6
+341  MP2K5_HUMAN_D0                         0             None                   None                       0                        None                 None            341            27.9
+342  MP2K7_HUMAN_D0                         0             None                   None                       0                        None                 None            320            28.4
+343  MRCKG_HUMAN_D0                         0             None                   None                       0                        None                 None            442             6.3
+344   MUSK_HUMAN_D0                         0             None                   None                       0                        None                 None            118            36.5
+345  MYLK2_HUMAN_D0                         0             None                   None                       0                        None                 None            130            36.0
+346  MYLK3_HUMAN_D0                         0             None                   None                       0                        None                 None            335            28.0
+347  MYLK4_HUMAN_D0                         0             None                   None                       0                        None                 None            306            29.6
+348   MYLK_HUMAN_D0                         0             None                   None                       0                        None                 None             87            39.8
+349  MYO3A_HUMAN_D0                         0             None                   None                       0                        None                 None            109            37.3
+350  MYO3B_HUMAN_D0                         0             None                   None                       0                        None                 None            416             7.2
+351  NEK10_HUMAN_D0                         0             None                   None                       0                        None                 None            429             6.5
+352  NEK11_HUMAN_D0                         0             None                   None                       0                        None                 None            350            27.5
+353   NEK3_HUMAN_D0                         0             None                   None                       0                        None                 None            357            27.3
+354   NEK4_HUMAN_D0                         0             None                   None                       0                        None                 None            351            27.5
+355   NEK5_HUMAN_D0                         0             None                   None                       0                        None                 None            272            30.3
+356   NEK6_HUMAN_D0                         0             None                   None                       0                        None                 None            262            30.5
+357   NEK8_HUMAN_D0                         0             None                   None                       0                        None                 None            387            14.9
+358   NEK9_HUMAN_D0                         0             None                   None                       0                        None                 None            278            30.2
+359   NIM1_HUMAN_D0                         0             None                   None                       0                        None                 None            333            28.0
+360    NLK_HUMAN_D0                         0             None                   None                       0                        None                 None            261            30.5
+361  NRBP2_HUMAN_D0                         0             None                   None                       0                        None                 None            473             5.6
+362   NRBP_HUMAN_D0                         0             None                   None                       0                        None                 None            450             6.2
+363    NRK_HUMAN_D0                         0             None                   None                       0                        None                 None            412             7.7
+364   NTKL_HUMAN_D0                         0             None                   None                       0                        None                 None            439             6.3
+365  NTRK2_HUMAN_D0                         0             None                   None                       0                        None                 None             92            39.4
+366  NTRK3_HUMAN_D0                         0             None                   None                       0                        None                 None            188            32.4
+367  NUAK1_HUMAN_D0                         0             None                   None                       0                        None                 None            225            31.3
+368  NUAK2_HUMAN_D0                         0             None                   None                       0                        None                 None            271            30.3
+369  OBSCN_HUMAN_D0                         0             None                   None                       0                        None                 None            378            16.5
+370  OBSCN_HUMAN_D1                         0             None                   None                       0                        None                 None            379            16.5
+371  PACE1_HUMAN_D0                         0             None                   None                       0                        None                 None            449             6.2
+372   PAK2_HUMAN_D0                         0             None                   None                       0                        None                 None            211            31.7
+373   PAK3_HUMAN_D0                         0             None                   None                       0                        None                 None            133            36.0
+374   PASK_HUMAN_D0                         0             None                   None                       0                        None                 None            397            12.3
+375  PDK1L_HUMAN_D0                         0             None                   None                       0                        None                 None            472             5.7
+376  PDPK2_HUMAN_D0                         0             None                   None                       0                        None                 None            477         -4290.2
+377  PEAK1_HUMAN_D0                         0             None                   None                       0                        None                 None            484         -4287.9
+378  PGFRA_HUMAN_D0                         0             None                   None                       0                        None                 None            497         -4243.1
+379  PGFRB_HUMAN_D0                         0             None                   None                       0                        None                 None            498         -4231.8
+380  PI3R4_HUMAN_D0                         0             None                   None                       0                        None                 None            405            10.5
+381   PIM3_HUMAN_D0                         0             None                   None                       0                        None                 None            177            33.2
+382  PINK1_HUMAN_D0                         0             None                   None                       0                        None                 None            487         -4281.2
+383  PKDCC_HUMAN_D0                         0             None                   None                       0                        None                 None            481         -4289.3
+384   PKN1_HUMAN_D0                         0             None                   None                       0                        None                 None            226            31.3
+385   PKN2_HUMAN_D0                         0             None                   None                       0                        None                 None            200            31.9
+386   PKN3_HUMAN_D0                         0             None                   None                       0                        None                 None            446             6.2
+387   PLK3_HUMAN_D0                         0             None                   None                       0                        None                 None            164            33.7
+388   PRKY_HUMAN_D0                         0             None                   None                       0                        None                 None            485         -4284.2
+389   PRKX_HUMAN_D0                         0             None                   None                       0                        None                 None            147            35.0
+390  PRP4B_HUMAN_D0                         0             None                   None                       0                        None                 None            342            27.9
+391   PRPK_HUMAN_D0                         0             None                   None                       0                        None                 None            465             5.9
+392   PTK6_HUMAN_D0                         0             None                   None                       0                        None                 None            176            33.3
+393    PXK_HUMAN_D0                         0             None                   None                       0                        None                 None            482         -4289.0
+394   RAF1_HUMAN_D0                         0             None                   None                       0                        None                 None             29            52.0
+395    RET_HUMAN_D0                         0             None                   None                       0                        None                 None              9            65.5
+396  RIOK2_HUMAN_D0                         0             None                   None                       0                        None                 None            310            29.5
+397  RIOK1_HUMAN_D0                         0             None                   None                       0                        None                 None            215            31.5
+398  RIOK3_HUMAN_D0                         0             None                   None                       0                        None                 None            298            29.8
+399  RIPK1_HUMAN_D0                         0             None                   None                       0                        None                 None            184            32.5
+400  RIPK2_HUMAN_D0                         0             None                   None                       0                        None                 None            120            36.4
+401  RIPK3_HUMAN_D0                         0             None                   None                       0                        None                 None            408             9.8
+402  RIPK4_HUMAN_D0                         0             None                   None                       0                        None                 None            169            33.5
+403     RK_HUMAN_D0                         0             None                   None                       0                        None                 None            168            33.5
+404  ROCK1_HUMAN_D0                         0             None                   None                       0                        None                 None             81            40.8
+405  ROCK2_HUMAN_D0                         0             None                   None                       0                        None                 None            173            33.4
+406    RON_HUMAN_D0                         0             None                   None                       0                        None                 None            369            22.9
+407   ROR1_HUMAN_D0                         0             None                   None                       0                        None                 None            414             7.2
+408   ROR2_HUMAN_D0                         0             None                   None                       0                        None                 None            380            16.4
+409   ROS1_HUMAN_D0                         0             None                   None                       0                        None                 None             97            38.5
+410  RPKL1_HUMAN_D0                         0             None                   None                       0                        None                 None            479         -4289.5
+411    RYK_HUMAN_D0                         0             None                   None                       0                        None                 None            474             5.4
+412   SBK1_HUMAN_D0                         0             None                   None                       0                        None                 None            363            26.7
+413   SBK2_HUMAN_D0                         0             None                   None                       0                        None                 None            471             5.7
+414   SBK3_HUMAN_D0                         0             None                   None                       0                        None                 None            364            26.6
+415  SCYL2_HUMAN_D0                         0             None                   None                       0                        None                 None            434             6.4
+416  SG223_HUMAN_D0                         0             None                   None                       0                        None                 None            476             5.1
+417  SG494_HUMAN_D0                         0             None                   None                       0                        None                 None            478         -4290.2
+418   SGK1_HUMAN_D0                         0             None                   None                       0                        None                 None            206            31.8
+419   SGK2_HUMAN_D0                         0             None                   None                       0                        None                 None            454             6.1
+420   SGK3_HUMAN_D0                         0             None                   None                       0                        None                 None            352            27.4
+421  SGK71_HUMAN_D0                         0             None                   None                       0                        None                 None            459             6.0
+422   SIK1_HUMAN_D0                         0             None                   None                       0                        None                 None            140            35.7
+423   SIK2_HUMAN_D0                         0             None                   None                       0                        None                 None            258            30.6
+424   SIK3_HUMAN_D0                         0             None                   None                       0                        None                 None            319            28.5
+425   SNRK_HUMAN_D0                         0             None                   None                       0                        None                 None            359            27.2
+426   SPEG_HUMAN_D0                         0             None                   None                       0                        None                 None            410             7.9
+427   SPEG_HUMAN_D1                         0             None                   None                       0                        None                 None            411             7.9
+428   SRMS_HUMAN_D0                         0             None                   None                       0                        None                 None            307            29.6
+429  SRPK1_HUMAN_D0                         0             None                   None                       0                        None                 None            493         -4264.3
+430  SRPK2_HUMAN_D0                         0             None                   None                       0                        None                 None            492         -4265.4
+431  SRPK3_HUMAN_D0                         0             None                   None                       0                        None                 None            490         -4267.9
+432  ST17A_HUMAN_D0                         0             None                   None                       0                        None                 None            277            30.2
+433  ST32A_HUMAN_D0                         0             None                   None                       0                        None                 None            362            26.9
+434  ST32B_HUMAN_D0                         0             None                   None                       0                        None                 None            301            29.7
+435  ST32C_HUMAN_D0                         0             None                   None                       0                        None                 None            313            29.2
+436  ST38L_HUMAN_D0                         0             None                   None                       0                        None                 None            292            29.9
+437  STK11_HUMAN_D0                         0             None                   None                       0                        None                 None             54            45.4
+438  STK31_HUMAN_D0                         0             None                   None                       0                        None                 None            404            10.6
+439  STK33_HUMAN_D0                         0             None                   None                       0                        None                 None            145            35.5
+440  STK35_HUMAN_D0                         0             None                   None                       0                        None                 None            360            27.2
+441  STK36_HUMAN_D0                         0             None                   None                       0                        None                 None            269            30.3
+442  STK38_HUMAN_D0                         0             None                   None                       0                        None                 None            330            28.2
+443  STK39_HUMAN_D0                         0             None                   None                       0                        None                 None            332            28.0
+444  STK40_HUMAN_D0                         0             None                   None                       0                        None                 None            456             6.1
+445  STRAB_HUMAN_D0                         0             None                   None                       0                        None                 None            466             5.9
+446  STYK1_HUMAN_D0                         0             None                   None                       0                        None                 None            447             6.2
+447   TAF1_HUMAN_D0                         0             None                   None                       0                        None                 None            488         -4280.2
+448   TAF1_HUMAN_D1                         0             None                   None                       0                        None                 None            489         -4280.2
+449  TAOK1_HUMAN_D0                         0             None                   None                       0                        None                 None            315            28.8
+450  TAOK2_HUMAN_D0                         0             None                   None                       0                        None                 None            327            28.2
+451  TAOK3_HUMAN_D0                         0             None                   None                       0                        None                 None            331            28.1
+452   TBCK_HUMAN_D0                         0             None                   None                       0                        None                 None            435             6.4
+453   TBK1_HUMAN_D0                         0             None                   None                       0                        None                 None             90            39.5
+454    TEC_HUMAN_D0                         0             None                   None                       0                        None                 None            239            30.9
+455  TESK1_HUMAN_D0                         0             None                   None                       0                        None                 None            256            30.6
+456  TESK2_HUMAN_D0                         0             None                   None                       0                        None                 None            370            21.7
+457  TEX14_HUMAN_D0                         0             None                   None                       0                        None                 None            421             6.9
+458  TGFR2_HUMAN_D0                         0             None                   None                       0                        None                 None             38            50.1
+459   TIE1_HUMAN_D0                         0             None                   None                       0                        None                 None            221            31.4
+460  TITIN_HUMAN_D0                         0             None                   None                       0                        None                 None             59            44.7
+461   TLK1_HUMAN_D0                         0             None                   None                       0                        None                 None            286            30.0
+462   TLK2_HUMAN_D0                         0             None                   None                       0                        None                 None            296            29.9
+463  TNI3K_HUMAN_D0                         0             None                   None                       0                        None                 None            205            31.9
+464   TNIK_HUMAN_D0                         0             None                   None                       0                        None                 None            203            31.9
+465   TNK1_HUMAN_D0                         0             None                   None                       0                        None                 None            309            29.6
+466   TOPK_HUMAN_D0                         0             None                   None                       0                        None                 None            401            11.6
+467  TRIB1_HUMAN_D0                         0             None                   None                       0                        None                 None            433             6.4
+468  TRIB2_HUMAN_D0                         0             None                   None                       0                        None                 None            430             6.5
+469  TRIB3_HUMAN_D0                         0             None                   None                       0                        None                 None            427             6.6
+470   TRIO_HUMAN_D0                         0             None                   None                       0                        None                 None            409             8.1
+471  TSSK1_HUMAN_D0                         0             None                   None                       0                        None                 None            280            30.1
+472  TSSK2_HUMAN_D0                         0             None                   None                       0                        None                 None            375            17.9
+473  TSSK3_HUMAN_D0                         0             None                   None                       0                        None                 None            463             5.9
+474  TSSK4_HUMAN_D0                         0             None                   None                       0                        None                 None            469             5.8
+475  TSSK6_HUMAN_D0                         0             None                   None                       0                        None                 None            458             6.0
+476  TTBK1_HUMAN_D0                         0             None                   None                       0                        None                 None            431             6.5
+477  TTBK2_HUMAN_D0                         0             None                   None                       0                        None                 None            398            12.1
+478    TXK_HUMAN_D0                         0             None                   None                       0                        None                 None            248            30.8
+479   TYK2_HUMAN_D0                         0             None                   None                       0                        None                 None             65            43.0
+480   TYK2_HUMAN_D1                         0             None                   None                       0                        None                 None             66            43.0
+481  TYRO3_HUMAN_D0                         0             None                   None                       0                        None                 None            179            32.8
+482    UFO_HUMAN_D0                         0             None                   None                       0                        None                 None             85            40.5
+483  UHMK1_HUMAN_D0                         0             None                   None                       0                        None                 None            460             6.0
+484   ULK1_HUMAN_D0                         0             None                   None                       0                        None                 None            326            28.3
+485   ULK3_HUMAN_D0                         0             None                   None                       0                        None                 None            353            27.4
+486   ULK2_HUMAN_D0                         0             None                   None                       0                        None                 None            437             6.4
+487   ULK4_HUMAN_D0                         0             None                   None                       0                        None                 None            424             6.7
+488  VGFR3_HUMAN_D0                         0             None                   None                       0                        None                 None             39            49.8
+489   WEE1_HUMAN_D0                         0             None                   None                       0                        None                 None            100            37.9
+490   WEE2_HUMAN_D0                         0             None                   None                       0                        None                 None            336            27.9
+491   WNK2_HUMAN_D0                         0             None                   None                       0                        None                 None            388            14.9
+492   WNK3_HUMAN_D0                         0             None                   None                       0                        None                 None            403            10.9
+493   WNK4_HUMAN_D0                         0             None                   None                       0                        None                 None            395            12.8
+494    YES_HUMAN_D0                         0             None                   None                       0                        None                 None            170            33.4
+495  ZAP70_HUMAN_D0                         0             None                   None                       0                        None                 None             61            44.1
+496    ITK_HUMAN_D0                         5           1SNU_A                   None                     -10            ESCHERICHIA COLI                Human             51            45.6
+497  PHKG1_HUMAN_D0                         3           2PHK_A                   None                     -10  ESCHERICHIA COLI BL21(DE3)               Rabbit            209            31.7
