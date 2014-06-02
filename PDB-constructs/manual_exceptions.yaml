@@ -30,6 +30,15 @@ MK10_HUMAN_D0:
     comment: >
         No PDB constructs with detected expression tag. Top constructs probably have incorrectly annotated SEQRES records, containing only the observed residues.
 
+MELK_HUMAN_D0:
+    comment: >
+        Mouse. E coli expression and construct sequence confirmed from paper. 13 conflicts between this construct and the UniProt canon seq. Also a human construct available (4IXP), but this mouse construct is probably reasonable.
+
+KS6A3_HUMAN_D0:
+    4GUE:
+        comment: >
+            Mouse. Construct sequence confirmed from paper. Mouse sequence identical to human except for first residue in the PDB construct.
+
 KS6A3_HUMAN_D1:
     4JG7:
         comment: >
@@ -63,6 +72,9 @@ ITK_HUMAN_D0:
                 As for 1SNU
 
 KAPCA_HUMAN_D0:
+    4IAC:
+        comment: >
+            Mouse. Construct sequence very similar to many others from human and other mammalian species. Full-length except missing starting Met residue.
     4AE9:
         authenticity_score:
             behavior: downweight
@@ -101,6 +113,11 @@ KAPCA_HUMAN_D0:
             behavior: downweight
             comment: >
                 Paper contains no information on expression construct. Sequence cannot be confirmed.
+
+MAPK2_HUMAN_D0:
+    4AW2:
+        comment: >
+            Mouse. SGC structure. E coli expression and construct sequence seem reasonable. Construct has 171 extraneous residues, but no other PDB constructs or plasmids available.
 
 MAPK2_HUMAN_D0:
     comment: >

@@ -218,7 +218,8 @@ def process_target(t):
 
     # get PDB sequences which correspond to the target domain and have the desired expression_system tag, and store in dict e.g. { '3GKZ_B' : 'MGYL...' }
     gene_name = DB_entry.findtext('UniProt/gene_names/gene_name[@type="primary"]')
-    PDB_matching_seq_nodes = DB_root.xpath( 'entry/UniProt/gene_names/gene_name[@type="primary"][match_regex_case_insensitive(text(), "%s")]/../../../PDB/structure/expression_data[match_regex_case_insensitive(@EXPRESSION_SYSTEM, "%s")]/../chain[@domainID="%s"]/experimental_sequence/sequence' % (gene_name, desired_expression_system_regex, domainID), extensions = { (None, 'match_regex_case_insensitive'): match_regex_case_insensitive } )
+    gene_name_regex = '^' + gene_name + '$'
+    PDB_matching_seq_nodes = DB_root.xpath( 'entry/UniProt/gene_names/gene_name[@type="primary"][match_regex_case_insensitive(text(), "%s")]/../../../PDB/structure/expression_data[match_regex_case_insensitive(@EXPRESSION_SYSTEM, "%s")]/../chain[@domainID="%s"]/experimental_sequence/sequence' % (gene_name_regex, desired_expression_system_regex, domainID), extensions = { (None, 'match_regex_case_insensitive'): match_regex_case_insensitive } )
     if len(PDB_matching_seq_nodes) == 0:
         return null_target_results
     # PDB_seqs structure: { [PDB_ID]_[PDB_CHAIN_ID] : sequence }
@@ -650,11 +651,12 @@ if __name__ == '__main__':
 
         # get gene name, to be used to search for the same gene in other species
         gene_name = DB_entry.findtext('UniProt/gene_names/gene_name[@type="primary"]')
+        gene_name_regex = '^' + gene_name + '$'
 
         # get PDB structures
 
-        genes_from_all_species = DB_root.xpath('entry/UniProt/gene_names/gene_name[@type="primary"][text()="%s"]' % gene_name)
-        matching_PDB_structures = DB_root.xpath( 'entry/UniProt/gene_names/gene_name[@type="primary"][match_regex_case_insensitive(text(),"%s")]/../../../PDB/structure/expression_data[match_regex_case_insensitive(@EXPRESSION_SYSTEM, "%s")]' % (gene_name, desired_expression_system_regex), extensions = { (None, 'match_regex_case_insensitive'): match_regex_case_insensitive } )
+        genes_from_all_species = DB_root.xpath('entry/UniProt/gene_names/gene_name[@type="primary"][text()="%s"]' % gene_name_regex)
+        matching_PDB_structures = DB_root.xpath( 'entry/UniProt/gene_names/gene_name[@type="primary"][match_regex_case_insensitive(text(),"%s")]/../../../PDB/structure/expression_data[match_regex_case_insensitive(@EXPRESSION_SYSTEM, "%s")]' % (gene_name_regex, desired_expression_system_regex), extensions = { (None, 'match_regex_case_insensitive'): match_regex_case_insensitive } )
 
         targets_data.append( { target : [ len(matching_PDB_structures) ] } )
 

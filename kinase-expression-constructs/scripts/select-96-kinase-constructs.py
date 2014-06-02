@@ -5,7 +5,7 @@ import numpy as np
 
 ofilename = '96-kinases-sgc_and_hip'
 
-output_columns=['targetID', 'DB_target_rank', 'plasmid_source', 'plasmid_ID', 'plasmid_nconflicts', 'plasmid_nextraneous_residues', 'nPDBs', 'top_pdb_ID', 'top_pdb_expr_tag', 'top_pdb_auth_score', 'top_pdb_nextraneous_residues', 'family']
+output_columns=['targetID', 'DB_target_rank', 'plasmid_source', 'plasmid_ID', 'plasmid_nconflicts', 'plasmid_nextraneous_residues', 'nPDBs', 'top_pdb_ID', 'top_pdb_expr_tag', 'top_pdb_auth_score', 'top_pdb_nextraneous_residues', 'family', 'top_pdb_taxname']
 
 # ========
 # Read in data
@@ -64,6 +64,7 @@ targets_results = {
 'top_pdb_auth_score':[],
 'top_pdb_nextraneous_residues':[],
 'family':[],
+'top_pdb_taxname':[],
 }
 
 hip_results = copy.deepcopy(targets_results)
@@ -93,13 +94,13 @@ for target in pdbconstructs_xml:
             targets_results['top_pdb_expr_tag'].append(pdbconstructs[0].get('expr_tag_string'))
             targets_results['top_pdb_auth_score'].append(pdbconstructs[0].get('auth_score'))
             targets_results['top_pdb_nextraneous_residues'].append(pdbconstructs[0].get('nextraneous_residues'))
-            # targets_results['top_pdb_taxon'].append(pdbconstructs[0].get('taxname'))
+            targets_results['top_pdb_taxname'].append(pdbconstructs[0].get('taxname'))
         else:
             targets_results['top_pdb_ID'].append(np.nan)
             targets_results['top_pdb_expr_tag'].append(np.nan)
             targets_results['top_pdb_auth_score'].append(np.nan)
             targets_results['top_pdb_nextraneous_residues'].append(np.nan)
-            # targets_results['top_pdb_taxon'].append(np.nan)
+            targets_results['top_pdb_taxname'].append(np.nan)
 
 # for targets without SGC plasmids, look for HIP plasmids
 for target in pdbconstructs_xml:
@@ -129,13 +130,13 @@ for target in pdbconstructs_xml:
             targets_results['top_pdb_expr_tag'].append(pdbconstructs[0].get('expr_tag_string'))
             targets_results['top_pdb_auth_score'].append(pdbconstructs[0].get('auth_score'))
             targets_results['top_pdb_nextraneous_residues'].append(pdbconstructs[0].get('nextraneous_residues'))
-            # targets_results['top_pdb_taxon'].append(pdbconstructs[0].get('taxname'))
+            targets_results['top_pdb_taxname'].append(pdbconstructs[0].get('taxname'))
         else:
             targets_results['top_pdb_ID'].append(np.nan)
             targets_results['top_pdb_expr_tag'].append(np.nan)
             targets_results['top_pdb_auth_score'].append(np.nan)
             targets_results['top_pdb_nextraneous_residues'].append(np.nan)
-            # targets_results['top_pdb_taxon'].append(np.nan)
+            targets_results['top_pdb_taxname'].append(np.nan)
 
 targets_results = pd.DataFrame(targets_results)
 # convert 'DB_target_rank' column to int dtype (from str), ready for sorting
