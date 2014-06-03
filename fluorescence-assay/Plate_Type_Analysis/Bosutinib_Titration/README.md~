@@ -1,0 +1,4 @@
+These files are actually reads of 4titude 384 well vision plates:
+
+FluorescenceSingleCorning3821_mdfx_20140602_14030
+FluorescenceSingleCorning3821_mdfx_20140602_14071
