@@ -101,13 +101,13 @@ def generate_html_from_alignment(title, alignment, alignment_IDs, additional_dat
 
     return html_body
 
-def match_regex(context, attrib_values, xpath_argument):
+def match_regex_case_insensitive(context, attrib_values, xpath_argument):
     # If no attrib found
     if len(attrib_values) == 0:
         return False
     # If attrib found, then run match against regex
     else:
-        return bool( re.match(xpath_argument, attrib_values[0]) )
+        return bool( re.match(xpath_argument, attrib_values[0], re.I) )
 
 def write_output(ofilename, html_tree):
     ofile = open(ofilename, 'w')
@@ -218,7 +218,8 @@ def process_target(t):
 
     # get PDB sequences which correspond to the target domain and have the desired expression_system tag, and store in dict e.g. { '3GKZ_B' : 'MGYL...' }
     gene_name = DB_entry.findtext('UniProt/gene_names/gene_name[@type="primary"]')
-    PDB_matching_seq_nodes = DB_root.xpath( 'entry/UniProt/gene_names/gene_name[@type="primary"][text()="%s"]/../../../PDB/structure/expression_data[match_regex(@EXPRESSION_SYSTEM, "%s")]/../chain[@domainID="%s"]/experimental_sequence/sequence' % (gene_name, desired_expression_system_regex, domainID), extensions = { (None, 'match_regex'): match_regex } )
+    gene_name_regex = '^' + gene_name + '$'
+    PDB_matching_seq_nodes = DB_root.xpath( 'entry/UniProt/gene_names/gene_name[@type="primary"][match_regex_case_insensitive(text(), "%s")]/../../../PDB/structure/expression_data[match_regex_case_insensitive(@EXPRESSION_SYSTEM, "%s")]/../chain[@domainID="%s"]/experimental_sequence/sequence' % (gene_name_regex, desired_expression_system_regex, domainID), extensions = { (None, 'match_regex_case_insensitive'): match_regex_case_insensitive } )
     if len(PDB_matching_seq_nodes) == 0:
         return null_target_results
     # PDB_seqs structure: { [PDB_ID]_[PDB_CHAIN_ID] : sequence }
@@ -321,49 +322,49 @@ def process_target(t):
 
         # now use regexes to check for the presence of expression tags, and use this information to set the authenticity_scores
         elif re.match(TEV_cleaved_Nterm_regex, seq) or override_tag_type == 'TEV_cleaved_Nterm':
-            authenticity_scores[i] = 10
+            authenticity_scores[i] = 2
             expr_tag_strings[ID] = 'TEV_cleaved_Nterm'
             constructs_data[ID]['tag_type'] = 'TEV_cleaved'
             constructs_data[ID]['tag_loc'] = 'Nterm'
             constructs_data[ID]['authenticity_score'] = authenticity_scores[i]
             continue
         elif re.match(TEV_uncleaved_Nterm_regex, seq) or override_tag_type == 'TEV_uncleaved_Nterm':
-            authenticity_scores[i] = 9
+            authenticity_scores[i] = 2
             expr_tag_strings[ID] = 'TEV_uncleaved_Nterm'
             constructs_data[ID]['tag_type'] = 'TEV_uncleaved'
             constructs_data[ID]['tag_loc'] = 'Nterm'
             constructs_data[ID]['authenticity_score'] = authenticity_scores[i]
             continue
         elif re.match(TEV_Cterm_regex, seq) or override_tag_type == 'TEV_Cterm':
-            authenticity_scores[i] = 8
+            authenticity_scores[i] = 2
             expr_tag_strings[ID] = 'TEV_Cterm'
             constructs_data[ID]['tag_type'] = 'TEV'
             constructs_data[ID]['tag_loc'] = 'Cterm'
             constructs_data[ID]['authenticity_score'] = authenticity_scores[i]
             continue
         elif re.match(histag_Nterm_regex, seq) or override_tag_type == 'Histag_Nterm':
-            authenticity_scores[i] = 7
+            authenticity_scores[i] = 2
             expr_tag_strings[ID] = 'Histag_Nterm'
             constructs_data[ID]['tag_type'] = 'Histag'
             constructs_data[ID]['tag_loc'] = 'Nterm'
             constructs_data[ID]['authenticity_score'] = authenticity_scores[i]
             continue
         elif re.match(histag_Cterm_regex, seq) or override_tag_type == 'Histag_Cterm':
-            authenticity_scores[i] = 6
+            authenticity_scores[i] = 2
             expr_tag_strings[ID] = 'Histag_Cterm'
             constructs_data[ID]['tag_type'] = 'Histag'
             constructs_data[ID]['tag_loc'] = 'Cterm'
             constructs_data[ID]['authenticity_score'] = authenticity_scores[i]
             continue
         elif re.match(other_extra_seq_Nterm_regex, seq) or override_tag_type == 'other_extra_seq_Nterm':
-            authenticity_scores[i] = 4
+            authenticity_scores[i] = 1
             expr_tag_strings[ID] = 'other_extra_seq_Nterm'
             constructs_data[ID]['tag_type'] = 'other_extra_seq'
             constructs_data[ID]['tag_loc'] = 'Nterm'
             constructs_data[ID]['authenticity_score'] = authenticity_scores[i]
             continue
         elif re.match(other_extra_seq_Cterm_regex, seq) or override_tag_type == 'other_extra_seq_Cterm':
-            authenticity_scores[i] = 3
+            authenticity_scores[i] = 1
             expr_tag_strings[ID] = 'other_extra_seq_Cterm'
             constructs_data[ID]['tag_type'] = 'other_extra_seq'
             constructs_data[ID]['tag_loc'] = 'Cterm'
@@ -650,11 +651,12 @@ if __name__ == '__main__':
 
         # get gene name, to be used to search for the same gene in other species
         gene_name = DB_entry.findtext('UniProt/gene_names/gene_name[@type="primary"]')
+        gene_name_regex = '^' + gene_name + '$'
 
         # get PDB structures
 
-        genes_from_all_species = DB_root.xpath('entry/UniProt/gene_names/gene_name[@type="primary"][text()="%s"]' % gene_name)
-        matching_PDB_structures = DB_root.xpath( 'entry/UniProt/gene_names/gene_name[@type="primary"][text()="%s"]/../../../PDB/structure/expression_data[match_regex(@EXPRESSION_SYSTEM, "%s")]' % (gene_name, desired_expression_system_regex), extensions = { (None, 'match_regex'): match_regex } )
+        genes_from_all_species = DB_root.xpath('entry/UniProt/gene_names/gene_name[@type="primary"][text()="%s"]' % gene_name_regex)
+        matching_PDB_structures = DB_root.xpath( 'entry/UniProt/gene_names/gene_name[@type="primary"][match_regex_case_insensitive(text(),"%s")]/../../../PDB/structure/expression_data[match_regex_case_insensitive(@EXPRESSION_SYSTEM, "%s")]' % (gene_name_regex, desired_expression_system_regex), extensions = { (None, 'match_regex_case_insensitive'): match_regex_case_insensitive } )
 
         targets_data.append( { target : [ len(matching_PDB_structures) ] } )
 
