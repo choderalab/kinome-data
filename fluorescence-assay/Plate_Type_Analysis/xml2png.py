@@ -39,8 +39,12 @@ def extract(taglist):
     result = []
     for p in taglist:
         print "Attempting to extract tag '%s'..." % p
-        param = parameters.xpath("*[@Name='" + p + "']")[0]
-        result.append( p + '=' + param.attrib['Value'])
+        try:
+            param = parameters.xpath("*[@Name='" + p + "']")[0]
+            result.append( p + '=' + param.attrib['Value'])
+        except:
+            # tag not found
+            result.append(None)
         
     return result
  
