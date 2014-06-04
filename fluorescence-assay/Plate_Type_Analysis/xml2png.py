@@ -38,8 +38,13 @@ print "****This script is about to make png files for %s xml files. ****"  % so_
 def extract(taglist):
     result = []
     for p in taglist:
-        param = parameters.xpath("*[@Name='" + p + "']")[0]
-        result.append( p + '=' + param.attrib['Value'])
+        print "Attempting to extract tag '%s'..." % p
+        try:
+            param = parameters.xpath("*[@Name='" + p + "']")[0]
+            result.append( p + '=' + param.attrib['Value'])
+        except:
+            # tag not found
+            result.append(None)
         
     return result
  
