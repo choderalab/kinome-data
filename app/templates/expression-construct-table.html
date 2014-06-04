@@ -159,15 +159,15 @@
           </tr>
           <tr>
           <th>DB_target_rank</th>
-          <td>Target rank (based on metrics such as number of bioassays, number of PDBs, number of publications, % mutation rate in sequenced tumor samples)</td>
-          </tr>
-          <tr>
-          <th>plasmid_source</th>
-          <td>Two plasmid libraries are currently available to the Chodera lab - SGC Oxford and HIP pJP1520</td>
+          <td>Qualitative ranking of human kinase importance, based on metrics such as number of bioassays, number of PDBs, number of publications, % mutation rate in sequenced tumor samples</td>
           </tr>
           <tr>
           <th>plasmid_ID</th>
-          <td>For a given target, all matching plasmids are aligned and sorted based on nconflicts and nextraneous_residues (see below), and the top-ranked plasmid is selected (click the targetID to see the alignment)</td>
+          <td>For a given kinase target, all matching plasmids from the available plasmid libraries (see plasmid_source) are aligned and sorted based on nconflicts and nextraneous_residues (see below), and the top-ranked plasmid is selected (click the targetID to see the alignment)</td>
+          </tr>
+          <tr>
+          <th>plasmid_source</th>
+          <td>Source of the top-ranked plasmid. Two plasmid libraries are currently available to the Chodera lab - SGC Oxford and HIP pJP1520. Only SGC Oxford plasmids suitable for <i>E. coli</i> expression are included in this selection procedure.</td>
           </tr>
           <tr>
           <th>plasmid_nconflicts</th>
@@ -179,11 +179,11 @@
           </tr>
           <tr>
           <th>nPDBs</th>
-          <td>Number of PDB constructs with an E coli expression system annotation</td>
+          <td>Number of PDB constructs matching the target gene, from <i>any species</i>, and with an <i>E. coli</i> expression system annotation</td>
           </tr>
           <tr>
           <th>top_pdb_ID</th>
-          <td>Matching PDB constructs are ranked by auth_score (see below), nconflicts, and nextraneous_residues, and the top-ranked PDB (and chain ID) is selected</td>
+          <td>Matching PDB constructs are ranked by auth_score (see below), nextraneous_residues, and nconflicts, and the top-ranked PDB (and chain ID) is selected</td>
           </tr>
           <tr>
           <th>top_pdb_expr_tag</th>
@@ -201,10 +201,14 @@
           <th>family</th>
           <td>UniProt protein family annotation</td>
           </tr>
-          <!-- <tr>
-          <th>top_pdb_taxon</th>
-          <td>source organism for the top-ranked PDB construct</td>
-          </tr> -->
+          <tr>
+          <th>top_pdb_taxname</th>
+          <td>Source organism of the top-ranked PDB construct</td>
+          </tr>
+          <tr>
+          <th>lowest_nextraneous_residues</th>
+          <td>Lowest value of plasmid_nextraneous_residues or top_pdb_nextraneous_residues - the construct (full-length plasmid or PDB construct) with lowest_nextraneous_residues will be selected for expression testing</td>
+          </tr>
         </table>
         <h4>Other notes:</h4>
         Sort table by clicking on column headers. Shift-click for multicolumn sorting. Drag-click to rearrange columns. Refresh page to reset.<br/>
