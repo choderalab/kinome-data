@@ -18,6 +18,9 @@ argparser = argparse.ArgumentParser()
 argparser.add_argument('--database_path', type=str, help='Path to a TargetExplorer database XML file', required=True)
 args = argparser.parse_args()
 
+desired_taxid = 9606
+ignore_clones = ['HsCD00038286', 'HsCD00037967'] # both of these have deletions in the kinase catalytic domain
+
 # ==========
 # Parse plasmid library spreadsheet
 # ==========
@@ -37,6 +40,8 @@ plasmid_df = {
 }
 for row in range(2,nrows):
     cloneID = sheet_ranges.cell('E%d' % row).value    # type(int)
+    if cloneID in ignore_clones:
+        continue
     NCBI_GeneID = sheet_ranges.cell('H%d' % row).value    # type(int)
     Symbol = sheet_ranges.cell('I%d' % row).value
     dna_seq = sheet_ranges.cell('L%d' % row).value 
@@ -64,8 +69,6 @@ DB_root = etree.parse(args.database_path).getroot()
 data_fields = ['cloneID', 'NCBI_GeneID', 'orig_gene_symbol', 'UniProtAC', 'UniProt_entry_name', 'UniProt_family', 'insert_dna_seq', 'insert_aa_seq']
 output_data = pd.DataFrame( [['None'] * len(data_fields)] * len(plasmid_df), columns=data_fields)
 
-print output_data
-
 #DB_gene_name_nodes = [ gene_name_node for gene_name_node in DB_root.findall('entry/UniProt/gene_names/gene_name') ]
 
 # ===========
@@ -87,7 +90,7 @@ for p in plasmid_df.index:
 
 
     # find matching DB entry via NCBI GeneID
-    DB_entry = DB_root.find('entry/NCBI_Gene/entry[@ID="%s"]/../..' % plasmid_NCBI_GeneID)
+    DB_entry = DB_root.find('entry/UniProt[@NCBI_taxID="%d"]/../NCBI_Gene/entry[@ID="%s"]/../..' % (desired_taxid, plasmid_NCBI_GeneID))
     if DB_entry == None:
         print 'Matching DB entry not found for Gene ID %s cloneID %s Symbol %s' % (plasmid_NCBI_GeneID, cloneID, plasmid_Symbol)
 

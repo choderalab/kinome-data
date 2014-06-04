@@ -23,123 +23,123 @@
 21   KC1G3_HUMAN_D0                         9           2CHL_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            294            29.9
 22    CSKP_HUMAN_D0                         8           3TAC_A           Nterm_Histag                       2            ESCHERICHIA COLI               Human            111            37.0
 23   STK24_HUMAN_D0                         8           3ZHP_C    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            274            30.2
-24   DYR1A_HUMAN_D0                         7           3ANQ_D      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human             83            40.7
-25    HASP_HUMAN_D0                         7           3E7V_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            371            21.5
+24   DYR1A_HUMAN_D0                         7           4MQ2_C      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human             83            40.7
+25    HASP_HUMAN_D0                         7           2VUW_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            371            21.5
 26    KC1D_HUMAN_D0                         5           4HNF_B      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human             93            39.1
 27    CLK3_HUMAN_D0                         5           2WU7_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            223            31.3
 28   MERTK_HUMAN_D0                         5           3BPR_B           Nterm_Histag                       2  ESCHERICHIA COLI BL21(DE3)               Human             98            38.4
 29     MET_HUMAN_D0                         5           4EEV_A           Nterm_Histag                       2            ESCHERICHIA COLI               Human              6            68.5
 30    PLK2_HUMAN_D0                         5           4I5P_A           Nterm_Histag                       2            ESCHERICHIA COLI               Human            190            32.4
-31   DAPK3_HUMAN_D0                         4           2J90_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            198            32.0
-32   MAPK3_HUMAN_D0                         4           3FXW_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            372            20.3
-33    MK13_HUMAN_D0                         4           4EYJ_A           Nterm_Histag                       2            ESCHERICHIA COLI               Human            240            30.9
-34    MST4_HUMAN_D0                         4           4FZD_B      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            308            29.6
-35     SLK_HUMAN_D0                         4           2JFL_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            207            31.7
-36   AAPK2_HUMAN_D0                         3           2H6D_A      Nterm_TEV_cleaved                       2       ESCHERICHIA COLI BL21               Human            194            32.1
-37   DYRK2_HUMAN_D0                         3           4AZF_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            250            30.8
-38    BRAF_HUMAN_D0                         3           4JVG_D      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human              4            75.8
-39   E2AK2_HUMAN_D0                         3           3UIU_A           Cterm_Histag                       2            ESCHERICHIA COLI               Human            135            35.9
-40   EPHB2_HUMAN_D0                         3           3ZFM_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human             91            39.5
-41   MKNK2_HUMAN_D0                         3           2AC5_A      Nterm_TEV_cleaved                       2       ESCHERICHIA COLI BL21               Human            251            30.8
-42   MP2K4_HUMAN_D0                         3           3VUT_B           Cterm_Histag                       2            ESCHERICHIA COLI               Human            181            32.8
-43    PAK6_HUMAN_D0                         3           2C30_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            282            30.1
-44    CDK6_HUMAN_D0                         2           4EZ5_A           Cterm_Histag                       2            ESCHERICHIA COLI               Human            314            29.0
-45   EPHA7_HUMAN_D0                         2           2REI_A           Cterm_Histag                       2  ESCHERICHIA COLI BL21(DE3)               Human            196            32.1
-46    KC1E_HUMAN_D0                         2           4HNI_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            233            31.2
-47   KCC2A_HUMAN_D0                         2           2VZ6_B    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            376            17.2
-48    MELK_HUMAN_D0                         2           4BFM_A           Cterm_Histag                       2            ESCHERICHIA COLI               Mouse            137            35.8
-49    MK07_HUMAN_D0                         2           4IC7_D      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            186            32.5
-50   MP2K6_HUMAN_D0                         2           3VN9_A           Cterm_Histag                       2            ESCHERICHIA COLI               Human            222            31.4
-51   MRCKB_HUMAN_D0                         2           3TKU_B    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            254            30.6
-52    NEK1_HUMAN_D0                         2           4APC_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            141            35.7
-53    NEK7_HUMAN_D0                         2           2WQN_A           Cterm_Histag                       2            ESCHERICHIA COLI               Human            299            29.8
-54   ST17B_HUMAN_D0                         2           3LM0_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            279            30.1
-55    STK3_HUMAN_D0                         2           4LG4_B      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            219            31.4
-56   AAPK1_HUMAN_D0                         1           4CFH_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                 Rat            183            32.5
-57    KCC4_HUMAN_D0                         1           2W4O_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            224            31.3
-58   BMPR2_HUMAN_D0                         1           3G2F_A           Cterm_Histag                       2            ESCHERICHIA COLI               Human             78            41.1
-59   CDK16_HUMAN_D0                         1           3MTL_A           Cterm_Histag                       2            ESCHERICHIA COLI               Human            257            30.6
-60   CDKL1_HUMAN_D0                         1           4AGU_B              Cterm_TEV                       2            ESCHERICHIA COLI               Human            361            27.1
-61   EPHA5_HUMAN_D0                         1           2R2P_A           Cterm_Histag                       2  ESCHERICHIA COLI BL21(DE3)               Human            189            32.4
-62   EPHA8_HUMAN_D0                         1           3KUL_B    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            217            31.4
-63   EPHB1_HUMAN_D0                         1           3ZFX_F      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            182            32.6
-64   EPHB3_HUMAN_D0                         1           3ZFY_B      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            202            31.9
-65   EPHB4_HUMAN_D0                         1           3ZEW_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human             96            38.7
-66    FAK1_HUMAN_D0                         1           2IJM_B      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human             32            51.6
-67   FGFR3_HUMAN_D0                         1           4K33_A           Nterm_Histag                       2            ESCHERICHIA COLI               Human             13            62.0
-68   KCC2G_HUMAN_D0                         1           2V7O_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            218            31.4
-69     KIT_HUMAN_D0                         1           4HVS_A           Nterm_Histag                       2            ESCHERICHIA COLI               Human              8            65.7
-70   KS6A1_HUMAN_D1                         1           3RNY_B           Nterm_Histag                       2            ESCHERICHIA COLI               Human            132            36.0
-71   MKNK1_HUMAN_D0                         1           2HW6_B      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            214            31.5
-72   MP2K2_HUMAN_D0                         1           1S9I_A           Cterm_Histag                       2  ESCHERICHIA COLI BL21(DE3)               Human             88            39.6
-73   MRCKA_HUMAN_D0                         1           4AW2_A              Cterm_TEV                       2            ESCHERICHIA COLI                 Rat            232            31.2
-74    PAK7_HUMAN_D0                         1           2F57_B    Nterm_TEV_uncleaved                       2  ESCHERICHIA COLI BL21(DE3)               Human            236            31.1
-75   PHKG2_HUMAN_D0                         1           2Y7J_D    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            134            35.9
-76   PMYT1_HUMAN_D0                         1           3P1A_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            304            29.6
-77   STK16_HUMAN_D0                         1           2BUJ_B    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            302            29.7
-78   STRAA_HUMAN_D0                         1           3GNI_B    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            402            11.5
-79    VRK2_HUMAN_D0                         1           2V62_B    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            354            27.4
-80    VRK3_HUMAN_D0                         1           2JII_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            445             6.3
-81   CSK21_HUMAN_D0                        47           3AXW_A  Nterm_other_extra_seq                       1            ESCHERICHIA COLI               Human             62            43.3
-82    CHK2_HUMAN_D0                        36           2CN5_A  Nterm_other_extra_seq                       1            ESCHERICHIA COLI               Human             24            55.0
-83   MARK2_HUMAN_D0                         7           3IEC_D  Nterm_other_extra_seq                       1            ESCHERICHIA COLI               Human            237            31.0
-84     CSK_HUMAN_D0                         3           3D7T_A  Nterm_other_extra_seq                       1            ESCHERICHIA COLI               Human            148            35.0
-85    MK11_HUMAN_D0                         3           3GC8_A  Nterm_other_extra_seq                       1            ESCHERICHIA COLI               Human            159            34.1
-86   CSK22_HUMAN_D0                         2           3E3B_X  Nterm_other_extra_seq                       1            ESCHERICHIA COLI               Human            154            34.5
-87   MARK3_HUMAN_D0                         2           2QNJ_A  Nterm_other_extra_seq                       1  ESCHERICHIA COLI BL21(DE3)               Human            366            25.4
-88    MK03_HUMAN_D0                         1           2ZOQ_B  Nterm_other_extra_seq                       1            ESCHERICHIA COLI               Human             52            45.6
-89    VRK1_HUMAN_D0                         1           3OP5_D  Nterm_other_extra_seq                       1            ESCHERICHIA COLI               Human            384            15.3
-90    MK10_HUMAN_D0                        36           3FI2_A                   None                       0            ESCHERICHIA COLI               Human             44            47.8
-91    CHK1_HUMAN_D0                         9           2E9V_A                   None                       0            ESCHERICHIA COLI               Human             41            48.4
-92   DAPK2_HUMAN_D0                         9           1ZWS_H                   None                       0            ESCHERICHIA COLI               Human            289            30.0
-93   EPHA4_HUMAN_D0                         4           2XYU_A                   None                       0            ESCHERICHIA COLI               Mouse            197            32.0
-94     FES_HUMAN_D0                         4           3CBL_A                   None                       0            ESCHERICHIA COLI               Human            119            36.5
-95     GAK_HUMAN_D0                         4           4O38_A                   None                       0            ESCHERICHIA COLI               Human            201            31.9
-96    JAK2_HUMAN_D0                         4           2XA4_B                   None                       0            ESCHERICHIA COLI               Human              5            71.1
-97   KCC1A_HUMAN_D0                         4           4FG7_A                   None                       0            ESCHERICHIA COLI               Human            255            30.6
-98   STK10_HUMAN_D0                         4           4BC6_A                   None                       0            ESCHERICHIA COLI               Human            126            36.2
-99     ILK_HUMAN_D0                         3           3KMW_A                   None                       0            ESCHERICHIA COLI               Human            389            14.1
-100   KSYK_HUMAN_D0                         3           4F4P_A                   None                       0            ESCHERICHIA COLI               Human             67            42.7
-101   TIE2_HUMAN_D0                         3           3L8P_A                   None                       0            ESCHERICHIA COLI               Human             37            50.3
-102  VGFR2_HUMAN_D0                         3           1Y6A_A                   None                       0            ESCHERICHIA COLI               Human              7            66.8
-103   M3K5_HUMAN_D0                         2           3VW6_A                   None                       0            ESCHERICHIA COLI               Human            151            34.6
-104   CLK1_HUMAN_D0                         2           2VAG_A                   None                       0            ESCHERICHIA COLI               Human            171            33.4
-105   FAK2_HUMAN_D0                         2           3ET7_A                   None                       0            ESCHERICHIA COLI               Human             76            41.6
-106  IGF1R_HUMAN_D0                         2           3O23_A                   None                       0            ESCHERICHIA COLI               Human             18            57.0
-107   JAK1_HUMAN_D0                         2           3EYH_A                   None                       0            ESCHERICHIA COLI               Human             74            41.8
-108  KCC2D_HUMAN_D0                         2           2VN9_A                   None                       0            ESCHERICHIA COLI               Human            172            33.4
-109  KS6A5_HUMAN_D1                         2           3KN6_A                   None                       0            ESCHERICHIA COLI               Human            129            36.2
-110   MK09_HUMAN_D0                         2           3E7O_A                   None                       0            ESCHERICHIA COLI               Human             80            40.9
-111   MLKL_HUMAN_D0                         2           4M68_A                   None                       0            ESCHERICHIA COLI               Mouse            438             6.4
-112  OXSR1_HUMAN_D0                         2           3DAK_B                   None                       0            ESCHERICHIA COLI               Human            345            27.7
-113   PAN3_HUMAN_D0                         2           4BWX_A                   None                       0            ESCHERICHIA COLI                                444             6.3
-114   PLK4_HUMAN_D0                         2           4JXF_A                   None                       0            ESCHERICHIA COLI               Human            195            32.1
-115   RN5A_HUMAN_D0                         2           4OAV_B                   None                       0            ESCHERICHIA COLI               Human            156            34.4
-116  AURKB_HUMAN_D0                         1           4AF3_A                   None                       0            ESCHERICHIA COLI               Human             40            49.7
-117    BTK_HUMAN_D0                         1           1K2P_A                   None                       0            ESCHERICHIA COLI               Human             56            45.2
-118   CLK2_HUMAN_D0                         1           3NR9_C                   None                       0            ESCHERICHIA COLI               Human            199            31.9
-119   DMPK_HUMAN_D0                         1           2VD5_B                   None                       0            ESCHERICHIA COLI               Human            110            37.1
-120    HCK_HUMAN_D0                         1           2HK5_A                   None                       0            ESCHERICHIA COLI               Human             57            45.1
-121   INSR_HUMAN_D0                         1           2AUH_A                   None                       0            ESCHERICHIA COLI               Human             15            60.5
-122   JAK3_HUMAN_D0                         1           1YVJ_A                   None                       0            ESCHERICHIA COLI               Human             47            46.8
-123  KC1G1_HUMAN_D0                         1           2CMW_A                   None                       0            ESCHERICHIA COLI               Human            276            30.2
-124  KC1G2_HUMAN_D0                         1           2C47_A                   None                       0            ESCHERICHIA COLI               Human            238            31.0
-125  KCC1D_HUMAN_D0                         1           2JC6_A                   None                       0            ESCHERICHIA COLI               Human            253            30.7
-126  KCC1G_HUMAN_D0                         1           2JAM_A                   None                       0            ESCHERICHIA COLI               Human            305            29.6
-127  KCC2B_HUMAN_D0                         1           3BHH_D                   None                       0            ESCHERICHIA COLI               Human            249            30.8
-128   KPCT_HUMAN_D0                         1           1XJD_A                   None                       0  ESCHERICHIA COLI BL21(DE3)               Human             84            40.6
-129   M3K9_HUMAN_D0                         1           3DTC_A                   None                       0            ESCHERICHIA COLI               Human            121            36.4
-130  MARK1_HUMAN_D0                         1           2HAK_E                   None                       0            ESCHERICHIA COLI               Human            112            36.9
-131   MK06_HUMAN_D0                         1           2I6L_B                   None                       0            ESCHERICHIA COLI               Human            285            30.0
-132   MK12_HUMAN_D0                         1           1CM8_A                   None                       0            ESCHERICHIA COLI               Human            113            36.8
-133  NTRK1_HUMAN_D0                         1           4F0I_A                   None                       0            ESCHERICHIA COLI               Human             46            47.1
-134  PDPK1_HUMAN_D0                         1           2R7B_A                   None                       0            ESCHERICHIA COLI               Human             99            38.3
-135   PIM2_HUMAN_D0                         1           2IWI_A                   None                       0            ESCHERICHIA COLI               Human            107            37.4
-136   PLK1_HUMAN_D0                         1           3THB_A                   None                       0            ESCHERICHIA COLI               Human             30            52.0
-137  STK25_HUMAN_D0                         1           2XIK_A                   None                       0            ESCHERICHIA COLI               Human            297            29.8
-138   STK4_HUMAN_D0                         1           3COM_A                   None                       0  ESCHERICHIA COLI BL21(DE3)               Human            114            36.7
-139  TGFR1_HUMAN_D0                         1           1B6C_F                   None                       0            ESCHERICHIA COLI               Human             20            56.2
-140  VGFR1_HUMAN_D0                         1           3HNG_A                   None                       0            ESCHERICHIA COLI               Human             19            56.3
+31   DAPK3_HUMAN_D0                         4           3BHY_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            198            32.0
+32     FES_HUMAN_D0                         4           3CBL_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            119            36.5
+33     GAK_HUMAN_D0                         4           4O38_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            201            31.9
+34   MAPK3_HUMAN_D0                         4           3FXW_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            372            20.3
+35    MK13_HUMAN_D0                         4           4EYJ_A           Nterm_Histag                       2            ESCHERICHIA COLI               Human            240            30.9
+36    MST4_HUMAN_D0                         4           4FZD_B      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            308            29.6
+37     SLK_HUMAN_D0                         4           2JFL_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            207            31.7
+38   STK10_HUMAN_D0                         4           4AOT_B      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            126            36.2
+39   AAPK2_HUMAN_D0                         3           2H6D_A      Nterm_TEV_cleaved                       2       ESCHERICHIA COLI BL21               Human            194            32.1
+40   DYRK2_HUMAN_D0                         3           4AZF_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            250            30.8
+41    BRAF_HUMAN_D0                         3           4JVG_D      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human              4            75.8
+42   E2AK2_HUMAN_D0                         3           3UIU_A           Cterm_Histag                       2            ESCHERICHIA COLI               Human            135            35.9
+43   EPHB2_HUMAN_D0                         3           3ZFM_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human             91            39.5
+44    MK11_HUMAN_D0                         3           3GP0_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            159            34.1
+45   MKNK2_HUMAN_D0                         3           2AC5_A      Nterm_TEV_cleaved                       2       ESCHERICHIA COLI BL21               Human            251            30.8
+46   MP2K4_HUMAN_D0                         3           3VUT_B           Cterm_Histag                       2            ESCHERICHIA COLI               Human            181            32.8
+47    PAK6_HUMAN_D0                         3           2C30_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            282            30.1
+48    CDK6_HUMAN_D0                         2           4EZ5_A           Cterm_Histag                       2            ESCHERICHIA COLI               Human            314            29.0
+49    M3K5_HUMAN_D0                         2           2CLQ_B      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            151            34.6
+50    CLK1_HUMAN_D0                         2           2VAG_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            171            33.4
+51   EPHA7_HUMAN_D0                         2           2REI_A           Cterm_Histag                       2  ESCHERICHIA COLI BL21(DE3)               Human            196            32.1
+52    FAK2_HUMAN_D0                         2           3CC6_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human             76            41.6
+53    KC1E_HUMAN_D0                         2           4HNI_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            233            31.2
+54   KCC2A_HUMAN_D0                         2           2VZ6_B    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            376            17.2
+55   KCC2D_HUMAN_D0                         2           2VN9_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            172            33.4
+56    MELK_HUMAN_D0                         2           4BFM_A           Cterm_Histag                       2            ESCHERICHIA COLI               Mouse            137            35.8
+57    MK07_HUMAN_D0                         2           4IC7_D      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            186            32.5
+58   MP2K6_HUMAN_D0                         2           3FME_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            222            31.4
+59   MRCKB_HUMAN_D0                         2           3TKU_B    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            254            30.6
+60    NEK1_HUMAN_D0                         2           4APC_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            141            35.7
+61    NEK7_HUMAN_D0                         2           2WQN_A           Cterm_Histag                       2            ESCHERICHIA COLI               Human            299            29.8
+62   ST17B_HUMAN_D0                         2           3LM0_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            279            30.1
+63    STK3_HUMAN_D0                         2           4LG4_B      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            219            31.4
+64   AAPK1_HUMAN_D0                         1           4CFH_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI                 Rat            183            32.5
+65   AURKB_HUMAN_D0                         1           4AF3_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human             40            49.7
+66    KCC4_HUMAN_D0                         1           2W4O_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            224            31.3
+67   BMPR2_HUMAN_D0                         1           3G2F_A           Cterm_Histag                       2            ESCHERICHIA COLI               Human             78            41.1
+68   CDK16_HUMAN_D0                         1           3MTL_A           Cterm_Histag                       2            ESCHERICHIA COLI               Human            257            30.6
+69   CDKL1_HUMAN_D0                         1           4AGU_B              Cterm_TEV                       2            ESCHERICHIA COLI               Human            361            27.1
+70    DMPK_HUMAN_D0                         1           2VD5_B      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            110            37.1
+71   EPHA5_HUMAN_D0                         1           2R2P_A           Cterm_Histag                       2  ESCHERICHIA COLI BL21(DE3)               Human            189            32.4
+72   EPHA8_HUMAN_D0                         1           3KUL_B    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            217            31.4
+73   EPHB1_HUMAN_D0                         1           3ZFX_F      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            182            32.6
+74   EPHB3_HUMAN_D0                         1           3ZFY_B      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            202            31.9
+75   EPHB4_HUMAN_D0                         1           3ZEW_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human             96            38.7
+76    FAK1_HUMAN_D0                         1           2IJM_B      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human             32            51.6
+77   FGFR3_HUMAN_D0                         1           4K33_A           Nterm_Histag                       2            ESCHERICHIA COLI               Human             13            62.0
+78   KC1G1_HUMAN_D0                         1           2CMW_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            276            30.2
+79   KC1G2_HUMAN_D0                         1           2C47_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            238            31.0
+80   KCC1G_HUMAN_D0                         1           2JAM_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            305            29.6
+81   KCC2B_HUMAN_D0                         1           3BHH_D      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            249            30.8
+82   KCC2G_HUMAN_D0                         1           2V7O_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            218            31.4
+83     KIT_HUMAN_D0                         1           4HVS_A           Nterm_Histag                       2            ESCHERICHIA COLI               Human              8            65.7
+84   KS6A1_HUMAN_D1                         1           3RNY_B           Nterm_Histag                       2            ESCHERICHIA COLI               Human            132            36.0
+85   MKNK1_HUMAN_D0                         1           2HW6_B      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            214            31.5
+86   MP2K2_HUMAN_D0                         1           1S9I_A           Cterm_Histag                       2  ESCHERICHIA COLI BL21(DE3)               Human             88            39.6
+87   MRCKA_HUMAN_D0                         1           4AW2_A              Cterm_TEV                       2            ESCHERICHIA COLI                 Rat            232            31.2
+88    PAK7_HUMAN_D0                         1           2F57_B    Nterm_TEV_uncleaved                       2  ESCHERICHIA COLI BL21(DE3)               Human            236            31.1
+89   PHKG2_HUMAN_D0                         1           2Y7J_D    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            134            35.9
+90   PMYT1_HUMAN_D0                         1           3P1A_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            304            29.6
+91   STK16_HUMAN_D0                         1           2BUJ_B    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            302            29.7
+92   STRAA_HUMAN_D0                         1           3GNI_B    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            402            11.5
+93   VGFR1_HUMAN_D0                         1           3HNG_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human             19            56.3
+94    VRK1_HUMAN_D0                         1           3OP5_D      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            384            15.3
+95    VRK2_HUMAN_D0                         1           2V62_B    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            354            27.4
+96    VRK3_HUMAN_D0                         1           2JII_A    Nterm_TEV_uncleaved                       2            ESCHERICHIA COLI               Human            445             6.3
+97   CSK21_HUMAN_D0                        47           3AXW_A  Nterm_other_extra_seq                       1            ESCHERICHIA COLI               Human             62            43.3
+98    CHK2_HUMAN_D0                        36           2CN5_A  Nterm_other_extra_seq                       1            ESCHERICHIA COLI               Human             24            55.0
+99   MARK2_HUMAN_D0                         7           3IEC_D  Nterm_other_extra_seq                       1            ESCHERICHIA COLI               Human            237            31.0
+100    CSK_HUMAN_D0                         3           3D7T_A  Nterm_other_extra_seq                       1            ESCHERICHIA COLI               Human            148            35.0
+101  CSK22_HUMAN_D0                         2           3E3B_X  Nterm_other_extra_seq                       1            ESCHERICHIA COLI               Human            154            34.5
+102  MARK3_HUMAN_D0                         2           2QNJ_A  Nterm_other_extra_seq                       1  ESCHERICHIA COLI BL21(DE3)               Human            366            25.4
+103   MK03_HUMAN_D0                         1           2ZOQ_B  Nterm_other_extra_seq                       1            ESCHERICHIA COLI               Human             52            45.6
+104   MK10_HUMAN_D0                        36           3FI2_A                   None                       0            ESCHERICHIA COLI               Human             44            47.8
+105   CHK1_HUMAN_D0                         9           2E9V_A                   None                       0            ESCHERICHIA COLI               Human             41            48.4
+106  DAPK2_HUMAN_D0                         9           1ZWS_H                   None                       0            ESCHERICHIA COLI               Human            289            30.0
+107  EPHA4_HUMAN_D0                         4           2XYU_A                   None                       0            ESCHERICHIA COLI               Mouse            197            32.0
+108   JAK2_HUMAN_D0                         4           2XA4_B                   None                       0            ESCHERICHIA COLI               Human              5            71.1
+109  KCC1A_HUMAN_D0                         4           4FG7_A                   None                       0            ESCHERICHIA COLI               Human            255            30.6
+110    ILK_HUMAN_D0                         3           3KMW_A                   None                       0            ESCHERICHIA COLI               Human            389            14.1
+111   KSYK_HUMAN_D0                         3           4F4P_A                   None                       0            ESCHERICHIA COLI               Human             67            42.7
+112   TIE2_HUMAN_D0                         3           3L8P_A                   None                       0            ESCHERICHIA COLI               Human             37            50.3
+113  VGFR2_HUMAN_D0                         3           1Y6A_A                   None                       0            ESCHERICHIA COLI               Human              7            66.8
+114  IGF1R_HUMAN_D0                         2           3O23_A                   None                       0            ESCHERICHIA COLI               Human             18            57.0
+115   JAK1_HUMAN_D0                         2           3EYH_A                   None                       0            ESCHERICHIA COLI               Human             74            41.8
+116  KS6A5_HUMAN_D1                         2           3KN6_A                   None                       0            ESCHERICHIA COLI               Human            129            36.2
+117   MK09_HUMAN_D0                         2           3E7O_A                   None                       0            ESCHERICHIA COLI               Human             80            40.9
+118   MLKL_HUMAN_D0                         2           4M68_A                   None                       0            ESCHERICHIA COLI               Mouse            438             6.4
+119  OXSR1_HUMAN_D0                         2           3DAK_B                   None                       0            ESCHERICHIA COLI               Human            345            27.7
+120   PAN3_HUMAN_D0                         2           4BWX_A                   None                       0            ESCHERICHIA COLI                                444             6.3
+121   PLK4_HUMAN_D0                         2           4JXF_A                   None                       0            ESCHERICHIA COLI               Human            195            32.1
+122   RN5A_HUMAN_D0                         2           4OAV_B                   None                       0            ESCHERICHIA COLI               Human            156            34.4
+123    BTK_HUMAN_D0                         1           1K2P_A                   None                       0            ESCHERICHIA COLI               Human             56            45.2
+124   CLK2_HUMAN_D0                         1           3NR9_C                   None                       0            ESCHERICHIA COLI               Human            199            31.9
+125    HCK_HUMAN_D0                         1           2HK5_A                   None                       0            ESCHERICHIA COLI               Human             57            45.1
+126   INSR_HUMAN_D0                         1           2AUH_A                   None                       0            ESCHERICHIA COLI               Human             15            60.5
+127   JAK3_HUMAN_D0                         1           1YVJ_A                   None                       0            ESCHERICHIA COLI               Human             47            46.8
+128  KCC1D_HUMAN_D0                         1           2JC6_A                   None                       0            ESCHERICHIA COLI               Human            253            30.7
+129   KPCT_HUMAN_D0                         1           1XJD_A                   None                       0  ESCHERICHIA COLI BL21(DE3)               Human             84            40.6
+130   M3K9_HUMAN_D0                         1           3DTC_A                   None                       0            ESCHERICHIA COLI               Human            121            36.4
+131  MARK1_HUMAN_D0                         1           2HAK_E                   None                       0            ESCHERICHIA COLI               Human            112            36.9
+132   MK06_HUMAN_D0                         1           2I6L_B                   None                       0            ESCHERICHIA COLI               Human            285            30.0
+133   MK12_HUMAN_D0                         1           1CM8_A                   None                       0            ESCHERICHIA COLI               Human            113            36.8
+134  NTRK1_HUMAN_D0                         1           4F0I_A                   None                       0            ESCHERICHIA COLI               Human             46            47.1
+135  PDPK1_HUMAN_D0                         1           2R7B_A                   None                       0            ESCHERICHIA COLI               Human             99            38.3
+136   PIM2_HUMAN_D0                         1           2IWI_A                   None                       0            ESCHERICHIA COLI               Human            107            37.4
+137   PLK1_HUMAN_D0                         1           3THB_A                   None                       0            ESCHERICHIA COLI               Human             30            52.0
+138  STK25_HUMAN_D0                         1           2XIK_A                   None                       0            ESCHERICHIA COLI               Human            297            29.8
+139   STK4_HUMAN_D0                         1           3COM_A                   None                       0  ESCHERICHIA COLI BL21(DE3)               Human            114            36.7
+140  TGFR1_HUMAN_D0                         1           1B6C_F                   None                       0            ESCHERICHIA COLI               Human             20            56.2
 141   WNK1_HUMAN_D0                         1           3FPQ_A                   None                       0            ESCHERICHIA COLI                 Rat            368            24.1
 142   CDK1_HUMAN_D0                         0             None                   None                       0                        None                None             35            50.9
 143   CDK4_HUMAN_D0                         0             None                   None                       0                        None                None             27            52.4

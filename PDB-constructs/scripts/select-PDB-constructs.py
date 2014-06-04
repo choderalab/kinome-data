@@ -287,7 +287,7 @@ def process_target(t):
     # Then look for non-matching sequence at the N- or C-term, of >3 aas.
     # Favor N-terminal tags, since QB3 MacroLab plasmids with His tags and TEV cleavage sites perform best in this configuration
 
-    TEV_cleaved_Nterm_regex = '^g[has]m{0,1}g{0,1}[sd]{0,1}[A-Z]+[A-Z]{30}'
+    TEV_cleaved_Nterm_regex = '^(gh|ga|gs|ghm|gam|gsm|sm)g{0,1}[sd]{0,1}[A-Z]+[A-Z]{30}'
     TEV_uncleaved_Nterm_regex = '.*[eE][nNvV][lL][yY]{0,1}[fF][qQ].*[A-Z]{30}'
     TEV_Cterm_regex = '.*[A-Z]{30}.*[eE][nN][lL][yY][fF][qQ]'
     histag_Nterm_regex = '.*[hH]{6}.*[A-Z]+'

@@ -14,6 +14,8 @@ args = argparser.parse_args()
 
 expression_system_regex = 'E\. coli'
 
+desired_taxid = 9606
+
 # ========
 # Read in plasmid spreadsheet
 # ========
@@ -75,7 +77,7 @@ for row in range(2, nrows-1):
     HGNCSymbol = ws.cell('G%d' % row).value
 
     # Search for Hugo Symbol in database
-    matching_DB_entry = DB_root.find('entry/HGNC/entry[@Approved_Symbol="%s"]/../..' % HGNCSymbol)
+    matching_DB_entry = DB_root.find('entry/UniProt[@NCBI_taxID="%d"]/../HGNC/entry[@Approved_Symbol="%s"]/../..' % (desired_taxid, HGNCSymbol))
     if matching_DB_entry == None:
         continue
 
