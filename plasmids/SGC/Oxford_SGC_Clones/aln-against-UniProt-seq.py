@@ -1,4 +1,5 @@
 import os, argparse, re
+from operator import itemgetter
 import TargetExplorer
 from lxml import etree
 from lxml.builder import E
@@ -125,27 +126,27 @@ for cloneID in df.index:
     domains = DB_entry.findall('UniProt/domains/domain[@targetID]')
 
     UniProt_seq = ''.join(DB_entry.findtext('UniProt/isoforms/canonical_isoform/sequence').strip().split('\n'))
-    plasmid_aa_seq = plasmid_data['insert_aa_seq']
+    plasmid_aa_seq = plasmid_data['construct_aa_seq']
 
     # Separate expression tag from the plasmid insert sequence
 
-    expr_tag_regex = '(^MG{0,1}HHHHHHSSGVD[A-Z]*GTENLYFQSM)|(^MGSSHHHHHHSSGRENLYFQGHM)|(^MHHHHHHSSGRENLYFQG)'
-    expr_tag_match = re.search(expr_tag_regex, plasmid_aa_seq)
-    if expr_tag_match != None:
-        expr_tag_seq = plasmid_aa_seq[ slice(*expr_tag_match.span()) ]
-        plasmid_insert_seq = plasmid_aa_seq[expr_tag_match.end() : ]
-    else:
-        expr_tag_seq = None
-        plasmid_insert_seq = plasmid_aa_seq
+    # expr_tag_regex = '(^MG{0,1}HHHHHHSSGVD[A-Z]*GTENLYFQSM)|(^MGSSHHHHHHSSGRENLYFQGHM)|(^MHHHHHHSSGRENLYFQG)'
+    # expr_tag_match = re.search(expr_tag_regex, plasmid_aa_seq)
+    # if expr_tag_match != None:
+    #     expr_tag_seq = plasmid_aa_seq[ slice(*expr_tag_match.span()) ]
+    #     plasmid_insert_seq = plasmid_aa_seq[expr_tag_match.end() : ]
+    # else:
+    #     expr_tag_seq = None
+    #     plasmid_insert_seq = plasmid_aa_seq
 
     # Conduct alignment
     matrix = Bio.SubsMat.MatrixInfo.gonnet
     gap_open = -10
     gap_extend = -0.5
-    aln = Bio.pairwise2.align.globalds(UniProt_seq, plasmid_insert_seq, matrix, gap_open, gap_extend)
+    aln = Bio.pairwise2.align.globalds(UniProt_seq, plasmid_aa_seq, matrix, gap_open, gap_extend)
     aln = [aln[0][0], aln[0][1]]
 
-    # Calculate the number of plasmid residues outside the target domain region (excluding N-terminal expression tag)
+    # Calculate the number of plasmid residues outside the target domain region (excluding expression tags)
     # Also use this to determine which target domain the plasmid is most likely to represent
     nextraneous_plasmid_residues = []
     for domain in domains:
@@ -157,29 +158,28 @@ for cloneID in df.index:
             # print a, aln[1][a], UniProt_domain_aln_coords.start(), UniProt_domain_aln_coords.end()
             if (a < UniProt_domain_aln_coords.start() and aln[1][a] != '-') or (a >= UniProt_domain_aln_coords.end() and aln[1][a] != '-'):
                 nextraneous_plasmid_residues[-1] += 1
-    from operator import itemgetter
     domainID, nextraneous_plasmid_residues = min(enumerate(nextraneous_plasmid_residues), key=itemgetter(1))
     targetID = UniProt_entry_name + '_D' + str(domainID)
 
 
-    # Add expression tag back into the aligned plasmid seq
-    if expr_tag_seq != None:
-        plasmid_seq_aln_aa_start = re.search('[A-Za-z]', aln[1]).start()
-        UniProt_aln_list = list(aln[0])
-        plasmid_aln_list = list(aln[1])
-        plasmid_seq_aln_expr_tag_start = plasmid_seq_aln_aa_start - len(expr_tag_seq)
-        # where the expression tag extends beyond the aligned sequence, just add '-' for now
-        if plasmid_seq_aln_expr_tag_start < 0:
-            for a in range(plasmid_seq_aln_expr_tag_start, 0):
-                UniProt_aln_list.insert(0, '-')
-                plasmid_aln_list.insert(0, '-')
-            plasmid_seq_aln_expr_tag_start = 0
-        # now that the alignments are the correct length, add in the expression tag sequence
-        for a in range(len(expr_tag_seq)):
-            plasmid_aln_list[plasmid_seq_aln_expr_tag_start + a] = expr_tag_seq[a].lower()
-
-        aln[0] = ''.join(UniProt_aln_list)
-        aln[1] = ''.join(plasmid_aln_list)
+    # # Add expression tag back into the aligned plasmid seq
+    # if expr_tag_seq != None:
+    #     plasmid_seq_aln_aa_start = re.search('[A-Za-z]', aln[1]).start()
+    #     UniProt_aln_list = list(aln[0])
+    #     plasmid_aln_list = list(aln[1])
+    #     plasmid_seq_aln_expr_tag_start = plasmid_seq_aln_aa_start - len(expr_tag_seq)
+    #     # where the expression tag extends beyond the aligned sequence, just add '-' for now
+    #     if plasmid_seq_aln_expr_tag_start < 0:
+    #         for a in range(plasmid_seq_aln_expr_tag_start, 0):
+    #             UniProt_aln_list.insert(0, '-')
+    #             plasmid_aln_list.insert(0, '-')
+    #         plasmid_seq_aln_expr_tag_start = 0
+    #     # now that the alignments are the correct length, add in the expression tag sequence
+    #     for a in range(len(expr_tag_seq)):
+    #         plasmid_aln_list[plasmid_seq_aln_expr_tag_start + a] = expr_tag_seq[a].lower()
+    #
+    #     aln[0] = ''.join(UniProt_aln_list)
+    #     aln[1] = ''.join(plasmid_aln_list)
 
     # Make mismatching residues in plasmid sequence lower case
     plasmid_aln_list = list(aln[1])

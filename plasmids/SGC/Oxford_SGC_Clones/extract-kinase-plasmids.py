@@ -3,6 +3,7 @@ import argparse
 import openpyxl
 import pandas as pd
 from lxml import etree
+import Bio.Seq
 
 # ========
 # Command-line args and parameters
@@ -36,8 +37,10 @@ plasmid_df = {
 'UniProt_entry_name':[],
 'UniProt_family':[],
 'DB_target_rank':[],
-'insert_dna_seq':[],
-'insert_aa_seq':[],
+'construct_dna_seq':[],
+'construct_dna_orf_seq':[],
+'construct_aa_seq':[],
+'construct_aa_seq_w_tags':[],
 'Protein family':[],
 'Expression system':[],
 'Expression cell line':[],
@@ -45,8 +48,7 @@ plasmid_df = {
 'Special expression comments':[],
 'Vector name':[],
 'Antibiotic resistance':[],
-'N-tag':[],
-'C-tag':[],
+'Expression tag':[],
 'Vector comments':[],
 'Mutations/sequence comments':[],
 }
@@ -55,7 +57,7 @@ plasmid_df = {
 # Output columns for text file
 # ========
 
-txt_output_cols = ['HGNCSymbol', 'UniProtAC', 'UniProt_entry_name', 'insert_aa_seq', 'Protein family', 'DB_target_rank']
+txt_output_cols = ['HGNCSymbol', 'UniProtAC', 'UniProt_entry_name', 'construct_aa_seq', 'Protein family', 'DB_target_rank']
 
 # ========
 # Read in database
@@ -88,14 +90,34 @@ for row in range(2, nrows-1):
     if target_rank != None:
         target_rank = target_rank.get('target_rank')
 
+    construct_aa_seq_w_tags = ws.cell('T%d' % row).value
+    construct_dna_seq = ws.cell('U%d' % row).value
+    # get DNA ORF (assume starts at index 0)
+    construct_dna_orf_seq = construct_dna_seq
+    for n in range(0, len(construct_dna_seq), 3):
+        if construct_dna_seq[n:n+3] in ['TAG', 'TAA', 'TGA']:
+            construct_dna_orf_seq = construct_dna_seq[:n]
+            break
+
+    construct_aa_seq = Bio.Seq.Seq(construct_dna_orf_seq, Bio.Alphabet.generic_dna).translate()
+
+    # if UniProt_entry_name == 'MRCKA_HUMAN':
+    #     print construct_aa_seq
+    #     print Bio.Seq.Seq(construct_dna_seq, Bio.Alphabet.generic_dna).translate()
+
+    n_tag = ws.cell('P%d' % row).value
+    c_tag = ws.cell('Q%d' % row).value
+
     plasmid_df['cloneID'].append(cloneID)
     plasmid_df['HGNCSymbol'].append(HGNCSymbol)
     plasmid_df['UniProtAC'].append(UniProtAC)
     plasmid_df['UniProt_entry_name'].append(UniProt_entry_name)
     plasmid_df['UniProt_family'].append(UniProt_family)
     plasmid_df['DB_target_rank'].append(target_rank)
-    plasmid_df['insert_aa_seq'].append( ws.cell('T%d' % row).value )
-    plasmid_df['insert_dna_seq'].append( ws.cell('U%d' % row).value )
+    plasmid_df['construct_aa_seq_w_tags'].append( construct_aa_seq_w_tags )
+    plasmid_df['construct_aa_seq'].append( construct_aa_seq )
+    plasmid_df['construct_dna_seq'].append( construct_dna_seq )
+    plasmid_df['construct_dna_orf_seq'].append( construct_dna_orf_seq )
     plasmid_df['Protein family'].append( ws.cell('E%d' % row).value )
     plasmid_df['Expression system'].append( expression_system )
     plasmid_df['Expression cell line'].append( ws.cell('K%d' % row).value )
@@ -103,10 +125,15 @@ for row in range(2, nrows-1):
     plasmid_df['Special expression comments'].append( ws.cell('M%d' % row).value )
     plasmid_df['Vector name'].append( ws.cell('N%d' % row).value )
     plasmid_df['Antibiotic resistance'].append( ws.cell('O%d' % row).value )
-    plasmid_df['N-tag'].append( ws.cell('P%d' % row).value )
-    plasmid_df['C-tag'].append( ws.cell('Q%d' % row).value )
     plasmid_df['Vector comments'].append( ws.cell('R%d' % row).value )
     plasmid_df['Mutations/sequence comments'].append( ws.cell('S%d' % row).value )
+    assert not (n_tag != None and c_tag != None)
+    if n_tag != None:
+        plasmid_df['Expression tag'].append( 'N-term %s' % n_tag )
+    elif c_tag != None:
+        plasmid_df['Expression tag'].append( 'C-term %s' % c_tag )
+    else:
+        plasmid_df['Expression tag'].append( None )
 
 plasmid_df = pd.DataFrame(plasmid_df)
 plasmid_df.set_index('cloneID', inplace=True)

@@ -12,9 +12,7 @@ import TargetExplorer
 plasmid_filepaths = ['../plasmids/SGC/Oxford_SGC_Clones/aln.csv', '../plasmids/DFHCC-PlasmID/HIP-human_kinase_collection-pJP1520/aln.csv']
 
 plasmid_data = pd.DataFrame.from_csv(plasmid_filepaths[0])
-for p in range(len(plasmid_filepaths)):
-    if p == 0:
-        continue
+for p in range(1, len(plasmid_filepaths)):
     df = pd.DataFrame.from_csv(plasmid_filepaths[p])
     plasmid_data = pd.concat([plasmid_data, df])
 
@@ -112,7 +110,7 @@ def process_target(t):
     plasmids.sort(('nextraneous_plasmid_residues', 'nconflicts_target_domain_region'), inplace=True)
 
     cloneIDs = list(plasmids.index)
-    plasmid_seqs = list(plasmids['insert_aa_seq'])
+    plasmid_seqs = list(plasmids['construct_aa_seq'])
 
     pdbconstructs = target.findall('PDB_construct')
     pdbconstructIDs = [x.get('PDBconstructID') for x in pdbconstructs]

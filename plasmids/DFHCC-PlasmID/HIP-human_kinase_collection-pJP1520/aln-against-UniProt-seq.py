@@ -127,7 +127,7 @@ for cloneID in df.index:
     domains = DB_entry.findall('UniProt/domains/domain[@targetID]')
 
     UniProt_seq = ''.join(DB_entry.findtext('UniProt/isoforms/canonical_isoform/sequence').strip().split('\n'))
-    plasmid_aa_seq = plasmid_data['insert_aa_seq']
+    plasmid_aa_seq = plasmid_data['construct_aa_seq']
 
     # Separate expression tag from the plasmid insert sequence
 

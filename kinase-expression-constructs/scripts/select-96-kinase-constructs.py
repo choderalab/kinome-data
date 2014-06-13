@@ -5,7 +5,7 @@ import numpy as np
 
 ofilename = '96-kinases-sgc_and_hip'
 
-output_columns=['targetID', 'DB_target_rank', 'plasmid_source', 'plasmid_ID', 'plasmid_nconflicts', 'plasmid_nextraneous_residues', 'nPDBs', 'top_pdb_ID', 'top_pdb_expr_tag', 'top_pdb_auth_score', 'top_pdb_nextraneous_residues', 'family', 'top_pdb_taxname', 'selected_construct_source', 'selected_construct_nextraneous_residues']
+output_columns=['targetID', 'DB_target_rank', 'plasmid_source', 'plasmid_ID', 'plasmid_nconflicts', 'plasmid_nextraneous_residues', 'nPDBs', 'top_pdb_ID', 'top_pdb_expr_tag', 'top_pdb_auth_score', 'top_pdb_nextraneous_residues', 'family', 'top_pdb_taxname', 'selected_construct_source', 'selected_construct_nextraneous_residues', 'top_sgc_expr_tag']
 
 # ========
 # Read in data
@@ -59,26 +59,40 @@ def elem_any_true(inputarrays):
 # ========
 targets_results = {
 'targetID':[],
+'target_UniProt_seq':[],
 'DB_target_rank':[],
 'plasmid_source':[],
 'plasmid_ID':[],
 'plasmid_nconflicts':[],
 'plasmid_nextraneous_residues':[],
+'plasmid_aa_seq':[],
+'plasmid_dna_orf_seq':[],
+'plasmid_dna_seq':[],
 'nPDBs':[],
 'top_pdb_ID':[],
 'top_pdb_expr_tag':[],
 'top_pdb_auth_score':[],
 'top_pdb_nextraneous_residues':[],
+'top_pdb_aa_seq':[],
 'family':[],
 'top_pdb_taxname':[],
 'selected_construct_source':[],
 'selected_construct_nextraneous_residues':[],
+'top_sgc_expr_tag':[],
+# 'selected_construct_aa_seq':[],
+# 'selected_construct_aa_start':[],
+# 'selected_construct_aa_end':[],
+# 'selected_construct_dna_seq':[],
+# 'selected_construct_dna_start':[],
+# 'selected_construct_dna_end':[],
 }
 
 
 
 for target in pdbconstructs_xml:
     targetID = target.get('targetID')
+    target_uniprot_ac = target.get('UniProtAC')
+    target_uniprot_seq = target.find('seq').text
 
     # get plasmid data
     matching_plasmids = all_plasmids[ all_plasmids['matching_targetID'] == targetID ]
@@ -96,11 +110,19 @@ for target in pdbconstructs_xml:
     top_pdb_auth_score = int(pdbconstructs[0].get('auth_score')) if len(pdbconstructs) > 0 else None
     top_pdb_nextraneous_residues = int(pdbconstructs[0].get('nextraneous_residues')) if len(pdbconstructs) > 0 else None
     top_pdb_taxname = pdbconstructs[0].get('taxname') if len(pdbconstructs) > 0 else None
+    top_pdb_aa_seq = pdbconstructs[0].find('seq').text if len(pdbconstructs) > 0 else None
 
     top_sgc_plasmid_nextraneous_residues = matching_sgc_plasmids['nextraneous_plasmid_residues'].values[0] if len(matching_sgc_plasmids) > 0 else None
     top_sgc_plasmid_nconflicts = matching_sgc_plasmids['nconflicts_target_domain_region'].values[0] if len(matching_sgc_plasmids) > 0 else None
+    top_sgc_plasmid_aa_seq = matching_sgc_plasmids['construct_aa_seq'].values[0] if len(matching_sgc_plasmids) > 0 else None
+    top_sgc_plasmid_dna_orf_seq = matching_sgc_plasmids['construct_dna_orf_seq'].values[0] if len(matching_sgc_plasmids) > 0 else None
+    top_sgc_plasmid_dna_seq = matching_sgc_plasmids['construct_dna_seq'].values[0] if len(matching_sgc_plasmids) > 0 else None
+    top_sgc_expr_tag = matching_sgc_plasmids['Expression tag'].values[0] if len(matching_sgc_plasmids) > 0 else None
     top_hip_plasmid_nextraneous_residues = matching_hip_plasmids['nextraneous_plasmid_residues'].values[0] if len(matching_hip_plasmids) > 0 else None
     top_hip_plasmid_nconflicts = matching_hip_plasmids['nconflicts_target_domain_region'].values[0] if len(matching_hip_plasmids) > 0 else None
+    top_hip_plasmid_aa_seq = matching_hip_plasmids['construct_aa_seq'].values[0] if len(matching_hip_plasmids) > 0 else None
+    top_hip_plasmid_dna_orf_seq = matching_hip_plasmids['construct_dna_orf_seq'].values[0] if len(matching_hip_plasmids) > 0 else None
+    top_hip_plasmid_dna_seq = matching_hip_plasmids['construct_dna_seq'].values[0] if len(matching_hip_plasmids) > 0 else None
 
     # if targetID == 'RN5A_HUMAN_D0':
     #     import ipdb; ipdb.set_trace()
@@ -160,6 +182,7 @@ for target in pdbconstructs_xml:
 
 
     targets_results['targetID'].append(targetID)
+    targets_results['target_UniProt_seq'].append(target_uniprot_seq)
     targets_results['selected_construct_source'].append(selected_construct_source)
     targets_results['plasmid_source'].append(top_plasmid['plasmid_source'].values[0])
     targets_results['plasmid_ID'].append(top_plasmid['cloneID'].values[0])
@@ -175,6 +198,21 @@ for target in pdbconstructs_xml:
     targets_results['top_pdb_auth_score'].append(top_pdb_auth_score)
     targets_results['top_pdb_nextraneous_residues'].append(top_pdb_nextraneous_residues)
     targets_results['top_pdb_taxname'].append(top_pdb_taxname)
+    targets_results['top_pdb_aa_seq'].append(top_pdb_aa_seq)
+
+    # if targetID == 'CDKL1_HUMAN_D0':
+    #     import ipdb; ipdb.set_trace()
+
+    if top_plasmid['plasmid_source'].values[0] == 'SGC Oxford':
+        targets_results['plasmid_aa_seq'].append(top_sgc_plasmid_aa_seq)
+        targets_results['plasmid_dna_orf_seq'].append(top_sgc_plasmid_dna_orf_seq)
+        targets_results['plasmid_dna_seq'].append(top_sgc_plasmid_dna_seq)
+        targets_results['top_sgc_expr_tag'].append(top_sgc_expr_tag)
+    else:
+        targets_results['plasmid_aa_seq'].append(top_hip_plasmid_aa_seq)
+        targets_results['plasmid_dna_orf_seq'].append(top_hip_plasmid_dna_orf_seq)
+        targets_results['plasmid_dna_seq'].append(top_hip_plasmid_dna_seq)
+        targets_results['top_sgc_expr_tag'].append(None)
 
     if selected_construct_source == 'SGC':
         targets_results['selected_construct_nextraneous_residues'].append(top_sgc_plasmid_nextraneous_residues)
@@ -191,95 +229,6 @@ for target in pdbconstructs_xml:
         else:
             additional_message = ''
         print 'WARNING: selected construct is shorter than plasmid for target %s - %s' % (targetID, additional_message)
-
-
-# # firstly look for targets with SGC plasmids
-# for target in pdbconstructs_xml:
-#     targetID = target.get('targetID')
-#     matching_sgc_plasmids = selected_sgc_plasmids[ selected_sgc_plasmids['matching_targetID'] == targetID ]
-#     # if found, rank by nextraneous residues and nconflicts, and take the top-ranked plasmid
-#     if len(matching_sgc_plasmids) > 0:
-#         matching_sgc_plasmids.sort(('nextraneous_plasmid_residues', 'nconflicts_target_domain_region'), inplace=True)
-#         chosen_sgc_plasmid = matching_sgc_plasmids.head(1)
-#         targets_results['targetID'].append(targetID)
-#         targets_results['plasmid_source'].append('SGC Oxford')
-#         targets_results['plasmid_ID'].append(chosen_sgc_plasmid['cloneID'].values[0])
-#         targets_results['plasmid_nconflicts'].append(chosen_sgc_plasmid['nconflicts_target_domain_region'].values[0])
-#         targets_results['plasmid_nextraneous_residues'].append(chosen_sgc_plasmid['nextraneous_plasmid_residues'].values[0])
-#         targets_results['family'].append(chosen_sgc_plasmid['UniProt_family'].values[0])
-#
-#         targets_results['DB_target_rank'].append(target.get('DB_target_rank'))
-#         targets_results['nPDBs'].append(target.get('nPDBs'))
-#
-#         # get pdbconstruct data
-#         pdbconstructs = target.findall('PDB_construct')
-#         if len(pdbconstructs) > 0:
-#             targets_results['top_pdb_ID'].append(pdbconstructs[0].get('PDBconstructID'))
-#             targets_results['top_pdb_expr_tag'].append(pdbconstructs[0].get('expr_tag_string'))
-#             targets_results['top_pdb_auth_score'].append(pdbconstructs[0].get('auth_score'))
-#             targets_results['top_pdb_nextraneous_residues'].append(pdbconstructs[0].get('nextraneous_residues'))
-#             targets_results['top_pdb_taxname'].append(pdbconstructs[0].get('taxname'))
-#         else:
-#             targets_results['top_pdb_ID'].append(np.nan)
-#             targets_results['top_pdb_expr_tag'].append(np.nan)
-#             targets_results['top_pdb_auth_score'].append(np.nan)
-#             targets_results['top_pdb_nextraneous_residues'].append(np.nan)
-#             targets_results['top_pdb_taxname'].append(np.nan)
-#
-#         # compute lowest nextraneous residues
-#         if len(pdbconstructs) > 0:
-#             if int(pdbconstructs[0].get('nextraneous_residues')) < chosen_sgc_plasmid['nextraneous_plasmid_residues'].values[0]:
-#                 targets_results['lowest_nextraneous_residues'].append(pdbconstructs[0].get('nextraneous_residues'))
-#             else:
-#                 targets_results['lowest_nextraneous_residues'].append(chosen_sgc_plasmid['nextraneous_plasmid_residues'].values[0])
-#         else:
-#             targets_results['lowest_nextraneous_residues'].append(chosen_sgc_plasmid['nextraneous_plasmid_residues'].values[0])
-#
-#
-# # for targets without SGC plasmids, look for HIP plasmids
-# for target in pdbconstructs_xml:
-#     targetID = target.get('targetID')
-#     # skip if this target has a matching SGC plasmid
-#     if targetID in list(targets_results['targetID']):
-#         continue
-#
-#     matching_hip_plasmids = hip_plasmids[ hip_plasmids['matching_targetID'] == targetID ]
-#     if len(matching_hip_plasmids) > 0:
-#         matching_hip_plasmids.sort(('nextraneous_plasmid_residues', 'nconflicts_target_domain_region'), inplace=True)
-#         chosen_hip_plasmid = matching_hip_plasmids.head(1)
-#         targets_results['targetID'].append(targetID)
-#         targets_results['plasmid_source'].append('HIP pJP1520')
-#         targets_results['plasmid_ID'].append(chosen_hip_plasmid['cloneID'].values[0])
-#         targets_results['plasmid_nconflicts'].append(chosen_hip_plasmid['nconflicts_target_domain_region'].values[0])
-#         targets_results['plasmid_nextraneous_residues'].append(chosen_hip_plasmid['nextraneous_plasmid_residues'].values[0])
-#         targets_results['family'].append(chosen_hip_plasmid['UniProt_family'].values[0])
-#
-#         targets_results['DB_target_rank'].append(target.get('DB_target_rank'))
-#         targets_results['nPDBs'].append(target.get('nPDBs'))
-#
-#         # get pdbconstruct data
-#         pdbconstructs = target.findall('PDB_construct')
-#         if len(pdbconstructs) > 0:
-#             targets_results['top_pdb_ID'].append(pdbconstructs[0].get('PDBconstructID'))
-#             targets_results['top_pdb_expr_tag'].append(pdbconstructs[0].get('expr_tag_string'))
-#             targets_results['top_pdb_auth_score'].append(pdbconstructs[0].get('auth_score'))
-#             targets_results['top_pdb_nextraneous_residues'].append(pdbconstructs[0].get('nextraneous_residues'))
-#             targets_results['top_pdb_taxname'].append(pdbconstructs[0].get('taxname'))
-#         else:
-#             targets_results['top_pdb_ID'].append(np.nan)
-#             targets_results['top_pdb_expr_tag'].append(np.nan)
-#             targets_results['top_pdb_auth_score'].append(np.nan)
-#             targets_results['top_pdb_nextraneous_residues'].append(np.nan)
-#             targets_results['top_pdb_taxname'].append(np.nan)
-#
-#         # compute lowest nextraneous residues
-#         if len(pdbconstructs) > 0:
-#             if int(pdbconstructs[0].get('nextraneous_residues')) < chosen_hip_plasmid['nextraneous_plasmid_residues'].values[0]:
-#                 targets_results['lowest_nextraneous_residues'].append(pdbconstructs[0].get('nextraneous_residues'))
-#             else:
-#                 targets_results['lowest_nextraneous_residues'].append(chosen_hip_plasmid['nextraneous_plasmid_residues'].values[0])
-#         else:
-#             targets_results['lowest_nextraneous_residues'].append(chosen_hip_plasmid['nextraneous_plasmid_residues'].values[0])
 
 
 

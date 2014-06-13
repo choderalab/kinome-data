@@ -28,12 +28,10 @@ ignore_clones = ['HsCD00038286', 'HsCD00037967'] # both of these have deletions 
 wb = openpyxl.load_workbook(Harvard_plasmid_library_filepath)
 sheet_ranges = wb.get_sheet_by_name(name = 'Kinase_VS1_pJP1520_new_plates')
 nrows = sheet_ranges.get_highest_row()
-#plasmidIDs = {}
-#plasmid_aa_seqs = {}
-#plasmid_dna_seqs = {}
 plasmid_df = {
 'cloneID':[],
 'dna_seq':[],
+'dna_orf_seq':[],
 'aa_seq':[],
 'NCBI_GeneID':[],
 'Symbol':[]
@@ -44,16 +42,22 @@ for row in range(2,nrows):
         continue
     NCBI_GeneID = sheet_ranges.cell('H%d' % row).value    # type(int)
     Symbol = sheet_ranges.cell('I%d' % row).value
-    dna_seq = sheet_ranges.cell('L%d' % row).value 
+    dna_seq = sheet_ranges.cell('L%d' % row).value.upper()
     if len(dna_seq) % 3 != 0:
         print 'WARNING: length of DNA sequence not divisible by 3, for plasmid with Gene Symbol %s and NCBI Gene ID %s' % (Symbol, NCBI_GeneID)
     # Translate to DNA sequence (don't include stop codon)
     aa_seq = Bio.Seq.Seq(dna_seq, Bio.Alphabet.generic_dna).translate(to_stop=True)
-    #plasmidIDs[NCBI_GeneID] = plasmidID
-    #plasmid_aa_seqs[NCBI_GeneID] = aa_seq
-    #plasmid_dna_seqs[NCBI_GeneID] = dna_seq
+
+    # get DNA ORF (assume starts at index 0)
+    dna_orf_seq = dna_seq
+    for n in range(0, len(dna_seq), 3):
+        if dna_seq[n:n+3] in ['TAG', 'TAA', 'TGA']:
+           dna_orf_seq = dna_seq[:n]
+           break
+
     plasmid_df['cloneID'].append(cloneID)
     plasmid_df['dna_seq'].append(dna_seq)
+    plasmid_df['dna_orf_seq'].append(dna_orf_seq)
     plasmid_df['aa_seq'].append(aa_seq)
     plasmid_df['NCBI_GeneID'].append(NCBI_GeneID)
     plasmid_df['Symbol'].append(Symbol)
@@ -66,7 +70,7 @@ DB_root = etree.parse(args.database_path).getroot()
 
 
 # To be used to construct a pandas DataFrame
-data_fields = ['cloneID', 'NCBI_GeneID', 'orig_gene_symbol', 'UniProtAC', 'UniProt_entry_name', 'UniProt_family', 'insert_dna_seq', 'insert_aa_seq']
+data_fields = ['cloneID', 'NCBI_GeneID', 'orig_gene_symbol', 'UniProtAC', 'UniProt_entry_name', 'UniProt_family', 'construct_dna_seq', 'construct_dna_orf_seq', 'construct_aa_seq']
 output_data = pd.DataFrame( [['None'] * len(data_fields)] * len(plasmid_df), columns=data_fields)
 
 #DB_gene_name_nodes = [ gene_name_node for gene_name_node in DB_root.findall('entry/UniProt/gene_names/gene_name') ]
@@ -77,16 +81,18 @@ output_data = pd.DataFrame( [['None'] * len(data_fields)] * len(plasmid_df), col
 
 for p in plasmid_df.index:
     cloneID = plasmid_df['cloneID'][p]
-    insert_dna_seq = plasmid_df['dna_seq'][p]
-    insert_aa_seq = plasmid_df['aa_seq'][p]
+    construct_dna_seq = plasmid_df['dna_seq'][p]
+    construct_dna_orf_seq = plasmid_df['dna_orf_seq'][p]
+    construct_aa_seq = plasmid_df['aa_seq'][p]
     plasmid_NCBI_GeneID = plasmid_df['NCBI_GeneID'][p]
     plasmid_Symbol = plasmid_df['Symbol'][p]
 
     output_data['cloneID'][p] = cloneID
     output_data['NCBI_GeneID'][p] = plasmid_NCBI_GeneID
     output_data['orig_gene_symbol'][p] = plasmid_Symbol
-    output_data['insert_dna_seq'][p] = insert_dna_seq
-    output_data['insert_aa_seq'][p] = insert_aa_seq
+    output_data['construct_dna_seq'][p] = construct_dna_seq
+    output_data['construct_dna_orf_seq'][p] = construct_dna_orf_seq
+    output_data['construct_aa_seq'][p] = construct_aa_seq
 
 
     # find matching DB entry via NCBI GeneID
