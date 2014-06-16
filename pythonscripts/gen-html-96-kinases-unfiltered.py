@@ -7,13 +7,13 @@ import jinja2
 # Main html page
 # ========
 
-title = '96 kinases'
+title = 'all kinases'
 subtitle = 'Selected from SGC Oxford and HIP pJP1520 plasmid libraries'
-html_output_cols = ['targetID', 'DB_target_rank', 'plasmid_source', 'plasmid_ID', 'plasmid_nconflicts', 'plasmid_nextraneous_residues', 'nPDBs', 'top_pdb_ID', 'top_pdb_expr_tag', 'top_pdb_auth_score', 'top_pdb_nextraneous_residues', 'family']
+html_output_cols = ['targetID', 'DB_target_rank', 'plasmid_ID', 'plasmid_source', 'plasmid_nconflicts', 'plasmid_nextraneous_residues', 'nPDBs', 'top_pdb_ID', 'top_pdb_expr_tag', 'top_pdb_auth_score', 'top_pdb_nextraneous_residues', 'family', 'top_pdb_taxname', 'selected_construct_source', 'selected_construct_nextraneous_residues', 'top_sgc_expr_tag']
 
 parser = etree.HTMLParser(remove_blank_text=True)
 
-df = pd.DataFrame.from_csv('../kinase-expression-constructs/96-kinases-sgc_and_hip-unfiltered.csv')
+df = pd.DataFrame.from_csv('../kinase-expression-constructs/selected-kinases-sgc_and_hip-unfiltered.csv')
 
 pd_html = df.to_html(columns=html_output_cols, index=True, na_rep='--')
 html = etree.parse(StringIO.StringIO(pd_html), parser).getroot()
