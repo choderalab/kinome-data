@@ -3,7 +3,7 @@ from lxml import etree
 import pandas as pd
 import numpy as np
 
-ofilename = '96-kinases-sgc_and_hip'
+ofilename = 'selected-kinases-sgc_and_hip'
 
 output_columns=['targetID', 'DB_target_rank', 'plasmid_source', 'plasmid_ID', 'plasmid_nconflicts', 'plasmid_nextraneous_residues', 'nPDBs', 'top_pdb_ID', 'top_pdb_expr_tag', 'top_pdb_auth_score', 'top_pdb_nextraneous_residues', 'family', 'top_pdb_taxname', 'selected_construct_source', 'selected_construct_nextraneous_residues', 'top_sgc_expr_tag']
 

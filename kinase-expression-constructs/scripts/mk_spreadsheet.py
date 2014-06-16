@@ -6,9 +6,9 @@ import Bio.Seq
 
 # input params
 
-input_filepath = '96-kinases-sgc_and_hip.csv'
-output_xl_filepath = 'selected-kinase-constructs-sgc_and_hip.xlsx'
-output_txt_filepath = 'selected-kinase-constructs-sgc_and_hip.txt'
+input_filepath = 'selected-kinases-sgc_and_hip.csv'
+output_xl_filepath = 'selected-kinases-sgc_and_hip.xlsx'
+output_aln_filepath = 'selected-kinases-sgc_and_hip.fa'
 
 wb = Workbook()
 ws = wb.get_active_sheet()
@@ -91,9 +91,9 @@ ws.cell(row=0, column=5).value = 'dna start'
 ws.cell(row=0, column=6).value = 'dna end'
 ws.cell(row=0, column=7).value = 'construct aa seq'
 ws.cell(row=0, column=8).value = 'construct dna seq'
-ws.cell(row=0, column=9).value = 'plasmid insert dna seq'
+ws.cell(row=0, column=9).value = 'original plasmid insert dna seq'
 
-with open(output_txt_filepath, 'w') as otxt_file:
+with open(output_aln_filepath, 'w') as otxt_file:
 
     for n in range(len(df)):
         targetID = df['targetID'][n]
