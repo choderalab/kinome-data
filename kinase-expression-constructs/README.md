@@ -15,3 +15,4 @@ Manifest
     * selected-kinases-sgc\_and\_hip.fa - for each kinase, contains an alignment of the UniProt seq, the selected plasmid, and the selected constructs (if different from the plasmid)
 * scripts/mk\_alignments.py
   * generates an html alignment (in alignments/) for each kinase, containing the UniProt seq, all matching plasmids (sorted), and all PDB constructs (sorted)
+* Spreadsheets and other material for exploring possible construct synthesis by gen9
