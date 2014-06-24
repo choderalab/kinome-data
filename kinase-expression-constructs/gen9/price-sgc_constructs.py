@@ -25,7 +25,7 @@ def construct_cost(construct_length, total_nbps):
             cost = 249
         elif construct_length <= 3000:
             cost = 349
-    elif total_nbps > 200000:
+    elif total_nbps >= 200000:
         if construct_length <= 1000:
             cost = 99
         elif construct_length <= 2000:
