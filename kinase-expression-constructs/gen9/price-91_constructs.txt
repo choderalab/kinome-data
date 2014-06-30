@@ -1,0 +1,5 @@
+Total number of constructs: 91
+Total number of bps: 86196
+Total constructs at cost $149: 65
+Total constructs at cost $249: 26
+Total price: $16159
