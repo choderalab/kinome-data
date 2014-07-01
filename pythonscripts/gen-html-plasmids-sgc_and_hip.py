@@ -66,7 +66,7 @@ for tr in tbody:
 table_content = '\n'.join([etree.tostring(element) for element in table_children])
 
 env = jinja2.Environment(loader=jinja2.PackageLoader('app', 'templates'))
-template = env.get_template('expr-cnstrct-custom-selection-infotext.html')
+template = env.get_template('expr-cnstrct-custom-selection-infotext-sgc_and_hip.html')
 
 with open('kinase_constructs-sgc_and_hip.html', 'w') as html_file:
     html_file.write( template.render(title=title, subtitle=subtitle, maintable=table_content, display_filters=False) )

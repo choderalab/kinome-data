@@ -13,7 +13,7 @@ html_output_cols = ['targetID', 'DB_target_rank', 'plasmid_ID', 'plasmid_source'
 
 parser = etree.HTMLParser(remove_blank_text=True)
 
-df = pd.DataFrame.from_csv('../kinase-expression-constructs/addgene_and_hip/selected-kinases-addgene_and_hip.csv')
+df = pd.DataFrame.from_csv('../kinase-expression-constructs/addgene_hip_sgc/selected-kinases-addgene_hip_sgc.csv')
 
 pd_html = df.to_html(columns=html_output_cols, index=True, na_rep='--')
 html = etree.parse(StringIO.StringIO(pd_html), parser).getroot()
@@ -47,7 +47,7 @@ for tr in tbody:
             targetID = targetID_td.text
             targetID_td.text = ''
             aelem = etree.SubElement(targetID_td, 'a')
-            aelem.set('href', 'plasmid-construct-alignments/addgene_and_hip/' + targetID + '.html')
+            aelem.set('href', 'plasmid-construct-alignments/addgene_hip_sgc/' + targetID + '.html')
             aelem.text = targetID
             break
         elif 'addgene' in td.text:
@@ -55,7 +55,7 @@ for tr in tbody:
             targetID = targetID_td.text
             targetID_td.text = ''
             aelem = etree.SubElement(targetID_td, 'a')
-            aelem.set('href', 'plasmid-construct-alignments/addgene_and_hip/' + targetID + '.html')
+            aelem.set('href', 'plasmid-construct-alignments/addgene_hip_sgc/' + targetID + '.html')
             aelem.text = targetID
             break
 
@@ -66,9 +66,9 @@ for tr in tbody:
 table_content = '\n'.join([etree.tostring(element) for element in table_children])
 
 env = jinja2.Environment(loader=jinja2.PackageLoader('app', 'templates'))
-template = env.get_template('expr-cnstrct-custom-selection-infotext-addgene_and_hip.html')
+template = env.get_template('expr-cnstrct-custom-selection-infotext-addgene_hip_sgc.html')
 
-with open('kinase_constructs-addgene_and_hip.html', 'w') as html_file:
+with open('kinase_constructs-addgene_hip_sgc.html', 'w') as html_file:
     html_file.write( template.render(title=title, subtitle=subtitle, maintable=table_content, display_filters=False) )
 
 # ========
@@ -76,11 +76,11 @@ with open('kinase_constructs-addgene_and_hip.html', 'w') as html_file:
 # ========
 
 # copy CSS
-shutil.copy('stylesheets/seqlib.css', 'plasmid-construct-alignments/addgene_and_hip/seqlib.css')
+shutil.copy('stylesheets/seqlib.css', 'plasmid-construct-alignments/addgene_hip_sgc/seqlib.css')
 
 targetIDs = list(df['targetID'])
 for targetID in targetIDs:
-    src_html_filepath = os.path.join('..', 'kinase-expression-constructs', 'addgene_and_hip', 'alignments', targetID + '.html')
-    dest_html_filepath = os.path.join('plasmid-construct-alignments', 'addgene_and_hip', targetID + '.html')
+    src_html_filepath = os.path.join('..', 'kinase-expression-constructs', 'addgene_hip_sgc', 'alignments', targetID + '.html')
+    dest_html_filepath = os.path.join('plasmid-construct-alignments', 'addgene_hip_sgc', targetID + '.html')
     shutil.copy(src_html_filepath, dest_html_filepath)
 
