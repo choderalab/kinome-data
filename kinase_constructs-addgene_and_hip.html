@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/ico/seqaln.ico">
+    <link rel="stylesheet" href="packages/bootstrap-3.1.1-dist/css/bootstrap.min.css">
+    <style type="text/css" title="currentStyle">
+      .container {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: 15px;
+      margin-left: 15px;
+      width: auto;
+      }
+    </style>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="packages/jquery-1.11.0/jquery.min.js"></script>
+    <script src="packages/bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+    
+    <meta name="description" content="Kinase expression construct selection table">
+    <meta name="author" content="Daniel L. Parton">
+    <title>Kinase expression construct selection</title>
+
+    <style type="text/css" title="currentStyle">
+      @import "packages/DataTables-1.9.4/media/css/demo_page.css";
+      @import "packages/DataTables-1.9.4/media/css/demo_table.css";
+
+      .description_table {
+        border-collapse: separate;
+        background-color: #f5f5f5;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+      .description_table th {
+        text-align: right;
+        border-right: 1px solid #ccc;
+        padding-right: 15px;
+      }
+      .description_table td {
+        padding: 2px 15px;
+      }
+
+      table#maintable {
+          border: 0px;
+      }
+      #maintable th {
+          text-align: center;
+         /*  background-color: #FFF; */
+          border: 0px;
+      }
+      #maintable td {
+          border: 0px;
+      }
+
+      /* Don't display the DataTables search box */
+      .dataTables_filter {
+        display: none;
+      }
+
+      .FixedHeader_Cloned th { background-color: white; text-align: center }
+      .FixedHeader_Cloned thead { border: 1px solid black; }
+      td.index { background-color: white; border-right: 1px solid black; }
+     /*  table.display th.sorting_disabled { border-bottom: 0px solid black; } */
+    </style>
+    <script type="text/javascript" language="javascript" src="packages/DataTables-1.9.4/media/js/jquery.js"></script>
+    <script type="text/javascript" language="javascript" src="packages/DataTables-1.9.4/media/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" language="javascript" src="packages/DataTables-1.9.4/extras/FixedHeader/js/FixedHeader.js"></script>
+    <script type="text/javascript" language="javascript" src="packages/DataTables-1.9.4/extras/ColReorder/media/js/ColReorder.js"></script>
+    <script type="text/javascript" language="javascript" src="packages/DataTables-1.9.4/extras/FixedColumns/media/js/FixedColumns.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    
+
+    jQuery.fn.dataTableExt.oSort['numeric-null-asc']  = function(a,b) {
+        if (a == "--" && b == "--") {
+            x = y = -1;
+        }
+        else if (a == "--") {
+            x = -1;
+            y = parseFloat( b );
+        }
+        else if (b == "--") {
+            x = parseFloat( a );
+            y = -1;
+        }
+        else {
+            x = parseFloat( a );
+            y = parseFloat( b );
+        }
+        return ((x < y) ? -1 : ((x > y) ?  1 : 0));
+    };
+
+    jQuery.fn.dataTableExt.oSort['numeric-null-desc']  = function(a,b) {
+        if (a == "--" && b == "--") {
+            x = y = -1;
+        }
+        else if (a == "--") {
+            x = -1;
+            y = parseFloat( b );
+        }
+        else if (b == "--") {
+            x = parseFloat( a );
+            y = -1;
+        }
+        else {
+            x = parseFloat( a );
+            y = parseFloat( b );
+        }
+        return ((x < y) ?  1 : ((x > y) ? -1 : 0));
+    };
+
+    $(document).ready(function() {
+
+        var mainTable = $('#maintable').dataTable( {
+           /*  "aaSorting": [[ 0, "asc" ]], */
+            "bPaginate": false,
+            "bAutoWidth": true,
+            "sDom": 'Rlfrtip',
+            "fnDrawCallback": function ( oSettings ) {
+                /* Need to redo the counters if filtered or sorted */
+                if ( oSettings.bSorted || oSettings.bFiltered ) {
+                    for ( var i=0, iLen=oSettings.aiDisplay.length ; i<iLen ; i++ ) {
+                        $('th:eq(0)', oSettings.aoData[ oSettings.aiDisplay[i] ].nTr ).html( i+1 );
+                    }
+                }
+            },
+            "aoColumnDefs": [
+                { "bSortable": false, "sClass": "index", "aTargets": [ 0 ] },
+                { "sType": "numeric-null", "aTargets": [ 10, 11 ] },
+            ],
+            "oColReorder": {
+                "iFixedColumns": 1
+            },
+        } );
+
+        
+
+        new FixedHeader( mainTable );
+
+    } );
+    </script>
+
+  </head>
+  <body>
+
+  <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://choderalab.github.io/kinome-data/">kinome-data</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kinase expression constructs<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://choderalab.github.io/kinome-data/kinase_constructs-sgc_and_hip.html">SGC/HIP plasmids (custom selection)</a></li>
+               <!--  <li><a href="http://choderalab.github.io/kinome&#45;data/kinase_constructs&#45;sgc_and_hip&#45;unfiltered.html">SGC/HIP plasmids (all data)</a></li> -->
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a target="_blank" href="https://github.com/choderalab">choderalab@GitHub</a></li>
+            <li><a target="_blank" href="http://www.choderalab.org/">choderalab.org</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Kinase expression constructs</h1>
+        <h2>Information</h2>
+        
+  <h4>Background:</h4>
+    The aim is to select a panel of 96 kinases suitable for <i>E. coli</i> expression in 96-well plates.
+    <br/>
+    Ideally, the kinase catalytic domain is to be expressed in isolation.
+    <br/>
+    Two plasmid libraries are currently available to the Chodera lab: SGC Oxford plasmids, which have been confirmed as expressible, and Harvard HIP pJP1520, which have not.
+    <br/>
+    The PDB is used here as a source of constructs which have been successfully expressed. For each kinase target, the PDB is searched for matching constructs from any species, expressed in <i>E. coli</i>.
+  <h4>Custom selection procedure:</h4>
+  <ul class="list-group">
+    <li>All kinase domain targets with a matching SGC Oxford plasmid suitable for <i>E. coli</i> expression.</li>
+    <li>Plus all other kinase domain targets which have a matching HIP pJP1520 plasmid, as well as at least one matching PDB construct from any species, expressed in <i>E. coli</i>, and with an authenticity score of &gt; 0.</li>
+    <li>Each kinase domain target may thus be matched with plasmid and/or PDB constructs. The construct with the lowest number of extraneous residues outside the catalytic domain region will be selected for expression testing.</li>
+    <li>PDB construct sequences, if selected, will be mapped onto matching plasmid sequences and subcloned.</li>
+  </ul>
+  <h4>In formal notation:</h4>
+  <!-- <p><pre>( ( <span class="text-primary">plasmid_nextraneous_residues</span> &lt; 40 ) or ( <span class="text-primary">nPDBs</span> &gt; 0 and <span class="text-primary">top_pdb_auth_score</span> &gt; 0 ) ) and <span class="text-primary">DB_target_rank</span> &lt; 450</pre></p> -->
+  <!-- <p><pre>( <span class="text-primary">top_pdb_auth_score</span> &gt; 0 and <span class="text-primary">top_pdb_nextraneous_residues</span> &lt; 100 ) or ( <span class="text-primary">plasmid_nextraneous_residues</span> &lt; 100 and <span class="text-primary">plasmid_source</span> == "SGC Oxford" )</pre></p> -->
+  <p><pre>( <span class="text-primary">plasmid_source</span> = "SGC Oxford") or ( <span class="text-primary">nPDBs</span> &gt; 0 and <span class="text-primary">top_pdb_auth_score</span> &gt; 0 )</pre></p>
+
+        <h4>Description of table fields with details of selection procedure:</h4>
+        <table class="description_table">
+          <tr>
+          <th>targetID</th>
+          <td>Kinase domain targets are given an identifier consisting of UniProt entry name followed by the kinase domain index (since some kinases have two catalytic domains)</td>
+          </tr>
+          <tr>
+          <th>DB_target_rank</th>
+          <td>Qualitative ranking of human kinase importance, based on metrics such as number of bioassays, number of PDBs, number of publications, % mutation rate in sequenced tumor samples</td>
+          </tr>
+          <tr>
+          <th>plasmid_ID</th>
+          <td>For a given kinase target, all matching plasmids from the available plasmid libraries (see plasmid_source) are aligned and sorted based on nconflicts and nextraneous_residues (see below), and the top-ranked plasmid is selected (click the targetID to see the alignment)</td>
+          </tr>
+          <tr>
+          <th>plasmid_source</th>
+          <td>Source of the top-ranked plasmid. Two plasmid libraries are currently available to the Chodera lab - SGC Oxford and HIP pJP1520. Only SGC Oxford plasmids suitable for <i>E. coli</i> expression are included in this selection procedure.</td>
+          </tr>
+          <tr>
+          <th>plasmid_nconflicts</th>
+          <td>Number of conflicts between plasmid and UniProt sequence in the region of the target domain</td>
+          </tr>
+          <tr>
+          <th>plasmid_nextraneous_residues</th>
+          <td>Number of plasmid residues outside the target domain region</td>
+          </tr>
+          <tr>
+          <th>nPDBs</th>
+          <td>Number of PDB constructs matching the target gene, from <i>any species</i>, and with an <i>E. coli</i> expression system annotation</td>
+          </tr>
+          <tr>
+          <th>top_pdb_ID</th>
+          <td>Matching PDB constructs are ranked by auth_score (see below), nextraneous_residues, and nconflicts, and the top-ranked PDB (and chain ID) is selected</td>
+          </tr>
+          <tr>
+          <th>top_pdb_expr_tag</th>
+          <td>Type of expression tag detected for top-ranked PDB construct</td>
+          </tr>
+          <tr>
+          <th>top_pdb_auth_score</th>
+          <td>Authenticity score assigned to top-ranked PDB construct based on the expression tag detected. Currently this is only used to distinguish between constructs with expression tags (auth_score &gt; 0) and those without (auth_score = 0)</td>
+          </tr>
+          <tr>
+          <th>top_pdb_nextraneous_residues</th>
+          <td>Number of PDB construct residues outside the target domain region</td>
+          </tr>
+          <tr>
+          <th>family</th>
+          <td>UniProt protein family annotation</td>
+          </tr>
+          <tr>
+          <th>top_pdb_taxname</th>
+          <td>Source organism of the top-ranked PDB construct</td>
+          </tr>
+          <tr>
+          <th>selected_construct_source</th>
+          <td>Selected constructs will ultimately be full-length SGC Oxford plasmids or PDB constructs (to be subcloned from either SGC Oxford or HIP plasmids).</td>
+          </tr>
+          <tr>
+          <th>selected_construct_nextraneous_residues</th>
+          <td>nextraneous_residues for the selected construct</td>
+          </tr>
+        </table>
+        <h4>Other notes:</h4>
+        Sort table by clicking on column headers. Shift-click for multicolumn sorting. Drag-click to rearrange columns. Refresh page to reset.<br/>
+        Click on the targetID to see alignments of plasmids and PDB constructs against the target UniProt sequence (kinase catalytic domain highlighted in red).
+      </div>
+
+    </div> <!-- /container -->
+
+  <div class="container">
+    <h2>Table of kinase expression constructs</h2>
+    
+    <table class="display" id="maintable">
+      <thead><tr style="text-align: right;"><th/>
+      <th>targetID</th>
+      <th>DB_target_rank</th>
+      <th>plasmid_ID</th>
+      <th>plasmid_source</th>
+      <th>plasmid_nconflicts</th>
+      <th>plasmid_nextraneous_residues</th>
+      <th>nPDBs</th>
+      <th>top_pdb_ID</th>
+      <th>top_pdb_expr_tag</th>
+      <th>top_pdb_auth_score</th>
+      <th>top_pdb_nextraneous_residues</th>
+      <th>family</th>
+      <th>top_pdb_taxname</th>
+      <th>selected_construct_source</th>
+      <th>selected_construct_nextraneous_residues</th>
+    </tr></thead>
+<tbody><tr><th>0</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/CSK22_HUMAN_D0.html">CSK22_HUMAN_D0</a></td>
+      <td>154</td>
+      <td>HsCD00037966</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>65</td>
+      <td>2</td>
+      <td>3E3B_X</td>
+      <td>other_extra_seq_Nterm</td>
+      <td>1</td>
+      <td>54</td>
+      <td>--</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>65</td>
+    </tr><tr><th>1</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/MK01_HUMAN_D0.html">MK01_HUMAN_D0</a></td>
+      <td>16</td>
+      <td>HsCD00038083</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>71</td>
+      <td>61</td>
+      <td>4FMQ_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>74</td>
+      <td>CMGC</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>71</td>
+    </tr><tr><th>2</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/MK11_HUMAN_D0.html">MK11_HUMAN_D0</a></td>
+      <td>159</td>
+      <td>HsCD00038095</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>80</td>
+      <td>5</td>
+      <td>3GP0_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>64</td>
+      <td>CMGC</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>80</td>
+    </tr><tr><th>3</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/MK08_HUMAN_D0.html">MK08_HUMAN_D0</a></td>
+      <td>36</td>
+      <td>HsCD00038084</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>89</td>
+      <td>32</td>
+      <td>1UKH_A</td>
+      <td>Histag_Cterm</td>
+      <td>2</td>
+      <td>74</td>
+      <td>CMGC</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>89</td>
+    </tr><tr><th>4</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/MK03_HUMAN_D0.html">MK03_HUMAN_D0</a></td>
+      <td>52</td>
+      <td>HsCD00038354</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>90</td>
+      <td>2</td>
+      <td>2ZOQ_B</td>
+      <td>other_extra_seq_Nterm</td>
+      <td>1</td>
+      <td>94</td>
+      <td>CMGC</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>90</td>
+    </tr><tr><th>5</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/STRAA_HUMAN_D0.html">STRAA_HUMAN_D0</a></td>
+      <td>402</td>
+      <td>HsCD00037995</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>92</td>
+      <td>1</td>
+      <td>3GNI_B</td>
+      <td>TEV_uncleaved_Nterm</td>
+      <td>2</td>
+      <td>79</td>
+      <td>STE</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>92</td>
+    </tr><tr><th>6</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/MAPK2_HUMAN_D0.html">MAPK2_HUMAN_D0</a></td>
+      <td>75</td>
+      <td>HsCD00037983</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>93</td>
+      <td>77</td>
+      <td>2JBO_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>65</td>
+      <td>CAMK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>93</td>
+    </tr><tr><th>7</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/MKNK2_HUMAN_D0.html">MKNK2_HUMAN_D0</a></td>
+      <td>251</td>
+      <td>HsCD00037986</td>
+      <td>HIP pJP1520</td>
+      <td>3</td>
+      <td>113</td>
+      <td>3</td>
+      <td>2AC5_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>15</td>
+      <td>CAMK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>113</td>
+    </tr><tr><th>8</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/MP2K4_HUMAN_D0.html">MP2K4_HUMAN_D0</a></td>
+      <td>181</td>
+      <td>HsCD00038296</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>133</td>
+      <td>6</td>
+      <td>3VUT_B</td>
+      <td>Histag_Cterm</td>
+      <td>2</td>
+      <td>62</td>
+      <td>STE</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>133</td>
+    </tr><tr><th>9</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/KC1D_HUMAN_D0.html">KC1D_HUMAN_D0</a></td>
+      <td>93</td>
+      <td>HsCD00038353</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>140</td>
+      <td>10</td>
+      <td>4HNF_B</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>28</td>
+      <td>CK1</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>140</td>
+    </tr><tr><th>10</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/MKNK1_HUMAN_D0.html">MKNK1_HUMAN_D0</a></td>
+      <td>214</td>
+      <td>HsCD00038677</td>
+      <td>HIP pJP1520</td>
+      <td>4</td>
+      <td>140</td>
+      <td>2</td>
+      <td>2HW6_B</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>23</td>
+      <td>CAMK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>140</td>
+    </tr><tr><th>11</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/KC1G2_HUMAN_D0.html">KC1G2_HUMAN_D0</a></td>
+      <td>238</td>
+      <td>HsCD00037988</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>145</td>
+      <td>4</td>
+      <td>2C47_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>43</td>
+      <td>CK1</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>145</td>
+    </tr><tr><th>12</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/MST4_HUMAN_D0.html">MST4_HUMAN_D0</a></td>
+      <td>308</td>
+      <td>HsCD00038628</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>165</td>
+      <td>5</td>
+      <td>4FZD_B</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>33</td>
+      <td>STE</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>165</td>
+    </tr><tr><th>13</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/NEK2_HUMAN_D0.html">NEK2_HUMAN_D0</a></td>
+      <td>89</td>
+      <td>HsCD00038233</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>181</td>
+      <td>20</td>
+      <td>2XKE_A</td>
+      <td>Histag_Cterm</td>
+      <td>2</td>
+      <td>16</td>
+      <td>NEK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>181</td>
+    </tr><tr><th>14</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/VRK3_HUMAN_D0.html">VRK3_HUMAN_D0</a></td>
+      <td>445</td>
+      <td>HsCD00037999</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>183</td>
+      <td>2</td>
+      <td>2JII_A</td>
+      <td>TEV_uncleaved_Nterm</td>
+      <td>2</td>
+      <td>61</td>
+      <td>CK1</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>183</td>
+    </tr><tr><th>15</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/VRK2_HUMAN_D0.html">VRK2_HUMAN_D0</a></td>
+      <td>354</td>
+      <td>HsCD00038025</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>218</td>
+      <td>2</td>
+      <td>2V62_B</td>
+      <td>TEV_uncleaved_Nterm</td>
+      <td>2</td>
+      <td>55</td>
+      <td>CK1</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>218</td>
+    </tr><tr><th>16</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/KCC2A_HUMAN_D0.html">KCC2A_HUMAN_D0</a></td>
+      <td>376</td>
+      <td>HsCD00037978</td>
+      <td>HIP pJP1520</td>
+      <td>1</td>
+      <td>220</td>
+      <td>3</td>
+      <td>2VZ6_B</td>
+      <td>TEV_uncleaved_Nterm</td>
+      <td>2</td>
+      <td>55</td>
+      <td>CAMK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>220</td>
+    </tr><tr><th>17</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/PMYT1_HUMAN_D0.html">PMYT1_HUMAN_D0</a></td>
+      <td>304</td>
+      <td>HsCD00038001</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>248</td>
+      <td>1</td>
+      <td>3P1A_A</td>
+      <td>TEV_uncleaved_Nterm</td>
+      <td>2</td>
+      <td>62</td>
+      <td>--</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>248</td>
+    </tr><tr><th>18</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/KCC2G_HUMAN_D0.html">KCC2G_HUMAN_D0</a></td>
+      <td>218</td>
+      <td>HsCD00038207</td>
+      <td>HIP pJP1520</td>
+      <td>1</td>
+      <td>269</td>
+      <td>1</td>
+      <td>2V7O_A</td>
+      <td>TEV_uncleaved_Nterm</td>
+      <td>2</td>
+      <td>78</td>
+      <td>CAMK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>269</td>
+    </tr><tr><th>19</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/E2AK2_HUMAN_D0.html">E2AK2_HUMAN_D0</a></td>
+      <td>135</td>
+      <td>HsCD00038350</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>279</td>
+      <td>5</td>
+      <td>3UIU_A</td>
+      <td>Histag_Cterm</td>
+      <td>2</td>
+      <td>35</td>
+      <td>--</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>279</td>
+    </tr><tr><th>20</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/PAK1_HUMAN_D0.html">PAK1_HUMAN_D0</a></td>
+      <td>157</td>
+      <td>HsCD00038597</td>
+      <td>HIP pJP1520</td>
+      <td>1</td>
+      <td>294</td>
+      <td>17</td>
+      <td>3Q52_A</td>
+      <td>Histag_Cterm</td>
+      <td>2</td>
+      <td>55</td>
+      <td>STE</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>294</td>
+    </tr><tr><th>21</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/DMPK_HUMAN_D0.html">DMPK_HUMAN_D0</a></td>
+      <td>110</td>
+      <td>HsCD00038663</td>
+      <td>HIP pJP1520</td>
+      <td>2</td>
+      <td>361</td>
+      <td>2</td>
+      <td>2VD5_B</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>144</td>
+      <td>AGC</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>361</td>
+    </tr><tr><th>22</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/MELK_HUMAN_D0.html">MELK_HUMAN_D0</a></td>
+      <td>137</td>
+      <td>HsCD00038574</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>399</td>
+      <td>2</td>
+      <td>4BFM_A</td>
+      <td>Histag_Cterm</td>
+      <td>2</td>
+      <td>82</td>
+      <td>CAMK</td>
+      <td>Mouse</td>
+      <td>PDB</td>
+      <td>399</td>
+    </tr><tr><th>23</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/KS6A3_HUMAN_D0.html">KS6A3_HUMAN_D0</a></td>
+      <td>49</td>
+      <td>HsCD00038078</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>481</td>
+      <td>4</td>
+      <td>4GUE_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>46</td>
+      <td>AGC</td>
+      <td>Mouse</td>
+      <td>PDB</td>
+      <td>481</td>
+    </tr><tr><th>24</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/HASP_HUMAN_D0.html">HASP_HUMAN_D0</a></td>
+      <td>371</td>
+      <td>HsCD00038762</td>
+      <td>HIP pJP1520</td>
+      <td>2</td>
+      <td>483</td>
+      <td>7</td>
+      <td>2VUW_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>22</td>
+      <td>--</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>483</td>
+    </tr><tr><th>25</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/MARK2_HUMAN_D0.html">MARK2_HUMAN_D0</a></td>
+      <td>237</td>
+      <td>HsCD00038251</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>504</td>
+      <td>20</td>
+      <td>3IEC_D</td>
+      <td>other_extra_seq_Nterm</td>
+      <td>1</td>
+      <td>68</td>
+      <td>CAMK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>504</td>
+    </tr><tr><th>26</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/BRAF_HUMAN_D0.html">BRAF_HUMAN_D0</a></td>
+      <td>4</td>
+      <td>HsCD00038362</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>505</td>
+      <td>8</td>
+      <td>4JVG_D</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>24</td>
+      <td>TKL</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>505</td>
+    </tr><tr><th>27</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/CSKP_HUMAN_D0.html">CSKP_HUMAN_D0</a></td>
+      <td>111</td>
+      <td>HsCD00038384</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>633</td>
+      <td>10</td>
+      <td>3TAC_A</td>
+      <td>Histag_Nterm</td>
+      <td>2</td>
+      <td>97</td>
+      <td>CAMK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>633</td>
+    </tr><tr><th>28</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/STK10_HUMAN_D0.html">STK10_HUMAN_D0</a></td>
+      <td>126</td>
+      <td>HsCD00038077</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>710</td>
+      <td>6</td>
+      <td>4AOT_B</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>44</td>
+      <td>STE</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>710</td>
+    </tr><tr><th>29</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/EPHB2_HUMAN_D0.html">EPHB2_HUMAN_D0</a></td>
+      <td>91</td>
+      <td>HsCD00038588</td>
+      <td>HIP pJP1520</td>
+      <td>1</td>
+      <td>723</td>
+      <td>7</td>
+      <td>3ZFM_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>35</td>
+      <td>TK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>723</td>
+    </tr><tr><th>30</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/EPHB3_HUMAN_D0.html">EPHB3_HUMAN_D0</a></td>
+      <td>202</td>
+      <td>HsCD00038757</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>735</td>
+      <td>2</td>
+      <td>3ZFY_B</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>35</td>
+      <td>TK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>735</td>
+    </tr><tr><th>31</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/FAK1_HUMAN_D0.html">FAK1_HUMAN_D0</a></td>
+      <td>32</td>
+      <td>HsCD00038381</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>747</td>
+      <td>2</td>
+      <td>2IJM_B</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>23</td>
+      <td>TK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>747</td>
+    </tr><tr><th>32</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/ABL1_HUMAN_D0.html">ABL1_HUMAN_D0</a></td>
+      <td>12</td>
+      <td>HsCD00038619</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>879</td>
+      <td>31</td>
+      <td>3UE4_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>36</td>
+      <td>TK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>879</td>
+    </tr><tr><th>33</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/SLK_HUMAN_D0.html">SLK_HUMAN_D0</a></td>
+      <td>207</td>
+      <td>HsCD00038614</td>
+      <td>HIP pJP1520</td>
+      <td>1</td>
+      <td>946</td>
+      <td>4</td>
+      <td>2JFL_A</td>
+      <td>TEV_uncleaved_Nterm</td>
+      <td>2</td>
+      <td>67</td>
+      <td>STE</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>946</td>
+    </tr><tr><th>34</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/M3K5_HUMAN_D0.html">M3K5_HUMAN_D0</a></td>
+      <td>151</td>
+      <td>HsCD00038752</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>1116</td>
+      <td>4</td>
+      <td>2CLQ_B</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>37</td>
+      <td>STE</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>1116</td>
+    </tr><tr><th>35</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/MET_HUMAN_D0.html">MET_HUMAN_D0</a></td>
+      <td>6</td>
+      <td>HsCD00038375</td>
+      <td>HIP pJP1520</td>
+      <td>0</td>
+      <td>1123</td>
+      <td>6</td>
+      <td>4EEV_A</td>
+      <td>Histag_Nterm</td>
+      <td>2</td>
+      <td>50</td>
+      <td>TK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>1123</td>
+    </tr><tr><th>36</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/DAPK1_HUMAN_D0.html">DAPK1_HUMAN_D0</a></td>
+      <td>180</td>
+      <td>HsCD00038376</td>
+      <td>HIP pJP1520</td>
+      <td>1</td>
+      <td>1168</td>
+      <td>39</td>
+      <td>4B4L_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>74</td>
+      <td>CAMK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>1168</td>
+    </tr><tr><th>37</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/CDK2_HUMAN_D0.html">CDK2_HUMAN_D0</a></td>
+      <td>26</td>
+      <td>23777</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>15</td>
+      <td>229</td>
+      <td>4EOO_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>17</td>
+      <td>CMGC</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>15</td>
+    </tr><tr><th>38</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/STK16_HUMAN_D0.html">STK16_HUMAN_D0</a></td>
+      <td>302</td>
+      <td>23565</td>
+      <td>addgene</td>
+      <td>1</td>
+      <td>31</td>
+      <td>2</td>
+      <td>2BUJ_B</td>
+      <td>TEV_uncleaved_Nterm</td>
+      <td>2</td>
+      <td>44</td>
+      <td>--</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>31</td>
+    </tr><tr><th>39</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/NEK7_HUMAN_D0.html">NEK7_HUMAN_D0</a></td>
+      <td>299</td>
+      <td>23395</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>37</td>
+      <td>2</td>
+      <td>2WQN_A</td>
+      <td>Histag_Cterm</td>
+      <td>2</td>
+      <td>45</td>
+      <td>NEK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>37</td>
+    </tr><tr><th>40</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/CDK6_HUMAN_D0.html">CDK6_HUMAN_D0</a></td>
+      <td>314</td>
+      <td>23688</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>38</td>
+      <td>2</td>
+      <td>4EZ5_A</td>
+      <td>Histag_Cterm</td>
+      <td>2</td>
+      <td>20</td>
+      <td>CMGC</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>38</td>
+    </tr><tr><th>41</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/CDKL1_HUMAN_D0.html">CDKL1_HUMAN_D0</a></td>
+      <td>361</td>
+      <td>23389</td>
+      <td>addgene</td>
+      <td>23</td>
+      <td>40</td>
+      <td>3</td>
+      <td>4AGU_B</td>
+      <td>TEV_Cterm</td>
+      <td>2</td>
+      <td>28</td>
+      <td>CMGC</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>40</td>
+    </tr><tr><th>42</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/PIM1_HUMAN_D0.html">PIM1_HUMAN_D0</a></td>
+      <td>77</td>
+      <td>23692</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>60</td>
+      <td>91</td>
+      <td>2O65_A</td>
+      <td>Histag_Cterm</td>
+      <td>2</td>
+      <td>41</td>
+      <td>CAMK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>60</td>
+    </tr><tr><th>43</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/MP2K6_HUMAN_D0.html">MP2K6_HUMAN_D0</a></td>
+      <td>222</td>
+      <td>23783</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>72</td>
+      <td>2</td>
+      <td>3FME_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>29</td>
+      <td>STE</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>72</td>
+    </tr><tr><th>44</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/MK14_HUMAN_D0.html">MK14_HUMAN_D0</a></td>
+      <td>14</td>
+      <td>23865</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>75</td>
+      <td>234</td>
+      <td>2Y8O_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>78</td>
+      <td>CMGC</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>75</td>
+    </tr><tr><th>45</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/MK13_HUMAN_D0.html">MK13_HUMAN_D0</a></td>
+      <td>240</td>
+      <td>23739</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>81</td>
+      <td>4</td>
+      <td>4EYJ_A</td>
+      <td>Histag_Nterm</td>
+      <td>2</td>
+      <td>88</td>
+      <td>CMGC</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>81</td>
+    </tr><tr><th>46</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/AURKB_HUMAN_D0.html">AURKB_HUMAN_D0</a></td>
+      <td>40</td>
+      <td>23682</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>93</td>
+      <td>1</td>
+      <td>4AF3_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>42</td>
+      <td>--</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>93</td>
+    </tr><tr><th>47</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/KAPCA_HUMAN_D0.html">KAPCA_HUMAN_D0</a></td>
+      <td>63</td>
+      <td>23495</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>97</td>
+      <td>162</td>
+      <td>4IAC_A</td>
+      <td>Histag_Nterm</td>
+      <td>2</td>
+      <td>102</td>
+      <td>AGC</td>
+      <td>Mouse</td>
+      <td>PDB</td>
+      <td>97</td>
+    </tr><tr><th>48</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/MP2K2_HUMAN_D0.html">MP2K2_HUMAN_D0</a></td>
+      <td>88</td>
+      <td>23555</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>102</td>
+      <td>2</td>
+      <td>1S9I_A</td>
+      <td>Histag_Cterm</td>
+      <td>2</td>
+      <td>57</td>
+      <td>STE</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>102</td>
+    </tr><tr><th>49</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/CSK21_HUMAN_D0.html">CSK21_HUMAN_D0</a></td>
+      <td>62</td>
+      <td>23678</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>105</td>
+      <td>79</td>
+      <td>3AXW_A</td>
+      <td>other_extra_seq_Nterm</td>
+      <td>1</td>
+      <td>55</td>
+      <td>--</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>105</td>
+    </tr><tr><th>50</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/KC1G1_HUMAN_D0.html">KC1G1_HUMAN_D0</a></td>
+      <td>276</td>
+      <td>23737</td>
+      <td>addgene</td>
+      <td>73</td>
+      <td>108</td>
+      <td>1</td>
+      <td>2CMW_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>39</td>
+      <td>CK1</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>108</td>
+    </tr><tr><th>51</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/ST17B_HUMAN_D0.html">ST17B_HUMAN_D0</a></td>
+      <td>279</td>
+      <td>23721</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>111</td>
+      <td>2</td>
+      <td>3LM0_A</td>
+      <td>TEV_uncleaved_Nterm</td>
+      <td>2</td>
+      <td>67</td>
+      <td>CAMK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>111</td>
+    </tr><tr><th>52</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/VRK1_HUMAN_D0.html">VRK1_HUMAN_D0</a></td>
+      <td>384</td>
+      <td>23496</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>116</td>
+      <td>4</td>
+      <td>3OP5_D</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>84</td>
+      <td>CK1</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>116</td>
+    </tr><tr><th>53</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/MAPK3_HUMAN_D0.html">MAPK3_HUMAN_D0</a></td>
+      <td>372</td>
+      <td>23790</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>121</td>
+      <td>4</td>
+      <td>3FXW_A</td>
+      <td>TEV_uncleaved_Nterm</td>
+      <td>2</td>
+      <td>76</td>
+      <td>CAMK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>121</td>
+    </tr><tr><th>54</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/PHKG2_HUMAN_D0.html">PHKG2_HUMAN_D0</a></td>
+      <td>134</td>
+      <td>23745</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>138</td>
+      <td>4</td>
+      <td>2Y7J_D</td>
+      <td>TEV_uncleaved_Nterm</td>
+      <td>2</td>
+      <td>98</td>
+      <td>CAMK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>138</td>
+    </tr><tr><th>55</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/KC1E_HUMAN_D0.html">KC1E_HUMAN_D0</a></td>
+      <td>233</td>
+      <td>23797</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>147</td>
+      <td>14</td>
+      <td>4HNI_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>28</td>
+      <td>CK1</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>147</td>
+    </tr><tr><th>56</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/AURKA_HUMAN_D0.html">AURKA_HUMAN_D0</a></td>
+      <td>43</td>
+      <td>23532</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>153</td>
+      <td>87</td>
+      <td>2NP8_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>22</td>
+      <td>--</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>153</td>
+    </tr><tr><th>57</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/KC1G3_HUMAN_D0.html">KC1G3_HUMAN_D0</a></td>
+      <td>294</td>
+      <td>23400</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>153</td>
+      <td>9</td>
+      <td>2CHL_A</td>
+      <td>TEV_uncleaved_Nterm</td>
+      <td>2</td>
+      <td>81</td>
+      <td>CK1</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>153</td>
+    </tr><tr><th>58</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/CLK1_HUMAN_D0.html">CLK1_HUMAN_D0</a></td>
+      <td>171</td>
+      <td>23817</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>167</td>
+      <td>2</td>
+      <td>2VAG_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>23</td>
+      <td>CMGC</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>167</td>
+    </tr><tr><th>59</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/CLK3_HUMAN_D0.html">CLK3_HUMAN_D0</a></td>
+      <td>223</td>
+      <td>23753</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>173</td>
+      <td>6</td>
+      <td>2WU7_A</td>
+      <td>TEV_uncleaved_Nterm</td>
+      <td>2</td>
+      <td>65</td>
+      <td>CMGC</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>173</td>
+    </tr><tr><th>60</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/STK24_HUMAN_D0.html">STK24_HUMAN_D0</a></td>
+      <td>274</td>
+      <td>23595</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>180</td>
+      <td>11</td>
+      <td>3ZHP_C</td>
+      <td>TEV_uncleaved_Nterm</td>
+      <td>2</td>
+      <td>44</td>
+      <td>STE</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>180</td>
+    </tr><tr><th>61</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/DAPK3_HUMAN_D0.html">DAPK3_HUMAN_D0</a></td>
+      <td>198</td>
+      <td>23436</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>192</td>
+      <td>6</td>
+      <td>3BHY_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>21</td>
+      <td>CAMK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>192</td>
+    </tr><tr><th>62</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/CSK_HUMAN_D0.html">CSK_HUMAN_D0</a></td>
+      <td>148</td>
+      <td>23941</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>195</td>
+      <td>4</td>
+      <td>3D7T_A</td>
+      <td>other_extra_seq_Nterm</td>
+      <td>1</td>
+      <td>15</td>
+      <td>TK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>195</td>
+    </tr><tr><th>63</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/CDK16_HUMAN_D0.html">CDK16_HUMAN_D0</a></td>
+      <td>257</td>
+      <td>23754</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>214</td>
+      <td>1</td>
+      <td>3MTL_A</td>
+      <td>Histag_Cterm</td>
+      <td>2</td>
+      <td>43</td>
+      <td>CMGC</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>214</td>
+    </tr><tr><th>64</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/KCC4_HUMAN_D0.html">KCC4_HUMAN_D0</a></td>
+      <td>224</td>
+      <td>23812</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>218</td>
+      <td>1</td>
+      <td>2W4O_A</td>
+      <td>TEV_uncleaved_Nterm</td>
+      <td>2</td>
+      <td>95</td>
+      <td>CAMK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>218</td>
+    </tr><tr><th>65</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/KCC2D_HUMAN_D0.html">KCC2D_HUMAN_D0</a></td>
+      <td>172</td>
+      <td>23814</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>219</td>
+      <td>3</td>
+      <td>2VN9_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>43</td>
+      <td>CAMK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>219</td>
+    </tr><tr><th>66</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/KCC1G_HUMAN_D0.html">KCC1G_HUMAN_D0</a></td>
+      <td>305</td>
+      <td>23813</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>221</td>
+      <td>2</td>
+      <td>2JAM_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>50</td>
+      <td>CAMK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>221</td>
+    </tr><tr><th>67</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/STK3_HUMAN_D0.html">STK3_HUMAN_D0</a></td>
+      <td>219</td>
+      <td>23818</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>239</td>
+      <td>10</td>
+      <td>4LG4_B</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>48</td>
+      <td>STE</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>239</td>
+    </tr><tr><th>68</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/KCC2B_HUMAN_D0.html">KCC2B_HUMAN_D0</a></td>
+      <td>249</td>
+      <td>23820</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>244</td>
+      <td>4</td>
+      <td>3BHH_D</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>37</td>
+      <td>CAMK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>244</td>
+    </tr><tr><th>69</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/CHK2_HUMAN_D0.html">CHK2_HUMAN_D0</a></td>
+      <td>24</td>
+      <td>23843</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>276</td>
+      <td>44</td>
+      <td>2CN5_A</td>
+      <td>other_extra_seq_Nterm</td>
+      <td>1</td>
+      <td>63</td>
+      <td>CAMK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>276</td>
+    </tr><tr><th>70</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/SRC_HUMAN_D0.html">SRC_HUMAN_D0</a></td>
+      <td>10</td>
+      <td>23934</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>282</td>
+      <td>97</td>
+      <td>4MXO_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>33</td>
+      <td>TK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>282</td>
+    </tr><tr><th>71</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/DYRK2_HUMAN_D0.html">DYRK2_HUMAN_D0</a></td>
+      <td>250</td>
+      <td>23690</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>287</td>
+      <td>3</td>
+      <td>4AZF_A</td>
+      <td>TEV_uncleaved_Nterm</td>
+      <td>2</td>
+      <td>104</td>
+      <td>CMGC</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>287</td>
+    </tr><tr><th>72</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/AAPK1_HUMAN_D0.html">AAPK1_HUMAN_D0</a></td>
+      <td>183</td>
+      <td>23871</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>297</td>
+      <td>1</td>
+      <td>4CFH_A</td>
+      <td>TEV_uncleaved_Nterm</td>
+      <td>2</td>
+      <td>241</td>
+      <td>CAMK</td>
+      <td>Rat</td>
+      <td>PDB</td>
+      <td>297</td>
+    </tr><tr><th>73</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/AAPK2_HUMAN_D0.html">AAPK2_HUMAN_D0</a></td>
+      <td>194</td>
+      <td>23671</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>299</td>
+      <td>5</td>
+      <td>2H6D_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>24</td>
+      <td>CAMK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>299</td>
+    </tr><tr><th>74</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/PAK4_HUMAN_D0.html">PAK4_HUMAN_D0</a></td>
+      <td>162</td>
+      <td>23713</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>339</td>
+      <td>24</td>
+      <td>2J0I_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>52</td>
+      <td>STE</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>339</td>
+    </tr><tr><th>75</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/PAK6_HUMAN_D0.html">PAK6_HUMAN_D0</a></td>
+      <td>282</td>
+      <td>23833</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>429</td>
+      <td>3</td>
+      <td>2C30_A</td>
+      <td>TEV_uncleaved_Nterm</td>
+      <td>2</td>
+      <td>70</td>
+      <td>STE</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>429</td>
+    </tr><tr><th>76</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/PLK2_HUMAN_D0.html">PLK2_HUMAN_D0</a></td>
+      <td>190</td>
+      <td>23691</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>432</td>
+      <td>5</td>
+      <td>4I5P_A</td>
+      <td>Histag_Nterm</td>
+      <td>2</td>
+      <td>56</td>
+      <td>--</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>432</td>
+    </tr><tr><th>77</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/PAK7_HUMAN_D0.html">PAK7_HUMAN_D0</a></td>
+      <td>236</td>
+      <td>23850</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>467</td>
+      <td>2</td>
+      <td>2F57_B</td>
+      <td>TEV_uncleaved_Nterm</td>
+      <td>2</td>
+      <td>66</td>
+      <td>STE</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>467</td>
+    </tr><tr><th>78</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/MARK3_HUMAN_D0.html">MARK3_HUMAN_D0</a></td>
+      <td>366</td>
+      <td>23716</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>477</td>
+      <td>4</td>
+      <td>2QNJ_A</td>
+      <td>other_extra_seq_Nterm</td>
+      <td>1</td>
+      <td>77</td>
+      <td>CAMK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>477</td>
+    </tr><tr><th>79</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/FGFR3_HUMAN_D0.html">FGFR3_HUMAN_D0</a></td>
+      <td>13</td>
+      <td>23933</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>516</td>
+      <td>1</td>
+      <td>4K33_A</td>
+      <td>Histag_Nterm</td>
+      <td>2</td>
+      <td>38</td>
+      <td>TK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>516</td>
+    </tr><tr><th>80</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/FGFR1_HUMAN_D0.html">FGFR1_HUMAN_D0</a></td>
+      <td>11</td>
+      <td>23922</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>530</td>
+      <td>28</td>
+      <td>3KY2_A</td>
+      <td>Histag_Nterm</td>
+      <td>2</td>
+      <td>30</td>
+      <td>TK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>530</td>
+    </tr><tr><th>81</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/FGFR2_HUMAN_D0.html">FGFR2_HUMAN_D0</a></td>
+      <td>17</td>
+      <td>23904</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>550</td>
+      <td>40</td>
+      <td>3RI1_B</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>26</td>
+      <td>TK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>550</td>
+    </tr><tr><th>82</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/FES_HUMAN_D0.html">FES_HUMAN_D0</a></td>
+      <td>119</td>
+      <td>23876</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>560</td>
+      <td>4</td>
+      <td>3CBL_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>116</td>
+      <td>TK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>560</td>
+    </tr><tr><th>83</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/TTK_HUMAN_D0.html">TTK_HUMAN_D0</a></td>
+      <td>158</td>
+      <td>23857</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>590</td>
+      <td>20</td>
+      <td>3H9F_A</td>
+      <td>TEV_uncleaved_Nterm</td>
+      <td>2</td>
+      <td>47</td>
+      <td>--</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>590</td>
+    </tr><tr><th>84</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/EPHB4_HUMAN_D0.html">EPHB4_HUMAN_D0</a></td>
+      <td>96</td>
+      <td>23896</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>702</td>
+      <td>2</td>
+      <td>3ZEW_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>21</td>
+      <td>TK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>702</td>
+    </tr><tr><th>85</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/EPHB1_HUMAN_D0.html">EPHB1_HUMAN_D0</a></td>
+      <td>182</td>
+      <td>23930</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>720</td>
+      <td>9</td>
+      <td>3ZFX_F</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>35</td>
+      <td>TK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>720</td>
+    </tr><tr><th>86</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/EPHA3_HUMAN_D0.html">EPHA3_HUMAN_D0</a></td>
+      <td>95</td>
+      <td>23911</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>721</td>
+      <td>21</td>
+      <td>4GK2_A</td>
+      <td>Histag_Nterm</td>
+      <td>2</td>
+      <td>100</td>
+      <td>TK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>721</td>
+    </tr><tr><th>87</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/MERTK_HUMAN_D0.html">MERTK_HUMAN_D0</a></td>
+      <td>98</td>
+      <td>23900</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>727</td>
+      <td>12</td>
+      <td>3BPR_B</td>
+      <td>Histag_Nterm</td>
+      <td>2</td>
+      <td>42</td>
+      <td>TK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>727</td>
+    </tr><tr><th>88</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/BMPR2_HUMAN_D0.html">BMPR2_HUMAN_D0</a></td>
+      <td>78</td>
+      <td>23669</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>736</td>
+      <td>2</td>
+      <td>3G2F_A</td>
+      <td>Histag_Cterm</td>
+      <td>2</td>
+      <td>35</td>
+      <td>TKL</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>736</td>
+    </tr><tr><th>89</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/FAK2_HUMAN_D0.html">FAK2_HUMAN_D0</a></td>
+      <td>76</td>
+      <td>23898</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>750</td>
+      <td>2</td>
+      <td>3CC6_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>23</td>
+      <td>TK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>750</td>
+    </tr><tr><th>90</th>
+      <td><a href="plasmid-construct-alignments/addgene_and_hip/VGFR1_HUMAN_D0.html">VGFR1_HUMAN_D0</a></td>
+      <td>19</td>
+      <td>23912</td>
+      <td>addgene</td>
+      <td>0</td>
+      <td>1006</td>
+      <td>1</td>
+      <td>3HNG_A</td>
+      <td>TEV_cleaved_Nterm</td>
+      <td>2</td>
+      <td>29</td>
+      <td>TK</td>
+      <td>Human</td>
+      <td>PDB</td>
+      <td>1006</td>
+    </tr></tbody>
+    </table>
+  </div>
+
+</body>
+</html>
