@@ -13,7 +13,7 @@ html_output_cols = ['targetID', 'DB_target_rank', 'plasmid_ID', 'plasmid_source'
 
 parser = etree.HTMLParser(remove_blank_text=True)
 
-df = pd.DataFrame.from_csv('../kinase-expression-constructs/selected-kinases-sgc_and_hip.csv')
+df = pd.DataFrame.from_csv('../kinase-expression-constructs/sgc_and_hip/selected-kinases-sgc_and_hip.csv')
 
 pd_html = df.to_html(columns=html_output_cols, index=True, na_rep='--')
 html = etree.parse(StringIO.StringIO(pd_html), parser).getroot()
@@ -47,7 +47,7 @@ for tr in tbody:
             targetID = targetID_td.text
             targetID_td.text = ''
             aelem = etree.SubElement(targetID_td, 'a')
-            aelem.set('href', 'plasmid-construct-alignments/' + targetID + '.html')
+            aelem.set('href', 'plasmid-construct-alignments/sgc_and_hip/' + targetID + '.html')
             aelem.text = targetID
             break
         elif 'SGC Oxford' in td.text:
@@ -55,7 +55,7 @@ for tr in tbody:
             targetID = targetID_td.text
             targetID_td.text = ''
             aelem = etree.SubElement(targetID_td, 'a')
-            aelem.set('href', 'plasmid-construct-alignments/' + targetID + '.html')
+            aelem.set('href', 'plasmid-construct-alignments/sgc_and_hip/' + targetID + '.html')
             aelem.text = targetID
             break
 
@@ -76,11 +76,11 @@ with open('kinase_constructs-sgc_and_hip.html', 'w') as html_file:
 # ========
 
 # copy CSS
-shutil.copy('stylesheets/seqlib.css', 'plasmid-construct-alignments/seqlib.css')
+shutil.copy('stylesheets/seqlib.css', 'plasmid-construct-alignments/sgc_and_hip/seqlib.css')
 
 targetIDs = list(df['targetID'])
 for targetID in targetIDs:
-    src_html_filepath = os.path.join('..', 'kinase-expression-constructs', 'alignments', targetID + '.html')
-    dest_html_filepath = os.path.join('plasmid-construct-alignments', targetID + '.html')
+    src_html_filepath = os.path.join('..', 'kinase-expression-constructs', 'sgc_and_hip', 'alignments', targetID + '.html')
+    dest_html_filepath = os.path.join('plasmid-construct-alignments', 'sgc_and_hip', targetID + '.html')
     shutil.copy(src_html_filepath, dest_html_filepath)
 
