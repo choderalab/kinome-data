@@ -21,12 +21,12 @@ DB_targets = DB_root.findall('entry/UniProt/domains/domain[@targetID]')
 
 # To be used to construct a pandas DataFrame
 output_data = {
-'targetID':[],
-'plasmidID':[],
+'matching_targetID':[],
+'cloneID':[],
 'DB_target_rank':[],
 'UniProt_family':[],
 'UniProt_seq_aln':[],
-'plasmid_seq_aln':[],
+'clone_seq_aln':[],
 'nconflicts_target_domain_region':[],
 'nextraneous_plasmid_residues':[],
 'len_seq_aln':[],
@@ -40,14 +40,14 @@ output_data = {
 # ===========
 
 for p in plasmid_df.index:
-    plasmidID = plasmid_df['plasmidID'][p]
+    cloneID = plasmid_df['cloneID'][p]
     UniProtAC = plasmid_df['UniProtAC'][p]
     UniProt_entry_name = plasmid_df['UniProt_entry_name'][p]
     insert_aa_seq = plasmid_df['insert_aa_seq'][p]
     if type(insert_aa_seq) != str or insert_aa_seq == 'None':  # e.g. type(insert_aa_seq) == nan
         continue
     insert_dna_seq = plasmid_df['insert_dna_seq'][p]
-    print UniProt_entry_name, plasmidID
+    print UniProt_entry_name, cloneID
 
     if UniProtAC == 'None':
         continue
@@ -69,7 +69,7 @@ for p in plasmid_df.index:
     aln = [aln[0][0], aln[0][1]]
 
 
-    # alnIDs = [targetID, plasmidID]
+    # alnIDs = [targetID, cloneID]
     # pre_aln_seqs = [domain_seq, insert_aa_seq]
     # if nan in pre_aln_seqs:
     #     continue
@@ -171,12 +171,12 @@ for p in plasmid_df.index:
     # append to data dict, to be used later to construct pandas DataFrame
     # ===========
 
-    output_data['targetID'].append(targetID)
-    output_data['plasmidID'].append(plasmidID)
+    output_data['matching_targetID'].append(targetID)
+    output_data['cloneID'].append(cloneID)
     output_data['DB_target_rank'].append(DB_target_rank)
     output_data['UniProt_family'].append(UniProt_family)
     output_data['UniProt_seq_aln'].append(aln[0])
-    output_data['plasmid_seq_aln'].append(aln[1])
+    output_data['clone_seq_aln'].append(aln[1])
     output_data['nconflicts_target_domain_region'].append(nconflicts)
     output_data['nextraneous_plasmid_residues'].append(nextraneous_plasmid_residues)
     output_data['len_seq_aln'].append(str(len(domain_seq)))
@@ -200,10 +200,10 @@ with open('aln.txt', 'w') as otxtfile:
     for key in output_data.keys():
         columnwidths[key] = max( [ len(str(x)) for x in output_data[key] ] )
 
-    IDcolumnwidth = max( [columnwidths['targetID'], columnwidths['plasmidID']] )
+    IDcolumnwidth = max( [columnwidths['matching_targetID'], columnwidths['cloneID']] )
 
     for i in range(len(output_data)):
-        otxtfile.write('%-*s' % (IDcolumnwidth, output_data['targetID'][i]))
+        otxtfile.write('%-*s' % (IDcolumnwidth, output_data['matching_targetID'][i]))
         otxtfile.write('  ')
         otxtfile.write('%*s' % (columnwidths['pctidentity'], '') )
         otxtfile.write('  ')
@@ -214,7 +214,7 @@ with open('aln.txt', 'w') as otxtfile:
         otxtfile.write('%s' % output_data['UniProt_seq_aln'][i])
         otxtfile.write('\n')
 
-        otxtfile.write('%-*s' % (IDcolumnwidth, output_data['plasmidID'][i]))
+        otxtfile.write('%-*s' % (IDcolumnwidth, output_data['cloneID'][i]))
         otxtfile.write('  ')
         otxtfile.write('%*s' % (columnwidths['pctidentity'], output_data['pctidentity'][i]) )
         otxtfile.write('  ')
@@ -222,11 +222,12 @@ with open('aln.txt', 'w') as otxtfile:
         otxtfile.write('/')
         otxtfile.write('%-*s' % (columnwidths['len_seq_aln'], output_data['len_seq_aln'][i]) )
         otxtfile.write('  ')
-        otxtfile.write('%s' % output_data['plasmid_seq_aln'][i])
+        otxtfile.write('%s' % output_data['clone_seq_aln'][i])
         otxtfile.write('\n\n')
 
 #with open('aln.html', 'w') as ohtmlfile:
 #    ohtmlfile.write( etree.tostring(output_html_tree, pretty_print=True) )
 
+output_data.set_index('cloneID', inplace=True)
 output_data.to_csv('aln.csv')
 
