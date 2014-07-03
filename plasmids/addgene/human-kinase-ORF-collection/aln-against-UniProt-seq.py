@@ -30,9 +30,10 @@ output_data = {
 'nconflicts_target_domain_region':[],
 'nextraneous_plasmid_residues':[],
 'len_seq_aln':[],
-'pctidentity':[],
+'pctidentity_target_domain_region':[],
 'construct_aa_seq':[],
 'construct_dna_seq':[],
+'construct_dna_orf_seq':[],
 }
 
 # ===========
@@ -43,11 +44,11 @@ for p in plasmid_df.index:
     cloneID = plasmid_df['cloneID'][p]
     UniProtAC = plasmid_df['UniProtAC'][p]
     UniProt_entry_name = plasmid_df['UniProt_entry_name'][p]
-    insert_aa_seq = plasmid_df['insert_aa_seq'][p]
-    if type(insert_aa_seq) != str or insert_aa_seq == 'None':  # e.g. type(insert_aa_seq) == nan
-        continue
     insert_dna_seq = plasmid_df['insert_dna_seq'][p]
     print UniProt_entry_name, cloneID
+    if type(insert_dna_seq) != str or insert_dna_seq == 'None':
+        print 'No DNA seq found - skipping.'
+        continue
 
     if UniProtAC == 'None':
         continue
@@ -58,6 +59,32 @@ for p in plasmid_df.index:
     UniProt_seq = ''.join(DB_UniProt_node.findtext('isoforms/canonical_isoform/sequence').strip().split('\n'))
 
     domains = DB_UniProt_node.findall('domains/domain[@targetID]')
+
+    # =====
+    # Find ORF and translate to aa sequence
+    # =====
+
+    orf_aa_seqs = [ Bio.Seq.translate(insert_dna_seq[i:], to_stop=True) for i in range(3) ]
+    orf_aa_seq_lens = [len(x) for x in orf_aa_seqs]
+
+    longest_orf_index = max(enumerate(orf_aa_seq_lens), key=lambda x: x[1])[0]
+
+    # only a few sequences have a longest_orf_index != 0, so we'll just assume 0 for now
+    if longest_orf_index != 0:
+        print '+   ' + '\n+   '.join(orf_aa_seqs)
+        print longest_orf_index
+
+    insert_aa_seq = orf_aa_seqs[0]
+    if len(insert_aa_seq) < 30:
+        print 'aa seq < 30 residues: %s' % insert_aa_seq
+        continue
+
+    orf_regex = '^ATG[A-Z]*(TAG|TAA|TGA)'
+    for i in range(0, len(insert_dna_seq), 3):
+        re_search = re.search(orf_regex, insert_dna_seq)
+        if re_search != None:
+            insert_dna_orf_seq = insert_dna_seq[re_search.start() : re_search.end()]
+            break
 
     # =====
     # Run alignment
@@ -180,12 +207,10 @@ for p in plasmid_df.index:
     output_data['nconflicts_target_domain_region'].append(nconflicts)
     output_data['nextraneous_plasmid_residues'].append(nextraneous_plasmid_residues)
     output_data['len_seq_aln'].append(str(len(domain_seq)))
-    output_data['pctidentity'].append('%.2f' % pctidentity)
+    output_data['pctidentity_target_domain_region'].append('%.2f' % pctidentity)
     output_data['construct_aa_seq'].append(insert_aa_seq)
     output_data['construct_dna_seq'].append(insert_dna_seq)
-
-
-    #break
+    output_data['construct_dna_orf_seq'].append(insert_dna_orf_seq)
 
 # construct pandas DataFrame and write to csv
 output_data = pd.DataFrame(output_data)
@@ -205,7 +230,7 @@ with open('aln.txt', 'w') as otxtfile:
     for i in range(len(output_data)):
         otxtfile.write('%-*s' % (IDcolumnwidth, output_data['matching_targetID'][i]))
         otxtfile.write('  ')
-        otxtfile.write('%*s' % (columnwidths['pctidentity'], '') )
+        otxtfile.write('%*s' % (columnwidths['pctidentity_target_domain_region'], '') )
         otxtfile.write('  ')
         otxtfile.write('%*s' % (columnwidths['nconflicts_target_domain_region'], '') )
         otxtfile.write(' ')
@@ -216,7 +241,7 @@ with open('aln.txt', 'w') as otxtfile:
 
         otxtfile.write('%-*s' % (IDcolumnwidth, output_data['cloneID'][i]))
         otxtfile.write('  ')
-        otxtfile.write('%*s' % (columnwidths['pctidentity'], output_data['pctidentity'][i]) )
+        otxtfile.write('%*s' % (columnwidths['pctidentity_target_domain_region'], output_data['pctidentity_target_domain_region'][i]) )
         otxtfile.write('  ')
         otxtfile.write('%*s' % (columnwidths['nconflicts_target_domain_region'], str(output_data['nconflicts_target_domain_region'][i])) )
         otxtfile.write('/')

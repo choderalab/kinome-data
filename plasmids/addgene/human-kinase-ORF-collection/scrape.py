@@ -63,7 +63,8 @@ print 'Information obtained for %s plasmids.' % len(plasmid_data_from_platepage[
 # =============
 
 # plasmid output data
-data_fields = ['plasmidID', 'plasmid_name', 'NCBI_GeneID', 'NCBI_Gene_name', 'UniProtAC', 'UniProt_entry_name', 'insert_dna_seq', 'insert_aa_seq']
+# data_fields = ['plasmidID', 'plasmid_name', 'NCBI_GeneID', 'NCBI_Gene_name', 'UniProtAC', 'UniProt_entry_name', 'insert_dna_seq', 'insert_aa_seq']
+data_fields = ['plasmidID', 'plasmid_name', 'NCBI_GeneID', 'NCBI_Gene_name', 'UniProtAC', 'UniProt_entry_name', 'insert_dna_seq']
 output_data = pd.DataFrame( [['None'] * len(data_fields)] * len(plasmid_data_from_platepage['plasmid_name']), columns=data_fields)
 
 print 'Scraping data from plasmid pages...'
@@ -125,9 +126,9 @@ for p in output_data.index:
         continue
 
     dna_seq = ''.join(dna_seq_text[1:]).replace(' ', '')
-    aa_seq = Bio.Seq.Seq(dna_seq, Bio.Alphabet.generic_dna).translate(to_stop=True)
+   #  aa_seq = Bio.Seq.Seq(dna_seq, Bio.Alphabet.generic_dna).translate(to_stop=True)
     output_data['insert_dna_seq'][p] = dna_seq
-    output_data['insert_aa_seq'][p] = aa_seq
+   #  output_data['insert_aa_seq'][p] = aa_seq
 
 
 
