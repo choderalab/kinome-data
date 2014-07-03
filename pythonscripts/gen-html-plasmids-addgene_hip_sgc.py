@@ -13,7 +13,7 @@ html_output_cols = ['targetID', 'DB_target_rank', 'plasmid_ID', 'plasmid_source'
 
 parser = etree.HTMLParser(remove_blank_text=True)
 
-df = pd.DataFrame.from_csv('../kinase-expression-constructs/addgene_hip_sgc/selected-kinases-addgene_hip_sgc.csv')
+df = pd.DataFrame.from_csv('../kinase-expression-constructs/addgene_hip_sgc/selected-kinases.csv')
 
 pd_html = df.to_html(columns=html_output_cols, index=True, na_rep='--')
 html = etree.parse(StringIO.StringIO(pd_html), parser).getroot()
@@ -37,7 +37,7 @@ for tr in tbody:
         element.text = element.text.strip()
 
 # ========
-# Add href links to alignments for HIP plasmids
+# Add href links to alignments
 # ========
 
 for tr in tbody:
@@ -51,6 +51,14 @@ for tr in tbody:
             aelem.text = targetID
             break
         elif 'addgene' in td.text:
+            targetID_td = tr.find('td[1]')
+            targetID = targetID_td.text
+            targetID_td.text = ''
+            aelem = etree.SubElement(targetID_td, 'a')
+            aelem.set('href', 'plasmid-construct-alignments/addgene_hip_sgc/' + targetID + '.html')
+            aelem.text = targetID
+            break
+        elif 'SGC' in td.text:
             targetID_td = tr.find('td[1]')
             targetID = targetID_td.text
             targetID_td.text = ''
