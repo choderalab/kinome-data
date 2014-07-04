@@ -219,13 +219,21 @@ for target in pdbconstructs_xml:
             # top_plasmids = pd.concat((matching_sgc_plasmids.head(1), matching_hip_plasmids.head(1), matching_addgene_plasmids.head(1)))
             # top_plasmids.sort(('nconflicts'), inplace=True)
 
-            top_plasmid = matching_plasmids.head(1)
+           #  top_plasmid = matching_plasmids.head(1)
+
             # if top_addgene_plasmid_nconflicts < top_hip_plasmid_nconflicts and top_addgene_plasmid_nconflicts < top_sgc_plasmid_nconflicts:
             #     top_plasmid = matching_addgene_plasmids.head(1)
-            # elif top_hip_plasmid_nconflicts < top_addgene_plasmid_nconflicts:
-            #     top_plasmid = matching_hip_plasmids.head(1)
-            # else:
+            # elif top_sgc_plasmid_nconflicts < top_addgene_plasmid_nconflicts:
             #     top_plasmid = matching_sgc_plasmids.head(1)
+            # else:
+            #     top_plasmid = matching_hip_plasmids.head(1)
+
+            if top_sgc_plasmid_nconflicts < top_hip_plasmid_nconflicts and top_sgc_plasmid_nconflicts < top_addgene_plasmid_nconflicts:
+                top_plasmid = matching_sgc_plasmids.head(1)
+            elif top_hip_plasmid_nconflicts < top_addgene_plasmid_nconflicts:
+                top_plasmid = matching_hip_plasmids.head(1)
+            else:
+                top_plasmid = matching_addgene_plasmids.head(1)
 
     else:
         continue

@@ -45,9 +45,9 @@ for p in plasmid_df.index:
     UniProtAC = plasmid_df['UniProtAC'][p]
     UniProt_entry_name = plasmid_df['UniProt_entry_name'][p]
     insert_dna_seq = plasmid_df['insert_dna_seq'][p]
-    print UniProt_entry_name, cloneID
+   #  print UniProt_entry_name, cloneID
     if type(insert_dna_seq) != str or insert_dna_seq == 'None':
-        print 'No DNA seq found - skipping.'
+       #  print 'No DNA seq found - skipping.'
         continue
 
     if UniProtAC == 'None':
@@ -64,27 +64,65 @@ for p in plasmid_df.index:
     # Find ORF and translate to aa sequence
     # =====
 
-    orf_aa_seqs = [ Bio.Seq.translate(insert_dna_seq[i:], to_stop=True) for i in range(3) ]
-    orf_aa_seq_lens = [len(x) for x in orf_aa_seqs]
+    dna_seq_frames = [insert_dna_seq[i:] for i in range(3)]
+    orf_dna_seqs = [''] * 3
+    for frame in range(3):
+        in_frame = False
+        for i in range(0, len(dna_seq_frames[frame]), 3):
+            codon = dna_seq_frames[frame][i:i+3]
+            if codon == 'ATG':
+                in_frame = True
+            elif codon in ['TAG', 'TAA', 'TGA']:
+                in_frame = False
+            if in_frame:
+                orf_dna_seqs[frame] += codon
 
-    longest_orf_index = max(enumerate(orf_aa_seq_lens), key=lambda x: x[1])[0]
+    orf_dna_seq_lens = [len(x) for x in orf_dna_seqs]
 
-    # only a few sequences have a longest_orf_index != 0, so we'll just assume 0 for now
-    if longest_orf_index != 0:
-        print '+   ' + '\n+   '.join(orf_aa_seqs)
-        print longest_orf_index
+    orf_aa_seqs = [ Bio.Seq.translate(orf_dna_seqs[i], to_stop=True) for i in range(3) ]
 
-    insert_aa_seq = orf_aa_seqs[0]
+    longest_orf_index = max(enumerate(orf_dna_seq_lens), key=lambda x: x[1])[0]
+
+    # set the selected sequence as the longest aa seq derived from the three DNA seq frames
+    insert_dna_orf_seq = orf_dna_seqs[longest_orf_index]
+    insert_aa_seq = orf_aa_seqs[longest_orf_index]
+
+    # ignore if the translated aa sequence is particularly short
     if len(insert_aa_seq) < 30:
-        print 'aa seq < 30 residues: %s' % insert_aa_seq
+        # print 'aa seq < 30 residues: %s' % insert_aa_seq
         continue
 
-    orf_regex = '^ATG[A-Z]*(TAG|TAA|TGA)'
-    for i in range(0, len(insert_dna_seq), 3):
-        re_search = re.search(orf_regex, insert_dna_seq)
-        if re_search != None:
-            insert_dna_orf_seq = insert_dna_seq[re_search.start() : re_search.end()]
+    # skip if DNA sequence contains non-standard letters
+    non_standard_dna_letter = False
+    for nucleotide in set(insert_dna_orf_seq):
+        if nucleotide not in ['A', 'C', 'T', 'G']:
+            non_standard_dna_letter = True
             break
+    if non_standard_dna_letter:
+        continue
+
+    # orf_regex = '^ATG[A-Z]*(TAG|TAA|TGA)'
+    # for i in range(0, len(insert_dna_orf_seq), 3):
+    #     codon = insert_dna_orf_seq[i:i+3]
+    #     if codon in ['TAG', 'TAA', 'TGA']:
+    #         insert_dna_orf_seq = insert_dna_orf_seq[:i]
+    #         break
+        # re_search = re.search(orf_regex, insert_dna_seq)
+        # if re_search != None:
+        #     insert_dna_orf_seq = insert_dna_seq[re_search.start() : re_search.end()]
+        #     break
+
+    # print len(insert_dna_seq), len(insert_dna_orf_seq)
+    if abs(len(insert_dna_seq) - len(insert_dna_orf_seq)) not in [0,3]:
+        print UniProt_entry_name, cloneID
+        print longest_orf_index
+        print '+   ' + '\n+   '.join(orf_aa_seqs)
+        print len(insert_dna_seq), len(insert_dna_orf_seq)
+        print insert_dna_seq
+        print ' ' * len(insert_dna_orf_seq) + '^'
+        print insert_dna_orf_seq
+
+    print ''
 
     # =====
     # Run alignment
@@ -92,7 +130,11 @@ for p in plasmid_df.index:
     matrix = Bio.SubsMat.MatrixInfo.gonnet
     gap_open = -10
     gap_extend = -0.5
-    aln = Bio.pairwise2.align.globalds(UniProt_seq, insert_aa_seq, matrix, gap_open, gap_extend)
+    try:
+        aln = Bio.pairwise2.align.globalds(UniProt_seq, insert_aa_seq, matrix, gap_open, gap_extend)
+    except:
+        print insert_aa_seq
+        import ipdb; ipdb.set_trace()
     aln = [aln[0][0], aln[0][1]]
 
 
