@@ -1,0 +1,9 @@
+.list-group {
+  padding-left: 2em;
+}
+
+.list-group-nopadding {
+  padding-left: 2em;
+  margin-bottom: 0px;
+}
+
