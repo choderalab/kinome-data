@@ -1,4 +1,4 @@
-import sys, os, copy
+import sys, os, copy, yaml
 from lxml import etree
 import pandas as pd
 import numpy as np
@@ -6,6 +6,9 @@ import numpy as np
 ofilename = 'selected-kinases'
 
 output_columns=['targetID', 'DB_target_rank', 'plasmid_source', 'plasmid_ID', 'plasmid_nconflicts', 'plasmid_nextraneous_residues', 'nPDBs', 'top_pdb_ID', 'top_pdb_expr_tag', 'top_pdb_auth_score', 'top_pdb_nextraneous_residues', 'family', 'top_pdb_taxname', 'selected_construct_source', 'selected_construct_nextraneous_residues']
+
+with open('manual_overrides-select-kinase-constructs.yaml', 'r') as manual_overrides_file:
+    manual_overrides = yaml.load(manual_overrides_file)
 
 # ========
 # defs
@@ -55,7 +58,7 @@ selected_sgc_plasmids.reset_index(inplace=True) # add numerical index and move '
 print 'Number of sgc plasmids with < 70 conflicts in the target domain region and more than 50% seq identity:', len(selected_sgc_plasmids)
 # sys.exit()
 
-all_plasmids = pd.concat((selected_addgene_plasmids, hip_plasmids, selected_sgc_plasmids))
+all_plasmids = pd.concat([selected_addgene_plasmids, hip_plasmids, selected_sgc_plasmids])
 all_plasmids.reset_index(inplace=True)
 
 plasmid_source = ['SGC Oxford'] * len(selected_sgc_plasmids)
@@ -78,6 +81,8 @@ targets_results = {
 'DB_target_rank':[],
 'plasmid_source':[],
 'plasmid_ID':[],
+'plateID':[],
+'well_pos':[],
 'plasmid_nconflicts':[],
 'plasmid_nextraneous_residues':[],
 'plasmid_aa_seq':[],
@@ -108,16 +113,19 @@ for target in pdbconstructs_xml:
     target_uniprot_ac = target.get('UniProtAC')
     target_uniprot_seq = target.find('seq').text
 
+    # if targetID not in ['MK01_HUMAN_D0']:
+    #     continue
+
     # get plasmid data
     matching_plasmids = all_plasmids[ all_plasmids['matching_targetID'] == targetID ]
     matching_addgene_plasmids = matching_plasmids[ matching_plasmids['plasmid_source'] == 'addgene' ]
     matching_hip_plasmids = matching_plasmids[ matching_plasmids['plasmid_source'] == 'HIP pJP1520' ]
     matching_sgc_plasmids = selected_sgc_plasmids[ selected_sgc_plasmids['matching_targetID'] == targetID ]
 
-    matching_plasmids.sort(('nconflicts_target_domain_region', 'nextraneous_plasmid_residues'), inplace=True)
-    matching_addgene_plasmids.sort(('nconflicts_target_domain_region', 'nextraneous_plasmid_residues'), inplace=True)
-    matching_hip_plasmids.sort(('nconflicts_target_domain_region', 'nextraneous_plasmid_residues',), inplace=True)
-    matching_sgc_plasmids.sort(('nconflicts_target_domain_region', 'nextraneous_plasmid_residues'), inplace=True)
+    matching_plasmids.sort(['nconflicts_target_domain_region', 'nextraneous_plasmid_residues'], inplace=True)
+    matching_addgene_plasmids.sort(['nconflicts_target_domain_region', 'nextraneous_plasmid_residues'], inplace=True)
+    matching_hip_plasmids.sort(['nconflicts_target_domain_region', 'nextraneous_plasmid_residues',], inplace=True)
+    matching_sgc_plasmids.sort(['nconflicts_target_domain_region', 'nextraneous_plasmid_residues'], inplace=True)
 
     # get pdbconstruct data - this is already sorted
     pdbconstructs = target.findall('PDB_construct')
@@ -145,10 +153,18 @@ for target in pdbconstructs_xml:
     top_sgc_plasmid_dna_orf_seq = matching_sgc_plasmids['construct_dna_orf_seq'].values[0] if len(matching_sgc_plasmids) > 0 else None
     top_sgc_plasmid_dna_seq = matching_sgc_plasmids['construct_dna_seq'].values[0] if len(matching_sgc_plasmids) > 0 else None
 
-    # if targetID == 'RN5A_HUMAN_D0':
+    # if targetID == 'KC1G3_HUMAN_D0':
     #     import ipdb; ipdb.set_trace()
 
-    if len(matching_plasmids) == 0:
+    # = Construct and plasmid selections =
+
+    # First check for manual overrides
+    if targetID in manual_overrides:
+        target_overrides = manual_overrides[targetID]
+        selected_construct_source = target_overrides['selected_construct_source']
+        top_plasmid = matching_plasmids[ matching_plasmids['cloneID'] == target_overrides['plasmid_ID'] ]
+
+    elif len(matching_plasmids) == 0:
         continue   # skip if no plasmids
 
     elif (len(pdbconstructs) == 0 and top_pdb_auth_score <= 0) and len(matching_sgc_plasmids) == 0:
@@ -216,17 +232,6 @@ for target in pdbconstructs_xml:
             top_plasmid = matching_sgc_plasmids.head(1)
         else:
             selected_construct_source = 'PDB'
-            # top_plasmids = pd.concat((matching_sgc_plasmids.head(1), matching_hip_plasmids.head(1), matching_addgene_plasmids.head(1)))
-            # top_plasmids.sort(('nconflicts'), inplace=True)
-
-           #  top_plasmid = matching_plasmids.head(1)
-
-            # if top_addgene_plasmid_nconflicts < top_hip_plasmid_nconflicts and top_addgene_plasmid_nconflicts < top_sgc_plasmid_nconflicts:
-            #     top_plasmid = matching_addgene_plasmids.head(1)
-            # elif top_sgc_plasmid_nconflicts < top_addgene_plasmid_nconflicts:
-            #     top_plasmid = matching_sgc_plasmids.head(1)
-            # else:
-            #     top_plasmid = matching_hip_plasmids.head(1)
 
             if top_sgc_plasmid_nconflicts < top_hip_plasmid_nconflicts and top_sgc_plasmid_nconflicts < top_addgene_plasmid_nconflicts:
                 top_plasmid = matching_sgc_plasmids.head(1)
@@ -234,6 +239,8 @@ for target in pdbconstructs_xml:
                 top_plasmid = matching_hip_plasmids.head(1)
             else:
                 top_plasmid = matching_addgene_plasmids.head(1)
+
+        # if targetID == 'KCC1G_HUMAN_D0': import ipdb; ipdb.set_trace()
 
     else:
         continue
@@ -252,6 +259,8 @@ for target in pdbconstructs_xml:
     targets_results['selected_construct_source'].append(selected_construct_source)
     targets_results['plasmid_source'].append(top_plasmid['plasmid_source'].values[0])
     targets_results['plasmid_ID'].append(top_plasmid['cloneID'].values[0])
+    targets_results['plateID'].append(top_plasmid['plateID'].values[0])
+    targets_results['well_pos'].append(top_plasmid['well_pos'].values[0])
     targets_results['plasmid_nconflicts'].append(top_plasmid['nconflicts_target_domain_region'].values[0])
     targets_results['plasmid_nextraneous_residues'].append(top_plasmid['nextraneous_plasmid_residues'].values[0])
     targets_results['family'].append(top_plasmid['UniProt_family'].values[0])
@@ -320,7 +329,7 @@ print '%d/%d targets have nPDBs > 0 and top_pdb_auth_score > 0' % (len( targets_
 
 # selected_targets = targets_results[ elem_any_true( [ targets_results['plasmid_source'] == 'SGC Oxford', targets_results['top_pdb_auth_score'] > 0 ] ) ]
 selected_targets = targets_results[ [True] * len(targets_results) ]
-selected_targets.sort(('plasmid_source', 'selected_construct_nextraneous_residues'), inplace=True)
+selected_targets.sort(['plasmid_source', 'selected_construct_nextraneous_residues'], inplace=True)
 
 # sort targets by 'DB_target_rank'
 # selected_targets.sort('DB_target_rank', inplace=True)

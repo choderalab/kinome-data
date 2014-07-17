@@ -1,4 +1,4 @@
-import sys, os, re
+import sys, os, re, yaml
 from openpyxl import Workbook
 import pandas as pd
 import TargetExplorer
@@ -6,15 +6,18 @@ import Bio.Seq
 
 # input params
 
-input_filepath = 'selected-kinases-sgc_and_hip.csv'
-output_xl_filepath = 'selected-kinases-sgc_and_hip.xlsx'
-output_aln_filepath = 'selected-kinases-sgc_and_hip.fa'
+input_filepath = 'selected-kinases.csv'
+output_xl_filepath = 'selected-kinases.xlsx'
+output_aln_filepath = 'selected-kinases.fa'
 
 wb = Workbook()
 ws = wb.get_active_sheet()
-ws.title = 'SGC and HIP kinase constructs'
+ws.title = 'kinase constructs'
 
 df = pd.read_csv(input_filepath)
+
+with open('manual_overrides-mk_spreadsheet.yaml', 'r') as manual_overrides_file:
+    manual_overrides = yaml.load(manual_overrides_file)
 
 print '%d kinase constructs found' % len(df)
 
@@ -85,13 +88,15 @@ def find_construct_seq_start(construct_seq, include_nterm_m=False):
 ws.cell(row=0, column=0).value = 'target ID'
 ws.cell(row=0, column=1).value = 'plasmid source'
 ws.cell(row=0, column=2).value = 'plasmid ID'
-ws.cell(row=0, column=3).value = 'aa start'
-ws.cell(row=0, column=4).value = 'aa end'
-ws.cell(row=0, column=5).value = 'dna start'
-ws.cell(row=0, column=6).value = 'dna end'
-ws.cell(row=0, column=7).value = 'construct aa seq'
-ws.cell(row=0, column=8).value = 'construct dna seq'
-ws.cell(row=0, column=9).value = 'original plasmid insert dna seq'
+ws.cell(row=0, column=3).value = 'plateID'
+ws.cell(row=0, column=4).value = 'well_pos'
+ws.cell(row=0, column=5).value = 'aa start'
+ws.cell(row=0, column=6).value = 'aa end'
+ws.cell(row=0, column=7).value = 'dna start'
+ws.cell(row=0, column=8).value = 'dna end'
+ws.cell(row=0, column=9).value = 'construct aa seq'
+ws.cell(row=0, column=10).value = 'construct dna seq'
+ws.cell(row=0, column=11).value = 'original plasmid insert dna seq'
 
 with open(output_aln_filepath, 'w') as otxt_file:
 
@@ -100,11 +105,31 @@ with open(output_aln_filepath, 'w') as otxt_file:
         print targetID
         plasmid_source = df['plasmid_source'][n]
         plasmid_ID = df['plasmid_ID'][n]
+        plateID = df['plateID'][n] if type(df['plateID'][n]) == str else ''
+        well_pos = df['well_pos'][n] if type(df['well_pos'][n]) == str else ''
         construct_source = df['selected_construct_source'][n]
 
-        # MSA of UniProt, top plasmid and top PDB seqs
+        # Modify with manual overrides
+        if targetID in manual_overrides:
+            for key, value in manual_overrides[targetID].iteritems():
+                if key in ['plasmid_source', 'plasmid_ID', 'construct_source', 'plateID', 'well_pos']:
+                    print 'Manual override: Setting %s to %s' % (key, value)
+                    vars()[key] = value
+
         target_uniprot_seq = df['target_UniProt_seq'][n]
         plasmid_aa_seq = df['plasmid_aa_seq'][n].upper()
+        plasmid_dna_orf_seq = df['plasmid_dna_orf_seq'][n].upper()
+        plasmid_dna_seq = df['plasmid_dna_seq'][n].upper()
+        pdb_aa_seq = df['top_pdb_aa_seq'][n]
+
+        # Modify with manual overrides
+        if targetID in manual_overrides:
+            for key, value in manual_overrides[targetID].iteritems():
+                if key in ['plasmid_dna_orf_seq', 'plasmid_dna_seq', 'plasmid_aa_seq']:
+                    print 'Manual override: Setting %s to %s' % (key, value)
+                    vars()[key] = value
+
+        # Make sure aa seq is string
         try:
             assert type(plasmid_aa_seq) == str
         except:
@@ -112,9 +137,6 @@ with open(output_aln_filepath, 'w') as otxt_file:
             print type(plasmid_aa_seq)
             print df[ df['targetID'] == targetID ]
             raise
-        plasmid_dna_orf_seq = df['plasmid_dna_orf_seq'][n].upper()
-        plasmid_dna_seq = df['plasmid_dna_seq'][n].upper()
-        pdb_aa_seq = df['top_pdb_aa_seq'][n]
 
         # Align UniProt and plasmid sequences
         aln_ids = ['UniProt', 'plasmid']
@@ -167,25 +189,29 @@ with open(output_aln_filepath, 'w') as otxt_file:
 
         if len(plasmid_aa_seq) * 3 != len(plasmid_dna_orf_seq):
             print 'WARNING for %s. len(aa) (%d) != len(dna)*3 (%d)' % (targetID, len(plasmid_aa_seq)*3, len(plasmid_dna_orf_seq))
-            # TODO check for other DNA sequences w additional nucleotides
-            if plasmid_ID in ['BMPR2A-c019']:
+            if plasmid_ID in ['BMPR2A-c018', 'HsCD00038083']:
+                # Just need to remove one nucleotide from the end of these plasmid ORFs
+                plasmid_dna_orf_seq = plasmid_dna_orf_seq[:-1]
                 print 'Ok. Checked manually - continuing...'
             else:
+                print plasmid_ID
+                print Bio.Seq.Seq(plasmid_dna_orf_seq, Bio.Alphabet.generic_dna).translate()
                 print plasmid_aa_seq
                 print plasmid_dna_orf_seq
-                print Bio.Seq.Seq(plasmid_dna_orf_seq, Bio.Alphabet.generic_dna).translate()
                 raise Exception
 
         ws.cell(row=n+1, column=0).value = targetID
         ws.cell(row=n+1, column=1).value = plasmid_source
         ws.cell(row=n+1, column=2).value = plasmid_ID
-        ws.cell(row=n+1, column=3).value = construct_start_plasmid_aa_coords + 1
-        ws.cell(row=n+1, column=4).value = construct_end_plasmid_aa_coords + 1
-        ws.cell(row=n+1, column=5).value = construct_start_plasmid_dna_coords + 1
-        ws.cell(row=n+1, column=6).value = construct_end_plasmid_dna_coords + 1
-        ws.cell(row=n+1, column=7).value = construct_plasmid_aa_seq
-        ws.cell(row=n+1, column=8).value = construct_plasmid_dna_seq
-        ws.cell(row=n+1, column=9).value = plasmid_dna_seq   # not just the ORF - this sequence will sometimes include stop codons and downstream sequence
+        ws.cell(row=n+1, column=3).value = plateID
+        ws.cell(row=n+1, column=4).value = well_pos
+        ws.cell(row=n+1, column=5).value = construct_start_plasmid_aa_coords + 1
+        ws.cell(row=n+1, column=6).value = construct_end_plasmid_aa_coords + 1
+        ws.cell(row=n+1, column=7).value = construct_start_plasmid_dna_coords + 1
+        ws.cell(row=n+1, column=8).value = construct_end_plasmid_dna_coords + 1
+        ws.cell(row=n+1, column=9).value = construct_plasmid_aa_seq
+        ws.cell(row=n+1, column=10).value = construct_plasmid_dna_seq
+        ws.cell(row=n+1, column=11).value = plasmid_dna_seq   # not just the ORF - this sequence will sometimes include stop codons and downstream sequence
 
         result_string = '>%s  %s  %s  %s\n' % (targetID, construct_source, plasmid_source, plasmid_ID)
         if construct_source == 'PDB':

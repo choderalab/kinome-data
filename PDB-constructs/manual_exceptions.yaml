@@ -265,3 +265,10 @@ PHKG1_HUMAN_D0:
             comment: >
                 Authors seem to have entered only the observed residues in the SEQRES records.
 
+DAPK1_HUMAN_D0:
+    1IG1:
+        authenticity_score:
+            behavior: upweight
+            comment: >
+                Sequence and E coli expression confirmed. Strep-tag at the C-term. Sequence is more appropriate than 4B4L, which would normally be the top-ranked PDB construct.
+

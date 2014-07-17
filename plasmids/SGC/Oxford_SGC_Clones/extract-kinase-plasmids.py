@@ -51,6 +51,8 @@ plasmid_df = {
 'Expression tag':[],
 'Vector comments':[],
 'Mutations/sequence comments':[],
+'plateID':[],
+'well_pos':[],
 }
 
 # ========
@@ -127,6 +129,8 @@ for row in range(2, nrows-1):
     plasmid_df['Antibiotic resistance'].append( ws.cell('O%d' % row).value )
     plasmid_df['Vector comments'].append( ws.cell('R%d' % row).value )
     plasmid_df['Mutations/sequence comments'].append( ws.cell('S%d' % row).value )
+    plasmid_df['plateID'].append( ws.cell('A%d' % row).value )
+    plasmid_df['well_pos'].append( ws.cell('B%d' % row).value )
     assert not (n_tag != None and c_tag != None)
     if n_tag != None:
         plasmid_df['Expression tag'].append( 'N-term %s' % n_tag )

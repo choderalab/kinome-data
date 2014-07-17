@@ -9,12 +9,22 @@ import TargetExplorer
 # ========
 
 # get plasmid data
-plasmid_filepaths = ['../../plasmids/addgene/human-kinase-ORF-collection/aln.csv', '../../plasmids/DFHCC-PlasmID/HIP-human_kinase_collection-pJP1520/aln.csv', '../../plasmids/SGC/Oxford_SGC_Clones/aln.csv']
 
-plasmid_data = pd.DataFrame.from_csv(plasmid_filepaths[0])
-for p in range(1, len(plasmid_filepaths)):
-    df = pd.DataFrame.from_csv(plasmid_filepaths[p])
-    plasmid_data = pd.concat([plasmid_data, df])
+# plasmid_filepaths = ['../../plasmids/addgene/human-kinase-ORF-collection/aln.csv', '../../plasmids/DFHCC-PlasmID/HIP-human_kinase_collection-pJP1520/aln.csv', '../../plasmids/SGC/Oxford_SGC_Clones/aln.csv']
+# plasmid_data = pd.DataFrame.from_csv(plasmid_filepaths[0])
+# for p in range(1, len(plasmid_filepaths)):
+#     df = pd.DataFrame.from_csv(plasmid_filepaths[p])
+#     plasmid_data = pd.concat([plasmid_data, df])
+
+addgene_plasmid_data = pd.DataFrame.from_csv('../../plasmids/addgene/human-kinase-ORF-collection/aln.csv')
+hip_plasmid_data = pd.DataFrame.from_csv('../../plasmids/DFHCC-PlasmID/HIP-human_kinase_collection-pJP1520/aln.csv')
+sgc_plasmid_data = pd.DataFrame.from_csv('../../plasmids/SGC/Oxford_SGC_Clones/aln.csv')
+plasmid_data = pd.concat([addgene_plasmid_data, hip_plasmid_data, sgc_plasmid_data])
+
+plasmid_source = ['addgene'] * len(addgene_plasmid_data) + ['HIP pJP1520'] * len(hip_plasmid_data) + ['SGC Oxford'] * len(sgc_plasmid_data)
+plasmid_source_abbrv = ['addgene'] * len(addgene_plasmid_data) + ['HIP'] * len(hip_plasmid_data) + ['SGC'] * len(sgc_plasmid_data)
+plasmid_data['plasmid_source'] = pd.Series(plasmid_source, index=plasmid_data.index)
+plasmid_data['plasmid_source_abbrv'] = pd.Series(plasmid_source_abbrv, index=plasmid_data.index)
 
 # get PDB construct data
 pdbconstruct_data = etree.parse('../../PDB-constructs/PDB_constructs-data.xml').getroot()
@@ -102,16 +112,15 @@ def process_target(t):
     print 'Working on target:', targetID
 
     plasmids = plasmid_data[ plasmid_data['matching_targetID'] == targetID ]
-   #  print plasmids['ID']
-   #  print [p for p in plasmids['matching_targetID'].values if p[0] != 'H']
 
     if len(plasmids) == 0:
         return None
 
     # sort plasmids
-    plasmids.sort(('nconflicts_target_domain_region', 'nextraneous_plasmid_residues'), inplace=True)
+    plasmids.sort(['nconflicts_target_domain_region', 'nextraneous_plasmid_residues'], inplace=True)
 
-    cloneIDs = list(plasmids.index)
+    # cloneIDs = list(plasmids.index)
+    cloneIDs = [plasmids['plasmid_source_abbrv'][p_index] + '/' + str(p_index) for p_index in list(plasmids.index)]   # index is cloneID; output e.g. "HIP/HsCD00038281"
     plasmid_seqs = list(plasmids['construct_aa_seq'])
 
     pdbconstructs = target.findall('PDB_construct')
@@ -153,7 +162,6 @@ def process_target(t):
     # generate additional data fields to be added to the alignment html
     additional_data = [ {targetID: None} for i in range(4) ]
     for i in range(len(cloneIDs)):
-        print plasmids['nconflicts_target_domain_region']
         additional_data[0][cloneIDs[i]] = str(int(plasmids['nconflicts_target_domain_region'].values[i]))
         additional_data[1][cloneIDs[i]] = str(int(plasmids['nextraneous_plasmid_residues'].values[i]))
         additional_data[2][cloneIDs[i]] = None

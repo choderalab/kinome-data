@@ -1,12 +1,12 @@
            targetID  nmatching_PDB_structures top_PDB_chain_ID   top_cnstrct_expr_tag  top_cnstrct_auth_score        top_cnstrct_expr_sys top_cnstrct_taxname DB_target_rank DB_target_score
-0     MK14_HUMAN_D0                       213           2Y8O_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human             14            60.9
-1     CDK2_HUMAN_D0                       164           4EOO_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human             26            53.3
-2    KAPCA_HUMAN_D0                       143           4IAC_A           Nterm_Histag                       2            ESCHERICHIA COLI               Mouse             63            43.3
-3     PIM1_HUMAN_D0                        85           2O65_A           Cterm_Histag                       2            ESCHERICHIA COLI               Human             77            41.3
-4    AURKA_HUMAN_D0                        68           2NP8_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human             43            47.8
-5     MK01_HUMAN_D0                        52           4FMQ_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human             16            58.4
-6      SRC_HUMAN_D0                        48           4MXO_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human             10            64.8
-7    DAPK1_HUMAN_D0                        31           4B4L_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human            180            32.8
+0    DAPK1_HUMAN_D0                        31           1IG1_A                   None                      10            ESCHERICHIA COLI               Human            180            32.8
+1     MK14_HUMAN_D0                       213           2Y8O_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human             14            60.9
+2     CDK2_HUMAN_D0                       164           4EOO_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human             26            53.3
+3    KAPCA_HUMAN_D0                       143           4IAC_A           Nterm_Histag                       2            ESCHERICHIA COLI               Mouse             63            43.3
+4     PIM1_HUMAN_D0                        85           2O65_A           Cterm_Histag                       2            ESCHERICHIA COLI               Human             77            41.3
+5    AURKA_HUMAN_D0                        68           2NP8_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human             43            47.8
+6     MK01_HUMAN_D0                        52           4FMQ_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human             16            58.4
+7      SRC_HUMAN_D0                        48           4MXO_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human             10            64.8
 8     MK08_HUMAN_D0                        26           1UKH_A           Cterm_Histag                       2            ESCHERICHIA COLI               Human             36            50.4
 9    EPHA3_HUMAN_D0                        21           4GK2_A           Nterm_Histag                       2            ESCHERICHIA COLI               Human             95            38.9
 10   MAPK2_HUMAN_D0                        21           2JBO_A      Nterm_TEV_cleaved                       2            ESCHERICHIA COLI               Human             75            41.7

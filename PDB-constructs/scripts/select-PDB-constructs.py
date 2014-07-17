@@ -320,6 +320,14 @@ def process_target(t):
             constructs_data[ID]['authenticity_score'] = authenticity_scores[i]
             continue
 
+        elif manual_exception_behavior == 'upweight':
+            authenticity_scores[i] = 10
+            expr_tag_strings[ID] = 'manually selected'
+            constructs_data[ID]['tag_type'] = None
+            constructs_data[ID]['tag_loc'] = None
+            constructs_data[ID]['authenticity_score'] = authenticity_scores[i]
+            continue
+
         # now use regexes to check for the presence of expression tags, and use this information to set the authenticity_scores
         elif re.match(TEV_cleaved_Nterm_regex, seq) or override_tag_type == 'TEV_cleaved_Nterm':
             authenticity_scores[i] = 2

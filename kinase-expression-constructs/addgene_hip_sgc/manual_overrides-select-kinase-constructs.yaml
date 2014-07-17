@@ -1,0 +1,20 @@
+MK01_HUMAN_D0:
+    # Changing selected plasmid from 23498 to HsCD00038281
+    plasmid_ID: HsCD00038281
+    selected_construct_source: 'PDB'
+
+MAPK2_HUMAN_D0:
+    # Changing selected plasmid from HsCD00037983 to 23426
+    plasmid_ID: 23426
+    selected_construct_source: 'PDB'
+
+MK11_HUMAN_D0:
+    # Changing selected plasmid from HsCD00038095 to MAPK11A-c007
+    plasmid_ID: MAPK11A-c007
+    selected_construct_source: 'SGC'
+
+NEK2_HUMAN_D0:
+    # Changing selected plasmid from NEK2A-c112 to HsCD00038233 (less conflicts)
+    plasmid_ID: HsCD00038233
+    selected_construct_source: 'PDB'
+    
