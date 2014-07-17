@@ -23,6 +23,8 @@ DB_targets = DB_root.findall('entry/UniProt/domains/domain[@targetID]')
 output_data = {
 'matching_targetID':[],
 'cloneID':[],
+'plateID':[],
+'well_pos':[],
 'DB_target_rank':[],
 'UniProt_family':[],
 'UniProt_seq_aln':[],
@@ -45,6 +47,8 @@ for p in plasmid_df.index:
     UniProtAC = plasmid_df['UniProtAC'][p]
     UniProt_entry_name = plasmid_df['UniProt_entry_name'][p]
     insert_dna_seq = plasmid_df['insert_dna_seq'][p]
+    plateID = plasmid_df['plateID'][p]
+    well_pos = plasmid_df['well_pos'][p].strip()
    #  print UniProt_entry_name, cloneID
     if type(insert_dna_seq) != str or insert_dna_seq == 'None':
        #  print 'No DNA seq found - skipping.'
@@ -242,6 +246,8 @@ for p in plasmid_df.index:
 
     output_data['matching_targetID'].append(targetID)
     output_data['cloneID'].append(cloneID)
+    output_data['plateID'].append(plateID)
+    output_data['well_pos'].append(well_pos)
     output_data['DB_target_rank'].append(DB_target_rank)
     output_data['UniProt_family'].append(UniProt_family)
     output_data['UniProt_seq_aln'].append(aln[0])
