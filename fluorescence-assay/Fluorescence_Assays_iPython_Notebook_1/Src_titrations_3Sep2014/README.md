@@ -36,3 +36,6 @@ From frozen part of the tube: 3.79 mg/mL
 
 Put data on google drive in choderalab > wetlab > data > Bos Gef Ima Src 3 Sept 2014
 
+# Analysis
+
+* Modified `xml2png.py` to read columns instead of rows, and correctly handle number of rows and columns.
