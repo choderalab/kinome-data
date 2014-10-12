@@ -1,0 +1,9 @@
+UniProtAC   gene_names addgene_plasmid_ids hip_plasmid_ids           top_pdb
+BTK_HUMAN              23918               HsCD00037989              1K2P_A
+PDPK1_HUMAN PDK1       23801               HsCD00037925,HsCD00038279 2R7B_A
+ERBB2_HUMAN HER2       23888               HsCD00038358,HsCD00038283
+MP2K1_HUMAN MEK,MAP2K1 23406               HsCD00038221
+KSYK_HUMAN  SYK        23907               HsCD00038689              4F4P_A
+KIT_HUMAN
+
+(CSK_HUMAN - already in 96-kinase panel)
