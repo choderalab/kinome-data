@@ -1,0 +1,488 @@
+<!--
+slidedeck: A modification of the Google IO 2012 HTML5 slide template
+URL: https://github.com/rmcgibbo/slidedeck
+
+Based on https://github.com/francescolaffi/elastic-google-io-slides, and
+ultimately:
+
+Google IO 2012 HTML5 Slide Template
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahe <lukem@google.com>
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Kinases</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+   <link rel="shortcut icon" href=" figures/ATP_1.png"/> 
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="all" href="theme/css/custom.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+
+  <!-- MathJax support  -->
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    showProcessingMessages: false,
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+<slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+
+    <h1> Kinases</h1>
+    <h2> or...<br/> Stuff I learned while writing Fellowship Applications.</h2>
+    <p> Sonya Hanson</p>
+  </hgroup>
+</slide>
+
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><hr />
+<div>
+<img height="350" class="center" src=figures/Fellowships.png />
+</div></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Kinases!</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>Categories of things that were learned:</p>
+<ul>
+<li>What are disease-relevant kinases?</li>
+<li>What are the drugs that target them?</li>
+<li>What are the resistance mutants that develop?</li>
+<li>What are some things we need to worry about with specific kinases?</li>
+<li>What other significant computational work has been done on kinases?</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="dark" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3>"Recent years have observed the emergence of the kinase family (Ser/Thr and Tyr kinase) as one of the most intensively pursued target classes because of its intimate involvement in oncogenic signal transduction pathways that present multiple physiological responses, tumour cell proliferation and cell survival."</h3>
+    </hgroup>
+    <article ><p>-Blanc, Geney, &amp; Menet: Anti-Cancer Agents in Medicinal Chemistry (2013)  <a href="http://dx.doi.org/10.2174/1871520611313050008">DOI</a>. </p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Scientifically why are we interested in kinases?</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>
+<p>Understanding selectivity is tremendously medically relevant.</p>
+</li>
+<li>
+<p>The relationship of conformational heterogeneity to ligand binding affinity</p>
+<ul>
+<li>Our ability to probe this experimentally with a fortuitously fluorescent set of inhibitors</li>
+<li>The tractibility of being able to address this computationally due to the number and similarity of structures</li>
+</ul>
+</li>
+</ul>
+<div>
+<img height="250" class="center" src=figures/lapatinib.png />
+</div></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Kinases: Structure</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><div>
+<img height="500" class="center" src=figures/Labeled-kinase.png />
+</div></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Kinases: Problems with structures</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><img height="500" src=figures/Src_Abl_Ima.png /></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Kinases: Families</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><div>
+<img height="500" class="center" src=figures/kinome_structures.png />
+</div></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Disease-relevant kinases</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><div style="float:left">
+
+<p>  &emsp;   &emsp;   &emsp; <b> Breast Cancer </b> </p>
+<p>  &emsp;   &emsp;   &emsp; - PI3K pathway (RAS/RAF/MEK/ERK)</p>
+<p>  &emsp;   &emsp;   &emsp; - HER2 </p>
+<p>  &emsp;   &emsp;   &emsp; <b> Leukemia and Lymphoma </b> </p>
+<p>  &emsp;   &emsp;   &emsp; - Abl </p>
+<p>  &emsp;   &emsp;   &emsp; - Src </p>
+<p>  &emsp;   &emsp;   &emsp; - BTK  </p>
+<p>  &emsp;   &emsp;   &emsp; - SYK </p>
+<p>  &emsp;   &emsp;   &emsp; <b> Gastrointestinal Stromal Tumors </b> </p>
+<p>  &emsp;   &emsp;   &emsp; - Kit </p>
+
+</div>
+
+<div style="float:right"><img height="500" class="right" src=figures/Families_circled.png /></div>
+
+<div style="clear:both"/></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>This PI3K pathway.</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><div>
+<img height="325" class="center" src=figures/her2.png />
+</div></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>What are some FDA approved kinase inhibitors?</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><div style="float:left">
+
+<p></p>
+<p>  &emsp;   &emsp;   &emsp; - Imatinib  : <b> Abl/cKit </b> </p>
+<p>  &emsp;   &emsp;   &emsp; - Dasatinib : <b> Abl </b> </p>
+<p>  &emsp;   &emsp;   &emsp; - Ponatinib : <b> Abl </b> </p>
+<p>  &emsp;   &emsp;   &emsp; - Gefitinib : <b> EGFR </b> </p>
+<p>  &emsp;   &emsp;   &emsp; - Erlotinib : <b> EGFR </b> </p>
+<p>  &emsp;   &emsp;   &emsp; - Neratinib : <b> EGFR/HER2 </b> </p>
+<p>  &emsp;   &emsp;   &emsp; - Lapatinib : <b> HER2 </b> </p>
+<p>  &emsp;   &emsp;   &emsp; - Sorafenib : <b> VEGFR/BRAF </b> </p>
+<p>  &emsp;   &emsp;   &emsp; - Ibrutinib : <b> BTK </b> </p>
+
+</div>
+
+<div style="float:right"><img height="500" class="right" src=figures/kinase_inhibitor_dorm_room_poster.png /></div>
+
+<div style="clear:both"/></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>What are the categories of kinase inhibitors?</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><div>
+<img height="150" class="center" src=figures/types.png />
+</div>
+
+<div>
+<img height="325" class="center" src=figures/2HW0-covalent.png />
+covalent Src inhibitor (2HW0)
+</div>
+
+<footer class="source"> Blanc, Geney, & Menet: Anti-Cancer Agents in Medicinal Chemistry (2013).  <a href="http://dx.doi.org/10.2174/1871520611313050008">DOI</a>. </footer>
+
+<!---
+title: What are some other categories of kinase inhibitors?
+
+- Fluorescent inhibitors
+- Allosteric inhibitors
+- non-competitive inhibitors
+- covalent inhibitors: ibrutinib (BTK), neratinib (HER2)
+--></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Type I vs. Type II inhibitors</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><div>
+<img height="450" class="center" src=figures/type1vtype2.png />
+</div>
+
+<footer class="source"> Blanc, Geney, & Menet: Anti-Cancer Agents in Medicinal Chemistry (2013). <a href="http://dx.doi.org/10.2174/1871520611313050008">DOI</a>. </footer></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Fluorescent inhibitors</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><div>
+<img height="500" class="center" src=figures/DQA_compounds.png />
+</div></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Type III or Allosteric inhibitors</h2>
+      <h3>4, 6-disubstituted pyrimidines (GNF-2 and GNF-5)</h3>
+    </hgroup>
+    <article ><p>Abl crystal structure (3K5V)
+<div>
+<img height="425" class="center" src=figures/pyridines-2.png /> 
+</div></p>
+<footer class="source"> Zhang et al: Nature (2010). <a href="http://dx.doi.org/10.1038/nature08675">DOI</a>. </footer></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Where do we see resistance to TKI's develop?</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><div>
+<img height="500" class="center" src=figures/res_muts-2.png />
+</div></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Ponatinib overcomes the T315 I gatekeeper mutant.</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><div>
+<img height="300" class="center" src=figures/ponatinib.png />
+</div>
+
+<footer class="source"> Blanc, Geney, & Menet: Anti-Cancer Agents in Medicinal Chemistry (2013). <a href="http://dx.doi.org/10.2174/1871520611313050008">DOI</a>. </footer></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>But even ponatinib is not immune to resistance.</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><div>
+<img height="450" class="center" src=figures/ponres-0.png />
+</div>
+
+<footer class="source"> Zabriskie et al: Cancer Cell (2014). <a href="http://dx.doi.org/10.1016/j.ccr.2014.07.006">DOI</a>.</footer></article>
+ 
+</slide>
+
+<slide class="segue dark nobackground" >
+  
+    <!-- <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside> -->
+    <hgroup class="auto-fadein">
+      <h2>Computational work.</h2>
+      <h3>We are not alone.</h3>
+    </hgroup>
+  
+</slide>
+
+<slide class="img-top-center" >
+  
+    <hgroup>
+      <h2>DE Shaw - Dasatinib and Src</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><div>
+<video id="sampleMovie" class="center" src="figures/shaw-dasatanib-2.mov" loop=\"true\ autoPlay=\"true\  width="512" height="384"></video>
+</div>
+
+<footer class="source"> Shan et al: J. Am. Chem. Soc. (2011). <a href="http://dx.doi.org/10.1021/ja202726y">DOI</a>. </footer></article>
+ 
+</slide>
+
+<slide class="img-top-center" >
+  
+    <hgroup>
+      <h2>The  story of Src and Abl</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><div style="float:left"><img height="500" style="PADDING-LEFT: 5px" class="right" src=figures/Src-IMA-xtal-ligplot-vert.png />Src + Imatinib (2OIQ)</div>
+
+<div style="float:right"><img height="500" class="right" src=figures/Abl-IMA-xtal-ligplot-vert.png />Abl + Imatinib (1IEP)</div>
+
+<div style="clear:both"/></article>
+ 
+</slide>
+
+<slide class="img-top-center" >
+  
+    <hgroup>
+      <h2>Comparing free energy calcs using crystal structures.</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><div>
+<img height="180" class="center" src=figures/delG-Aleksandrov.png />
+</div>
+
+<footer class="source"> Aleksandrov & Simonson: J. Biol. Chem (2010). <a href="http://dx.doi.org/10.1074/jbc.M110.109660">DOI</a>. </footer></article>
+ 
+</slide>
+
+<slide class="img-top-center" >
+  
+    <hgroup>
+      <h2>Free Energy Surfaces for the DFG flip from metadynamics sims.</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><div>
+<img height="250" class="center" src=figures/src-abl.png />
+</div>
+
+<footer class="source"> Lovera et al: J. Am. Chem. Soc. (2012). <a href="http://dx.doi.org/10.1021/ja210751t">DOI</a>. </footer></article>
+ 
+</slide>
+
+<slide class="img-top-center" >
+  
+    <hgroup>
+      <h2>Explaining why Gleevec is a specific and potent inhibitor of Abl kinase - Benoit Roux</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><div>
+<img height="400" class="center" src=figures/Roux_PNAS.png />
+</div>
+
+<footer class="source"> Lin et al: PNAS (2013). <a href="http://dx.doi.org/10.1073/pnas.1214330110">DOI</a>.</footer></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Where can we really contribute?</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>Investigating further fluorescent compounds. (DQA scaffolds are common - are they all characterized?)</li>
+<li>Do kinases with similar compound affinity have similar conformational distributions?</li>
+<li>How do resistance mutants shift conformational distributions?</li>
+<li>How do allosteric drugs affect the binding site?</li>
+<li>Other complications: unstructured loops, ordered waters, pH dependence.</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="img-top-center" >
+  
+    <hgroup>
+      <h2>Potential Issues</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><div style="float:left"><img height="350" style="PADDING-LEFT: 5px" class="right" src=figures/MEK-ring.png />A MEK model</div>
+
+<div style="float:right"><img height="350" class="right" src=figures/ATP-MG.png />Magnesium in the ATP binding site</div>
+
+<div style="clear:both"/></article>
+ 
+</slide>
+
+<slide class="img-top-center" >
+  
+    <hgroup>
+      <h2>Questions? / Discussion.</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><div>
+<video id="sampleMovie" class="center" src="figures/shaw-dasatanib-2.mov" loop=\"true\ autoPlay=\"true\  width="512" height="384"></video>
+</div></article>
+ 
+</slide>
+
+
+<slide class="thank-you-slide segue nobackground">
+  <!-- <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside> -->
+  <article class="flexbox vleft auto-fadein">
+    <h2></h2>
+    <p></p>
+  </article>
+  <p data-config-contact class="auto-fadein"></p>
+  </p>
+</slide>
+
+<slide class="backdrop"></slide>
+
+</slides>
+
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>
