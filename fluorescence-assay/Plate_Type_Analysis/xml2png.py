@@ -134,7 +134,7 @@ for file in xml_files:
     fig, axes = plt.subplots(nrows=1,ncols=len(Sections), figsize=(20,4.5))
 
     for i, sect in enumerate(data):
-        sect['dataframe'].plot(title = sect['title'] , ax = axes[i] )
+        sect['dataframe'].plot(title = sect['title'] , ax = axes[i], legend=False )
 
     fig.tight_layout()
     fig.subplots_adjust(top=0.8)
