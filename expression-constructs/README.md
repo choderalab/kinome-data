@@ -3,6 +3,18 @@ A panel of kinase constructs for expression testing.
 Manifest
 --------
 
+* sgc\_and\_hip
+  * Constructs chosen from SGC and HIP plasmids
+* addgene\_and\_hip
+  * Constructs chosen from addgene and HIP plasmids
+* addgene\_hip\_sgc\_constructs
+  * Constructs chosen from addgene, HIP and SGC plasmids
+* addgene\_hip\_sgc
+  * Constructs chosen from addgene, HIP and SGC plasmids
+  * These kinases were chosen for expression testing
+
+Each of the above directories has a structure as follows:
+
 * \*/scripts/select-kinase-constructs.py
   * takes plasmid and PDB construct data (from ../plasmids and ../PDB-constructs), and conducts a custom ranking and filtering protocol to select a suitable panel of expression constructs
   * outputs:
