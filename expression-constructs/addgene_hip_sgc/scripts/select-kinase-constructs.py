@@ -340,6 +340,9 @@ selected_targets.reset_index(inplace=True)
 # Write csv file
 selected_targets.to_csv(ofilename + '.csv')
 
+# Write pickle file
+selected_targets.to_pickle(ofilename + '.p')
+
 # unfiltered_targets = targets_results[ targets_results['plasmid_nconflicts'] < 25 ]
 # unfiltered_targets.to_csv(ofilename + '-unfiltered.csv')
 
