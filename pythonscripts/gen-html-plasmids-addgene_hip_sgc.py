@@ -3,17 +3,31 @@ import pandas as pd
 from lxml import etree
 import jinja2
 
+include_results = True
+
 # ========
 # Main html page
 # ========
 
 title = 'kinase constructs'
 subtitle = 'Selected from addgene kinase collection and HIP pJP1520 plasmid libraries'
-html_output_cols = ['targetID', 'DB_target_rank', 'plasmid_ID', 'plasmid_source', 'plasmid_nconflicts', 'plasmid_nextraneous_residues', 'nPDBs', 'top_pdb_ID', 'top_pdb_expr_tag', 'top_pdb_auth_score', 'top_pdb_nextraneous_residues', 'family', 'top_pdb_taxname', 'selected_construct_source', 'selected_construct_nextraneous_residues']
+html_output_cols = ['targetID', 'DB_target_rank', 'plasmid_ID', 'plasmid_source', 'plasmid_nconflicts', 'plasmid_nextraneous_residues', 'nPDBs', 'top_pdb_ID', 'top_pdb_expr_tag', 'top_pdb_auth_score', 'top_pdb_nextraneous_residues', 'family', 'top_pdb_taxname', 'selected_construct_source', 'selected_construct_nextraneous_residues', 'expression_test_results(ng/ul)', 'expected_scaleup_culture(mg/L)']
 
 parser = etree.HTMLParser(remove_blank_text=True)
 
-df = pd.DataFrame.from_csv('../kinase-expression-constructs/addgene_hip_sgc/selected-kinases.csv')
+df = pd.DataFrame.from_csv('../expression-constructs/addgene_hip_sgc/selected-kinases.csv')
+
+if include_results:
+    results_df = pd.read_pickle('../expression-constructs/addgene_hip_sgc/results.p')
+    orig_colnames = ['target ID', 'Conc. (ng/ul)', 'expected mg / L culture']
+    new_colnames = ['targetID', 'expression_test_results(ng/ul)', 'expected_scaleup_culture(mg/L)']
+    results_selected_cols = results_df[orig_colnames]
+    results_selected_cols.columns = new_colnames
+    df = df.merge(results_selected_cols, on='targetID', how='left')
+
+# import sys; sys.exit()
+
+
 
 pd_html = df.to_html(columns=html_output_cols, index=True, na_rep='--')
 html = etree.parse(StringIO.StringIO(pd_html), parser).getroot()
@@ -88,7 +102,7 @@ shutil.copy('stylesheets/seqlib.css', 'plasmid-construct-alignments/addgene_hip_
 
 targetIDs = list(df['targetID'])
 for targetID in targetIDs:
-    src_html_filepath = os.path.join('..', 'kinase-expression-constructs', 'addgene_hip_sgc', 'alignments', targetID + '.html')
+    src_html_filepath = os.path.join('..', 'expression-constructs', 'addgene_hip_sgc', 'alignments', targetID + '.html')
     dest_html_filepath = os.path.join('plasmid-construct-alignments', 'addgene_hip_sgc', targetID + '.html')
     shutil.copy(src_html_filepath, dest_html_filepath)
 
