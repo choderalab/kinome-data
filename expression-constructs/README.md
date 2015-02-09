@@ -4,14 +4,18 @@ Manifest
 --------
 
 * sgc\_and\_hip
-  * Constructs chosen from SGC and HIP plasmids
+  * SGC and HIP plasmid libraries
+  * constructs chosen from PDB constructs
 * addgene\_and\_hip
-  * Constructs chosen from addgene and HIP plasmids
-* addgene\_hip\_sgc\_constructs
-  * Constructs chosen from addgene, HIP and SGC plasmids
+  * addgene and HIP plasmid libraries
+  * constructs chosen from PDB constructs
 * addgene\_hip\_sgc
-  * Constructs chosen from addgene, HIP and SGC plasmids
-  * These kinases were chosen for expression testing
+  * addgene, HIP and SGC plasmid libraries
+  * constructs chosen from PDB constructs
+  * _These kinases were chosen for expression testing_
+* addgene\_hip\_sgc\_constructs
+  * addgene and HIP plasmid libraries
+  * constructs chosen from PDB constructs and SGC plasmid constructs
 
 Each of the above directories has a structure as follows:
 
