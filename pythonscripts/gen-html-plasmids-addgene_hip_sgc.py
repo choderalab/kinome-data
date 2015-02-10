@@ -20,12 +20,11 @@ df = pd.DataFrame.from_csv('../expression-constructs/addgene_hip_sgc/selected-ki
 if include_results:
     results_df = pd.read_pickle('../expression-constructs/addgene_hip_sgc/results.p')
     orig_colnames = ['target ID', 'Conc. (ng/ul)', 'expected mg / L culture']
-    new_colnames = ['targetID', 'expression_test_results(ng/ul)', 'expected_scaleup_culture(mg/L)']
-    results_selected_cols = results_df[orig_colnames]
-    results_selected_cols.columns = new_colnames
+    results_selected_cols = pd.DataFrame()
+    results_selected_cols['targetID'] = results_df['target ID']
+    results_selected_cols['expression_test_results(ng/ul)'] = results_df['Conc. (ng/ul)'].map('{:.0f}'.format)
+    results_selected_cols['expected_scaleup_culture(mg/L)'] = results_df['expected mg / L culture'].map('{:.1f}'.format)
     df = df.merge(results_selected_cols, on='targetID', how='left')
-
-# import sys; sys.exit()
 
 
 
