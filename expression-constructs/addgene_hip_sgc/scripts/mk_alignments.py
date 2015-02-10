@@ -110,7 +110,7 @@ def gen_html(title, alignment, alignment_IDs, additional_data_fields=[], aa_css_
 def process_target(t):
     target = pdbconstruct_data[t]
     targetID = target.get('targetID')
-    # if targetID != 'CDK1_HUMAN_D0':
+    # if targetID != 'AAPK1_HUMAN_D0':
     #     return
     UniProt_seq = target.findtext('seq')
     target_domain_seq = target.findtext('domain_seq')
@@ -139,6 +139,7 @@ def process_target(t):
     # run alignment
     aln = targetexplorer.align.run_clustalo(alignment_IDs, pre_alignment_seqs)
     UniProt_seq_aln = aln[0]
+    plasmids_aln = aln[1: len(plasmids)+1]
 
     # find domain start and end points in the aln coords
     target_domain_seq_regex = ''.join([ aa + '-*' for aa in target_domain_seq ])[:-2] # ignore last '-*'
@@ -178,10 +179,29 @@ def process_target(t):
     # generate section titles/positions for the alignment html
     if include_selected_constructs:
         selected_construct = selected_constructs_df[selected_constructs_df.targetID == targetID]
+
     if include_selected_constructs and len(selected_construct) > 0:
         sections_dict = {0: ['UniProt seq'], 1: ['Selected construct'], 2: ['Plasmids', 'nconf', 'nextran'], len(plasmids) + 2: ['PDB constructs', 'nconf', 'nextran', 'expr_tag', 'organism']}
-        selected_construct_seq = selected_construct.aaseq_aln.values[0]
-        aln.insert(1, selected_construct_seq)
+
+        selected_plasmid_ID = selected_construct.plasmid_ID.values[0]
+        plasmid_aln_found = False
+        for p, plasmid_ID in enumerate(plasmids.index):
+            if str(plasmid_ID) == selected_plasmid_ID:
+                selected_plasmid_aln = plasmids_aln[p]
+                plasmid_aln_found = True
+                break
+        if not plasmid_aln_found:
+            raise Exception('plasmid_aln not found for plasmid {0}'.format(selected_plasmid_ID))
+
+        selected_construct_seq = selected_construct.aaseq.values[0]
+        selected_construct_seq_regex = ''.join([aa + '-*' for aa in selected_construct_seq])[:-2]
+        selected_construct_seq_match = re.search(selected_construct_seq_regex, selected_plasmid_aln.upper())
+        if not selected_construct_seq_match:
+            print 'WARNING: selected construct seq not found in plasmid seq!!!', targetID
+        selected_construct_seq_aln_list = ['-'] * len(aln[0])
+        selected_construct_seq_aln_list[selected_construct_seq_match.start() : selected_construct_seq_match.end()] = selected_construct_seq
+        selected_construct_seq_aln = selected_construct_seq_aln = ''.join(selected_construct_seq_aln_list)
+        aln.insert(1, selected_construct_seq_aln)
         alignment_IDs.insert(1, '   ')
         additional_data[0]['   '] = None
         additional_data[1]['   '] = None

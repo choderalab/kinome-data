@@ -106,6 +106,7 @@ seqs_df = {
     'aaseq': [],
     'aaseq_aln': [],
     'dnaseq': [],
+    'plasmid_ID': [],
 }
 
 with open(output_aln_filepath, 'w') as otxt_file:
@@ -248,6 +249,8 @@ with open(output_aln_filepath, 'w') as otxt_file:
         seqs_df['aaseq'].append(construct_plasmid_aa_seq)
         seqs_df['aaseq_aln'].append(construct_plasmid_aa_seq_aln)
         seqs_df['dnaseq'].append(construct_plasmid_dna_seq)
+        seqs_df['plasmid_ID'].append(plasmid_ID)
+
 
 wb.save(output_xl_filepath)
 seqs_df = pd.DataFrame(seqs_df)
