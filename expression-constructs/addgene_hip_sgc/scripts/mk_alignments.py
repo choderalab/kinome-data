@@ -2,11 +2,15 @@ import sys, os, re
 from lxml import etree
 from lxml.builder import E
 import pandas as pd
-import TargetExplorer
+import targetexplorer
 
 # ========
 # input, params etc.
 # ========
+
+include_selected_constructs = True
+if include_selected_constructs:
+    selected_constructs_df = pd.read_pickle('selected-kinases-seqs.p')
 
 # get plasmid data
 
@@ -81,11 +85,11 @@ def gen_html(title, alignment, alignment_IDs, additional_data_fields=[], aa_css_
         # format sequence with css classes. Returned as a list of span objects
         if aa_css_class_list != None:
             if aa_css_class_list[i] != None:
-                prettyseq = TargetExplorer.core.seq2pretty_html(alignment[i], aa_css_class_list=aa_css_class_list[i])
+                prettyseq = targetexplorer.core.seq2pretty_html(alignment[i], aa_css_class_list=aa_css_class_list[i])
             else:
-                prettyseq = TargetExplorer.core.seq2pretty_html(alignment[i])
+                prettyseq = targetexplorer.core.seq2pretty_html(alignment[i])
         else:
-            prettyseq = TargetExplorer.core.seq2pretty_html(alignment[i])
+            prettyseq = targetexplorer.core.seq2pretty_html(alignment[i])
 
         # set up sequence div
         seq_div = E.div(id='sequence',CLASS='ali')
@@ -106,6 +110,8 @@ def gen_html(title, alignment, alignment_IDs, additional_data_fields=[], aa_css_
 def process_target(t):
     target = pdbconstruct_data[t]
     targetID = target.get('targetID')
+    # if targetID != 'CDK1_HUMAN_D0':
+    #     return
     UniProt_seq = target.findtext('seq')
     target_domain_seq = target.findtext('domain_seq')
 
@@ -131,7 +137,7 @@ def process_target(t):
     pre_alignment_seqs = [UniProt_seq] + plasmid_seqs + pdbconstruct_seqs
 
     # run alignment
-    aln = TargetExplorer.align.run_clustalo(alignment_IDs, pre_alignment_seqs)
+    aln = targetexplorer.align.run_clustalo(alignment_IDs, pre_alignment_seqs)
     UniProt_seq_aln = aln[0]
 
     # find domain start and end points in the aln coords
@@ -156,9 +162,6 @@ def process_target(t):
     aa_css_class_list_UniProt_seq[0] = ['bl'] * len(aln[0])
     aa_css_class_list_UniProt_seq[0][ domain_start : domain_end ] = ['c4'] * (domain_end - domain_start)
 
-    # generate section titles/positions for the alignment html
-    sections_dict = {0: ['UniProt seq'], 1: ['Plasmids', 'nconf', 'nextran'], len(plasmids) + 1: ['PDB constructs', 'nconf', 'nextran', 'expr_tag', 'organism']}
-
     # generate additional data fields to be added to the alignment html
     additional_data = [ {targetID: None} for i in range(4) ]
     for i in range(len(cloneIDs)):
@@ -171,6 +174,22 @@ def process_target(t):
         additional_data[1][pdbconstructIDs[i]] = pdbconstructs[i].get('nextraneous_residues')
         additional_data[2][pdbconstructIDs[i]] = pdbconstructs[i].get('expr_tag_string')
         additional_data[3][pdbconstructIDs[i]] = pdbconstructs[i].get('taxname')
+
+    # generate section titles/positions for the alignment html
+    if include_selected_constructs:
+        selected_construct = selected_constructs_df[selected_constructs_df.targetID == targetID]
+    if include_selected_constructs and len(selected_construct) > 0:
+        sections_dict = {0: ['UniProt seq'], 1: ['Selected construct'], 2: ['Plasmids', 'nconf', 'nextran'], len(plasmids) + 2: ['PDB constructs', 'nconf', 'nextran', 'expr_tag', 'organism']}
+        selected_construct_seq = selected_construct.aaseq_aln.values[0]
+        aln.insert(1, selected_construct_seq)
+        alignment_IDs.insert(1, '   ')
+        additional_data[0]['   '] = None
+        additional_data[1]['   '] = None
+        additional_data[2]['   '] = None
+        additional_data[3]['   '] = None
+        aa_css_class_list_UniProt_seq.append(None)
+    else:
+        sections_dict = {0: ['UniProt seq'], 1: ['Plasmids', 'nconf', 'nextran'], len(plasmids) + 1: ['PDB constructs', 'nconf', 'nextran', 'expr_tag', 'organism']}
 
     # generate and write html
     aln_html = gen_html(title=targetID, alignment=aln, alignment_IDs=alignment_IDs, aa_css_class_list=aa_css_class_list_UniProt_seq, additional_data_fields=additional_data, sections=sections_dict)
@@ -189,4 +208,3 @@ if __name__ == '__main__':
     import multiprocessing
     pool =  multiprocessing.Pool()
     targets_results = pool.map(process_target, range(len(pdbconstruct_data)))
-

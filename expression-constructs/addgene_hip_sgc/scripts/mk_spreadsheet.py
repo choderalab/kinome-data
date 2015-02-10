@@ -104,6 +104,7 @@ ws.cell(row=0, column=13).value = 'original plasmid insert dna seq'
 seqs_df = {
     'targetID': [],
     'aaseq': [],
+    'aaseq_aln': [],
     'dnaseq': [],
 }
 
@@ -180,8 +181,11 @@ with open(output_aln_filepath, 'w') as otxt_file:
             construct_start_aln_coords = find_construct_seq_start(uniprot_plasmid_pdb_aln[2])
             construct_end_aln_coords = len(uniprot_plasmid_pdb_aln[2]) - find_construct_seq_start(uniprot_plasmid_pdb_aln[2][::-1]) - 1
 
-            construct_plasmid_aa_seq_aln = uniprot_plasmid_pdb_aln[1][construct_start_aln_coords : construct_end_aln_coords+1]
-            construct_plasmid_aa_seq = construct_plasmid_aa_seq_aln.replace('-', '')
+            construct_plasmid_aa_seq_aln = '-' * construct_start_aln_coords
+            construct_plasmid_aa_seq_aln += uniprot_plasmid_pdb_aln[1][construct_start_aln_coords: construct_end_aln_coords+1]
+            construct_plasmid_aa_seq_aln += '-' * (len(uniprot_plasmid_pdb_aln[1]) - (construct_end_aln_coords+1))
+            construct_plasmid_aa_seq_w_gaps = uniprot_plasmid_pdb_aln[1][construct_start_aln_coords : construct_end_aln_coords+1]
+            construct_plasmid_aa_seq = construct_plasmid_aa_seq_w_gaps.replace('-', '')
 
         # If construct source is SGC, find start and end of construct in UniProt/plasmid alignment, removing conflicting sequence at termini
         elif construct_source == 'SGC':
@@ -189,8 +193,11 @@ with open(output_aln_filepath, 'w') as otxt_file:
             construct_end_aln_coords = len(uniprot_plasmid_aln[1]) - find_construct_seq_start(uniprot_plasmid_aln[1][::-1]) - 1
             nterm_m_tag = re.search('m-*[-a-z]{8}-*[A-Z]{2}', uniprot_plasmid_aln[1])
 
-            construct_plasmid_aa_seq_aln = uniprot_plasmid_aln[1][construct_start_aln_coords : construct_end_aln_coords+1]
-            construct_plasmid_aa_seq = construct_plasmid_aa_seq_aln.replace('-', '').upper()
+            construct_plasmid_aa_seq_aln = '-' * construct_start_aln_coords
+            construct_plasmid_aa_seq_aln += uniprot_plasmid_pdb_aln[1][construct_start_aln_coords: construct_end_aln_coords+1].upper()
+            construct_plasmid_aa_seq_aln += '-' * (len(uniprot_plasmid_pdb_aln[1]) - (construct_end_aln_coords+1))
+            construct_plasmid_aa_seq_w_gaps = uniprot_plasmid_aln[1][construct_start_aln_coords : construct_end_aln_coords+1]
+            construct_plasmid_aa_seq = construct_plasmid_aa_seq_w_gaps.replace('-', '').upper()
 
 
         construct_start_plasmid_aa_coords = re.search(construct_plasmid_aa_seq, plasmid_aa_seq).start()
@@ -239,6 +246,7 @@ with open(output_aln_filepath, 'w') as otxt_file:
 
         seqs_df['targetID'].append(targetID)
         seqs_df['aaseq'].append(construct_plasmid_aa_seq)
+        seqs_df['aaseq_aln'].append(construct_plasmid_aa_seq_aln)
         seqs_df['dnaseq'].append(construct_plasmid_dna_seq)
 
 wb.save(output_xl_filepath)
