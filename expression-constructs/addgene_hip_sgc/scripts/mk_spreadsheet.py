@@ -2,7 +2,7 @@ import sys, os, re, yaml
 import numpy as np
 from openpyxl import Workbook
 import pandas as pd
-import TargetExplorer
+import targetexplorer
 import Bio.Seq
 
 # input params
@@ -101,6 +101,12 @@ ws.cell(row=0, column=11).value = 'construct aa seq'
 ws.cell(row=0, column=12).value = 'construct dna seq'
 ws.cell(row=0, column=13).value = 'original plasmid insert dna seq'
 
+seqs_df = {
+    'targetID': [],
+    'aaseq': [],
+    'dnaseq': [],
+}
+
 with open(output_aln_filepath, 'w') as otxt_file:
 
     for n in range(len(df)):
@@ -149,12 +155,12 @@ with open(output_aln_filepath, 'w') as otxt_file:
         # Align UniProt and plasmid sequences
         aln_ids = ['UniProt', 'plasmid']
         pre_aln_seqs = [target_uniprot_seq, plasmid_aa_seq]
-        uniprot_plasmid_aln = TargetExplorer.align.run_clustalo(aln_ids, pre_aln_seqs) # list of aligned sequence strings
+        uniprot_plasmid_aln = targetexplorer.align.run_clustalo(aln_ids, pre_aln_seqs) # list of aligned sequence strings
 
         # Align UniProt, plasmid and PDB sequences
         aln_ids = ['UniProt', 'plasmid', 'PDB']
         pre_aln_seqs = [target_uniprot_seq, plasmid_aa_seq, pdb_aa_seq]
-        uniprot_plasmid_pdb_aln = TargetExplorer.align.run_clustalo(aln_ids, pre_aln_seqs)
+        uniprot_plasmid_pdb_aln = targetexplorer.align.run_clustalo(aln_ids, pre_aln_seqs)
 
         # make final-row aas lower-case if they conflict with first-row seq
         for i in range(len(uniprot_plasmid_aln[0])):
@@ -231,4 +237,12 @@ with open(output_aln_filepath, 'w') as otxt_file:
 
         otxt_file.write(result_string)
 
+        seqs_df['targetID'].append(targetID)
+        seqs_df['aaseq'].append(construct_plasmid_aa_seq)
+        seqs_df['dnaseq'].append(construct_plasmid_dna_seq)
+
 wb.save(output_xl_filepath)
+seqs_df = pd.DataFrame(seqs_df)
+with open('selected-kinases-seqs.txt', 'w') as seqs_table_file:
+    seqs_table_file.write(seqs_df.to_string())
+seqs_df.to_pickle('selected-kinases-seqs.p')
