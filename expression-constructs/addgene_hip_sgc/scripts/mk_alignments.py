@@ -181,7 +181,7 @@ def process_target(t):
         selected_construct = selected_constructs_df[selected_constructs_df.targetID == targetID]
 
     if include_selected_constructs and len(selected_construct) > 0:
-        sections_dict = {0: ['UniProt seq'], 1: ['Selected construct'], 2: ['Plasmids', 'nconf', 'nextran'], len(plasmids) + 2: ['PDB constructs', 'nconf', 'nextran', 'expr_tag', 'organism']}
+        sections_dict = {0: ['UniProt seq'], 1: ['Tested construct'], 2: ['Plasmids', 'nconf', 'nextran'], len(plasmids) + 2: ['PDB constructs', 'nconf', 'nextran', 'expr_tag', 'organism']}
 
         selected_plasmid_ID = selected_construct.plasmid_ID.values[0]
         plasmid_aln_found = False
