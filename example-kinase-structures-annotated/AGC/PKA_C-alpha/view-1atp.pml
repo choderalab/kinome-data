@@ -41,9 +41,17 @@ show sticks, catalytic_aspartate
 
 color gray20, nterm_extension
 color gray20, cterm_extension
-color white, nterm_lobe
+color gray70, nterm_lobe
 color yellow, cterm_lobe
 color red, chelix
 color pink, gly_rich_loop
 color cyan, activation_segment
 
+bg white
+set ray_trace_mode, 0
+set antialias, 1
+
+hide cartoon, nterm_extension
+hide cartoon, cterm_extension
+# ray 640,480
+# png pka_c_alpha.png
