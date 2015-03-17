@@ -31,7 +31,7 @@ Abl
 * 2Z60 T315I Mouse Abl
 * 3K5V (IMA)
 * 1IEP (IMA) (o) **(4)**
-* 2G1T (10) (i) **(3)**
+* 2G1T (10) (i) (Src-like inactive) **(3)**
 * 1OPK (o) **(1)**
 * 1M52 (o)
 * 1FPU (o)
