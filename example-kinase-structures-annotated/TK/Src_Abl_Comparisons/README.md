@@ -31,7 +31,7 @@ Abl
 * 2Z60 T315I Mouse Abl
 * 3K5V (IMA)
 * 1IEP (IMA) (o) **(4)**
-* 2G1T (10) (i) **(3)**
+* 2G1T (10) (i) (Src-like inactive) **(3)**
 * 1OPK (o) **(1)**
 * 1M52 (o)
 * 1FPU (o)
@@ -41,9 +41,9 @@ Src
 ---
 
 * 1FMK
-* 1Y57 (i) (inact) **(4) (5)**
+* 1Y57 (i) (act) **(4) (5)**
 * 2H8H
-* 2SRC (i) (act) **(3) (5)**
+* 2SRC (i) (inact) **(3) (5)**
 * 2OIQ (8) (IMA) (o) **(2) (4)**
 * 4MXO (7) (BOS) WT Human Src
 * 4MXX (7) (BOS) A403T Human Src
