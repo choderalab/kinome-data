@@ -1,0 +1,2 @@
+       targetID  nmatching_PDB_structures top_PDB_chain_ID   top_cnstrct_expr_tag  top_cnstrct_auth_score   top_cnstrct_expr_sys top_cnstrct_taxname DB_target_rank DB_target_score
+0  BTK_HUMAN_D0                        13           3OCS_A  Cterm_other_extra_seq                       1  SPODOPTERA FRUGIPERDA               Human             56            45.2
