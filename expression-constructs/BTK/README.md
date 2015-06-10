@@ -1,5 +1,8 @@
 BTK construct, chosen from PDB data, and sent to DNA 2.0 for synthesis of optimized DNA sequence, cloning into plasmid vector, and bacterial expression testing.
 
+The amino acid sequence contains a C-terminal TEV cleavage site, followed by a short linker.
+The plasmid (pD444-CH) contains a 6His-tag, C-terminal of the insert.
+
 Manifest
 --------
 
