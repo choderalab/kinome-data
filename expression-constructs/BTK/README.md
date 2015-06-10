@@ -1,7 +1,7 @@
 BTK construct, chosen from PDB data, and sent to DNA 2.0 for synthesis of optimized DNA sequence, cloning into plasmid vector, and bacterial expression testing.
 
 The construct comes from the 3OCS PDB structure. This comprises:
-* residues 393-656 (in UniProt coordinates; UniProt entry name: BTK\_HUMAN)
+* residues 393-656 (in UniProt coordinates; UniProt entry name: [BTK\_HUMAN](http://www.uniprot.org/uniprot/Q06187))
 * plus additional Met at the N-term
 * and additional NLYGQ sequence at the C-term, forming a TEV cleavage site (ENLYGQ)
 
@@ -9,7 +9,7 @@ The chosen plasmid (pD444-CH) contains a 6xHis-tag, C-terminal of the insert.
 
 A short SGS linker was added to the protein insert, to separate the TEV cleavage site and His tag.
 
-The expressed sequence should be:
+The expressed sequence is thus:
 ```
 MGSWEIDPKDLTFLKELGTGQFGVVKYGKWRGQYDVAIKMIKEGSMSEDEFIEEAKVMMNLSHEKLVQLYGVCTKQRPIFIITEYMANGCLLNYLREMRHRFQTQQLLEMCKDVCEAMEYLESKQFLHRDLAARNCLVNDQGVVKVSDFGLSRYVLDDEYTSSVGSKFPVRWSPPEVLMYSKFSSKSDIWAFGVLMWEIYSLGKMPYERFTNSETAEHIAQGLRLYRPHLASEKVYTIMYSCWHEKADERPTFKILLSNILDVMDENLYGQSGSHHHHHH
 ```
