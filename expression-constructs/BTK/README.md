@@ -6,6 +6,7 @@ The construct comes from the 3OCS PDB structure. This comprises:
 * plus additional NLYGQ sequence at C-term, forming a TEV cleavage site (ENLYGQ)
 
 The chosen plasmid (pD444-CH) contains a 6xHis-tag, C-terminal of the insert.
+[Plasmid details](https://www.dna20.com/eCommerce/catalog/datasheet/132)
 
 A short SGS linker was also added to the C-term of the protein insert, to separate the TEV cleavage site and His tag.
 
