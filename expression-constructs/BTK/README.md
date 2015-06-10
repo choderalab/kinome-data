@@ -3,7 +3,7 @@ BTK construct, chosen from PDB data, and sent to DNA 2.0 for synthesis of optimi
 The construct comes from the 3OCS PDB structure. This comprises:
 * residues 393-656 (in UniProt coordinates; UniProt entry name: [BTK\_HUMAN](http://www.uniprot.org/uniprot/Q06187))
 * plus additional Met at N-term
-* plus additional NLYGQ sequence at C-term, forming a TEV cleavage site (ENLYGQ)
+* plus additional TEV cleavage site (ENLYGQ) at C-term
 
 The chosen plasmid (pD444-CH) contains a 6xHis-tag, C-terminal of the insert.
 [Plasmid details](https://www.dna20.com/eCommerce/catalog/datasheet/132)
@@ -14,6 +14,8 @@ The expressed sequence is thus:
 ```
 MGSWEIDPKDLTFLKELGTGQFGVVKYGKWRGQYDVAIKMIKEGSMSEDEFIEEAKVMMNLSHEKLVQLYGVCTKQRPIFIITEYMANGCLLNYLREMRHRFQTQQLLEMCKDVCEAMEYLESKQFLHRDLAARNCLVNDQGVVKVSDFGLSRYVLDDEYTSSVGSKFPVRWSPPEVLMYSKFSSKSDIWAFGVLMWEIYSLGKMPYERFTNSETAEHIAQGLRLYRPHLASEKVYTIMYSCWHEKADERPTFKILLSNILDVMDENLYGQSGSHHHHHH
 ```
+
+The protein kinase domain according to the UniProt annotation comprises residues 402-655.
 
 Manifest
 --------
