@@ -11,19 +11,22 @@ include_results = True
 
 title = 'kinase constructs'
 subtitle = 'Selected from addgene kinase collection and HIP pJP1520 plasmid libraries'
-html_output_cols = ['targetID', 'DB_target_rank', 'plasmid_ID', 'plasmid_source', 'plasmid_nconflicts', 'plasmid_nextraneous_residues', 'nPDBs', 'top_pdb_ID', 'top_pdb_expr_tag', 'top_pdb_auth_score', 'top_pdb_nextraneous_residues', 'family', 'top_pdb_taxname', 'selected_construct_source', 'selected_construct_nextraneous_residues', 'expression_test_results(ng/ul)', 'expected_scaleup_culture(mg/L)']
+html_output_cols = ['targetID', 'DB_target_rank', 'plasmid_ID', 'plasmid_source', 'plasmid_nconflicts', 'plasmid_nextraneous_residues', 'nPDBs', 'top_pdb_ID', 'top_pdb_expr_tag', 'top_pdb_auth_score', 'top_pdb_nextraneous_residues', 'family', 'top_pdb_taxname', 'selected_construct_source', 'selected_construct_nextraneous_residues', 'caliper(ng/ul)', 'yield(ug/mL_culture)']
 
 parser = etree.HTMLParser(remove_blank_text=True)
 
 df = pd.DataFrame.from_csv('../expression-constructs/addgene_hip_sgc/selected-kinases.csv')
 
 if include_results:
-    results_df = pd.read_pickle('../expression-constructs/addgene_hip_sgc/results.p')
+    results_df = pd.read_pickle('../expression-constructs/addgene_hip_sgc/results-post_expression_testing/results.p')
     orig_colnames = ['target ID', 'Conc. (ng/ul)', 'expected mg / L culture']
     results_selected_cols = pd.DataFrame()
     results_selected_cols['targetID'] = results_df['target ID']
-    results_selected_cols['expression_test_results(ng/ul)'] = results_df['Conc. (ng/ul)'].map('{:.0f}'.format)
-    results_selected_cols['expected_scaleup_culture(mg/L)'] = results_df['expected mg / L culture'].map('{:.1f}'.format)
+    # Fix conversion.
+    results_df['expected mg / L culture'] = results_df['Conc. (ng/ul)'] * (120.0 / 900.0)
+    #
+    results_selected_cols['caliper(ng/ul)'] = results_df['Conc. (ng/ul)'].map('{:.0f}'.format)
+    results_selected_cols['yield(ug/mL_culture)'] = results_df['expected mg / L culture'].map('{:.1f}'.format)
     df = df.merge(results_selected_cols, on='targetID', how='left')
 
 

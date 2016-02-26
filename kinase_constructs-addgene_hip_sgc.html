@@ -120,7 +120,7 @@
     $(document).ready(function() {
 
         var mainTable = $('#maintable').dataTable( {
-           /*  "aaSorting": [[ 0, "asc" ]], */
+            "aaSorting": [[ 16, "desc" ]],
             "bPaginate": false,
             "bAutoWidth": true,
             "sDom": 'Rlfrtip',
@@ -302,8 +302,8 @@
       <th>top_pdb_taxname</th>
       <th>selected_construct_source</th>
       <th>selected_construct_nextraneous_residues</th>
-      <th>expression_test_results(ng/ul)</th>
-      <th>expected_scaleup_culture(mg/L)</th>
+      <th>caliper(ng/ul)</th>
+      <th>yield(ug/mL_culture)</th>
     </tr></thead>
 <tbody><tr><th>0</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/MKNK2_HUMAN_D0.html">MKNK2_HUMAN_D0</a></td>
@@ -412,7 +412,7 @@
       <td>PDB</td>
       <td>32</td>
       <td>18</td>
-      <td>2.2</td>
+      <td>2.5</td>
     </tr><tr><th>6</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/MST4_HUMAN_D0.html">MST4_HUMAN_D0</a></td>
       <td>308</td>
@@ -448,7 +448,7 @@
       <td>PDB</td>
       <td>35</td>
       <td>87</td>
-      <td>10.5</td>
+      <td>11.7</td>
     </tr><tr><th>8</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/EPHB2_HUMAN_D0.html">EPHB2_HUMAN_D0</a></td>
       <td>91</td>
@@ -466,7 +466,7 @@
       <td>PDB</td>
       <td>35</td>
       <td>188</td>
-      <td>22.6</td>
+      <td>25.1</td>
     </tr><tr><th>9</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/EPHB3_HUMAN_D0.html">EPHB3_HUMAN_D0</a></td>
       <td>202</td>
@@ -484,7 +484,7 @@
       <td>PDB</td>
       <td>35</td>
       <td>13</td>
-      <td>1.6</td>
+      <td>1.8</td>
     </tr><tr><th>10</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/ABL1_HUMAN_D0.html">ABL1_HUMAN_D0</a></td>
       <td>12</td>
@@ -502,7 +502,7 @@
       <td>PDB</td>
       <td>36</td>
       <td>19</td>
-      <td>2.2</td>
+      <td>2.5</td>
     </tr><tr><th>11</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/M3K5_HUMAN_D0.html">M3K5_HUMAN_D0</a></td>
       <td>151</td>
@@ -520,7 +520,7 @@
       <td>PDB</td>
       <td>37</td>
       <td>105</td>
-      <td>12.6</td>
+      <td>14.0</td>
     </tr><tr><th>12</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/STK10_HUMAN_D0.html">STK10_HUMAN_D0</a></td>
       <td>126</td>
@@ -538,7 +538,7 @@
       <td>PDB</td>
       <td>44</td>
       <td>28</td>
-      <td>3.4</td>
+      <td>3.8</td>
     </tr><tr><th>13</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/KS6A3_HUMAN_D0.html">KS6A3_HUMAN_D0</a></td>
       <td>49</td>
@@ -574,7 +574,7 @@
       <td>PDB</td>
       <td>54</td>
       <td>134</td>
-      <td>16.1</td>
+      <td>17.9</td>
     </tr><tr><th>15</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/PAK1_HUMAN_D0.html">PAK1_HUMAN_D0</a></td>
       <td>157</td>
@@ -646,7 +646,7 @@
       <td>PDB</td>
       <td>74</td>
       <td>84</td>
-      <td>10.1</td>
+      <td>11.2</td>
     </tr><tr><th>19</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/MK08_HUMAN_D0.html">MK08_HUMAN_D0</a></td>
       <td>36</td>
@@ -664,7 +664,7 @@
       <td>PDB</td>
       <td>74</td>
       <td>214</td>
-      <td>25.7</td>
+      <td>28.5</td>
     </tr><tr><th>20</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/STRAA_HUMAN_D0.html">STRAA_HUMAN_D0</a></td>
       <td>402</td>
@@ -718,7 +718,7 @@
       <td>PDB</td>
       <td>97</td>
       <td>76</td>
-      <td>9.1</td>
+      <td>10.1</td>
     </tr><tr><th>23</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/CLK1_HUMAN_D0.html">CLK1_HUMAN_D0</a></td>
       <td>171</td>
@@ -754,7 +754,7 @@
       <td>PDB</td>
       <td>22</td>
       <td>17</td>
-      <td>2.1</td>
+      <td>2.3</td>
     </tr><tr><th>25</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/MP2K6_HUMAN_D0.html">MP2K6_HUMAN_D0</a></td>
       <td>222</td>
@@ -790,7 +790,7 @@
       <td>PDB</td>
       <td>28</td>
       <td>174</td>
-      <td>20.8</td>
+      <td>23.2</td>
     </tr><tr><th>27</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/BMPR2_HUMAN_D0.html">BMPR2_HUMAN_D0</a></td>
       <td>78</td>
@@ -808,7 +808,7 @@
       <td>SGC</td>
       <td>34</td>
       <td>106</td>
-      <td>12.7</td>
+      <td>14.1</td>
     </tr><tr><th>28</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/KC1G1_HUMAN_D0.html">KC1G1_HUMAN_D0</a></td>
       <td>276</td>
@@ -826,7 +826,7 @@
       <td>PDB</td>
       <td>39</td>
       <td>256</td>
-      <td>30.7</td>
+      <td>34.1</td>
     </tr><tr><th>29</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/DYR1A_HUMAN_D0.html">DYR1A_HUMAN_D0</a></td>
       <td>83</td>
@@ -844,7 +844,7 @@
       <td>PDB</td>
       <td>41</td>
       <td>256</td>
-      <td>30.7</td>
+      <td>34.1</td>
     </tr><tr><th>30</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/KC1G2_HUMAN_D0.html">KC1G2_HUMAN_D0</a></td>
       <td>238</td>
@@ -862,7 +862,7 @@
       <td>SGC</td>
       <td>41</td>
       <td>57</td>
-      <td>6.9</td>
+      <td>7.6</td>
     </tr><tr><th>31</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/STK16_HUMAN_D0.html">STK16_HUMAN_D0</a></td>
       <td>302</td>
@@ -880,7 +880,7 @@
       <td>SGC</td>
       <td>43</td>
       <td>155</td>
-      <td>18.5</td>
+      <td>20.6</td>
     </tr><tr><th>32</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/TTK_HUMAN_D0.html">TTK_HUMAN_D0</a></td>
       <td>158</td>
@@ -934,7 +934,7 @@
       <td>SGC</td>
       <td>54</td>
       <td>9</td>
-      <td>1.1</td>
+      <td>1.2</td>
     </tr><tr><th>35</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/VRK3_HUMAN_D0.html">VRK3_HUMAN_D0</a></td>
       <td>445</td>
@@ -952,7 +952,7 @@
       <td>SGC</td>
       <td>60</td>
       <td>506</td>
-      <td>60.7</td>
+      <td>67.4</td>
     </tr><tr><th>36</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/PMYT1_HUMAN_D0.html">PMYT1_HUMAN_D0</a></td>
       <td>304</td>
@@ -970,7 +970,7 @@
       <td>SGC</td>
       <td>61</td>
       <td>285</td>
-      <td>34.3</td>
+      <td>38.1</td>
     </tr><tr><th>37</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/CLK3_HUMAN_D0.html">CLK3_HUMAN_D0</a></td>
       <td>223</td>
@@ -1006,7 +1006,7 @@
       <td>PDB</td>
       <td>64</td>
       <td>485</td>
-      <td>58.2</td>
+      <td>64.7</td>
     </tr><tr><th>39</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/PAK7_HUMAN_D0.html">PAK7_HUMAN_D0</a></td>
       <td>236</td>
@@ -1024,7 +1024,7 @@
       <td>SGC</td>
       <td>66</td>
       <td>110</td>
-      <td>13.2</td>
+      <td>14.7</td>
     </tr><tr><th>40</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/SLK_HUMAN_D0.html">SLK_HUMAN_D0</a></td>
       <td>207</td>
@@ -1042,7 +1042,7 @@
       <td>SGC</td>
       <td>66</td>
       <td>12</td>
-      <td>1.5</td>
+      <td>1.7</td>
     </tr><tr><th>41</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/ST17B_HUMAN_D0.html">ST17B_HUMAN_D0</a></td>
       <td>279</td>
@@ -1096,7 +1096,7 @@
       <td>SGC</td>
       <td>77</td>
       <td>100</td>
-      <td>12.0</td>
+      <td>13.4</td>
     </tr><tr><th>44</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/KC1G3_HUMAN_D0.html">KC1G3_HUMAN_D0</a></td>
       <td>294</td>
@@ -1114,7 +1114,7 @@
       <td>SGC</td>
       <td>80</td>
       <td>422</td>
-      <td>50.7</td>
+      <td>56.3</td>
     </tr><tr><th>45</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/MK11_HUMAN_D0.html">MK11_HUMAN_D0</a></td>
       <td>159</td>
@@ -1132,7 +1132,7 @@
       <td>SGC</td>
       <td>84</td>
       <td>238</td>
-      <td>28.5</td>
+      <td>31.7</td>
     </tr><tr><th>46</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/KS6A1_HUMAN_D1.html">KS6A1_HUMAN_D1</a></td>
       <td>132</td>
@@ -1150,7 +1150,7 @@
       <td>SGC</td>
       <td>88</td>
       <td>43</td>
-      <td>5.1</td>
+      <td>5.7</td>
     </tr><tr><th>47</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/NEK1_HUMAN_D0.html">NEK1_HUMAN_D0</a></td>
       <td>141</td>
@@ -1168,7 +1168,7 @@
       <td>SGC</td>
       <td>95</td>
       <td>25</td>
-      <td>3.0</td>
+      <td>3.4</td>
     </tr><tr><th>48</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/PHKG2_HUMAN_D0.html">PHKG2_HUMAN_D0</a></td>
       <td>134</td>
@@ -1186,7 +1186,7 @@
       <td>SGC</td>
       <td>97</td>
       <td>10</td>
-      <td>1.1</td>
+      <td>1.3</td>
     </tr><tr><th>49</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/DYRK2_HUMAN_D0.html">DYRK2_HUMAN_D0</a></td>
       <td>250</td>
@@ -1204,7 +1204,7 @@
       <td>SGC</td>
       <td>103</td>
       <td>18</td>
-      <td>2.2</td>
+      <td>2.4</td>
     </tr><tr><th>50</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/DMPK_HUMAN_D0.html">DMPK_HUMAN_D0</a></td>
       <td>110</td>
@@ -1222,7 +1222,7 @@
       <td>PDB</td>
       <td>144</td>
       <td>57</td>
-      <td>6.8</td>
+      <td>7.6</td>
     </tr><tr><th>51</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/MRCKA_HUMAN_D0.html">MRCKA_HUMAN_D0</a></td>
       <td>232</td>
@@ -1258,7 +1258,7 @@
       <td>PDB</td>
       <td>15</td>
       <td>469</td>
-      <td>56.3</td>
+      <td>62.6</td>
     </tr><tr><th>53</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/CDK2_HUMAN_D0.html">CDK2_HUMAN_D0</a></td>
       <td>26</td>
@@ -1276,7 +1276,7 @@
       <td>PDB</td>
       <td>17</td>
       <td>23</td>
-      <td>2.7</td>
+      <td>3.0</td>
     </tr><tr><th>54</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/CDK6_HUMAN_D0.html">CDK6_HUMAN_D0</a></td>
       <td>314</td>
@@ -1312,7 +1312,7 @@
       <td>PDB</td>
       <td>21</td>
       <td>30</td>
-      <td>3.5</td>
+      <td>3.9</td>
     </tr><tr><th>56</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/EPHB4_HUMAN_D0.html">EPHB4_HUMAN_D0</a></td>
       <td>96</td>
@@ -1348,7 +1348,7 @@
       <td>PDB</td>
       <td>22</td>
       <td>8</td>
-      <td>1.0</td>
+      <td>1.1</td>
     </tr><tr><th>58</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/FAK2_HUMAN_D0.html">FAK2_HUMAN_D0</a></td>
       <td>76</td>
@@ -1384,7 +1384,7 @@
       <td>PDB</td>
       <td>24</td>
       <td>8</td>
-      <td>1.0</td>
+      <td>1.1</td>
     </tr><tr><th>60</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/FGFR2_HUMAN_D0.html">FGFR2_HUMAN_D0</a></td>
       <td>17</td>
@@ -1420,7 +1420,7 @@
       <td>PDB</td>
       <td>28</td>
       <td>28</td>
-      <td>3.3</td>
+      <td>3.7</td>
     </tr><tr><th>62</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/KC1E_HUMAN_D0.html">KC1E_HUMAN_D0</a></td>
       <td>233</td>
@@ -1438,7 +1438,7 @@
       <td>PDB</td>
       <td>28</td>
       <td>26</td>
-      <td>3.1</td>
+      <td>3.5</td>
     </tr><tr><th>63</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/VGFR1_HUMAN_D0.html">VGFR1_HUMAN_D0</a></td>
       <td>19</td>
@@ -1456,7 +1456,7 @@
       <td>PDB</td>
       <td>29</td>
       <td>4</td>
-      <td>0.4</td>
+      <td>0.5</td>
     </tr><tr><th>64</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/FGFR1_HUMAN_D0.html">FGFR1_HUMAN_D0</a></td>
       <td>11</td>
@@ -1474,7 +1474,7 @@
       <td>PDB</td>
       <td>30</td>
       <td>46</td>
-      <td>5.6</td>
+      <td>6.2</td>
     </tr><tr><th>65</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/SRC_HUMAN_D0.html">SRC_HUMAN_D0</a></td>
       <td>10</td>
@@ -1492,7 +1492,7 @@
       <td>PDB</td>
       <td>33</td>
       <td>165</td>
-      <td>19.8</td>
+      <td>22.1</td>
     </tr><tr><th>66</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/EPHB1_HUMAN_D0.html">EPHB1_HUMAN_D0</a></td>
       <td>182</td>
@@ -1510,7 +1510,7 @@
       <td>PDB</td>
       <td>35</td>
       <td>217</td>
-      <td>26.0</td>
+      <td>28.9</td>
     </tr><tr><th>67</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/KCC2B_HUMAN_D0.html">KCC2B_HUMAN_D0</a></td>
       <td>249</td>
@@ -1528,7 +1528,7 @@
       <td>PDB</td>
       <td>37</td>
       <td>53</td>
-      <td>6.4</td>
+      <td>7.1</td>
     </tr><tr><th>68</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/FGFR3_HUMAN_D0.html">FGFR3_HUMAN_D0</a></td>
       <td>13</td>
@@ -1546,7 +1546,7 @@
       <td>PDB</td>
       <td>38</td>
       <td>17</td>
-      <td>2.1</td>
+      <td>2.3</td>
     </tr><tr><th>69</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/PIM1_HUMAN_D0.html">PIM1_HUMAN_D0</a></td>
       <td>77</td>
@@ -1600,7 +1600,7 @@
       <td>PDB</td>
       <td>42</td>
       <td>126</td>
-      <td>15.1</td>
+      <td>16.7</td>
     </tr><tr><th>72</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/CDK16_HUMAN_D0.html">CDK16_HUMAN_D0</a></td>
       <td>257</td>
@@ -1618,7 +1618,7 @@
       <td>PDB</td>
       <td>43</td>
       <td>202</td>
-      <td>24.2</td>
+      <td>26.9</td>
     </tr><tr><th>73</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/KCC2D_HUMAN_D0.html">KCC2D_HUMAN_D0</a></td>
       <td>172</td>
@@ -1636,7 +1636,7 @@
       <td>PDB</td>
       <td>43</td>
       <td>12</td>
-      <td>1.4</td>
+      <td>1.6</td>
     </tr><tr><th>74</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/STK24_HUMAN_D0.html">STK24_HUMAN_D0</a></td>
       <td>274</td>
@@ -1654,7 +1654,7 @@
       <td>PDB</td>
       <td>44</td>
       <td>6</td>
-      <td>0.7</td>
+      <td>0.8</td>
     </tr><tr><th>75</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/NEK7_HUMAN_D0.html">NEK7_HUMAN_D0</a></td>
       <td>299</td>
@@ -1672,7 +1672,7 @@
       <td>PDB</td>
       <td>45</td>
       <td>10</td>
-      <td>1.2</td>
+      <td>1.3</td>
     </tr><tr><th>76</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/STK3_HUMAN_D0.html">STK3_HUMAN_D0</a></td>
       <td>219</td>
@@ -1690,7 +1690,7 @@
       <td>PDB</td>
       <td>48</td>
       <td>257</td>
-      <td>30.9</td>
+      <td>34.3</td>
     </tr><tr><th>77</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/KCC1G_HUMAN_D0.html">KCC1G_HUMAN_D0</a></td>
       <td>305</td>
@@ -1708,7 +1708,7 @@
       <td>PDB</td>
       <td>50</td>
       <td>2</td>
-      <td>0.2</td>
+      <td>0.3</td>
     </tr><tr><th>78</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/MET_HUMAN_D0.html">MET_HUMAN_D0</a></td>
       <td>6</td>
@@ -1744,7 +1744,7 @@
       <td>PDB</td>
       <td>52</td>
       <td>179</td>
-      <td>21.5</td>
+      <td>23.9</td>
     </tr><tr><th>80</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/CSK21_HUMAN_D0.html">CSK21_HUMAN_D0</a></td>
       <td>62</td>
@@ -1762,7 +1762,7 @@
       <td>PDB</td>
       <td>55</td>
       <td>109</td>
-      <td>13.1</td>
+      <td>14.6</td>
     </tr><tr><th>81</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/PLK2_HUMAN_D0.html">PLK2_HUMAN_D0</a></td>
       <td>190</td>
@@ -1816,7 +1816,7 @@
       <td>PDB</td>
       <td>63</td>
       <td>61</td>
-      <td>7.4</td>
+      <td>8.2</td>
     </tr><tr><th>84</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/MAPK2_HUMAN_D0.html">MAPK2_HUMAN_D0</a></td>
       <td>75</td>
@@ -1852,7 +1852,7 @@
       <td>PDB</td>
       <td>70</td>
       <td>135</td>
-      <td>16.2</td>
+      <td>18.0</td>
     </tr><tr><th>86</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/MAPK3_HUMAN_D0.html">MAPK3_HUMAN_D0</a></td>
       <td>372</td>
@@ -1870,7 +1870,7 @@
       <td>PDB</td>
       <td>76</td>
       <td>141</td>
-      <td>16.9</td>
+      <td>18.8</td>
     </tr><tr><th>87</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/MARK3_HUMAN_D0.html">MARK3_HUMAN_D0</a></td>
       <td>366</td>
@@ -1888,7 +1888,7 @@
       <td>PDB</td>
       <td>77</td>
       <td>8</td>
-      <td>0.9</td>
+      <td>1.0</td>
     </tr><tr><th>88</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/MK14_HUMAN_D0.html">MK14_HUMAN_D0</a></td>
       <td>14</td>
@@ -1906,7 +1906,7 @@
       <td>PDB</td>
       <td>78</td>
       <td>530</td>
-      <td>63.7</td>
+      <td>70.7</td>
     </tr><tr><th>89</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/VRK1_HUMAN_D0.html">VRK1_HUMAN_D0</a></td>
       <td>384</td>
@@ -1924,7 +1924,7 @@
       <td>PDB</td>
       <td>84</td>
       <td>467</td>
-      <td>56.1</td>
+      <td>62.3</td>
     </tr><tr><th>90</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/MK13_HUMAN_D0.html">MK13_HUMAN_D0</a></td>
       <td>240</td>
@@ -1942,7 +1942,7 @@
       <td>PDB</td>
       <td>88</td>
       <td>238</td>
-      <td>28.5</td>
+      <td>31.7</td>
     </tr><tr><th>91</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/MK03_HUMAN_D0.html">MK03_HUMAN_D0</a></td>
       <td>52</td>
@@ -1960,7 +1960,7 @@
       <td>PDB</td>
       <td>94</td>
       <td>273</td>
-      <td>32.7</td>
+      <td>36.3</td>
     </tr><tr><th>92</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/EPHA3_HUMAN_D0.html">EPHA3_HUMAN_D0</a></td>
       <td>95</td>
@@ -1978,7 +1978,7 @@
       <td>PDB</td>
       <td>100</td>
       <td>106</td>
-      <td>12.7</td>
+      <td>14.2</td>
     </tr><tr><th>93</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/KAPCA_HUMAN_D0.html">KAPCA_HUMAN_D0</a></td>
       <td>63</td>
@@ -1996,7 +1996,7 @@
       <td>PDB</td>
       <td>102</td>
       <td>7</td>
-      <td>0.9</td>
+      <td>1.0</td>
     </tr><tr><th>94</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/FES_HUMAN_D0.html">FES_HUMAN_D0</a></td>
       <td>119</td>
@@ -2014,7 +2014,7 @@
       <td>PDB</td>
       <td>116</td>
       <td>330</td>
-      <td>39.5</td>
+      <td>43.9</td>
     </tr><tr><th>95</th>
       <td><a href="plasmid-construct-alignments/addgene_hip_sgc/AAPK1_HUMAN_D0.html">AAPK1_HUMAN_D0</a></td>
       <td>183</td>
